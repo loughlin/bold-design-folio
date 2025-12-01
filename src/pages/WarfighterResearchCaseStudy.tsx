@@ -3,21 +3,21 @@ import CaseStudyLayout from "@/components/CaseStudyLayout";
 const WarfighterResearchCaseStudy = () => {
   return (
     <CaseStudyLayout
-      title="Warfighter UX Research"
+      title="User UX Research"
       subtitle="De-risking product decisions through qualitative user research"
       heroImage="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1600&h=900&fit=crop"
-      overview="Led comprehensive user research initiatives with warfighting users across multiple USAF missions to validate product concepts, uncover user needs, and reduce risk before significant development investment. This research program established user-centered design practices within a traditionally engineering-focused environment."
-      problem="Product teams were making critical design decisions based on stakeholder assumptions rather than actual user needs. This resulted in features being built that didn't align with warfighter workflows, tools that required extensive post-launch rework, and poor adoption rates. Teams lacked direct access to end users and had no established research processes."
-      problemStatement="How might we establish research practices that give product teams direct access to warfighters' needs, validate design decisions early, and build empathy for users operating in high-stakes, mission-critical environments?"
+      overview="Led comprehensive user research initiatives with users across multiple USAF missions to validate product concepts, uncover user needs, and reduce risk before significant development investment. This research program established user-centered design practices within a traditionally engineering-focused environment."
+      problem="Product teams were making critical design decisions based on stakeholder assumptions rather than actual user needs. This resulted in features being built that didn't align with user workflows, tools that required extensive post-launch rework, and poor adoption rates. Teams lacked direct access to end users and had no established research processes."
+      problemStatement="How might we establish research practices that give product teams direct access to users' needs, validate design decisions early, and build empathy for users operating in high-stakes, mission-critical environments?"
       role="Lead UX Researcher & Product Designer"
       timeline="2020 - Present (Ongoing)"
       team="Research team of 2 designers, collaborated with 8 product teams"
       research={{
         title: "Research Methodology",
         content: [
-          "Conducted 50+ contextual inquiries and shadowing sessions with warfighters at operational bases",
+          "Conducted 50+ contextual inquiries and shadowing sessions with users at operational bases",
           "Facilitated 30+ usability testing sessions with active duty personnel across multiple career fields",
-          "Ran participatory design workshops with 100+ warfighters to co-create solutions",
+          "Ran participatory design workshops with 100+ users to co-create solutions",
           "Established research operations including participant recruitment pipelines and incentive programs",
           "Created research repositories and insight libraries accessible to all product teams"
         ]
@@ -35,7 +35,7 @@ const WarfighterResearchCaseStudy = () => {
         {
           title: "2. Discovery Research",
           content: [
-            "Conducted field studies at air bases observing warfighters in their natural work environment",
+            "Conducted field studies at air bases observing users in their natural work environment",
             "Performed task analysis to understand existing workflows and pain points",
             "Created journey maps documenting end-to-end processes across multiple systems",
             "Identified critical moments where technology failures impacted mission outcomes"
@@ -81,11 +81,11 @@ const WarfighterResearchCaseStudy = () => {
       images={[
         {
           url: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1600&h=900&fit=crop",
-          caption: "Contextual inquiry session with warfighters in operational environment"
+          caption: "Contextual inquiry session with users in operational environment"
         },
         {
           url: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1600&h=900&fit=crop",
-          caption: "Journey map documenting warfighter workflows and pain points across systems"
+          caption: "Journey map documenting user workflows and pain points across systems"
         }
       ]}
     />

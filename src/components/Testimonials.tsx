@@ -22,7 +22,7 @@ const Testimonials = () => {
       organization: "Kessel Run",
     },
     {
-      quote: "His deep understanding of warfighter needs combined with technical expertise makes him an invaluable partner in building mission-critical applications.",
+      quote: "His deep understanding of user needs combined with technical expertise makes him an invaluable partner in building mission-critical applications.",
       author: "Colonel David Hayes",
       role: "Program Manager",
       organization: "United States Air Force",

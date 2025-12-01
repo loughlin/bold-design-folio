@@ -28,9 +28,9 @@ const About = () => {
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed mt-6">
-                My work focuses on supporting warfighters through thoughtful design, establishing 
+                My work focuses on supporting users through thoughtful design, establishing 
                 systems that scale, and fostering environments where designers and teams can do 
-                their best work. I believe in the power of facilitation, psychological safety, 
+                their best work. I believe in the power of facilitation, psychological safety,
                 and collaborative problem-solving.
               </p>
             </div>
