@@ -31,15 +31,13 @@ const Hero = () => {
           >
             <div className="inline-block">
               <span className="text-sm font-semibold tracking-wide uppercase text-muted-foreground">
-                Portfolio Design Lead & Product Designer
+                UX Design Leader
               </span>
             </div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              All about{" "}
-              <span className="text-gradient">identifying problems,</span>{" "}
-              building solutions and{" "}
-              <span className="text-gradient-warm">utilizing human-centered design.</span>
+              Identify problems, build solutions with{" "}
+              <span className="text-gradient">human centered design.</span>
             </h1>
 
             <div className="flex items-center gap-4 pt-4">
