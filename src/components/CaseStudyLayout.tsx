@@ -1,0 +1,242 @@
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { ArrowLeft } from "lucide-react";
+import { Link } from "react-router-dom";
+
+interface CaseStudySection {
+  title: string;
+  content: string | string[];
+}
+
+interface CaseStudyLayoutProps {
+  title: string;
+  subtitle: string;
+  heroImage: string;
+  overview: string;
+  problem: string;
+  problemStatement: string;
+  role: string;
+  timeline: string;
+  team: string;
+  process: CaseStudySection[];
+  research?: CaseStudySection;
+  beforeAfter?: {
+    before: { image: string; caption: string };
+    after: { image: string; caption: string };
+  };
+  outcomes: string[];
+  images?: { url: string; caption: string }[];
+}
+
+const CaseStudyLayout = ({
+  title,
+  subtitle,
+  heroImage,
+  overview,
+  problem,
+  problemStatement,
+  role,
+  timeline,
+  team,
+  process,
+  research,
+  beforeAfter,
+  outcomes,
+  images,
+}: CaseStudyLayoutProps) => {
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+        <div className="container mx-auto px-6 py-4">
+          <Link to="/">
+            <Button variant="ghost" size="sm">
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Back to Portfolio
+            </Button>
+          </Link>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="pt-24 pb-16 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <div className="space-y-4 mb-12 animate-fade-in">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold">{title}</h1>
+            <p className="text-2xl text-muted-foreground">{subtitle}</p>
+          </div>
+          
+          <div className="rounded-2xl overflow-hidden animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <img src={heroImage} alt={title} className="w-full h-[500px] object-cover" />
+          </div>
+        </div>
+      </section>
+
+      {/* Project Overview */}
+      <section className="py-16 px-6 bg-muted/30">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="animate-fade-in">
+              <CardContent className="p-6">
+                <h3 className="text-sm font-semibold text-muted-foreground mb-2">ROLE</h3>
+                <p className="text-lg">{role}</p>
+              </CardContent>
+            </Card>
+            <Card className="animate-fade-in" style={{ animationDelay: "0.1s" }}>
+              <CardContent className="p-6">
+                <h3 className="text-sm font-semibold text-muted-foreground mb-2">TIMELINE</h3>
+                <p className="text-lg">{timeline}</p>
+              </CardContent>
+            </Card>
+            <Card className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
+              <CardContent className="p-6">
+                <h3 className="text-sm font-semibold text-muted-foreground mb-2">TEAM</h3>
+                <p className="text-lg">{team}</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="mt-12 space-y-6 animate-fade-in" style={{ animationDelay: "0.3s" }}>
+            <h2 className="text-3xl font-bold">Overview</h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">{overview}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Problem & Problem Statement */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-6xl space-y-12">
+          <div className="space-y-6 animate-fade-in">
+            <h2 className="text-3xl font-bold">The Problem</h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">{problem}</p>
+          </div>
+
+          <Card className="bg-primary/5 border-primary/20 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <CardContent className="p-8">
+              <h3 className="text-sm font-semibold text-primary mb-4">PROBLEM STATEMENT</h3>
+              <p className="text-xl font-medium leading-relaxed">{problemStatement}</p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Research Insights */}
+      {research && (
+        <section className="py-16 px-6 bg-muted/30">
+          <div className="container mx-auto max-w-6xl space-y-8 animate-fade-in">
+            <h2 className="text-3xl font-bold">{research.title}</h2>
+            {Array.isArray(research.content) ? (
+              <ul className="space-y-4">
+                {research.content.map((item, index) => (
+                  <li key={index} className="flex items-start">
+                    <span className="inline-block w-2 h-2 rounded-full bg-primary mt-2 mr-4 flex-shrink-0" />
+                    <p className="text-lg text-muted-foreground leading-relaxed">{item}</p>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-lg text-muted-foreground leading-relaxed">{research.content}</p>
+            )}
+          </div>
+        </section>
+      )}
+
+      {/* Process */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-6xl space-y-12">
+          <h2 className="text-3xl font-bold animate-fade-in">Design Process</h2>
+          {process.map((section, index) => (
+            <div key={index} className="space-y-4 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+              <h3 className="text-2xl font-semibold">{section.title}</h3>
+              {Array.isArray(section.content) ? (
+                <ul className="space-y-3">
+                  {section.content.map((item, i) => (
+                    <li key={i} className="flex items-start">
+                      <span className="inline-block w-2 h-2 rounded-full bg-accent mt-2 mr-4 flex-shrink-0" />
+                      <p className="text-lg text-muted-foreground leading-relaxed">{item}</p>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="text-lg text-muted-foreground leading-relaxed">{section.content}</p>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Before/After Comparison */}
+      {beforeAfter && (
+        <section className="py-16 px-6 bg-muted/30">
+          <div className="container mx-auto max-w-6xl space-y-8">
+            <h2 className="text-3xl font-bold animate-fade-in">Before & After</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <Card className="animate-fade-in">
+                <CardContent className="p-0">
+                  <img src={beforeAfter.before.image} alt="Before" className="w-full h-80 object-cover rounded-t-lg" />
+                  <div className="p-6">
+                    <h4 className="text-lg font-semibold mb-2">Before</h4>
+                    <p className="text-muted-foreground">{beforeAfter.before.caption}</p>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="animate-fade-in" style={{ animationDelay: "0.1s" }}>
+                <CardContent className="p-0">
+                  <img src={beforeAfter.after.image} alt="After" className="w-full h-80 object-cover rounded-t-lg" />
+                  <div className="p-6">
+                    <h4 className="text-lg font-semibold mb-2">After</h4>
+                    <p className="text-muted-foreground">{beforeAfter.after.caption}</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Additional Images */}
+      {images && images.length > 0 && (
+        <section className="py-16 px-6">
+          <div className="container mx-auto max-w-6xl space-y-8">
+            {images.map((image, index) => (
+              <div key={index} className="space-y-4 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                <img src={image.url} alt={image.caption} className="w-full rounded-2xl" />
+                <p className="text-center text-muted-foreground">{image.caption}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Outcomes */}
+      <section className="py-16 px-6 bg-primary/5">
+        <div className="container mx-auto max-w-6xl space-y-8">
+          <h2 className="text-3xl font-bold animate-fade-in">Outcomes & Impact</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {outcomes.map((outcome, index) => (
+              <Card key={index} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                <CardContent className="p-6">
+                  <p className="text-lg leading-relaxed">{outcome}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Footer CTA */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-6xl text-center space-y-6 animate-fade-in">
+          <h2 className="text-3xl font-bold">Interested in learning more?</h2>
+          <Link to="/#work">
+            <Button size="lg" className="bg-primary hover:bg-primary/90">
+              View More Projects
+            </Button>
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default CaseStudyLayout;
