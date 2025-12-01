@@ -13,8 +13,8 @@ const FeaturedWork = () => {
       link: "/case-study/design-system",
     },
     {
-      title: "Warfighter UX Research",
-      description: "Conducted qualitative user research with warfighting users to de-risk product ideas and validate designs.",
+      title: "User UX Research",
+      description: "Conducted qualitative user research with users to de-risk product ideas and validate designs.",
       image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop",
       size: "medium",
       link: "/case-study/warfighter-research",

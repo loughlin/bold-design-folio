@@ -43,7 +43,7 @@ const Hero = () => {
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground italic">
-              ...thinking about design systems and warfighter needs...
+              ...thinking about design systems and user needs...
             </p>
 
             <div className="flex items-center gap-4 pt-4">

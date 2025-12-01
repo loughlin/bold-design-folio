@@ -38,7 +38,7 @@ const Skills = () => {
     {
       icon: MessageSquare,
       title: "Stakeholder Communication",
-      description: "Collaborating with leadership and warfighting users to align design with mission needs.",
+      description: "Collaborating with leadership and users to align design with mission needs.",
     },
   ];
 

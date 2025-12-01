@@ -70,7 +70,7 @@ const Footer = () => {
             © {currentYear} James Loughlin. All rights reserved.
           </p>
           <p className="text-background/60 text-sm">
-            Designed with ❤️ for warfighters and mission success
+            Designed with ❤️ for users and mission success
           </p>
         </div>
       </div>

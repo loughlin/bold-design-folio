@@ -34,7 +34,7 @@ const FeaturedCaseStudy = () => {
             </div>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Led design for enterprise B2B cloud-native applications supporting warfighting 
+              Led design for enterprise B2B cloud-native applications supporting user 
               operations across the United States Air Force. Managed design research, 
               facilitated team rituals, and established design systems to increase consistency 
               across the USAF application suite.
@@ -64,7 +64,7 @@ const FeaturedCaseStudy = () => {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <span className="text-primary text-2xl leading-none">•</span>
-                  <span className="text-muted-foreground">Collaborate with warfighting users and leadership teams to identify capability needs</span>
+                  <span className="text-muted-foreground">Collaborate with users and leadership teams to identify capability needs</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary text-2xl leading-none">•</span>

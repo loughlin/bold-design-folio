@@ -8,14 +8,14 @@ const CloudApplicationCaseStudy = () => {
       heroImage="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&h=900&fit=crop"
       overview="Designed enterprise-grade cloud-native applications supporting critical operations across the United States Air Force. Led design for complex B2B workflows, data visualization, and multi-role access patterns serving thousands of active duty personnel. Focused on creating intuitive experiences for high-stakes, time-sensitive operational decisions."
       problem="USAF personnel were using legacy on-premises software that required extensive training, couldn't be accessed remotely, and lacked modern features like real-time collaboration and mobile access. The existing systems were siloed, creating data inconsistencies and forcing users to switch between multiple applications to complete routine tasks. This resulted in operational delays and increased risk of errors in time-critical situations."
-      problemStatement="How might we modernize USAF operational software to provide intuitive, cloud-based tools that support warfighters' workflows while meeting stringent security, reliability, and compliance requirements?"
+      problemStatement="How might we modernize USAF operational software to provide intuitive, cloud-based tools that support users' workflows while meeting stringent security, reliability, and compliance requirements?"
       role="Product Designer & Design Lead"
       timeline="2019 - Present"
       team="Cross-functional teams including designers, engineers, product managers, and military stakeholders"
       research={{
         title: "User Research Insights",
         content: [
-          "Shadowed 25+ warfighters performing mission-critical tasks to understand workflows and decision-making processes",
+          "Shadowed 25+ users performing mission-critical tasks to understand workflows and decision-making processes",
           "Identified that users spent 40% of their time navigating between disconnected systems and manually reconciling data",
           "Discovered users needed mobile access for on-call situations but existing systems only worked on desktop",
           "Found that new personnel required 2-3 weeks of training to become proficient with legacy systems",
