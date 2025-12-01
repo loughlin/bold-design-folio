@@ -7,7 +7,7 @@ const Experience = () => {
       company: "Kessel Run | United States Air Force",
       role: "Portfolio Design Lead, T&G",
       period: "2022 - Present",
-      description: "Lead product design for T&G portfolio supporting six operational missions. Supervise team of 6 designers and support 12 additional design reports.",
+      description: "Lead product design strategy and execution for the T&G portfolio, supporting six critical operational missions across the Air Force. Direct and mentor a team of 6 product designers while providing guidance and support to 12 additional design reports. Establish design standards, facilitate cross-functional collaboration, and drive user-centered design practices across multiple product teams. Champion design thinking and psychological safety within complex, mission-critical environments.",
       icon: "🇺🇸",
     },
     {
@@ -50,7 +50,7 @@ const Experience = () => {
             <Card
               key={index}
               className={`hover-lift animate-fade-in ${
-                index === 0 ? "md:col-span-2 lg:col-span-2" : ""
+                index === 0 ? "md:col-span-2 lg:col-span-3" : ""
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
