@@ -19,19 +19,15 @@ const About = () => {
 
             <div className="prose prose-lg">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm <span className="font-bold text-foreground">James Loughlin</span>, 
-                Portfolio Design Lead at Kessel Run with the United States Air Force. 
-                With a background in <span className="font-semibold text-foreground">Journalism</span> and{" "}
-                <span className="font-semibold text-foreground">Computer Informatics</span> from 
-                the University of Iowa, I combine human-centered design with technical understanding 
-                to build design culture in defense technology.
+                I'm James Loughlin, a Design Leader and problem solver. I combine human-centered design with user empathy to build design culture and solve problems. I see design as imagining the best possible experience for someone and steadily moving toward it—rebuilding, refining, and reshaping until it finally feels inevitable.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed mt-6">
-                My work focuses on supporting users through thoughtful design, establishing 
-                systems that scale, and fostering environments where designers and teams can do 
-                their best work. I believe in the power of facilitation, psychological safety,
-                and collaborative problem-solving.
+                Learning is what keeps that process alive. My only real rule is simple: keep working and keep growing, even through uncertainty, ambiguity, and the moments where giving up feels easier.
+              </p>
+
+              <p className="text-lg text-muted-foreground leading-relaxed mt-6">
+                My work sits at the intersection of craft, thinking, and empathy. And as a designer, I'll always stay hungry to learn, evolve, and create whatever comes next—something human, intentional, and unmistakably right.
               </p>
             </div>
 
