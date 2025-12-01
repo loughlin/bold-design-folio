@@ -37,14 +37,10 @@ const Hero = () => {
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
               All about{" "}
-              <span className="text-gradient">solving problems,</span>{" "}
-              building teams, and{" "}
-              <span className="text-gradient-warm">human-centered design.</span>
+              <span className="text-gradient">identifying problems,</span>{" "}
+              building solutions and{" "}
+              <span className="text-gradient-warm">utilizing human-centered design.</span>
             </h1>
-
-            <p className="text-xl md:text-2xl text-muted-foreground italic">
-              ...thinking about design systems and user needs...
-            </p>
 
             <div className="flex items-center gap-4 pt-4">
               <div className="text-4xl font-serif font-bold border-2 border-foreground px-6 py-2 rounded-lg hover:bg-foreground hover:text-background transition-all cursor-default">
