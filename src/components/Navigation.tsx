@@ -35,7 +35,7 @@ const Navigation = () => {
             onClick={() => scrollToSection("hero")}
             className="text-2xl font-serif font-bold hover:opacity-80 transition-opacity"
           >
-            JLoughlin
+            James Loughlin
           </button>
 
           {/* Desktop Menu */}
