@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Quote } from "lucide-react";
+import { Quote, ChevronDown, ChevronUp } from "lucide-react";
 
 const Testimonials = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
   const testimonials = [
     {
       quote: "James was a big part in the positive experience I had working at Kessel Run. From my initial job interviews all the way to my last day, I always felt supported as both a designer and person. I learned a lot from him, which was invaluable in a time when I had to work quickly, and it surely helped to keep my head above water. He's very knowledgeable, communicative, compassionate, honest, and just an all-around good person.",
@@ -63,39 +66,78 @@ const Testimonials = () => {
           </p>
         </div>
 
-        {/* Testimonials Carousel */}
+        {/* Testimonials - Carousel or Grid based on expanded state */}
         <div className="relative">
-          <div className="flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide">
-            {testimonials.map((testimonial, index) => (
-              <Card
-                key={index}
-                className="flex-shrink-0 w-full md:w-[500px] hover-lift snap-start animate-fade-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <CardContent className="p-8">
-                  <Quote className="w-12 h-12 text-primary/20 mb-4" />
-                  <blockquote className="text-lg text-foreground leading-relaxed mb-6">
-                    "{testimonial.quote}"
-                  </blockquote>
-                  <div className="space-y-1">
-                    <p className="font-bold text-foreground">{testimonial.author}</p>
-                    <p className="text-sm text-muted-foreground">
-                      {testimonial.role}
-                    </p>
-                    <p className="text-sm text-primary font-medium">
-                      {testimonial.organization}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          {!isExpanded ? (
+            <div className="flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-hide">
+              {testimonials.map((testimonial, index) => (
+                <Card
+                  key={index}
+                  className="flex-shrink-0 w-full md:w-[500px] hover-lift snap-start animate-fade-in"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <CardContent className="p-8">
+                    <Quote className="w-12 h-12 text-primary/20 mb-4" />
+                    <blockquote className="text-lg text-foreground leading-relaxed mb-6">
+                      "{testimonial.quote}"
+                    </blockquote>
+                    <div className="space-y-1">
+                      <p className="font-bold text-foreground">{testimonial.author}</p>
+                      <p className="text-sm text-muted-foreground">
+                        {testimonial.role}
+                      </p>
+                      <p className="text-sm text-primary font-medium">
+                        {testimonial.organization}
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in">
+              {testimonials.map((testimonial, index) => (
+                <Card
+                  key={index}
+                  className="hover-lift animate-fade-in"
+                  style={{ animationDelay: `${index * 0.05}s` }}
+                >
+                  <CardContent className="p-6">
+                    <Quote className="w-10 h-10 text-primary/20 mb-3" />
+                    <blockquote className="text-base text-foreground leading-relaxed mb-4">
+                      "{testimonial.quote}"
+                    </blockquote>
+                    <div className="space-y-1">
+                      <p className="font-bold text-foreground">{testimonial.author}</p>
+                      <p className="text-sm text-muted-foreground">
+                        {testimonial.role}
+                      </p>
+                      <p className="text-sm text-primary font-medium">
+                        {testimonial.organization}
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          )}
         </div>
 
-        {/* Scroll Hint */}
-        <p className="text-center text-sm text-muted-foreground mt-4">
-          Scroll to see more testimonials →
-        </p>
+        {/* Toggle Button */}
+        <button
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="flex items-center gap-2 mx-auto mt-6 text-sm text-muted-foreground hover:text-primary transition-colors"
+        >
+          {isExpanded ? (
+            <>
+              Show less <ChevronUp className="w-4 h-4" />
+            </>
+          ) : (
+            <>
+              Click to see all testimonials <ChevronDown className="w-4 h-4" />
+            </>
+          )}
+        </button>
       </div>
 
       <style>{`
