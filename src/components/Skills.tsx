@@ -12,22 +12,22 @@ const Skills = () => {
   const skillCategories = [
     {
       icon: Lightbulb,
-      title: "Facilitation & Human-Centered Design",
+      title: "Facilitation + Human-Centered Design",
       description: "Leading design studios, workshops, and user research to solve complex problems with empathy.",
     },
     {
       icon: Palette,
-      title: "Design Systems & DesignOps",
+      title: "Design Systems + DesignOps",
       description: "Building scalable design systems and operational frameworks for consistency and efficiency.",
     },
     {
       icon: Users,
-      title: "Team Leadership & Psychological Safety",
+      title: "Team Leadership + Psychological Safety",
       description: "Supervising designers and fostering collaborative environments where teams thrive.",
     },
     {
       icon: Workflow,
-      title: "Lean UX & Agile Methodologies",
+      title: "Lean UX + Agile Methodologies",
       description: "Integrating design thinking with agile practices for rapid, iterative delivery.",
     },
     {
@@ -52,10 +52,10 @@ const Skills = () => {
             <div className="text-2xl font-serif font-bold border-2 border-foreground px-4 py-1 rounded-lg">
               JL
             </div>
-            <h2 className="text-5xl md:text-6xl font-bold">Approach & Skills</h2>
+            <h2 className="text-5xl md:text-6xl font-bold">Approach + Skills</h2>
           </div>
           <p className="text-xl text-muted-foreground">
-            Building design excellence through collaboration and systems thinking
+            Building Product excellence through collaboration and design thinking
           </p>
         </div>
 
