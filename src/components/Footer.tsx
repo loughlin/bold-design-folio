@@ -6,12 +6,12 @@ const Footer = () => {
   return (
     <footer id="contact" className="bg-foreground text-background py-16 px-6">
       <div className="container mx-auto">
-        {/* Top Row - Brand and Contact */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+        {/* Main Footer Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-3xl font-serif font-bold">JLoughlin</h3>
-            <p className="text-background/80">
+            <h3 className="text-4xl font-serif font-bold">JL</h3>
+            <p className="text-background/80 text-sm">
               Portfolio Design Lead building human-centered solutions for mission-critical systems.
             </p>
             <div className="flex gap-4 pt-2">
@@ -31,34 +31,6 @@ const Footer = () => {
               </a>
             </div>
           </div>
-
-          {/* Quick Links */}
-          <div className="space-y-4 md:text-right">
-            <nav className="flex flex-col md:flex-row md:justify-end gap-4">
-              <a
-                href="#work"
-                className="text-background/80 hover:text-background transition-colors"
-              >
-                Featured Work
-              </a>
-              <a
-                href="#experience"
-                className="text-background/80 hover:text-background transition-colors"
-              >
-                Experience
-              </a>
-              <a
-                href="#about"
-                className="text-background/80 hover:text-background transition-colors"
-              >
-                About
-              </a>
-            </nav>
-          </div>
-        </div>
-
-        {/* Skills, Tools, Talents Row */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 pt-8 border-t border-background/20">
           {/* Skills */}
           <div className="space-y-4">
             <h4 className="text-sm font-bold uppercase tracking-wider mb-4">Skills</h4>
