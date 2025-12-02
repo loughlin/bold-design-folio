@@ -93,10 +93,9 @@ const About = () => {
 
             <Card className="hover-lift bg-primary text-primary-foreground">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-2">Let's Work Together</h3>
+                <h3 className="text-2xl font-bold mb-2">Let's Talk!</h3>
                 <p className="mb-4 opacity-90">
-                  Interested in collaboration, speaking opportunities, or just want to chat 
-                  about design in defense tech?
+                  Interested in collaborating, speaking opportunities or just an introduction?
                 </p>
                 <p className="font-semibold">jloughlin87@gmail.com</p>
                 <p className="text-sm opacity-90 mt-1">712-229-3866</p>
