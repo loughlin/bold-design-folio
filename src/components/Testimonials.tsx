@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Quote } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Quote, ChevronDown, ChevronUp } from "lucide-react";
 
 const Testimonials = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
   const testimonials = [
     {
       quote: "James was a big part in the positive experience I had working at Kessel Run. From my initial job interviews all the way to my last day, I always felt supported as both a designer and person. I learned a lot from him, which was invaluable in a time when I had to work quickly, and it surely helped to keep my head above water. He's very knowledgeable, communicative, compassionate, honest, and just an all-around good person.",
@@ -65,7 +68,7 @@ const Testimonials = () => {
 
         {/* Testimonials - Vertical Scroll */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {testimonials.map((testimonial, index) => (
+          {(isExpanded ? testimonials : testimonials.slice(0, 3)).map((testimonial, index) => (
             <Card
               key={index}
               className="hover-lift animate-fade-in"
@@ -88,6 +91,25 @@ const Testimonials = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Show More/Less Button */}
+        <div className="flex justify-center mt-8">
+          <Button
+            variant="outline"
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="gap-2"
+          >
+            {isExpanded ? (
+              <>
+                Show Less <ChevronUp className="h-4 w-4" />
+              </>
+            ) : (
+              <>
+                Show All ({testimonials.length}) <ChevronDown className="h-4 w-4" />
+              </>
+            )}
+          </Button>
         </div>
       </div>
     </section>
