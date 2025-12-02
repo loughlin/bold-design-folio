@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
@@ -31,15 +32,15 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <button
-            onClick={() => scrollToSection("hero")}
+          <Link
+            to="/"
             className="flex items-center gap-3 hover:opacity-80 transition-opacity"
           >
             <div className="text-xl font-serif font-bold border-2 border-foreground px-3 py-1 rounded-lg">
               JL
             </div>
             <span className="text-2xl font-serif font-bold">James Loughlin</span>
-          </button>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
@@ -61,12 +62,12 @@ const Navigation = () => {
             >
               UX Approach
             </button>
-            <button
-              onClick={() => scrollToSection("about")}
+            <Link
+              to="/about"
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               About Me
-            </button>
+            </Link>
             <Button
               onClick={() => scrollToSection("contact")}
               className="bg-primary hover:bg-primary/90"
@@ -105,12 +106,13 @@ const Navigation = () => {
             >
               UX Approach
             </button>
-            <button
-              onClick={() => scrollToSection("about")}
+            <Link
+              to="/about"
               className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               About Me
-            </button>
+            </Link>
             <Button
               onClick={() => scrollToSection("contact")}
               className="w-full bg-primary hover:bg-primary/90"
