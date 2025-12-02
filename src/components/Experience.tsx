@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Building2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
 
 const Experience = () => {
   const experiences = [
@@ -79,22 +80,15 @@ const Experience = () => {
           ))}
         </div>
 
-        {/* Education Card */}
-        <Card className="mt-12 hover-lift animate-fade-in" style={{ animationDelay: "0.5s" }}>
-          <CardContent className="p-8">
-            <div className="flex items-start gap-4">
-              <Building2 className="w-10 h-10 text-primary flex-shrink-0" />
-              <div>
-                <h3 className="text-2xl font-bold mb-2">Education</h3>
-                <p className="text-lg font-semibold">University of Iowa</p>
-                <p className="text-muted-foreground">
-                  Bachelor of Arts in Journalism • Bachelor of Science in Computer Informatics
-                </p>
-                <p className="text-sm text-muted-foreground mt-1">May 2010</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+        {/* Download Resume Button */}
+        <div className="mt-12 text-center animate-fade-in" style={{ animationDelay: "0.5s" }}>
+          <a href="/James_Loughlin_CV_2025v3.pdf" download>
+            <Button size="lg" variant="outline" className="gap-2">
+              <Download className="h-5 w-5" />
+              Download Resume
+            </Button>
+          </a>
+        </div>
       </div>
     </section>
   );
