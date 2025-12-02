@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 const FeaturedCaseStudy = () => {
   return (
-    <section className="py-24 px-6">
+    <section className="py-16 px-6">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Image */}

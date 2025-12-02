@@ -48,7 +48,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-24 px-6 overflow-hidden">
+    <section className="py-16 px-6 overflow-hidden">
       <div className="container mx-auto">
         {/* Section Header */}
         <div className="mb-16 space-y-4 animate-fade-in">
