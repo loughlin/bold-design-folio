@@ -48,10 +48,10 @@ const FeaturedWork = () => {
           </div>
         </div>
 
-        {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        {/* Two Project Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           {/* Large Project Card */}
-          <Card className="md:col-span-2 lg:col-span-2 group overflow-hidden hover-lift animate-fade-in">
+          <Card className="group overflow-hidden hover-lift animate-fade-in">
             <div className="relative h-96 overflow-hidden">
               <img
                 src={projects[0].image}
@@ -86,51 +86,7 @@ const FeaturedWork = () => {
                 <p className="text-sm mb-3 text-background/90">{projects[1].description}</p>
                 <Link to={projects[1].link}>
                   <Button size="sm" variant="secondary" className="group/btn">
-                    View
-                    <ArrowRight className="ml-2 h-3 w-3 transition-transform group-hover/btn:translate-x-1" />
-                  </Button>
-                </Link>
-              </CardContent>
-            </div>
-          </Card>
-
-          {/* Medium Project Card */}
-          <Card className="group overflow-hidden hover-lift animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <div className="relative h-96 overflow-hidden">
-              <img
-                src={projects[2].image}
-                alt={projects[2].title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/50 to-transparent" />
-              <CardContent className="absolute bottom-0 left-0 right-0 p-6 text-background">
-                <h3 className="text-2xl font-bold mb-2">{projects[2].title}</h3>
-                <p className="text-sm mb-3 text-background/90">{projects[2].description}</p>
-                <Link to={projects[2].link}>
-                  <Button size="sm" variant="secondary" className="group/btn">
-                    View
-                    <ArrowRight className="ml-2 h-3 w-3 transition-transform group-hover/btn:translate-x-1" />
-                  </Button>
-                </Link>
-              </CardContent>
-            </div>
-          </Card>
-
-          {/* Small Project Card */}
-          <Card className="md:col-span-2 group overflow-hidden hover-lift animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            <div className="relative h-64 overflow-hidden">
-              <img
-                src={projects[3].image}
-                alt={projects[3].title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/50 to-transparent" />
-              <CardContent className="absolute bottom-0 left-0 right-0 p-6 text-background">
-                <h3 className="text-2xl font-bold mb-2">{projects[3].title}</h3>
-                <p className="text-sm mb-3 text-background/90">{projects[3].description}</p>
-                <Link to={projects[3].link}>
-                  <Button size="sm" variant="secondary" className="group/btn">
-                    View
+                    View Case Study
                     <ArrowRight className="ml-2 h-3 w-3 transition-transform group-hover/btn:translate-x-1" />
                   </Button>
                 </Link>
@@ -140,11 +96,13 @@ const FeaturedWork = () => {
         </div>
 
         {/* CTA Button */}
-        <div className="text-center animate-fade-in" style={{ animationDelay: "0.4s" }}>
-          <Button size="lg" className="bg-primary hover:bg-primary/90">
-            See All Projects
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+        <div className="text-center animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <Link to="/projects">
+            <Button size="lg" className="bg-primary hover:bg-primary/90">
+              See All Projects
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

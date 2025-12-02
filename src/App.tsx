@@ -10,6 +10,7 @@ import DesignSystemCaseStudy from "./pages/DesignSystemCaseStudy";
 import WarfighterResearchCaseStudy from "./pages/WarfighterResearchCaseStudy";
 import CloudApplicationCaseStudy from "./pages/CloudApplicationCaseStudy";
 import DesignOpsCaseStudy from "./pages/DesignOpsCaseStudy";
+import Projects from "./pages/Projects";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<AboutMe />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/case-study/design-system" element={<DesignSystemCaseStudy />} />
           <Route path="/case-study/warfighter-research" element={<WarfighterResearchCaseStudy />} />
           <Route path="/case-study/cloud-application" element={<CloudApplicationCaseStudy />} />
