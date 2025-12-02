@@ -11,9 +11,6 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <h3 className="text-4xl font-serif font-bold">JL</h3>
-            <p className="text-background/80 text-sm">
-              Portfolio Design Lead building human-centered solutions for mission-critical systems.
-            </p>
             <div className="flex gap-4 pt-2">
               <a
                 href="mailto:jloughlin87@gmail.com"
