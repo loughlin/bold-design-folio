@@ -5,7 +5,6 @@ import Experience from "@/components/Experience";
 import FeaturedCaseStudy from "@/components/FeaturedCaseStudy";
 import Skills from "@/components/Skills";
 import Testimonials from "@/components/Testimonials";
-import About from "@/components/About";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -13,7 +12,6 @@ const Index = () => {
     <div className="min-h-screen">
       <Navigation />
       <Hero />
-      <About />
       <FeaturedWork />
       <Experience />
       <FeaturedCaseStudy />
