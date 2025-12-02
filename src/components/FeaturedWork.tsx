@@ -44,7 +44,7 @@ const FeaturedWork = () => {
             <div className="text-2xl font-serif font-bold border-2 border-foreground px-4 py-1 rounded-lg">
               JL
             </div>
-            <h2 className="text-5xl md:text-6xl font-bold">Featured Work</h2>
+            <h2 className="text-5xl md:text-6xl font-bold">Featured Projects</h2>
           </div>
           <p className="text-xl text-muted-foreground">
             Where research meets delivery
