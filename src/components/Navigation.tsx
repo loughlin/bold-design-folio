@@ -78,7 +78,7 @@ const Navigation = () => {
               About Me
             </Link>
             <Button
-              onClick={() => scrollToSection("contact")}
+              onClick={() => navigate("/about#contact")}
               className="bg-primary hover:bg-primary/90"
             >
               Let's Talk
@@ -123,7 +123,10 @@ const Navigation = () => {
               About Me
             </Link>
             <Button
-              onClick={() => scrollToSection("contact")}
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                navigate("/about#contact");
+              }}
               className="w-full bg-primary hover:bg-primary/90"
             >
               Let's Talk
