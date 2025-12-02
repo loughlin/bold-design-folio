@@ -54,6 +54,9 @@ const Skills = () => {
     "ChatGPT",
     "Claude",
     "Material Design",
+    "Warp",
+    "Framer",
+    "Notion",
   ];
 
   return (
