@@ -10,7 +10,12 @@ const About = () => {
           {/* Left Column - Content */}
           <div className="space-y-8 animate-fade-in">
             <div>
-              <h2 className="text-5xl md:text-6xl font-bold mb-6">About</h2>
+              <div className="flex items-center gap-4 mb-6">
+                <div className="text-2xl font-serif font-bold border-2 border-foreground px-4 py-1 rounded-lg">
+                  JL
+                </div>
+                <h2 className="text-5xl md:text-6xl font-bold">About</h2>
+              </div>
               <div className="flex items-center gap-2 text-muted-foreground mb-8">
                 <MapPin className="w-5 h-5" />
                 <span>Cherokee, Iowa</span>
