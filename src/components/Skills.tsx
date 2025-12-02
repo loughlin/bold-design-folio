@@ -42,22 +42,6 @@ const Skills = () => {
     },
   ];
 
-  const tools = [
-    "Figma",
-    "Sketch",
-    "Miro",
-    "Lucid",
-    "Mural",
-    "Git",
-    "Adobe CC",
-    "Airtable",
-    "ChatGPT",
-    "Claude",
-    "Material Design",
-    "Warp",
-    "Framer",
-    "Notion",
-  ];
 
   return (
     <section id="approach" className="py-16 px-6 bg-muted/30">
@@ -100,22 +84,6 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Tools Section */}
-        <Card className="hover-lift animate-fade-in" style={{ animationDelay: "0.6s" }}>
-          <CardContent className="p-8">
-            <h3 className="text-2xl font-bold mb-6">Tools & Technologies</h3>
-            <div className="flex flex-wrap gap-3">
-              {tools.map((tool, index) => (
-                <span
-                  key={index}
-                  className="px-4 py-2 bg-background border border-border rounded-full text-sm font-medium hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all cursor-default"
-                >
-                  {tool}
-                </span>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
       </div>
     </section>
   );
