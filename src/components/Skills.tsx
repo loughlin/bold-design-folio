@@ -60,7 +60,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className="py-24 px-6 bg-muted/30">
+    <section id="approach" className="py-24 px-6 bg-muted/30">
       <div className="container mx-auto">
         {/* Section Header */}
         <div className="mb-16 space-y-4 animate-fade-in">
