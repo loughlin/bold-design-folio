@@ -20,27 +20,21 @@ const Hero = () => {
   ];
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center pt-20 pb-16 px-6">
+    <section id="hero" className="min-h-screen flex flex-col justify-center pt-20 pb-16 px-6">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Text Content */}
+        <div className="flex flex-col gap-12">
+          {/* Top - UX Design Leader Banner with JL Logo */}
           <div
-            className={`space-y-8 transition-all duration-1000 ${
+            className={`transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
-            <div className="inline-block">
+            <div className="flex items-center gap-6 mb-6">
               <span className="text-sm font-semibold tracking-wide uppercase text-muted-foreground">
                 UX Design Leader
               </span>
             </div>
-
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              Identify problems, build solutions with{" "}
-              <span className="text-gradient">human centered design.</span>
-            </h1>
-
-            <div className="flex items-center gap-4 pt-4">
+            <div className="flex items-center gap-4">
               <div className="text-4xl font-serif font-bold border-2 border-foreground px-6 py-2 rounded-lg hover:bg-foreground hover:text-background transition-all cursor-default">
                 JL
               </div>
@@ -51,7 +45,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Column - Animated Image Carousel */}
+          {/* Animated Image Carousel */}
           <div
             className={`transition-all duration-1000 delay-300 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -74,6 +68,18 @@ const Hero = () => {
                 ))}
               </div>
             </div>
+          </div>
+
+          {/* Text Content - Below Images */}
+          <div
+            className={`transition-all duration-1000 delay-500 ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            }`}
+          >
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight max-w-4xl">
+              Identify problems, build solutions with{" "}
+              <span className="text-gradient">human centered design.</span>
+            </h1>
           </div>
         </div>
       </div>

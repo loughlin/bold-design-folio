@@ -33,9 +33,12 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           <button
             onClick={() => scrollToSection("hero")}
-            className="text-2xl font-serif font-bold hover:opacity-80 transition-opacity"
+            className="flex items-center gap-3 hover:opacity-80 transition-opacity"
           >
-            James Loughlin
+            <div className="text-xl font-serif font-bold border-2 border-foreground px-3 py-1 rounded-lg">
+              JL
+            </div>
+            <span className="text-2xl font-serif font-bold">James Loughlin</span>
           </button>
 
           {/* Desktop Menu */}
