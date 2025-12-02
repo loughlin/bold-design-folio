@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <h3 className="text-4xl font-serif font-bold">JL</h3>
-            <div className="flex gap-4 pt-2">
+            <div className="flex flex-col gap-3 pt-2">
               <a
                 href="mailto:jloughlin87@gmail.com"
                 className="text-background/80 hover:text-background transition-colors"
