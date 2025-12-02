@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Linkedin, Mail, MapPin } from "lucide-react";
+import { Download, Linkedin, Mail, MapPin } from "lucide-react";
 
 const About = () => {
   return (
@@ -10,7 +10,7 @@ const About = () => {
           {/* Left Column - Content */}
           <div className="space-y-8 animate-fade-in">
             <div>
-              <h2 className="text-5xl md:text-6xl font-bold mb-6">Connect</h2>
+              <h2 className="text-5xl md:text-6xl font-bold mb-6">About</h2>
               <div className="flex items-center gap-2 text-muted-foreground mb-8">
                 <MapPin className="w-5 h-5" />
                 <span>Cherokee, Iowa</span>
@@ -42,6 +42,12 @@ const About = () => {
                 <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="mr-2 h-5 w-5" />
                   LinkedIn
+                </a>
+              </Button>
+              <Button size="lg" variant="outline" asChild>
+                <a href="/James_Loughlin_CV_2025v3.pdf" download>
+                  <Download className="mr-2 h-5 w-5" />
+                  Resume
                 </a>
               </Button>
             </div>
