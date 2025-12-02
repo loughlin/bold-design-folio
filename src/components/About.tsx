@@ -91,7 +91,7 @@ const About = () => {
               </CardContent>
             </Card>
 
-            <Card className="hover-lift bg-primary text-primary-foreground">
+            <Card id="contact" className="hover-lift bg-primary text-primary-foreground">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-2">Let's Talk!</h3>
                 <p className="mb-4 opacity-90">
