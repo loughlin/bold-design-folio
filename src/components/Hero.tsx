@@ -23,26 +23,15 @@ const Hero = () => {
     <section id="hero" className="min-h-screen flex flex-col justify-center pt-20 pb-16 px-6">
       <div className="container mx-auto">
         <div className="flex flex-col gap-12">
-          {/* Top - UX Design Leader Banner with JL Logo */}
+          {/* Top - UX Design Leader Banner */}
           <div
             className={`transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
-            <div className="flex items-center gap-6 mb-6">
-              <span className="text-sm font-semibold tracking-wide uppercase text-muted-foreground">
-                UX Design Leader
-              </span>
-            </div>
-            <div className="flex items-center gap-4">
-              <div className="text-4xl font-serif font-bold border-2 border-foreground px-6 py-2 rounded-lg hover:bg-foreground hover:text-background transition-all cursor-default">
-                JL
-              </div>
-              <div>
-                <p className="text-sm text-muted-foreground">Currently at</p>
-                <p className="font-semibold text-lg">Kessel Run | USAF</p>
-              </div>
-            </div>
+            <span className="text-sm font-semibold tracking-wide uppercase text-muted-foreground">
+              UX Design Leader
+            </span>
           </div>
 
           {/* Animated Image Carousel */}
