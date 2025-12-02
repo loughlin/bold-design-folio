@@ -44,6 +44,12 @@ const Navigation = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
             <button
+              onClick={() => scrollToSection("about")}
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
+              About
+            </button>
+            <button
               onClick={() => scrollToSection("work")}
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
@@ -60,12 +66,6 @@ const Navigation = () => {
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               Approach
-            </button>
-            <button
-              onClick={() => scrollToSection("about")}
-              className="text-foreground hover:text-primary transition-colors font-medium"
-            >
-              About
             </button>
             <Button
               onClick={() => scrollToSection("contact")}
@@ -88,6 +88,12 @@ const Navigation = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-4 animate-fade-in">
             <button
+              onClick={() => scrollToSection("about")}
+              className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
+            >
+              About
+            </button>
+            <button
               onClick={() => scrollToSection("work")}
               className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
             >
@@ -104,12 +110,6 @@ const Navigation = () => {
               className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
             >
               Approach
-            </button>
-            <button
-              onClick={() => scrollToSection("about")}
-              className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
-            >
-              About
             </button>
             <Button
               onClick={() => scrollToSection("contact")}
