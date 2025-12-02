@@ -66,15 +66,15 @@ const About = () => {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="text-primary text-2xl leading-none">→</span>
-                    <span className="text-muted-foreground">Advocating the value of design</span>
+                    <span className="text-muted-foreground">Advocating the value of design using honest communication</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary text-2xl leading-none">→</span>
-                    <span className="text-muted-foreground">Mentoring and developing designers</span>
+                    <span className="text-muted-foreground">Mentoring and developing designers using pragmatic partnerships</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary text-2xl leading-none">→</span>
-                    <span className="text-muted-foreground">Facilitating psychological safety</span>
+                    <span className="text-muted-foreground">Facilitating psychological safety to building relationships that help solve problems</span>
                   </li>
                 </ul>
               </CardContent>
