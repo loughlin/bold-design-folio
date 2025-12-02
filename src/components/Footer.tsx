@@ -52,7 +52,7 @@ const Footer = () => {
                 jloughlin87@gmail.com
               </a>
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/in/james-loughlin-11053853/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-background/80 hover:text-background transition-colors"
