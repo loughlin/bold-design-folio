@@ -4,7 +4,7 @@ import { Download, Linkedin, Mail, MapPin } from "lucide-react";
 
 const About = () => {
   return (
-    <section id="about" className="py-24 px-6 bg-muted/30">
+    <section id="about" className="py-16 px-6 bg-muted/30">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
