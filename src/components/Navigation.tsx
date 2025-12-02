@@ -56,6 +56,12 @@ const Navigation = () => {
               Experience
             </button>
             <button
+              onClick={() => scrollToSection("approach")}
+              className="text-foreground hover:text-primary transition-colors font-medium"
+            >
+              Approach
+            </button>
+            <button
               onClick={() => scrollToSection("about")}
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
@@ -92,6 +98,12 @@ const Navigation = () => {
               className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
             >
               Experience
+            </button>
+            <button
+              onClick={() => scrollToSection("approach")}
+              className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
+            >
+              Approach
             </button>
             <button
               onClick={() => scrollToSection("about")}
