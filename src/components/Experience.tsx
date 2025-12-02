@@ -44,9 +44,6 @@ const Experience = () => {
             </div>
             <h2 className="text-5xl md:text-6xl font-bold">Experience</h2>
           </div>
-          <p className="text-xl text-muted-foreground">
-            Building design culture in defense tech
-          </p>
         </div>
 
         {/* Experience Cards - Staggered Grid */}
