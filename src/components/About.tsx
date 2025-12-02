@@ -55,11 +55,7 @@ const About = () => {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="text-primary text-2xl leading-none">→</span>
-                    <span className="text-muted-foreground">Leading design across T&G portfolio</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary text-2xl leading-none">→</span>
-                    <span className="text-muted-foreground">Building design systems at scale</span>
+                    <span className="text-muted-foreground">Advocating the value of design</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary text-2xl leading-none">→</span>
