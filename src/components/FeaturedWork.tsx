@@ -46,9 +46,6 @@ const FeaturedWork = () => {
             </div>
             <h2 className="text-5xl md:text-6xl font-bold">Featured Projects</h2>
           </div>
-          <p className="text-xl text-muted-foreground">
-            Where research meets delivery
-          </p>
         </div>
 
         {/* Bento Grid */}
