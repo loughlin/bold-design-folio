@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Download, Linkedin, Mail, MapPin } from "lucide-react";
+import { Download, Linkedin, Mail } from "lucide-react";
 
 const About = () => {
   return (
@@ -14,11 +14,7 @@ const About = () => {
                 <div className="text-2xl font-serif font-bold border-2 border-foreground px-4 py-1 rounded-lg">
                   JL
                 </div>
-                <h2 className="text-5xl md:text-6xl font-bold">About</h2>
-              </div>
-              <div className="flex items-center gap-2 text-muted-foreground mb-8">
-                <MapPin className="w-5 h-5" />
-                <span>Cherokee, Iowa</span>
+              <h2 className="text-5xl md:text-6xl font-bold">About</h2>
               </div>
             </div>
 
