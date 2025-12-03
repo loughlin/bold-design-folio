@@ -27,9 +27,9 @@ const Experience = () => {
     },
     {
       company: "Lexmark Enterprise Software",
-      role: "Professional Services Consultant",
+      role: "Professional Services",
       period: "2014 - 2018",
-      description: "Led content team solution requirement gathering, design, and support. Professional coordination and delivery of ECM software.",
+      description: "Led content team solution requirement gathering, design, and support. Professional consultant coordination and delivery of ECM software.",
       icon: "🖨️",
     },
   ];
