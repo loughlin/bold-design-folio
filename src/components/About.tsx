@@ -70,7 +70,7 @@ const About = () => {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary text-2xl leading-none">→</span>
-                    <span className="text-muted-foreground">Facilitating psychological safety to building relationships that help solve problems</span>
+                    <span className="text-muted-foreground">Facilitating psychological safety to build relationships that help solve problems</span>
                   </li>
                 </ul>
               </CardContent>
@@ -91,7 +91,7 @@ const About = () => {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-2">Let's Talk!</h3>
                 <p className="mb-4 opacity-90">
-                  Interested in collaborating, speaking opportunities or just an introduction?
+                  Interested in collaborating, speaking opportunities, or just an introduction?
                 </p>
                 <p className="font-semibold">jloughlin87@gmail.com</p>
                 <p className="text-sm opacity-90 mt-1">712-229-3866</p>

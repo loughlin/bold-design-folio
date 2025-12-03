@@ -66,7 +66,7 @@ const Hero = () => {
             }`}
           >
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight max-w-4xl">
-              I like to bring human centered solutions to your{" "}
+              I like to bring human-centered solutions to your{" "}
               <span className="text-gradient">design problems.</span>
             </h1>
           </div>

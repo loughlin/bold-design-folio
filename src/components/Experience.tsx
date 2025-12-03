@@ -8,7 +8,7 @@ const Experience = () => {
       company: "Kessel Run | United States Air Force",
       role: "Portfolio Design Lead",
       period: "2022 - Present",
-      description: "Led product design strategy and execution for software suite containing five software applications and one hardware solution, supporting six critical operational missions across the United States Air Force. Directly mentored and led a team of six product designers while providing guidance and support for an additional ten design reports. Set design standards, practices and procedures while facilitating cross-functional collaboration between teams. Advocated for user-centered design practices across multiple product teams while championing design thinking and advocating psychological safety.",
+      description: "Led product design strategy and execution for software suite containing five software applications and one hardware solution, supporting six critical operational missions across the United States Air Force. Directly mentored and led a team of six product designers while providing guidance and support for an additional ten design reports. Set design standards, practices, and procedures while facilitating cross-functional collaboration between teams. Advocated for user-centered design practices across multiple product teams while championing design thinking and advocating psychological safety.",
       icon: "🇺🇸",
     },
     {
