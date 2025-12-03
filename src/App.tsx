@@ -10,6 +10,7 @@ import DesignSystemCaseStudy from "./pages/DesignSystemCaseStudy";
 import WarfighterResearchCaseStudy from "./pages/WarfighterResearchCaseStudy";
 import CloudApplicationCaseStudy from "./pages/CloudApplicationCaseStudy";
 import DesignOpsCaseStudy from "./pages/DesignOpsCaseStudy";
+import KesselRunCaseStudy from "./pages/KesselRunCaseStudy";
 import Projects from "./pages/Projects";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/case-study/warfighter-research" element={<WarfighterResearchCaseStudy />} />
           <Route path="/case-study/cloud-application" element={<CloudApplicationCaseStudy />} />
           <Route path="/case-study/designops" element={<DesignOpsCaseStudy />} />
+          <Route path="/case-study/kessel-run" element={<KesselRunCaseStudy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
