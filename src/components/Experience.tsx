@@ -39,11 +39,19 @@ const Experience = () => {
       <div className="container mx-auto">
         {/* Section Header */}
         <div className="mb-16 space-y-4 animate-fade-in">
-          <div className="flex items-center gap-4">
-            <div className="text-2xl font-serif font-bold border-2 border-foreground px-4 py-1 rounded-lg">
-              JL
+          <div className="flex items-center justify-between gap-4 flex-wrap">
+            <div className="flex items-center gap-4">
+              <div className="text-2xl font-serif font-bold border-2 border-foreground px-4 py-1 rounded-lg">
+                JL
+              </div>
+              <h2 className="text-5xl md:text-6xl font-bold">Experience</h2>
             </div>
-            <h2 className="text-5xl md:text-6xl font-bold">Experience</h2>
+            <a href="/James_Loughlin_CV_2025v3.pdf" download>
+              <Button variant="outline" className="gap-2">
+                <Download className="h-5 w-5" />
+                Download Resume
+              </Button>
+            </a>
           </div>
         </div>
 
@@ -80,15 +88,6 @@ const Experience = () => {
           ))}
         </div>
 
-        {/* Download Resume Button */}
-        <div className="mt-12 text-center animate-fade-in" style={{ animationDelay: "0.5s" }}>
-          <a href="/James_Loughlin_CV_2025v3.pdf" download>
-            <Button size="lg" variant="outline" className="gap-2">
-              <Download className="h-5 w-5" />
-              Download Resume
-            </Button>
-          </a>
-        </div>
       </div>
     </section>
   );
