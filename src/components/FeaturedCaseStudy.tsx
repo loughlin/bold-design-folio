@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const FeaturedCaseStudy = () => {
   return (
@@ -91,10 +92,12 @@ const FeaturedCaseStudy = () => {
               </ul>
             </div>
 
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
-              View Full Case Study
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            <Link to="/case-study/kessel-run">
+              <Button size="lg" className="bg-primary hover:bg-primary/90">
+                View Full Case Study
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
