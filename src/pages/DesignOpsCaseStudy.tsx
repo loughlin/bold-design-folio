@@ -12,6 +12,32 @@ const DesignOpsCaseStudy = () => {
       role="Portfolio Design Lead & DesignOps Lead"
       timeline="2022 - Present"
       team="Design team of 15+ designers across 6 operational missions"
+      designProcess={[
+        {
+          name: "Discover",
+          type: "divergent",
+          description: "Understanding team needs, career aspirations, and operational gaps.",
+          activities: ["1:1 interviews", "Team surveys", "Industry research", "Gap analysis"]
+        },
+        {
+          name: "Define",
+          type: "convergent",
+          description: "Establishing career frameworks and operational requirements.",
+          activities: ["Level definitions", "Competency mapping", "Process documentation", "Governance setup"]
+        },
+        {
+          name: "Develop",
+          type: "divergent",
+          description: "Creating rituals, documentation, and growth pathways for the team.",
+          activities: ["Ritual design", "Wiki creation", "Training materials", "Mentorship programs"]
+        },
+        {
+          name: "Deliver",
+          type: "convergent",
+          description: "Implementing frameworks and measuring team growth and satisfaction.",
+          activities: ["Framework rollout", "IDP creation", "Promotion cycles", "Satisfaction tracking"]
+        }
+      ]}
       research={{
         title: "Team Research & Assessment",
         content: [

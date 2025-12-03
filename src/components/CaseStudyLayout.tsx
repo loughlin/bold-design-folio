@@ -8,6 +8,13 @@ interface CaseStudySection {
   content: string | string[];
 }
 
+interface DesignProcessPhase {
+  name: string;
+  type: "divergent" | "convergent";
+  description: string;
+  activities: string[];
+}
+
 interface CaseStudyLayoutProps {
   title: string;
   subtitle: string;
@@ -18,6 +25,7 @@ interface CaseStudyLayoutProps {
   role: string;
   timeline: string;
   team: string;
+  designProcess?: DesignProcessPhase[];
   process: CaseStudySection[];
   research?: CaseStudySection;
   beforeAfter?: {
@@ -38,6 +46,7 @@ const CaseStudyLayout = ({
   role,
   timeline,
   team,
+  designProcess,
   process,
   research,
   beforeAfter,
@@ -119,6 +128,65 @@ const CaseStudyLayout = ({
           </Card>
         </div>
       </section>
+
+      {/* Design Process Methodology - Double Diamond */}
+      {designProcess && designProcess.length > 0 && (
+        <section className="py-16 px-6 bg-muted/30">
+          <div className="container mx-auto max-w-6xl space-y-8 animate-fade-in">
+            <div className="space-y-4">
+              <h2 className="text-3xl font-bold">Design Process Methodology</h2>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                The design process follows the Double Diamond framework, broken into four phases—two for divergent thinking (exploring possibilities) and two for convergent thinking (focusing on solutions).
+              </p>
+            </div>
+
+            {/* Double Diamond Visual */}
+            <div className="flex justify-center py-8">
+              <div className="flex items-center gap-0 max-w-4xl w-full">
+                {designProcess.map((phase, index) => (
+                  <div key={index} className="flex-1 text-center">
+                    <div 
+                      className={`h-24 flex items-center justify-center relative ${
+                        phase.type === "divergent" 
+                          ? "bg-gradient-to-r from-primary/20 to-primary/40" 
+                          : "bg-gradient-to-r from-primary/40 to-primary/20"
+                      } ${index === 0 ? "rounded-l-xl" : ""} ${index === designProcess.length - 1 ? "rounded-r-xl" : ""}`}
+                    >
+                      <span className="font-semibold text-foreground">{phase.name}</span>
+                    </div>
+                    <span className={`text-xs mt-2 block ${phase.type === "divergent" ? "text-primary" : "text-secondary"}`}>
+                      {phase.type === "divergent" ? "Divergent" : "Convergent"}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Phase Details */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {designProcess.map((phase, index) => (
+                <Card key={index} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                  <CardContent className="p-6 space-y-4">
+                    <div className="flex items-center gap-2">
+                      <span className={`w-3 h-3 rounded-full ${phase.type === "divergent" ? "bg-primary" : "bg-secondary"}`} />
+                      <h3 className="font-semibold text-lg">{phase.name}</h3>
+                    </div>
+                    <p className="text-sm text-muted-foreground">{phase.description}</p>
+                    <ul className="space-y-2">
+                      {phase.activities.map((activity, i) => (
+                        <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
+                          <span className="text-primary mt-1">•</span>
+                          {activity}
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Research Insights */}
       {research && (

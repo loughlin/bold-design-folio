@@ -95,6 +95,95 @@ const KesselRunCaseStudy = () => {
         </div>
       </section>
 
+      {/* Design Process Methodology */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-2xl font-bold mb-6">Design Process Methodology</h2>
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+            The design process follows the Double Diamond framework, broken into four phases—two for divergent thinking (exploring possibilities) and two for convergent thinking (focusing on solutions).
+          </p>
+
+          {/* Double Diamond Visual */}
+          <div className="flex justify-center py-8 mb-8">
+            <div className="flex items-center gap-0 max-w-full w-full">
+              {[
+                { name: "Discover", type: "divergent" },
+                { name: "Define", type: "convergent" },
+                { name: "Develop", type: "divergent" },
+                { name: "Deliver", type: "convergent" }
+              ].map((phase, index) => (
+                <div key={index} className="flex-1 text-center">
+                  <div 
+                    className={`h-20 flex items-center justify-center relative ${
+                      phase.type === "divergent" 
+                        ? "bg-gradient-to-r from-primary/20 to-primary/40" 
+                        : "bg-gradient-to-r from-primary/40 to-primary/20"
+                    } ${index === 0 ? "rounded-l-xl" : ""} ${index === 3 ? "rounded-r-xl" : ""}`}
+                  >
+                    <span className="font-semibold text-foreground text-sm md:text-base">{phase.name}</span>
+                  </div>
+                  <span className={`text-xs mt-2 block ${phase.type === "divergent" ? "text-primary" : "text-secondary"}`}>
+                    {phase.type === "divergent" ? "Divergent" : "Convergent"}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Phase Details */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-muted/30 rounded-xl p-6 space-y-3">
+              <div className="flex items-center gap-2">
+                <span className="w-3 h-3 rounded-full bg-primary" />
+                <h3 className="font-semibold">Discover</h3>
+              </div>
+              <p className="text-sm text-muted-foreground">Understanding user contexts and mission requirements through immersive research.</p>
+              <ul className="text-sm text-muted-foreground space-y-1">
+                <li className="flex items-start gap-2"><span className="text-primary">•</span>Contextual inquiries</li>
+                <li className="flex items-start gap-2"><span className="text-primary">•</span>Stakeholder interviews</li>
+                <li className="flex items-start gap-2"><span className="text-primary">•</span>Workflow observation</li>
+              </ul>
+            </div>
+            <div className="bg-muted/30 rounded-xl p-6 space-y-3">
+              <div className="flex items-center gap-2">
+                <span className="w-3 h-3 rounded-full bg-secondary" />
+                <h3 className="font-semibold">Define</h3>
+              </div>
+              <p className="text-sm text-muted-foreground">Synthesizing insights into clear problem definitions and design requirements.</p>
+              <ul className="text-sm text-muted-foreground space-y-1">
+                <li className="flex items-start gap-2"><span className="text-primary">•</span>Problem framing</li>
+                <li className="flex items-start gap-2"><span className="text-primary">•</span>Journey mapping</li>
+                <li className="flex items-start gap-2"><span className="text-primary">•</span>Requirements synthesis</li>
+              </ul>
+            </div>
+            <div className="bg-muted/30 rounded-xl p-6 space-y-3">
+              <div className="flex items-center gap-2">
+                <span className="w-3 h-3 rounded-full bg-primary" />
+                <h3 className="font-semibold">Develop</h3>
+              </div>
+              <p className="text-sm text-muted-foreground">Generating solutions through iterative design and cross-functional collaboration.</p>
+              <ul className="text-sm text-muted-foreground space-y-1">
+                <li className="flex items-start gap-2"><span className="text-primary">•</span>Concept ideation</li>
+                <li className="flex items-start gap-2"><span className="text-primary">•</span>Prototyping</li>
+                <li className="flex items-start gap-2"><span className="text-primary">•</span>Design critiques</li>
+              </ul>
+            </div>
+            <div className="bg-muted/30 rounded-xl p-6 space-y-3">
+              <div className="flex items-center gap-2">
+                <span className="w-3 h-3 rounded-full bg-secondary" />
+                <h3 className="font-semibold">Deliver</h3>
+              </div>
+              <p className="text-sm text-muted-foreground">Refining and implementing validated solutions for mission-critical operations.</p>
+              <ul className="text-sm text-muted-foreground space-y-1">
+                <li className="flex items-start gap-2"><span className="text-primary">•</span>Usability testing</li>
+                <li className="flex items-start gap-2"><span className="text-primary">•</span>Design handoff</li>
+                <li className="flex items-start gap-2"><span className="text-primary">•</span>Continuous iteration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Stats Grid */}
       <section className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto max-w-4xl">

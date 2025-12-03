@@ -12,6 +12,32 @@ const WarfighterResearchCaseStudy = () => {
       role="Lead UX Researcher & Product Designer"
       timeline="2020 - Present (Ongoing)"
       team="Research team of 2 designers, collaborated with 8 product teams"
+      designProcess={[
+        {
+          name: "Discover",
+          type: "divergent",
+          description: "Understanding user contexts, workflows, and pain points through immersive research.",
+          activities: ["Contextual inquiries", "Field studies", "Stakeholder interviews", "Shadowing sessions"]
+        },
+        {
+          name: "Define",
+          type: "convergent",
+          description: "Synthesizing research into actionable insights and clear problem definitions.",
+          activities: ["Affinity mapping", "Journey mapping", "Persona creation", "Problem framing"]
+        },
+        {
+          name: "Develop",
+          type: "divergent",
+          description: "Generating and testing multiple solutions through iterative prototyping.",
+          activities: ["Concept ideation", "Prototype testing", "A/B comparisons", "Card sorting"]
+        },
+        {
+          name: "Deliver",
+          type: "convergent",
+          description: "Refining and communicating validated solutions for implementation.",
+          activities: ["Research reports", "Design recommendations", "Insight libraries", "Team readouts"]
+        }
+      ]}
       research={{
         title: "Research Methodology",
         content: [
