@@ -26,9 +26,9 @@ const KesselRunCaseStudy = () => {
             Developing a design practice for mission-critical USAF applications
           </p>
           <div className="flex flex-wrap gap-4 text-sm text-muted-foreground animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <span>2019 - Present</span>
+            <span>2022-2025</span>
             <span>•</span>
-            <span>Portfolio Design Lead</span>
+            <span>UX & Product Lead</span>
           </div>
         </div>
       </section>
