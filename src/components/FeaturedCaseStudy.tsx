@@ -28,7 +28,7 @@ const FeaturedCaseStudy = () => {
               <span className="inline-block text-sm font-semibold tracking-wide uppercase text-primary mb-4">
                 Featured Case Study
               </span>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 whitespace-nowrap">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Leading Design at Kessel Run
               </h2>
             </div>
