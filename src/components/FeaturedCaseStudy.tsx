@@ -28,13 +28,13 @@ const FeaturedCaseStudy = () => {
               <span className="inline-block text-sm font-semibold tracking-wide uppercase text-primary mb-4">
                 Featured Case Study
               </span>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 whitespace-nowrap">
                 Leading Design at Kessel Run
               </h2>
             </div>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Led design for enterprise B2B cloud-native applications supporting user 
+              Led design for enterprise cloud-native applications supporting user 
               operations across the United States Air Force. Managed design research, 
               facilitated team rituals, and established design systems to increase consistency 
               across the USAF application suite.
@@ -57,6 +57,16 @@ const FeaturedCaseStudy = () => {
                 <p className="text-3xl font-bold text-secondary">100%</p>
                 <p className="text-sm text-muted-foreground">Mission Focused</p>
               </div>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold">Overview</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                I helped build, maintain and connect five independent applications within the problem space of targeting and geo-intelligence. Pushing for design excellence and the end goal of accessible intelligence worldwide on classified networks.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Throughout, I helped transform outdated services into useful and pleasant to engage with products. As of today the products I've contributed to and led the design initiatives on are accessed by users daily and generate thousands of active intelligence inputs for the United States Air Force.
+              </p>
             </div>
 
             <div className="space-y-4">
