@@ -12,6 +12,32 @@ const DesignSystemCaseStudy = () => {
       role="Portfolio Design Lead & Design Systems Lead"
       timeline="2022 - Present (Ongoing)"
       team="Cross-functional team of 15+ designers, developers, and product managers across 6 missions"
+      designProcess={[
+        {
+          name: "Discover",
+          type: "divergent",
+          description: "Auditing existing patterns and understanding team pain points across applications.",
+          activities: ["Component audits", "Team interviews", "Usage analysis", "Accessibility reviews"]
+        },
+        {
+          name: "Define",
+          type: "convergent",
+          description: "Establishing principles, tokens, and governance for the design system.",
+          activities: ["Design principles", "Token definitions", "Governance models", "Priority setting"]
+        },
+        {
+          name: "Develop",
+          type: "divergent",
+          description: "Building and iterating on components with cross-functional collaboration.",
+          activities: ["Component design", "Figma library", "React development", "Documentation"]
+        },
+        {
+          name: "Deliver",
+          type: "convergent",
+          description: "Rolling out the system and supporting team adoption across missions.",
+          activities: ["Migration guides", "Training sessions", "Office hours", "Adoption tracking"]
+        }
+      ]}
       research={{
         title: "Research & Discovery Insights",
         content: [

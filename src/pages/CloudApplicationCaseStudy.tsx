@@ -12,6 +12,32 @@ const CloudApplicationCaseStudy = () => {
       role="Product Designer & Design Lead"
       timeline="2019 - Present"
       team="Cross-functional teams including designers, engineers, product managers, and military stakeholders"
+      designProcess={[
+        {
+          name: "Discover",
+          type: "divergent",
+          description: "Shadowing users and mapping existing workflows in operational environments.",
+          activities: ["Contextual inquiry", "Workflow mapping", "Persona development", "Technical discovery"]
+        },
+        {
+          name: "Define",
+          type: "convergent",
+          description: "Organizing complex data and defining clear information architecture.",
+          activities: ["IA design", "Role-based access", "Data hierarchy", "Requirements definition"]
+        },
+        {
+          name: "Develop",
+          type: "divergent",
+          description: "Designing responsive interfaces and data visualizations for complex workflows.",
+          activities: ["UI design", "Dashboard creation", "Form flows", "Collaboration features"]
+        },
+        {
+          name: "Deliver",
+          type: "convergent",
+          description: "Validating designs through testing and continuous improvement.",
+          activities: ["Usability testing", "Accessibility audits", "Performance testing", "User surveys"]
+        }
+      ]}
       research={{
         title: "User Research Insights",
         content: [
