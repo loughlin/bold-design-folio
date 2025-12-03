@@ -47,7 +47,7 @@ const Experience = () => {
               <h2 className="text-5xl md:text-6xl font-bold">Experience</h2>
             </div>
             <a href="/James_Loughlin_CV_2025v3.pdf" download>
-              <Button variant="outline" className="gap-2">
+              <Button className="gap-2">
                 <Download className="h-5 w-5" />
                 Download Resume
               </Button>
