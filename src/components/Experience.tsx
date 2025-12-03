@@ -6,9 +6,9 @@ const Experience = () => {
   const experiences = [
     {
       company: "Kessel Run | United States Air Force",
-      role: "Portfolio Design Lead, T&G",
+      role: "Portfolio Design Lead",
       period: "2022 - Present",
-      description: "Lead product design strategy and execution for the T&G portfolio, supporting six critical operational missions across the Air Force. Direct and mentor a team of 6 product designers while providing guidance and support to 12 additional design reports. Establish design standards, facilitate cross-functional collaboration, and drive user-centered design practices across multiple product teams. Champion design thinking and psychological safety within complex, mission-critical environments.",
+      description: "Led product design strategy and execution for software suite containing five software applications and one hardware solution, supporting six critical operational missions across the United States Air Force. Directly mentored and led a team of six product designers while providing guidance and support for an additional ten design reports. Set design standards, practices and procedures while facilitating cross-functional collaboration between teams. Advocated for user-centered design practices across multiple product teams while championing design thinking and advocating psychological safety.",
       icon: "🇺🇸",
     },
     {
