@@ -25,10 +25,10 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "T&G Portfolio Design System",
-      description: "Led design systems initiative across 6 operational missions, establishing consistency standards for USAF applications.",
-      image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop",
-      link: "/case-study/design-system",
+      title: "Leading Design at Kessel Run",
+      description: "Led product design strategy and execution for a software suite supporting six critical operational missions across the United States Air Force.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      link: "/case-study/kessel-run",
     },
     {
       title: "User UX Research",
