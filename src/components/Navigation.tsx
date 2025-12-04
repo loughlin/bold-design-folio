@@ -74,6 +74,7 @@ const Navigation = () => {
             <Link
               to="/about"
               className="text-foreground hover:text-primary transition-colors font-medium"
+              onClick={() => window.scrollTo(0, 0)}
             >
               About Me
             </Link>
@@ -118,7 +119,10 @@ const Navigation = () => {
             <Link
               to="/about"
               className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
-              onClick={() => setIsMobileMenuOpen(false)}
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                window.scrollTo(0, 0);
+              }}
             >
               About Me
             </Link>
