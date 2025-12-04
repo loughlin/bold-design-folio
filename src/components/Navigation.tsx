@@ -71,13 +71,15 @@ const Navigation = () => {
             >
               UX Approach
             </button>
-            <Link
-              to="/about"
+            <button
+              onClick={() => {
+                navigate("/about");
+                setTimeout(() => window.scrollTo({ top: 0, behavior: 'instant' }), 0);
+              }}
               className="text-foreground hover:text-primary transition-colors font-medium"
-              onClick={() => window.scrollTo(0, 0)}
             >
               About Me
-            </Link>
+            </button>
             <Button
               onClick={() => navigate("/about#contact")}
               className="bg-primary hover:bg-primary/90"
@@ -116,16 +118,16 @@ const Navigation = () => {
             >
               UX Approach
             </button>
-            <Link
-              to="/about"
-              className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
+            <button
               onClick={() => {
                 setIsMobileMenuOpen(false);
-                window.scrollTo(0, 0);
+                navigate("/about");
+                setTimeout(() => window.scrollTo({ top: 0, behavior: 'instant' }), 0);
               }}
+              className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
             >
               About Me
-            </Link>
+            </button>
             <Button
               onClick={() => {
                 setIsMobileMenuOpen(false);
