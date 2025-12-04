@@ -2,6 +2,11 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import kesselRunCaoc from "@/assets/kessel-run-caoc.jpg";
+import kesselRunHq from "@/assets/kessel-run-hq.jpg";
+import kesselRunCaoc2021 from "@/assets/kessel-run-caoc-2021.jpg";
+import kesselRunCaoc2003 from "@/assets/kessel-run-caoc-2003.jpg";
+import kesselRunLeadership from "@/assets/kessel-run-leadership.jpg";
 
 const KesselRunCaseStudy = () => {
   return (
@@ -38,8 +43,8 @@ const KesselRunCaseStudy = () => {
         <div className="container mx-auto max-w-5xl">
           <div className="rounded-2xl overflow-hidden shadow-2xl animate-fade-in" style={{ animationDelay: "0.3s" }}>
             <img
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1400&h=700&fit=crop"
-              alt="Kessel Run Design Work"
+              src={kesselRunCaoc}
+              alt="Combined Air Operations Center at Al Udeid Air Base, Qatar"
               className="w-full h-auto"
             />
           </div>
@@ -66,13 +71,13 @@ const KesselRunCaseStudy = () => {
         <div className="container mx-auto max-w-4xl">
           <div className="rounded-xl overflow-hidden shadow-lg">
             <img
-              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop"
-              alt="Application dashboard design"
+              src={kesselRunCaoc2021}
+              alt="U.S. Central Command's Combined Air Operations Center at Al Udeid Air Base"
               className="w-full h-auto"
             />
           </div>
           <p className="text-sm text-muted-foreground text-center mt-4 italic">
-            Designing intuitive interfaces for complex intelligence workflows
+            Combined Air Operations Center operations and intelligence workflows
           </p>
         </div>
       </section>
@@ -215,25 +220,25 @@ const KesselRunCaseStudy = () => {
             <div>
               <div className="rounded-xl overflow-hidden shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop"
-                  alt="Team collaboration"
+                  src={kesselRunHq}
+                  alt="Col. Richard Lopez briefs at Kessel Run headquarters in Boston"
                   className="w-full h-auto"
                 />
               </div>
               <p className="text-sm text-muted-foreground text-center mt-4 italic">
-                Facilitating design critiques and team collaboration
+                Kessel Run headquarters in Boston, Massachusetts
               </p>
             </div>
             <div>
               <div className="rounded-xl overflow-hidden shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&h=400&fit=crop"
-                  alt="Design process"
+                  src={kesselRunLeadership}
+                  alt="Air Forces Central leadership"
                   className="w-full h-auto"
                 />
               </div>
               <p className="text-sm text-muted-foreground text-center mt-4 italic">
-                Establishing design processes and standards
+                Cross-functional collaboration with Air Force leadership
               </p>
             </div>
           </div>
@@ -288,13 +293,13 @@ const KesselRunCaseStudy = () => {
         <div className="container mx-auto max-w-5xl">
           <div className="rounded-xl overflow-hidden shadow-lg">
             <img
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1400&h=500&fit=crop"
-              alt="Design system components"
+              src={kesselRunCaoc2003}
+              alt="Combined Air Operations Center at Prince Sultan Air Base, Saudi Arabia"
               className="w-full h-auto"
             />
           </div>
           <p className="text-sm text-muted-foreground text-center mt-4 italic">
-            Building consistency across the USAF application suite through design systems
+            Air Force command and control operations supporting mission-critical software
           </p>
         </div>
       </section>
