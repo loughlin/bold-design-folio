@@ -1,11 +1,14 @@
 import CaseStudyLayout from "@/components/CaseStudyLayout";
+import teamWorkingTogether from "@/assets/team-working-together.jpg";
+import officeCollaboration from "@/assets/office-collaboration.jpg";
+import uxDesignProcess from "@/assets/ux-design-process.jpg";
 
 const CloudApplicationCaseStudy = () => {
   return (
     <CaseStudyLayout
       title="Cloud-Native Application Suite"
       subtitle="Enterprise B2B applications supporting USAF critical operations"
-      heroImage="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&h=900&fit=crop"
+      heroImage={teamWorkingTogether}
       overview="Designed enterprise-grade cloud-native applications supporting critical operations across the United States Air Force. Led design for complex B2B workflows, data visualization, and multi-role access patterns serving thousands of active duty personnel. Focused on creating intuitive experiences for high-stakes, time-sensitive operational decisions."
       problem="USAF personnel were using legacy on-premises software that required extensive training, couldn't be accessed remotely, and lacked modern features like real-time collaboration and mobile access. The existing systems were siloed, creating data inconsistencies and forcing users to switch between multiple applications to complete routine tasks. This resulted in operational delays and increased risk of errors in time-critical situations."
       problemStatement="How might we modernize USAF operational software to provide intuitive, cloud-based tools that support users' workflows while meeting stringent security, reliability, and compliance requirements?"
@@ -88,11 +91,11 @@ const CloudApplicationCaseStudy = () => {
       ]}
       beforeAfter={{
         before: {
-          image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
+          image: officeCollaboration,
           caption: "Legacy desktop-only systems with complex interfaces requiring weeks of training"
         },
         after: {
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+          image: uxDesignProcess,
           caption: "Modern cloud-native interface with intuitive workflows and mobile accessibility"
         }
       }}
@@ -107,11 +110,11 @@ const CloudApplicationCaseStudy = () => {
       ]}
       images={[
         {
-          url: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&h=900&fit=crop",
+          url: teamWorkingTogether,
           caption: "Dashboard view showing real-time operational metrics and mission-critical data"
         },
         {
-          url: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1600&h=900&fit=crop",
+          url: uxDesignProcess,
           caption: "Mobile-responsive interface enabling access to critical systems from any device"
         }
       ]}

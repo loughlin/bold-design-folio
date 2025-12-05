@@ -1,11 +1,14 @@
 import CaseStudyLayout from "@/components/CaseStudyLayout";
+import teamWhiteboardPlanning from "@/assets/team-whiteboard-planning.jpg";
+import teamCollaborationMeeting from "@/assets/team-collaboration-meeting.jpg";
+import designThinkingWorkshop from "@/assets/design-thinking-workshop.jpg";
 
 const DesignSystemCaseStudy = () => {
   return (
     <CaseStudyLayout
       title="T&G Portfolio Design System"
       subtitle="Establishing design consistency across 6 USAF operational missions"
-      heroImage="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1600&h=900&fit=crop"
+      heroImage={teamWhiteboardPlanning}
       overview="Led the development and implementation of a comprehensive design system for the T&G Portfolio at Kessel Run, establishing design standards and component libraries across six critical USAF operational missions. This initiative improved design velocity, ensured visual consistency, and reduced technical debt across multiple product teams."
       problem="The T&G Portfolio consisted of six distinct applications serving different USAF missions, each developed by separate product teams. Without unified design standards, teams were creating duplicate components, using inconsistent patterns, and spending significant time on basic UI decisions. This fragmentation led to poor user experience across applications, increased maintenance costs, and made it difficult for users who worked across multiple systems."
       problemStatement="How might we create a scalable design system that empowers multiple product teams to build consistent, accessible interfaces quickly while maintaining flexibility for mission-specific requirements?"
@@ -88,11 +91,11 @@ const DesignSystemCaseStudy = () => {
       ]}
       beforeAfter={{
         before: {
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+          image: teamCollaborationMeeting,
           caption: "Inconsistent UI patterns across applications with duplicate components and varying interactions"
         },
         after: {
-          image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop",
+          image: designThinkingWorkshop,
           caption: "Unified design system with consistent components, improved accessibility, and documented patterns"
         }
       }}
@@ -106,11 +109,11 @@ const DesignSystemCaseStudy = () => {
       ]}
       images={[
         {
-          url: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=1600&h=900&fit=crop",
+          url: teamWhiteboardPlanning,
           caption: "Design system component library in Figma showing button variants and states"
         },
         {
-          url: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1600&h=900&fit=crop",
+          url: designThinkingWorkshop,
           caption: "Storybook documentation with live code examples and accessibility guidelines"
         }
       ]}
