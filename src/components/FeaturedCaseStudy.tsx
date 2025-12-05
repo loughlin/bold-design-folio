@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import agileTeamStandup from "@/assets/agile-team-standup.jpg";
 
 const FeaturedCaseStudy = () => {
   return (
@@ -11,7 +12,7 @@ const FeaturedCaseStudy = () => {
           <div className="relative animate-fade-in">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&h=800&fit=crop"
+                src={agileTeamStandup}
                 alt="Kessel Run Design Work"
                 className="w-full h-auto"
               />

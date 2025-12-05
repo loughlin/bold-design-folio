@@ -7,6 +7,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import airForceCommandCenter from "@/assets/air-force-command-center.jpg";
+import uxUserResearch from "@/assets/ux-user-research.jpg";
+import cloudApplicationDashboard from "@/assets/cloud-application-dashboard.jpg";
+import designCareerFramework from "@/assets/design-career-framework.jpg";
 
 const Projects = () => {
   const location = useLocation();
@@ -27,25 +31,25 @@ const Projects = () => {
     {
       title: "Leading Design at Kessel Run",
       description: "Led product design strategy and execution for a software suite supporting six critical operational missions across the United States Air Force.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      image: airForceCommandCenter,
       link: "/case-study/kessel-run",
     },
     {
       title: "User UX Research",
       description: "Conducted qualitative user research with users to de-risk product ideas and validate designs.",
-      image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop",
+      image: uxUserResearch,
       link: "/case-study/warfighter-research",
     },
     {
       title: "Cloud-Native Application Suite",
       description: "Designed enterprise B2B applications supporting critical operations across the United States Air Force.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+      image: cloudApplicationDashboard,
       link: "/case-study/cloud-application",
     },
     {
       title: "DesignOps & Career Ladders",
       description: "Established design career frameworks and operational processes supporting 15+ designers.",
-      image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=500&h=400&fit=crop",
+      image: designCareerFramework,
       link: "/case-study/designops",
     },
   ];

@@ -2,34 +2,38 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import designSystemComponents from "@/assets/design-system-components.jpg";
+import uxUserResearch from "@/assets/ux-user-research.jpg";
+import cloudApplicationDashboard from "@/assets/cloud-application-dashboard.jpg";
+import designCareerFramework from "@/assets/design-career-framework.jpg";
 
 const FeaturedWork = () => {
   const projects = [
     {
       title: "T&G Portfolio Design System",
       description: "Led design systems initiative across 6 operational missions, establishing consistency standards for USAF applications.",
-      image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop",
+      image: designSystemComponents,
       size: "large",
       link: "/case-study/design-system",
     },
     {
       title: "User UX Research",
       description: "Conducted qualitative user research with users to de-risk product ideas and validate designs.",
-      image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop",
+      image: uxUserResearch,
       size: "medium",
       link: "/case-study/warfighter-research",
     },
     {
       title: "Cloud-Native Application Suite",
       description: "Designed enterprise B2B applications supporting critical operations across the United States Air Force.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+      image: cloudApplicationDashboard,
       size: "medium",
       link: "/case-study/cloud-application",
     },
     {
       title: "DesignOps & Career Ladders",
       description: "Established design career frameworks and operational processes supporting 15+ designers.",
-      image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=500&h=400&fit=crop",
+      image: designCareerFramework,
       size: "small",
       link: "/case-study/designops",
     },

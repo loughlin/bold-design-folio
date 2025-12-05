@@ -1,4 +1,12 @@
 import { useEffect, useState } from "react";
+import uxWireframeSession from "@/assets/ux-wireframe-session.jpg";
+import uxUserResearch from "@/assets/ux-user-research.jpg";
+import designSystemComponents from "@/assets/design-system-components.jpg";
+import airForceCommandCenter from "@/assets/air-force-command-center.jpg";
+import agileTeamStandup from "@/assets/agile-team-standup.jpg";
+import cloudApplicationDashboard from "@/assets/cloud-application-dashboard.jpg";
+import uxPrototypeTesting from "@/assets/ux-prototype-testing.jpg";
+import designCareerFramework from "@/assets/design-career-framework.jpg";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -9,14 +17,14 @@ const Hero = () => {
 
   // Portfolio thumbnail images for carousel
   const carouselImages = [
-    "https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=300&fit=crop",
-    "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=300&fit=crop",
+    uxWireframeSession,
+    uxUserResearch,
+    designSystemComponents,
+    airForceCommandCenter,
+    agileTeamStandup,
+    cloudApplicationDashboard,
+    uxPrototypeTesting,
+    designCareerFramework,
   ];
 
   return (
