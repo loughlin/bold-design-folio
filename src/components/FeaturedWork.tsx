@@ -86,8 +86,8 @@ const FeaturedWork = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/50 to-transparent" />
               <CardContent className="absolute bottom-0 left-0 right-0 p-6 text-background">
-                <h3 className="text-2xl font-bold mb-2">{projects[1].title}</h3>
-                <p className="text-sm mb-3 text-background/90">{projects[1].description}</p>
+                <h3 className="text-2xl font-bold mb-3">{projects[1].title}</h3>
+                <p className="text-sm mb-4 text-background/90">{projects[1].description}</p>
                 <Link to={projects[1].link}>
                   <Button size="sm" variant="secondary" className="group/btn">
                     View Case Study
