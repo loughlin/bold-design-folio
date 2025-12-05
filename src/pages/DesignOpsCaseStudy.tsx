@@ -1,11 +1,14 @@
 import CaseStudyLayout from "@/components/CaseStudyLayout";
+import teamWhiteboardPlanning from "@/assets/team-whiteboard-planning.jpg";
+import teamStandupDiscussion from "@/assets/team-standup-discussion.jpg";
+import officeCollaboration from "@/assets/office-collaboration.jpg";
 
 const DesignOpsCaseStudy = () => {
   return (
     <CaseStudyLayout
       title="DesignOps & Career Ladders"
       subtitle="Building design culture and establishing career frameworks"
-      heroImage="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1600&h=900&fit=crop"
+      heroImage={teamStandupDiscussion}
       overview="Established design operations practices and career development frameworks supporting 15+ designers across the T&G Portfolio at Kessel Run. Created processes, rituals, and documentation enabling the design team to scale effectively while maintaining quality and fostering professional growth in a defense technology environment."
       problem="As the design team grew from 3 to 15+ designers, the lack of established processes and career frameworks created challenges. Designers had no clear growth paths, inconsistent feedback cycles, and unclear expectations for different experience levels. Without operational processes, work became siloed, knowledge wasn't shared effectively, and team members struggled to understand how to advance their careers."
       problemStatement="How might we establish design operations and career frameworks that enable designers to grow professionally, collaborate effectively, and deliver high-quality work at scale while maintaining psychological safety and team culture?"
@@ -92,11 +95,11 @@ const DesignOpsCaseStudy = () => {
       ]}
       beforeAfter={{
         before: {
-          image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop",
+          image: officeCollaboration,
           caption: "Ad-hoc processes with unclear growth paths and limited team collaboration"
         },
         after: {
-          image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop",
+          image: teamWhiteboardPlanning,
           caption: "Established design operations with clear career ladders and thriving team culture"
         }
       }}
@@ -112,11 +115,11 @@ const DesignOpsCaseStudy = () => {
       ]}
       images={[
         {
-          url: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1600&h=900&fit=crop",
+          url: teamWhiteboardPlanning,
           caption: "Design career framework documentation showing competencies and level expectations"
         },
         {
-          url: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1600&h=900&fit=crop",
+          url: teamStandupDiscussion,
           caption: "Weekly design critique session fostering collaboration and feedback culture"
         }
       ]}

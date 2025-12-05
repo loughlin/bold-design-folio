@@ -1,11 +1,14 @@
 import CaseStudyLayout from "@/components/CaseStudyLayout";
+import userResearchInterview from "@/assets/user-research-interview.jpg";
+import designThinkingWorkshop from "@/assets/design-thinking-workshop.jpg";
+import teamCollaborationMeeting from "@/assets/team-collaboration-meeting.jpg";
 
 const WarfighterResearchCaseStudy = () => {
   return (
     <CaseStudyLayout
       title="User UX Research"
       subtitle="De-risking product decisions through qualitative user research"
-      heroImage="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1600&h=900&fit=crop"
+      heroImage={userResearchInterview}
       overview="Led comprehensive user research initiatives with users across multiple USAF missions to validate product concepts, uncover user needs, and reduce risk before significant development investment. This research program established user-centered design practices within a traditionally engineering-focused environment."
       problem="Product teams were making critical design decisions based on stakeholder assumptions rather than actual user needs. This resulted in features being built that didn't align with user workflows, tools that required extensive post-launch rework, and poor adoption rates. Teams lacked direct access to end users and had no established research processes."
       problemStatement="How might we establish research practices that give product teams direct access to users' needs, validate design decisions early, and build empathy for users operating in high-stakes, mission-critical environments?"
@@ -88,11 +91,11 @@ const WarfighterResearchCaseStudy = () => {
       ]}
       beforeAfter={{
         before: {
-          image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop",
+          image: teamCollaborationMeeting,
           caption: "Design decisions based on assumptions with low user adoption and post-launch rework"
         },
         after: {
-          image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop",
+          image: designThinkingWorkshop,
           caption: "User-validated designs with high confidence, improved adoption, and measurable mission impact"
         }
       }}
@@ -106,11 +109,11 @@ const WarfighterResearchCaseStudy = () => {
       ]}
       images={[
         {
-          url: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1600&h=900&fit=crop",
+          url: userResearchInterview,
           caption: "Contextual inquiry session with users in operational environment"
         },
         {
-          url: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1600&h=900&fit=crop",
+          url: designThinkingWorkshop,
           caption: "Journey map documenting user workflows and pain points across systems"
         }
       ]}
