@@ -296,7 +296,7 @@ const CaseStudyLayout = ({
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-6xl text-center space-y-6 animate-fade-in">
           <h2 className="text-3xl font-bold">Interested in learning more?</h2>
-          <Link to="/#work">
+          <Link to="/#work" className="inline-block mt-4">
             <Button size="lg" className="bg-primary hover:bg-primary/90">
               View More Projects
             </Button>
