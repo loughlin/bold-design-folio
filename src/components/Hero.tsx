@@ -7,6 +7,8 @@ import agileTeamStandup from "@/assets/agile-team-standup.jpg";
 import cloudApplicationDashboard from "@/assets/cloud-application-dashboard.jpg";
 import uxPrototypeTesting from "@/assets/ux-prototype-testing.jpg";
 import designCareerFramework from "@/assets/design-career-framework.jpg";
+import uxWorkflowPlanning from "@/assets/ux-workflow-planning.jpg";
+import designSprintSession from "@/assets/design-sprint-session.jpg";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -25,6 +27,8 @@ const Hero = () => {
     cloudApplicationDashboard,
     uxPrototypeTesting,
     designCareerFramework,
+    uxWorkflowPlanning,
+    designSprintSession,
   ];
 
   return (
