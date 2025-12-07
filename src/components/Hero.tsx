@@ -9,6 +9,10 @@ import uxPrototypeTesting from "@/assets/ux-prototype-testing.jpg";
 import designCareerFramework from "@/assets/design-career-framework.jpg";
 import uxWorkflowPlanning from "@/assets/ux-workflow-planning.jpg";
 import designSprintSession from "@/assets/design-sprint-session.jpg";
+import uxSketchingIdeas from "@/assets/ux-sketching-ideas.jpg";
+import mobileUxDesign from "@/assets/mobile-ux-design.jpg";
+import designCollaboration from "@/assets/design-collaboration.jpg";
+import strategyPlanning from "@/assets/strategy-planning.jpg";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,6 +33,10 @@ const Hero = () => {
     designCareerFramework,
     uxWorkflowPlanning,
     designSprintSession,
+    uxSketchingIdeas,
+    mobileUxDesign,
+    designCollaboration,
+    strategyPlanning,
   ];
 
   return (
