@@ -17,7 +17,7 @@ const FeaturedWork = () => {
       link: "/case-study/design-system",
     },
     {
-      title: "User UX Research",
+      title: "Organizational Research Reboot",
       description: "Conducted qualitative user research with users to de-risk product ideas and validate designs.",
       image: uxUserResearch,
       size: "medium",
