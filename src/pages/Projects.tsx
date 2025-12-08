@@ -35,7 +35,7 @@ const Projects = () => {
       link: "/case-study/kessel-run",
     },
     {
-      title: "User UX Research",
+      title: "Organizational Research Reboot",
       description: "Conducted qualitative user research with users to de-risk product ideas and validate designs.",
       image: uxUserResearch,
       link: "/case-study/warfighter-research",

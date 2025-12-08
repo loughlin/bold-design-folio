@@ -6,7 +6,7 @@ import teamCollaborationMeeting from "@/assets/team-collaboration-meeting.jpg";
 const WarfighterResearchCaseStudy = () => {
   return (
     <CaseStudyLayout
-      title="User UX Research"
+      title="Organizational Research Reboot"
       subtitle="De-risking product decisions through qualitative user research"
       heroImage={userResearchInterview}
       overview="Led comprehensive user research initiatives with users across multiple USAF missions to validate product concepts, uncover user needs, and reduce risk before significant development investment. This research program established user-centered design practices within a traditionally engineering-focused environment."
