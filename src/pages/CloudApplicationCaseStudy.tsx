@@ -9,10 +9,10 @@ const CloudApplicationCaseStudy = () => {
       title="Cloud-Native Application Suite"
       subtitle="Applications supporting USAF critical global operations"
       heroImage={usafUxDesignSession}
-      overview="Designed enterprise-grade cloud-native applications supporting critical operations across the United States Air Force. Led design for complex B2B workflows, data visualization, and multi-role access patterns serving thousands of active duty personnel. Focused on creating intuitive experiences for high-stakes, time-sensitive operational decisions."
-      problem="USAF personnel were using legacy on-premises software that required extensive training, couldn't be accessed remotely, and lacked modern features like real-time collaboration and mobile access. The existing systems were siloed, creating data inconsistencies and forcing users to switch between multiple applications to complete routine tasks. This resulted in operational delays and increased risk of errors in time-critical situations."
+      overview="Designed enterprise-grade cloud-native applications supporting critical operations across the United States Air Force. Led design for complex workflows, data visualization, and multi-role access patterns serving thousands of active duty personnel. Focused on creating intuitive experiences for high-stakes, time-sensitive operational decisions."
+      problem="USAF personnel were using legacy on-premises software that required extensive training, couldn't be accessed remotely, and lacked modern features like real-time collaboration. The existing systems were siloed, creating data inconsistencies and forcing users to switch between multiple applications to complete routine tasks. This resulted in operational delays and increased risk of errors in time-critical situations."
       problemStatement="How might we modernize USAF operational software to provide intuitive, cloud-based tools that support users' workflows while meeting stringent security, reliability, and compliance requirements?"
-      role="Product Designer & Design Lead"
+      role="Product Designer + Design Lead"
       timeline="2019 - Present"
       team="Cross-functional teams including designers, engineers, product managers, and military stakeholders"
       designProcess={[
@@ -46,7 +46,7 @@ const CloudApplicationCaseStudy = () => {
         content: [
           "Shadowed 25+ users performing mission-critical tasks to understand workflows and decision-making processes",
           "Identified that users spent 40% of their time navigating between disconnected systems and manually reconciling data",
-          "Discovered users needed mobile access for on-call situations but existing systems only worked on desktop",
+          "Discovered users needed remote access for on-call situations but existing systems only worked on desktop",
           "Found that new personnel required 2-3 weeks of training to become proficient with legacy systems",
           "Learned that operational tempo demanded interfaces that supported rapid decision-making under pressure"
         ]
@@ -73,7 +73,7 @@ const CloudApplicationCaseStudy = () => {
         {
           title: "3. Interface Design",
           content: [
-            "Designed responsive layouts working seamlessly across desktop, tablet, and mobile devices",
+            "Designed responsive layouts working seamlessly across desktop and tablet devices",
             "Created data visualization dashboards highlighting critical metrics and trends",
             "Built complex form flows with smart defaults and validation reducing user errors",
             "Implemented real-time collaboration features allowing teams to work together on shared data"
@@ -115,7 +115,7 @@ const CloudApplicationCaseStudy = () => {
         },
         {
           url: uxDesignProcess,
-          caption: "Mobile-responsive interface enabling access to critical systems from any device"
+          caption: "Responsive interface enabling access to critical systems from any device"
         }
       ]}
     />
