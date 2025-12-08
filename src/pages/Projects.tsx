@@ -42,7 +42,7 @@ const Projects = () => {
     },
     {
       title: "Cloud-Native Application Suite",
-      description: "Designed enterprise B2B applications supporting critical operations across the United States Air Force.",
+      description: "Applications supporting USAF critical global operations.",
       image: cloudApplicationDashboard,
       link: "/case-study/cloud-application",
     },

@@ -1,5 +1,5 @@
 import CaseStudyLayout from "@/components/CaseStudyLayout";
-import teamWorkingTogether from "@/assets/team-working-together.jpg";
+import usafUxDesignSession from "@/assets/usaf-ux-design-session.jpg";
 import officeCollaboration from "@/assets/office-collaboration.jpg";
 import uxDesignProcess from "@/assets/ux-design-process.jpg";
 
@@ -7,8 +7,8 @@ const CloudApplicationCaseStudy = () => {
   return (
     <CaseStudyLayout
       title="Cloud-Native Application Suite"
-      subtitle="Enterprise B2B applications supporting USAF critical operations"
-      heroImage={teamWorkingTogether}
+      subtitle="Applications supporting USAF critical global operations"
+      heroImage={usafUxDesignSession}
       overview="Designed enterprise-grade cloud-native applications supporting critical operations across the United States Air Force. Led design for complex B2B workflows, data visualization, and multi-role access patterns serving thousands of active duty personnel. Focused on creating intuitive experiences for high-stakes, time-sensitive operational decisions."
       problem="USAF personnel were using legacy on-premises software that required extensive training, couldn't be accessed remotely, and lacked modern features like real-time collaboration and mobile access. The existing systems were siloed, creating data inconsistencies and forcing users to switch between multiple applications to complete routine tasks. This resulted in operational delays and increased risk of errors in time-critical situations."
       problemStatement="How might we modernize USAF operational software to provide intuitive, cloud-based tools that support users' workflows while meeting stringent security, reliability, and compliance requirements?"
@@ -110,7 +110,7 @@ const CloudApplicationCaseStudy = () => {
       ]}
       images={[
         {
-          url: teamWorkingTogether,
+          url: usafUxDesignSession,
           caption: "Dashboard view showing real-time operational metrics and mission-critical data"
         },
         {
