@@ -105,7 +105,7 @@ const KesselRunCaseStudy = () => {
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl font-bold mb-6">Design Process Methodology</h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            The design process follows the Double Diamond framework, broken into four phases—two for divergent thinking (exploring possibilities) and two for convergent thinking (focusing on solutions).
+            The design process follows the Double Diamond framework, broken into four phases: two for divergent thinking (exploring possibilities) and two for convergent thinking (focusing on solutions).
           </p>
 
           {/* Double Diamond Visual */}

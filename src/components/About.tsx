@@ -20,7 +20,7 @@ const About = () => {
 
             <div className="prose prose-lg">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm James Loughlin, a Design Leader and problem solver. I combine human-centered design with user empathy to build design culture and solve problems. I see design as imagining the best possible experience for someone and steadily moving toward it—rebuilding, refining, and reshaping until it finally feels inevitable.
+                I'm James Loughlin, a Design Leader and problem solver. I combine human-centered design with user empathy to build design culture and solve problems. I see design as imagining the best possible experience for someone and steadily moving toward it: rebuilding, refining, and reshaping until it finally feels inevitable.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed mt-6">
@@ -28,7 +28,7 @@ const About = () => {
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed mt-6">
-                My work sits at the intersection of craft, thinking, and empathy. And as a designer, I'll always stay hungry to learn, evolve, and create whatever comes next—something human, intentional, and unmistakably right.
+                My work sits at the intersection of craft, thinking, and empathy. And as a designer, I'll always stay hungry to learn, evolve, and create whatever comes next: something human, intentional, and unmistakably right.
               </p>
             </div>
 
@@ -80,7 +80,7 @@ const About = () => {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-4">Philosophy</h3>
                 <blockquote className="text-muted-foreground italic border-l-4 border-primary pl-4">
-                  "Design is not just about making things look good—it's about solving real 
+                  "Design is not just about making things look good. It's about solving real 
                   problems for real people, building systems that scale, and creating 
                   environments where teams can thrive."
                 </blockquote>
