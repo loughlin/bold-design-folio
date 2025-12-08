@@ -136,7 +136,7 @@ const CaseStudyLayout = ({
             <div className="space-y-4">
               <h2 className="text-3xl font-bold">Design Process Methodology</h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                The design process follows the Double Diamond framework, broken into four phases—two for divergent thinking (exploring possibilities) and two for convergent thinking (focusing on solutions).
+                The design process follows the Double Diamond framework, broken into four phases: two for divergent thinking (exploring possibilities) and two for convergent thinking (focusing on solutions).
               </p>
             </div>
 

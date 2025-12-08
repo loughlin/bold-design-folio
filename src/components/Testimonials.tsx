@@ -19,7 +19,7 @@ const Testimonials = () => {
       organization: "Kessel Run",
     },
     {
-      quote: "I had the opportunity to work with James when he was my manager at Kessel Run, and I saw firsthand his deep mastery of UX and Product Design. He has a rare ability to quickly spot strategic points of focus in complex, fast-moving environments. James is highly skilled at identifying and leveraging opportunities at every level—from individual professional development to improving project execution, guiding programs, and driving organizational change.",
+      quote: "I had the opportunity to work with James when he was my manager at Kessel Run, and I saw firsthand his deep mastery of UX and Product Design. He has a rare ability to quickly spot strategic points of focus in complex, fast-moving environments. James is highly skilled at identifying and leveraging opportunities at every level, from individual professional development to improving project execution, guiding programs, and driving organizational change.",
       author: "Michael W. Smith",
       role: "Research and Design for Complex Domains",
       organization: "Kessel Run",
