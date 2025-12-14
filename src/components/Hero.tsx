@@ -1,18 +1,4 @@
 import { useEffect, useState } from "react";
-import uxWireframeSession from "@/assets/ux-wireframe-session.jpg";
-import uxUserResearch from "@/assets/ux-user-research.jpg";
-import designSystemComponents from "@/assets/design-system-components.jpg";
-import airForceCommandCenter from "@/assets/air-force-command-center.jpg";
-import agileTeamStandup from "@/assets/agile-team-standup.jpg";
-import cloudApplicationDashboard from "@/assets/cloud-application-dashboard.jpg";
-import uxPrototypeTesting from "@/assets/ux-prototype-testing.jpg";
-import designCareerFramework from "@/assets/design-career-framework.jpg";
-import uxWorkflowPlanning from "@/assets/ux-workflow-planning.jpg";
-import designSprintSession from "@/assets/design-sprint-session.jpg";
-import uxSketchingIdeas from "@/assets/ux-sketching-ideas.jpg";
-import mobileUxDesign from "@/assets/mobile-ux-design.jpg";
-import designCollaboration from "@/assets/design-collaboration.jpg";
-import strategyPlanning from "@/assets/strategy-planning.jpg";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -20,24 +6,6 @@ const Hero = () => {
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
-  // Portfolio thumbnail images for carousel
-  const carouselImages = [
-    uxWireframeSession,
-    uxUserResearch,
-    designSystemComponents,
-    airForceCommandCenter,
-    agileTeamStandup,
-    cloudApplicationDashboard,
-    uxPrototypeTesting,
-    designCareerFramework,
-    uxWorkflowPlanning,
-    designSprintSession,
-    uxSketchingIdeas,
-    mobileUxDesign,
-    designCollaboration,
-    strategyPlanning,
-  ];
 
   return (
     <section id="hero" className="min-h-screen flex flex-col justify-center pt-20 pb-24 px-6">
@@ -54,34 +22,9 @@ const Hero = () => {
             </span>
           </div>
 
-          {/* Animated Image Carousel */}
+          {/* Text Content */}
           <div
             className={`transition-all duration-1000 delay-300 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
-          >
-            <div className="relative overflow-hidden rounded-2xl bg-muted/50 p-8">
-              <div className="flex gap-4 animate-scroll">
-                {/* Double the images for seamless loop */}
-                {[...carouselImages, ...carouselImages].map((img, idx) => (
-                  <div
-                    key={idx}
-                    className="flex-shrink-0 w-64 h-48 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform"
-                  >
-                    <img
-                      src={img}
-                      alt={`Portfolio thumbnail ${(idx % carouselImages.length) + 1}`}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Text Content - Below Images */}
-          <div
-            className={`transition-all duration-1000 delay-500 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
