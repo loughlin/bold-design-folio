@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import ProtectedLink from "@/components/ProtectedLink";
 import agileTeamStandup from "@/assets/agile-team-standup.jpg";
 
 const FeaturedCaseStudy = () => {
@@ -93,12 +93,12 @@ const FeaturedCaseStudy = () => {
               </ul>
             </div>
 
-            <Link to="/case-study/kessel-run" className="mt-4 inline-block">
+            <ProtectedLink to="/case-study/kessel-run" className="mt-4 inline-block">
               <Button size="lg" className="bg-primary hover:bg-primary/90 group/btn">
                 View Full Case Study
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover/btn:translate-x-1" />
               </Button>
-            </Link>
+            </ProtectedLink>
           </div>
         </div>
       </div>
