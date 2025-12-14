@@ -12,28 +12,34 @@ import CloudApplicationCaseStudy from "./pages/CloudApplicationCaseStudy";
 import DesignOpsCaseStudy from "./pages/DesignOpsCaseStudy";
 import KesselRunCaseStudy from "./pages/KesselRunCaseStudy";
 import Projects from "./pages/Projects";
+import { PasswordProvider } from "./contexts/PasswordContext";
+import PasswordDialog from "./components/PasswordDialog";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about" element={<AboutMe />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/case-study/design-system" element={<DesignSystemCaseStudy />} />
-          <Route path="/case-study/warfighter-research" element={<WarfighterResearchCaseStudy />} />
-          <Route path="/case-study/cloud-application" element={<CloudApplicationCaseStudy />} />
-          <Route path="/case-study/designops" element={<DesignOpsCaseStudy />} />
-          <Route path="/case-study/kessel-run" element={<KesselRunCaseStudy />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <PasswordProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <PasswordDialog />
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/about" element={<AboutMe />} />
+            <Route path="/projects" element={<ProtectedRoute><Projects /></ProtectedRoute>} />
+            <Route path="/case-study/design-system" element={<ProtectedRoute><DesignSystemCaseStudy /></ProtectedRoute>} />
+            <Route path="/case-study/warfighter-research" element={<ProtectedRoute><WarfighterResearchCaseStudy /></ProtectedRoute>} />
+            <Route path="/case-study/cloud-application" element={<ProtectedRoute><CloudApplicationCaseStudy /></ProtectedRoute>} />
+            <Route path="/case-study/designops" element={<ProtectedRoute><DesignOpsCaseStudy /></ProtectedRoute>} />
+            <Route path="/case-study/kessel-run" element={<ProtectedRoute><KesselRunCaseStudy /></ProtectedRoute>} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </PasswordProvider>
     </TooltipProvider>
   </QueryClientProvider>
 );
