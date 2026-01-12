@@ -4,10 +4,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="contact" className="bg-foreground text-background py-16 px-6">
+    <footer id="contact" className="bg-foreground text-background py-10 px-6">
       <div className="container mx-auto">
         {/* Main Footer Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
           {/* Brand */}
           <div className="space-y-4">
             <h3 className="text-4xl font-serif font-bold">JL</h3>

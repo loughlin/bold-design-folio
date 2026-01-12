@@ -51,10 +51,10 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-24 px-6 overflow-hidden">
+    <section className="py-12 px-6 overflow-hidden">
       <div className="container mx-auto">
         {/* Section Header */}
-        <div className="mb-16 space-y-4 animate-fade-in">
+        <div className="mb-10 space-y-3 animate-fade-in">
           <div className="flex items-center gap-4">
             <div className="text-2xl font-serif font-bold border-2 border-foreground px-4 py-1 rounded-lg">
               JL
@@ -67,7 +67,7 @@ const Testimonials = () => {
         </div>
 
         {/* Testimonials - Vertical Scroll */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {(isExpanded ? testimonials : testimonials.slice(0, 3)).map((testimonial, index) => (
             <Card
               key={index}
