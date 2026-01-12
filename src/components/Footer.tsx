@@ -76,9 +76,6 @@ const Footer = () => {
           <p className="text-background/60 text-sm">
             © {currentYear} James Loughlin. All rights reserved.
           </p>
-          <p className="text-background/60 text-sm">
-            Boston, MA
-          </p>
         </div>
       </div>
     </footer>
