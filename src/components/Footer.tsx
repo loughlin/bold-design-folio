@@ -77,7 +77,7 @@ const Footer = () => {
             © {currentYear} James Loughlin. All rights reserved.
           </p>
           <p className="text-background/60 text-sm">
-            Designed with ❤️ for users and mission success
+            Boston, MA
           </p>
         </div>
       </div>
