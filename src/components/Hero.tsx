@@ -8,7 +8,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="hero" className="flex flex-col justify-center pt-32 pb-16 px-6">
+    <section id="hero" className="flex flex-col justify-center pt-24 pb-10 px-6">
       <div className="container mx-auto">
         <div className="flex flex-col gap-12">
           {/* Top - UX Design Leader Banner */}

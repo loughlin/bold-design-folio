@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -86,6 +87,7 @@ const Navigation = () => {
             >
               Let's Talk
             </Button>
+            <ThemeToggle />
           </div>
 
           {/* Mobile Menu Button */}
