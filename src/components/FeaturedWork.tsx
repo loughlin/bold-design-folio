@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import ProtectedLink from "@/components/ProtectedLink";
 import designSystemComponents from "@/assets/design-system-components.jpg";
-import uxUserResearch from "@/assets/ux-user-research.jpg";
+import usafUserResearch from "@/assets/usaf-user-research.jpg";
 import cloudApplicationDashboard from "@/assets/cloud-application-dashboard.jpg";
 import designCareerFramework from "@/assets/design-career-framework.jpg";
 
@@ -19,7 +19,7 @@ const FeaturedWork = () => {
     {
       title: "Organizational Research Reboot",
       description: "Conducted qualitative user research with users to de-risk product ideas and validate designs.",
-      image: uxUserResearch,
+      image: usafUserResearch,
       size: "medium",
       link: "/case-study/warfighter-research",
     },
@@ -85,13 +85,13 @@ const FeaturedWork = () => {
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/50 to-transparent" />
-              <CardContent className="absolute bottom-0 left-0 right-0 p-6 text-background">
-                <h3 className="text-2xl font-bold mb-3">{projects[1].title}</h3>
-                <p className="text-sm mb-4 text-background/90">{projects[1].description}</p>
+              <CardContent className="absolute bottom-0 left-0 right-0 p-8 text-background">
+                <h3 className="text-3xl font-bold mb-3">{projects[1].title}</h3>
+                <p className="text-lg mb-4 text-background/90">{projects[1].description}</p>
                 <ProtectedLink to={projects[1].link}>
-                  <Button size="sm" variant="secondary" className="group/btn">
+                  <Button variant="secondary" className="group/btn">
                     View Case Study
-                    <ArrowRight className="ml-2 h-3 w-3 transition-transform group-hover/btn:translate-x-1" />
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
                   </Button>
                 </ProtectedLink>
               </CardContent>
