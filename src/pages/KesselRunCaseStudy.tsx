@@ -66,6 +66,40 @@ const KesselRunCaseStudy = () => {
         </div>
       </section>
 
+      {/* Problem Statement */}
+      <section className="py-16 px-6 bg-muted/30">
+        <div className="container mx-auto max-w-3xl">
+          <h2 className="text-2xl font-bold mb-6">Problem Statement</h2>
+          <div className="space-y-6">
+            <p className="text-xl font-medium italic text-foreground">
+              How might we unify fragmented design practices across multiple product teams to deliver consistent, mission-critical experiences while scaling a growing design organization?
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+              <div className="bg-background rounded-xl p-6 space-y-3">
+                <h3 className="font-semibold text-destructive">Before</h3>
+                <ul className="text-sm text-muted-foreground space-y-2">
+                  <li>• Siloed design decisions across teams</li>
+                  <li>• No shared design language or patterns</li>
+                  <li>• Inconsistent user experiences</li>
+                  <li>• Limited career growth for designers</li>
+                  <li>• Duplicated design effort</li>
+                </ul>
+              </div>
+              <div className="bg-background rounded-xl p-6 space-y-3">
+                <h3 className="font-semibold text-primary">After</h3>
+                <ul className="text-sm text-muted-foreground space-y-2">
+                  <li>• Unified design system and processes</li>
+                  <li>• Cross-team collaboration rituals</li>
+                  <li>• Consistent experience patterns</li>
+                  <li>• Clear career ladders for designers</li>
+                  <li>• Shared component libraries</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Image with Caption */}
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-5xl">
@@ -189,25 +223,40 @@ const KesselRunCaseStudy = () => {
         </div>
       </section>
 
-      {/* Stats Grid */}
+      {/* Impact Metrics */}
       <section className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto max-w-4xl">
+          <h2 className="text-2xl font-bold mb-8 text-center">Measurable Impact</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="space-y-2">
-              <p className="text-4xl font-bold text-primary">15+</p>
-              <p className="text-sm text-muted-foreground">Designers Supported</p>
+              <p className="text-4xl font-bold text-primary">40%</p>
+              <p className="text-sm text-muted-foreground">Faster Design Delivery</p>
             </div>
             <div className="space-y-2">
-              <p className="text-4xl font-bold text-secondary">6</p>
-              <p className="text-sm text-muted-foreground">Operational Missions</p>
+              <p className="text-4xl font-bold text-secondary">85%</p>
+              <p className="text-sm text-muted-foreground">Designer Retention Rate</p>
             </div>
             <div className="space-y-2">
               <p className="text-4xl font-bold text-primary">5</p>
-              <p className="text-sm text-muted-foreground">Applications Built</p>
+              <p className="text-sm text-muted-foreground">Applications Shipped</p>
             </div>
             <div className="space-y-2">
               <p className="text-4xl font-bold text-secondary">1000s</p>
-              <p className="text-sm text-muted-foreground">Daily Intelligence Inputs</p>
+              <p className="text-sm text-muted-foreground">Daily Active Users</p>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+            <div className="text-center">
+              <p className="text-2xl font-bold text-primary">15+</p>
+              <p className="text-sm text-muted-foreground">Designers Managed</p>
+            </div>
+            <div className="text-center">
+              <p className="text-2xl font-bold text-secondary">6</p>
+              <p className="text-sm text-muted-foreground">Operational Missions</p>
+            </div>
+            <div className="text-center">
+              <p className="text-2xl font-bold text-primary">4+</p>
+              <p className="text-sm text-muted-foreground">Years Leading Design</p>
             </div>
           </div>
         </div>
@@ -317,6 +366,60 @@ const KesselRunCaseStudy = () => {
             </p>
             <p>
               Our investment in design culture and psychological safety has resulted in a thriving design team that continues to deliver mission-critical capabilities.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Tools and Methods */}
+      <section className="py-16 px-6 bg-muted/30">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-2xl font-bold mb-8 text-center">Tools and Methods</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="space-y-4">
+              <h3 className="font-semibold text-foreground">Design Tools</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>Figma</li>
+                <li>Miro</li>
+                <li>Adobe Creative Suite</li>
+                <li>Zeplin</li>
+              </ul>
+            </div>
+            <div className="space-y-4">
+              <h3 className="font-semibold text-foreground">Research Methods</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>Contextual Inquiry</li>
+                <li>Usability Testing</li>
+                <li>Stakeholder Interviews</li>
+                <li>Journey Mapping</li>
+              </ul>
+            </div>
+            <div className="space-y-4">
+              <h3 className="font-semibold text-foreground">Leadership Practices</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>Design Critiques</li>
+                <li>Career Coaching</li>
+                <li>Psychological Safety</li>
+                <li>Cross-team Rituals</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Key Learnings */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-3xl">
+          <h2 className="text-2xl font-bold mb-6">What did we learn?</h2>
+          <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+            <p>
+              Building a design practice in a high stakes environment requires balancing speed with quality. We learned that investing in team culture and psychological safety paid dividends in creativity and retention.
+            </p>
+            <p>
+              Cross-functional collaboration was essential. By embedding designers within product teams while maintaining a strong design community, we achieved both deep product knowledge and shared best practices.
+            </p>
+            <p>
+              User research in classified environments presents unique challenges, but direct access to warfighters transformed our design decisions and built credibility with stakeholders.
             </p>
           </div>
         </div>
