@@ -241,15 +241,15 @@ const DesignSystemCaseStudy = () => {
 
           {/* Learnings */}
           <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            <h3 className="text-2xl font-semibold">What did I learn?</h3>
+            <h3 className="text-2xl font-semibold">What did we learn?</h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              The design system became a passion project for every member of our team. Treating developers as the primary users of the system turned out to be one of our smartest decisions and directly influenced how intuitive the final product became.
+              As a design leader, watching this initiative transform how our teams worked was deeply rewarding. Designers gained back hours previously spent recreating common patterns, allowing them to focus on solving complex user problems. Developers reported feeling more confident in their front end work, and the shared language between design and engineering reduced friction during handoffs.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              This focus occasionally frustrated designers who felt the system catered more to the engineering side. We created a Developer Engagement Program to build subject matter expertise across product teams. In hindsight, a similar initiative for designers would have strengthened adoption and advocacy within the design community.
+              The Developer Engagement Program we created helped build advocates across product teams, but we learned that designers needed similar investment. Moving forward, we established dedicated design champions who could bridge the gap between the system and their teams, improving both adoption and feedback loops.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Leading this effort, I treated the design system like any other product. I stayed focused on user needs while balancing stakeholder requirements, iterating toward something that delivered real value.
+              Most importantly, the design system gave our teams a foundation for growth. New designers onboarded faster, experienced designers mentored more effectively, and the entire organization developed a shared understanding of what quality looked like. That cultural shift proved more valuable than any efficiency metric.
             </p>
           </div>
 
