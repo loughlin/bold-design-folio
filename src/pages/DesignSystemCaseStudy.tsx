@@ -111,27 +111,13 @@ const DesignSystemCaseStudy = () => {
 
       {/* UX Metrics */}
       <section className="py-12 px-6">
-        <div className="container mx-auto max-w-5xl">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-fade-in">
-            <Card className="text-center p-6">
-              <CardContent className="p-0 space-y-2">
-                <p className="text-4xl font-serif font-bold text-primary">Task Completion</p>
-                <p className="text-muted-foreground text-sm">Time spent on core job functions vs. interface navigation</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center p-6">
-              <CardContent className="p-0 space-y-2">
-                <p className="text-4xl font-serif font-bold text-primary">Error Rate</p>
-                <p className="text-muted-foreground text-sm">User errors caused by inconsistent UI patterns</p>
-              </CardContent>
-            </Card>
-            <Card className="text-center p-6">
-              <CardContent className="p-0 space-y-2">
-                <p className="text-4xl font-serif font-bold text-primary">Dev Velocity</p>
-                <p className="text-muted-foreground text-sm">Developer hours allocated to front end stories</p>
-              </CardContent>
-            </Card>
-          </div>
+        <div className="container mx-auto max-w-4xl animate-fade-in">
+          <h3 className="text-2xl font-serif font-semibold mb-6">Metrics</h3>
+          <ul className="space-y-3">
+            <li className="text-lg text-muted-foreground">Task completion rate: time on core functions vs. interface navigation</li>
+            <li className="text-lg text-muted-foreground">User error frequency: incidents caused by inconsistent UI patterns</li>
+            <li className="text-lg text-muted-foreground">Developer velocity: front end story throughput and cycle time</li>
+          </ul>
         </div>
       </section>
 
