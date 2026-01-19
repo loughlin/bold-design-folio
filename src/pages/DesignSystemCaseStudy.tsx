@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
-import teamWhiteboardPlanning from "@/assets/team-whiteboard-planning.jpg";
 import designSystemComponents from "@/assets/design-system-components.jpg";
 
 const DesignSystemCaseStudy = () => {
@@ -170,21 +169,6 @@ const DesignSystemCaseStudy = () => {
         </div>
       </section>
 
-      {/* Problem Areas Image */}
-      <section className="py-8 px-6">
-        <div className="container mx-auto max-w-5xl">
-          <div className="rounded-2xl overflow-hidden animate-fade-in">
-            <img 
-              src={teamWhiteboardPlanning} 
-              alt="Design system problem areas" 
-              className="w-full h-[400px] object-cover"
-            />
-          </div>
-          <p className="text-center text-muted-foreground mt-4 text-sm">
-            When the design system was conceptualized, there were three major areas where product teams would benefit from the implementation of a design system.
-          </p>
-        </div>
-      </section>
 
       {/* Process Section */}
       <section className="py-16 px-6 bg-muted/30">
