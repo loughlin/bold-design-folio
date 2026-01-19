@@ -257,7 +257,7 @@ const DesignSystemCaseStudy = () => {
           <div className="pt-8 animate-fade-in" style={{ animationDelay: "0.4s" }}>
             <Card>
               <CardContent className="p-8">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                   {/* Key Skills */}
                   <div className="space-y-4">
                     <h3 className="font-semibold text-foreground">Key Skills</h3>
@@ -279,6 +279,18 @@ const DesignSystemCaseStudy = () => {
                           {tool}
                         </li>
                       ))}
+                    </ul>
+                  </div>
+
+                  {/* Deliverables */}
+                  <div className="space-y-4">
+                    <h3 className="font-semibold text-foreground">Deliverables</h3>
+                    <ul className="space-y-2">
+                      <li className="text-muted-foreground text-sm">React Component Library</li>
+                      <li className="text-muted-foreground text-sm">Figma Design Kit</li>
+                      <li className="text-muted-foreground text-sm">Documentation Site</li>
+                      <li className="text-muted-foreground text-sm">Contribution Guidelines</li>
+                      <li className="text-muted-foreground text-sm">Adoption Playbook</li>
                     </ul>
                   </div>
 
