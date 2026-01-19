@@ -8,24 +8,8 @@ const FeaturedCaseStudy = () => {
     <section className="py-16 px-6">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Image */}
-          <div className="relative animate-fade-in">
-            <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src={agileTeamStandup}
-                alt="Kessel Run Design Work"
-                className="w-full h-auto"
-              />
-            </div>
-            <div className="absolute -bottom-6 -right-6 bg-secondary text-secondary-foreground rounded-2xl p-6 shadow-xl max-w-xs">
-              <p className="text-sm font-semibold">Supporting</p>
-              <p className="text-3xl font-bold">6 Missions</p>
-              <p className="text-sm">across the USAF</p>
-            </div>
-          </div>
-
-          {/* Right Column - Content */}
-          <div className="space-y-8 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          {/* Left Column - Content */}
+          <div className="space-y-8 animate-fade-in">
             <div>
               <span className="inline-block text-sm font-semibold tracking-wide uppercase text-primary mb-4">
                 Featured Case Study
@@ -99,6 +83,22 @@ const FeaturedCaseStudy = () => {
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover/btn:translate-x-1" />
               </Button>
             </ProtectedLink>
+          </div>
+
+          {/* Right Column - Image */}
+          <div className="relative animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src={agileTeamStandup}
+                alt="Kessel Run Design Work"
+                className="w-full h-auto"
+              />
+            </div>
+            <div className="absolute -bottom-6 -left-6 bg-secondary text-secondary-foreground rounded-2xl p-6 shadow-xl max-w-xs">
+              <p className="text-sm font-semibold">Supporting</p>
+              <p className="text-3xl font-bold">6 Missions</p>
+              <p className="text-sm">across the USAF</p>
+            </div>
           </div>
         </div>
       </div>
