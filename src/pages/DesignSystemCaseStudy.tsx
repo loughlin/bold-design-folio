@@ -121,65 +121,6 @@ const DesignSystemCaseStudy = () => {
         </div>
       </section>
 
-      {/* Project Details Grid */}
-      <section className="py-12 px-6">
-        <div className="container mx-auto max-w-5xl">
-          <Card className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <CardContent className="p-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                {/* Key Skills */}
-                <div className="space-y-4">
-                  <h3 className="font-semibold text-foreground">Key Skills</h3>
-                  <ul className="space-y-2">
-                    {keySkills.map((skill, index) => (
-                      <li key={index} className="text-muted-foreground text-sm">
-                        {skill}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Tools Used */}
-                <div className="space-y-4">
-                  <h3 className="font-semibold text-foreground">Tools Used</h3>
-                  <ul className="space-y-2">
-                    {toolsUsed.map((tool, index) => (
-                      <li key={index} className="text-muted-foreground text-sm">
-                        {tool}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Team Composition */}
-                <div className="space-y-4">
-                  <h3 className="font-semibold text-foreground">Team Composition</h3>
-                  <div className="space-y-3 text-sm">
-                    <p>
-                      <span className="font-medium text-foreground">Initial:</span>{" "}
-                      <span className="text-primary italic">Lead Designer & Product Manager (Me)</span>
-                      <span className="text-muted-foreground">, Lead Developer, Developers (x3)</span>
-                    </p>
-                    <p>
-                      <span className="font-medium text-foreground">Final:</span>{" "}
-                      <span className="text-primary italic">Lead Designer & Product Manager (Me)</span>
-                      <span className="text-muted-foreground">, Lead Developer, Designers (x2), Developers (x4)</span>
-                    </p>
-                  </div>
-                </div>
-
-                {/* Time Frame */}
-                <div className="space-y-4">
-                  <h3 className="font-semibold text-foreground">Time Frame</h3>
-                  <p className="text-muted-foreground text-sm">
-                    Sept 2019 - Sept 2023 (4 Years)
-                  </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
 
 
       {/* Process Section */}
@@ -302,14 +243,55 @@ const DesignSystemCaseStudy = () => {
           <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.3s" }}>
             <h3 className="text-2xl font-semibold">What did I learn?</h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              The design system was a labor of love for the dedicated members of the team. Focusing on the developers as the primary users of the system was one of the better choices we made when it came to the usability of the system.
+              The design system became a passion project for every member of our team. Treating developers as the primary users of the system turned out to be one of our smartest decisions and directly influenced how intuitive the final product became.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              At times, this decision led to confusion and frustration from designers that felt the system was more geared toward developers. We implemented a "Developer Engagement Program" to create subject matter expertise on each of the product teams. Something similar with designers would have helped improve advocacy and adoption within the design community.
+              This focus occasionally frustrated designers who felt the system catered more to the engineering side. We created a Developer Engagement Program to build subject matter expertise across product teams. In hindsight, a similar initiative for designers would have strengthened adoption and advocacy within the design community.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              As the Design System Lead, I approached the design system the same way I would approach developing a product. I focused on remaining user-centered, balancing their needs against stakeholder requirements to iteratively build something of positive value.
+              Leading this effort, I treated the design system like any other product. I stayed focused on user needs while balancing stakeholder requirements, iterating toward something that delivered real value.
             </p>
+          </div>
+
+          {/* Project Details Grid */}
+          <div className="pt-8 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+            <Card>
+              <CardContent className="p-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                  {/* Key Skills */}
+                  <div className="space-y-4">
+                    <h3 className="font-semibold text-foreground">Key Skills</h3>
+                    <ul className="space-y-2">
+                      {keySkills.map((skill, index) => (
+                        <li key={index} className="text-muted-foreground text-sm">
+                          {skill}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Tools Used */}
+                  <div className="space-y-4">
+                    <h3 className="font-semibold text-foreground">Tools Used</h3>
+                    <ul className="space-y-2">
+                      {toolsUsed.map((tool, index) => (
+                        <li key={index} className="text-muted-foreground text-sm">
+                          {tool}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Time Frame */}
+                  <div className="space-y-4">
+                    <h3 className="font-semibold text-foreground">Time Frame</h3>
+                    <p className="text-muted-foreground text-sm">
+                      Sept 2019 - Sept 2023 (4 Years)
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
