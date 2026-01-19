@@ -76,7 +76,7 @@ const DesignSystemCaseStudy = () => {
       <section className="pt-32 pb-16 px-6">
         <div className="container mx-auto max-w-5xl text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-8 animate-fade-in">
-            T&G Portfolio Design System
+            Portfolio Design System
           </h1>
         </div>
       </section>

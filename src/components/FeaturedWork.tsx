@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import ProtectedLink from "@/components/ProtectedLink";
-import designSystemComponents from "@/assets/design-system-components.jpg";
+import designStudioStickyNotes from "@/assets/design-studio-sticky-notes.jpg";
 import usafUserResearch from "@/assets/usaf-user-research.jpg";
 import cloudApplicationDashboard from "@/assets/cloud-application-dashboard.jpg";
 import designCareerFramework from "@/assets/design-career-framework.jpg";
@@ -10,9 +10,9 @@ import designCareerFramework from "@/assets/design-career-framework.jpg";
 const FeaturedWork = () => {
   const projects = [
     {
-      title: "T&G Portfolio Design System",
+      title: "Portfolio Design System",
       description: "Led design systems initiative across 6 operational missions, establishing consistency standards for USAF applications.",
-      image: designSystemComponents,
+      image: designStudioStickyNotes,
       size: "large",
       link: "/case-study/design-system",
     },
