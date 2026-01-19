@@ -3,7 +3,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import teamWhiteboardPlanning from "@/assets/team-whiteboard-planning.jpg";
-import designThinkingWorkshop from "@/assets/design-thinking-workshop.jpg";
 import designSystemComponents from "@/assets/design-system-components.jpg";
 
 const DesignSystemCaseStudy = () => {
@@ -247,25 +246,12 @@ const DesignSystemCaseStudy = () => {
       {/* Workshop Images */}
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-5xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="space-y-4 animate-fade-in">
-              <div className="rounded-2xl overflow-hidden">
-                <img 
-                  src={designThinkingWorkshop} 
-                  alt="Design system workshop session" 
-                  className="w-full h-[300px] object-cover"
-                />
-              </div>
-            </div>
-            <div className="space-y-4 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              <div className="rounded-2xl overflow-hidden">
-                <img 
-                  src={designSystemComponents} 
-                  alt="Component library development" 
-                  className="w-full h-[300px] object-cover"
-                />
-              </div>
-            </div>
+          <div className="rounded-2xl overflow-hidden animate-fade-in">
+            <img 
+              src={designSystemComponents} 
+              alt="Component library development" 
+              className="w-full h-[400px] object-cover"
+            />
           </div>
           <p className="text-center text-muted-foreground mt-6 text-sm">
             Key insights from user interviews were synthesized and affinity mapped in order to better understand the challenges the design system would be facing.
