@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
-import designSystemComponents from "@/assets/design-system-components.jpg";
+
 
 const DesignSystemCaseStudy = () => {
   const keySkills = [
@@ -84,10 +84,54 @@ const DesignSystemCaseStudy = () => {
       {/* Background Section */}
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-4xl text-center space-y-8">
-          <h2 className="text-4xl font-serif font-semibold animate-fade-in">Background</h2>
+          <h2 className="text-4xl font-serif font-semibold animate-fade-in">Overview</h2>
           <p className="text-lg text-muted-foreground leading-relaxed animate-fade-in" style={{ animationDelay: "0.1s" }}>
             As Kessel Run's product offerings grew, so too did the need for unified user experiences, interaction patterns, color and component libraries. What started as 8-10 unrelated applications quickly grew into interconnected portfolios and suites of products with similar user and data sets. Unified design and developer language across these systems granted Kessel Run greater flexibility with the allocation of design and developer resources.
           </p>
+        </div>
+      </section>
+
+      {/* Problem Statement */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-4xl text-center space-y-8">
+          <h2 className="text-4xl font-serif font-semibold animate-fade-in">Problem Statement</h2>
+          <p className="text-lg text-muted-foreground leading-relaxed animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            Inconsistent user interfaces across products within the organization steepened the learning curve for the growing amount of overlapping user sets. Custom-first front ends increased design and development time, and prevented organization-wide branding initiatives. The problem facing the design system was two-fold:
+          </p>
+          <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <p className="text-xl font-medium italic text-foreground">
+              How might we decrease error rates and onboarding time for users so that they spend a greater amount of time completing job-related tasks?
+            </p>
+            <p className="text-xl font-medium italic text-foreground">
+              How might we decrease the amount of designer and developer hours dedicated to UI enhancement so that usability, user experience, product security, reliability, and database management can be prioritized?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* UX Metrics */}
+      <section className="py-12 px-6">
+        <div className="container mx-auto max-w-5xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 animate-fade-in">
+            <Card className="text-center p-6">
+              <CardContent className="p-0 space-y-2">
+                <p className="text-4xl font-serif font-bold text-primary">Task Completion</p>
+                <p className="text-muted-foreground text-sm">Time spent on core job functions vs. interface navigation</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center p-6">
+              <CardContent className="p-0 space-y-2">
+                <p className="text-4xl font-serif font-bold text-primary">Error Rate</p>
+                <p className="text-muted-foreground text-sm">User errors caused by inconsistent UI patterns</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center p-6">
+              <CardContent className="p-0 space-y-2">
+                <p className="text-4xl font-serif font-bold text-primary">Dev Velocity</p>
+                <p className="text-muted-foreground text-sm">Developer hours allocated to front end stories</p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
@@ -151,24 +195,6 @@ const DesignSystemCaseStudy = () => {
         </div>
       </section>
 
-      {/* Problem Statement */}
-      <section className="py-16 px-6">
-        <div className="container mx-auto max-w-4xl text-center space-y-8">
-          <h2 className="text-4xl font-serif font-semibold animate-fade-in">Problem Statement</h2>
-          <p className="text-lg text-muted-foreground leading-relaxed animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            Inconsistent user interfaces across products within the organization steepened the learning curve for the growing amount of overlapping user sets. Custom-first front ends increased design and development time, and prevented organization-wide branding initiatives. The problem facing the design system was two-fold:
-          </p>
-          <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <p className="text-xl font-medium italic text-foreground">
-              How might we decrease error rates and onboarding time for users so that they spend a greater amount of time completing job-related tasks?
-            </p>
-            <p className="text-xl font-medium italic text-foreground">
-              How might we decrease the amount of designer and developer hours dedicated to UI enhancement so that usability, user experience, product security, reliability, and database management can be prioritized?
-            </p>
-          </div>
-        </div>
-      </section>
-
 
       {/* Process Section */}
       <section className="py-16 px-6 bg-muted/30">
@@ -227,21 +253,6 @@ const DesignSystemCaseStudy = () => {
         </div>
       </section>
 
-      {/* Workshop Images */}
-      <section className="py-16 px-6">
-        <div className="container mx-auto max-w-5xl">
-          <div className="rounded-2xl overflow-hidden animate-fade-in">
-            <img 
-              src={designSystemComponents} 
-              alt="Component library development" 
-              className="w-full h-[400px] object-cover"
-            />
-          </div>
-          <p className="text-center text-muted-foreground mt-6 text-sm">
-            Key insights from user interviews were synthesized and affinity mapped in order to better understand the challenges the design system would be facing.
-          </p>
-        </div>
-      </section>
 
       {/* Adoption Story */}
       <section className="py-16 px-6 bg-muted/30">
