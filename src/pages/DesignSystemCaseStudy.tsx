@@ -1,123 +1,364 @@
-import CaseStudyLayout from "@/components/CaseStudyLayout";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { ArrowLeft } from "lucide-react";
+import { Link } from "react-router-dom";
 import teamWhiteboardPlanning from "@/assets/team-whiteboard-planning.jpg";
-import teamCollaborationMeeting from "@/assets/team-collaboration-meeting.jpg";
 import designThinkingWorkshop from "@/assets/design-thinking-workshop.jpg";
+import designSystemComponents from "@/assets/design-system-components.jpg";
 
 const DesignSystemCaseStudy = () => {
+  const keySkills = [
+    "Mentorship & Leadership",
+    "Component Libraries",
+    "Stakeholder Management",
+    "Documentation",
+    "Dev/Design Pairing",
+  ];
+
+  const toolsUsed = [
+    "Figma Suite",
+    "Adobe Creative Cloud",
+    "React",
+    "HTML/CSS",
+    "Github",
+  ];
+
+  const designProcessPhases = [
+    {
+      name: "Discover",
+      type: "divergent" as const,
+      description: "Understanding the problem space through research and exploration.",
+    },
+    {
+      name: "Define",
+      type: "convergent" as const,
+      description: "Synthesizing insights to define clear problem statements.",
+    },
+    {
+      name: "Develop",
+      type: "divergent" as const,
+      description: "Generating and iterating on potential solutions.",
+    },
+    {
+      name: "Deliver",
+      type: "convergent" as const,
+      description: "Refining and delivering the final solution.",
+    },
+  ];
+
+  const challenges = [
+    "Products were using a variety of technical stacks, in addition to an assortment of custom components and different component libraries.",
+    "Products were overly attached to their unique solutions to common user problems, increasing the amount of developer hours spent on front end stories.",
+    "Any out-of-the-box component library adopted as a basis for the design system would lack documentation for custom or organization-specific components.",
+    "Existing wireframe libraries would lack the unique theming and custom components, inhibiting designers' ability to build wireframes and prototypes quickly.",
+  ];
+
+  const keyAchievements = [
+    "Reduction in front end story frequency of 48%.",
+    "Reduction in developer days spent per year on front end by over 2,000 (avg per 10-person developer team).",
+    "Three day reduction in average front end story completion time.",
+    "Created a pathway for Air Force-wide source code and artifact sharing.",
+  ];
+
   return (
-    <CaseStudyLayout
-      title="T&G Portfolio Design System"
-      subtitle="Establishing design consistency across 6 USAF operational missions"
-      heroImage={teamWhiteboardPlanning}
-      overview="Led the development and implementation of a comprehensive design system for the T&G Portfolio at Kessel Run, establishing design standards and component libraries across six critical USAF operational missions. This initiative improved design velocity, ensured visual consistency, and reduced technical debt across multiple product teams."
-      problem="The T&G Portfolio consisted of six distinct applications serving different USAF missions, each developed by separate product teams. Without unified design standards, teams were creating duplicate components, using inconsistent patterns, and spending significant time on basic UI decisions. This fragmentation led to poor user experience across applications, increased maintenance costs, and made it difficult for users who worked across multiple systems."
-      problemStatement="How might we create a scalable design system that empowers multiple product teams to build consistent, accessible interfaces quickly while maintaining flexibility for mission-specific requirements?"
-      role="Portfolio Design Lead & Design Systems Lead"
-      timeline="2022 - Present (Ongoing)"
-      team="Cross-functional team of 15+ designers, developers, and product managers across 6 missions"
-      designProcess={[
-        {
-          name: "Discover",
-          type: "divergent",
-          description: "Auditing existing patterns and understanding team pain points across applications.",
-          activities: ["Component audits", "Team interviews", "Usage analysis", "Accessibility reviews"]
-        },
-        {
-          name: "Define",
-          type: "convergent",
-          description: "Establishing principles, tokens, and governance for the design system.",
-          activities: ["Design principles", "Token definitions", "Governance models", "Priority setting"]
-        },
-        {
-          name: "Develop",
-          type: "divergent",
-          description: "Building and iterating on components with cross-functional collaboration.",
-          activities: ["Component design", "Figma library", "React development", "Documentation"]
-        },
-        {
-          name: "Deliver",
-          type: "convergent",
-          description: "Rolling out the system and supporting team adoption across missions.",
-          activities: ["Migration guides", "Training sessions", "Office hours", "Adoption tracking"]
-        }
-      ]}
-      research={{
-        title: "Research & Discovery Insights",
-        content: [
-          "Conducted component audits across all 6 applications, identifying 47 unique button variations and 23 different form patterns",
-          "Interviewed 15 designers and developers to understand pain points and workflow bottlenecks",
-          "Analyzed user feedback showing confusion when switching between applications due to inconsistent interactions",
-          "Discovered teams were spending 30-40% of their time rebuilding common components",
-          "Identified accessibility gaps in 68% of existing components, creating compliance risks"
-        ]
-      }}
-      process={[
-        {
-          title: "1. Foundation & Principles",
-          content: [
-            "Established design principles aligned with USAF mission-critical needs: clarity, efficiency, and reliability",
-            "Created design tokens for colors, typography, spacing, and elevation",
-            "Defined accessibility standards meeting WCAG 2.1 AA compliance",
-            "Set up governance model with monthly design system council meetings"
-          ]
-        },
-        {
-          title: "2. Component Library Development",
-          content: [
-            "Prioritized components based on usage frequency and impact (buttons, forms, tables, navigation)",
-            "Built 40+ documented components in Figma with variants for all states and use cases",
-            "Collaborated with engineering to create React component library with Storybook documentation",
-            "Established contribution process allowing teams to propose new components or variants"
-          ]
-        },
-        {
-          title: "3. Adoption & Implementation",
-          content: [
-            "Created migration guides and training materials for product teams",
-            "Ran weekly office hours to support teams adopting the design system",
-            "Implemented design system tracking to measure adoption rates across missions",
-            "Celebrated wins and shared success stories to build momentum"
-          ]
-        },
-        {
-          title: "4. Iteration & Scaling",
-          content: [
-            "Established feedback loops with quarterly surveys and usage analytics",
-            "Created specialized patterns for data visualization and complex workflows",
-            "Expanded system to include motion guidelines and illustration libraries",
-            "Built design system website with live examples and code snippets"
-          ]
-        }
-      ]}
-      beforeAfter={{
-        before: {
-          image: teamCollaborationMeeting,
-          caption: "Inconsistent UI patterns across applications with duplicate components and varying interactions"
-        },
-        after: {
-          image: designThinkingWorkshop,
-          caption: "Unified design system with consistent components, improved accessibility, and documented patterns"
-        }
-      }}
-      outcomes={[
-        "Reduced design-to-development time by 45% through reusable components and clear documentation",
-        "Achieved 85% design system adoption across all 6 missions within 12 months",
-        "Improved accessibility compliance from 32% to 94% of components meeting WCAG 2.1 AA standards",
-        "Decreased UI-related bug reports by 60% due to battle-tested, consistent components",
-        "Enabled 3 new product teams to onboard and ship features 40% faster using established patterns",
-        "Received Air Force-wide recognition, with design system being adopted by adjacent portfolios"
-      ]}
-      images={[
-        {
-          url: teamWhiteboardPlanning,
-          caption: "Design system component library in Figma showing button variants and states"
-        },
-        {
-          url: designThinkingWorkshop,
-          caption: "Storybook documentation with live code examples and accessibility guidelines"
-        }
-      ]}
-    />
+    <div className="min-h-screen bg-background">
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+        <div className="container mx-auto px-6 py-4">
+          <Link to="/">
+            <Button variant="ghost" size="sm">
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Back to Portfolio
+            </Button>
+          </Link>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="pt-32 pb-16 px-6">
+        <div className="container mx-auto max-w-5xl text-center">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-8 animate-fade-in">
+            T&G Portfolio Design System
+          </h1>
+        </div>
+      </section>
+
+      {/* Background Section */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-4xl text-center space-y-8">
+          <h2 className="text-4xl font-serif font-semibold animate-fade-in">Background</h2>
+          <p className="text-lg text-muted-foreground leading-relaxed animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            As Kessel Run's product offerings grew, so too did the need for unified user experiences, interaction patterns, color and component libraries. What started as 8-10 unrelated applications quickly grew into interconnected portfolios and suites of products with similar user and data sets. Unified design and developer language across these systems granted Kessel Run greater flexibility with the allocation of design and developer resources.
+          </p>
+        </div>
+      </section>
+
+      {/* Project Details Grid */}
+      <section className="py-12 px-6">
+        <div className="container mx-auto max-w-5xl">
+          <Card className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <CardContent className="p-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {/* Key Skills */}
+                <div className="space-y-4">
+                  <h3 className="font-semibold text-foreground">Key Skills</h3>
+                  <ul className="space-y-2">
+                    {keySkills.map((skill, index) => (
+                      <li key={index} className="text-muted-foreground text-sm">
+                        {skill}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Tools Used */}
+                <div className="space-y-4">
+                  <h3 className="font-semibold text-foreground">Tools Used</h3>
+                  <ul className="space-y-2">
+                    {toolsUsed.map((tool, index) => (
+                      <li key={index} className="text-muted-foreground text-sm">
+                        {tool}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Team Composition */}
+                <div className="space-y-4">
+                  <h3 className="font-semibold text-foreground">Team Composition</h3>
+                  <div className="space-y-3 text-sm">
+                    <p>
+                      <span className="font-medium text-foreground">Initial:</span>{" "}
+                      <span className="text-primary italic">Lead Designer & Product Manager (Me)</span>
+                      <span className="text-muted-foreground">, Lead Developer, Developers (x3)</span>
+                    </p>
+                    <p>
+                      <span className="font-medium text-foreground">Final:</span>{" "}
+                      <span className="text-primary italic">Lead Designer & Product Manager (Me)</span>
+                      <span className="text-muted-foreground">, Lead Developer, Designers (x2), Developers (x4)</span>
+                    </p>
+                  </div>
+                </div>
+
+                {/* Time Frame */}
+                <div className="space-y-4">
+                  <h3 className="font-semibold text-foreground">Time Frame</h3>
+                  <p className="text-muted-foreground text-sm">
+                    Sept 2019 - Sept 2023 (4 Years)
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Problem Statement */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-4xl text-center space-y-8">
+          <h2 className="text-4xl font-serif font-semibold animate-fade-in">Problem Statement</h2>
+          <p className="text-lg text-muted-foreground leading-relaxed animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            Inconsistent user interfaces across products within the organization steepened the learning curve for the growing amount of overlapping user sets. Custom-first front ends increased design and development time, and prevented organization-wide branding initiatives. The problem facing the design system was two-fold:
+          </p>
+          <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <p className="text-xl font-medium italic text-foreground">
+              How might we decrease error rates and onboarding time for users so that they spend a greater amount of time completing job-related tasks?
+            </p>
+            <p className="text-xl font-medium italic text-foreground">
+              How might we decrease the amount of designer and developer hours dedicated to UI enhancement so that usability, user experience, product security, reliability, and database management can be prioritized?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Problem Areas Image */}
+      <section className="py-8 px-6">
+        <div className="container mx-auto max-w-5xl">
+          <div className="rounded-2xl overflow-hidden animate-fade-in">
+            <img 
+              src={teamWhiteboardPlanning} 
+              alt="Design system problem areas" 
+              className="w-full h-[400px] object-cover"
+            />
+          </div>
+          <p className="text-center text-muted-foreground mt-4 text-sm">
+            When the design system was conceptualized, there were three major areas where product teams would benefit from the implementation of a design system.
+          </p>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="py-16 px-6 bg-muted/30">
+        <div className="container mx-auto max-w-5xl space-y-8">
+          <h2 className="text-4xl font-serif font-semibold text-center animate-fade-in">Process</h2>
+          
+          {/* Double Diamond Visual */}
+          <div className="flex justify-center py-8 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <div className="flex items-center gap-0 max-w-3xl w-full">
+              {designProcessPhases.map((phase, index) => (
+                <div key={index} className="flex-1 text-center">
+                  <div 
+                    className={`h-20 flex items-center justify-center relative ${
+                      phase.type === "divergent" 
+                        ? "bg-gradient-to-r from-primary/20 to-primary/40" 
+                        : "bg-gradient-to-r from-primary/40 to-primary/20"
+                    } ${index === 0 ? "rounded-l-xl" : ""} ${index === designProcessPhases.length - 1 ? "rounded-r-xl" : ""}`}
+                  >
+                    <span className="font-semibold text-foreground text-sm">{phase.name}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <p className="text-center text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            The design process is broken down into four phases, two for divergent thinking, and two more for convergent thinking. Each phase has multiple practices within to help create positive user outcomes.
+          </p>
+
+          {/* Challenges */}
+          <div className="space-y-6 pt-8 animate-fade-in" style={{ animationDelay: "0.3s" }}>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              The main challenges of creating a design system were identified through an initial scoping effort that included stakeholder interviews, technical research, market research, and interviews with the product teams that would be utilizing the design system. Four key challenges emerged from these interviews:
+            </p>
+            <ul className="space-y-4">
+              {challenges.map((challenge, index) => (
+                <li key={index} className="flex items-start gap-4">
+                  <span className="inline-block w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                  <p className="text-muted-foreground leading-relaxed">{challenge}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Statistics Callout */}
+      <section className="py-20 px-6 bg-primary/5">
+        <div className="container mx-auto max-w-4xl text-center space-y-4 animate-fade-in">
+          <p className="text-7xl md:text-8xl font-serif font-bold text-primary">95%</p>
+          <p className="text-xl text-muted-foreground">of product teams</p>
+          <p className="text-2xl font-medium text-foreground">currently using React</p>
+          <p className="text-muted-foreground max-w-2xl mx-auto mt-6 leading-relaxed">
+            We evaluated the tech stack of every product team at Kessel Run to determine commonalities. The overwhelming majority were using React for front end development, which informed our technical foundation decisions.
+          </p>
+        </div>
+      </section>
+
+      {/* Workshop Images */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-5xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="space-y-4 animate-fade-in">
+              <div className="rounded-2xl overflow-hidden">
+                <img 
+                  src={designThinkingWorkshop} 
+                  alt="Design system workshop session" 
+                  className="w-full h-[300px] object-cover"
+                />
+              </div>
+            </div>
+            <div className="space-y-4 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+              <div className="rounded-2xl overflow-hidden">
+                <img 
+                  src={designSystemComponents} 
+                  alt="Component library development" 
+                  className="w-full h-[300px] object-cover"
+                />
+              </div>
+            </div>
+          </div>
+          <p className="text-center text-muted-foreground mt-6 text-sm">
+            Key insights from user interviews were synthesized and affinity mapped in order to better understand the challenges the design system would be facing.
+          </p>
+        </div>
+      </section>
+
+      {/* Adoption Story */}
+      <section className="py-16 px-6 bg-muted/30">
+        <div className="container mx-auto max-w-4xl space-y-8">
+          <h2 className="text-4xl font-serif font-semibold text-center animate-fade-in">Measuring Adoption Impact</h2>
+          
+          <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              One established team with a product in production, active users, fully custom front end designs, and a nonlinear user flow underwent the adoption of the design system at the insistence of their portfolio leadership. My team began combing through their backlog, tracking every single front end story in their team's history.
+            </p>
+            
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              In their first 10 months of existence they utilized no design system and built everything from scratch. During that time they had an average of 3.80 design stories requested per week and it took each story an average of 22.18 days to be completed.
+            </p>
+            
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              After adoption, their design story requests were nearly cut in half, dropping from 3.80 to 1.95 stories requested per week. Story complexity increased 36 percent, but stories took an average of about 3 less days to complete. Per commit the developers were touching fewer files, inserting 20% less lines, and deleting 35% less lines.
+            </p>
+
+            <Card className="bg-primary/10 border-primary/20">
+              <CardContent className="p-8">
+                <p className="text-xl font-medium text-foreground text-center">
+                  In short, developers were doing more complex design stories faster, while the product manager requested them less often.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Results and Learnings */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-5xl space-y-12">
+          <h2 className="text-4xl font-serif font-semibold text-center animate-fade-in">Results and Learnings</h2>
+          
+          {/* Key Achievements */}
+          <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <h3 className="text-2xl font-semibold">Key Achievements</h3>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              At its peak, the design system was adopted in some way or another by all eligible product teams. Adoption was never made compulsory by leadership and many teams only chose to adopt once the system offered enough value to their product. The design system was so successful the CXO of the Air Force approached the team about making the design system an Air Force-wide effort.
+            </p>
+            <ul className="space-y-4">
+              {keyAchievements.map((achievement, index) => (
+                <li key={index} className="flex items-start gap-4">
+                  <span className="inline-block w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                  <p className="text-lg text-foreground">{achievement}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Impact */}
+          <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <h3 className="text-2xl font-semibold">Impact</h3>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              The design system fundamentally transformed how 40+ product teams approached front end development, creating organizational efficiency while ensuring consistent user experiences across the entire product ecosystem.
+            </p>
+          </div>
+
+          {/* Learnings */}
+          <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.3s" }}>
+            <h3 className="text-2xl font-semibold">What did I learn?</h3>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              The design system was a labor of love for the dedicated members of the team. Focusing on the developers as the primary users of the system was one of the better choices we made when it came to the usability of the system.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              At times, this decision led to confusion and frustration from designers that felt the system was more geared toward developers. We implemented a "Developer Engagement Program" to create subject matter expertise on each of the product teams. Something similar with designers would have helped improve advocacy and adoption within the design community.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              As the Design System Lead, I approached the design system the same way I would approach developing a product. I focused on remaining user-centered, balancing their needs against stakeholder requirements to iteratively build something of positive value.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer CTA */}
+      <section className="py-16 px-6 bg-muted/30">
+        <div className="container mx-auto max-w-5xl text-center space-y-6 animate-fade-in">
+          <h2 className="text-3xl font-serif font-semibold">Interested in learning more?</h2>
+          <Link to="/#work" className="inline-block mt-4">
+            <Button size="lg" className="bg-primary hover:bg-primary/90">
+              View More Projects
+            </Button>
+          </Link>
+        </div>
+      </section>
+    </div>
   );
 };
 
