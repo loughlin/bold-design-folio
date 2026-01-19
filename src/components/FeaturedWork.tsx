@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import ProtectedLink from "@/components/ProtectedLink";
 import designStudioStickyNotes from "@/assets/design-studio-sticky-notes.jpg";
-import usafUserResearch from "@/assets/usaf-user-research.jpg";
+import uxResearchStickyNotes from "@/assets/ux-research-sticky-notes.jpg";
 import cloudApplicationDashboard from "@/assets/cloud-application-dashboard.jpg";
 import designCareerFramework from "@/assets/design-career-framework.jpg";
 
@@ -17,9 +17,9 @@ const FeaturedWork = () => {
       link: "/case-study/design-system",
     },
     {
-      title: "Organizational Research Reboot",
+      title: "Reworking UX Research",
       description: "Conducted qualitative user research with users to de-risk product ideas and validate designs.",
-      image: usafUserResearch,
+      image: uxResearchStickyNotes,
       size: "medium",
       link: "/case-study/warfighter-research",
     },
