@@ -26,53 +26,53 @@ const FeaturedCaseStudy = () => {
               across the USAF application suite.
             </p>
 
+            {/* Impact Metrics */}
             <div className="grid grid-cols-2 gap-6 py-6">
               <div className="space-y-2">
-                <p className="text-3xl font-bold text-primary">15+</p>
-                <p className="text-sm text-muted-foreground">Designers Supported</p>
+                <p className="text-3xl font-bold text-primary">40%</p>
+                <p className="text-sm text-muted-foreground">Faster Design Delivery</p>
               </div>
               <div className="space-y-2">
                 <p className="text-3xl font-bold text-secondary">6</p>
                 <p className="text-sm text-muted-foreground">Operational Missions</p>
               </div>
               <div className="space-y-2">
-                <p className="text-3xl font-bold text-primary">4+</p>
-                <p className="text-sm text-muted-foreground">Years Experience</p>
+                <p className="text-3xl font-bold text-primary">15+</p>
+                <p className="text-sm text-muted-foreground">Designers Managed</p>
               </div>
               <div className="space-y-2">
-                <p className="text-3xl font-bold text-secondary">100%</p>
-                <p className="text-sm text-muted-foreground">Mission Focused</p>
+                <p className="text-3xl font-bold text-secondary">5</p>
+                <p className="text-sm text-muted-foreground">Applications Shipped</p>
               </div>
             </div>
 
+            {/* Challenge */}
             <div className="space-y-4">
-              <h3 className="text-xl font-bold">Overview</h3>
+              <h3 className="text-xl font-bold">The Challenge</h3>
               <p className="text-muted-foreground leading-relaxed">
-                I helped build, maintain and connect five independent applications within the problem space of targeting and geo-intelligence. Pushing for design excellence and the end goal of accessible intelligence worldwide on classified networks.
-              </p>
-              <p className="text-muted-foreground leading-relaxed">
-                Throughout, I helped transform outdated services into useful and pleasant to engage with products. As of today the products I've contributed to and led the design initiatives on are accessed by users daily and generate thousands of active intelligence inputs for the United States Air Force.
+                Legacy systems were siloed and difficult to use, with no consistent design language across applications. Design decisions were made in isolation, leading to fragmented user experiences and duplicated effort across teams.
               </p>
             </div>
 
+            {/* Approach */}
             <div className="space-y-4">
-              <h3 className="text-xl font-bold">Key Responsibilities</h3>
+              <h3 className="text-xl font-bold">My Approach</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <span className="text-primary text-2xl leading-none">•</span>
-                  <span className="text-muted-foreground">Collaborate with users and leadership teams to identify capability needs</span>
+                  <span className="text-muted-foreground">Established design ops processes and career frameworks for 15+ designers</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary text-2xl leading-none">•</span>
-                  <span className="text-muted-foreground">Establish design career ladders with DesignOps for professional development</span>
+                  <span className="text-muted-foreground">Led user research initiatives to validate designs with actual warfighters</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary text-2xl leading-none">•</span>
-                  <span className="text-muted-foreground">Centralize documentation and resources to reduce redundant processes</span>
+                  <span className="text-muted-foreground">Created unified design system adopted across all product teams</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-primary text-2xl leading-none">•</span>
-                  <span className="text-muted-foreground">Facilitate team rituals and practices as Psychological Safety facilitator</span>
+                  <span className="text-muted-foreground">Facilitated psychological safety practices to improve team collaboration</span>
                 </li>
               </ul>
             </div>
