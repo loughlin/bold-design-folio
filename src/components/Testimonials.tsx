@@ -55,12 +55,7 @@ const Testimonials = () => {
       <div className="container mx-auto">
         {/* Section Header */}
         <div className="mb-10 space-y-3 animate-fade-in">
-          <div className="flex items-center gap-4">
-            <div className="text-2xl font-serif font-bold border-2 border-foreground px-4 py-1 rounded-lg">
-              JL
-            </div>
-            <h2 className="text-5xl md:text-6xl font-bold">What Others Say!</h2>
-          </div>
+          <h2 className="text-5xl md:text-6xl font-bold">What Others Say!</h2>
           <p className="text-xl text-muted-foreground">
             Building trust through collaboration
           </p>
