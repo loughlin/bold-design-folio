@@ -18,7 +18,7 @@ const FeaturedWork = () => {
     },
     {
       title: "Reworking UX Research",
-      description: "Conducted qualitative user research with users to de-risk product ideas and validate designs.",
+      description: "Defined research practices and standards for a software suite of products, enabling teams to validate designs and de-risk decisions.",
       image: uxResearchStickyNotes,
       size: "medium",
       link: "/case-study/warfighter-research",
