@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-12 px-6">
+    <section id="contact" className="py-12 px-6 scroll-mt-20">
       <div className="container mx-auto max-w-2xl">
         <Card className="hover-lift bg-primary text-primary-foreground">
           <CardContent className="p-8 text-center">
