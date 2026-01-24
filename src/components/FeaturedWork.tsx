@@ -44,7 +44,7 @@ const FeaturedWork = () => {
       <div className="container mx-auto">
         {/* Section Header */}
         <div className="mb-10 space-y-3 animate-fade-in">
-          <h2 className="text-5xl md:text-6xl font-bold">Featured Projects</h2>
+          <h2 className="text-5xl md:text-6xl font-bold">Case Studies</h2>
         </div>
 
         {/* Two Project Cards */}
