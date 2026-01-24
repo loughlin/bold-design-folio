@@ -4,8 +4,6 @@ import { ArrowRight } from "lucide-react";
 import ProtectedLink from "@/components/ProtectedLink";
 import designStudioStickyNotes from "@/assets/design-studio-sticky-notes.jpg";
 import uxResearchStickyNotes from "@/assets/ux-research-sticky-notes.jpg";
-
-import designCareerFramework from "@/assets/design-career-framework.jpg";
 import kesselRunHQ from "@/assets/kessel-run-hq.jpg";
 
 const FeaturedWork = () => {
@@ -15,7 +13,7 @@ const FeaturedWork = () => {
       subtitle: "UX Manager + Leader",
       description: "Advocating for design in mission critical USAF applications, transitioning how the USAF delivers software.",
       role: "Portfolio Design Lead",
-      timeline: "2019 - 2023",
+      timeline: "2020 - Present",
       image: kesselRunHQ,
       link: "/case-study/kessel-run",
     },
@@ -29,22 +27,13 @@ const FeaturedWork = () => {
       link: "/case-study/design-system",
     },
     {
-      title: "Reworking UX Research",
+      title: "UX Research Initiatives",
       subtitle: "User Research + Synthesis",
       description: "Defined research practices and standards for a software suite of products, enabling teams to validate designs and de-risk decisions.",
       role: "Lead UX Researcher + Product Designer",
-      timeline: "2020 - Present",
+      timeline: "2019 - 2023",
       image: uxResearchStickyNotes,
       link: "/case-study/warfighter-research",
-    },
-    {
-      title: "DesignOps + Career Ladders",
-      subtitle: "Design Operations + Leadership",
-      description: "Established design career frameworks and operational processes supporting 15+ designers.",
-      role: "Design Manager + DesignOps Lead",
-      timeline: "2021 - 2023",
-      image: designCareerFramework,
-      link: "/case-study/designops",
     },
   ];
 
