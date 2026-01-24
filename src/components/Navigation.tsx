@@ -73,16 +73,13 @@ const Navigation = () => {
               Experience
             </button>
             <button
-              onClick={() => {
-                navigate("/about");
-                setTimeout(() => window.scrollTo({ top: 0, behavior: 'instant' }), 0);
-              }}
+              onClick={() => scrollToSection("about")}
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               About Me
             </button>
             <Button
-              onClick={() => navigate("/about#contact")}
+              onClick={() => scrollToSection("contact")}
               className="bg-primary hover:bg-primary/90"
             >
               Let's Talk
@@ -121,20 +118,13 @@ const Navigation = () => {
               Experience
             </button>
             <button
-              onClick={() => {
-                setIsMobileMenuOpen(false);
-                navigate("/about");
-                setTimeout(() => window.scrollTo({ top: 0, behavior: 'instant' }), 0);
-              }}
+              onClick={() => scrollToSection("about")}
               className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
             >
               About Me
             </button>
             <Button
-              onClick={() => {
-                setIsMobileMenuOpen(false);
-                navigate("/about#contact");
-              }}
+              onClick={() => scrollToSection("contact")}
               className="w-full bg-primary hover:bg-primary/90"
             >
               Let's Talk
