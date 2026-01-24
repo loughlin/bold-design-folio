@@ -13,14 +13,14 @@ const FeaturedWork = () => {
       subtitle: "UX Manager + Leader",
       description: "Advocating for design in mission critical USAF applications, transitioning how the USAF delivers software.",
       role: "Portfolio Design Lead",
-      timeline: "2020 - Present",
+      timeline: "2021 - Present",
       image: kesselRunHQ,
       link: "/case-study/kessel-run",
     },
     {
       title: "Portfolio Design System",
       subtitle: "Design Systems + Component Libraries",
-      description: "Led design systems initiative across 6 operational missions, establishing consistency standards for USAF applications.",
+      description: "Led design system roll out across five operational missions, establishing consistency standards for USAF software applications.",
       role: "Lead Designer + Product Manager",
       timeline: "2019 - 2023",
       image: designStudioStickyNotes,
@@ -31,22 +31,22 @@ const FeaturedWork = () => {
       subtitle: "User Research + Synthesis",
       description: "Defined research practices and standards for a software suite of products, enabling teams to validate designs and de-risk decisions.",
       role: "Lead UX Researcher + Product Designer",
-      timeline: "2019 - 2023",
+      timeline: "2021 - 2023",
       image: uxResearchStickyNotes,
       link: "/case-study/warfighter-research",
     },
   ];
 
   return (
-    <section id="work" className="py-12 px-6 scroll-mt-20">
+    <section id="work" className="py-16 px-6 scroll-mt-20">
       <div className="container mx-auto">
         {/* Section Header */}
-        <div className="mb-10 animate-fade-in">
+        <div className="mb-12 animate-fade-in">
           <h2 className="text-5xl md:text-6xl font-bold">Case Studies</h2>
         </div>
 
         {/* Case Study Cards - Vertical Stack */}
-        <div className="space-y-8">
+        <div className="space-y-6">
           {projects.map((project, index) => (
             <Card 
               key={index} 
