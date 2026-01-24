@@ -8,8 +8,6 @@ import NotFound from "./pages/NotFound";
 
 import DesignSystemCaseStudy from "./pages/DesignSystemCaseStudy";
 import WarfighterResearchCaseStudy from "./pages/WarfighterResearchCaseStudy";
-
-import DesignOpsCaseStudy from "./pages/DesignOpsCaseStudy";
 import KesselRunCaseStudy from "./pages/KesselRunCaseStudy";
 
 import { PasswordProvider } from "./contexts/PasswordContext";
@@ -32,8 +30,6 @@ const App = () => (
             
             <Route path="/case-study/design-system" element={<ProtectedRoute><DesignSystemCaseStudy /></ProtectedRoute>} />
             <Route path="/case-study/warfighter-research" element={<ProtectedRoute><WarfighterResearchCaseStudy /></ProtectedRoute>} />
-            
-            <Route path="/case-study/designops" element={<ProtectedRoute><DesignOpsCaseStudy /></ProtectedRoute>} />
             <Route path="/case-study/kessel-run" element={<ProtectedRoute><KesselRunCaseStudy /></ProtectedRoute>} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
