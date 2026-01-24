@@ -47,11 +47,8 @@ const Skills = () => {
     <section id="approach" className="py-12 px-6 bg-muted/30 scroll-mt-20">
       <div className="container mx-auto">
         {/* Section Header */}
-        <div className="mb-10 space-y-3 animate-fade-in">
+        <div className="mb-10 animate-fade-in">
           <h2 className="text-5xl md:text-6xl font-bold">Approach + Skills</h2>
-          <p className="text-xl text-muted-foreground">
-            Building Product excellence through collaboration and design thinking
-          </p>
         </div>
 
         {/* Skills Grid */}
