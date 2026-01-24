@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import ProtectedLink from "@/components/ProtectedLink";
 import designStudioStickyNotes from "@/assets/design-studio-sticky-notes.jpg";
 import uxResearchStickyNotes from "@/assets/ux-research-sticky-notes.jpg";
-import cloudApplicationDashboard from "@/assets/cloud-application-dashboard.jpg";
+
 import designCareerFramework from "@/assets/design-career-framework.jpg";
 import kesselRunHQ from "@/assets/kessel-run-hq.jpg";
 
@@ -27,15 +27,6 @@ const FeaturedWork = () => {
       timeline: "2020 - Present",
       image: uxResearchStickyNotes,
       link: "/case-study/warfighter-research",
-    },
-    {
-      title: "Cloud-Native Application Suite",
-      subtitle: "Product Design + UX Strategy",
-      description: "Applications supporting USAF critical global operations.",
-      role: "Product Designer + Design Lead",
-      timeline: "2019 - 2023",
-      image: cloudApplicationDashboard,
-      link: "/case-study/cloud-application",
     },
     {
       title: "DesignOps + Career Ladders",
