@@ -212,7 +212,7 @@ const MissionReportingCaseStudy = () => {
           <h2 className="text-3xl font-bold">Interested in learning more?</h2>
           <Link to="/#work">
             <Button size="lg" className="bg-primary hover:bg-primary/90">
-              View More Projects
+              View More Case Studies
             </Button>
           </Link>
         </div>

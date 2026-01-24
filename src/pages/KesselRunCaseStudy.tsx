@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import kesselRunCaoc from "@/assets/kessel-run-caoc.jpg";
@@ -422,6 +423,18 @@ const KesselRunCaseStudy = () => {
               User research in classified environments presents unique challenges, but direct access to warfighters transformed our design decisions and built credibility with stakeholders.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Footer CTA */}
+      <section className="py-16 px-6 bg-muted/30">
+        <div className="container mx-auto max-w-4xl text-center space-y-6">
+          <h2 className="text-3xl font-bold">Interested in learning more?</h2>
+          <Link to="/#work">
+            <Button size="lg" className="bg-primary hover:bg-primary/90">
+              View More Case Studies
+            </Button>
+          </Link>
         </div>
       </section>
 
