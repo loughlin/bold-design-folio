@@ -11,7 +11,7 @@ import WarfighterResearchCaseStudy from "./pages/WarfighterResearchCaseStudy";
 import CloudApplicationCaseStudy from "./pages/CloudApplicationCaseStudy";
 import DesignOpsCaseStudy from "./pages/DesignOpsCaseStudy";
 import KesselRunCaseStudy from "./pages/KesselRunCaseStudy";
-import Projects from "./pages/Projects";
+
 import { PasswordProvider } from "./contexts/PasswordContext";
 import PasswordDialog from "./components/PasswordDialog";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -29,7 +29,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             
-            <Route path="/projects" element={<ProtectedRoute><Projects /></ProtectedRoute>} />
+            
             <Route path="/case-study/design-system" element={<ProtectedRoute><DesignSystemCaseStudy /></ProtectedRoute>} />
             <Route path="/case-study/warfighter-research" element={<ProtectedRoute><WarfighterResearchCaseStudy /></ProtectedRoute>} />
             <Route path="/case-study/cloud-application" element={<ProtectedRoute><CloudApplicationCaseStudy /></ProtectedRoute>} />

@@ -6,36 +6,54 @@ import designStudioStickyNotes from "@/assets/design-studio-sticky-notes.jpg";
 import uxResearchStickyNotes from "@/assets/ux-research-sticky-notes.jpg";
 import cloudApplicationDashboard from "@/assets/cloud-application-dashboard.jpg";
 import designCareerFramework from "@/assets/design-career-framework.jpg";
+import kesselRunHQ from "@/assets/kessel-run-hq.jpg";
 
 const FeaturedWork = () => {
   const projects = [
     {
       title: "Portfolio Design System",
+      subtitle: "Design Systems + Component Libraries",
       description: "Led design systems initiative across 6 operational missions, establishing consistency standards for USAF applications.",
+      role: "Lead Designer + Product Manager",
+      timeline: "2019 - 2023",
       image: designStudioStickyNotes,
-      size: "large",
       link: "/case-study/design-system",
     },
     {
       title: "Reworking UX Research",
+      subtitle: "User Research + Synthesis",
       description: "Defined research practices and standards for a software suite of products, enabling teams to validate designs and de-risk decisions.",
+      role: "Lead UX Researcher + Product Designer",
+      timeline: "2020 - Present",
       image: uxResearchStickyNotes,
-      size: "medium",
       link: "/case-study/warfighter-research",
     },
     {
       title: "Cloud-Native Application Suite",
+      subtitle: "Product Design + UX Strategy",
       description: "Applications supporting USAF critical global operations.",
+      role: "Product Designer + Design Lead",
+      timeline: "2019 - 2023",
       image: cloudApplicationDashboard,
-      size: "medium",
       link: "/case-study/cloud-application",
     },
     {
-      title: "DesignOps & Career Ladders",
+      title: "DesignOps + Career Ladders",
+      subtitle: "Design Operations + Leadership",
       description: "Established design career frameworks and operational processes supporting 15+ designers.",
+      role: "Design Manager + DesignOps Lead",
+      timeline: "2021 - 2023",
       image: designCareerFramework,
-      size: "small",
       link: "/case-study/designops",
+    },
+    {
+      title: "Kessel Run Leadership",
+      subtitle: "Portfolio Design Leadership",
+      description: "Leading design for mission-critical USAF applications, transforming how the Air Force delivers software.",
+      role: "Portfolio Design Lead",
+      timeline: "2019 - 2023",
+      image: kesselRunHQ,
+      link: "/case-study/kessel-run",
     },
   ];
 
@@ -43,65 +61,66 @@ const FeaturedWork = () => {
     <section id="work" className="py-12 px-6 scroll-mt-20">
       <div className="container mx-auto">
         {/* Section Header */}
-        <div className="mb-10 space-y-3 animate-fade-in">
+        <div className="mb-10 animate-fade-in">
           <h2 className="text-5xl md:text-6xl font-bold">Case Studies</h2>
         </div>
 
-        {/* Two Project Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-          {/* Large Project Card */}
-          <Card className="group overflow-hidden hover-lift animate-fade-in">
-            <div className="relative h-96 overflow-hidden">
-              <img
-                src={projects[0].image}
-                alt={projects[0].title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/50 to-transparent" />
-              <CardContent className="absolute bottom-0 left-0 right-0 p-8 text-background">
-                <h3 className="text-3xl font-bold mb-3">{projects[0].title}</h3>
-                <p className="text-lg mb-4 text-background/90">{projects[0].description}</p>
-                <ProtectedLink to={projects[0].link}>
-                  <Button variant="secondary" className="group/btn">
-                    View Case Study
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
-                  </Button>
-                </ProtectedLink>
-              </CardContent>
-            </div>
-          </Card>
+        {/* Case Study Cards - Vertical Stack */}
+        <div className="space-y-8">
+          {projects.map((project, index) => (
+            <Card 
+              key={index} 
+              className="group overflow-hidden hover-lift animate-fade-in border-0 shadow-lg" 
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                {/* Image Side */}
+                <div className="relative h-64 lg:h-96 overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-foreground/20 to-transparent lg:bg-gradient-to-l" />
+                </div>
 
-          {/* Medium Project Card */}
-          <Card className="group overflow-hidden hover-lift animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            <div className="relative h-96 overflow-hidden">
-              <img
-                src={projects[1].image}
-                alt={projects[1].title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/50 to-transparent" />
-              <CardContent className="absolute bottom-0 left-0 right-0 p-8 text-background">
-                <h3 className="text-3xl font-bold mb-3">{projects[1].title}</h3>
-                <p className="text-lg mb-4 text-background/90">{projects[1].description}</p>
-                <ProtectedLink to={projects[1].link}>
-                  <Button variant="secondary" className="group/btn">
-                    View Case Study
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
-                  </Button>
-                </ProtectedLink>
-              </CardContent>
-            </div>
-          </Card>
-        </div>
+                {/* Content Side */}
+                <CardContent className="p-8 lg:p-12 flex flex-col justify-center bg-card">
+                  <div className="space-y-4">
+                    <p className="text-sm font-medium text-primary uppercase tracking-wider">
+                      {project.subtitle}
+                    </p>
+                    <h3 className="text-3xl lg:text-4xl font-bold">
+                      {project.title}
+                    </h3>
+                    <p className="text-lg text-muted-foreground">
+                      {project.description}
+                    </p>
+                    
+                    {/* Project Meta */}
+                    <div className="flex flex-wrap gap-6 pt-4 text-sm text-muted-foreground">
+                      <div>
+                        <span className="font-semibold text-foreground">Role:</span> {project.role}
+                      </div>
+                      <div>
+                        <span className="font-semibold text-foreground">Timeline:</span> {project.timeline}
+                      </div>
+                    </div>
 
-        {/* CTA Button */}
-        <div className="text-center animate-fade-in" style={{ animationDelay: "0.2s" }}>
-          <ProtectedLink to="/projects">
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
-              See All Projects
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </ProtectedLink>
+                    {/* CTA Button */}
+                    <div className="pt-6">
+                      <ProtectedLink to={project.link}>
+                        <Button size="lg" className="group/btn">
+                          View Case Study
+                          <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
+                        </Button>
+                      </ProtectedLink>
+                    </div>
+                  </div>
+                </CardContent>
+              </div>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
