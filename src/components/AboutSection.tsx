@@ -4,9 +4,9 @@ import { Download, Linkedin, Mail } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-12 px-6 bg-muted/30 scroll-mt-20">
+    <section id="about" className="py-16 px-6 bg-muted/30 scroll-mt-20">
       <div className="container mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">About Me</h2>
+        <h2 className="text-5xl md:text-6xl font-bold mb-10">About Me</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Column - Content */}
           <div className="space-y-8 animate-fade-in">
