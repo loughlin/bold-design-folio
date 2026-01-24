@@ -40,7 +40,7 @@ const FeaturedWork = () => {
   ];
 
   return (
-    <section id="work" className="py-12 px-6">
+    <section id="work" className="py-12 px-6 scroll-mt-20">
       <div className="container mx-auto">
         {/* Section Header */}
         <div className="mb-10 space-y-3 animate-fade-in">

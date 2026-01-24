@@ -44,7 +44,7 @@ const Skills = () => {
 
 
   return (
-    <section id="approach" className="py-12 px-6 bg-muted/30">
+    <section id="approach" className="py-12 px-6 bg-muted/30 scroll-mt-20">
       <div className="container mx-auto">
         {/* Section Header */}
         <div className="mb-10 space-y-3 animate-fade-in">
