@@ -35,6 +35,15 @@ const FeaturedWork = () => {
       image: uxResearchStickyNotes,
       link: "/case-study/warfighter-research",
     },
+    {
+      title: "Marauder",
+      subtitle: "Product Design + Integration",
+      description: "Eliminating manual calculation and data entry to transform how the Air Force plans mission reporting missions and data.",
+      role: "Lead Product Designer",
+      timeline: "2019 - 2022",
+      image: designStudioStickyNotes,
+      link: "/case-study/marauder",
+    },
   ];
 
   return (
