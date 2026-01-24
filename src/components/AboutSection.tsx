@@ -12,7 +12,7 @@ const AboutSection = () => {
           <div className="space-y-8 animate-fade-in">
             <div className="prose prose-lg">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm James Loughlin, a Design Leader and problem solver. I combine human-centered design with user empathy to build design culture and solve problems. I see design as imagining the best possible experience for someone and steadily moving toward it: rebuilding, refining, and reshaping until it finally feels inevitable.
+                I'm James Loughlin, a Design Leader and problem solver. I combine human-centered design with user empathy to build design culture and solve problems. I see design as imagining the best possible experience for someone and steadily moving toward it: rebuilding, refining, and reshaping until it finally becomes software that is pleasant and useful to engage with.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed mt-6">
@@ -20,7 +20,7 @@ const AboutSection = () => {
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed mt-6">
-                My work sits at the intersection of craft, thinking, and empathy. And as a designer, I'll always stay hungry to learn, evolve, and create whatever comes next: something human, intentional, and unmistakably right.
+                As a UX Manager and leader in design and problem solving, my work sits at the intersection of craft, thinking, and empathy. I'm passionate about instilling design principles in others, helping teams grow their craft while building products that matter. I'll always stay hungry to learn, evolve, and create whatever comes next: something human, intentional, and unmistakably right.
               </p>
             </div>
 
