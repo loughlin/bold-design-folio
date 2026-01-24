@@ -314,7 +314,7 @@ const DesignSystemCaseStudy = () => {
           <h2 className="text-3xl font-serif font-semibold">Interested in learning more?</h2>
           <Link to="/#work" className="inline-block mt-4">
             <Button size="lg" className="bg-primary hover:bg-primary/90">
-              View More Projects
+              View More Case Studies
             </Button>
           </Link>
         </div>
