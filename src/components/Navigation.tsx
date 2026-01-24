@@ -78,12 +78,6 @@ const Navigation = () => {
             >
               About Me
             </button>
-            <Button
-              onClick={() => scrollToSection("contact")}
-              className="bg-primary hover:bg-primary/90"
-            >
-              Let's Talk
-            </Button>
             <ThemeToggle />
           </div>
 
@@ -123,12 +117,6 @@ const Navigation = () => {
             >
               About Me
             </button>
-            <Button
-              onClick={() => scrollToSection("contact")}
-              className="w-full bg-primary hover:bg-primary/90"
-            >
-              Let's Talk
-            </Button>
           </div>
         )}
       </div>
