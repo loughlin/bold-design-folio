@@ -11,6 +11,15 @@ import kesselRunHQ from "@/assets/kessel-run-hq.jpg";
 const FeaturedWork = () => {
   const projects = [
     {
+      title: "UX Leadership",
+      subtitle: "UX Manager + Leader",
+      description: "Advocating for design in mission critical USAF applications, transitioning how the USAF delivers software.",
+      role: "Portfolio Design Lead",
+      timeline: "2019 - 2023",
+      image: kesselRunHQ,
+      link: "/case-study/kessel-run",
+    },
+    {
       title: "Portfolio Design System",
       subtitle: "Design Systems + Component Libraries",
       description: "Led design systems initiative across 6 operational missions, establishing consistency standards for USAF applications.",
@@ -36,15 +45,6 @@ const FeaturedWork = () => {
       timeline: "2021 - 2023",
       image: designCareerFramework,
       link: "/case-study/designops",
-    },
-    {
-      title: "Kessel Run Leadership",
-      subtitle: "Portfolio Design Leadership",
-      description: "Leading design for mission-critical USAF applications, transforming how the Air Force delivers software.",
-      role: "Portfolio Design Lead",
-      timeline: "2019 - 2023",
-      image: kesselRunHQ,
-      link: "/case-study/kessel-run",
     },
   ];
 
