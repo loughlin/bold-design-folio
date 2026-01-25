@@ -89,6 +89,44 @@ const WarfighterResearchCaseStudy = () => {
           ]
         }
       ]}
+      heuristics={[
+        {
+          name: "Match Real World",
+          description: "Research-informed terminology and workflows replaced engineer assumptions, aligning with actual mission planning language.",
+          before: 2,
+          after: 5
+        },
+        {
+          name: "User Control & Freedom",
+          description: "User feedback drove undo/redo patterns and flexible workflows that matched how operators actually work.",
+          before: 2,
+          after: 4
+        },
+        {
+          name: "Error Prevention",
+          description: "Usability testing identified error-prone workflows, leading to confirmation dialogs and validation patterns.",
+          before: 2,
+          after: 4
+        },
+        {
+          name: "Recognition over Recall",
+          description: "Card sorting and tree testing optimized information architecture, reducing cognitive load during high-stress operations.",
+          before: 2,
+          after: 5
+        },
+        {
+          name: "Flexibility & Efficiency",
+          description: "Research revealed power user shortcuts and customization needs, enabling 25% faster task completion.",
+          before: 2,
+          after: 4
+        },
+        {
+          name: "Help & Documentation",
+          description: "User research insights embedded into component guidelines provided contextual help for designers.",
+          before: 1,
+          after: 4
+        }
+      ]}
       beforeAfter={{
         before: {
           image: teamCollaborationMeeting,

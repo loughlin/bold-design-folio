@@ -244,7 +244,101 @@ const DesignSystemCaseStudy = () => {
         </div>
       </section>
 
-      {/* Before & After Comparison */}
+      {/* Heuristics Evaluation */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-5xl space-y-8">
+          <h2 className="text-4xl font-serif font-semibold text-center animate-fade-in">Usability Heuristics Evaluation</h2>
+          <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            How the design system improved usability across Nielsen's heuristics
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <Card>
+              <CardContent className="p-6 space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">1</div>
+                  <h3 className="font-semibold">Consistency & Standards</h3>
+                </div>
+                <p className="text-sm text-muted-foreground">Unified component library eliminated 40+ inconsistent UI patterns across products, reducing user confusion and training time.</p>
+                <div className="flex items-center gap-2 text-xs">
+                  <span className="text-destructive">Before: 2/5</span>
+                  <span className="text-muted-foreground">→</span>
+                  <span className="text-primary font-medium">After: 5/5</span>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6 space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">2</div>
+                  <h3 className="font-semibold">Error Prevention</h3>
+                </div>
+                <p className="text-sm text-muted-foreground">Built-in validation patterns and standardized form components reduced user input errors by 45% across applications.</p>
+                <div className="flex items-center gap-2 text-xs">
+                  <span className="text-destructive">Before: 2/5</span>
+                  <span className="text-muted-foreground">→</span>
+                  <span className="text-primary font-medium">After: 4/5</span>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6 space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">3</div>
+                  <h3 className="font-semibold">Recognition over Recall</h3>
+                </div>
+                <p className="text-sm text-muted-foreground">Consistent iconography and labeling across products meant users could transfer knowledge between applications instantly.</p>
+                <div className="flex items-center gap-2 text-xs">
+                  <span className="text-destructive">Before: 2/5</span>
+                  <span className="text-muted-foreground">→</span>
+                  <span className="text-primary font-medium">After: 5/5</span>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6 space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">4</div>
+                  <h3 className="font-semibold">Flexibility & Efficiency</h3>
+                </div>
+                <p className="text-sm text-muted-foreground">Keyboard shortcuts and accessibility features enabled power users to complete tasks 30% faster than before.</p>
+                <div className="flex items-center gap-2 text-xs">
+                  <span className="text-destructive">Before: 2/5</span>
+                  <span className="text-muted-foreground">→</span>
+                  <span className="text-primary font-medium">After: 4/5</span>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6 space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">5</div>
+                  <h3 className="font-semibold">Aesthetic & Minimal</h3>
+                </div>
+                <p className="text-sm text-muted-foreground">Standardized spacing, typography, and visual hierarchy created cleaner interfaces that reduced cognitive load.</p>
+                <div className="flex items-center gap-2 text-xs">
+                  <span className="text-destructive">Before: 3/5</span>
+                  <span className="text-muted-foreground">→</span>
+                  <span className="text-primary font-medium">After: 5/5</span>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6 space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">6</div>
+                  <h3 className="font-semibold">Help & Documentation</h3>
+                </div>
+                <p className="text-sm text-muted-foreground">Component-level documentation and usage guidelines enabled self-service design, reducing support requests by 60%.</p>
+                <div className="flex items-center gap-2 text-xs">
+                  <span className="text-destructive">Before: 1/5</span>
+                  <span className="text-muted-foreground">→</span>
+                  <span className="text-primary font-medium">After: 5/5</span>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-5xl space-y-8">
           <h2 className="text-4xl font-serif font-semibold text-center animate-fade-in">Before & After</h2>

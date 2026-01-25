@@ -268,7 +268,89 @@ const KesselRunCaseStudy = () => {
         </div>
       </section>
 
-      {/* Two Column Image Grid */}
+      {/* Heuristics Evaluation */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-4xl space-y-8">
+          <h2 className="text-2xl font-bold text-center">Usability Heuristics Evaluation</h2>
+          <p className="text-lg text-muted-foreground text-center max-w-2xl mx-auto">
+            How design leadership improved usability across Nielsen's heuristics
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-muted/30 rounded-xl p-6 space-y-3">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">1</div>
+                <h3 className="font-semibold text-sm">User Control & Freedom</h3>
+              </div>
+              <p className="text-sm text-muted-foreground">Established undo/redo patterns and confirmation dialogs for critical actions in mission-critical workflows.</p>
+              <div className="flex items-center gap-2 text-xs">
+                <span className="text-destructive">Before: 2/5</span>
+                <span className="text-muted-foreground">→</span>
+                <span className="text-primary font-medium">After: 4/5</span>
+              </div>
+            </div>
+            <div className="bg-muted/30 rounded-xl p-6 space-y-3">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">2</div>
+                <h3 className="font-semibold text-sm">Visibility of System Status</h3>
+              </div>
+              <p className="text-sm text-muted-foreground">Implemented real-time feedback for data sync, processing states, and system health across all applications.</p>
+              <div className="flex items-center gap-2 text-xs">
+                <span className="text-destructive">Before: 2/5</span>
+                <span className="text-muted-foreground">→</span>
+                <span className="text-primary font-medium">After: 5/5</span>
+              </div>
+            </div>
+            <div className="bg-muted/30 rounded-xl p-6 space-y-3">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">3</div>
+                <h3 className="font-semibold text-sm">Match Real World</h3>
+              </div>
+              <p className="text-sm text-muted-foreground">User research informed terminology and workflows that matched actual mission planning language and processes.</p>
+              <div className="flex items-center gap-2 text-xs">
+                <span className="text-destructive">Before: 3/5</span>
+                <span className="text-muted-foreground">→</span>
+                <span className="text-primary font-medium">After: 5/5</span>
+              </div>
+            </div>
+            <div className="bg-muted/30 rounded-xl p-6 space-y-3">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">4</div>
+                <h3 className="font-semibold text-sm">Error Recovery</h3>
+              </div>
+              <p className="text-sm text-muted-foreground">Clear error messages with actionable recovery steps replaced cryptic system codes across the product suite.</p>
+              <div className="flex items-center gap-2 text-xs">
+                <span className="text-destructive">Before: 1/5</span>
+                <span className="text-muted-foreground">→</span>
+                <span className="text-primary font-medium">After: 4/5</span>
+              </div>
+            </div>
+            <div className="bg-muted/30 rounded-xl p-6 space-y-3">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">5</div>
+                <h3 className="font-semibold text-sm">Flexibility & Efficiency</h3>
+              </div>
+              <p className="text-sm text-muted-foreground">Keyboard shortcuts and customizable dashboards enabled power users to complete tasks 35% faster.</p>
+              <div className="flex items-center gap-2 text-xs">
+                <span className="text-destructive">Before: 2/5</span>
+                <span className="text-muted-foreground">→</span>
+                <span className="text-primary font-medium">After: 4/5</span>
+              </div>
+            </div>
+            <div className="bg-muted/30 rounded-xl p-6 space-y-3">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">6</div>
+                <h3 className="font-semibold text-sm">Consistency & Standards</h3>
+              </div>
+              <p className="text-sm text-muted-foreground">Cross-team design standards unified interaction patterns, reducing learning curve when switching between applications.</p>
+              <div className="flex items-center gap-2 text-xs">
+                <span className="text-destructive">Before: 2/5</span>
+                <span className="text-muted-foreground">→</span>
+                <span className="text-primary font-medium">After: 5/5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-5xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
