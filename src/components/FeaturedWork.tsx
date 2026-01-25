@@ -6,6 +6,7 @@ import ProtectedLink from "@/components/ProtectedLink";
 import designStudioStickyNotes from "@/assets/design-studio-sticky-notes.jpg";
 import uxResearchStickyNotes from "@/assets/ux-research-sticky-notes.jpg";
 import kesselRunLeadershipVisit from "@/assets/kessel-run-leadership-visit.jpg";
+import designSystemPreview from "@/assets/design-system-preview.avif";
 
 const FeaturedWork = () => {
   const projects = [
@@ -25,7 +26,7 @@ const FeaturedWork = () => {
       description: "Led design system roll out across five operational missions, establishing consistency standards for USAF software applications.",
       role: "UX Manager + Product Designer",
       timeline: "2019 - 2023",
-      image: designStudioStickyNotes,
+      image: designSystemPreview,
       link: "/case-study/design-system",
       isPublic: true,
     },
