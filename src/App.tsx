@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -6,10 +7,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
-import DesignSystemCaseStudy from "./pages/DesignSystemCaseStudy";
-import WarfighterResearchCaseStudy from "./pages/WarfighterResearchCaseStudy";
-import KesselRunCaseStudy from "./pages/KesselRunCaseStudy";
-import MissionReportingCaseStudy from "./pages/MissionReportingCaseStudy";
+// Lazy load protected case study pages - only loaded after authentication
+const DesignSystemCaseStudy = lazy(() => import("./pages/DesignSystemCaseStudy"));
+const WarfighterResearchCaseStudy = lazy(() => import("./pages/WarfighterResearchCaseStudy"));
+const KesselRunCaseStudy = lazy(() => import("./pages/KesselRunCaseStudy"));
+const MissionReportingCaseStudy = lazy(() => import("./pages/MissionReportingCaseStudy"));
 
 import { PasswordProvider } from "./contexts/PasswordContext";
 import PasswordDialog from "./components/PasswordDialog";
@@ -28,11 +30,35 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             
-            
-            <Route path="/case-study/design-system" element={<ProtectedRoute><DesignSystemCaseStudy /></ProtectedRoute>} />
-            <Route path="/case-study/warfighter-research" element={<ProtectedRoute><WarfighterResearchCaseStudy /></ProtectedRoute>} />
-            <Route path="/case-study/kessel-run" element={<ProtectedRoute><KesselRunCaseStudy /></ProtectedRoute>} />
-            <Route path="/case-study/marauder" element={<ProtectedRoute><MissionReportingCaseStudy /></ProtectedRoute>} />
+            {/* Protected routes with lazy loading - content only loaded after authentication */}
+            <Route path="/case-study/design-system" element={
+              <ProtectedRoute>
+                <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div></div>}>
+                  <DesignSystemCaseStudy />
+                </Suspense>
+              </ProtectedRoute>
+            } />
+            <Route path="/case-study/warfighter-research" element={
+              <ProtectedRoute>
+                <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div></div>}>
+                  <WarfighterResearchCaseStudy />
+                </Suspense>
+              </ProtectedRoute>
+            } />
+            <Route path="/case-study/kessel-run" element={
+              <ProtectedRoute>
+                <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div></div>}>
+                  <KesselRunCaseStudy />
+                </Suspense>
+              </ProtectedRoute>
+            } />
+            <Route path="/case-study/marauder" element={
+              <ProtectedRoute>
+                <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div></div>}>
+                  <MissionReportingCaseStudy />
+                </Suspense>
+              </ProtectedRoute>
+            } />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
