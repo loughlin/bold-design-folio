@@ -244,8 +244,63 @@ const DesignSystemCaseStudy = () => {
         </div>
       </section>
 
-      {/* Results and Learnings */}
+      {/* Before & After Comparison */}
       <section className="py-16 px-6">
+        <div className="container mx-auto max-w-5xl space-y-8">
+          <h2 className="text-4xl font-serif font-semibold text-center animate-fade-in">Before & After</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <Card className="border-destructive/20">
+              <CardContent className="p-6 space-y-4">
+                <h3 className="font-semibold text-destructive">Before Design System</h3>
+                <ul className="space-y-3 text-muted-foreground">
+                  <li className="flex items-start gap-3">
+                    <span className="text-destructive mt-1">✗</span>
+                    <span>Each team built custom components from scratch, averaging 22 days per front-end story</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-destructive mt-1">✗</span>
+                    <span>Inconsistent patterns increased user errors and extended onboarding time</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-destructive mt-1">✗</span>
+                    <span>No shared design language between 40+ product teams</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-destructive mt-1">✗</span>
+                    <span>Accessibility compliance varied by team, creating audit failures</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+            <Card className="border-primary/20">
+              <CardContent className="p-6 space-y-4">
+                <h3 className="font-semibold text-primary">After Design System</h3>
+                <ul className="space-y-3 text-muted-foreground">
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <span>Story completion time reduced to 19 days with pre-built, tested components</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <span>Consistent interaction patterns reduced user errors and training time</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <span>Unified component library adopted by all eligible teams</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary mt-1">✓</span>
+                    <span>WCAG 2.1 AA compliance built into every component by default</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Results and Learnings */}
+      <section className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto max-w-5xl space-y-12">
           <h2 className="text-4xl font-serif font-semibold text-center animate-fade-in">Results and Learnings</h2>
           
@@ -265,12 +320,40 @@ const DesignSystemCaseStudy = () => {
             </ul>
           </div>
 
+          {/* Process Improvements */}
+          <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.15s" }}>
+            <h3 className="text-2xl font-semibold">Process Improvements</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-3">
+                <h4 className="font-medium text-primary">Handoff Transformation</h4>
+                <p className="text-muted-foreground">Created a component-first handoff process where designers referenced existing library components, reducing spec documentation by 60% and eliminating ambiguity in developer implementation.</p>
+              </div>
+              <div className="space-y-3">
+                <h4 className="font-medium text-primary">Documentation Standards</h4>
+                <p className="text-muted-foreground">Established comprehensive Storybook documentation with usage guidelines, accessibility notes, and code examples that reduced onboarding time for new developers from weeks to days.</p>
+              </div>
+            </div>
+          </div>
+
           {/* Impact */}
           <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
             <h3 className="text-2xl font-semibold">Impact</h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
               The design system fundamentally transformed how 40+ product teams approached front end development, creating organizational efficiency while ensuring consistent user experiences across the entire product ecosystem.
             </p>
+          </div>
+
+          {/* What Stakeholders Say */}
+          <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.25s" }}>
+            <h3 className="text-2xl font-semibold">What Stakeholders Said</h3>
+            <Card className="bg-primary/5 border-primary/20">
+              <CardContent className="p-8">
+                <blockquote className="text-lg italic text-foreground leading-relaxed">
+                  "The design system has become the foundation for how we build software at Kessel Run. It's not just about components—it's about enabling our teams to deliver faster while maintaining the quality our users deserve."
+                </blockquote>
+                <p className="text-sm text-muted-foreground mt-4">— Portfolio Leadership</p>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Learnings */}
@@ -284,6 +367,14 @@ const DesignSystemCaseStudy = () => {
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Most importantly, the design system gave our teams a foundation for growth. New designers onboarded faster, experienced designers mentored more effectively, and the entire organization developed a shared understanding of what quality looked like. That cultural shift proved more valuable than any efficiency metric.
+            </p>
+          </div>
+
+          {/* Future Growth */}
+          <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.35s" }}>
+            <h3 className="text-2xl font-semibold">Designed for Future Growth</h3>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              The system was architected with scalability in mind. Semantic tokens enable rapid theming for new product lines, the contribution model allows teams to extend functionality without fragmenting the core library, and the governance structure ensures quality as the organization grows. This foundation positioned the Air Force to adopt the system at an enterprise level.
             </p>
           </div>
 

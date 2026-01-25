@@ -105,7 +105,10 @@ const WarfighterResearchCaseStudy = () => {
         "Reduced post-launch design changes by 65% through early validation with actual users",
         "Established user research as standard practice across all 6 T&G Portfolio missions",
         "Created library of 50+ research insights accessible to all product teams, informing future design decisions",
-        "Trained 15 designers and product managers in basic research methods, building team capability"
+        "Trained 15 designers and product managers in basic research methods, building team capability",
+        "Stakeholder feedback: 'Research has transformed how we prioritize features—we now have confidence that what we build will actually be used'",
+        "Reduced average feature development cycle by 3 weeks through early problem validation",
+        "Established accessibility testing protocols that identified 40+ usability barriers for users in operational environments"
       ]}
       images={[
         {

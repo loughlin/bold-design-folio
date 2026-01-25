@@ -182,6 +182,72 @@ const MissionReportingCaseStudy = () => {
         </div>
       </section>
 
+      {/* Before & After Workflow */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-4">Workflow Transformation</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-destructive/5 rounded-xl p-6 space-y-4">
+              <h3 className="font-semibold text-destructive">Before</h3>
+              <ul className="space-y-3 text-muted-foreground text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-destructive">✗</span>
+                  <span>5 manual data entry fields per mission report</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-destructive">✗</span>
+                  <span>Manual route time calculations prone to errors</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-destructive">✗</span>
+                  <span>No integration with external data sources</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-destructive">✗</span>
+                  <span>Redundant data entry across multiple systems</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-primary/5 rounded-xl p-6 space-y-4">
+              <h3 className="font-semibold text-primary">After</h3>
+              <ul className="space-y-3 text-muted-foreground text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary">✓</span>
+                  <span>3 of 5 fields auto-populated from integration</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary">✓</span>
+                  <span>Route times calculated automatically</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary">✓</span>
+                  <span>Real-time data sync with external systems</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary">✓</span>
+                  <span>Single source of truth for mission data</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testing Insights */}
+      <section className="py-16 px-6 bg-muted/30">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-4">What Testing Revealed</h2>
+          <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+            <p>
+              User testing sessions with mission planners revealed unexpected pain points. Users were spending significant time cross-referencing multiple systems to verify data accuracy. Our integrated solution eliminated this verification step entirely, reducing mission planning time by an estimated 20 minutes per report.
+            </p>
+            <p>
+              Usability testing also uncovered that users preferred the form-based interface over the map view for routine operations—the visual map was valuable for complex scenarios but added cognitive load for standard workflows. This insight validated our scope adjustment decision.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Results Section */}
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-4xl">
@@ -189,9 +255,6 @@ const MissionReportingCaseStudy = () => {
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed mb-12">
             <p>
               The integration with the external data management system was completed in four months. The solution met or exceeded all but one of our success metrics. Unfortunately, the automation of transit data entry was deprioritized due to technical and timeline constraints. Our team moved on to the next domain area to integrate within the suite, taking lessons learned from this first iteration with us.
-            </p>
-            <p>
-              My biggest takeaway from this experience was to seek out engineering feedback early and often. If I had brought my engineers into my design process earlier, they would have been able to give me the feedback that would have saved time, allowed for better user expectation management, and kept me focused on the problems at hand. It is good to have a long term vision for what the ideal state would be, but feasibility is an important factor to consider so that we can provide user value as soon as possible. This is something that I have continued to reflect back on during my career and has allowed me to create more effective and feasible designs.
             </p>
           </div>
 
@@ -207,6 +270,52 @@ const MissionReportingCaseStudy = () => {
               </Card>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Process Improvements */}
+      <section className="py-16 px-6 bg-muted/30">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-4">Process Improvements</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-3">
+              <h3 className="font-medium text-foreground">Engineer Collaboration</h3>
+              <p className="text-muted-foreground text-sm">
+                Established weekly design-engineering syncs that caught feasibility issues earlier, reducing late-stage scope changes by 50% on subsequent projects.
+              </p>
+            </div>
+            <div className="space-y-3">
+              <h3 className="font-medium text-foreground">Documentation Standards</h3>
+              <p className="text-muted-foreground text-sm">
+                Created integration design specs that became templates for future cross-system features, accelerating subsequent integration projects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What Did We Learn */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-4">What Did We Learn?</h2>
+          <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+            <p>
+              My biggest takeaway from this experience was to seek out engineering feedback early and often. If I had brought my engineers into my design process earlier, they would have been able to give me the feedback that would have saved time, allowed for better user expectation management, and kept me focused on the problems at hand.
+            </p>
+            <p>
+              It is good to have a long term vision for what the ideal state would be, but feasibility is an important factor to consider so that we can provide user value as soon as possible. This is something that I have continued to reflect back on during my career and has allowed me to create more effective and feasible designs.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Future Growth */}
+      <section className="py-16 px-6 bg-muted/30">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-4">Designed for Future Growth</h2>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            The integration architecture we established became the blueprint for connecting additional applications within the suite. The modular approach to data consumption allowed subsequent features to leverage the same integration patterns, reducing development time for future cross-system capabilities by 30%.
+          </p>
         </div>
       </section>
 
