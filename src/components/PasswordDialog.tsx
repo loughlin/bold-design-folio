@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { usePassword } from "@/contexts/PasswordContext";
-import { Lock } from "lucide-react";
+import { Lock, Loader2 } from "lucide-react";
 
 const PasswordDialog = () => {
   const [password, setPassword] = useState("");
@@ -21,15 +21,18 @@ const PasswordDialog = () => {
     showPasswordDialog,
     setShowPasswordDialog,
     authenticate,
+    isAuthenticating,
     pendingNavigation,
     setPendingNavigation,
   } = usePassword();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
 
-    if (authenticate(password)) {
+    const success = await authenticate(password);
+    
+    if (success) {
       setShowPasswordDialog(false);
       setPassword("");
       if (pendingNavigation) {
@@ -57,7 +60,7 @@ const PasswordDialog = () => {
           </div>
           <DialogTitle className="text-center">Password Required</DialogTitle>
           <DialogDescription className="text-center">
-            Please enter the password to view project details.
+            Please enter the password to view case study details.
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -70,17 +73,31 @@ const PasswordDialog = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               autoFocus
+              disabled={isAuthenticating}
             />
             {error && (
               <p className="text-sm text-destructive">{error}</p>
             )}
           </div>
           <div className="flex gap-3">
-            <Button type="button" variant="outline" onClick={handleClose} className="flex-1">
+            <Button 
+              type="button" 
+              variant="outline" 
+              onClick={handleClose} 
+              className="flex-1"
+              disabled={isAuthenticating}
+            >
               Cancel
             </Button>
-            <Button type="submit" className="flex-1">
-              Submit
+            <Button type="submit" className="flex-1" disabled={isAuthenticating}>
+              {isAuthenticating ? (
+                <>
+                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                  Verifying...
+                </>
+              ) : (
+                "Submit"
+              )}
             </Button>
           </div>
         </form>
