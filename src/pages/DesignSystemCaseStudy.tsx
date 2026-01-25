@@ -162,33 +162,89 @@ const DesignSystemCaseStudy = () => {
           <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto mb-12">
             How the design system accelerated value delivery across the organization
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="border-l-4 border-l-primary">
-              <CardContent className="p-6 space-y-2">
-                <p className="text-3xl font-bold text-primary">3 days</p>
-                <p className="text-sm font-medium">Faster Story Completion</p>
-                <p className="text-xs text-muted-foreground">Reduced from 22 to 19 days average</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <Card className="overflow-hidden">
+              <CardContent className="p-6 space-y-4">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <p className="text-3xl font-bold text-primary">3 days</p>
+                    <p className="text-sm font-medium">Faster Story Completion</p>
+                  </div>
+                  <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">22 → 19 days</span>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex justify-between text-xs text-muted-foreground">
+                    <span>Before</span>
+                    <span>After</span>
+                  </div>
+                  <div className="h-3 bg-muted rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-destructive/60 to-primary rounded-full transition-all duration-1000" style={{ width: '86%' }} />
+                  </div>
+                  <p className="text-xs text-muted-foreground">14% reduction in cycle time</p>
+                </div>
               </CardContent>
             </Card>
-            <Card className="border-l-4 border-l-primary">
-              <CardContent className="p-6 space-y-2">
-                <p className="text-3xl font-bold text-primary">48%</p>
-                <p className="text-sm font-medium">Fewer Design Stories</p>
-                <p className="text-xs text-muted-foreground">From 3.8 to 1.95 stories per week</p>
+            <Card className="overflow-hidden">
+              <CardContent className="p-6 space-y-4">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <p className="text-3xl font-bold text-primary">48%</p>
+                    <p className="text-sm font-medium">Fewer Design Stories</p>
+                  </div>
+                  <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">3.8 → 1.95/week</span>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex justify-between text-xs text-muted-foreground">
+                    <span>Before</span>
+                    <span>After</span>
+                  </div>
+                  <div className="h-3 bg-muted rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-destructive/60 to-primary rounded-full transition-all duration-1000" style={{ width: '52%' }} />
+                  </div>
+                  <p className="text-xs text-muted-foreground">Nearly half the design overhead</p>
+                </div>
               </CardContent>
             </Card>
-            <Card className="border-l-4 border-l-primary">
-              <CardContent className="p-6 space-y-2">
-                <p className="text-3xl font-bold text-primary">2 weeks</p>
-                <p className="text-sm font-medium">Designer Onboarding</p>
-                <p className="text-xs text-muted-foreground">Down from 6+ weeks previously</p>
+            <Card className="overflow-hidden">
+              <CardContent className="p-6 space-y-4">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <p className="text-3xl font-bold text-primary">2 weeks</p>
+                    <p className="text-sm font-medium">Designer Onboarding</p>
+                  </div>
+                  <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">6+ → 2 weeks</span>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex justify-between text-xs text-muted-foreground">
+                    <span>Before</span>
+                    <span>After</span>
+                  </div>
+                  <div className="h-3 bg-muted rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-destructive/60 to-primary rounded-full transition-all duration-1000" style={{ width: '33%' }} />
+                  </div>
+                  <p className="text-xs text-muted-foreground">67% faster time to productivity</p>
+                </div>
               </CardContent>
             </Card>
-            <Card className="border-l-4 border-l-primary">
-              <CardContent className="p-6 space-y-2">
-                <p className="text-3xl font-bold text-primary">2,000+</p>
-                <p className="text-sm font-medium">Dev Days Saved/Year</p>
-                <p className="text-xs text-muted-foreground">Per 10-person developer team</p>
+            <Card className="overflow-hidden">
+              <CardContent className="p-6 space-y-4">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <p className="text-3xl font-bold text-primary">2,000+</p>
+                    <p className="text-sm font-medium">Dev Days Saved/Year</p>
+                  </div>
+                  <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">per 10-dev team</span>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex justify-between text-xs text-muted-foreground">
+                    <span>Efficiency Gain</span>
+                    <span>100%</span>
+                  </div>
+                  <div className="h-3 bg-muted rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-primary/40 to-primary rounded-full transition-all duration-1000" style={{ width: '95%' }} />
+                  </div>
+                  <p className="text-xs text-muted-foreground">Massive ROI on design system investment</p>
+                </div>
               </CardContent>
             </Card>
           </div>

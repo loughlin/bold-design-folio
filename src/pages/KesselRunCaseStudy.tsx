@@ -275,26 +275,63 @@ const KesselRunCaseStudy = () => {
           <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-8">
             How design leadership accelerated value delivery
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="bg-primary/5 rounded-xl p-6 text-center space-y-2">
-              <p className="text-3xl font-bold text-primary">40%</p>
-              <p className="text-sm font-medium">Faster Delivery</p>
-              <p className="text-xs text-muted-foreground">Design-to-dev handoff time</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-card rounded-xl p-6 space-y-4 border">
+              <div className="flex justify-between items-start">
+                <div>
+                  <p className="text-3xl font-bold text-primary">40%</p>
+                  <p className="text-sm font-medium">Faster Delivery</p>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <div className="h-3 bg-muted rounded-full overflow-hidden">
+                  <div className="h-full bg-gradient-to-r from-primary/40 to-primary rounded-full" style={{ width: '40%' }} />
+                </div>
+                <p className="text-xs text-muted-foreground">Design-to-dev handoff time reduction</p>
+              </div>
             </div>
-            <div className="bg-primary/5 rounded-xl p-6 text-center space-y-2">
-              <p className="text-3xl font-bold text-primary">35%</p>
-              <p className="text-sm font-medium">Less Rework</p>
-              <p className="text-xs text-muted-foreground">Post-handoff design changes</p>
+            <div className="bg-card rounded-xl p-6 space-y-4 border">
+              <div className="flex justify-between items-start">
+                <div>
+                  <p className="text-3xl font-bold text-primary">35%</p>
+                  <p className="text-sm font-medium">Less Rework</p>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <div className="h-3 bg-muted rounded-full overflow-hidden">
+                  <div className="h-full bg-gradient-to-r from-primary/40 to-primary rounded-full" style={{ width: '35%' }} />
+                </div>
+                <p className="text-xs text-muted-foreground">Post-handoff design changes eliminated</p>
+              </div>
             </div>
-            <div className="bg-primary/5 rounded-xl p-6 text-center space-y-2">
-              <p className="text-3xl font-bold text-primary">2 weeks</p>
-              <p className="text-sm font-medium">Onboarding Time</p>
-              <p className="text-xs text-muted-foreground">New designer productivity</p>
+            <div className="bg-card rounded-xl p-6 space-y-4 border">
+              <div className="flex justify-between items-start">
+                <div>
+                  <p className="text-3xl font-bold text-primary">67%</p>
+                  <p className="text-sm font-medium">Faster Onboarding</p>
+                </div>
+                <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">6 → 2 weeks</span>
+              </div>
+              <div className="space-y-2">
+                <div className="h-3 bg-muted rounded-full overflow-hidden">
+                  <div className="h-full bg-gradient-to-r from-primary/40 to-primary rounded-full" style={{ width: '67%' }} />
+                </div>
+                <p className="text-xs text-muted-foreground">New designer time to productivity</p>
+              </div>
             </div>
-            <div className="bg-primary/5 rounded-xl p-6 text-center space-y-2">
-              <p className="text-3xl font-bold text-primary">60%</p>
-              <p className="text-sm font-medium">Research Coverage</p>
-              <p className="text-xs text-muted-foreground">Features validated before build</p>
+            <div className="bg-card rounded-xl p-6 space-y-4 border">
+              <div className="flex justify-between items-start">
+                <div>
+                  <p className="text-3xl font-bold text-primary">60%</p>
+                  <p className="text-sm font-medium">Research Coverage</p>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <div className="h-3 bg-muted rounded-full overflow-hidden">
+                  <div className="h-full bg-gradient-to-r from-primary/40 to-primary rounded-full" style={{ width: '60%' }} />
+                </div>
+                <p className="text-xs text-muted-foreground">Features validated before build</p>
+              </div>
             </div>
           </div>
         </div>
