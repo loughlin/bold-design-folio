@@ -10,8 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-4xl font-serif font-bold">JL</h3>
-            <div className="flex flex-col gap-3 pt-2">
+            <div className="flex flex-col gap-3">
               <a
                 href="mailto:jloughlin87@gmail.com"
                 className="text-background/80 hover:text-background transition-colors"
