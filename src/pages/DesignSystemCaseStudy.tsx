@@ -114,14 +114,44 @@ const DesignSystemCaseStudy = () => {
       </section>
 
       {/* UX Metrics */}
-      <section className="py-12 px-6">
-        <div className="container mx-auto max-w-4xl animate-fade-in">
-          <h3 className="text-2xl font-serif font-semibold mb-6">Metrics</h3>
-          <ul className="space-y-3">
-            <li className="text-lg text-muted-foreground">Task completion rate: time on core functions vs. interface navigation</li>
-            <li className="text-lg text-muted-foreground">User error frequency: incidents caused by inconsistent UI patterns</li>
-            <li className="text-lg text-muted-foreground">Developer velocity: front end story throughput and cycle time</li>
-          </ul>
+      <section className="py-16 px-6 bg-muted/30">
+        <div className="container mx-auto max-w-5xl animate-fade-in">
+          <h2 className="text-4xl font-serif font-semibold text-center mb-12">Success Metrics</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Card className="text-center border-0 shadow-lg">
+              <CardContent className="p-8 space-y-4">
+                <div className="w-12 h-12 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
+                  <span className="text-2xl">⏱️</span>
+                </div>
+                <h3 className="text-lg font-semibold text-foreground">Task Completion</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Time on core functions vs. interface navigation
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="text-center border-0 shadow-lg">
+              <CardContent className="p-8 space-y-4">
+                <div className="w-12 h-12 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
+                  <span className="text-2xl">⚠️</span>
+                </div>
+                <h3 className="text-lg font-semibold text-foreground">User Error Rate</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Incidents caused by inconsistent UI patterns
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="text-center border-0 shadow-lg">
+              <CardContent className="p-8 space-y-4">
+                <div className="w-12 h-12 mx-auto rounded-full bg-primary/10 flex items-center justify-center">
+                  <span className="text-2xl">🚀</span>
+                </div>
+                <h3 className="text-lg font-semibold text-foreground">Developer Velocity</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Front end story throughput and cycle time
+                </p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
