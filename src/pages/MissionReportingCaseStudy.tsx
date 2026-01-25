@@ -376,33 +376,70 @@ const MissionReportingCaseStudy = () => {
           <p className="text-muted-foreground mb-8">
             How the redesign accelerated mission planning efficiency
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <Card className="border-l-4 border-l-primary">
-              <CardContent className="p-4 space-y-1">
-                <p className="text-2xl font-bold text-primary">20 min</p>
-                <p className="text-xs font-medium">Saved Per Report</p>
-                <p className="text-xs text-muted-foreground">Eliminated cross-system verification</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Card className="overflow-hidden">
+              <CardContent className="p-6 space-y-4">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <p className="text-3xl font-bold text-primary">20 min</p>
+                    <p className="text-sm font-medium">Saved Per Report</p>
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <div className="h-3 bg-muted rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-destructive/60 to-primary rounded-full" style={{ width: '75%' }} />
+                  </div>
+                  <p className="text-xs text-muted-foreground">Eliminated cross-system verification step</p>
+                </div>
               </CardContent>
             </Card>
-            <Card className="border-l-4 border-l-primary">
-              <CardContent className="p-4 space-y-1">
-                <p className="text-2xl font-bold text-primary">60%</p>
-                <p className="text-xs font-medium">Less Data Entry</p>
-                <p className="text-xs text-muted-foreground">3 of 5 fields automated</p>
+            <Card className="overflow-hidden">
+              <CardContent className="p-6 space-y-4">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <p className="text-3xl font-bold text-primary">60%</p>
+                    <p className="text-sm font-medium">Less Data Entry</p>
+                  </div>
+                  <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">5 → 2 fields</span>
+                </div>
+                <div className="space-y-2">
+                  <div className="h-3 bg-muted rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-destructive/60 to-primary rounded-full" style={{ width: '40%' }} />
+                  </div>
+                  <p className="text-xs text-muted-foreground">3 of 5 fields now automated</p>
+                </div>
               </CardContent>
             </Card>
-            <Card className="border-l-4 border-l-primary">
-              <CardContent className="p-4 space-y-1">
-                <p className="text-2xl font-bold text-primary">100%</p>
-                <p className="text-xs font-medium">Calc Automation</p>
-                <p className="text-xs text-muted-foreground">Route times auto-calculated</p>
+            <Card className="overflow-hidden">
+              <CardContent className="p-6 space-y-4">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <p className="text-3xl font-bold text-primary">100%</p>
+                    <p className="text-sm font-medium">Calc Automation</p>
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <div className="h-3 bg-muted rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-primary/40 to-primary rounded-full" style={{ width: '100%' }} />
+                  </div>
+                  <p className="text-xs text-muted-foreground">Route times fully auto-calculated</p>
+                </div>
               </CardContent>
             </Card>
-            <Card className="border-l-4 border-l-primary">
-              <CardContent className="p-4 space-y-1">
-                <p className="text-2xl font-bold text-primary">4 mo</p>
-                <p className="text-xs font-medium">To Production</p>
-                <p className="text-xs text-muted-foreground">Design to deployment</p>
+            <Card className="overflow-hidden">
+              <CardContent className="p-6 space-y-4">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <p className="text-3xl font-bold text-primary">4 months</p>
+                    <p className="text-sm font-medium">To Production</p>
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <div className="h-3 bg-muted rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-primary/40 to-primary rounded-full" style={{ width: '85%' }} />
+                  </div>
+                  <p className="text-xs text-muted-foreground">Design to deployment timeline</p>
+                </div>
               </CardContent>
             </Card>
           </div>

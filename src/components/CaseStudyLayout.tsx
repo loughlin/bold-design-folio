@@ -27,6 +27,7 @@ interface EngagementMetric {
   value: string;
   label: string;
   description: string;
+  percentage?: number;
 }
 
 interface CaseStudyLayoutProps {
@@ -324,13 +325,25 @@ const CaseStudyLayout = ({
             <p className="text-lg text-muted-foreground animate-fade-in" style={{ animationDelay: "0.1s" }}>
               How the design accelerated value delivery
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {engagementMetrics.map((metric, index) => (
-                <Card key={index} className="border-l-4 border-l-primary animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                  <CardContent className="p-6 space-y-2">
-                    <p className="text-3xl font-bold text-primary">{metric.value}</p>
-                    <p className="text-sm font-medium">{metric.label}</p>
-                    <p className="text-xs text-muted-foreground">{metric.description}</p>
+                <Card key={index} className="overflow-hidden animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                  <CardContent className="p-6 space-y-4">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <p className="text-3xl font-bold text-primary">{metric.value}</p>
+                        <p className="text-sm font-medium">{metric.label}</p>
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="h-3 bg-muted rounded-full overflow-hidden">
+                        <div 
+                          className="h-full bg-gradient-to-r from-primary/40 to-primary rounded-full transition-all duration-1000" 
+                          style={{ width: `${metric.percentage || 75}%` }} 
+                        />
+                      </div>
+                      <p className="text-xs text-muted-foreground">{metric.description}</p>
+                    </div>
                   </CardContent>
                 </Card>
               ))}

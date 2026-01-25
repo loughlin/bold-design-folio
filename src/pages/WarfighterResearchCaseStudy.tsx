@@ -131,22 +131,26 @@ const WarfighterResearchCaseStudy = () => {
         {
           value: "3 weeks",
           label: "Faster Development",
-          description: "Reduced feature cycle through early validation"
+          description: "Reduced feature cycle through early validation",
+          percentage: 60
         },
         {
           value: "$500K+",
           label: "Costs Avoided",
-          description: "Features prevented that wouldn't solve problems"
+          description: "Features prevented that wouldn't solve problems",
+          percentage: 85
         },
         {
           value: "65%",
           label: "Less Rework",
-          description: "Reduced post-launch design changes"
+          description: "Reduced post-launch design changes",
+          percentage: 65
         },
         {
           value: "35%",
           label: "Higher Adoption",
-          description: "User satisfaction 6.2 → 8.4/10"
+          description: "User satisfaction 6.2 → 8.4/10",
+          percentage: 84
         }
       ]}
       beforeAfter={{

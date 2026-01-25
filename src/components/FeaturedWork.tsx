@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Lock } from "lucide-react";
 import { Link } from "react-router-dom";
 import ProtectedLink from "@/components/ProtectedLink";
-import designStudioStickyNotes from "@/assets/design-studio-sticky-notes.jpg";
+import missionReportingPreview from "@/assets/mission-reporting-preview.png";
 import uxResearchPreview from "@/assets/ux-research-preview.avif";
 import kesselRunLeadershipVisit from "@/assets/kessel-run-leadership-visit.jpg";
 import designSystemPreview from "@/assets/design-system-preview.avif";
@@ -46,7 +46,7 @@ const FeaturedWork = () => {
       description: "Eliminating manual calculation and data entry for a uniform and accessible source of truth for USAF mission data.",
       role: "UX Manager + Product Designer",
       timeline: "2019 - 2021",
-      image: designStudioStickyNotes,
+      image: missionReportingPreview,
       link: "/case-study/marauder",
       isPublic: false,
     },
