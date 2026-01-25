@@ -27,10 +27,10 @@ const MissionReportingCaseStudy = () => {
       <section className="bg-foreground text-background pt-32 pb-16 px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="mb-8">
-            <Link to="/">
+            <Link to="/#work">
               <Button variant="ghost" size="sm" className="text-background/80 hover:text-background hover:bg-background/10">
                 <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Portfolio
+                Back to Case Studies
               </Button>
             </Link>
           </div>

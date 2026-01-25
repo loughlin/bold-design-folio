@@ -23,11 +23,11 @@ const KesselRunCaseStudy = () => {
       <section className="pt-32 pb-8 px-6">
         <div className="container mx-auto max-w-4xl">
           <Link 
-            to="/projects" 
+            to="/#work" 
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to Projects
+            Back to Case Studies
           </Link>
           
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
