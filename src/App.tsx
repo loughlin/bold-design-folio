@@ -30,25 +30,23 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             
-            {/* Protected routes with lazy loading - content only loaded after authentication */}
-            <Route path="/case-study/design-system" element={
-              <ProtectedRoute>
-                <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div></div>}>
-                  <DesignSystemCaseStudy />
-                </Suspense>
-              </ProtectedRoute>
+            {/* Public case study routes */}
+            <Route path="/case-study/kessel-run" element={
+              <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div></div>}>
+                <KesselRunCaseStudy />
+              </Suspense>
             } />
+            <Route path="/case-study/design-system" element={
+              <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div></div>}>
+                <DesignSystemCaseStudy />
+              </Suspense>
+            } />
+            
+            {/* Protected routes - password remembered in session */}
             <Route path="/case-study/warfighter-research" element={
               <ProtectedRoute>
                 <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div></div>}>
                   <WarfighterResearchCaseStudy />
-                </Suspense>
-              </ProtectedRoute>
-            } />
-            <Route path="/case-study/kessel-run" element={
-              <ProtectedRoute>
-                <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div></div>}>
-                  <KesselRunCaseStudy />
                 </Suspense>
               </ProtectedRoute>
             } />
