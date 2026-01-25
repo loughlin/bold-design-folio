@@ -2,16 +2,20 @@ import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.49.1"
 
 // Allowed origins for CORS - restrict to specific domains
-const allowedOrigins = [
-  'https://mission-design-hub.lovable.app',
-  'https://id-preview--a93bd371-cee2-4cbb-ad65-1bc6cc734d2b.lovable.app',
-  'http://localhost:5173',
-  'http://localhost:8080',
+const allowedOriginPatterns = [
+  /^https:\/\/mission-design-hub\.lovable\.app$/,
+  /^https:\/\/.*\.lovable\.app$/,
+  /^https:\/\/.*\.lovableproject\.com$/,
+  /^http:\/\/localhost:\d+$/,
 ];
+
+const isOriginAllowed = (origin: string): boolean => {
+  return allowedOriginPatterns.some(pattern => pattern.test(origin));
+};
 
 const getCorsHeaders = (req: Request) => {
   const origin = req.headers.get('origin') || '';
-  const allowedOrigin = allowedOrigins.includes(origin) ? origin : allowedOrigins[0];
+  const allowedOrigin = isOriginAllowed(origin) ? origin : 'https://mission-design-hub.lovable.app';
   return {
     'Access-Control-Allow-Origin': allowedOrigin,
     'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
