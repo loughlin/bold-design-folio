@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Lock } from "lucide-react";
 import { Link } from "react-router-dom";
 import ProtectedLink from "@/components/ProtectedLink";
 import designStudioStickyNotes from "@/assets/design-studio-sticky-notes.jpg";
@@ -84,8 +84,11 @@ const FeaturedWork = () => {
                     <p className="text-sm font-medium text-primary uppercase tracking-wider">
                       {project.subtitle}
                     </p>
-                    <h3 className="text-3xl lg:text-4xl font-bold">
+                    <h3 className="text-3xl lg:text-4xl font-bold flex items-center gap-3">
                       {project.title}
+                      {!project.isPublic && (
+                        <Lock className="h-5 w-5 text-muted-foreground" />
+                      )}
                     </h3>
                     <p className="text-lg text-muted-foreground">
                       {project.description}
