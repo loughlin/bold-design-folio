@@ -12,11 +12,11 @@ const AboutSection = () => {
           <div className="space-y-8 animate-fade-in">
             <div className="prose prose-lg">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Hey, I'm James—a Design Leader and UX Manager who believes the human side of software matters most. User empathy isn't just a nice-to-have; it's the foundation of good design culture. And iteration? That's king. You keep rebuilding, refining, and reshaping until the experience finally clicks.
+                I am a Design Leader and UX Manager who believes the human side of software matters most. User empathy isn't just a nice thing to have, it is the foundation of good design culture. Beyond that, iteration is key. You keep rebuilding, refining, and reshaping until the experience finally clicks.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed mt-6">
-                As a UX Manager and leader in design I try to build on design culture. I'm passionate about instilling design principles in others, helping teams grow their craft and learning how to use the latest tools while building products that matter. I always try to stay hungry to learn, evolve, and create whatever comes next.
+                As a UX Manager and leader in design I try to build not only on design culture but showcasing what knowing more about our problems can do to help move products forward. I'm passionate about instilling design principles in others, helping teams grow. I always try to stay hungry to learn, evolve, and create whatever comes next.
               </p>
             </div>
 
