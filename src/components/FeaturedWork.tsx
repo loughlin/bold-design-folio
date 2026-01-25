@@ -30,7 +30,7 @@ const FeaturedWork = () => {
       title: "UX Research Initiatives",
       subtitle: "User Research + Synthesis",
       description: "Defined research practices and standards for a software suite of products, enabling teams to validate designs and de-risk decisions.",
-      role: "Lead UX Researcher + Product Designer",
+      role: "UX Manager",
       timeline: "2021 - 2023",
       image: uxResearchStickyNotes,
       link: "/case-study/warfighter-research",
