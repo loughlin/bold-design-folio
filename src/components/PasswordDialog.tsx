@@ -73,6 +73,7 @@ const PasswordDialog = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               autoFocus
+              autoComplete="current-password"
               disabled={isAuthenticating}
             />
             {error && (
