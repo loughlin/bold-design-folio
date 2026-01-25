@@ -369,6 +369,46 @@ const MissionReportingCaseStudy = () => {
         </div>
       </section>
 
+      {/* Engagement Metrics - Time to Value */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-4">Time to Value</h2>
+          <p className="text-muted-foreground mb-8">
+            How the redesign accelerated mission planning efficiency
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <Card className="border-l-4 border-l-primary">
+              <CardContent className="p-4 space-y-1">
+                <p className="text-2xl font-bold text-primary">20 min</p>
+                <p className="text-xs font-medium">Saved Per Report</p>
+                <p className="text-xs text-muted-foreground">Eliminated cross-system verification</p>
+              </CardContent>
+            </Card>
+            <Card className="border-l-4 border-l-primary">
+              <CardContent className="p-4 space-y-1">
+                <p className="text-2xl font-bold text-primary">60%</p>
+                <p className="text-xs font-medium">Less Data Entry</p>
+                <p className="text-xs text-muted-foreground">3 of 5 fields automated</p>
+              </CardContent>
+            </Card>
+            <Card className="border-l-4 border-l-primary">
+              <CardContent className="p-4 space-y-1">
+                <p className="text-2xl font-bold text-primary">100%</p>
+                <p className="text-xs font-medium">Calc Automation</p>
+                <p className="text-xs text-muted-foreground">Route times auto-calculated</p>
+              </CardContent>
+            </Card>
+            <Card className="border-l-4 border-l-primary">
+              <CardContent className="p-4 space-y-1">
+                <p className="text-2xl font-bold text-primary">4 mo</p>
+                <p className="text-xs font-medium">To Production</p>
+                <p className="text-xs text-muted-foreground">Design to deployment</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Process Improvements */}
       <section className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto max-w-4xl">

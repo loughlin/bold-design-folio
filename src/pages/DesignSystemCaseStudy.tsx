@@ -155,6 +155,46 @@ const DesignSystemCaseStudy = () => {
         </div>
       </section>
 
+      {/* Engagement Metrics - Time to Value */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-5xl animate-fade-in">
+          <h2 className="text-4xl font-serif font-semibold text-center mb-4">Time to Value</h2>
+          <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto mb-12">
+            How the design system accelerated value delivery across the organization
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Card className="border-l-4 border-l-primary">
+              <CardContent className="p-6 space-y-2">
+                <p className="text-3xl font-bold text-primary">3 days</p>
+                <p className="text-sm font-medium">Faster Story Completion</p>
+                <p className="text-xs text-muted-foreground">Reduced from 22 to 19 days average</p>
+              </CardContent>
+            </Card>
+            <Card className="border-l-4 border-l-primary">
+              <CardContent className="p-6 space-y-2">
+                <p className="text-3xl font-bold text-primary">48%</p>
+                <p className="text-sm font-medium">Fewer Design Stories</p>
+                <p className="text-xs text-muted-foreground">From 3.8 to 1.95 stories per week</p>
+              </CardContent>
+            </Card>
+            <Card className="border-l-4 border-l-primary">
+              <CardContent className="p-6 space-y-2">
+                <p className="text-3xl font-bold text-primary">2 weeks</p>
+                <p className="text-sm font-medium">Designer Onboarding</p>
+                <p className="text-xs text-muted-foreground">Down from 6+ weeks previously</p>
+              </CardContent>
+            </Card>
+            <Card className="border-l-4 border-l-primary">
+              <CardContent className="p-6 space-y-2">
+                <p className="text-3xl font-bold text-primary">2,000+</p>
+                <p className="text-sm font-medium">Dev Days Saved/Year</p>
+                <p className="text-xs text-muted-foreground">Per 10-person developer team</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
 
 
       {/* Process Section */}
