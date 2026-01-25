@@ -15,7 +15,7 @@ const Experience = () => {
       company: "Kessel Run | United States Air Force",
       role: "Product Designer",
       period: "2019 - 2022",
-      description: "Led design of enterprise B2B cloud-native applications. Facilitated team rituals and established consistency processes across USAF application suite.",
+      description: "UX designer across USAF application suite, conducting user research and creating visual prototypes to validate design concepts. Facilitated team rituals and established consistency processes while driving design standards across products.",
       icon: "🇺🇸",
     },
     {
