@@ -30,9 +30,9 @@ const PasswordDialog = () => {
     e.preventDefault();
     setError("");
 
-    const success = await authenticate(password);
+    const result = await authenticate(password);
     
-    if (success) {
+    if (result.success) {
       setShowPasswordDialog(false);
       setPassword("");
       if (pendingNavigation) {
@@ -40,7 +40,7 @@ const PasswordDialog = () => {
         setPendingNavigation(null);
       }
     } else {
-      setError("Incorrect password. Please try again.");
+      setError(result.error || "Incorrect password. Please try again.");
     }
   };
 

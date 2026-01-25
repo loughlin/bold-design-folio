@@ -1,1 +1,7 @@
 project_id = "hgadhjdstsobnminuphj"
+
+[functions.validate-password]
+verify_jwt = false
+
+[functions.validate-session]
+verify_jwt = false

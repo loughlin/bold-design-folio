@@ -3,8 +3,9 @@ import { supabase } from "@/integrations/supabase/client";
 
 interface PasswordContextType {
   isAuthenticated: boolean;
-  authenticate: (password: string) => Promise<boolean>;
+  authenticate: (password: string) => Promise<{ success: boolean; error?: string }>;
   isAuthenticating: boolean;
+  isValidatingSession: boolean;
   showPasswordDialog: boolean;
   setShowPasswordDialog: (show: boolean) => void;
   pendingNavigation: string | null;
@@ -15,26 +16,52 @@ const PasswordContext = createContext<PasswordContextType | undefined>(undefined
 
 const SESSION_TOKEN_KEY = "portfolio_session_token";
 
-// Generate a simple session token for server-side validation
-const generateSessionToken = (): string => {
-  return crypto.randomUUID();
-};
-
 export const PasswordProvider = ({ children }: { children: ReactNode }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isAuthenticating, setIsAuthenticating] = useState(false);
+  const [isValidatingSession, setIsValidatingSession] = useState(true);
   const [showPasswordDialog, setShowPasswordDialog] = useState(false);
   const [pendingNavigation, setPendingNavigation] = useState<string | null>(null);
 
+  // Validate existing session on mount - SERVER-SIDE VALIDATION
   useEffect(() => {
-    // Check for existing valid session
-    const sessionToken = sessionStorage.getItem(SESSION_TOKEN_KEY);
-    if (sessionToken) {
-      setIsAuthenticated(true);
-    }
+    const validateExistingSession = async () => {
+      const sessionToken = sessionStorage.getItem(SESSION_TOKEN_KEY);
+      
+      if (!sessionToken) {
+        setIsValidatingSession(false);
+        return;
+      }
+
+      try {
+        const { data, error } = await supabase.functions.invoke('validate-session', {
+          body: { sessionToken }
+        });
+
+        if (error) {
+          console.error('Session validation error:', error);
+          sessionStorage.removeItem(SESSION_TOKEN_KEY);
+          setIsAuthenticated(false);
+        } else if (data?.valid) {
+          setIsAuthenticated(true);
+        } else {
+          // Session is invalid or expired - clear it
+          sessionStorage.removeItem(SESSION_TOKEN_KEY);
+          setIsAuthenticated(false);
+        }
+      } catch (error) {
+        console.error('Session validation error:', error);
+        sessionStorage.removeItem(SESSION_TOKEN_KEY);
+        setIsAuthenticated(false);
+      } finally {
+        setIsValidatingSession(false);
+      }
+    };
+
+    validateExistingSession();
   }, []);
 
-  const authenticate = async (password: string): Promise<boolean> => {
+  const authenticate = async (password: string): Promise<{ success: boolean; error?: string }> => {
     setIsAuthenticating(true);
     
     try {
@@ -45,23 +72,29 @@ export const PasswordProvider = ({ children }: { children: ReactNode }) => {
       if (error) {
         console.error('Authentication error:', error);
         setIsAuthenticating(false);
-        return false;
+        return { success: false, error: 'Authentication failed. Please try again.' };
       }
 
-      if (data?.valid) {
-        const sessionToken = generateSessionToken();
-        sessionStorage.setItem(SESSION_TOKEN_KEY, sessionToken);
+      // Check for rate limiting
+      if (data?.rateLimited) {
+        setIsAuthenticating(false);
+        return { success: false, error: data.error || 'Too many attempts. Please try again later.' };
+      }
+
+      if (data?.valid && data?.sessionToken) {
+        // Store the server-generated session token
+        sessionStorage.setItem(SESSION_TOKEN_KEY, data.sessionToken);
         setIsAuthenticated(true);
         setIsAuthenticating(false);
-        return true;
+        return { success: true };
       }
 
       setIsAuthenticating(false);
-      return false;
+      return { success: false, error: 'Invalid password. Please try again.' };
     } catch (error) {
       console.error('Authentication error:', error);
       setIsAuthenticating(false);
-      return false;
+      return { success: false, error: 'Authentication failed. Please try again.' };
     }
   };
 
@@ -71,6 +104,7 @@ export const PasswordProvider = ({ children }: { children: ReactNode }) => {
         isAuthenticated,
         authenticate,
         isAuthenticating,
+        isValidatingSession,
         showPasswordDialog,
         setShowPasswordDialog,
         pendingNavigation,
