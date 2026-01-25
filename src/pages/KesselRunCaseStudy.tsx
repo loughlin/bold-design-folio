@@ -359,8 +359,59 @@ const KesselRunCaseStudy = () => {
         </div>
       </section>
 
-      {/* Results Section */}
+      {/* Before & After Comparison */}
       <section className="py-16 px-6">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-2xl font-bold mb-8">Workflow Transformation</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-destructive/5 rounded-xl p-6 space-y-4">
+              <h3 className="font-semibold text-destructive">Before</h3>
+              <ul className="space-y-3 text-muted-foreground text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-destructive">✗</span>
+                  <span>Designers worked in silos with no shared resources</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-destructive">✗</span>
+                  <span>No clear career progression or growth opportunities</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-destructive">✗</span>
+                  <span>Inconsistent handoff processes caused rework</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-destructive">✗</span>
+                  <span>User research rarely informed design decisions</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-primary/5 rounded-xl p-6 space-y-4">
+              <h3 className="font-semibold text-primary">After</h3>
+              <ul className="space-y-3 text-muted-foreground text-sm">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary">✓</span>
+                  <span>Cross-team design community with shared rituals</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary">✓</span>
+                  <span>Established career ladders with mentorship programs</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary">✓</span>
+                  <span>Standardized handoff reduced developer rework by 40%</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary">✓</span>
+                  <span>Research embedded in every product team's workflow</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Results Section */}
+      <section className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto max-w-3xl">
           <h2 className="text-2xl font-bold mb-6">Results</h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
@@ -377,8 +428,36 @@ const KesselRunCaseStudy = () => {
         </div>
       </section>
 
-      {/* Tools and Methods */}
+      {/* Testing & Validation Insights */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-3xl">
+          <h2 className="text-2xl font-bold mb-6">What Testing Revealed</h2>
+          <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+            <p>
+              Usability testing with warfighters uncovered critical insights that reshaped our approach. Users needed information at a glance during high-pressure operations—our initial designs were too dense. Iterative testing led to a 35% reduction in cognitive load through progressive disclosure patterns.
+            </p>
+            <p>
+              Accessibility audits revealed keyboard navigation gaps that affected users in operational environments where mouse usage was impractical. We established accessibility champions on each team, resulting in WCAG 2.1 AA compliance across all products.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Stakeholder Feedback */}
       <section className="py-16 px-6 bg-muted/30">
+        <div className="container mx-auto max-w-3xl">
+          <h2 className="text-2xl font-bold mb-6">What Stakeholders Said</h2>
+          <div className="bg-primary/5 rounded-xl p-8 space-y-4">
+            <blockquote className="text-lg italic text-foreground leading-relaxed">
+              "The design team's transformation has been remarkable. They've built a culture where designers feel empowered to advocate for users while delivering at the speed our missions require."
+            </blockquote>
+            <p className="text-sm text-muted-foreground">— Program Leadership</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Tools and Methods */}
+      <section className="py-16 px-6">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl font-bold mb-8 text-center">Tools and Methods</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -414,7 +493,7 @@ const KesselRunCaseStudy = () => {
       </section>
 
       {/* Key Learnings */}
-      <section className="py-16 px-6">
+      <section className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto max-w-3xl">
           <h2 className="text-2xl font-bold mb-6">What did we learn?</h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
@@ -426,6 +505,18 @@ const KesselRunCaseStudy = () => {
             </p>
             <p>
               User research in classified environments presents unique challenges, but direct access to warfighters transformed our design decisions and built credibility with stakeholders.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Future Growth */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-3xl">
+          <h2 className="text-2xl font-bold mb-6">Designed for Future Growth</h2>
+          <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+            <p>
+              The design infrastructure we established scales with the organization. Career ladders accommodate growth from junior to principal levels, cross-team rituals adapt as new products launch, and our research practices transfer to new mission areas. This foundation continues to support the organization's expansion into new domains.
             </p>
           </div>
         </div>
