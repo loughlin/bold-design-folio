@@ -4,11 +4,11 @@ import jamesProfileBw from "@/assets/james-profile-bw.jpg";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20 px-6 bg-muted/30 scroll-mt-20">
+    <section id="about" className="py-12 px-6 bg-muted/30 scroll-mt-20">
       <div className="container mx-auto">
-        <h2 className="text-5xl md:text-6xl font-bold mb-12">About Me</h2>
+        <h2 className="text-5xl md:text-6xl font-bold mb-10">About Me</h2>
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left Column - Photo */}
           <div className="lg:col-span-5 animate-fade-in">
             <div className="relative">
@@ -53,11 +53,11 @@ const AboutSection = () => {
             {/* Quick stats */}
             <div className="grid grid-cols-3 gap-6 py-6 border-y border-border">
               <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-foreground">10+</div>
+                <div className="text-3xl font-bold text-foreground">8+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-foreground">50+</div>
+                <div className="text-3xl font-bold text-foreground">12+</div>
                 <div className="text-sm text-muted-foreground">Products Shipped</div>
               </div>
               <div className="text-center lg:text-left">
