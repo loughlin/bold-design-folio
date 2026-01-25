@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -10,6 +11,10 @@ import kesselRunCaoc2003 from "@/assets/kessel-run-caoc-2003.jpg";
 import kesselRunLeadership from "@/assets/kessel-run-leadership.jpg";
 
 const KesselRunCaseStudy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />

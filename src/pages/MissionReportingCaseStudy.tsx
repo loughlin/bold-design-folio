@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft, ExternalLink } from "lucide-react";
@@ -8,6 +9,9 @@ import cloudApplicationDashboard from "@/assets/cloud-application-dashboard.jpg"
 import uxWorkflowPlanning from "@/assets/ux-workflow-planning.jpg";
 
 const MissionReportingCaseStudy = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const successMetrics = [
     { label: "Data Entry Fields Automated", value: "3 of 5", description: "Fields now auto-populated from integration" },
     { label: "Manual Calculation Eliminated", value: "100%", description: "Route times now calculated automatically" },
