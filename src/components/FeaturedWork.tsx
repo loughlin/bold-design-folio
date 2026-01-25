@@ -4,7 +4,7 @@ import { ArrowRight, Lock } from "lucide-react";
 import { Link } from "react-router-dom";
 import ProtectedLink from "@/components/ProtectedLink";
 import designStudioStickyNotes from "@/assets/design-studio-sticky-notes.jpg";
-import uxResearchStickyNotes from "@/assets/ux-research-sticky-notes.jpg";
+import uxResearchPreview from "@/assets/ux-research-preview.avif";
 import kesselRunLeadershipVisit from "@/assets/kessel-run-leadership-visit.jpg";
 import designSystemPreview from "@/assets/design-system-preview.avif";
 
@@ -36,7 +36,7 @@ const FeaturedWork = () => {
       description: "Defined research practices and standards for a software suite of products, enabling teams to validate designs and de-risk decisions.",
       role: "UX Manager",
       timeline: "2021 - 2023",
-      image: uxResearchStickyNotes,
+      image: uxResearchPreview,
       link: "/case-study/warfighter-research",
       isPublic: false,
     },
