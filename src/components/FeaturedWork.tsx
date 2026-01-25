@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import ProtectedLink from "@/components/ProtectedLink";
 import designStudioStickyNotes from "@/assets/design-studio-sticky-notes.jpg";
 import uxResearchStickyNotes from "@/assets/ux-research-sticky-notes.jpg";
-import kesselRunHQ from "@/assets/kessel-run-hq.jpg";
+import kesselRunLeadershipVisit from "@/assets/kessel-run-leadership-visit.jpg";
 
 const FeaturedWork = () => {
   const projects = [
@@ -15,7 +15,7 @@ const FeaturedWork = () => {
       description: "Advocating for design in mission critical USAF applications, transitioning how the USAF delivers software.",
       role: "Portfolio Design Lead",
       timeline: "2021 - Present",
-      image: kesselRunHQ,
+      image: kesselRunLeadershipVisit,
       link: "/case-study/kessel-run",
       isPublic: true,
     },
