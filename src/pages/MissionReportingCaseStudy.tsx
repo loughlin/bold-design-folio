@@ -233,6 +233,102 @@ const MissionReportingCaseStudy = () => {
         </div>
       </section>
 
+      {/* Heuristics Evaluation */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-4xl space-y-8">
+          <h2 className="text-sm font-semibold text-primary uppercase tracking-wider mb-4">Usability Heuristics Evaluation</h2>
+          <p className="text-muted-foreground mb-8">
+            How the redesign improved usability across Nielsen's heuristics
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Card>
+              <CardContent className="p-6 space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">1</div>
+                  <h3 className="font-semibold text-sm">Error Prevention</h3>
+                </div>
+                <p className="text-sm text-muted-foreground">Automated calculations eliminated manual math errors that previously caused mission planning delays.</p>
+                <div className="flex items-center gap-2 text-xs">
+                  <span className="text-destructive">Before: 2/5</span>
+                  <span className="text-muted-foreground">→</span>
+                  <span className="text-primary font-medium">After: 5/5</span>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6 space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">2</div>
+                  <h3 className="font-semibold text-sm">Visibility of System Status</h3>
+                </div>
+                <p className="text-sm text-muted-foreground">Real-time sync indicators show data freshness, replacing uncertainty about whether information was current.</p>
+                <div className="flex items-center gap-2 text-xs">
+                  <span className="text-destructive">Before: 1/5</span>
+                  <span className="text-muted-foreground">→</span>
+                  <span className="text-primary font-medium">After: 4/5</span>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6 space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">3</div>
+                  <h3 className="font-semibold text-sm">Flexibility & Efficiency</h3>
+                </div>
+                <p className="text-sm text-muted-foreground">Auto-populated fields reduced data entry from 5 fields to 2, cutting report creation time by 60%.</p>
+                <div className="flex items-center gap-2 text-xs">
+                  <span className="text-destructive">Before: 2/5</span>
+                  <span className="text-muted-foreground">→</span>
+                  <span className="text-primary font-medium">After: 4/5</span>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6 space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">4</div>
+                  <h3 className="font-semibold text-sm">Match Real World</h3>
+                </div>
+                <p className="text-sm text-muted-foreground">Terminology and workflows aligned with actual mission planning processes based on user research.</p>
+                <div className="flex items-center gap-2 text-xs">
+                  <span className="text-destructive">Before: 3/5</span>
+                  <span className="text-muted-foreground">→</span>
+                  <span className="text-primary font-medium">After: 5/5</span>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6 space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">5</div>
+                  <h3 className="font-semibold text-sm">Consistency & Standards</h3>
+                </div>
+                <p className="text-sm text-muted-foreground">Integration with external systems meant data matched across platforms, eliminating reconciliation issues.</p>
+                <div className="flex items-center gap-2 text-xs">
+                  <span className="text-destructive">Before: 2/5</span>
+                  <span className="text-muted-foreground">→</span>
+                  <span className="text-primary font-medium">After: 4/5</span>
+                </div>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6 space-y-3">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">6</div>
+                  <h3 className="font-semibold text-sm">Recognition over Recall</h3>
+                </div>
+                <p className="text-sm text-muted-foreground">Pre-populated options and smart defaults reduced cognitive load and eliminated need to memorize codes.</p>
+                <div className="flex items-center gap-2 text-xs">
+                  <span className="text-destructive">Before: 2/5</span>
+                  <span className="text-muted-foreground">→</span>
+                  <span className="text-primary font-medium">After: 4/5</span>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Testing Insights */}
       <section className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto max-w-4xl">

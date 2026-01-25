@@ -16,6 +16,13 @@ interface DesignProcessPhase {
   activities: string[];
 }
 
+interface HeuristicItem {
+  name: string;
+  description: string;
+  before: number;
+  after: number;
+}
+
 interface CaseStudyLayoutProps {
   title: string;
   subtitle: string;
@@ -29,6 +36,7 @@ interface CaseStudyLayoutProps {
   designProcess?: DesignProcessPhase[];
   process: CaseStudySection[];
   research?: CaseStudySection;
+  heuristics?: HeuristicItem[];
   beforeAfter?: {
     before: { image: string; caption: string };
     after: { image: string; caption: string };
@@ -50,6 +58,7 @@ const CaseStudyLayout = ({
   designProcess,
   process,
   research,
+  heuristics,
   beforeAfter,
   outcomes,
   images,
@@ -267,7 +276,37 @@ const CaseStudyLayout = ({
         </section>
       )}
 
-      {/* Additional Images */}
+      {/* Heuristics Evaluation */}
+      {heuristics && heuristics.length > 0 && (
+        <section className="py-16 px-6">
+          <div className="container mx-auto max-w-6xl space-y-8">
+            <h2 className="text-3xl font-bold animate-fade-in">Usability Heuristics Evaluation</h2>
+            <p className="text-lg text-muted-foreground animate-fade-in" style={{ animationDelay: "0.1s" }}>
+              How the design improved usability across Nielsen's heuristics
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {heuristics.map((heuristic, index) => (
+                <Card key={index} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                  <CardContent className="p-6 space-y-3">
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">
+                        {index + 1}
+                      </div>
+                      <h3 className="font-semibold text-sm">{heuristic.name}</h3>
+                    </div>
+                    <p className="text-sm text-muted-foreground">{heuristic.description}</p>
+                    <div className="flex items-center gap-2 text-xs">
+                      <span className="text-destructive">Before: {heuristic.before}/5</span>
+                      <span className="text-muted-foreground">→</span>
+                      <span className="text-primary font-medium">After: {heuristic.after}/5</span>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
       {images && images.length > 0 && (
         <section className="py-16 px-6">
           <div className="container mx-auto max-w-6xl space-y-8">
