@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import ProtectedLink from "@/components/ProtectedLink";
 import designStudioStickyNotes from "@/assets/design-studio-sticky-notes.jpg";
 import uxResearchStickyNotes from "@/assets/ux-research-sticky-notes.jpg";
@@ -16,6 +17,7 @@ const FeaturedWork = () => {
       timeline: "2021 - Present",
       image: kesselRunHQ,
       link: "/case-study/kessel-run",
+      isPublic: true,
     },
     {
       title: "Portfolio Design System",
@@ -25,6 +27,7 @@ const FeaturedWork = () => {
       timeline: "2019 - 2023",
       image: designStudioStickyNotes,
       link: "/case-study/design-system",
+      isPublic: true,
     },
     {
       title: "UX Research Initiatives",
@@ -34,6 +37,7 @@ const FeaturedWork = () => {
       timeline: "2021 - 2023",
       image: uxResearchStickyNotes,
       link: "/case-study/warfighter-research",
+      isPublic: false,
     },
     {
       title: "USAF Mission Reporting",
@@ -43,6 +47,7 @@ const FeaturedWork = () => {
       timeline: "2019 - 2021",
       image: designStudioStickyNotes,
       link: "/case-study/marauder",
+      isPublic: false,
     },
   ];
 
@@ -98,12 +103,21 @@ const FeaturedWork = () => {
 
                     {/* CTA Button */}
                     <div className="pt-6">
-                      <ProtectedLink to={project.link}>
-                        <Button size="lg" className="group/btn">
-                          View Case Study
-                          <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
-                        </Button>
-                      </ProtectedLink>
+                      {project.isPublic ? (
+                        <Link to={project.link}>
+                          <Button size="lg" className="group/btn">
+                            View Case Study
+                            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
+                          </Button>
+                        </Link>
+                      ) : (
+                        <ProtectedLink to={project.link}>
+                          <Button size="lg" className="group/btn">
+                            View Case Study
+                            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
+                          </Button>
+                        </ProtectedLink>
+                      )}
                     </div>
                   </div>
                 </CardContent>
