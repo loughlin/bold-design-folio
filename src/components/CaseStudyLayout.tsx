@@ -23,6 +23,12 @@ interface HeuristicItem {
   after: number;
 }
 
+interface EngagementMetric {
+  value: string;
+  label: string;
+  description: string;
+}
+
 interface CaseStudyLayoutProps {
   title: string;
   subtitle: string;
@@ -37,6 +43,7 @@ interface CaseStudyLayoutProps {
   process: CaseStudySection[];
   research?: CaseStudySection;
   heuristics?: HeuristicItem[];
+  engagementMetrics?: EngagementMetric[];
   beforeAfter?: {
     before: { image: string; caption: string };
     after: { image: string; caption: string };
@@ -59,6 +66,7 @@ const CaseStudyLayout = ({
   process,
   research,
   heuristics,
+  engagementMetrics,
   beforeAfter,
   outcomes,
   images,
@@ -300,6 +308,29 @@ const CaseStudyLayout = ({
                       <span className="text-muted-foreground">→</span>
                       <span className="text-primary font-medium">After: {heuristic.after}/5</span>
                     </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Engagement Metrics - Time to Value */}
+      {engagementMetrics && engagementMetrics.length > 0 && (
+        <section className="py-16 px-6 bg-muted/30">
+          <div className="container mx-auto max-w-6xl space-y-8">
+            <h2 className="text-3xl font-bold animate-fade-in">Time to Value</h2>
+            <p className="text-lg text-muted-foreground animate-fade-in" style={{ animationDelay: "0.1s" }}>
+              How the design accelerated value delivery
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {engagementMetrics.map((metric, index) => (
+                <Card key={index} className="border-l-4 border-l-primary animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                  <CardContent className="p-6 space-y-2">
+                    <p className="text-3xl font-bold text-primary">{metric.value}</p>
+                    <p className="text-sm font-medium">{metric.label}</p>
+                    <p className="text-xs text-muted-foreground">{metric.description}</p>
                   </CardContent>
                 </Card>
               ))}

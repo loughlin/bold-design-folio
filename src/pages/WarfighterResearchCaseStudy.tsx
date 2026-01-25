@@ -127,6 +127,28 @@ const WarfighterResearchCaseStudy = () => {
           after: 4
         }
       ]}
+      engagementMetrics={[
+        {
+          value: "3 weeks",
+          label: "Faster Development",
+          description: "Reduced feature cycle through early validation"
+        },
+        {
+          value: "$500K+",
+          label: "Costs Avoided",
+          description: "Features prevented that wouldn't solve problems"
+        },
+        {
+          value: "65%",
+          label: "Less Rework",
+          description: "Reduced post-launch design changes"
+        },
+        {
+          value: "35%",
+          label: "Higher Adoption",
+          description: "User satisfaction 6.2 → 8.4/10"
+        }
+      ]}
       beforeAfter={{
         before: {
           image: teamCollaborationMeeting,

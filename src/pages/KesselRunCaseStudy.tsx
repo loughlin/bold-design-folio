@@ -268,6 +268,38 @@ const KesselRunCaseStudy = () => {
         </div>
       </section>
 
+      {/* Engagement Metrics - Time to Value */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-2xl font-bold text-center mb-4">Time to Value</h2>
+          <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-8">
+            How design leadership accelerated value delivery
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="bg-primary/5 rounded-xl p-6 text-center space-y-2">
+              <p className="text-3xl font-bold text-primary">40%</p>
+              <p className="text-sm font-medium">Faster Delivery</p>
+              <p className="text-xs text-muted-foreground">Design-to-dev handoff time</p>
+            </div>
+            <div className="bg-primary/5 rounded-xl p-6 text-center space-y-2">
+              <p className="text-3xl font-bold text-primary">35%</p>
+              <p className="text-sm font-medium">Less Rework</p>
+              <p className="text-xs text-muted-foreground">Post-handoff design changes</p>
+            </div>
+            <div className="bg-primary/5 rounded-xl p-6 text-center space-y-2">
+              <p className="text-3xl font-bold text-primary">2 weeks</p>
+              <p className="text-sm font-medium">Onboarding Time</p>
+              <p className="text-xs text-muted-foreground">New designer productivity</p>
+            </div>
+            <div className="bg-primary/5 rounded-xl p-6 text-center space-y-2">
+              <p className="text-3xl font-bold text-primary">60%</p>
+              <p className="text-sm font-medium">Research Coverage</p>
+              <p className="text-xs text-muted-foreground">Features validated before build</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Heuristics Evaluation */}
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-4xl space-y-8">
