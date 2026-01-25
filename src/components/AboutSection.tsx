@@ -12,15 +12,11 @@ const AboutSection = () => {
           <div className="space-y-8 animate-fade-in">
             <div className="prose prose-lg">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm James Loughlin, a Design Leader and problem solver. I combine human-centered design with user empathy to build design culture and solve problems. I see design as imagining the best possible experience for someone and steadily moving toward it: rebuilding, refining, and reshaping until it finally becomes software that is pleasant and useful to engage with.
+                Hey, I'm James—a Design Leader and UX Manager who believes the human side of software matters most. User empathy isn't just a nice-to-have; it's the foundation of good design culture. And iteration? That's king. You keep rebuilding, refining, and reshaping until the experience finally clicks.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed mt-6">
-                Learning is what keeps that process alive. My only real rule is simple: keep working and keep growing, even through uncertainty, ambiguity, and the moments where giving up feels easier.
-              </p>
-
-              <p className="text-lg text-muted-foreground leading-relaxed mt-6">
-                As a UX Manager and leader in design and problem solving, my work sits at the intersection of craft, thinking, and empathy. I'm passionate about instilling design principles in others, helping teams grow their craft while building products that matter. I'll always stay hungry to learn, evolve, and create whatever comes next: something human, intentional, and unmistakably right.
+                As a UX Manager and leader in design I try to build on design culture. I'm passionate about instilling design principles in others, helping teams grow their craft and learning how to use the latest tools while building products that matter. I always try to stay hungry to learn, evolve, and create whatever comes next.
               </p>
             </div>
 
@@ -46,7 +42,7 @@ const AboutSection = () => {
             </div>
           </div>
 
-          {/* Right Column - Info Cards */}
+          {/* Right Column - Info Card */}
           <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
             <Card className="hover-lift">
               <CardContent className="p-8">
@@ -65,17 +61,6 @@ const AboutSection = () => {
                     <span className="text-muted-foreground">Facilitating psychological safety to build relationships that help solve problems</span>
                   </li>
                 </ul>
-              </CardContent>
-            </Card>
-
-            <Card className="hover-lift">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-4">Philosophy</h3>
-                <blockquote className="text-muted-foreground italic border-l-4 border-primary pl-4">
-                  "Design is not just about making things look good. It's about solving real 
-                  problems for real people, building systems that scale, and creating 
-                  environments where teams can thrive."
-                </blockquote>
               </CardContent>
             </Card>
           </div>
