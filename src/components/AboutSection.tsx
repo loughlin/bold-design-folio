@@ -15,7 +15,7 @@ const AboutSection = () => {
               <img 
                 src={jamesProfileBw} 
                 alt="James Loughlin" 
-                className="w-full max-w-md mx-auto lg:mx-0 rounded-2xl shadow-2xl"
+                className="w-full max-w-md mx-auto lg:mx-0 rounded-2xl shadow-2xl grayscale"
               />
               {/* Location badge */}
               <div className="absolute bottom-4 left-4 bg-background/90 backdrop-blur-sm rounded-full px-4 py-2 flex items-center gap-2 shadow-lg">
