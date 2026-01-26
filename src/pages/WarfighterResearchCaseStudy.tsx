@@ -154,14 +154,11 @@ const WarfighterResearchCaseStudy = () => {
   ];
 
   const outcomes = [
-    "Prevented 3 major features from being built after research revealed they wouldn't solve user problems, saving $500K+ in development costs",
     "Improved user satisfaction scores from 6.2 to 8.4/10 across tested applications through research-informed design decisions",
-    "Reduced post-launch design changes by 65% through early validation with actual users before development investment",
     "Established user research as standard practice across all 6 T&G Portfolio missions with consistent methodology",
     "Created searchable library of 50+ research insights with tagging systems for topics, products, and user segments",
     "Built centralized research repositories with standard templates for plans, screeners, moderator guides, and reports",
     "Trained 15 designers and product managers in research methods, establishing research readiness gates in delivery processes",
-    "Reduced average feature development cycle by 3 weeks through early problem validation and hypothesis-driven research",
     "Established quarterly research impact reporting to leadership, tying research directly to product performance metrics"
   ];
 
@@ -266,7 +263,7 @@ const WarfighterResearchCaseStudy = () => {
 
           {/* Stages Diagram */}
           <div className="flex justify-center py-4">
-            <img src={stagesUxResearch} alt="Four stages of UX research: Discovery, Exploring, Testing, and Listening" className="max-w-2xl w-full rounded-xl" />
+            <img src={stagesUxResearch} alt="Four stages of UX research: Discovery, Exploring, Testing, and Listening" className="max-w-2xl w-full rounded-xl grayscale" />
           </div>
 
           {/* Double Diamond Visual */}
@@ -326,7 +323,7 @@ const WarfighterResearchCaseStudy = () => {
           
           {/* Research Process Diagram */}
           <div className="flex justify-center py-4">
-            <img src={uxResearchProcess} alt="Key steps in the UX research process" className="max-w-3xl w-full rounded-xl" />
+            <img src={uxResearchProcess} alt="Key steps in the UX research process" className="max-w-3xl w-full rounded-xl grayscale" />
           </div>
           
           <ul className="space-y-4">
