@@ -44,18 +44,6 @@ const KesselRunCaseStudy = () => {
         </div>
       </section>
 
-      {/* Hero Image */}
-      <section className="px-6 pb-16">
-        <div className="container mx-auto max-w-5xl">
-          <div className="rounded-2xl overflow-hidden shadow-2xl animate-fade-in aspect-[21/9]" style={{ animationDelay: "0.3s" }}>
-            <img
-              src={kesselRunCaoc}
-              alt="Combined Air Operations Center at Al Udeid Air Base, Qatar"
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-      </section>
 
       {/* Overview Section */}
       <section className="py-16 px-6">
