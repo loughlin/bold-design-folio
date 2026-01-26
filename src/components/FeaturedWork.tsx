@@ -38,7 +38,7 @@ const FeaturedWork = () => {
       timeline: "2021 - 2023",
       image: uxResearchPreview,
       link: "/case-study/warfighter-research",
-      isPublic: false,
+      isPublic: true,
     },
     {
       title: "USAF Mission Reporting",

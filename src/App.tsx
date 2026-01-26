@@ -42,14 +42,14 @@ const App = () => (
               </Suspense>
             } />
             
-            {/* Protected routes - password remembered in session */}
+            {/* Public case study - warfighter research */}
             <Route path="/case-study/warfighter-research" element={
-              <ProtectedRoute>
-                <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div></div>}>
-                  <WarfighterResearchCaseStudy />
-                </Suspense>
-              </ProtectedRoute>
+              <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div></div>}>
+                <WarfighterResearchCaseStudy />
+              </Suspense>
             } />
+            
+            {/* Protected routes - password remembered in session */}
             <Route path="/case-study/marauder" element={
               <ProtectedRoute>
                 <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div></div>}>
