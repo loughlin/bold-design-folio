@@ -90,6 +90,21 @@ const MissionReportingCaseStudy = () => {
         </div>
       </section>
 
+      {/* The Users - Characters */}
+      <section className="py-16 px-6 bg-muted/30">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-2xl font-bold mb-6">The Users</h2>
+          <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+            <p>
+              Our primary users were intelligence personnel working in Air Operations Centers across the globe. These operators work in high-pressure, time-sensitive environments where accurate mission data can mean the difference between mission success and failure. They needed to create detailed reports quickly while managing multiple concurrent missions and coordinating with various agencies.
+            </p>
+            <p>
+              Secondary users included intelligence analysts at external agencies who consumed this data to inform strategic decisions. For them, the pain was different: data was often stale, inconsistent, or simply inaccessible when they needed it most. Historical mission data that could provide crucial context was buried in systems that didn't communicate with each other.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* The Problem Section */}
       <section className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto max-w-4xl">
@@ -156,8 +171,26 @@ const MissionReportingCaseStudy = () => {
         </div>
       </section>
 
+      {/* The Breakthrough - Turning Point */}
+      <section className="py-16 px-6 bg-primary/5">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-2xl font-bold mb-6">The Breakthrough</h2>
+          <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+            <p className="text-xl font-medium text-foreground">
+              The moment that changed everything: we realized we weren't just building a better form—we were creating a single source of truth.
+            </p>
+            <p>
+              During user interviews, one operations center lead mentioned offhand that they spent hours each week reconciling data between systems. Different tools showed different mission states, and no one knew which was "real." This wasn't a data entry problem—it was a data trust problem.
+            </p>
+            <p>
+              This insight shifted our entire approach. Instead of optimizing for faster input, we focused on making our tool the authoritative source that other systems could consume. The integrations we built weren't just about pulling data in—they were about pushing reliable data out across the network.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Adjusting the Scope */}
-      <section className="py-16 px-6 bg-muted/30">
+      <section className="py-16 px-6">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl font-bold mb-6">Adjusting the Scope</h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
@@ -191,7 +224,7 @@ const MissionReportingCaseStudy = () => {
       </section>
 
       {/* Before & After Workflow */}
-      <section className="py-16 px-6">
+      <section className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl font-bold mb-6">Workflow Transformation</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
