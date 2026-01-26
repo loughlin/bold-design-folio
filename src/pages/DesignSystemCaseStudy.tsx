@@ -17,13 +17,6 @@ const DesignSystemCaseStudy = () => {
     "Dev/Design Pairing",
   ];
 
-  const toolsUsed = [
-    "Figma Suite",
-    "Adobe Creative Cloud",
-    "React",
-    "HTML/CSS",
-    "Github",
-  ];
 
   const designProcessPhases = [
     {
@@ -585,17 +578,6 @@ const DesignSystemCaseStudy = () => {
                     </ul>
                   </div>
 
-                  {/* Tools Used */}
-                  <div className="space-y-4">
-                    <h3 className="font-semibold text-foreground">Tools Used</h3>
-                    <ul className="space-y-2">
-                      {toolsUsed.map((tool, index) => (
-                        <li key={index} className="text-muted-foreground text-sm">
-                          {tool}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
 
                   {/* Deliverables */}
                   <div className="space-y-4">
