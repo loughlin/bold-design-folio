@@ -78,7 +78,10 @@ const MissionReportingCaseStudy = () => {
           <h2 className="text-2xl font-bold mb-6">Background</h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              The mission reporting tool changed the way the Air Force develops software and later resulted in the creation of Kessel Run. The application started with the goal of solving the specific problem of mission reporting and was wildly successful. After growing quickly as an organization, Kessel Run turned its sights on deprecating the old legacy system that was being used in Air Operation Centers. This would require the mission reporting tool, which was not originally built to integrate, to fit into a larger suite of applications and adapt to the new process of the users.
+              The mission reporting tool utilized by the majority of the USAF was functional but not custom to their mission type. Mission information was often filed but lost and unavailable to sources months or years later when valuable context could have been provided from data on formerly flown missions in a given area or region. This mission reporting application aimed to change the way the Air Force develops software but also the way USAF intelligence personal accessed that data. The application started with the goal of solving the specific problem of mission reporting and was successful in adoption before expanding to various domains and capabilities.
+            </p>
+            <p>
+              After growing the solution, the tool quickly turned its sights on deprecating the old legacy system that was being used in Air Operation Centers and in other regions. This would require the mission reporting tool which was not originally built to integrate, to fit into a larger suite of applications and adapt to the new process of the users as well as make its data available to external intelligence agencies and tools.
             </p>
             <p className="text-sm italic text-muted-foreground/70">
               Note: All sensitive information has been removed from this case study and the application name has been redacted due to security concerns. This case study has been approved for publication by the Kessel Run Security team.
