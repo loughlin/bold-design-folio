@@ -119,7 +119,7 @@ const MissionReportingCaseStudy = () => {
             />
           </div>
           <div className="text-center">
-            <p className="text-sm text-muted-foreground">Existing Mission Reporting Interface</p>
+            <p className="text-sm text-muted-foreground">Example of report draft several years into application development after user adoption.</p>
           </div>
         </div>
       </section>
