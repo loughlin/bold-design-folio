@@ -19,7 +19,7 @@ const ProtectedRoute = ({ children }: ProtectedRouteProps) => {
   // Revalidate session on every route change for defense-in-depth
   useEffect(() => {
     const validateSession = async () => {
-      const sessionToken = sessionStorage.getItem(SESSION_TOKEN_KEY);
+      const sessionToken = localStorage.getItem(SESSION_TOKEN_KEY);
       
       if (!sessionToken) {
         setSessionValid(false);
@@ -34,14 +34,14 @@ const ProtectedRoute = ({ children }: ProtectedRouteProps) => {
 
         if (error || !data?.valid) {
           // Session invalid - clear it and redirect
-          sessionStorage.removeItem(SESSION_TOKEN_KEY);
+          localStorage.removeItem(SESSION_TOKEN_KEY);
           setSessionValid(false);
         } else {
           setSessionValid(true);
         }
       } catch (err) {
         console.error('Session validation error:', err);
-        sessionStorage.removeItem(SESSION_TOKEN_KEY);
+        localStorage.removeItem(SESSION_TOKEN_KEY);
         setSessionValid(false);
       } finally {
         setIsValidating(false);
