@@ -34,7 +34,7 @@ const KesselRunCaseStudy = () => {
             Leading Design at Kessel Run
           </h1>
           <p className="text-xl text-muted-foreground mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            Developing a design practice for mission-critical USAF applications
+            Developing a design standard and understanding across mission-critical USAF applications
           </p>
           <div className="flex flex-wrap gap-4 text-sm text-muted-foreground animate-fade-in" style={{ animationDelay: "0.2s" }}>
             <span>2022-2025</span>
