@@ -180,10 +180,10 @@ const MissionReportingCaseStudy = () => {
               The moment that changed everything: we realized we weren't just building a better form—we were creating a single source of truth.
             </p>
             <p>
-              During user interviews, one operations center lead mentioned offhand that they spent hours each week reconciling data between systems. Different tools showed different mission states, and no one knew which was "real." This wasn't a data entry problem—it was a data trust problem.
+              During user interviews, one operations center lead mentioned offhand that they spent hours each week reconciling data between systems. Different tools showed different mission states, and no one knew which was "real." This wasn't only a data entry problem, but it was a data access and trust problem.
             </p>
             <p>
-              This insight shifted our entire approach. Instead of optimizing for faster input, we focused on making our tool the authoritative source that other systems could consume. The integrations we built weren't just about pulling data in—they were about pushing reliable data out across the network.
+              This insight shifted our entire approach. Instead of optimizing for faster input (which we still worked toward), we also focused on making our tool the authoritative source that other systems could consume for mission data. The integrations we built weren't just about pulling data in (which we also added and allowed for from vetted sources)—they were about pushing reliable data out across the network for use in other systems.
             </p>
           </div>
         </div>
