@@ -151,7 +151,7 @@ const MissionReportingCaseStudy = () => {
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl font-bold mb-6">Prototype Testing</h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Now understanding the users' problem space, I began designing and testing potential concepts. After a few rounds of iteration, I felt I had a good solution that addressed the users' pain, providing more automation, a more visual map interface and achieved the business goal of integrating with the external data management application. I was stoked and users loved it!
+            Understanding the users problem space is really only the beginning, and something that is going to evolve as we build out software. As a team we began designing and testing potential concepts, iterating based on feedback from the field. After a few rounds of iteration we felt we had a good solution that addressed the users' pain, providing more automation, adding a more visual map interface and achieved the business goal of integrating with at least one external data management application. We were excited that users seemed to find the product useful in a space where before there was frustration, but were also conscious of future growth within the problem space.
           </p>
         </div>
       </section>
