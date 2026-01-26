@@ -128,9 +128,14 @@ const MissionReportingCaseStudy = () => {
       <section className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl font-bold mb-6">Exploratory Research</h2>
-          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            Before ideation, I conducted user interviews with 5 mission planners and created a user journey map to illustrate the process the users follow to create mission reports and plan missions using the data. From this, I identified two major pains to solve: the mission reporting tool relied on manual "route" calculation and heavy data entry from the user to properly calculate mission data.
-          </p>
+          <div className="space-y-6 text-lg text-muted-foreground leading-relaxed mb-8">
+            <p>
+              Before ideation, our team conducted user interviews with 5 mission operations centers to gauge their interest and use. One single group was then marked as our primary use case to vet and test ideas and concepts for deployment. Through this process myself and the software team worked to create a user journey map, workflow and problem statement to illustrate the process the users follow to create mission reports and how that information then feeds back to plan missions using the data.
+            </p>
+            <p>
+              From this we identified two major pains to solve: the mission reporting tool relied on manual "route" calculation and heavy data entry from the user to properly calculate mission data. Additionally there was no given source of truth for mission data to provide across the network, so we worked to solve that task as we had several assumptions it would aid our ability to provide reporting at scale going forward.
+            </p>
+          </div>
           <div className="rounded-xl overflow-hidden">
             <img 
               src={uxWorkflowPlanning} 
