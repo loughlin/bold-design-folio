@@ -11,18 +11,11 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left Column - Photo */}
           <div className="lg:col-span-5 animate-fade-in">
-            <div className="relative">
-              <img 
-                src={jamesProfileBw} 
-                alt="James Loughlin" 
-                className="w-full max-w-md mx-auto lg:mx-0 rounded-2xl shadow-2xl grayscale"
-              />
-              {/* Location badge */}
-              <div className="absolute bottom-4 left-4 bg-background/90 backdrop-blur-sm rounded-full px-4 py-2 flex items-center gap-2 shadow-lg">
-                <MapPin className="h-4 w-4 text-primary" />
-                <span className="text-sm font-medium">Boston, MA</span>
-              </div>
-            </div>
+            <img 
+              src={jamesProfileBw} 
+              alt="James Loughlin" 
+              className="w-full max-w-md mx-auto lg:mx-0 rounded-2xl shadow-2xl grayscale"
+            />
           </div>
 
           {/* Right Column - Content */}
