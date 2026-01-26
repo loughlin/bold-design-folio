@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -23,40 +23,34 @@ const MissionReportingCaseStudy = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      {/* Hero Section - Dark Background */}
-      <section className="bg-foreground text-background pt-32 pb-16 px-6">
-        <div className="container mx-auto max-w-6xl">
-          <div className="mb-8">
-            <Link to="/#work">
-              <Button variant="ghost" size="sm" className="text-background/80 hover:text-background hover:bg-background/10">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Case Studies
-              </Button>
-            </Link>
-          </div>
+      {/* Hero Section */}
+      <section className="pt-32 pb-8 px-6">
+        <div className="container mx-auto max-w-4xl">
+          <Link 
+            to="/#work" 
+            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to Case Studies
+          </Link>
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 max-w-4xl">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
             Streamlining data entry through automation to transform how the Air Force executes and disseminates mission data.
           </h1>
-          
-          <div className="flex flex-wrap gap-8 text-sm text-background/70">
-            <div>
-              <span className="uppercase tracking-wider">Company</span>
-              <span className="mx-2">|</span>
-              <span className="text-background">Kessel Run</span>
-            </div>
-            <div>
-              <span className="uppercase tracking-wider">Year</span>
-              <span className="mx-2">|</span>
-              <span className="text-background">2019 - 2021</span>
-            </div>
+          <p className="text-xl text-muted-foreground mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            USAF Mission Reporting Tool
+          </p>
+          <div className="flex flex-wrap gap-4 text-sm text-muted-foreground animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <span>2019 - 2021</span>
+            <span>•</span>
+            <span>UX Manager + Product Designer</span>
           </div>
         </div>
       </section>
 
       {/* Hero Image */}
-      <section className="bg-foreground pb-16 px-6">
-        <div className="container mx-auto max-w-6xl">
+      <section className="py-8 px-6">
+        <div className="container mx-auto max-w-4xl">
           <div className="rounded-xl overflow-hidden">
             <img 
               src={missionReportingInterface} 
