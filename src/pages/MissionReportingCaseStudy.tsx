@@ -148,7 +148,7 @@ const MissionReportingCaseStudy = () => {
               Before ideation, our team conducted user interviews with 5 mission operations centers to gauge their interest and use. One single group was then marked as our primary use case to vet and test ideas and concepts for deployment. Through this process myself and the software team worked to create a user journey map, workflow and problem statement to illustrate the process the users follow to create mission reports and how that information then feeds back to plan missions using the data.
             </p>
             <p>
-              From this we identified two major pains to solve: the mission reporting tool relied on manual "route" calculation and heavy data entry from the user to properly calculate mission data. Additionally there was no given source of truth for mission data to provide across the network, so we worked to solve that task as we had several assumptions it would aid our ability to provide reporting at scale going forward.
+              From this we identified two major pains to solve: the mission reporting tool relied on manual calculations for certain information fields within the report form and heavy data entry from the user to properly calculate mission data. Additionally there was no given source of truth for mission data to provide across the network, so we worked to solve that task as we had several assumptions it would aid our ability to provide reporting at scale going forward.
             </p>
           </div>
           <div className="rounded-xl overflow-hidden">
