@@ -582,43 +582,6 @@ const KesselRunCaseStudy = () => {
         </div>
       </section>
 
-
-      {/* Tools and Methods */}
-      <section className="py-16 px-6">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-2xl font-bold mb-8 text-center">Tools and Methods</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="space-y-4">
-              <h3 className="font-semibold text-foreground">Design Tools</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>Figma</li>
-                <li>Miro</li>
-                <li>Adobe Creative Suite</li>
-                <li>Zeplin</li>
-              </ul>
-            </div>
-            <div className="space-y-4">
-              <h3 className="font-semibold text-foreground">Research Methods</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>Contextual Inquiry</li>
-                <li>Usability Testing</li>
-                <li>Stakeholder Interviews</li>
-                <li>Journey Mapping</li>
-              </ul>
-            </div>
-            <div className="space-y-4">
-              <h3 className="font-semibold text-foreground">Leadership Practices</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>Design Critiques</li>
-                <li>Career Coaching</li>
-                <li>Psychological Safety</li>
-                <li>Cross-team Rituals</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Key Learnings */}
       <section className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto max-w-3xl">
