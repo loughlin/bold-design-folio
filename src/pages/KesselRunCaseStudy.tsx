@@ -508,19 +508,19 @@ const KesselRunCaseStudy = () => {
               <ul className="space-y-3 text-muted-foreground text-sm">
                 <li className="flex items-start gap-2">
                   <span className="text-destructive">✗</span>
-                  <span>Designers worked in silos with no shared resources</span>
+                  <span>Designers worked in silos at times, or did not share information or points of contact</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive">✗</span>
-                  <span>No clear career progression or growth opportunities</span>
+                  <span>Career progression was limited inside of application teams</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive">✗</span>
-                  <span>Inconsistent handoff processes caused rework</span>
+                  <span>Handoff procedures differed from team to team, making staffing difficult and often case by case</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive">✗</span>
-                  <span>User research rarely informed design decisions</span>
+                  <span>User research informed some design decisions, but that information was not always clear and available</span>
                 </li>
               </ul>
             </div>
@@ -533,15 +533,15 @@ const KesselRunCaseStudy = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary">✓</span>
-                  <span>Established career ladders with mentorship programs</span>
+                  <span>Established evaluation and mentorship within the design portfolio</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary">✓</span>
-                  <span>Standardized handoff reduced developer rework by 40%</span>
+                  <span>Standardized expectation between design and developers, reducing time from written backlog to production by 33%</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary">✓</span>
-                  <span>Research embedded in every product team's workflow</span>
+                  <span>Expanded research standards and provided guidance on prioritized design artifacts with product teams</span>
                 </li>
               </ul>
             </div>
