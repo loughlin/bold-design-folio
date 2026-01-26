@@ -26,7 +26,7 @@ export const PasswordProvider = ({ children }: { children: ReactNode }) => {
   // Validate existing session on mount - SERVER-SIDE VALIDATION
   useEffect(() => {
     const validateExistingSession = async () => {
-      const sessionToken = sessionStorage.getItem(SESSION_TOKEN_KEY);
+      const sessionToken = localStorage.getItem(SESSION_TOKEN_KEY);
       
       if (!sessionToken) {
         setIsValidatingSession(false);
@@ -40,18 +40,18 @@ export const PasswordProvider = ({ children }: { children: ReactNode }) => {
 
         if (error) {
           console.error('Session validation error:', error);
-          sessionStorage.removeItem(SESSION_TOKEN_KEY);
+          localStorage.removeItem(SESSION_TOKEN_KEY);
           setIsAuthenticated(false);
         } else if (data?.valid) {
           setIsAuthenticated(true);
         } else {
           // Session is invalid or expired - clear it
-          sessionStorage.removeItem(SESSION_TOKEN_KEY);
+          localStorage.removeItem(SESSION_TOKEN_KEY);
           setIsAuthenticated(false);
         }
       } catch (error) {
         console.error('Session validation error:', error);
-        sessionStorage.removeItem(SESSION_TOKEN_KEY);
+        localStorage.removeItem(SESSION_TOKEN_KEY);
         setIsAuthenticated(false);
       } finally {
         setIsValidatingSession(false);
@@ -83,7 +83,7 @@ export const PasswordProvider = ({ children }: { children: ReactNode }) => {
 
       if (data?.valid && data?.sessionToken) {
         // Store the server-generated session token
-        sessionStorage.setItem(SESSION_TOKEN_KEY, data.sessionToken);
+        localStorage.setItem(SESSION_TOKEN_KEY, data.sessionToken);
         setIsAuthenticated(true);
         setIsAuthenticating(false);
         return { success: true };
