@@ -62,12 +62,12 @@ const MissionReportingCaseStudy = () => {
         </div>
       </section>
 
-      {/* TLDR Section */}
+      {/* Overview Section */}
       <section className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-2xl font-bold mb-6">TLDR</h2>
+          <h2 className="text-2xl font-bold mb-6">Overview</h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            As the lead designer on our team, I was responsible for the entire design process, from research to solution generation and evaluation as we built a new feature for the mission reporting tool. The actual name of the application was redacted due to security concerns. Through this project, I experienced significant growth, as I was exposed to new challenges and learned valuable lessons. For instance, I learned the importance of involving engineers early in the process and accounting for unforeseen complexity.
+            First as a product designer on the software team and later overseeing it from a managing position, I was responsible for the design process, from research to solution generation and evaluation as we built out and expanded upon the capability for the mission reporting tool. Through my time on this project I experienced significant growth not only as a designer but as a professional and product owner. I was exposed to new challenges and difficult stakeholders which allowed me to learn valuable lessons in deploying software quickly and productively. From knowing the importance of involving engineers early in the process to accounting for unforeseen complexity and juggling stakeholders.
           </p>
         </div>
       </section>
