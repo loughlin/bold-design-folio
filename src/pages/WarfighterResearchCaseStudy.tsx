@@ -44,11 +44,11 @@ const WarfighterResearchCaseStudy = () => {
       research={{
         title: "Research Methodology",
         content: [
-          "Conducted 50+ contextual inquiries and shadowing sessions with users at operational bases",
-          "Facilitated 30+ usability testing sessions with active duty personnel across multiple career fields",
-          "Ran participatory design workshops with 100+ users to co-create solutions",
-          "Established research operations including participant recruitment pipelines and incentive programs",
-          "Created research repositories and insight libraries accessible to all product teams"
+          "Conducted 30+ contextual inquiries and shadowing sessions with operational users of products in the portfolio both developed internally and inherited from other program offices.",
+          "Facilitated 30+ usability testing sessions with active duty personnel in given program offices.",
+          "Ran participatory design workshops with operational users to co-create solutions and build application trust.",
+          "Established research operations including participant recruitment share outs and common points of contact for research standards.",
+          "Created and contributed to research artifacts and repositories accessible to all product teams."
         ]
       }}
       process={[
