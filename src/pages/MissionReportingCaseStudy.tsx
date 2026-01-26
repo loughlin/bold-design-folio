@@ -35,7 +35,7 @@ const MissionReportingCaseStudy = () => {
           </Link>
           
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
-            Streamlining data entry through automation to transform how the Air Force executes and disseminates mission data.
+            Streamlining data entry through automation to transform how the Air Force disseminates mission data.
           </h1>
           <p className="text-xl text-muted-foreground mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             USAF Mission Reporting Tool
