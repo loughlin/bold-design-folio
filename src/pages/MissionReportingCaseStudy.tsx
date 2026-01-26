@@ -5,7 +5,7 @@ import { ArrowLeft, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import cloudApplicationDashboard from "@/assets/cloud-application-dashboard.jpg";
+import missionReportingInterface from "@/assets/mission-reporting-interface.png";
 import uxWorkflowPlanning from "@/assets/ux-workflow-planning.jpg";
 
 const MissionReportingCaseStudy = () => {
@@ -36,7 +36,7 @@ const MissionReportingCaseStudy = () => {
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 max-w-4xl">
-            Eliminating manual calculation and data entry to transform how the Air Force plans mission reporting.
+            Streamlining data entry through automation to transform how the Air Force executes and disseminates mission data.
           </h1>
           
           <div className="flex flex-wrap gap-8 text-sm text-background/70">
@@ -59,7 +59,7 @@ const MissionReportingCaseStudy = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="rounded-xl overflow-hidden">
             <img 
-              src={cloudApplicationDashboard} 
+              src={missionReportingInterface} 
               alt="Mission Reporting Application Interface" 
               className="w-full h-[400px] md:h-[500px] object-cover"
             />
