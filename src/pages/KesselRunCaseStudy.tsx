@@ -594,18 +594,6 @@ const KesselRunCaseStudy = () => {
         </div>
       </section>
 
-      {/* Stakeholder Feedback */}
-      <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl font-bold mb-6">What Stakeholders Said</h2>
-          <div className="bg-primary/5 rounded-xl p-8 space-y-4">
-            <blockquote className="text-lg italic text-foreground leading-relaxed">
-              "The design team's transformation has been remarkable. They've built a culture where designers feel empowered to advocate for users while delivering at the speed our missions require."
-            </blockquote>
-            <p className="text-sm text-muted-foreground">— Program Leadership</p>
-          </div>
-        </div>
-      </section>
 
       {/* Tools and Methods */}
       <section className="py-16 px-6">
