@@ -174,16 +174,7 @@ const WarfighterResearchCaseStudy = () => {
         "Reduced average feature development cycle by 3 weeks through early problem validation",
         "Established accessibility testing protocols that identified 40+ usability barriers for users in operational environments"
       ]}
-      images={[
-        {
-          url: userResearchInterview,
-          caption: "Contextual inquiry session with users in operational environment"
-        },
-        {
-          url: designThinkingWorkshop,
-          caption: "Journey map documenting user workflows and pain points across systems"
-        }
-      ]}
+      images={[]}
     />
   );
 };
