@@ -7,6 +7,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import missionReportingInterface from "@/assets/mission-reporting-interface.png";
 import uxWorkflowPlanning from "@/assets/ux-workflow-planning.jpg";
+import f35AerialRefueling from "@/assets/f35-aerial-refueling.jpg";
 
 const MissionReportingCaseStudy = () => {
   useEffect(() => {
@@ -53,8 +54,8 @@ const MissionReportingCaseStudy = () => {
         <div className="container mx-auto max-w-4xl">
           <div className="rounded-xl overflow-hidden">
             <img 
-              src={missionReportingInterface} 
-              alt="Mission Reporting Application Interface" 
+              src={f35AerialRefueling} 
+              alt="F-35 Aerial Refueling" 
               className="w-full h-[400px] md:h-[500px] object-cover"
             />
           </div>
@@ -104,10 +105,12 @@ const MissionReportingCaseStudy = () => {
       {/* Interface Images */}
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-4xl space-y-8">
-          <div className="rounded-xl overflow-hidden bg-muted/50 p-8 text-center">
-            <div className="h-48 flex items-center justify-center border-2 border-dashed border-muted-foreground/30 rounded-lg">
-              <p className="text-muted-foreground italic">Image blurred due to releasability restrictions</p>
-            </div>
+          <div className="rounded-xl overflow-hidden">
+            <img 
+              src={missionReportingInterface} 
+              alt="Mission Reporting Application Interface" 
+              className="w-full object-cover"
+            />
           </div>
           <div className="text-center">
             <p className="text-sm text-muted-foreground">Existing Mission Reporting Interface</p>
