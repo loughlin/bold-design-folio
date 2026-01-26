@@ -96,10 +96,13 @@ const MissionReportingCaseStudy = () => {
           <h2 className="text-2xl font-bold mb-6">The Problem</h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              As a team, we decided to start by targeting the mission data domain. In the current interface, users were required to enter five data fields for each mission report created and manually calculate all route times. I determined that we could automate three of the five data fields with an integration with the external data management system. In addition to the needed integration, the mission reporting tool would also need to consume additional data that would enable an automatic calculation of the route times.
+              As a team, we decided to start by targeting the mission data domain. In the current interface, users were required to enter multiple data fields for each mission report created and manually calculate all route times. Not only would some information required not be pertinent to a given mission type it might be completely unknown.
             </p>
             <p>
-              We began migrating our data sources from our internal backend to consuming directly from the external data management tool. We took this opportunity to address significant user pain surrounding the process of managing and interacting with mission data.
+              We determined that we could automate multiple data fields by importing from sources. First via a manual method of document ingestion and later through third party API integrations with an integration to external data management systems. In addition to the needed integration, the mission reporting tool would also need to consume additional data that would enable an automatic calculation of the route times on certain mission events, fuel levels, aircraft load outs and additional information.
+            </p>
+            <p>
+              We began migrating our data sources from our internal back end to consuming directly from multiple external data management tools. We took this opportunity to address significant user pain surrounding the process of managing and interacting with mission data, by giving different methods to capture that data and define it for a given mission type and location as well as identifying the authoring group and persons.
             </p>
           </div>
         </div>
