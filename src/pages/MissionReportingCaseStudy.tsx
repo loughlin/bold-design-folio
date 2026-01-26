@@ -8,6 +8,10 @@ import Footer from "@/components/Footer";
 import missionReportingInterface from "@/assets/mission-reporting-interface.png";
 import uxWorkflowPlanning from "@/assets/ux-workflow-planning.jpg";
 import f35AerialRefueling from "@/assets/f35-aerial-refueling.jpg";
+import marauderTimelineEvents from "@/assets/marauder-timeline-events.png";
+import marauderDataIngestion from "@/assets/marauder-data-ingestion.png";
+import marauderMissionInsert from "@/assets/marauder-mission-insert.png";
+import marauderMissionNarrative from "@/assets/marauder-mission-narrative.png";
 
 const MissionReportingCaseStudy = () => {
   useEffect(() => {
@@ -530,6 +534,58 @@ const MissionReportingCaseStudy = () => {
           <p className="text-lg text-muted-foreground leading-relaxed">
             The integration architecture we established became the blueprint for connecting additional applications within the suite. The modular approach to data consumption allowed subsequent features to leverage the same integration patterns, reducing development time for future cross-system capabilities by 30%.
           </p>
+        </div>
+      </section>
+
+      {/* Product Gallery */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-2xl font-bold mb-6">Product Gallery</h2>
+          <p className="text-muted-foreground mb-8">
+            Screenshots from the mission reporting application showing key features and interfaces.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-3">
+              <div className="rounded-xl overflow-hidden border border-border">
+                <img 
+                  src={marauderTimelineEvents} 
+                  alt="Mission timeline and events interface" 
+                  className="w-full object-cover"
+                />
+              </div>
+              <p className="text-sm text-muted-foreground text-center">Timeline view with mission events and geographic areas</p>
+            </div>
+            <div className="space-y-3">
+              <div className="rounded-xl overflow-hidden border border-border">
+                <img 
+                  src={marauderDataIngestion} 
+                  alt="Mission data ingestion interface" 
+                  className="w-full object-cover"
+                />
+              </div>
+              <p className="text-sm text-muted-foreground text-center">Loading mission data from external sources</p>
+            </div>
+            <div className="space-y-3">
+              <div className="rounded-xl overflow-hidden border border-border">
+                <img 
+                  src={marauderMissionInsert} 
+                  alt="Mission insert panel" 
+                  className="w-full object-cover"
+                />
+              </div>
+              <p className="text-sm text-muted-foreground text-center">Insert panel for adding mission data and events</p>
+            </div>
+            <div className="space-y-3">
+              <div className="rounded-xl overflow-hidden border border-border">
+                <img 
+                  src={marauderMissionNarrative} 
+                  alt="Mission narrative interface" 
+                  className="w-full object-cover"
+                />
+              </div>
+              <p className="text-sm text-muted-foreground text-center">Mission narrative and configuration interface</p>
+            </div>
+          </div>
         </div>
       </section>
 
