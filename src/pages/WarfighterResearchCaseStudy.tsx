@@ -4,6 +4,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import userResearchInterview from "@/assets/user-research-interview.jpg";
+import stagesUxResearch from "@/assets/stages-ux-research.webp";
+import uxResearchProcess from "@/assets/ux-research-process.webp";
 
 const WarfighterResearchCaseStudy = () => {
   useEffect(() => {
@@ -12,33 +14,38 @@ const WarfighterResearchCaseStudy = () => {
 
   const designProcessPhases = [
     {
-      name: "Discover",
+      name: "Discovery",
       type: "divergent" as const,
-      description: "Understanding user contexts, workflows, and pain points through immersive research.",
+      description: "Understanding the problem space through field studies, diary studies, user interviews, and stakeholder interviews to gather essential information about user needs.",
+      activities: ["Field studies", "Diary studies", "User interviews", "Stakeholder interviews", "Requirements gathering"]
     },
     {
-      name: "Define",
+      name: "Exploring",
       type: "convergent" as const,
-      description: "Synthesizing research into actionable insights and clear problem definitions.",
+      description: "Synthesizing gathered information through competitive analysis, persona building, task analysis, journey mapping, and card sorting to inform design decisions.",
+      activities: ["Competitive analysis", "Persona building", "Task analysis", "Journey mapping", "Card sorting"]
     },
     {
-      name: "Develop",
+      name: "Testing",
       type: "divergent" as const,
-      description: "Generating and testing multiple solutions through iterative prototyping.",
+      description: "Validating design solutions through qualitative usability testing, benchmark testing, accessibility evaluation, and A/B testing against user expectations.",
+      activities: ["Usability testing", "Benchmark testing", "Accessibility evaluation", "A/B testing"]
     },
     {
-      name: "Deliver",
+      name: "Listening",
       type: "convergent" as const,
-      description: "Refining and communicating validated solutions for implementation.",
+      description: "Continuous improvement through surveys, product analytics reviews, search-log analysis, and usability-bug reviews to gather ongoing feedback.",
+      activities: ["Surveys", "Analytics reviews", "Search-log analysis", "FAQ reviews"]
     },
   ];
 
   const researchMethodology = [
-    "Conducted 30+ contextual inquiries and shadowing sessions with operational users of products in the portfolio both developed internally and inherited from other program offices.",
-    "Facilitated 30+ usability testing sessions with active duty personnel in given program offices.",
-    "Ran participatory design workshops with operational users to co-create solutions and build application trust.",
-    "Established research operations including participant recruitment share outs and common points of contact for research standards.",
-    "Created and contributed to research artifacts and repositories accessible to all product teams."
+    "Conducted 30+ contextual inquiries and shadowing sessions with operational users in their natural environment, providing valuable insights into behaviors and preferences that only direct observation can reveal.",
+    "Facilitated 30+ usability testing sessions with active duty personnel using task-based moderated sessions and think-aloud protocols to uncover users' thoughts, feelings, and motivations.",
+    "Ran participatory design workshops with operational users to co-create solutions, employing card sorting and prototype feedback techniques to build application trust.",
+    "Established research operations including participant recruitment, stakeholder alignment, and common points of contact for research standards across all product teams.",
+    "Created and contributed to research artifacts and repositories with clear documentation, visual aids, and user personas to enhance understanding across the organization.",
+    "Developed a structured research framework encompassing discovery, exploration, testing, and listening phases with actionable steps to guide research teams seamlessly."
   ];
 
   const processSteps = [
@@ -200,13 +207,13 @@ const WarfighterResearchCaseStudy = () => {
             <Card className="animate-fade-in">
               <CardContent className="p-6">
                 <h3 className="text-sm font-semibold text-muted-foreground mb-2">ROLE</h3>
-                <p className="text-lg">Lead UX Researcher & Product Designer</p>
+                <p className="text-lg">UX Manager & Lead UX Researcher</p>
               </CardContent>
             </Card>
             <Card className="animate-fade-in" style={{ animationDelay: "0.1s" }}>
               <CardContent className="p-6">
                 <h3 className="text-sm font-semibold text-muted-foreground mb-2">TIMELINE</h3>
-                <p className="text-lg">2020 - Present (Ongoing)</p>
+                <p className="text-lg">2021 - 2023</p>
               </CardContent>
             </Card>
             <Card className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
@@ -251,10 +258,15 @@ const WarfighterResearchCaseStudy = () => {
       <section className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto max-w-6xl space-y-8 animate-fade-in">
           <div className="space-y-4">
-            <h2 className="text-3xl font-bold">Design Process Methodology</h2>
+            <h2 className="text-3xl font-bold">The Four Stages of UX Research</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              The design process follows the Double Diamond framework, broken into four phases: two for divergent thinking (exploring possibilities) and two for convergent thinking (focusing on solutions).
+              The UX research process unfolds in four distinct stages: Discovery, Exploring, Testing, and Listening. Each stage plays a pivotal role in shaping the user experience, from setting clear objectives to translating findings into actionable design decisions.
             </p>
+          </div>
+
+          {/* Stages Diagram */}
+          <div className="flex justify-center py-4">
+            <img src={stagesUxResearch} alt="Four stages of UX research: Discovery, Exploring, Testing, and Listening" className="max-w-2xl w-full rounded-xl" />
           </div>
 
           {/* Double Diamond Visual */}
@@ -279,7 +291,7 @@ const WarfighterResearchCaseStudy = () => {
             </div>
           </div>
 
-          {/* Phase Descriptions */}
+          {/* Phase Descriptions with Activities */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {designProcessPhases.map((phase, index) => (
               <Card key={index} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
@@ -289,6 +301,14 @@ const WarfighterResearchCaseStudy = () => {
                     <h3 className="font-semibold text-lg">{phase.name}</h3>
                   </div>
                   <p className="text-sm text-muted-foreground">{phase.description}</p>
+                  <ul className="space-y-1">
+                    {phase.activities.map((activity, i) => (
+                      <li key={i} className="text-xs text-muted-foreground flex items-start gap-2">
+                        <span className="text-primary mt-0.5">•</span>
+                        {activity}
+                      </li>
+                    ))}
+                  </ul>
                 </CardContent>
               </Card>
             ))}
@@ -300,6 +320,15 @@ const WarfighterResearchCaseStudy = () => {
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-6xl space-y-8 animate-fade-in">
           <h2 className="text-3xl font-bold">Research Methodology</h2>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            Our research methodology combined qualitative and quantitative approaches, employing a mix of methods for comprehensive understanding. Qualitative methods like interviews and observation provided depth into users' thoughts and motivations, while quantitative methods such as surveys and analytics offered statistical significance for data-driven decisions.
+          </p>
+          
+          {/* Research Process Diagram */}
+          <div className="flex justify-center py-4">
+            <img src={uxResearchProcess} alt="Key steps in the UX research process" className="max-w-3xl w-full rounded-xl" />
+          </div>
+          
           <ul className="space-y-4">
             {researchMethodology.map((item, index) => (
               <li key={index} className="flex items-start">
