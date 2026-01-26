@@ -10,7 +10,7 @@ const WarfighterResearchCaseStudy = () => {
       subtitle="De-risking product decisions through qualitative user research"
       heroImage={userResearchInterview}
       overview="Led comprehensive user research initiatives with users across multiple USAF missions to validate product concepts, uncover user needs, and reduce risk before significant development investment. This research program established user-centered design practices within a traditionally engineering-focused environment."
-      problem="Product teams were making critical design decisions based on stakeholder assumptions rather than actual user needs. This resulted in features being built that didn't align with user workflows, tools that required extensive post-launch rework, and poor adoption rates. Teams lacked direct access to end users and had no established research processes."
+      problem="Product teams were making critical design decisions based on stakeholder assumptions only. A merger of outside programs needed to be realigned to modern research methods and practices. Teams lacked direct access to end users and relied on second hand information or stakeholder knowledge and had no established standardized research processes for assimilating or disseminating findings to justify and support work."
       problemStatement="How might we establish research practices that give product teams direct access to users' needs, validate design decisions early, and build empathy for users operating in high-stakes, mission-critical environments?"
       role="Lead UX Researcher & Product Designer"
       timeline="2020 - Present (Ongoing)"
