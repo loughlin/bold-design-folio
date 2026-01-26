@@ -53,39 +53,39 @@ const WarfighterResearchCaseStudy = () => {
       }}
       process={[
         {
-          title: "1. Building Research Foundations",
+          title: "1. Research Strategy & Alignment",
           content: [
-            "Established relationships with squadron commanders and operational units to gain user access",
-            "Created research protocols compliant with security clearance requirements and operational constraints",
-            "Developed research templates and playbooks for team members with varying research experience",
-            "Set up participant databases organized by career field, rank, and operational experience"
+            "Defined research goals tied to product success metrics including adoption rates, error reduction, and user satisfaction",
+            "Established hypotheses before research began to focus on decision-critical questions rather than exploratory curiosity",
+            "Embedded researchers early in planning cycles so user evidence could influence roadmaps and feature prioritization",
+            "Created Research Briefs for each project outlining objectives, audiences, measures of success, and deliverables"
           ]
         },
         {
-          title: "2. Discovery Research",
+          title: "2. Mixed Methods Research",
           content: [
-            "Conducted field studies at air bases observing users in their natural work environment",
-            "Performed task analysis to understand existing workflows and pain points",
-            "Created journey maps documenting end-to-end processes across multiple systems",
-            "Identified critical moments where technology failures impacted mission outcomes"
+            "Conducted generative research through contextual inquiries, diary studies, and field observations at operational bases",
+            "Ran task-based moderated usability sessions with think-aloud protocols to validate design concepts",
+            "Deployed large-scale surveys with behavioral segments to quantify pain points and preferences",
+            "Triangulated insights across qualitative and quantitative methods to reduce bias and increase confidence"
           ]
         },
         {
-          title: "3. Evaluative Research",
+          title: "3. Synthesis & Stakeholder Engagement",
           content: [
-            "Ran moderated usability tests with interactive prototypes to validate design concepts",
-            "Facilitated A/B testing sessions comparing design alternatives",
-            "Conducted card sorting and tree testing to optimize information architecture",
-            "Measured task success rates, time-on-task, and satisfaction scores"
+            "Translated insights into decision-ready artifacts including opportunity maps, impact-effort matrices, and clear recommendations",
+            "Facilitated research synthesis workshops with cross-functional teams to co-interpret findings",
+            "Delivered findings in digestible sessions tied to product OKRs rather than data dumps",
+            "Built centralized research repositories with standard templates for plans, screeners, guides, and reports"
           ]
         },
         {
-          title: "4. Synthesis & Communication",
+          title: "4. Documentation & Operationalization",
           content: [
-            "Created research reports with actionable insights and prioritized recommendations",
-            "Developed user personas representing different career fields and experience levels",
-            "Facilitated research readouts with product teams and leadership stakeholders",
-            "Embedded insights into design system documentation and component guidelines"
+            "Created searchable insight libraries with tagging systems for topics, products, and user segments",
+            "Linked research insights directly to product tickets and documentation for traceability",
+            "Established research readiness gates in delivery processes to ensure evidence informed decisions",
+            "Defined 'Research Done' criteria requiring evidence that directly influences product decisions"
           ]
         }
       ]}
@@ -156,23 +156,23 @@ const WarfighterResearchCaseStudy = () => {
       beforeAfter={{
         before: {
           image: teamCollaborationMeeting,
-          caption: "Design decisions based on assumptions with low user adoption and post-launch rework"
+          caption: "Siloed research practices • Decisions based on stakeholder assumptions • No standardized processes • Insights lost between teams • Limited user access"
         },
         after: {
           image: designThinkingWorkshop,
-          caption: "User-validated designs with high confidence, improved adoption, and measurable mission impact"
+          caption: "Unified research operations • Evidence-based decision making • Centralized insight repositories • Cross-team knowledge sharing • Direct user engagement"
         }
       }}
       outcomes={[
         "Prevented 3 major features from being built after research revealed they wouldn't solve user problems, saving $500K+ in development costs",
-        "Improved user satisfaction scores from 6.2 to 8.4/10 across tested applications",
-        "Reduced post-launch design changes by 65% through early validation with actual users",
-        "Established user research as standard practice across all 6 T&G Portfolio missions",
-        "Created library of 50+ research insights accessible to all product teams, informing future design decisions",
-        "Trained 15 designers and product managers in basic research methods, building team capability",
-        "Stakeholder feedback: 'Research has transformed how we prioritize features—we now have confidence that what we build will actually be used'",
-        "Reduced average feature development cycle by 3 weeks through early problem validation",
-        "Established accessibility testing protocols that identified 40+ usability barriers for users in operational environments"
+        "Improved user satisfaction scores from 6.2 to 8.4/10 across tested applications through research-informed design decisions",
+        "Reduced post-launch design changes by 65% through early validation with actual users before development investment",
+        "Established user research as standard practice across all 6 T&G Portfolio missions with consistent methodology",
+        "Created searchable library of 50+ research insights with tagging systems for topics, products, and user segments",
+        "Built centralized research repositories with standard templates for plans, screeners, moderator guides, and reports",
+        "Trained 15 designers and product managers in research methods, establishing research readiness gates in delivery processes",
+        "Reduced average feature development cycle by 3 weeks through early problem validation and hypothesis-driven research",
+        "Established quarterly research impact reporting to leadership, tying research directly to product performance metrics"
       ]}
       images={[]}
     />
