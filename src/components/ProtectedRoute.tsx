@@ -2,12 +2,11 @@ import { ReactNode, useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { usePassword } from "@/contexts/PasswordContext";
 import { supabase } from "@/integrations/supabase/client";
+import { SESSION_TOKEN_KEY } from "@/constants";
 
 interface ProtectedRouteProps {
   children: ReactNode;
 }
-
-const SESSION_TOKEN_KEY = "portfolio_session_token";
 
 const ProtectedRoute = ({ children }: ProtectedRouteProps) => {
   const { isAuthenticated, setShowPasswordDialog, setPendingNavigation } = usePassword();

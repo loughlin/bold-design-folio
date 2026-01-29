@@ -2,53 +2,10 @@ import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Quote, ChevronDown, ChevronUp } from "lucide-react";
+import { testimonials } from "@/data/testimonials";
 
 const Testimonials = () => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const testimonials = [
-    {
-      quote: "James was a big part in the positive experience I had working at Kessel Run. From my initial job interviews all the way to my last day, I always felt supported as both a designer and person. I learned a lot from him, which was invaluable in a time when I had to work quickly, and it surely helped to keep my head above water. He's very knowledgeable, communicative, compassionate, honest, and just an all-around good person.",
-      author: "Peter Nguyen",
-      role: "Lead UX Designer",
-      organization: "Kessel Run",
-    },
-    {
-      quote: "James is an outstanding Product Designer and a genuine pleasure to work with. We partnered on Marauder, where his creativity, focus, and bias for action helped the team reach a user count of over 10,000. He knows how to drive toward objectives while keeping collaboration front and center, making it easy for everyone to do their best work.",
-      author: "Richard Strohecker",
-      role: "Problem-solver, striving to transform gov experiences",
-      organization: "Kessel Run",
-    },
-    {
-      quote: "I had the opportunity to work with James when he was my manager at Kessel Run, and I saw firsthand his deep mastery of UX and Product Design. He has a rare ability to quickly spot strategic points of focus in complex, fast-moving environments. James is highly skilled at identifying and leveraging opportunities at every level, from individual professional development to improving project execution, guiding programs, and driving organizational change.",
-      author: "Michael W. Smith",
-      role: "Research and Design for Complex Domains",
-      organization: "Kessel Run",
-    },
-    {
-      quote: "James is a fantastic designer to work with. We worked together at the product team level and at the product leader level, and he maintains an unwavering commitment to the user in each, which drives a virtuous cycle of positive business outcomes. James consistently breaks down complex user journeys into clearly digestible formats, identifies the highest value pain points to address, and designs UI/UX solutions to address them.",
-      author: "Adam Stoddard",
-      role: "Product Leader | Veteran",
-      organization: "Kessel Run",
-    },
-    {
-      quote: "James is an outstanding UX Design Lead whose combination of problem-solving expertise and customer-first mindset sets him apart. He excels at collaborating closely with his team, ensuring that solutions are both innovative and grounded in real user needs. James has a remarkable ability to quickly grasp intended outcomes and, once challenges are identified, present a range of thoughtful, well-crafted design solutions.",
-      author: "Anita Dudemaine",
-      role: "Vice President, Domain Owner – Digital Personal Communications",
-      organization: "Kessel Run",
-    },
-    {
-      quote: "I had the privilege of working closely with James during our time at Kessel Run, both in his capacity as a senior product designer embedded with a product team and as a design leader in the product portfolio. In every single interaction, James was an exemplar of candor, drive, and an unwavering focus on the specific needs of our highly demanding user community. Given the opportunity, he would be my first choice for any team, without exception.",
-      author: "Ryan Wade",
-      role: "Software Product & Security Accelerator",
-      organization: "Kessel Run",
-    },
-    {
-      quote: "I had the distinct pleasure of working with James in his role as a portfolio design leader reporting to me, where he championed Warfighter-Centered Design across our targeting and geospatial product portfolio. Overseeing designers on five concurrent product teams, James consistently demonstrated exceptional leadership, guiding cross-functional collaboration among product management, program management, engineering, and design.",
-      author: "Uwe Zimmermann",
-      role: "Director of Product Design",
-      organization: "Kessel Run",
-    },
-  ];
 
   return (
     <section className="py-12 px-6 overflow-hidden">

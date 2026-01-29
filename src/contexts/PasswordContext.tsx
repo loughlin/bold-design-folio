@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from "react";
 import { supabase } from "@/integrations/supabase/client";
+import { SESSION_TOKEN_KEY } from "@/constants";
 
 interface PasswordContextType {
   isAuthenticated: boolean;
@@ -13,8 +14,6 @@ interface PasswordContextType {
 }
 
 const PasswordContext = createContext<PasswordContextType | undefined>(undefined);
-
-const SESSION_TOKEN_KEY = "portfolio_session_token";
 
 export const PasswordProvider = ({ children }: { children: ReactNode }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
