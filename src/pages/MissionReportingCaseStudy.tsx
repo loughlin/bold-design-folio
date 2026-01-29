@@ -76,6 +76,58 @@ const MissionReportingCaseStudy = () => {
         </div>
       </section>
 
+      {/* Product Gallery */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-2xl font-bold mb-6">Product Gallery</h2>
+          <p className="text-muted-foreground mb-8">
+            Screenshots from the mission reporting application showing key features and interfaces.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-3">
+              <div className="rounded-xl overflow-hidden border border-border">
+                <img 
+                  src={marauderTimelineEvents} 
+                  alt="Mission timeline and events interface" 
+                  className="w-full object-cover"
+                />
+              </div>
+              <p className="text-sm text-muted-foreground text-center">Timeline view with mission events and geographic areas</p>
+            </div>
+            <div className="space-y-3">
+              <div className="rounded-xl overflow-hidden border border-border">
+                <img 
+                  src={marauderDataIngestion} 
+                  alt="Mission data ingestion interface" 
+                  className="w-full object-cover"
+                />
+              </div>
+              <p className="text-sm text-muted-foreground text-center">Loading mission data from external sources</p>
+            </div>
+            <div className="space-y-3">
+              <div className="rounded-xl overflow-hidden border border-border">
+                <img 
+                  src={marauderMissionInsert} 
+                  alt="Mission insert panel" 
+                  className="w-full object-cover"
+                />
+              </div>
+              <p className="text-sm text-muted-foreground text-center">Insert panel for adding mission data and events</p>
+            </div>
+            <div className="space-y-3">
+              <div className="rounded-xl overflow-hidden border border-border">
+                <img 
+                  src={marauderMissionNarrative} 
+                  alt="Mission narrative interface" 
+                  className="w-full object-cover"
+                />
+              </div>
+              <p className="text-sm text-muted-foreground text-center">Mission narrative and configuration interface</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Background Section */}
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-4xl">
@@ -537,57 +589,6 @@ const MissionReportingCaseStudy = () => {
         </div>
       </section>
 
-      {/* Product Gallery */}
-      <section className="py-16 px-6">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-2xl font-bold mb-6">Product Gallery</h2>
-          <p className="text-muted-foreground mb-8">
-            Screenshots from the mission reporting application showing key features and interfaces.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="space-y-3">
-              <div className="rounded-xl overflow-hidden border border-border">
-                <img 
-                  src={marauderTimelineEvents} 
-                  alt="Mission timeline and events interface" 
-                  className="w-full object-cover"
-                />
-              </div>
-              <p className="text-sm text-muted-foreground text-center">Timeline view with mission events and geographic areas</p>
-            </div>
-            <div className="space-y-3">
-              <div className="rounded-xl overflow-hidden border border-border">
-                <img 
-                  src={marauderDataIngestion} 
-                  alt="Mission data ingestion interface" 
-                  className="w-full object-cover"
-                />
-              </div>
-              <p className="text-sm text-muted-foreground text-center">Loading mission data from external sources</p>
-            </div>
-            <div className="space-y-3">
-              <div className="rounded-xl overflow-hidden border border-border">
-                <img 
-                  src={marauderMissionInsert} 
-                  alt="Mission insert panel" 
-                  className="w-full object-cover"
-                />
-              </div>
-              <p className="text-sm text-muted-foreground text-center">Insert panel for adding mission data and events</p>
-            </div>
-            <div className="space-y-3">
-              <div className="rounded-xl overflow-hidden border border-border">
-                <img 
-                  src={marauderMissionNarrative} 
-                  alt="Mission narrative interface" 
-                  className="w-full object-cover"
-                />
-              </div>
-              <p className="text-sm text-muted-foreground text-center">Mission narrative and configuration interface</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Footer CTA */}
       <section className="py-16 px-6 bg-muted/30">
