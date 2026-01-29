@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom";
-import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import ThemeToggle from "@/components/ThemeToggle";
+import { useScrollToSection } from "@/hooks/useScrollToSection";
+import { NAV_SECTIONS } from "@/constants";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const navigate = useNavigate();
-  const location = useLocation();
+  const { scrollToSection } = useScrollToSection();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,19 +19,8 @@ const Navigation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (id: string) => {
-    setIsMobileMenuOpen(false);
-    
-    // If we're not on the home page, navigate there first with the hash
-    if (location.pathname !== "/") {
-      navigate(`/#${id}`);
-      return;
-    }
-    
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+  const handleNavClick = (sectionId: string) => {
+    scrollToSection(sectionId, () => setIsMobileMenuOpen(false));
   };
 
   return (
@@ -52,25 +41,25 @@ const Navigation = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
             <button
-              onClick={() => scrollToSection("work")}
+              onClick={() => handleNavClick(NAV_SECTIONS.WORK)}
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               Case Studies
             </button>
             <button
-              onClick={() => scrollToSection("approach")}
+              onClick={() => handleNavClick(NAV_SECTIONS.APPROACH)}
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               UX Approach
             </button>
             <button
-              onClick={() => scrollToSection("experience")}
+              onClick={() => handleNavClick(NAV_SECTIONS.EXPERIENCE)}
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               Experience
             </button>
             <button
-              onClick={() => scrollToSection("about")}
+              onClick={() => handleNavClick(NAV_SECTIONS.ABOUT)}
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               About Me
@@ -91,25 +80,25 @@ const Navigation = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-4 animate-fade-in">
             <button
-              onClick={() => scrollToSection("work")}
+              onClick={() => handleNavClick(NAV_SECTIONS.WORK)}
               className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
             >
               Case Studies
             </button>
             <button
-              onClick={() => scrollToSection("approach")}
+              onClick={() => handleNavClick(NAV_SECTIONS.APPROACH)}
               className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
             >
               UX Approach
             </button>
             <button
-              onClick={() => scrollToSection("experience")}
+              onClick={() => handleNavClick(NAV_SECTIONS.EXPERIENCE)}
               className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
             >
               Experience
             </button>
             <button
-              onClick={() => scrollToSection("about")}
+              onClick={() => handleNavClick(NAV_SECTIONS.ABOUT)}
               className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
             >
               About Me

@@ -3,55 +3,9 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Lock } from "lucide-react";
 import { Link } from "react-router-dom";
 import ProtectedLink from "@/components/ProtectedLink";
-import missionReportingPreview from "@/assets/mission-reporting-preview.png";
-import uxResearchPreview from "@/assets/ux-research-preview.avif";
-import kesselRunLeadershipVisit from "@/assets/kessel-run-leadership-visit.jpg";
-import designSystemPreview from "@/assets/design-system-preview.avif";
+import { projects } from "@/data/projects";
 
 const FeaturedWork = () => {
-  const projects = [
-    {
-      title: "UX Leadership",
-      subtitle: "UX Manager + Leader",
-      description: "Advocating for design in mission critical USAF applications, transitioning how the USAF delivers software.",
-      role: "Portfolio Design Lead",
-      timeline: "2021 - Present",
-      image: kesselRunLeadershipVisit,
-      link: "/case-study/kessel-run",
-      isPublic: true,
-    },
-    {
-      title: "Portfolio Design System",
-      subtitle: "Design Systems + Component Libraries",
-      description: "Led design system roll out across five operational missions, establishing consistency standards for USAF software applications.",
-      role: "UX Manager + Product Designer",
-      timeline: "2019 - 2023",
-      image: designSystemPreview,
-      link: "/case-study/design-system",
-      isPublic: true,
-    },
-    {
-      title: "UX Research Initiatives",
-      subtitle: "User Research + Synthesis",
-      description: "Defined research practices and standards for a software suite of products, enabling teams to validate designs and de-risk decisions.",
-      role: "UX Manager",
-      timeline: "2021 - 2023",
-      image: uxResearchPreview,
-      link: "/case-study/warfighter-research",
-      isPublic: true,
-    },
-    {
-      title: "USAF Mission Reporting",
-      subtitle: "Product Design + Integration",
-      description: "Eliminating manual calculation and data entry for a uniform and accessible source of truth for USAF mission data.",
-      role: "UX Manager + Product Designer",
-      timeline: "2019 - 2021",
-      image: missionReportingPreview,
-      link: "/case-study/marauder",
-      isPublic: false,
-    },
-  ];
-
   return (
     <section id="work" className="py-16 px-6 scroll-mt-20">
       <div className="container mx-auto">
