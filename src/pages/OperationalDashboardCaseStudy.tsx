@@ -149,6 +149,7 @@ const OperationalDashboardCaseStudy = () => {
           caption: "Final Design: Login Page — Organizations receive a custom login page for their team. Alternatively, users can skip sign-in and access dashboards directly via a private link."
         }
       ]}
+      imageDisclaimer="Note: The data and text represented in these images have been modified and anonymized due to the secure nature of this work."
     />
   );
 };

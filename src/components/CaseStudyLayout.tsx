@@ -51,6 +51,7 @@ interface CaseStudyLayoutProps {
   };
   outcomes: string[];
   images?: { url: string; caption: string }[];
+  imageDisclaimer?: string;
 }
 
 const CaseStudyLayout = ({
@@ -71,6 +72,7 @@ const CaseStudyLayout = ({
   beforeAfter,
   outcomes,
   images,
+  imageDisclaimer,
 }: CaseStudyLayoutProps) => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -356,10 +358,15 @@ const CaseStudyLayout = ({
           <div className="container mx-auto max-w-6xl space-y-8">
             {images.map((image, index) => (
               <div key={index} className="space-y-4 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                <img src={image.url} alt={image.caption} className="w-full rounded-2xl" />
+                <img src={image.url} alt={image.caption} className="w-full" />
                 <p className="text-center text-muted-foreground">{image.caption}</p>
               </div>
             ))}
+            {imageDisclaimer && (
+              <p className="text-center text-sm text-muted-foreground italic pt-4 border-t border-border">
+                {imageDisclaimer}
+              </p>
+            )}
           </div>
         </section>
       )}
