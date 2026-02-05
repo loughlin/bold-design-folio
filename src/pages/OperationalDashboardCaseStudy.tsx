@@ -2,7 +2,6 @@ import CaseStudyLayout from "@/components/CaseStudyLayout";
 import dataDashboardPreview from "@/assets/data-dashboard-preview.jpg";
 import dashboardApiView from "@/assets/dashboard-api-view.jpg";
 import dashboardMetricsView from "@/assets/dashboard-metrics-view.jpg";
-import dashboardLoginView from "@/assets/dashboard-login-view.jpg";
 
 const OperationalDashboardCaseStudy = () => {
   return (
@@ -143,10 +142,6 @@ const OperationalDashboardCaseStudy = () => {
         {
           url: dashboardMetricsView,
           caption: "Final Design: Metrics View — A detailed breakdown of individual endpoint performance. Metrics include average, max, min, and standard deviation of response times, plus error rates and types split between percentiles for clearer insight."
-        },
-        {
-          url: dashboardLoginView,
-          caption: "Final Design: Login Page — Organizations receive a custom login page for their team. Alternatively, users can skip sign-in and access dashboards directly via a private link."
         }
       ]}
       imageDisclaimer="Note: The data and text represented in these images have been modified and anonymized due to the secure nature of this work."
