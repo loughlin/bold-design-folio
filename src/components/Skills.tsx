@@ -20,7 +20,7 @@ const Skills = () => {
             >
               <CardContent className="p-8">
                 <div className="flex items-start gap-4">
-                  <div className="bg-primary/10 p-3 rounded-lg">
+                  <div className="bg-primary/10 p-3">
                     <skill.icon className="w-6 h-6 text-primary" />
                   </div>
                   <div>
