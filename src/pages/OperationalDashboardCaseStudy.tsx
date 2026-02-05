@@ -1,5 +1,8 @@
 import CaseStudyLayout from "@/components/CaseStudyLayout";
 import dataDashboardPreview from "@/assets/data-dashboard-preview.jpg";
+import dashboardApiView from "@/assets/dashboard-api-view.jpg";
+import dashboardMetricsView from "@/assets/dashboard-metrics-view.jpg";
+import dashboardLoginView from "@/assets/dashboard-login-view.jpg";
 
 const OperationalDashboardCaseStudy = () => {
   return (
@@ -9,17 +12,18 @@ const OperationalDashboardCaseStudy = () => {
       heroImage={dataDashboardPreview}
       role="UX Manager + Product Designer"
       timeline="2019 - 2021"
-      team="2 Product Designers, 1 UX Researcher, 3 Engineers"
-      overview="I led the design effort for an operational data dashboard at Kessel Run, creating a centralized interface that enabled operators to monitor system health, data ingestion rates, and performance metrics across distributed environments. The dashboard consolidated information from multiple data sources into a single, actionable view for mission planners and system administrators."
-      problem="The existing monitoring tools were fragmented across multiple systems, requiring operators to switch between different interfaces to piece together a complete picture. This made it difficult to spot issues quickly and created communication gaps between operators and engineering teams. Operators lacked visibility into system performance and data flow health."
-      problemStatement="How might we design a centralized dashboard that provides operators with real-time visibility into system health and data flows, enabling them to quickly identify issues and communicate effectively with engineering teams?"
+      team="2 Product Designers, 6 Engineers, 1 PM"
+      overview="I was a UX Designer with Kessel Run, an organization that delivers software to help the Air Force operate more effectively. I designed a web dashboard that visualizes operational data flows and system performance for mission teams. I was responsible for researching, strategizing, and designing, as well as collaborating with product managers and engineers."
+      problem="The Kessel Run team wasn't satisfied with the current version of their monitoring tools. They suspected operators were missing key information or the right kind of data to be truly useful for their workflows. As a team of mostly engineers, they were unsure how to move forward with a redesign. My task was to help uncover what operators actually needed."
+      problemStatement="How might we design a dashboard that delivers the right value and KPIs to operators, helping them monitor data flows and communicate effectively with engineering teams?"
       research={{
-        title: "User Research Insights",
+        title: "Understanding Our Users",
         content: [
-          "100% of users cited system uptime visibility as critical for their daily workflows",
-          "83% needed historical trend data for pattern recognition and anomaly detection",
-          "83% wanted configurable alert thresholds to customize notifications",
-          "System administrators focus on overall infrastructure health and reliability standards",
+          "Operators and system administrators prioritize uptime visibility and trend analysis",
+          "100% of users cited system health visibility as critical — 6/6 users said this",
+          "83% needed historical trend data for pattern recognition — 5/6 users said this",
+          "83% wanted configurable alert thresholds to customize notifications — 5/6 users said this",
+          "System administrators monitor overall health and ensure systems meet reliability standards",
           "Mission operators track data availability to ensure planning has accurate information"
         ]
       }}
@@ -29,9 +33,9 @@ const OperationalDashboardCaseStudy = () => {
           type: "divergent",
           description: "Understanding the monitoring landscape and operator needs",
           activities: [
-            "Stakeholder interviews with operators and admins",
-            "Analysis of existing fragmented monitoring tools",
-            "Competitive analysis of data visualization dashboards"
+            "Market research on data visualization dashboards",
+            "User interviews to learn what matters most",
+            "Analysis of existing fragmented tools"
           ]
         },
         {
@@ -39,8 +43,8 @@ const OperationalDashboardCaseStudy = () => {
           type: "convergent",
           description: "Synthesizing insights into design requirements",
           activities: [
-            "User journey mapping for monitoring workflows",
             "Defining key metrics and data hierarchies",
+            "User journey mapping for monitoring workflows",
             "Establishing design principles for scannability"
           ]
         },
@@ -49,8 +53,8 @@ const OperationalDashboardCaseStudy = () => {
           type: "divergent",
           description: "Exploring dashboard concepts and information architecture",
           activities: [
-            "Sketching multiple dashboard layout concepts",
-            "Prototyping three-level view hierarchy",
+            "Sketching early concepts with evolving insights",
+            "Learning how the dashboard scales from overview to granular",
             "Iterating on filtering and navigation patterns"
           ]
         },
@@ -59,46 +63,54 @@ const OperationalDashboardCaseStudy = () => {
           type: "convergent",
           description: "Refining designs through testing and collaboration",
           activities: [
-            "Usability testing with operators and admins",
-            "Engineering collaboration for feasibility",
+            "Testing with operators and administrators",
+            "Workshopping with engineers for feasibility",
             "Final design refinement and handoff"
           ]
         }
       ]}
       process={[
         {
-          title: "Structuring the Dashboard",
-          content: "I worked closely with engineers to understand the technical architecture and data available. The dashboard needed three main views: a System Overview for high-level health, a Data Source view for individual feed monitoring, and a detailed Metrics view for deep-dive analysis. Data starts broad at the system level and becomes more detailed as users drill down into specific sources and metrics."
+          title: "Restructuring Data",
+          content: "I met with engineers to better understand how the dashboard works technically. It has three main views: System Overview, Data Source, and Metrics views. Each organization also has an optional sign-in page for team members. Data starts broad at the system level and becomes more detailed as users drill down into specific sources and metrics."
+        },
+        {
+          title: "Enhancing a Basic Dashboard",
+          content: "The original dashboard was minimal with just basic status indicators and a page title on each page. I focused my redesign on surfacing more useful information and making the dashboard feel dynamic. I added data cards and tables for quick scanning, filters to help users parse the data, and trend charts to highlight performance patterns. Along the way, I also refined the visual branding to give the tool a clearer identity."
         },
         {
           title: "View 1: System Overview",
-          content: "A high-level view showing health status for all connected data sources. Line charts display throughput over time while status cards show current state at a glance. This helps teams spot anomalies, compare environments, and monitor trends across the entire operational landscape."
+          content: "A high-level view showing performance for all data sources across an organization. The line chart shows throughput over time and cards display health status. This information helps teams spot anomalies, compare environments, and monitor trends."
         },
         {
           title: "View 2: Data Source View",
-          content: "This view zooms into a specific data source to track its individual performance and recent activity. Operators can see ingestion rates, latency metrics, error counts, and historical patterns for each connected system, enabling targeted troubleshooting."
+          content: "This view zooms into a specific data source to track its individual performance and recent activity. Here operators can see the performance of all connected feeds, timestamps, latency metrics, and error rates."
         },
         {
-          title: "View 3: Detailed Metrics",
-          content: "The most granular view, focusing on specific metrics within a data source. This surfaces detailed statistics including maximum, minimum, and average values, as well as error rates and distribution patterns for comprehensive analysis."
+          title: "View 3: Metrics View",
+          content: "The most granular view, focusing on specific metrics within a data source. Here surfaces detailed statistics about response times from maximum, minimum, average and standard deviation, as well as error rates and error types."
         },
         {
           title: "Improvements Through Feedback",
-          content: "Testing revealed that operators might monitor dozens of data sources simultaneously, far more than initially assumed. I reworked the filtering experience by adding a scrollable legend and collapsible sections, making it easier to parse and navigate large datasets. Operators emphasized the need for more contextual data like timestamps and historical comparisons to communicate effectively with engineering teams."
+          content: "I tested my designs with operators and system administrators. They emphasized the need for more contextual data, like timestamps, historical comparisons, and frequency, to better interpret results and communicate effectively with engineers. Testing also revealed that operators may monitor dozens of data sources, far more than the handful I initially assumed. To address this, I reworked the filtering experience by adding a scrollable legend, making it easier to parse and navigate large datasets."
+        },
+        {
+          title: "Overcoming Design Roadblocks",
+          content: "Implementing feedback from operators came with challenges. I was still learning technical terms amidst designing and wasn't sure of all my constraints. I workshopped with the engineering team to share the feedback I gathered, and together we figured out which changes were feasible and which were not."
         }
       ]}
       engagementMetrics={[
         {
-          value: "85%",
-          label: "Task Success Rate",
-          description: "Users completed tasks identifying system issues with high accuracy",
-          percentage: 85
+          value: "90%",
+          label: "Success Rate",
+          description: "Users completed a task identifying underperforming systems with a 90% success rate",
+          percentage: 90
         },
         {
-          value: "4.2/5",
-          label: "User Confidence",
-          description: "Post-testing confidence rating for monitoring system health",
-          percentage: 84
+          value: "4/5",
+          label: "Confidence Levels",
+          description: "Post-completing the task, users rated their confidence in evaluating system performance at 4 out of 5",
+          percentage: 80
         },
         {
           value: "60%",
@@ -114,10 +126,28 @@ const OperationalDashboardCaseStudy = () => {
         }
       ]}
       outcomes={[
-        "Consolidated fragmented monitoring tools into a single, unified interface that operators could access from one location",
-        "Enabled operators to quickly identify system issues through improved data visualization and scannability",
-        "Reduced communication gaps between operators and engineering teams by providing contextual data and historical trends",
-        "Validated designs through usability testing with real operators and system administrators, achieving an 85% task success rate"
+        "Met with engineers to ensure all designs were within their technical constraints before handoff",
+        "Conducted usability testing with operators and system administrators to validate the new interface",
+        "Uncovered insights the team wouldn't have found on their own, validating the research and design approach",
+        "Delivered strong designs that consolidated fragmented tools into a unified, operator-friendly interface"
+      ]}
+      images={[
+        {
+          url: dataDashboardPreview,
+          caption: "Final Design: System Overview — A high-level view showing performance for all data sources. The line chart shows throughput over time, paired with a scrollable legend for filtering. Summary cards display health status and total endpoints per source."
+        },
+        {
+          url: dashboardApiView,
+          caption: "Final Design: Data Source View — Focused on a single data source, this view shows performance trends, request frequency, timestamps, and connected feeds. A scrollable legend supports quick filtering, while the table below lists each route with method and response details."
+        },
+        {
+          url: dashboardMetricsView,
+          caption: "Final Design: Metrics View — A detailed breakdown of individual endpoint performance. Metrics include average, max, min, and standard deviation of response times, plus error rates and types split between percentiles for clearer insight."
+        },
+        {
+          url: dashboardLoginView,
+          caption: "Final Design: Login Page — Organizations receive a custom login page for their team. Alternatively, users can skip sign-in and access dashboards directly via a private link."
+        }
       ]}
     />
   );
