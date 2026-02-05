@@ -41,7 +41,7 @@ export const projects: Project[] = [
     subtitle: "Web Dashboards + Data Visualization",
     description: "Designing a centralized dashboard for operators to monitor mission-critical data flows and system performance across distributed environments.",
     role: "UX Manager + Product Designer",
-    timeline: "2020 - 2022",
+    timeline: "2019 - 2021",
     image: cloudDashboardPreview,
     link: "/case-study/operational-dashboard",
     isPublic: true,

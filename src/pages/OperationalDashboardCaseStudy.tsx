@@ -8,7 +8,7 @@ const OperationalDashboardCaseStudy = () => {
       subtitle="Web Dashboards + Data Visualization"
       heroImage={cloudDashboardPreview}
       role="UX Manager + Product Designer"
-      timeline="2020 - 2022"
+      timeline="2019 - 2021"
       team="2 Product Designers, 1 UX Researcher, 3 Engineers"
       overview="I led the design effort for an operational data dashboard at Kessel Run, creating a centralized interface that enabled operators to monitor system health, data ingestion rates, and performance metrics across distributed environments. The dashboard consolidated information from multiple data sources into a single, actionable view for mission planners and system administrators."
       problem="The existing monitoring tools were fragmented across multiple systems, requiring operators to switch between different interfaces to piece together a complete picture. This made it difficult to spot issues quickly and created communication gaps between operators and engineering teams. Operators lacked visibility into system performance and data flow health."
