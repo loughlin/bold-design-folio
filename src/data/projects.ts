@@ -3,6 +3,7 @@ import missionReportingPreview from "@/assets/mission-reporting-preview.png";
 import uxResearchPreview from "@/assets/ux-research-preview.avif";
 import kesselRunLeadershipVisit from "@/assets/kessel-run-leadership-visit.jpg";
 import designSystemPreview from "@/assets/design-system-preview.avif";
+import cloudDashboardPreview from "@/assets/cloud-application-dashboard.jpg";
 
 export const projects: Project[] = [
   {
@@ -33,6 +34,16 @@ export const projects: Project[] = [
     timeline: "2021 - 2023",
     image: uxResearchPreview,
     link: "/case-study/warfighter-research",
+    isPublic: true,
+  },
+  {
+    title: "Operational Data Dashboard",
+    subtitle: "Web Dashboards + Data Visualization",
+    description: "Designing a centralized dashboard for operators to monitor mission-critical data flows and system performance across distributed environments.",
+    role: "UX Manager + Product Designer",
+    timeline: "2020 - 2022",
+    image: cloudDashboardPreview,
+    link: "/case-study/operational-dashboard",
     isPublic: true,
   },
   {

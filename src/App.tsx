@@ -12,6 +12,7 @@ const DesignSystemCaseStudy = lazy(() => import("./pages/DesignSystemCaseStudy")
 const WarfighterResearchCaseStudy = lazy(() => import("./pages/WarfighterResearchCaseStudy"));
 const KesselRunCaseStudy = lazy(() => import("./pages/KesselRunCaseStudy"));
 const MissionReportingCaseStudy = lazy(() => import("./pages/MissionReportingCaseStudy"));
+const OperationalDashboardCaseStudy = lazy(() => import("./pages/OperationalDashboardCaseStudy"));
 
 import { PasswordProvider } from "./contexts/PasswordContext";
 import PasswordDialog from "./components/PasswordDialog";
@@ -49,6 +50,12 @@ const App = () => (
               </Suspense>
             } />
             
+            {/* Public case study - operational dashboard */}
+            <Route path="/case-study/operational-dashboard" element={
+              <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div></div>}>
+                <OperationalDashboardCaseStudy />
+              </Suspense>
+            } />
             {/* Protected routes - password remembered in session */}
             <Route path="/case-study/marauder" element={
               <ProtectedRoute>
