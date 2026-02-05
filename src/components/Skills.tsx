@@ -15,21 +15,16 @@ const Skills = () => {
           {skillCategories.map((skill, index) => (
             <Card
               key={index}
-              className="hover-lift animate-fade-in"
+              className="hover-lift animate-fade-in group cursor-pointer"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-8">
-                <div className="flex items-start gap-4">
-                  <div className="bg-primary/10 p-3">
-                    <skill.icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-bold mb-2">{skill.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      {skill.description}
-                    </p>
-                  </div>
-                </div>
+                <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">
+                  {skill.title}
+                </h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {skill.description}
+                </p>
               </CardContent>
             </Card>
           ))}
