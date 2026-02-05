@@ -25,29 +25,26 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <Card
               key={index}
-              className={`hover-lift animate-fade-in ${
+              className={`hover-lift animate-fade-in group cursor-pointer ${
                 index === 0 ? "md:col-span-2 lg:col-span-3" : ""
               }`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-8">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="text-4xl">{exp.icon}</div>
-                  <div className="flex-1">
-                    <div className="flex items-start justify-between mb-2">
-                      <h3 className="text-xl font-bold">{exp.role}</h3>
-                      <span className="text-sm text-muted-foreground whitespace-nowrap ml-4">
-                        {exp.period}
-                      </span>
-                    </div>
-                    <p className="text-sm font-medium text-primary mb-3">
-                      {exp.company}
-                    </p>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      {exp.description}
-                    </p>
-                  </div>
+                <div className="flex items-start justify-between mb-3">
+                  <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
+                    {exp.role}
+                  </h3>
+                  <span className="text-sm text-muted-foreground whitespace-nowrap ml-4">
+                    {exp.period}
+                  </span>
                 </div>
+                <p className="text-sm font-medium text-primary mb-3">
+                  {exp.company}
+                </p>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {exp.description}
+                </p>
               </CardContent>
             </Card>
           ))}
