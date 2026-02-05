@@ -1,12 +1,12 @@
 import CaseStudyLayout from "@/components/CaseStudyLayout";
-import cloudDashboardPreview from "@/assets/cloud-application-dashboard.jpg";
+import dataDashboardPreview from "@/assets/data-dashboard-preview.jpg";
 
 const OperationalDashboardCaseStudy = () => {
   return (
     <CaseStudyLayout
       title="Operational Data Dashboard"
       subtitle="Web Dashboards + Data Visualization"
-      heroImage={cloudDashboardPreview}
+      heroImage={dataDashboardPreview}
       role="UX Manager + Product Designer"
       timeline="2019 - 2021"
       team="2 Product Designers, 1 UX Researcher, 3 Engineers"
