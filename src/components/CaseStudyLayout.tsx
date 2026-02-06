@@ -86,7 +86,7 @@ const CaseStudyLayout = ({
           <Link to="/#work">
             <Button variant="ghost" size="sm">
               <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Case Studies
+              Back to My Work
             </Button>
           </Link>
         </div>
@@ -100,7 +100,7 @@ const CaseStudyLayout = ({
             <p className="text-2xl text-muted-foreground">{subtitle}</p>
           </div>
           
-          <div className="rounded-2xl overflow-hidden animate-fade-in" style={{ animationDelay: "0.1s" }}>
+          <div className="overflow-hidden animate-fade-in" style={{ animationDelay: "0.1s" }}>
             <img src={heroImage} alt={title} className="w-full h-[500px] object-cover" />
           </div>
         </div>
@@ -193,7 +193,7 @@ const CaseStudyLayout = ({
                 <Card key={index} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                   <CardContent className="p-6 space-y-4">
                     <div className="flex items-center gap-2">
-                      <span className={`w-3 h-3 rounded-full ${phase.type === "divergent" ? "bg-primary" : "bg-secondary"}`} />
+                      <span className={`w-3 h-3 ${phase.type === "divergent" ? "bg-primary" : "bg-secondary"}`} />
                       <h3 className="font-semibold text-lg">{phase.name}</h3>
                     </div>
                     <p className="text-sm text-muted-foreground">{phase.description}</p>
@@ -222,7 +222,7 @@ const CaseStudyLayout = ({
               <ul className="space-y-4">
                 {research.content.map((item, index) => (
                   <li key={index} className="flex items-start">
-                    <span className="inline-block w-2 h-2 rounded-full bg-primary mt-2 mr-4 flex-shrink-0" />
+                    <span className="inline-block w-2 h-2 bg-primary mt-2 mr-4 flex-shrink-0" />
                     <p className="text-lg text-muted-foreground leading-relaxed">{item}</p>
                   </li>
                 ))}
@@ -245,7 +245,7 @@ const CaseStudyLayout = ({
                 <ul className="space-y-3">
                   {section.content.map((item, i) => (
                     <li key={i} className="flex items-start">
-                      <span className="inline-block w-2 h-2 rounded-full bg-accent mt-2 mr-4 flex-shrink-0" />
+                      <span className="inline-block w-2 h-2 bg-accent mt-2 mr-4 flex-shrink-0" />
                       <p className="text-lg text-muted-foreground leading-relaxed">{item}</p>
                     </li>
                   ))}
@@ -266,7 +266,7 @@ const CaseStudyLayout = ({
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <Card className="animate-fade-in">
                 <CardContent className="p-0">
-                  <img src={beforeAfter.before.image} alt="Before" className="w-full h-80 object-cover rounded-t-lg" />
+                  <img src={beforeAfter.before.image} alt="Before" className="w-full h-80 object-cover" />
                   <div className="p-6">
                     <h4 className="text-lg font-semibold mb-2">Before</h4>
                     <p className="text-muted-foreground">{beforeAfter.before.caption}</p>
@@ -275,7 +275,7 @@ const CaseStudyLayout = ({
               </Card>
               <Card className="animate-fade-in" style={{ animationDelay: "0.1s" }}>
                 <CardContent className="p-0">
-                  <img src={beforeAfter.after.image} alt="After" className="w-full h-80 object-cover rounded-t-lg" />
+                  <img src={beforeAfter.after.image} alt="After" className="w-full h-80 object-cover" />
                   <div className="p-6">
                     <h4 className="text-lg font-semibold mb-2">After</h4>
                     <p className="text-muted-foreground">{beforeAfter.after.caption}</p>
@@ -300,7 +300,7 @@ const CaseStudyLayout = ({
                 <Card key={index} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
                   <CardContent className="p-6 space-y-3">
                     <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">
+                      <div className="w-8 h-8 bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">
                         {index + 1}
                       </div>
                       <h3 className="font-semibold text-sm">{heuristic.name}</h3>
@@ -338,10 +338,10 @@ const CaseStudyLayout = ({
                       </div>
                     </div>
                     <div className="space-y-2">
-                      <div className="h-3 bg-muted rounded-full overflow-hidden">
-                        <div 
-                          className="h-full bg-gradient-to-r from-primary/40 to-primary rounded-full transition-all duration-1000" 
-                          style={{ width: `${metric.percentage || 75}%` }} 
+                       <div className="h-3 bg-muted overflow-hidden">
+                         <div 
+                           className="h-full bg-gradient-to-r from-primary/40 to-primary transition-all duration-1000" 
+                           style={{ width: `${metric.percentage || 75}%` }} 
                         />
                       </div>
                       <p className="text-xs text-muted-foreground">{metric.description}</p>

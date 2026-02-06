@@ -8,7 +8,7 @@ const Testimonials = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <section className="py-12 px-6 overflow-hidden">
+    <section className="py-16 px-6 overflow-hidden">
       <div className="container mx-auto">
         {/* Section Header */}
         <div className="mb-10 animate-fade-in">

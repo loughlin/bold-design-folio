@@ -55,7 +55,7 @@ const PasswordDialog = () => {
     <Dialog open={showPasswordDialog} onOpenChange={handleClose}>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+          <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center bg-primary/10">
             <Lock className="h-6 w-6 text-primary" />
           </div>
           <DialogTitle className="text-center">Password Required</DialogTitle>
