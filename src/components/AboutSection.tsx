@@ -6,11 +6,6 @@ const AboutSection = () => {
   return (
     <section id="about" className="pt-24 pb-12 px-6 bg-muted/30 scroll-mt-20">
       <div className="container mx-auto">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-10">
-          Hi, I'm James. <br className="hidden md:block" />
-          <span className="text-gradient">I design user friendly software using a human-centered approach.</span>
-        </h1>
-        
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left Column - Photo */}
           <div className="lg:col-span-5 animate-fade-in">
@@ -35,6 +30,11 @@ const AboutSection = () => {
                 Team Building
               </span>
             </div>
+
+            <h1 className="text-2xl md:text-3xl font-bold">
+              Hi, I'm James. <br className="hidden md:block" />
+              <span className="text-gradient">I design user friendly software using a human-centered approach.</span>
+            </h1>
 
             <div className="prose prose-lg">
               <p className="text-lg text-muted-foreground leading-relaxed">
