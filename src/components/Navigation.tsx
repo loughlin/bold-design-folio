@@ -44,7 +44,7 @@ const Navigation = () => {
               onClick={() => handleNavClick(NAV_SECTIONS.WORK)}
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
-              Case Studies
+              My Work
             </button>
             <button
               onClick={() => handleNavClick(NAV_SECTIONS.APPROACH)}
@@ -57,12 +57,6 @@ const Navigation = () => {
               className="text-foreground hover:text-primary transition-colors font-medium"
             >
               Experience
-            </button>
-            <button
-              onClick={() => handleNavClick(NAV_SECTIONS.ABOUT)}
-              className="text-foreground hover:text-primary transition-colors font-medium"
-            >
-              About Me
             </button>
             <ThemeToggle />
           </div>
@@ -83,7 +77,7 @@ const Navigation = () => {
               onClick={() => handleNavClick(NAV_SECTIONS.WORK)}
               className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
             >
-              Case Studies
+              My Work
             </button>
             <button
               onClick={() => handleNavClick(NAV_SECTIONS.APPROACH)}
@@ -96,12 +90,6 @@ const Navigation = () => {
               className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
             >
               Experience
-            </button>
-            <button
-              onClick={() => handleNavClick(NAV_SECTIONS.ABOUT)}
-              className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
-            >
-              About Me
             </button>
           </div>
         )}
