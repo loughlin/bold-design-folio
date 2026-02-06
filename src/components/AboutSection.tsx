@@ -4,9 +4,12 @@ import jamesProfileBw from "@/assets/james-profile-bw.jpg";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-12 px-6 bg-muted/30 scroll-mt-20">
+    <section id="about" className="pt-24 pb-12 px-6 bg-muted/30 scroll-mt-20">
       <div className="container mx-auto">
-        <h2 className="text-5xl md:text-6xl font-bold mb-10">About Me</h2>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-10">
+          Hi, I'm James. <br className="hidden md:block" />
+          <span className="text-gradient">I design user friendly software using a human-centered approach.</span>
+        </h1>
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left Column - Photo */}
