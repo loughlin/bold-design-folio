@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import Hero from "@/components/Hero";
 import FeaturedWork from "@/components/FeaturedWork";
 import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
@@ -27,7 +26,6 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <Hero />
       <AboutSection />
       <FeaturedWork />
       <Skills />
