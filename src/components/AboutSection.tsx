@@ -6,7 +6,7 @@ const AboutSection = () => {
   return (
     <section id="about" className="pt-24 pb-12 px-6 bg-muted/30 scroll-mt-20">
       <div className="container mx-auto">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-10">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-10">
           Hi, I'm James. <br className="hidden md:block" />
           <span className="text-gradient">I design user friendly software using a human-centered approach.</span>
         </h1>
