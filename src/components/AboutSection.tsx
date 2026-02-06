@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { Download, Linkedin, Mail, MapPin } from "lucide-react";
+import { Download, Linkedin, Mail } from "lucide-react";
 import jamesProfileBw from "@/assets/james-profile-bw.jpg";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="pt-24 pb-12 px-6 bg-muted/30 scroll-mt-20">
+    <section id="about" className="pt-24 pb-16 px-6 bg-muted/30 scroll-mt-20">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           {/* Left Column - Photo */}
@@ -12,7 +12,7 @@ const AboutSection = () => {
             <img 
               src={jamesProfileBw} 
               alt="James Loughlin" 
-              className="w-full h-full object-cover max-w-md mx-auto lg:mx-0 lg:max-w-none rounded-2xl shadow-2xl grayscale"
+              className="w-full h-full object-cover max-w-md mx-auto lg:mx-0 lg:max-w-none shadow-2xl grayscale"
             />
           </div>
 
@@ -20,13 +20,13 @@ const AboutSection = () => {
           <div className="lg:col-span-7 space-y-8 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             {/* Role tagline */}
             <div className="flex flex-wrap gap-3">
-              <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">
+              <span className="px-4 py-2 bg-primary/10 text-primary text-sm font-medium">
                 Design Leadership
               </span>
-              <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">
+              <span className="px-4 py-2 bg-primary/10 text-primary text-sm font-medium">
                 UX Strategy
               </span>
-              <span className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">
+              <span className="px-4 py-2 bg-primary/10 text-primary text-sm font-medium">
                 Team Building
               </span>
             </div>

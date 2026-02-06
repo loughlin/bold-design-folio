@@ -5,7 +5,7 @@ import { experiences } from "@/data/experiences";
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-12 px-6 scroll-mt-20">
+    <section id="experience" className="py-16 px-6 scroll-mt-20">
       <div className="container mx-auto">
         {/* Section Header */}
         <div className="mb-10 space-y-3 animate-fade-in">
