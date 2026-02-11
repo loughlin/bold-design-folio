@@ -32,17 +32,24 @@ const AboutSection = () => {
             </div>
 
             <h1 className="text-2xl md:text-3xl font-bold">
-              Hi, I'm James. <br className="hidden md:block" />
-              <span className="text-gradient">I design user friendly software using a human-centered approach.</span>
+              Hi, I'm James. <span className="text-gradient">I design user-friendly software using a human-centered approach.</span>
             </h1>
 
             <div className="prose prose-lg">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I am a Design Leader and UX Manager who believes the human side of software matters most. User empathy isn't just a nice thing to have, it is the foundation of good design culture. Beyond that, iteration is key. You keep rebuilding, refining, and reshaping until the experience finally clicks.
+                I'm a Design Leader and UX Manager who believes the human side of software matters most. User empathy isn't just a nice to have, it's the foundation of good design culture. Iteration is key: you keep rebuilding, refining, and reshaping until the experience finally clicks.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed mt-6">
-                As a UX Manager and leader in design I try to build not only on design culture but showcasing what knowing more about our problems can do to help move products forward. I'm passionate about instilling design principles in others, helping teams grow. I always try to stay hungry to learn, evolve, and create whatever comes next.
+                As a leader, I build design culture by showing what deeper problem understanding can do for product development. I'm passionate about instilling design principles in others and helping teams grow.
+              </p>
+
+              <p className="text-lg text-muted-foreground leading-relaxed mt-6">
+                Outside of work, I'm on the soccer field, lifting weights at the gym, or reading about new technologies. But mostly, I'm with my wife and our three kids. My reminder that designing for humans means designing for real, complex, wonderful people.
+              </p>
+
+              <p className="text-lg text-muted-foreground leading-relaxed mt-6">
+                I stay hungry to learn, evolve, and create whatever comes next.
               </p>
             </div>
 
