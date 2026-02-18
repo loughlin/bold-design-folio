@@ -13,6 +13,7 @@ import marauderDataIngestion from "@/assets/marauder-data-ingestion.png";
 import marauderMissionInsert from "@/assets/marauder-mission-insert.png";
 import marauderMissionNarrative from "@/assets/marauder-mission-narrative.png";
 import marauderServiceBlueprint from "@/assets/marauder-service-blueprint.png";
+import marauderDependencies from "@/assets/marauder-dependencies-q4.png";
 
 const MissionReportingCaseStudy = () => {
   useEffect(() => {
@@ -268,7 +269,18 @@ const MissionReportingCaseStudy = () => {
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl font-bold mb-6">Adjusting the Scope</h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            Although the solution had great support from the users, we quickly ran into feasibility issues with integrating a map into a classified environment. Working with my engineers and product manager, we adjusted the scope of the feature to delay the map integrations but still allow users to benefit from a more modern UI, reduced data entry and automated calculations.
+            Although the solution had great support from the users, we quickly ran into feasibility issues with integrating a map into a classified environment. Working with my engineers and product manager, we adjusted the scope of the feature to delay the map integrations but still allow users to benefit from a more modern UI, reduced data entry and automated calculations. Additionally, we had to account for downstream dependencies and external information provided via the API for data consumers, ensuring that scope changes wouldn't break integrations that other systems relied on for mission data.
+          </p>
+          
+          <div className="rounded-xl overflow-hidden border border-border mb-4">
+            <img 
+              src={marauderDependencies} 
+              alt="Dependencies and scope diagram" 
+              className="w-full object-cover blur-[2px]"
+            />
+          </div>
+          <p className="text-sm italic text-muted-foreground/70 mb-8">
+            Data has been blurred for security reasons.
           </p>
           
           {/* Before/After Scope */}
@@ -307,7 +319,7 @@ const MissionReportingCaseStudy = () => {
               <ul className="space-y-3 text-muted-foreground text-sm">
                 <li className="flex items-start gap-2">
                   <span className="text-destructive">✗</span>
-                  <span>5 manual data entry fields per mission report</span>
+                  <span>All manual data entry fields per mission report</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive">✗</span>
