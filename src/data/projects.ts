@@ -21,7 +21,7 @@ export const projects: Project[] = [
     subtitle: "Design Systems + Component Libraries",
     description: "Led design system roll out across five operational missions, establishing consistency standards for USAF software applications.",
     role: "UX Manager + Product Designer",
-    timeline: "2019 - 2023",
+    timeline: "2020 - 2023",
     image: designSystemPreview,
     link: "/case-study/design-system",
     isPublic: true,
