@@ -41,7 +41,7 @@ export const projects: Project[] = [
     subtitle: "User Research + Synthesis",
     description: "Defined research practices and standards for a software suite of products, enabling teams to validate designs and de-risk decisions.",
     role: "UX Manager",
-    timeline: "2021 - 2023",
+    timeline: "2021 - 2024",
     image: uxResearchPreview,
     link: "/case-study/warfighter-research",
     isPublic: true,
