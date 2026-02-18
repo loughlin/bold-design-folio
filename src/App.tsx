@@ -56,13 +56,11 @@ const App = () => (
                 <OperationalDashboardCaseStudy />
               </Suspense>
             } />
-            {/* Protected routes - password remembered in session */}
+            {/* Mission reporting case study */}
             <Route path="/case-study/marauder" element={
-              <ProtectedRoute>
-                <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div></div>}>
-                  <MissionReportingCaseStudy />
-                </Suspense>
-              </ProtectedRoute>
+              <Suspense fallback={<div className="flex items-center justify-center min-h-screen"><div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div></div>}>
+                <MissionReportingCaseStudy />
+              </Suspense>
             } />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
