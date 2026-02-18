@@ -12,6 +12,7 @@ import marauderTimelineEvents from "@/assets/marauder-timeline-events.png";
 import marauderDataIngestion from "@/assets/marauder-data-ingestion.png";
 import marauderMissionInsert from "@/assets/marauder-mission-insert.png";
 import marauderMissionNarrative from "@/assets/marauder-mission-narrative.png";
+import marauderServiceBlueprint from "@/assets/marauder-service-blueprint.png";
 
 const MissionReportingCaseStudy = () => {
   useEffect(() => {
@@ -134,11 +135,22 @@ const MissionReportingCaseStudy = () => {
           <h2 className="text-2xl font-bold mb-6">Background</h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              The mission reporting tool utilized by the majority of the USAF was functional but not custom to their mission type. Mission information was often filed but lost and unavailable to sources months or years later when valuable context could have been provided from data on formerly flown missions in a given area or region. This mission reporting application aimed to change the way the Air Force develops software but also the way USAF intelligence personal accessed that data. The application started with the goal of solving the specific problem of mission reporting and was successful in adoption before expanding to various domains and capabilities.
+              The mission reporting tool utilized by the majority of the USAF was functional but not custom to their mission type. Mission information was often filed but lost and unavailable to sources months or years later when valuable context could have been provided from data on formerly flown missions in a given area or region. This mission reporting application aimed to change the way the Air Force develops software and the way USAF intelligence personnel accessed that data. The application started with the goal of solving the specific problem of mission reporting and was successful in adoption before expanding to various domains and capabilities.
             </p>
             <p>
-              After growing the solution, the tool quickly turned its sights on deprecating the old legacy system that was being used in Air Operation Centers and in other regions. This would require the mission reporting tool which was not originally built to integrate, to fit into a larger suite of applications and adapt to the new process of the users as well as make its data available to external intelligence agencies and tools.
+              After growing the solution, the tool quickly turned its sights on deprecating the old legacy system being used in Air Operation Centers and other regions. This was complicated by a strict set of requirements from ACC and the intelligence community, plus a fielded product that needed to be replaced for the initial reporting workflow up front. The mission reporting tool, which wasn't originally built to integrate with external systems, needed to fit into a larger suite of applications, adapt to new user processes, provide functionality for multiple roles consuming the reporting information differently, and make its data available to external intelligence agencies and tools via API.
             </p>
+            <p>
+              Feature work had to be carefully prioritized for the roles most impacted in production—primarily drafters and reviewers whose daily workflows would break if we got it wrong. Only after stabilizing their core functionality could we expand capabilities to secondary roles like approvers and analysts, and build out API access for external applications seeking report data. This meant balancing the pressure to deliver new features against the reality that breaking existing workflows in a mission-critical environment wasn't an option.
+            </p>
+            <div className="rounded-xl overflow-hidden border border-border mt-8">
+              <img 
+                src={marauderServiceBlueprint} 
+                alt="Marauder Service Blueprint for Air Domain" 
+                className="w-full object-cover"
+              />
+            </div>
+            <p className="text-sm text-muted-foreground text-center -mt-2">Marauder Service Blueprint — Air Domain</p>
             <p className="text-sm italic text-muted-foreground/70">
               Note: All sensitive information has been removed from this case study and the application name has been redacted due to security concerns. This case study has been approved for publication by the Kessel Run Security team.
             </p>
