@@ -54,6 +54,6 @@ export const projects: Project[] = [
     timeline: "2019 - 2021",
     image: missionReportingPreview,
     link: "/case-study/marauder",
-    isPublic: false,
+    isPublic: true,
   },
 ];
