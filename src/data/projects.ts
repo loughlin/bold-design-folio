@@ -31,7 +31,7 @@ export const projects: Project[] = [
     subtitle: "Product Design + Integration",
     description: "Eliminating manual calculation and data entry for a uniform and accessible source of truth for USAF mission data.",
     role: "UX Manager + Product Designer",
-    timeline: "2019 - 2021",
+    timeline: "2018 - 2023",
     image: missionReportingPreview,
     link: "/case-study/marauder",
     isPublic: true,
