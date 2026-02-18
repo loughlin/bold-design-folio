@@ -33,7 +33,7 @@ export const projects: Project[] = [
     role: "UX Manager + Product Designer",
     timeline: "2018 - 2023",
     image: missionReportingPreview,
-    link: "/case-study/marauder",
+    link: "/case-study/mission-reporting",
     isPublic: true,
   },
   {
