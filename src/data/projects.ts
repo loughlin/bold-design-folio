@@ -27,6 +27,16 @@ export const projects: Project[] = [
     isPublic: true,
   },
   {
+    title: "USAF Mission Reporting",
+    subtitle: "Product Design + Integration",
+    description: "Eliminating manual calculation and data entry for a uniform and accessible source of truth for USAF mission data.",
+    role: "UX Manager + Product Designer",
+    timeline: "2019 - 2021",
+    image: missionReportingPreview,
+    link: "/case-study/marauder",
+    isPublic: true,
+  },
+  {
     title: "UX Research Initiatives",
     subtitle: "User Research + Synthesis",
     description: "Defined research practices and standards for a software suite of products, enabling teams to validate designs and de-risk decisions.",
@@ -44,16 +54,6 @@ export const projects: Project[] = [
     timeline: "2019 - 2021",
     image: dataDashboardPreview,
     link: "/case-study/operational-dashboard",
-    isPublic: true,
-  },
-  {
-    title: "USAF Mission Reporting",
-    subtitle: "Product Design + Integration",
-    description: "Eliminating manual calculation and data entry for a uniform and accessible source of truth for USAF mission data.",
-    role: "UX Manager + Product Designer",
-    timeline: "2019 - 2021",
-    image: missionReportingPreview,
-    link: "/case-study/marauder",
     isPublic: true,
   },
 ];
