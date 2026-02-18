@@ -210,7 +210,7 @@ const WarfighterResearchCaseStudy = () => {
             <Card className="animate-fade-in" style={{ animationDelay: "0.1s" }}>
               <CardContent className="p-6">
                 <h3 className="text-sm font-semibold text-muted-foreground mb-2">TIMELINE</h3>
-                <p className="text-lg">2021 - 2023</p>
+                <p className="text-lg">2021 - 2024</p>
               </CardContent>
             </Card>
             <Card className="animate-fade-in" style={{ animationDelay: "0.2s" }}>

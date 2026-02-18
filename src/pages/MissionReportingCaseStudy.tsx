@@ -48,7 +48,7 @@ const MissionReportingCaseStudy = () => {
             USAF Mission Reporting Tool
           </p>
           <div className="flex flex-wrap gap-4 text-sm text-muted-foreground animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <span>2019 - 2021</span>
+            <span>2018 - 2023</span>
             <span>•</span>
             <span>UX Manager + Product Designer</span>
           </div>
