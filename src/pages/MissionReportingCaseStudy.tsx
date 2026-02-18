@@ -81,7 +81,7 @@ const MissionReportingCaseStudy = () => {
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl font-bold mb-6">Product Gallery</h2>
           <p className="text-muted-foreground mb-8">
-            Screenshots from the mission reporting application showing key features and interfaces.
+            Screenshots from <span className="font-semibold text-foreground">Version 3</span> of the mission reporting application showing key features and interfaces.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-3">
