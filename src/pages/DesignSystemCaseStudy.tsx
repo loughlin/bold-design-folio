@@ -42,17 +42,17 @@ const DesignSystemCaseStudy = () => {
   ];
 
   const challenges = [
-    "Products were using a variety of technical stacks, in addition to an assortment of custom components and different component libraries.",
-    "Products were overly attached to their unique solutions to common user problems, increasing the amount of developer hours spent on front end stories.",
-    "Any out-of-the-box component library adopted as a basis for the design system would lack documentation for custom or organization-specific components.",
-    "Existing wireframe libraries would lack the unique theming and custom components, inhibiting designers' ability to build wireframes and prototypes quickly.",
+    "Products were running a variety of technical stacks alongside an assortment of custom components and different component libraries, making any unified foundation feel out of reach.",
+    "Teams had grown attached to their unique solutions to common problems, which made adoption a change management challenge as much as a design one.",
+    "Any out-of-the-box component library would lack documentation for the custom and organization-specific components that teams genuinely needed.",
+    "Existing wireframe libraries wouldn't carry Kessel Run's theming or custom components, which would leave designers unable to prototype quickly even after the engineering side was solved.",
   ];
 
   const keyAchievements = [
-    "Reduction in front end story frequency of 48%.",
-    "Reduction in developer days spent per year on front end by over 2,000 (avg per 10-person developer team).",
-    "Three day reduction in average front end story completion time.",
-    "Created a pathway for Air Force-wide source code and artifact sharing.",
+    "A 48% reduction in front end story frequency.",
+    "Over 2,000 developer days saved per year per 10-person team.",
+    "A three-day reduction in average story completion time.",
+    "A pathway established for Air Force-wide source code and artifact sharing that extended well beyond our original scope.",
   ];
 
   return (
@@ -72,9 +72,15 @@ const DesignSystemCaseStudy = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-6">
         <div className="container mx-auto max-w-5xl text-center">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-8 animate-fade-in">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-4 animate-fade-in">
             Portfolio Design System
           </h1>
+          <p className="text-xl text-muted-foreground animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            Building a shared design language across a growing suite of mission-critical applications, and the organizational work it took to make it stick.
+          </p>
+          <p className="text-lg text-muted-foreground animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            September 2019 – September 2023 · Design Systems Lead
+          </p>
         </div>
       </section>
 
@@ -83,7 +89,13 @@ const DesignSystemCaseStudy = () => {
         <div className="container mx-auto max-w-4xl text-center space-y-8">
           <h2 className="text-4xl font-serif font-semibold animate-fade-in">Overview</h2>
           <p className="text-lg text-muted-foreground leading-relaxed animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            As Kessel Run's product offerings grew, so too did the need for unified user experiences, interaction patterns, color and component libraries. What started as 8-10 unrelated applications quickly grew into interconnected portfolios and suites of products with similar user and data sets. Unified design and developer language across these systems granted Kessel Run greater flexibility with the allocation of design and developer resources.
+            Design systems don't fail because the components are bad. They fail because the organization isn't ready for them, or because the team building the system loses sight of who it's actually for.
+          </p>
+          <p className="text-lg text-muted-foreground leading-relaxed animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            When I joined this effort, Kessel Run had grown from a handful of independent applications into an interconnected portfolio of products with overlapping user bases, shared data, and no common design language. Every team was solving the same problems in isolation. Every new product started from scratch. The gap between what we were building and what a mature software organization should look like was widening fast.
+          </p>
+          <p className="text-lg text-muted-foreground leading-relaxed animate-fade-in" style={{ animationDelay: "0.3s" }}>
+            The design system was our answer to that gap. Built on MUI as an open source foundation and extended with custom components and tokens developed through direct feedback from our product teams, it became the shared infrastructure that let designers and developers stop reinventing the wheel and start doing more interesting work.
           </p>
         </div>
       </section>
@@ -93,14 +105,17 @@ const DesignSystemCaseStudy = () => {
         <div className="container mx-auto max-w-4xl text-center space-y-8">
           <h2 className="text-4xl font-serif font-semibold animate-fade-in">Problem Statement</h2>
           <p className="text-lg text-muted-foreground leading-relaxed animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            Inconsistent user interfaces across products within the organization steepened the learning curve for the growing amount of overlapping user sets. Custom-first front ends increased design and development time, and prevented organization-wide branding initiatives. The problem facing the design system was two-fold:
+            Inconsistent user interfaces across products steepened the learning curve for an increasingly overlapping user base. Custom front ends on every team meant more design and development time spent on work that had already been done elsewhere in the organization, often multiple times over.
+          </p>
+          <p className="text-lg text-muted-foreground leading-relaxed animate-fade-in" style={{ animationDelay: "0.15s" }}>
+            The problem was really two problems sitting on top of each other:
           </p>
           <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
             <p className="text-xl font-medium italic text-foreground">
-              How might we decrease error rates and onboarding time for users so that they spend a greater amount of time completing job-related tasks?
+              How might we decrease error rates and onboarding time for users so they spend more of their time on mission-critical tasks rather than navigating unfamiliar interfaces?
             </p>
             <p className="text-xl font-medium italic text-foreground">
-              How might we decrease the amount of designer and developer hours dedicated to UI enhancement so that usability, user experience, product security, reliability, and database management can be prioritized?
+              How might we reduce the designer and developer hours spent on UI work so that teams can prioritize usability, security, reliability, and the harder product problems that actually require original thinking?
             </p>
           </div>
         </div>
@@ -118,8 +133,8 @@ const DesignSystemCaseStudy = () => {
                 </div>
                 <h3 className="text-lg font-semibold text-foreground">Task Completion</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  Time on core functions vs. interface navigation
-                </p>
+                   Time on core functions versus time spent navigating the interface itself
+                 </p>
               </CardContent>
             </Card>
             <Card className="text-center border-0 shadow-lg">
@@ -129,8 +144,8 @@ const DesignSystemCaseStudy = () => {
                 </div>
                 <h3 className="text-lg font-semibold text-foreground">User Error Rate</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  Incidents caused by inconsistent UI patterns
-                </p>
+                   Incidents caused by inconsistent UI patterns, giving us a concrete signal of how much the lack of shared standards was affecting real users
+                 </p>
               </CardContent>
             </Card>
             <Card className="text-center border-0 shadow-lg">
@@ -140,8 +155,8 @@ const DesignSystemCaseStudy = () => {
                 </div>
                 <h3 className="text-lg font-semibold text-foreground">Developer Velocity</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  Front end story throughput and cycle time
-                </p>
+                   Front end story throughput and cycle time, which gave us the clearest picture of organizational efficiency gains over time
+                 </p>
               </CardContent>
             </Card>
           </div>
@@ -153,7 +168,7 @@ const DesignSystemCaseStudy = () => {
         <div className="container mx-auto max-w-5xl animate-fade-in">
           <h2 className="text-4xl font-serif font-semibold text-center mb-4">Time to Value</h2>
           <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto mb-12">
-            How the design system accelerated value delivery across the organization
+            How the design system accelerated value delivery
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="overflow-hidden">
@@ -173,7 +188,7 @@ const DesignSystemCaseStudy = () => {
                   <div className="h-3 bg-muted rounded-full overflow-hidden">
                     <div className="h-full bg-gradient-to-r from-destructive/60 to-primary rounded-full transition-all duration-1000" style={{ width: '86%' }} />
                   </div>
-                  <p className="text-xs text-muted-foreground">14% reduction in cycle time</p>
+                  <p className="text-xs text-muted-foreground">Pre-built, tested components meant developers could start from a reliable baseline instead of a blank file</p>
                 </div>
               </CardContent>
             </Card>
@@ -194,7 +209,7 @@ const DesignSystemCaseStudy = () => {
                   <div className="h-3 bg-muted rounded-full overflow-hidden">
                     <div className="h-full bg-gradient-to-r from-destructive/60 to-primary rounded-full transition-all duration-1000" style={{ width: '52%' }} />
                   </div>
-                  <p className="text-xs text-muted-foreground">Nearly half the design overhead</p>
+                  <p className="text-xs text-muted-foreground">When components are already designed, documented, and approved, product managers stop opening tickets to redesign things that are already solved</p>
                 </div>
               </CardContent>
             </Card>
@@ -215,7 +230,7 @@ const DesignSystemCaseStudy = () => {
                   <div className="h-3 bg-muted rounded-full overflow-hidden">
                     <div className="h-full bg-gradient-to-r from-destructive/60 to-primary rounded-full transition-all duration-1000" style={{ width: '33%' }} />
                   </div>
-                  <p className="text-xs text-muted-foreground">67% faster time to productivity</p>
+                  <p className="text-xs text-muted-foreground">The shared Figma kit, documentation, and component library gave new designers a foundation to build on from day one</p>
                 </div>
               </CardContent>
             </Card>
@@ -236,7 +251,7 @@ const DesignSystemCaseStudy = () => {
                   <div className="h-3 bg-muted rounded-full overflow-hidden">
                     <div className="h-full bg-gradient-to-r from-primary/40 to-primary rounded-full transition-all duration-1000" style={{ width: '95%' }} />
                   </div>
-                  <p className="text-xs text-muted-foreground">Massive ROI on design system investment</p>
+                  <p className="text-xs text-muted-foreground">That number compounds across an organization the size of Kessel Run, and it's what eventually got the attention of Air Force leadership</p>
                 </div>
               </CardContent>
             </Card>
@@ -271,13 +286,13 @@ const DesignSystemCaseStudy = () => {
           </div>
 
           <p className="text-center text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            The design process is broken down into four phases, two for divergent thinking, and two more for convergent thinking. Each phase has multiple practices within to help create positive user outcomes.
+            The same Double Diamond process that guided our product work shaped how we approached the design system itself. The initial scoping effort included stakeholder interviews, technical research, market research, and direct conversations with the product teams who would be the system's primary users.
           </p>
 
           {/* Challenges */}
           <div className="space-y-6 pt-8 animate-fade-in" style={{ animationDelay: "0.3s" }}>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              The main challenges of creating a design system were identified through an initial scoping effort that included stakeholder interviews, technical research, market research, and interviews with the product teams that would be utilizing the design system. Four key challenges emerged from these interviews:
+              Four challenges surfaced consistently across those conversations:
             </p>
             <ul className="space-y-4">
               {challenges.map((challenge, index) => (
@@ -298,7 +313,7 @@ const DesignSystemCaseStudy = () => {
           <p className="text-xl text-muted-foreground">of product teams</p>
           <p className="text-2xl font-medium text-foreground">currently using React</p>
           <p className="text-muted-foreground max-w-2xl mx-auto mt-6 leading-relaxed">
-            We evaluated the tech stack of every product team at Kessel Run to determine commonalities. The overwhelming majority were using React for front end development, which informed our technical foundation decisions.
+            We addressed the first challenge by auditing the tech stack across every product team. That single data point made the decision to build on MUI straightforward. Rather than designing a system in isolation, we started from a foundation teams were already familiar with and extended it through a structured feedback loop.
           </p>
         </div>
       </section>
@@ -311,21 +326,21 @@ const DesignSystemCaseStudy = () => {
           
           <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              One established team with a product in production, active users, fully custom front end designs, and a nonlinear user flow underwent the adoption of the design system at the insistence of their portfolio leadership. My team began combing through their backlog, tracking every single front end story in their team's history.
+              One of the clearest signals of the design system's value came from a controlled comparison we ran with an established team that had a product in production, active users, a fully custom front end, and a nonlinear user flow. Their portfolio leadership asked them to adopt the design system. We started tracking everything.
             </p>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              In their first 10 months of existence they utilized no design system and built everything from scratch. During that time they had an average of 3.80 design stories requested per week and it took each story an average of 22.18 days to be completed.
+              In their first 10 months before adoption, the team averaged 3.80 design stories per week at an average completion time of 22.18 days per story.
             </p>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              After adoption, their design story requests were nearly cut in half, dropping from 3.80 to 1.95 stories requested per week. Story complexity increased 36 percent, but stories took an average of about 3 less days to complete. Per commit the developers were touching fewer files, inserting 20% less lines, and deleting 35% less lines.
+              After adoption, design story requests dropped to 1.95 per week. Story complexity increased by 36%, which is worth noting because it means the remaining stories were harder, not simpler. Despite that, average completion time dropped by about three days. Developers were touching fewer files per commit, inserting 20% fewer lines of code, and deleting 35% fewer lines.
             </p>
 
             <Card className="bg-primary/10 border-primary/20">
               <CardContent className="p-8">
                 <p className="text-xl font-medium text-foreground text-center">
-                  In short, developers were doing more complex design stories faster, while the product manager requested them less often.
+                  The summary version: developers were doing more complex work faster, while the product manager was requesting that work less often. That combination is unusual. It's what good design system adoption actually looks like.
                 </p>
               </CardContent>
             </Card>
@@ -338,7 +353,7 @@ const DesignSystemCaseStudy = () => {
         <div className="container mx-auto max-w-5xl space-y-8">
           <h2 className="text-4xl font-serif font-semibold text-center animate-fade-in">Usability Heuristics Evaluation</h2>
           <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            How the design system improved usability across Nielsen's heuristics
+            We used Nielsen's heuristics to evaluate usability improvements across the portfolio as the design system matured, giving us a structured way to communicate impact beyond internal metrics.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
             <Card>
@@ -347,7 +362,7 @@ const DesignSystemCaseStudy = () => {
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">1</div>
                   <h3 className="font-semibold">Consistency & Standards</h3>
                 </div>
-                <p className="text-sm text-muted-foreground">Unified component library eliminated 40+ inconsistent UI patterns across products, reducing user confusion and training time.</p>
+                <p className="text-sm text-muted-foreground">A unified component library eliminated over 40 inconsistent UI patterns across products. Users who moved between applications stopped having to relearn basic interactions, and training time dropped accordingly.</p>
                 <div className="flex items-center gap-2 text-xs">
                   <span className="text-destructive">Before: 2/5</span>
                   <span className="text-muted-foreground">→</span>
@@ -361,7 +376,7 @@ const DesignSystemCaseStudy = () => {
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">2</div>
                   <h3 className="font-semibold">Error Prevention</h3>
                 </div>
-                <p className="text-sm text-muted-foreground">Built-in validation patterns and standardized form components reduced user input errors by 45% across applications.</p>
+                <p className="text-sm text-muted-foreground">Built-in validation patterns and standardized form components reduced user input errors by 45% across applications. Designing error prevention into the component itself meant teams didn't have to remember to implement it independently.</p>
                 <div className="flex items-center gap-2 text-xs">
                   <span className="text-destructive">Before: 2/5</span>
                   <span className="text-muted-foreground">→</span>
@@ -375,7 +390,7 @@ const DesignSystemCaseStudy = () => {
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">3</div>
                   <h3 className="font-semibold">Recognition over Recall</h3>
                 </div>
-                <p className="text-sm text-muted-foreground">Consistent iconography and labeling across products meant users could transfer knowledge between applications instantly.</p>
+                <p className="text-sm text-muted-foreground">Consistent iconography and labeling across products meant users could transfer knowledge between applications without reorientation. When things look and behave the same way, users build mental models that actually transfer.</p>
                 <div className="flex items-center gap-2 text-xs">
                   <span className="text-destructive">Before: 2/5</span>
                   <span className="text-muted-foreground">→</span>
@@ -389,7 +404,7 @@ const DesignSystemCaseStudy = () => {
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">4</div>
                   <h3 className="font-semibold">Flexibility & Efficiency</h3>
                 </div>
-                <p className="text-sm text-muted-foreground">Keyboard shortcuts and accessibility features enabled power users to complete tasks 30% faster than before.</p>
+                <p className="text-sm text-muted-foreground">Keyboard shortcuts and accessibility features enabled experienced users to complete tasks 30% faster. These weren't afterthoughts bolted onto existing components; they were built into the system from the start.</p>
                 <div className="flex items-center gap-2 text-xs">
                   <span className="text-destructive">Before: 2/5</span>
                   <span className="text-muted-foreground">→</span>
@@ -403,7 +418,7 @@ const DesignSystemCaseStudy = () => {
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">5</div>
                   <h3 className="font-semibold">Aesthetic & Minimal</h3>
                 </div>
-                <p className="text-sm text-muted-foreground">Standardized spacing, typography, and visual hierarchy created cleaner interfaces that reduced cognitive load.</p>
+                <p className="text-sm text-muted-foreground">Standardized spacing, typography, and visual hierarchy created cleaner interfaces with less cognitive noise. Consistency in visual language is one of those things users rarely notice consciously, but feel immediately when it's absent.</p>
                 <div className="flex items-center gap-2 text-xs">
                   <span className="text-destructive">Before: 3/5</span>
                   <span className="text-muted-foreground">→</span>
@@ -417,7 +432,7 @@ const DesignSystemCaseStudy = () => {
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">6</div>
                   <h3 className="font-semibold">Help & Documentation</h3>
                 </div>
-                <p className="text-sm text-muted-foreground">Component-level documentation and usage guidelines enabled self-service design, reducing support requests by 60%.</p>
+                <p className="text-sm text-muted-foreground">Component-level documentation and usage guidelines enabled self-service design and development, reducing support requests by 60%. A design system without documentation is just a Figma file nobody trusts.</p>
                 <div className="flex items-center gap-2 text-xs">
                   <span className="text-destructive">Before: 1/5</span>
                   <span className="text-muted-foreground">→</span>
@@ -438,19 +453,19 @@ const DesignSystemCaseStudy = () => {
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
                     <span className="text-destructive mt-1">✗</span>
-                    <span>Each team built custom components from scratch, averaging 22 days per front-end story</span>
+                    <span>Each team built custom components from scratch, averaging 22 days per front end story</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-destructive mt-1">✗</span>
-                    <span>Inconsistent patterns increased user errors and extended onboarding time</span>
+                    <span>Inconsistent patterns increased user errors and extended onboarding time for both users and new team members</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-destructive mt-1">✗</span>
-                    <span>No shared design language between 40+ product teams</span>
+                    <span>No shared design language existed across 40-plus product teams</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-destructive mt-1">✗</span>
-                    <span>Accessibility compliance varied by team, creating audit failures</span>
+                    <span>Accessibility compliance varied by team and individual, creating audit failures that were expensive to remediate after the fact</span>
                   </li>
                 </ul>
               </CardContent>
@@ -461,19 +476,19 @@ const DesignSystemCaseStudy = () => {
                 <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">✓</span>
-                    <span>Story completion time reduced to 19 days with pre-built, tested components</span>
+                    <span>Story completion time dropped to 19 days using pre-built, tested components that teams could trust out of the box</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">✓</span>
-                    <span>Consistent interaction patterns reduced user errors and training time</span>
+                    <span>Consistent interaction patterns reduced user errors and shortened training time across the portfolio</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">✓</span>
-                    <span>Unified component library adopted by all eligible teams</span>
+                    <span>A unified component library was adopted by all eligible teams, most of them voluntarily</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary mt-1">✓</span>
-                    <span>WCAG 2.1 AA compliance built into every component by default</span>
+                    <span>WCAG 2.1 AA compliance was built into every component by default, removing the dependency on individual teams to get it right</span>
                   </li>
                 </ul>
               </CardContent>
@@ -491,7 +506,10 @@ const DesignSystemCaseStudy = () => {
           <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             <h3 className="text-2xl font-semibold">Key Achievements</h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              At its peak, the design system was adopted in some way or another by all eligible product teams. Adoption was never made compulsory by leadership and many teams only chose to adopt once the system offered enough value to their product. The design system was so successful the CXO of the Air Force approached the team about making the design system an Air Force-wide effort.
+              At its peak, the design system had been adopted in some form by every eligible product team at Kessel Run. Adoption was never mandated by leadership. Most teams chose to adopt once the system offered enough clear value to their product, which is exactly how it should work. A design system that people adopt because they want to is fundamentally different from one they're forced into.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+              The clearest measure of success came when the CXO of the Air Force approached the team about expanding the system into an Air Force-wide effort. That conversation didn't happen because of a slide deck. It happened because the results were visible and the case was already made.
             </p>
             <ul className="space-y-4">
               {keyAchievements.map((achievement, index) => (
@@ -509,47 +527,30 @@ const DesignSystemCaseStudy = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-3">
                 <h4 className="font-medium text-primary">Handoff Transformation</h4>
-                <p className="text-muted-foreground">Created a component-first handoff process where designers referenced existing library components, reducing spec documentation by 60% and eliminating ambiguity in developer implementation.</p>
+                <p className="text-muted-foreground">We created a component-first handoff process where designers referenced existing library components rather than speccing UI from scratch. Spec documentation dropped by 60% and the ambiguity that typically slows developer implementation largely disappeared.</p>
               </div>
               <div className="space-y-3">
                 <h4 className="font-medium text-primary">Documentation Standards</h4>
-                <p className="text-muted-foreground">Established comprehensive Storybook documentation with usage guidelines, accessibility notes, and code examples that reduced onboarding time for new developers from weeks to days.</p>
+                <p className="text-muted-foreground">We built out comprehensive Storybook documentation with usage guidelines, accessibility notes, and code examples. The goal was a system that new developers and designers could navigate independently, without needing a team member to walk them through it. That standard of documentation is harder to maintain than it sounds, and keeping it current required treating docs as a first-class deliverable rather than an afterthought.</p>
               </div>
             </div>
           </div>
 
           {/* Impact */}
-          <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <h3 className="text-2xl font-semibold">Impact</h3>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              The design system fundamentally transformed how 40+ product teams approached front end development, creating organizational efficiency while ensuring consistent user experiences across the entire product ecosystem.
-            </p>
-          </div>
-
-          {/* What Stakeholders Say */}
-          <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.25s" }}>
-            <h3 className="text-2xl font-semibold">What Stakeholders Said</h3>
-            <Card className="bg-primary/5 border-primary/20">
-              <CardContent className="p-8">
-                <blockquote className="text-lg italic text-foreground leading-relaxed">
-                  "The design system has become the foundation for how we build software at Kessel Run. It's not just about components—it's about enabling our teams to deliver faster while maintaining the quality our users deserve."
-                </blockquote>
-                <p className="text-sm text-muted-foreground mt-4">— Portfolio Leadership</p>
-              </CardContent>
-            </Card>
-          </div>
-
           {/* Learnings */}
-          <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            <h3 className="text-2xl font-semibold">What did we learn?</h3>
+          <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <h3 className="text-2xl font-semibold">What We Learned</h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              As a design leader, watching this initiative transform how our teams worked was deeply rewarding. Designers gained back hours previously spent recreating common patterns, allowing them to focus on solving complex user problems. Developers reported feeling more confident in their front end work, and the shared language between design and engineering reduced friction during handoffs.
+              The technical work of building a design system is genuinely hard. The organizational work of getting people to use it is harder.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              The Developer Engagement Program we created helped build advocates across product teams, but we learned that designers needed similar investment. Moving forward, we established dedicated design champions who could bridge the gap between the system and their teams, improving both adoption and feedback loops.
+              Early on we invested heavily in a Developer Engagement Program to build advocates across product teams. It worked, but it revealed a gap: designers needed the same investment. We eventually established dedicated design champions who could bridge the system and their teams, which improved both adoption rates and the quality of feedback coming back into the system. That two-way channel between the core team and the people using it daily is what kept the system honest and grounded in real product needs.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Most importantly, the design system gave our teams a foundation for growth. New designers onboarded faster, experienced designers mentored more effectively, and the entire organization developed a shared understanding of what quality looked like. That cultural shift proved more valuable than any efficiency metric.
+              The decision to build on MUI rather than from scratch was one of the best calls we made. It gave teams a foundation they already understood, a massive library of accessible components to start from, and an active open source community maintaining the underlying code. Our job became extending and theming it to fit Kessel Run's context rather than solving problems that had already been solved. That's a very different scope of work, and it let us move faster and deliver more value earlier.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              The cultural shift that came with the design system turned out to matter more than any individual efficiency metric. New designers onboarded faster. Experienced designers spent more time on the problems that actually required original thinking. Design and engineering developed a shared language that reduced friction during handoffs in ways that are hard to quantify but easy to feel. That shift was the real return on the investment.
             </p>
           </div>
 
@@ -557,7 +558,10 @@ const DesignSystemCaseStudy = () => {
           <div className="space-y-6 animate-fade-in" style={{ animationDelay: "0.35s" }}>
             <h3 className="text-2xl font-semibold">Designed for Future Growth</h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              The system was architected with scalability in mind. Semantic tokens enable rapid theming for new product lines, the contribution model allows teams to extend functionality without fragmenting the core library, and the governance structure ensures quality as the organization grows. This foundation positioned the Air Force to adopt the system at an enterprise level.
+              The system was built to scale beyond its original context. Semantic tokens enable rapid theming for new product lines. The contribution model lets teams extend functionality without fragmenting the core library. The governance structure was designed to maintain quality as the organization grows and new contributors come in without deep context on earlier decisions.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed mt-4">
+              That foundation is what made the conversation about an Air Force-wide adoption credible. A system built to solve one team's problems in one moment doesn't earn that kind of consideration. One built with the next five years in mind does.
             </p>
           </div>
 
