@@ -47,6 +47,13 @@ serve(async (req) => {
       );
     }
 
+    if (sessionToken.length > 100) {
+      return new Response(
+        JSON.stringify({ valid: false, error: 'Invalid session token' }),
+        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      );
+    }
+
     // Check if session exists and is not expired
     const { data: session, error: sessionError } = await supabase
       .from('portfolio_sessions')
