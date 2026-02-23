@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import AdoptionImpactTable from "@/components/AdoptionImpactTable";
+import PortfolioEfficiencyChart from "@/components/PortfolioEfficiencyChart";
 
 
 const DesignSystemCaseStudy = () => {
@@ -256,6 +258,11 @@ const DesignSystemCaseStudy = () => {
               </CardContent>
             </Card>
           </div>
+
+          {/* Portfolio Efficiency Chart Graphic */}
+          <div className="mt-16 pt-8 border-t border-border/50">
+            <PortfolioEfficiencyChart />
+          </div>
         </div>
       </section>
 
@@ -344,6 +351,11 @@ const DesignSystemCaseStudy = () => {
                 </p>
               </CardContent>
             </Card>
+
+            {/* Adoption Impact Table Graphic */}
+            <div className="mt-12 pt-8 border-t border-border/50">
+              <AdoptionImpactTable />
+            </div>
           </div>
         </div>
       </section>
