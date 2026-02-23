@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
-import dataDashboardPreview from "@/assets/data-dashboard-preview.jpg";
+
 import DashboardOutcomesChart from "@/components/DashboardOutcomesChart";
 import SystemOverviewMockup from "@/components/SystemOverviewMockup";
 import DataSourceMockup from "@/components/DataSourceMockup";
@@ -22,7 +22,7 @@ const OperationalDashboardCaseStudy = () => {
           <Link to="/#work">
             <Button variant="ghost" size="sm">
               <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to My Work
+              Back to Case Studies
             </Button>
           </Link>
         </div>
