@@ -3,7 +3,7 @@ import missionReportingPreview from "@/assets/mission-reporting-preview.png";
 import uxResearchPreview from "@/assets/ux-research-preview.avif";
 import kesselRunLeadershipVisit from "@/assets/kessel-run-leadership-visit.jpg";
 import designSystemPreview from "@/assets/design-system-preview.avif";
-import dataDashboardPreview from "@/assets/data-dashboard-preview.jpg";
+import dataDashboardPreview from "@/assets/dashboard-metrics-view.jpg";
 
 export const projects: Project[] = [
   {
