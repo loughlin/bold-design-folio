@@ -34,10 +34,10 @@ const KesselRunCaseStudy = () => {
             Leading Design at Kessel Run
           </h1>
           <p className="text-xl text-muted-foreground mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            Developing a design standard and understanding across mission-critical USAF applications
+            Building a design culture from the ground up inside one of the most demanding software environments I've ever worked in.
           </p>
           <div className="flex flex-wrap gap-4 text-sm text-muted-foreground animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <span>2021 - Present</span>
+            <span>2021 – Present</span>
             <span>•</span>
             <span>UX & Product Lead</span>
           </div>
@@ -51,10 +51,13 @@ const KesselRunCaseStudy = () => {
           <h2 className="text-2xl font-bold mb-6">Overview</h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              I helped build, maintain and connect five independent applications within the problem space of targeting and geo-intelligence. Pushing for design excellence and the end goal of accessible intelligence worldwide on classified networks.
+              Kessel Run is the U.S. Air Force's in-house software factory. Small, agile teams. Real operational stakes. Software that warfighters actually depend on to do their jobs.
             </p>
             <p>
-              Throughout, I helped transform outdated services into useful and pleasant to engage with products. As of today the products I've contributed to and led the design initiatives on are accessed by users daily and generate thousands of active intelligence inputs for the United States Air Force.
+              I spent four-plus years there as Portfolio Design Lead, embedded across five applications built around targeting and geo-intelligence. The work lives on classified networks, but the design challenges were ones any design leader would recognize: teams solving the same problems independently, inconsistent experiences eroding user trust, and a growing organization that needed structure without losing the energy that makes good design possible in the first place.
+            </p>
+            <p>
+              My job was never just about the screens. It was about building the conditions where good work becomes the default.
             </p>
           </div>
         </div>
@@ -72,21 +75,21 @@ const KesselRunCaseStudy = () => {
               <div className="bg-background rounded-xl p-6 space-y-3">
                 <h3 className="font-semibold text-destructive">Before</h3>
                 <ul className="text-sm text-muted-foreground space-y-2">
-                  <li>• Siloed design decisions across teams</li>
-                  <li>• No shared design language or patterns</li>
-                  <li>• Inconsistent user experiences</li>
-                  <li>• Limited career growth for designers</li>
-                  <li>• Duplicated design effort</li>
+                  <li>• Design decisions were made in silos. Teams solved the same problems without knowing the other had already tried</li>
+                  <li>• No shared design language meant the same interaction could look and behave differently across products</li>
+                  <li>• Inconsistent experiences eroded trust with users who moved between applications regularly</li>
+                  <li>• Designers had limited visibility into what career growth actually looked like inside their teams</li>
+                  <li>• Duplicated effort across teams was quietly accumulating into real design debt</li>
                 </ul>
               </div>
               <div className="bg-background rounded-xl p-6 space-y-3">
                 <h3 className="font-semibold text-primary">After</h3>
                 <ul className="text-sm text-muted-foreground space-y-2">
-                  <li>• Unified design system and processes</li>
-                  <li>• Cross-team collaboration rituals</li>
-                  <li>• Consistent experience patterns</li>
-                  <li>• Clear career ladders for designers</li>
-                  <li>• Shared component libraries</li>
+                  <li>• A unified design system and shared component library gave every team a common foundation</li>
+                  <li>• Cross-team rituals created regular space for designers to align, give feedback, and stay connected</li>
+                  <li>• Consistent interaction patterns reduced the cognitive load for users switching between applications</li>
+                  <li>• Clear career ladders gave designers something concrete to orient their growth around</li>
+                  <li>• Shared tooling and documentation cut redundant effort and gave teams more time for harder problems</li>
                 </ul>
               </div>
             </div>
@@ -116,13 +119,13 @@ const KesselRunCaseStudy = () => {
           <h2 className="text-2xl font-bold mb-6">Opportunity</h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              The United States Air Force needed modern, cloud-native applications to support critical operational missions. Legacy systems were siloed, difficult to use, and unable to scale with growing demands for real-time intelligence.
+              The Air Force needed modern, cloud-native software to replace legacy systems that were slow, siloed, and built for a different era of operations. The demand for real-time intelligence was outpacing what those systems could support.
             </p>
             <p>
-              Our role was to craft effective experiences that empowered users to accomplish their missions more efficiently while maintaining the security and reliability required for classified operations.
+              Our role was to build software that actually helped people work under pressure. That meant marrying good UX practice with the pace of an agile delivery team, inside the constraints of classified networks and high-stakes mission contexts. It's not a combination that comes with a playbook.
             </p>
             <p>
-              Kessel Run recognized that investing in world-class UX was a strategic priority. We built a design team and established processes that facilitated creativity, collaboration, and user-centered design across multiple product teams.
+              Kessel Run understood early that design was a strategic investment, not a finishing step. We built a design organization to match that belief: structured enough to hold standards, flexible enough to stay close to what users needed.
             </p>
           </div>
         </div>
@@ -131,9 +134,9 @@ const KesselRunCaseStudy = () => {
       {/* Design Process Methodology */}
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-2xl font-bold mb-6">Design Process Methodology</h2>
+          <h2 className="text-2xl font-bold mb-6">Design Process</h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            The design process follows the Double Diamond framework, broken into four phases: two for divergent thinking (exploring possibilities) and two for convergent thinking (focusing on solutions).
+            We used the Double Diamond as our shared process language across teams. It gave designers a common vocabulary and helped stakeholders understand where we were at any point in a project. More importantly, it framed design as a discipline with distinct modes of thinking rather than a linear march toward a predetermined solution.
           </p>
 
           {/* Double Diamond Visual */}
@@ -174,7 +177,7 @@ const KesselRunCaseStudy = () => {
               <ul className="text-sm text-muted-foreground space-y-1">
                 <li className="flex items-start gap-2"><span className="text-primary">•</span>Contextual inquiries</li>
                 <li className="flex items-start gap-2"><span className="text-primary">•</span>Stakeholder interviews</li>
-                <li className="flex items-start gap-2"><span className="text-primary">•</span>Workflow observation</li>
+                <li className="flex items-start gap-2"><span className="text-primary">•</span>Direct observation of workflows in operational environments</li>
               </ul>
             </div>
             <div className="bg-muted/30 rounded-xl p-6 space-y-3">
@@ -182,11 +185,11 @@ const KesselRunCaseStudy = () => {
                 <span className="w-3 h-3 rounded-full bg-secondary" />
                 <h3 className="font-semibold">Define</h3>
               </div>
-              <p className="text-sm text-muted-foreground">Synthesizing insights into clear problem definitions and design requirements.</p>
+              <p className="text-sm text-muted-foreground">Synthesizing research into clear problem definitions and actionable requirements.</p>
               <ul className="text-sm text-muted-foreground space-y-1">
                 <li className="flex items-start gap-2"><span className="text-primary">•</span>Problem framing</li>
                 <li className="flex items-start gap-2"><span className="text-primary">•</span>Journey mapping</li>
-                <li className="flex items-start gap-2"><span className="text-primary">•</span>Requirements synthesis</li>
+                <li className="flex items-start gap-2"><span className="text-primary">•</span>Requirements synthesis that teams could actually build from</li>
               </ul>
             </div>
             <div className="bg-muted/30 rounded-xl p-6 space-y-3">
@@ -194,10 +197,10 @@ const KesselRunCaseStudy = () => {
                 <span className="w-3 h-3 rounded-full bg-primary" />
                 <h3 className="font-semibold">Develop</h3>
               </div>
-              <p className="text-sm text-muted-foreground">Generating solutions through iterative design and cross-functional collaboration.</p>
+              <p className="text-sm text-muted-foreground">Generating and pressure-testing solutions through the whole team, not just the designers in the room.</p>
               <ul className="text-sm text-muted-foreground space-y-1">
                 <li className="flex items-start gap-2"><span className="text-primary">•</span>Concept ideation</li>
-                <li className="flex items-start gap-2"><span className="text-primary">•</span>Prototyping</li>
+                <li className="flex items-start gap-2"><span className="text-primary">•</span>Rapid prototyping</li>
                 <li className="flex items-start gap-2"><span className="text-primary">•</span>Design critiques</li>
               </ul>
             </div>
@@ -206,7 +209,7 @@ const KesselRunCaseStudy = () => {
                 <span className="w-3 h-3 rounded-full bg-secondary" />
                 <h3 className="font-semibold">Deliver</h3>
               </div>
-              <p className="text-sm text-muted-foreground">Refining and implementing validated solutions for mission-critical operations.</p>
+              <p className="text-sm text-muted-foreground">Shipping validated solutions through structured testing, thoughtful handoff, and continuous iteration based on what we learned from real users after launch.</p>
               <ul className="text-sm text-muted-foreground space-y-1">
                 <li className="flex items-start gap-2"><span className="text-primary">•</span>Usability testing</li>
                 <li className="flex items-start gap-2"><span className="text-primary">•</span>Design handoff</li>
@@ -235,7 +238,7 @@ const KesselRunCaseStudy = () => {
               <p className="text-sm text-muted-foreground">Applications Shipped</p>
             </div>
             <div className="space-y-2">
-              <p className="text-4xl font-bold text-secondary">1000s</p>
+              <p className="text-4xl font-bold text-secondary">1,000s</p>
               <p className="text-sm text-muted-foreground">Daily Active Users</p>
             </div>
           </div>
@@ -246,11 +249,43 @@ const KesselRunCaseStudy = () => {
             </div>
             <div className="text-center">
               <p className="text-2xl font-bold text-secondary">6</p>
-              <p className="text-sm text-muted-foreground">Operational Missions</p>
+              <p className="text-sm text-muted-foreground">Operational Missions Supported</p>
             </div>
             <div className="text-center">
               <p className="text-2xl font-bold text-primary">4+</p>
               <p className="text-sm text-muted-foreground">Years Leading Design</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Measurable Impact Descriptions */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-3xl">
+          <div className="space-y-8 text-lg text-muted-foreground leading-relaxed">
+            <div>
+              <h3 className="text-xl font-semibold text-foreground mb-2">40% Faster Design Delivery</h3>
+              <p>This came from standardizing handoff processes and building out shared component libraries that every team drew from. The speed wasn't about moving faster in a careless way. It was about eliminating the back-and-forth caused by inconsistent tooling, undocumented decisions, and patterns that each team was reinventing independently.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-foreground mb-2">85% Designer Retention Rate</h3>
+              <p>Retention went up as a direct result of investing in team culture, psychological safety, and career progression that designers could actually see. People stayed because they felt supported, had room to grow, and were doing work that mattered. That combination is harder to build than most organizations acknowledge.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-foreground mb-2">5 Applications Shipped</h3>
+              <p>Five products across the targeting and geo-intelligence problem space, each with distinct user groups, mission contexts, and design challenges. Shipped, maintained, and continuously improved over four years.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-foreground mb-2">1,000s of Daily Active Users</h3>
+              <p>The products are in active daily use across the Air Force, generating thousands of intelligence inputs that feed real operational decisions. That's the number I come back to when I think about why the work mattered.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-foreground mb-2">15+ Designers Managed</h3>
+              <p>I directly led six product designers and provided mentorship across an additional ten embedded in product teams throughout the portfolio.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-foreground mb-2">6 Operational Missions Supported</h3>
+              <p>The application suite touched six distinct operational missions, each with its own workflows, terminology, and user needs. Staying close to that context required constant coordination between design, product, and mission stakeholders.</p>
             </div>
           </div>
         </div>
@@ -261,7 +296,7 @@ const KesselRunCaseStudy = () => {
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl font-bold text-center mb-4">Time to Value</h2>
           <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-8">
-            How design leadership accelerated value delivery
+            How the design accelerated value delivery
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-card rounded-xl p-6 space-y-4 border">
@@ -275,7 +310,7 @@ const KesselRunCaseStudy = () => {
                 <div className="h-3 bg-muted rounded-full overflow-hidden">
                   <div className="h-full bg-gradient-to-r from-primary/40 to-primary rounded-full" style={{ width: '40%' }} />
                 </div>
-                <p className="text-xs text-muted-foreground">Design-to-dev handoff time reduction</p>
+                <p className="text-xs text-muted-foreground">Standardizing design-to-dev handoff reduced the time between a finalized design and a developer picking it up. Common patterns, documented decisions, and shared libraries meant fewer clarification cycles and more time actually building.</p>
               </div>
             </div>
             <div className="bg-card rounded-xl p-6 space-y-4 border">
@@ -289,7 +324,7 @@ const KesselRunCaseStudy = () => {
                 <div className="h-3 bg-muted rounded-full overflow-hidden">
                   <div className="h-full bg-gradient-to-r from-primary/40 to-primary rounded-full" style={{ width: '35%' }} />
                 </div>
-                <p className="text-xs text-muted-foreground">Post-handoff design changes eliminated</p>
+                <p className="text-xs text-muted-foreground">Post-handoff design changes dropped significantly once we introduced structured critique and alignment checkpoints earlier in the process. Catching misalignments before handoff is far cheaper than catching them after a developer has already built the thing.</p>
               </div>
             </div>
             <div className="bg-card rounded-xl p-6 space-y-4 border">
@@ -304,7 +339,7 @@ const KesselRunCaseStudy = () => {
                 <div className="h-3 bg-muted rounded-full overflow-hidden">
                   <div className="h-full bg-gradient-to-r from-primary/40 to-primary rounded-full" style={{ width: '67%' }} />
                 </div>
-                <p className="text-xs text-muted-foreground">New designer time to productivity</p>
+                <p className="text-xs text-muted-foreground">When I arrived, getting a new designer productive took around six weeks. By centralizing documentation, building onboarding guides grounded in real project context, and establishing team rituals that new people could step into immediately, we brought that down to two. That matters a lot when you're scaling a team under pressure.</p>
               </div>
             </div>
             <div className="bg-card rounded-xl p-6 space-y-4 border">
@@ -318,7 +353,7 @@ const KesselRunCaseStudy = () => {
                 <div className="h-3 bg-muted rounded-full overflow-hidden">
                   <div className="h-full bg-gradient-to-r from-primary/40 to-primary rounded-full" style={{ width: '60%' }} />
                 </div>
-                <p className="text-xs text-muted-foreground">Features validated before build</p>
+                <p className="text-xs text-muted-foreground">We set a goal of validating features before build rather than after. Reaching 60% coverage was less about hitting a number and more about a cultural shift: research becoming a standard part of delivery rather than something teams squeezed in when they had time.</p>
               </div>
             </div>
           </div>
@@ -330,15 +365,15 @@ const KesselRunCaseStudy = () => {
         <div className="container mx-auto max-w-4xl space-y-8">
           <h2 className="text-2xl font-bold text-center">Usability Heuristics Evaluation</h2>
           <p className="text-lg text-muted-foreground text-center max-w-2xl mx-auto">
-            How design leadership improved usability across Nielsen's heuristics
+            We used Nielsen's heuristics as a structured lens for evaluating design quality across the portfolio, both as a diagnostic tool and as a way to communicate design value to people who weren't designers. Framing improvements in terms of established principles gave our recommendations credibility with stakeholders who might otherwise have read them as subjective preference.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-muted/30 rounded-xl p-6 space-y-3">
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">1</div>
-                <h3 className="font-semibold text-sm">User Control & Freedom</h3>
+                <h3 className="font-semibold text-sm">User Control and Freedom</h3>
               </div>
-              <p className="text-sm text-muted-foreground">Established undo/redo patterns and confirmation dialogs for critical actions in mission-critical workflows.</p>
+              <p className="text-sm text-muted-foreground">We established consistent undo/redo patterns and confirmation dialogs for high-consequence actions across the suite. In mission-critical workflows, giving users a clear path to recover from a mistake is not a nice-to-have.</p>
               <div className="flex items-center gap-2 text-xs">
                 <span className="text-destructive">Before: 2/5</span>
                 <span className="text-muted-foreground">→</span>
@@ -350,7 +385,7 @@ const KesselRunCaseStudy = () => {
                 <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">2</div>
                 <h3 className="font-semibold text-sm">Visibility of System Status</h3>
               </div>
-              <p className="text-sm text-muted-foreground">Implemented real-time feedback for data sync, processing states, and system health across all applications.</p>
+              <p className="text-sm text-muted-foreground">Real-time feedback for data sync, processing states, and system health was inconsistent or missing entirely in early versions. We built shared patterns for status communication that teams could implement consistently across all five applications.</p>
               <div className="flex items-center gap-2 text-xs">
                 <span className="text-destructive">Before: 2/5</span>
                 <span className="text-muted-foreground">→</span>
@@ -362,7 +397,7 @@ const KesselRunCaseStudy = () => {
                 <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">3</div>
                 <h3 className="font-semibold text-sm">Match Real World</h3>
               </div>
-              <p className="text-sm text-muted-foreground">User research informed terminology and workflows that matched actual mission planning language and processes.</p>
+              <p className="text-sm text-muted-foreground">Early designs used system language instead of mission language. Direct access to warfighters through user research let us replace technical jargon with terminology that matched how people actually thought and talked about their work.</p>
               <div className="flex items-center gap-2 text-xs">
                 <span className="text-destructive">Before: 3/5</span>
                 <span className="text-muted-foreground">→</span>
@@ -374,7 +409,7 @@ const KesselRunCaseStudy = () => {
                 <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">4</div>
                 <h3 className="font-semibold text-sm">Error Recovery</h3>
               </div>
-              <p className="text-sm text-muted-foreground">Clear error messages with actionable recovery steps replaced cryptic system codes across the product suite.</p>
+              <p className="text-sm text-muted-foreground">Cryptic error codes were replaced with plain-language messages that told users what went wrong and what they could do about it. A small change with an outsized impact on trust.</p>
               <div className="flex items-center gap-2 text-xs">
                 <span className="text-destructive">Before: 1/5</span>
                 <span className="text-muted-foreground">→</span>
@@ -384,9 +419,9 @@ const KesselRunCaseStudy = () => {
             <div className="bg-muted/30 rounded-xl p-6 space-y-3">
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">5</div>
-                <h3 className="font-semibold text-sm">Flexibility & Efficiency</h3>
+                <h3 className="font-semibold text-sm">Flexibility and Efficiency</h3>
               </div>
-              <p className="text-sm text-muted-foreground">Keyboard shortcuts and customizable dashboards enabled power users to complete tasks 35% faster.</p>
+              <p className="text-sm text-muted-foreground">We introduced keyboard shortcuts and customizable dashboard configurations for experienced operators. Users who knew what they were doing could move through workflows 35% faster, validated through task-time testing with operators who used the tools daily.</p>
               <div className="flex items-center gap-2 text-xs">
                 <span className="text-destructive">Before: 2/5</span>
                 <span className="text-muted-foreground">→</span>
@@ -396,9 +431,9 @@ const KesselRunCaseStudy = () => {
             <div className="bg-muted/30 rounded-xl p-6 space-y-3">
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">6</div>
-                <h3 className="font-semibold text-sm">Consistency & Standards</h3>
+                <h3 className="font-semibold text-sm">Consistency and Standards</h3>
               </div>
-              <p className="text-sm text-muted-foreground">Cross-team design standards unified interaction patterns, reducing learning curve when switching between applications.</p>
+              <p className="text-sm text-muted-foreground">Cross-team design standards unified interaction patterns across the portfolio. Users moving between applications didn't have to relearn basic interactions, a meaningful improvement in an environment where cognitive load is already high.</p>
               <div className="flex items-center gap-2 text-xs">
                 <span className="text-destructive">Before: 2/5</span>
                 <span className="text-muted-foreground">→</span>
@@ -445,13 +480,13 @@ const KesselRunCaseStudy = () => {
           <h2 className="text-2xl font-bold mb-6">My Role</h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              As Portfolio Design Lead, I led product design strategy and execution for a software suite containing five software applications and one hardware solution, supporting six critical operational missions across the United States Air Force.
+              As Portfolio Design Lead, I owned design strategy and execution across a five-application software suite and one hardware solution, spanning six operational missions. I directly managed six product designers and provided mentorship to an additional ten across the portfolio.
             </p>
             <p>
-              I directly mentored and led a team of six product designers while providing guidance and support for an additional ten design reports. I set design standards, practices and procedures while facilitating cross-functional collaboration between teams.
+              The role sat at the intersection of people leadership, design operations, and hands-on craft. On any given week I might be running a design critique, working through a career development conversation with a designer who wasn't sure what their next step looked like, aligning with product leadership on roadmap priorities, or reviewing research outputs with a team navigating a genuinely hard user problem. The range was part of what made the work interesting.
             </p>
             <p>
-              Throughout my tenure, I advocated for user-centered design practices across multiple product teams while championing design thinking and advocating psychological safety.
+              I set the standards that defined what good design looked like across the portfolio, and then spent most of my time making sure teams had the support, tools, and psychological safety to actually meet them.
             </p>
           </div>
         </div>
@@ -464,19 +499,19 @@ const KesselRunCaseStudy = () => {
           <ul className="space-y-4">
             <li className="flex items-start gap-4">
               <span className="text-primary text-2xl leading-none">•</span>
-              <span className="text-lg text-muted-foreground">Collaborate with users and leadership teams to identify capability needs</span>
+              <span className="text-lg text-muted-foreground">Partnered with users and Air Force leadership to identify and prioritize capability needs</span>
             </li>
             <li className="flex items-start gap-4">
               <span className="text-primary text-2xl leading-none">•</span>
-              <span className="text-lg text-muted-foreground">Establish design career ladders with DesignOps for professional development</span>
+              <span className="text-lg text-muted-foreground">Built and maintained design career ladders with DesignOps to support professional growth at every level</span>
             </li>
             <li className="flex items-start gap-4">
               <span className="text-primary text-2xl leading-none">•</span>
-              <span className="text-lg text-muted-foreground">Centralize documentation and resources to reduce redundant processes</span>
+              <span className="text-lg text-muted-foreground">Centralized design documentation and shared resources to reduce redundant effort across teams</span>
             </li>
             <li className="flex items-start gap-4">
               <span className="text-primary text-2xl leading-none">•</span>
-              <span className="text-lg text-muted-foreground">Facilitate team rituals and practices as Psychological Safety facilitator</span>
+              <span className="text-lg text-muted-foreground">Facilitated team rituals and served as a Psychological Safety facilitator across the design community</span>
             </li>
           </ul>
         </div>
@@ -508,19 +543,19 @@ const KesselRunCaseStudy = () => {
               <ul className="space-y-3 text-muted-foreground text-sm">
                 <li className="flex items-start gap-2">
                   <span className="text-destructive">✗</span>
-                  <span>Designers worked in silos at times, or did not share information or points of contact</span>
+                  <span>Designers worked in silos and rarely shared information, contacts, or context across team boundaries</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive">✗</span>
-                  <span>Career progression was limited inside of application teams</span>
+                  <span>Career progression was largely contained within individual application teams, with little visibility across the portfolio</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive">✗</span>
-                  <span>Handoff procedures differed from team to team, making staffing difficult and often case by case</span>
+                  <span>Handoff procedures varied by team, which complicated staffing decisions and slowed ramp-up time for anyone moving between projects</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-destructive">✗</span>
-                  <span>User research informed some design decisions, but that information was not always clear and available</span>
+                  <span>User research existed but wasn't always documented or shared in a way that could inform decisions beyond the team that conducted it</span>
                 </li>
               </ul>
             </div>
@@ -529,40 +564,22 @@ const KesselRunCaseStudy = () => {
               <ul className="space-y-3 text-muted-foreground text-sm">
                 <li className="flex items-start gap-2">
                   <span className="text-primary">✓</span>
-                  <span>Cross-team design community with shared rituals</span>
+                  <span>A cross-team design community with shared rituals created consistent connection and alignment across the portfolio</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary">✓</span>
-                  <span>Established evaluation and mentorship within the design portfolio</span>
+                  <span>Formal evaluation and mentorship structures gave designers a visible path and meaningful support at every career stage</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary">✓</span>
-                  <span>Standardized expectation between design and developers, reducing time from written backlog to production by 33%</span>
+                  <span>Standardized handoff expectations between design and development reduced time from backlog to production by 33%</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-primary">✓</span>
-                  <span>Expanded research standards and provided guidance on prioritized design artifacts with product teams</span>
+                  <span>Expanded research standards and clearer guidance on prioritized design artifacts improved how insights flowed into product decisions across teams</span>
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Results Section */}
-      <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl font-bold mb-6">Results</h2>
-          <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-            <p>
-              Today, the products I've contributed to and led the design initiatives on are accessed by users daily across the United States Air Force, generating thousands of active intelligence inputs.
-            </p>
-            <p>
-              The design systems and processes established have increased consistency across the USAF application suite, reducing design debt and enabling faster delivery of new features.
-            </p>
-            <p>
-              Our investment in design culture and psychological safety has resulted in a thriving design team that continues to deliver mission-critical capabilities.
-            </p>
           </div>
         </div>
       </section>
@@ -573,10 +590,10 @@ const KesselRunCaseStudy = () => {
           <h2 className="text-2xl font-bold mb-6">What Testing Revealed</h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              Usability testing with warfighters uncovered critical insights that reshaped our approach. Users needed information at a glance during high-pressure operations—our initial designs were too dense. Iterative testing led to a 35% reduction in cognitive load through progressive disclosure patterns.
+              Usability testing with warfighters has a way of reorienting your priorities quickly. Our initial designs prioritized completeness over clarity, and users operating under pressure did not have time for dense interfaces. Iterative testing led to a 35% reduction in cognitive load through progressive disclosure patterns, which in practice meant redesigning the information hierarchy around what users needed in the moment versus what could wait.
             </p>
             <p>
-              Accessibility audits revealed keyboard navigation gaps that affected users in operational environments where mouse usage was impractical. We established accessibility champions on each team, resulting in WCAG 2.1 AA compliance across all products.
+              Accessibility audits surfaced keyboard navigation gaps that weren't obvious in standard testing conditions. In operational environments, mouse usage is often impractical, so this was a real usability failure, not a compliance checkbox. We established accessibility champions on each team and reached WCAG 2.1 AA compliance across the entire product suite.
             </p>
           </div>
         </div>
@@ -585,16 +602,19 @@ const KesselRunCaseStudy = () => {
       {/* Key Learnings */}
       <section className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="text-2xl font-bold mb-6">What did we learn?</h2>
+          <h2 className="text-2xl font-bold mb-6">What We Learned</h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              Building a design practice in a high stakes environment requires balancing speed with quality. We learned that investing in team culture and psychological safety paid dividends in creativity and retention.
+              Building a design practice inside a high-stakes, fast-moving organization means making peace with the tension between speed and quality, and developing good judgment about when each one needs to give a little.
             </p>
             <p>
-              Cross-functional collaboration was essential. By embedding designers within product teams while maintaining a strong design community, we achieved both deep product knowledge and shared best practices.
+              The biggest unlock was investing in team culture early. Psychological safety wasn't a soft priority. It was a strategic one. Teams that felt safe to share unfinished work, surface concerns, and admit uncertainty consistently produced better outcomes and stayed together longer. That's not intuition. We saw it directly in retention, in the quality of critique, and in how teams responded when things went sideways.
             </p>
             <p>
-              User research in classified environments presents unique challenges, but direct access to warfighters transformed our design decisions and built credibility with stakeholders.
+              Embedding designers within product teams while maintaining a strong cross-team community turned out to be the right structural balance. Designers developed deep product and user context without losing the shared perspective and standards that come from being part of something larger than a single team.
+            </p>
+            <p>
+              Working directly with warfighters, despite the logistical complexity of classified research environments, was irreplaceable. There is no substitute for watching real users work through real problems in real conditions. It built credibility with stakeholders and shaped the products we shipped in ways that no amount of secondhand information could have.
             </p>
           </div>
         </div>
@@ -606,7 +626,7 @@ const KesselRunCaseStudy = () => {
           <h2 className="text-2xl font-bold mb-6">Designed for Future Growth</h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              The design infrastructure we established scales with the organization. Career ladders accommodate growth from junior to principal levels, cross-team rituals adapt as new products launch, and our research practices transfer to new mission areas. This foundation continues to support the organization's expansion into new domains.
+              The infrastructure we built was designed to outlast any individual's time on the project. Career ladders that scale from junior to principal level, cross-team rituals that adapt as new products launch, research practices that transfer to new mission areas. The foundation is flexible enough to grow with the organization, and that was entirely intentional. Good design leadership should leave things better than it found them.
             </p>
           </div>
         </div>
