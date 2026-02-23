@@ -4,10 +4,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import dataDashboardPreview from "@/assets/data-dashboard-preview.jpg";
-import dashboardApiView from "@/assets/dashboard-api-view.jpg";
-import dashboardMetricsView from "@/assets/dashboard-metrics-view.jpg";
 import DashboardOutcomesChart from "@/components/DashboardOutcomesChart";
-import DashboardMockup from "@/components/DashboardMockup";
+import SystemOverviewMockup from "@/components/SystemOverviewMockup";
+import DataSourceMockup from "@/components/DataSourceMockup";
+import MetricsViewMockup from "@/components/MetricsViewMockup";
 
 const OperationalDashboardCaseStudy = () => {
   useEffect(() => {
@@ -239,7 +239,7 @@ const OperationalDashboardCaseStudy = () => {
 
           {/* Dashboard Mockup Visual */}
           <div className="animate-fade-in">
-            <DashboardMockup />
+            <SystemOverviewMockup />
           </div>
         </div>
       </section>
@@ -269,6 +269,7 @@ const OperationalDashboardCaseStudy = () => {
             <p className="text-lg text-muted-foreground leading-relaxed">
               A focused view on a single data source — its performance trends, request frequency, timestamps, latency metrics, error rates, and connected feeds. This is where operators go when something in the overview view catches their attention and they need more context before escalating.
             </p>
+            <DataSourceMockup />
           </div>
 
           <div className="space-y-6 animate-fade-in">
@@ -276,6 +277,7 @@ const OperationalDashboardCaseStudy = () => {
             <p className="text-lg text-muted-foreground leading-relaxed">
               The most granular level — detailed statistics on specific endpoint performance including average, max, min, and standard deviation of response times, plus error rates and error types broken down by percentile. This view was designed specifically to give operators the language they needed to communicate clearly with engineering teams rather than describing problems in vague terms.
             </p>
+            <MetricsViewMockup />
           </div>
         </div>
       </section>
@@ -366,30 +368,20 @@ const OperationalDashboardCaseStudy = () => {
         </div>
       </section>
 
-      {/* Final Design Images */}
+      {/* Final Design Mockups */}
       <section className="py-16 px-6 bg-muted/30">
         <div className="container mx-auto max-w-6xl space-y-8">
-          {[
-            {
-              url: dataDashboardPreview,
-              caption: "Final Design: System Overview — A high-level view showing performance for all data sources. The line chart shows throughput over time, paired with a scrollable legend for filtering. Summary cards display health status and total endpoints per source.",
-            },
-            {
-              url: dashboardApiView,
-              caption: "Final Design: Data Source View — Focused on a single data source, this view shows performance trends, request frequency, timestamps, and connected feeds. A scrollable legend supports quick filtering, while the table below lists each route with method and response details.",
-            },
-            {
-              url: dashboardMetricsView,
-              caption: "Final Design: Metrics View — A detailed breakdown of individual endpoint performance. Metrics include average, max, min, and standard deviation of response times, plus error rates and types split between percentiles for clearer insight.",
-            },
-          ].map((image, index) => (
-            <div key={index} className="space-y-4 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-              <img src={image.url} alt={image.caption} className="w-full" />
-              <p className="text-center text-muted-foreground">{image.caption}</p>
-            </div>
-          ))}
+          <div className="space-y-4 animate-fade-in">
+            <SystemOverviewMockup />
+          </div>
+          <div className="space-y-4 animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <DataSourceMockup />
+          </div>
+          <div className="space-y-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <MetricsViewMockup />
+          </div>
           <p className="text-center text-sm text-muted-foreground italic pt-4 border-t border-border">
-            Note: The data and text represented in these images have been modified and anonymized due to the secure nature of this work.
+            Note: The data and text represented in these mockups have been modified and anonymized due to the secure nature of this work.
           </p>
         </div>
       </section>
