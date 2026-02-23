@@ -86,6 +86,13 @@ serve(async (req) => {
       );
     }
 
+    if (password.length > 256) {
+      return new Response(
+        JSON.stringify({ valid: false, error: 'Invalid input' }),
+        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      );
+    }
+
     const correctPassword = Deno.env.get('PORTFOLIO_PASSWORD');
     
     if (!correctPassword) {
