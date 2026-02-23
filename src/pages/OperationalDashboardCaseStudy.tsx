@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
-
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import DashboardOutcomesChart from "@/components/DashboardOutcomesChart";
 import SystemOverviewMockup from "@/components/SystemOverviewMockup";
 import DataSourceMockup from "@/components/DataSourceMockup";
@@ -16,17 +17,7 @@ const OperationalDashboardCaseStudy = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-        <div className="container mx-auto px-6 py-4">
-          <Link to="/#work">
-            <Button variant="ghost" size="sm">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Case Studies
-            </Button>
-          </Link>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Hero */}
       <section className="pt-24 pb-16 px-6">
@@ -418,6 +409,8 @@ const OperationalDashboardCaseStudy = () => {
           </Link>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };

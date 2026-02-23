@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 interface CaseStudySection {
   title: string;
@@ -80,17 +82,7 @@ const CaseStudyLayout = ({
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-        <div className="container mx-auto px-6 py-4">
-          <Link to="/#work">
-            <Button variant="ghost" size="sm">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to My Work
-            </Button>
-          </Link>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Hero Section */}
       <section className="pt-24 pb-16 px-6">
@@ -398,6 +390,8 @@ const CaseStudyLayout = ({
           </Link>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };
