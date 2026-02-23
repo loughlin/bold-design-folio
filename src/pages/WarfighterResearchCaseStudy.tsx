@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import userResearchInterview from "@/assets/user-research-interview.jpg";
 import stagesUxResearch from "@/assets/stages-ux-research.webp";
 import uxResearchProcess from "@/assets/ux-research-process.webp";
+import ResearchOutcomesChart from "@/components/ResearchOutcomesChart";
+import ResearchSessionsChart from "@/components/ResearchSessionsChart";
 
 const WarfighterResearchCaseStudy = () => {
   useEffect(() => {
@@ -16,73 +18,69 @@ const WarfighterResearchCaseStudy = () => {
     {
       name: "Discovery",
       type: "divergent" as const,
-      description: "Understanding the problem space through field studies, diary studies, user interviews, and stakeholder interviews to gather essential information about user needs.",
+      description: "Understanding the problem space before any solutions are on the table. Field studies, diary studies, user interviews, and stakeholder interviews to gather foundational context on user needs, workflows, and constraints.",
       activities: ["Field studies", "Diary studies", "User interviews", "Stakeholder interviews", "Requirements gathering"]
     },
     {
       name: "Exploring",
       type: "convergent" as const,
-      description: "Synthesizing gathered information through competitive analysis, persona building, task analysis, journey mapping, and card sorting to inform design decisions.",
+      description: "Synthesizing what we learned into design direction. Competitive analysis, persona building, task analysis, journey mapping, and card sorting to move from raw observations to actionable insights.",
       activities: ["Competitive analysis", "Persona building", "Task analysis", "Journey mapping", "Card sorting"]
     },
     {
       name: "Testing",
       type: "divergent" as const,
-      description: "Validating design solutions through qualitative usability testing, benchmark testing, accessibility evaluation, and A/B testing against user expectations.",
+      description: "Pressure-testing design solutions against real user expectations. Moderated usability sessions, benchmark testing, accessibility evaluation, and A/B testing to validate before development investment locked in.",
       activities: ["Usability testing", "Benchmark testing", "Accessibility evaluation", "A/B testing"]
     },
     {
       name: "Listening",
       type: "convergent" as const,
-      description: "Continuous improvement through surveys, product analytics reviews, search-log analysis, and usability-bug reviews to gather ongoing feedback.",
+      description: "Ongoing feedback after launch. Surveys, product analytics, search-log analysis, and usability-bug reviews to catch what pre-launch testing missed and feed continuous improvement.",
       activities: ["Surveys", "Analytics reviews", "Search-log analysis", "FAQ reviews"]
     },
   ];
 
   const researchMethodology = [
-    "Conducted 30+ contextual inquiries and shadowing sessions with operational users in their natural environment, providing valuable insights into behaviors and preferences that only direct observation can reveal.",
-    "Facilitated 30+ usability testing sessions with active duty personnel using task-based moderated sessions and think-aloud protocols to uncover users' thoughts, feelings, and motivations.",
-    "Ran participatory design workshops with operational users to co-create solutions, employing card sorting and prototype feedback techniques to build application trust.",
-    "Established research operations including participant recruitment, stakeholder alignment, and common points of contact for research standards across all product teams.",
-    "Created and contributed to research artifacts and repositories with clear documentation, visual aids, and user personas to enhance understanding across the organization.",
-    "Developed a structured research framework encompassing discovery, exploration, testing, and listening phases with actionable steps to guide research teams seamlessly."
+    "Conducted more than 30 contextual inquiries and shadowing sessions with operational users in their natural work environments — watching people do their actual jobs rather than asking them to describe those jobs from memory.",
+    "Ran more than 30 moderated usability testing sessions with active duty personnel using task-based protocols and think-aloud methods, giving us a direct window into how users processed information and where interfaces broke their expectations.",
+    "Ran participatory design workshops where operational users co-created solutions alongside designers. Card sorting and prototype feedback in those sessions did something beyond just gathering data — it built trust.",
+    "Established participant recruitment channels, stakeholder alignment processes, and common points of contact for research standards across all product teams. That infrastructure sounds unglamorous, but it was what made the research program scalable rather than dependent on individual heroics."
   ];
 
   const processSteps = [
     {
-      title: "1. Research Strategy & Alignment",
+      title: "1. Research Strategy and Alignment",
       content: [
-        "Defined research goals tied to product success metrics including adoption rates, error reduction, and user satisfaction",
-        "Established hypotheses before research began to focus on decision-critical questions rather than exploratory curiosity",
-        "Embedded researchers early in planning cycles so user evidence could influence roadmaps and feature prioritization",
-        "Created Research Briefs for each project outlining objectives, audiences, measures of success, and deliverables"
+        "Every research engagement started with clearly defined goals tied to product success metrics — adoption rates, error reduction, user satisfaction. Before a single session was scheduled, we wrote hypotheses about what we expected to find.",
+        "That discipline kept research focused on decision-critical questions rather than general curiosity, which mattered in an environment where user access was limited and every session had to count.",
+        "We embedded researchers early in planning cycles so user evidence could influence roadmaps before priorities were locked.",
+        "Research Briefs for each project defined objectives, audiences, measures of success, and deliverables before the work began — giving stakeholders a clear picture of what they were getting and when."
       ]
     },
     {
       title: "2. Mixed Methods Research",
       content: [
-        "Conducted generative research through contextual inquiries, diary studies, and field observations at operational bases",
-        "Ran task-based moderated usability sessions with think-aloud protocols to validate design concepts",
-        "Deployed large-scale surveys with behavioral segments to quantify pain points and preferences",
-        "Triangulated insights across qualitative and quantitative methods to reduce bias and increase confidence"
+        "Generative research through contextual inquiries, diary studies, and field observations at operational bases gave us the foundational understanding of what users' lives actually looked like.",
+        "Moderated usability sessions with think-aloud protocols validated whether design concepts held up when real people tried to use them.",
+        "Large-scale surveys helped us quantify pain points and preferences across a user base too large to reach entirely through qualitative methods.",
+        "Triangulating across methods was intentional. Any single method has blind spots. Combining them reduced bias and gave teams higher confidence in the findings they were building products around."
       ]
     },
     {
-      title: "3. Synthesis & Stakeholder Engagement",
+      title: "3. Synthesis and Stakeholder Engagement",
       content: [
-        "Translated insights into decision-ready artifacts including opportunity maps, impact-effort matrices, and clear recommendations",
-        "Facilitated research synthesis workshops with cross-functional teams to co-interpret findings",
-        "Delivered findings in digestible sessions tied to product OKRs rather than data dumps",
-        "Built centralized research repositories with standard templates for plans, screeners, guides, and reports"
+        "Research findings are only useful if people act on them. We translated insights into decision-ready artifacts — opportunity maps, impact-effort matrices, clear recommendations tied to specific product decisions.",
+        "We facilitated synthesis workshops with cross-functional teams so findings weren't handed down from on high but co-interpreted with the people who would need to act on them.",
+        "Delivery sessions were structured around product OKRs rather than data summaries. Stakeholders didn't need a research report; they needed to know what to do next and why."
       ]
     },
     {
-      title: "4. Documentation & Operationalization",
+      title: "4. Documentation and Operationalization",
       content: [
-        "Created searchable insight libraries with tagging systems for topics, products, and user segments",
-        "Linked research insights directly to product tickets and documentation for traceability",
-        "Established research readiness gates in delivery processes to ensure evidence informed decisions",
-        "Defined 'Research Done' criteria requiring evidence that directly influences product decisions"
+        "We built centralized research repositories with standard templates for plans, screeners, moderator guides, and reports — so institutional knowledge didn't walk out the door every time someone rotated off a team.",
+        "A searchable insight library with tagging systems for topics, products, and user segments meant findings from one team's research could inform another team's decisions months later.",
+        "We linked research insights directly to product tickets and documentation for traceability, and established research readiness gates in delivery processes so that 'we haven't validated this with users' became a legitimate reason to pause rather than an inconvenient comment in a planning meeting."
       ]
     }
   ];
@@ -90,37 +88,37 @@ const WarfighterResearchCaseStudy = () => {
   const heuristics = [
     {
       name: "Match Real World",
-      description: "Research-informed terminology and workflows replaced engineer assumptions, aligning with actual mission planning language.",
+      description: "Research-informed terminology and workflows replaced engineer assumptions about how users talked about their work. When you watch someone do their job for an hour, you stop guessing what words they use.",
       before: 2,
       after: 5
     },
     {
       name: "User Control & Freedom",
-      description: "User feedback drove undo/redo patterns and flexible workflows that matched how operators actually work.",
+      description: "Direct user feedback drove the introduction of undo/redo patterns and flexible workflows that matched how operators actually moved through tasks rather than how designers assumed they would.",
       before: 2,
       after: 4
     },
     {
       name: "Error Prevention",
-      description: "Usability testing identified error-prone workflows, leading to confirmation dialogs and validation patterns.",
+      description: "Usability testing identified error-prone workflows that looked fine in design reviews but fell apart under real conditions. Confirmation dialogs and validation patterns came directly from watching users make mistakes we hadn't anticipated.",
       before: 2,
       after: 4
     },
     {
       name: "Recognition over Recall",
-      description: "Card sorting and tree testing optimized information architecture, reducing cognitive load during high-stress operations.",
+      description: "Card sorting and tree testing with actual users optimized the information architecture in ways that internal review never would have surfaced. The result was a measurable reduction in cognitive load during high-pressure operations.",
       before: 2,
       after: 5
     },
     {
       name: "Flexibility & Efficiency",
-      description: "Research revealed power user shortcuts and customization needs, enabling 25% faster task completion.",
+      description: "Research revealed how power users had developed workarounds for the limitations in existing interfaces. Designing those shortcuts into the product rather than around it enabled 25% faster task completion for experienced operators.",
       before: 2,
       after: 4
     },
     {
       name: "Help & Documentation",
-      description: "User research insights embedded into component guidelines provided contextual help for designers.",
+      description: "Research insights embedded into component guidelines provided contextual help grounded in real usage patterns rather than assumptions about what users would need to know.",
       before: 1,
       after: 4
     }
@@ -130,36 +128,54 @@ const WarfighterResearchCaseStudy = () => {
     {
       value: "3 weeks",
       label: "Faster Development",
-      description: "Reduced feature cycle through early validation",
+      description: "Validating concepts before development began meant teams weren't discovering fundamental problems halfway through a build. Early-stage research moved the point of failure to where it was cheap to fix.",
       percentage: 60
     },
     {
       value: "$500K+",
       label: "Costs Avoided",
-      description: "Features prevented that wouldn't solve problems",
+      description: "Features that wouldn't have solved user problems were caught and redirected before development investment was made. This number is conservative — based on average feature development spend for features research directly prevented.",
       percentage: 85
     },
     {
       value: "65%",
       label: "Less Rework",
-      description: "Reduced post-launch design changes",
+      description: "Post-launch design changes dropped significantly once research was embedded early in planning cycles. The correlation was direct: teams that validated before build had fewer surprises after launch.",
       percentage: 65
     },
     {
       value: "35%",
       label: "Higher Adoption",
-      description: "User satisfaction 6.2 → 8.4/10",
+      description: "User satisfaction scores improved from 6.2 to 8.4 out of 10 across tested applications. That improvement was consistent across the portfolio, not isolated to individual products.",
       percentage: 84
     }
   ];
 
+  const beforeItems = [
+    "Siloed research practices with no standardized processes or shared methodologies across teams",
+    "Product decisions driven by stakeholder assumptions rather than user evidence",
+    "Research insights lost between projects with no centralized place to find them",
+    "Limited direct user access, with teams relying on second-hand information from people who thought they knew what users needed",
+    "Research conducted after development had already begun, turning findings into expensive rework",
+    "No way to measure whether research was actually influencing product outcomes"
+  ];
+
+  const afterItems = [
+    "Unified research operations with standardized templates and methodologies across all product teams",
+    "Evidence-based decision making tied to specific product success metrics",
+    "Centralized insight repository with 50-plus tagged findings accessible to all teams",
+    "Direct user engagement through established recruitment channels and operational access",
+    "Research embedded early in planning cycles, reducing post-launch rework by 65%",
+    "Quarterly research impact reporting connecting research activity directly to product performance"
+  ];
+
   const outcomes = [
-    "Improved user satisfaction scores from 6.2 to 8.4/10 across tested applications through research-informed design decisions",
-    "Established user research as standard practice across all 6 T&G Portfolio missions with consistent methodology",
-    "Created searchable library of 50+ research insights with tagging systems for topics, products, and user segments",
-    "Built centralized research repositories with standard templates for plans, screeners, moderator guides, and reports",
-    "Trained 15 designers and product managers in research methods, establishing research readiness gates in delivery processes",
-    "Established quarterly research impact reporting to leadership, tying research directly to product performance metrics"
+    "User satisfaction improved from 6.2 to 8.4 out of 10 across tested applications, measured consistently using the same instruments before and after the research program was established.",
+    "User research became standard practice across all six Targeting and Geo-intelligence portfolio missions, with consistent methodology that transferred between teams rather than living in the heads of individual researchers.",
+    "A searchable library of 50-plus research insights with tagging by topic, product, and user segment meant findings compounded over time instead of expiring when a project ended.",
+    "Centralized research repositories with standard templates for plans, screeners, moderator guides, and reports gave every team a starting point rather than a blank page.",
+    "Fifteen designers and product managers were trained in research methods, with research readiness gates embedded into delivery processes so the practice could sustain itself beyond any individual's involvement.",
+    "Quarterly research impact reporting to leadership connected research activity directly to product performance, giving the program a business case that didn't depend on people taking its value on faith."
   ];
 
   return (
@@ -183,7 +199,10 @@ const WarfighterResearchCaseStudy = () => {
             Organizational Research Reboot
           </h1>
           <p className="text-2xl text-muted-foreground animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            De-risking product decisions through qualitative user research
+            De-risking product decisions through qualitative user research — and convincing an engineering-first organization to trust what users actually said.
+          </p>
+          <p className="text-lg text-muted-foreground mt-4 animate-fade-in" style={{ animationDelay: "0.15s" }}>
+            2021 – 2024 · UX Manager & Lead UX Researcher
           </p>
         </div>
       </section>
@@ -210,7 +229,7 @@ const WarfighterResearchCaseStudy = () => {
             <Card className="animate-fade-in" style={{ animationDelay: "0.1s" }}>
               <CardContent className="p-6">
                 <h3 className="text-sm font-semibold text-muted-foreground mb-2">TIMELINE</h3>
-                <p className="text-lg">2021 - 2024</p>
+                <p className="text-lg">2021 – 2024</p>
               </CardContent>
             </Card>
             <Card className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
@@ -224,7 +243,13 @@ const WarfighterResearchCaseStudy = () => {
           <div className="mt-12 space-y-6 animate-fade-in" style={{ animationDelay: "0.3s" }}>
             <h2 className="text-3xl font-bold">Overview</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Led comprehensive user research initiatives with users across multiple USAF missions to validate product concepts, uncover user needs, and reduce risk before significant development investment. This research program established user-centered design practices within a traditionally engineering-focused environment.
+              When I took this on, product teams across the Kessel Run portfolio were making design decisions based almost entirely on stakeholder assumptions. Some teams had done pockets of research, but findings rarely left the room they were created in. There was no shared methodology, no centralized place for insights to live, and no established expectation that user evidence should drive product decisions.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              The goal wasn't just to run more research sessions. It was to change how the organization thought about research — from a nice-to-have that happened when someone had bandwidth, to a standard part of how products got built. That kind of shift is harder than it sounds in an environment that was built by engineers, for engineers, and had been operating that way for years.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Over three years, working with a research team of two designers and collaborating across eight product teams, we built that practice from the ground up.
             </p>
           </div>
         </div>
@@ -236,7 +261,10 @@ const WarfighterResearchCaseStudy = () => {
           <div className="space-y-6 animate-fade-in">
             <h2 className="text-3xl font-bold">The Problem</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Product teams were making critical design decisions based on stakeholder assumptions only. A merger of outside programs needed to be realigned to modern research methods and practices. Teams lacked direct access to end users and relied on second hand information or stakeholder knowledge and had no established standardized research processes for assimilating or disseminating findings to justify and support work.
+              Product teams were designing based on what stakeholders assumed users needed. A merger of outside programs brought teams with different habits and no common research standards into the same portfolio. Nobody had a direct line to end users. Findings that did exist were scattered, inconsistently documented, and rarely connected back to actual product decisions.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              The cost of this wasn't always visible right away. It showed up later, in features that launched to low adoption, in interfaces that confused the people who needed to use them most, and in rework cycles that ate into timelines that were already tight.
             </p>
           </div>
 
@@ -244,7 +272,7 @@ const WarfighterResearchCaseStudy = () => {
             <CardContent className="p-8">
               <h3 className="text-sm font-semibold text-primary mb-4">PROBLEM STATEMENT</h3>
               <p className="text-xl font-medium leading-relaxed">
-                How might we establish research practices that give product teams direct access to users' needs, validate design decisions early, and build empathy for users operating in high-stakes mission-critical environments while making that information accessible and digestible to stakeholders?
+                How might we establish research practices that give product teams direct access to users' needs, validate design decisions early, and build empathy for users operating in high-stakes mission-critical environments — while making that information accessible and actionable for stakeholders who need to act on it?
               </p>
             </CardContent>
           </Card>
@@ -257,7 +285,7 @@ const WarfighterResearchCaseStudy = () => {
           <div className="space-y-4">
             <h2 className="text-3xl font-bold">The Four Stages of UX Research</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              The UX research process unfolds in four distinct stages: Discovery, Exploring, Testing, and Listening. Each stage plays a pivotal role in shaping the user experience, from setting clear objectives to translating findings into actionable design decisions.
+              We organized the research program around four distinct stages, adapted from standard UX practice to fit the pace and constraints of a classified operational environment. The framework gave teams a shared language for where they were in the process and what kind of evidence was appropriate at each stage.
             </p>
           </div>
 
@@ -318,7 +346,7 @@ const WarfighterResearchCaseStudy = () => {
         <div className="container mx-auto max-w-6xl space-y-8 animate-fade-in">
           <h2 className="text-3xl font-bold">Research Methodology</h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Our research methodology combined qualitative and quantitative approaches, employing a mix of methods for comprehensive understanding. Qualitative methods like interviews and observation provided depth into users' thoughts and motivations, while quantitative methods such as surveys and analytics offered statistical significance for data-driven decisions.
+            We used a mixed-methods approach throughout — qualitative methods to understand the why behind user behavior, quantitative methods to confirm whether what we observed was widespread and significant enough to act on. Neither alone was sufficient. Together they gave product teams evidence they could actually defend in prioritization conversations.
           </p>
           
           {/* Research Process Diagram */}
@@ -334,6 +362,11 @@ const WarfighterResearchCaseStudy = () => {
               </li>
             ))}
           </ul>
+
+          {/* Research Sessions Chart */}
+          <div className="mt-12 p-8 rounded-xl bg-muted/50 border border-border">
+            <ResearchSessionsChart />
+          </div>
         </div>
       </section>
 
@@ -360,67 +393,31 @@ const WarfighterResearchCaseStudy = () => {
       {/* Before/After Comparison */}
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-6xl space-y-8">
-          <h2 className="text-3xl font-bold animate-fade-in">Before & After</h2>
+          <h2 className="text-3xl font-bold animate-fade-in">Before and After</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="border-destructive/20 animate-fade-in">
               <CardContent className="p-6 space-y-4">
-                <h3 className="font-semibold text-destructive">Before Research Operations</h3>
+                <h3 className="font-semibold text-destructive">Before</h3>
                 <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start gap-3">
-                    <span className="text-destructive mt-1">✗</span>
-                    <span>Siloed research practices with no standardized processes or shared methodologies</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-destructive mt-1">✗</span>
-                    <span>Product decisions based on stakeholder assumptions rather than user evidence</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-destructive mt-1">✗</span>
-                    <span>Research insights lost between teams with no centralized repository</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-destructive mt-1">✗</span>
-                    <span>Limited direct user access, relying on second-hand information</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-destructive mt-1">✗</span>
-                    <span>Research conducted after development began, leading to costly rework</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-destructive mt-1">✗</span>
-                    <span>No research impact metrics or connection to product outcomes</span>
-                  </li>
+                  {beforeItems.map((item, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <span className="text-destructive mt-1">✗</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </CardContent>
             </Card>
             <Card className="border-primary/20 animate-fade-in" style={{ animationDelay: "0.1s" }}>
               <CardContent className="p-6 space-y-4">
-                <h3 className="font-semibold text-primary">After Research Operations</h3>
+                <h3 className="font-semibold text-primary">After</h3>
                 <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary mt-1">✓</span>
-                    <span>Unified research operations with standardized templates and methodologies</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary mt-1">✓</span>
-                    <span>Evidence-based decision making tied to product success metrics</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary mt-1">✓</span>
-                    <span>Centralized insight repositories with searchable, tagged findings</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary mt-1">✓</span>
-                    <span>Direct user engagement through established recruitment channels</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary mt-1">✓</span>
-                    <span>Research embedded early in planning cycles, reducing rework by 65%</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-primary mt-1">✓</span>
-                    <span>Quarterly research impact reporting tied to product performance</span>
-                  </li>
+                  {afterItems.map((item, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <span className="text-primary mt-1">✓</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </CardContent>
             </Card>
@@ -433,7 +430,7 @@ const WarfighterResearchCaseStudy = () => {
         <div className="container mx-auto max-w-6xl space-y-8">
           <h2 className="text-3xl font-bold animate-fade-in">Usability Heuristics Evaluation</h2>
           <p className="text-lg text-muted-foreground animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            How the design improved usability across Nielsen's heuristics
+            We tracked usability improvements using Nielsen's heuristics as a consistent framework across the portfolio, giving us a structured way to compare where products started and where research-informed design took them.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {heuristics.map((heuristic, index) => (
@@ -494,7 +491,7 @@ const WarfighterResearchCaseStudy = () => {
       {/* Outcomes */}
       <section className="py-16 px-6 bg-primary/5">
         <div className="container mx-auto max-w-6xl space-y-8">
-          <h2 className="text-3xl font-bold animate-fade-in">Outcomes & Impact</h2>
+          <h2 className="text-3xl font-bold animate-fade-in">Outcomes and Impact</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {outcomes.map((outcome, index) => (
               <Card key={index} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
@@ -503,6 +500,32 @@ const WarfighterResearchCaseStudy = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+
+          {/* Research Outcomes Chart */}
+          <div className="mt-12 p-8 rounded-xl bg-background border border-border">
+            <ResearchOutcomesChart />
+          </div>
+        </div>
+      </section>
+
+      {/* What We Learned */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-6xl space-y-8 animate-fade-in">
+          <h2 className="text-3xl font-bold">What We Learned</h2>
+          <div className="space-y-6">
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              The hardest part of this work wasn't the research itself. It was earning the credibility to have research findings taken seriously by teams that had been building software without direct user access for years and had shipped products anyway.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              The turning point came from specificity. Broad claims about user needs didn't move people. A clip of an operator struggling with a specific workflow in a usability session, played in a planning meeting, did. The research program gained traction when it stopped delivering summary reports and started delivering moments of direct user contact that stakeholders couldn't rationalize away.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Embedding researchers within product teams rather than housing them in a centralized research function was the structural decision that made the difference. Researchers who sat in standups, attended backlog refinement sessions, and had relationships with developers got their findings acted on. Researchers who parachuted in with a report did not.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              The insight library was more valuable than we anticipated. Research compounds when it's findable. Teams stopped duplicating discovery work when they could search what other teams had already learned. That alone changed the economics of the program significantly.
+            </p>
           </div>
         </div>
       </section>
