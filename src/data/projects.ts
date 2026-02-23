@@ -49,7 +49,7 @@ export const projects: Project[] = [
   {
     title: "Operational Data Dashboard",
     subtitle: "Web Dashboards + Data Visualization",
-    description: "Giving operators a single place to monitor critical data flows and system health — reducing cognitive load in high-stakes environments.",
+    description: "Giving operators a single place to monitor critical data flows and system health. Reducing cognitive load in high-stakes environments.",
     role: "UX Manager + Product Designer",
     timeline: "2019 - 2021",
     image: dataDashboardPreview,
