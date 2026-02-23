@@ -210,7 +210,7 @@ const WarfighterResearchCaseStudy = () => {
       {/* Hero Image */}
       <section className="pb-16 px-6">
         <div className="container mx-auto max-w-6xl">
-          <div className="rounded-2xl overflow-hidden animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <div className="overflow-hidden animate-fade-in" style={{ animationDelay: "0.2s" }}>
             <img src={userResearchInterview} alt="User research interview" className="w-full h-[500px] object-cover" />
           </div>
         </div>
