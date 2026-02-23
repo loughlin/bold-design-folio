@@ -36,7 +36,7 @@ const OperationalDashboardCaseStudy = () => {
             <p className="text-2xl text-muted-foreground">Redesigning a monitoring tool that engineers had built for engineers — and making it work for the operators who actually depended on it.</p>
           </div>
           <div className="overflow-hidden animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            <img src={dataDashboardPreview} alt="Operational Data Dashboard" className="w-full h-[500px] object-cover" />
+            <SystemOverviewMockup />
           </div>
         </div>
       </section>
