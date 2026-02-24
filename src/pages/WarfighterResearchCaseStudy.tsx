@@ -185,9 +185,16 @@ const WarfighterResearchCaseStudy = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-6">
-        <div className="container mx-auto max-w-5xl text-center">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-8 animate-fade-in">
+      <section className="pt-32 pb-8 px-6">
+        <div className="container mx-auto max-w-4xl">
+          <Link 
+            to="/#work" 
+            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to Case Studies
+          </Link>
+          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-8 animate-fade-in">
             Organizational Research Reboot
           </h1>
           <p className="text-2xl text-muted-foreground animate-fade-in" style={{ animationDelay: "0.1s" }}>
@@ -201,7 +208,7 @@ const WarfighterResearchCaseStudy = () => {
 
       {/* Hero Image */}
       <section className="pb-16 px-6">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-4xl">
           <div className="overflow-hidden animate-fade-in" style={{ animationDelay: "0.2s" }}>
             <img src={userResearchInterview} alt="User research interview" className="w-full h-[500px] object-cover" />
           </div>
@@ -210,7 +217,7 @@ const WarfighterResearchCaseStudy = () => {
 
       {/* Project Overview */}
       <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="animate-fade-in">
               <CardContent className="p-6">
@@ -249,7 +256,7 @@ const WarfighterResearchCaseStudy = () => {
 
       {/* Problem Statement */}
       <section className="py-16 px-6">
-        <div className="container mx-auto max-w-6xl space-y-12">
+        <div className="container mx-auto max-w-4xl space-y-12">
           <div className="space-y-6 animate-fade-in">
             <h2 className="text-3xl font-bold">The Problem</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -273,7 +280,7 @@ const WarfighterResearchCaseStudy = () => {
 
       {/* Design Process Methodology */}
       <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-6xl space-y-8 animate-fade-in">
+        <div className="container mx-auto max-w-4xl space-y-8 animate-fade-in">
           <div className="space-y-4">
             <h2 className="text-3xl font-bold">The Four Stages of UX Research</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -335,7 +342,7 @@ const WarfighterResearchCaseStudy = () => {
 
       {/* Research Methodology */}
       <section className="py-16 px-6">
-        <div className="container mx-auto max-w-6xl space-y-8 animate-fade-in">
+        <div className="container mx-auto max-w-4xl space-y-8 animate-fade-in">
           <h2 className="text-3xl font-bold">Research Methodology</h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             We used a mixed-methods approach throughout — qualitative methods to understand the why behind user behavior, quantitative methods to confirm whether what we observed was widespread and significant enough to act on. Neither alone was sufficient. Together they gave product teams evidence they could actually defend in prioritization conversations.
@@ -364,7 +371,7 @@ const WarfighterResearchCaseStudy = () => {
 
       {/* Process */}
       <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-6xl space-y-12">
+        <div className="container mx-auto max-w-4xl space-y-12">
           <h2 className="text-3xl font-bold animate-fade-in">Design Process</h2>
           {processSteps.map((section, index) => (
             <div key={index} className="space-y-4 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
@@ -384,7 +391,7 @@ const WarfighterResearchCaseStudy = () => {
 
       {/* Before/After Comparison */}
       <section className="py-16 px-6">
-        <div className="container mx-auto max-w-6xl space-y-8">
+        <div className="container mx-auto max-w-4xl space-y-8">
           <h2 className="text-3xl font-bold animate-fade-in">Before and After</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <Card className="border-destructive/20 animate-fade-in">
@@ -419,7 +426,7 @@ const WarfighterResearchCaseStudy = () => {
 
       {/* Heuristics Evaluation */}
       <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-6xl space-y-8">
+        <div className="container mx-auto max-w-4xl space-y-8">
           <h2 className="text-3xl font-bold animate-fade-in">Usability Heuristics Evaluation</h2>
           <p className="text-lg text-muted-foreground animate-fade-in" style={{ animationDelay: "0.1s" }}>
             We tracked usability improvements using Nielsen's heuristics as a consistent framework across the portfolio, giving us a structured way to compare where products started and where research-informed design took them.
@@ -449,7 +456,7 @@ const WarfighterResearchCaseStudy = () => {
 
       {/* Engagement Metrics - Time to Value */}
       <section className="py-16 px-6">
-        <div className="container mx-auto max-w-6xl space-y-8">
+        <div className="container mx-auto max-w-4xl space-y-8">
           <h2 className="text-3xl font-bold animate-fade-in">Time to Value</h2>
           <p className="text-lg text-muted-foreground animate-fade-in" style={{ animationDelay: "0.1s" }}>
             How research accelerated value delivery
@@ -482,7 +489,7 @@ const WarfighterResearchCaseStudy = () => {
 
       {/* Outcomes */}
       <section className="py-16 px-6 bg-primary/5">
-        <div className="container mx-auto max-w-6xl space-y-8">
+        <div className="container mx-auto max-w-4xl space-y-8">
           <h2 className="text-3xl font-bold animate-fade-in">Outcomes and Impact</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {outcomes.map((outcome, index) => (
@@ -503,7 +510,7 @@ const WarfighterResearchCaseStudy = () => {
 
       {/* What We Learned */}
       <section className="py-16 px-6">
-        <div className="container mx-auto max-w-6xl space-y-8 animate-fade-in">
+        <div className="container mx-auto max-w-4xl space-y-8 animate-fade-in">
           <h2 className="text-3xl font-bold">What We Learned</h2>
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -524,7 +531,7 @@ const WarfighterResearchCaseStudy = () => {
 
       {/* Footer CTA */}
       <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-6xl text-center space-y-6 animate-fade-in">
+        <div className="container mx-auto max-w-4xl text-center space-y-6 animate-fade-in">
           <h2 className="text-3xl font-bold">Interested in learning more?</h2>
           <Link to="/#work" className="inline-block mt-4">
             <Button size="lg" className="bg-primary hover:bg-primary/90">

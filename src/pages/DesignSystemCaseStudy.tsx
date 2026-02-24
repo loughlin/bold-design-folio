@@ -64,9 +64,16 @@ const DesignSystemCaseStudy = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-6">
-        <div className="container mx-auto max-w-5xl text-center">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-4 animate-fade-in">
+      <section className="pt-32 pb-8 px-6">
+        <div className="container mx-auto max-w-4xl">
+          <Link 
+            to="/#work" 
+            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to Case Studies
+          </Link>
+          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4 animate-fade-in">
             Portfolio Design System
           </h1>
           <p className="text-xl text-muted-foreground animate-fade-in" style={{ animationDelay: "0.1s" }}>
@@ -117,7 +124,7 @@ const DesignSystemCaseStudy = () => {
 
       {/* UX Metrics */}
       <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-5xl animate-fade-in">
+        <div className="container mx-auto max-w-4xl animate-fade-in">
           <h2 className="text-4xl font-serif font-semibold text-center mb-12">Success Metrics</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card className="text-center border-0 shadow-lg">
@@ -159,7 +166,7 @@ const DesignSystemCaseStudy = () => {
 
       {/* Engagement Metrics - Time to Value */}
       <section className="py-16 px-6">
-        <div className="container mx-auto max-w-5xl animate-fade-in">
+        <div className="container mx-auto max-w-4xl animate-fade-in">
           <h2 className="text-4xl font-serif font-semibold text-center mb-4">Time to Value</h2>
           <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto mb-12">
             How the design system accelerated value delivery
@@ -262,7 +269,7 @@ const DesignSystemCaseStudy = () => {
 
       {/* Process Section */}
       <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-5xl space-y-8">
+        <div className="container mx-auto max-w-4xl space-y-8">
           <h2 className="text-4xl font-serif font-semibold text-center animate-fade-in">Process</h2>
           
           {/* Double Diamond Visual */}
@@ -354,7 +361,7 @@ const DesignSystemCaseStudy = () => {
 
       {/* Heuristics Evaluation */}
       <section className="py-16 px-6">
-        <div className="container mx-auto max-w-5xl space-y-8">
+        <div className="container mx-auto max-w-4xl space-y-8">
           <h2 className="text-4xl font-serif font-semibold text-center animate-fade-in">Usability Heuristics Evaluation</h2>
           <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: "0.1s" }}>
             We used Nielsen's heuristics to evaluate usability improvements across the portfolio as the design system matured, giving us a structured way to communicate impact beyond internal metrics.
@@ -448,7 +455,7 @@ const DesignSystemCaseStudy = () => {
         </div>
       </section>
       <section className="py-16 px-6">
-        <div className="container mx-auto max-w-5xl space-y-8">
+        <div className="container mx-auto max-w-4xl space-y-8">
           <h2 className="text-4xl font-serif font-semibold text-center animate-fade-in">Before & After</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             <Card className="border-destructive/20">
@@ -503,7 +510,7 @@ const DesignSystemCaseStudy = () => {
 
       {/* Results and Learnings */}
       <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-5xl space-y-12">
+        <div className="container mx-auto max-w-4xl space-y-12">
           <h2 className="text-4xl font-serif font-semibold text-center animate-fade-in">Results and Learnings</h2>
           
           {/* Key Achievements */}
@@ -615,7 +622,7 @@ const DesignSystemCaseStudy = () => {
 
       {/* Footer CTA */}
       <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-5xl text-center space-y-6 animate-fade-in">
+        <div className="container mx-auto max-w-4xl text-center space-y-6 animate-fade-in">
           <h2 className="text-3xl font-serif font-semibold">Interested in learning more?</h2>
           <Link to="/#work" className="inline-block mt-4">
             <Button size="lg" className="bg-primary hover:bg-primary/90">
