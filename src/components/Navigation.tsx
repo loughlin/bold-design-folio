@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import ThemeToggle from "@/components/ThemeToggle";
 import { useScrollToSection } from "@/hooks/useScrollToSection";
@@ -9,6 +9,7 @@ const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { scrollToSection } = useScrollToSection();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,12 +32,25 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link
-            to="/"
-            className="hover:opacity-80 transition-opacity"
-          >
-            <span className="text-2xl font-serif font-bold">James Loughlin</span>
-          </Link>
+          {location.pathname === "/" ? (
+            <button
+              onClick={() => {
+                const el = document.getElementById("about");
+                if (el) el.scrollIntoView({ behavior: "smooth" });
+                else window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+              className="hover:opacity-80 transition-opacity"
+            >
+              <span className="text-2xl font-serif font-bold">James Loughlin</span>
+            </button>
+          ) : (
+            <Link
+              to="/"
+              className="hover:opacity-80 transition-opacity"
+            >
+              <span className="text-2xl font-serif font-bold">James Loughlin</span>
+            </Link>
+          )}
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
