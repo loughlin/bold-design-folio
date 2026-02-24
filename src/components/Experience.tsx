@@ -14,7 +14,7 @@ const Experience = () => {
             <a href="/James_Loughlin_Resume_2026_v4.pdf" download>
               <Button className="gap-2">
                 <Download className="h-5 w-5" />
-                Download Resume
+                Resume
               </Button>
             </a>
           </div>
