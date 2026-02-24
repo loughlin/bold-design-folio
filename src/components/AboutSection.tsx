@@ -29,9 +29,9 @@ const AboutSection = () => {
               <span className="px-4 py-2 bg-primary/10 text-primary text-sm font-medium">
                 Team Building
               </span>
-              <Button size="sm" variant="outline" asChild className="ml-auto">
+              <Button size="lg" variant="outline" asChild className="ml-auto">
                 <a href="/James_Loughlin_Resume_2026_v4.pdf" download>
-                  <Download className="mr-2 h-4 w-4" />
+                  <Download className="mr-2 h-5 w-5" />
                   Resume
                 </a>
               </Button>
