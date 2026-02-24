@@ -19,7 +19,7 @@ const AboutSection = () => {
           {/* Right Column - Content */}
           <div className="lg:col-span-7 space-y-8 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             {/* Role tagline */}
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3 items-center">
               <span className="px-4 py-2 bg-primary/10 text-primary text-sm font-medium">
                 Design Leadership
               </span>
@@ -29,6 +29,12 @@ const AboutSection = () => {
               <span className="px-4 py-2 bg-primary/10 text-primary text-sm font-medium">
                 Team Building
               </span>
+              <Button size="sm" variant="outline" asChild className="ml-auto">
+                <a href="/James_Loughlin_Resume_2026_v4.pdf" download>
+                  <Download className="mr-2 h-4 w-4" />
+                  Resume
+                </a>
+              </Button>
             </div>
 
             <h1 className="text-2xl md:text-3xl font-bold">
