@@ -11,7 +11,7 @@ const Experience = () => {
         <div className="mb-10 space-y-3 animate-fade-in">
           <div className="flex items-center justify-between gap-4 flex-wrap">
             <h2 className="text-5xl md:text-6xl font-bold">Experience</h2>
-            <a href="/James_Loughlin_Resume_2026_v4.pdf" download>
+            <a href="/James_Loughlin_Resume_2026_v5.pdf" download>
               <Button className="gap-2">
                 <Download className="h-5 w-5" />
                 Resume
