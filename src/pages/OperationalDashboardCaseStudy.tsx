@@ -20,11 +20,18 @@ const OperationalDashboardCaseStudy = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="pt-24 pb-16 px-6">
-        <div className="container mx-auto max-w-6xl">
+      <section className="pt-32 pb-8 px-6">
+        <div className="container mx-auto max-w-4xl">
+          <Link 
+            to="/#work" 
+            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to Case Studies
+          </Link>
           <div className="space-y-4 mb-12 animate-fade-in">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold">Operational Data Dashboard</h1>
-            <p className="text-2xl text-muted-foreground">Redesigning a monitoring tool that engineers had built for engineers — and making it work for the operators who actually depended on it.</p>
+            <h1 className="text-4xl md:text-5xl font-bold">Operational Data Dashboard</h1>
+            <p className="text-xl text-muted-foreground">Redesigning a monitoring tool that engineers had built for engineers — and making it work for the operators who actually depended on it.</p>
           </div>
           <div className="overflow-hidden animate-fade-in" style={{ animationDelay: "0.1s" }}>
             <SystemOverviewMockup />
@@ -34,7 +41,7 @@ const OperationalDashboardCaseStudy = () => {
 
       {/* Project Overview */}
       <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-6xl">
+        <div className="container mx-auto max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="animate-fade-in">
               <CardContent className="p-6">
@@ -73,7 +80,7 @@ const OperationalDashboardCaseStudy = () => {
 
       {/* Problem & Problem Statement */}
       <section className="py-16 px-6">
-        <div className="container mx-auto max-w-6xl space-y-12">
+        <div className="container mx-auto max-w-4xl space-y-12">
           <div className="space-y-6 animate-fade-in">
             <h2 className="text-3xl font-bold">The Problem</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -97,7 +104,7 @@ const OperationalDashboardCaseStudy = () => {
 
       {/* Design Process */}
       <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-6xl space-y-8 animate-fade-in">
+        <div className="container mx-auto max-w-4xl space-y-8 animate-fade-in">
           <div className="space-y-4">
             <h2 className="text-3xl font-bold">Design Process</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -184,7 +191,7 @@ const OperationalDashboardCaseStudy = () => {
 
       {/* Understanding Our Users */}
       <section className="py-16 px-6">
-        <div className="container mx-auto max-w-6xl space-y-12">
+        <div className="container mx-auto max-w-4xl space-y-12">
           <div className="space-y-6 animate-fade-in">
             <h2 className="text-3xl font-bold">Understanding Our Users</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -217,7 +224,7 @@ const OperationalDashboardCaseStudy = () => {
 
       {/* Restructuring IA + Dashboard Mockup */}
       <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-6xl space-y-12">
+        <div className="container mx-auto max-w-4xl space-y-12">
           <div className="space-y-6 animate-fade-in">
             <h2 className="text-3xl font-bold">Restructuring the Information Architecture</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -237,7 +244,7 @@ const OperationalDashboardCaseStudy = () => {
 
       {/* Redesigning the Dashboard */}
       <section className="py-16 px-6">
-        <div className="container mx-auto max-w-6xl space-y-12">
+        <div className="container mx-auto max-w-4xl space-y-12">
           <div className="space-y-6 animate-fade-in">
             <h2 className="text-3xl font-bold">Redesigning the Dashboard</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -275,7 +282,7 @@ const OperationalDashboardCaseStudy = () => {
 
       {/* What Testing Revealed */}
       <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-6xl space-y-12">
+        <div className="container mx-auto max-w-4xl space-y-12">
           <div className="space-y-6 animate-fade-in">
             <h2 className="text-3xl font-bold">What Testing Revealed</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -300,7 +307,7 @@ const OperationalDashboardCaseStudy = () => {
 
       {/* Time to Value + Outcomes Chart */}
       <section className="py-16 px-6">
-        <div className="container mx-auto max-w-6xl space-y-8">
+        <div className="container mx-auto max-w-4xl space-y-8">
           <h2 className="text-3xl font-bold animate-fade-in">Time to Value</h2>
 
           {/* Outcomes Chart Visual */}
@@ -361,7 +368,7 @@ const OperationalDashboardCaseStudy = () => {
 
       {/* Final Design Mockups */}
       <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-6xl space-y-8">
+        <div className="container mx-auto max-w-4xl space-y-8">
           <div className="space-y-4 animate-fade-in">
             <SystemOverviewMockup />
           </div>
@@ -379,7 +386,7 @@ const OperationalDashboardCaseStudy = () => {
 
       {/* Outcomes */}
       <section className="py-16 px-6 bg-primary/5">
-        <div className="container mx-auto max-w-6xl space-y-8">
+        <div className="container mx-auto max-w-4xl space-y-8">
           <h2 className="text-3xl font-bold animate-fade-in">Outcomes & Impact</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
@@ -400,7 +407,7 @@ const OperationalDashboardCaseStudy = () => {
 
       {/* Footer CTA */}
       <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-6xl text-center space-y-6 animate-fade-in">
+        <div className="container mx-auto max-w-4xl text-center space-y-6 animate-fade-in">
           <h2 className="text-3xl font-bold">Interested in learning more?</h2>
           <Link to="/#work" className="inline-block mt-4">
             <Button size="lg" className="bg-primary hover:bg-primary/90">
