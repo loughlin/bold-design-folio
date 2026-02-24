@@ -84,7 +84,7 @@ const AboutSection = () => {
                 </a>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <a href="/James_Loughlin_CV_2025v3.pdf" download>
+                <a href="/James_Loughlin_Resume_2026_v4.pdf" download>
                   <Download className="mr-2 h-5 w-5" />
                   Resume
                 </a>
