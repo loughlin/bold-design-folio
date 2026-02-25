@@ -87,6 +87,14 @@ const DesignSystemCaseStudy = () => {
         </div>
       </section>
 
+      {/* Design Tokens Hero Image */}
+      <section className="px-6 pb-8">
+        <div className="container mx-auto max-w-4xl animate-fade-in" style={{ animationDelay: "0.3s" }}>
+          <img src={dsDesignTokens} alt="Design Tokens — Color, Typography & Spacing" className="w-full rounded-lg shadow-md" />
+          <p className="text-center text-muted-foreground text-sm mt-4">Design Tokens — Color, Typography & Spacing</p>
+        </div>
+      </section>
+
       {/* Background Section */}
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-4xl text-center space-y-8">
@@ -270,10 +278,6 @@ const DesignSystemCaseStudy = () => {
       {/* Design System Artifacts */}
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-4xl space-y-8 animate-fade-in">
-          <div className="space-y-4">
-            <img src={dsDesignTokens} alt="Design Tokens — Color, Typography & Spacing" className="w-full rounded-lg shadow-md" />
-            <p className="text-center text-muted-foreground text-sm">Design Tokens — Color, Typography & Spacing</p>
-          </div>
           <div className="space-y-4">
             <img src={dsComponentLibrary} alt="Component Library — Custom MUI Theme" className="w-full rounded-lg shadow-md" />
             <p className="text-center text-muted-foreground text-sm">Component Library — Custom MUI Theme</p>
