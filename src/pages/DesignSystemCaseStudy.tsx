@@ -7,6 +7,8 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import AdoptionImpactTable from "@/components/AdoptionImpactTable";
 import PortfolioEfficiencyChart from "@/components/PortfolioEfficiencyChart";
+import dsDesignTokens from "@/assets/ds-design-tokens.png";
+import dsComponentLibrary from "@/assets/ds-component-library.png";
 
 
 const DesignSystemCaseStudy = () => {
@@ -265,6 +267,19 @@ const DesignSystemCaseStudy = () => {
         </div>
       </section>
 
+      {/* Design System Artifacts */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-4xl space-y-8 animate-fade-in">
+          <div className="space-y-4">
+            <img src={dsDesignTokens} alt="Design Tokens — Color, Typography & Spacing" className="w-full rounded-lg shadow-md" />
+            <p className="text-center text-muted-foreground text-sm">Design Tokens — Color, Typography & Spacing</p>
+          </div>
+          <div className="space-y-4">
+            <img src={dsComponentLibrary} alt="Component Library — Custom MUI Theme" className="w-full rounded-lg shadow-md" />
+            <p className="text-center text-muted-foreground text-sm">Component Library — Custom MUI Theme</p>
+          </div>
+        </div>
+      </section>
 
 
       {/* Process Section */}
