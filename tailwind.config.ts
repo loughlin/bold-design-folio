@@ -7,15 +7,29 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: "1.5rem",
       screens: {
-        "2xl": "1400px",
+        "2xl": "1200px",
       },
     },
     extend: {
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
         mono: ['Geist Mono', 'JetBrains Mono', 'Fira Code', 'monospace'],
+      },
+      spacing: {
+        /* 8pt grid tokens */
+        '18': '4.5rem',   /* 72px */
+        '22': '5.5rem',   /* 88px */
+        '26': '6.5rem',   /* 104px */
+        '30': '7.5rem',   /* 120px */
+      },
+      maxWidth: {
+        'reading': '800px',
+        'content': '1200px',
+      },
+      gap: {
+        'grid': '1.5rem',  /* 24px — uniform bento gutter */
       },
       colors: {
         border: "hsl(var(--border))",

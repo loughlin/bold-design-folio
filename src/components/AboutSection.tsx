@@ -4,15 +4,15 @@ import jamesProfileBw from "@/assets/james-profile-bw.jpg";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="pt-8 pb-24 md:pb-32 px-6 scroll-mt-20">
+    <section id="about" className="pt-8 section-spacing px-6 scroll-mt-20">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
           {/* Left Column - Photo */}
           <div className="lg:col-span-5 animate-fade-in">
             <img
               src={jamesProfileBw}
               alt="James Loughlin"
-              className="w-full h-full object-cover max-w-md mx-auto lg:mx-0 lg:max-w-none rounded-2xl grayscale"
+              className="w-full h-full object-cover max-w-md mx-auto lg:mx-0 lg:max-w-none rounded-[24px] grayscale"
             />
           </div>
 
@@ -25,9 +25,9 @@ const AboutSection = () => {
                   {tag}
                 </span>
               ))}
-              <Button size="sm" variant="outline" asChild className="ml-auto rounded-full">
+              <Button size="sm" variant="outline" asChild className="ml-auto rounded-[24px]">
                 <a href="/James_Loughlin_Resume_2026_v6.pdf" download>
-                  <Download className="mr-1.5 h-3.5 w-3.5" />
+                  <Download className="mr-2 h-4 w-4" />
                   Resume
                 </a>
               </Button>
@@ -37,7 +37,7 @@ const AboutSection = () => {
               Hi, I'm James. <span className="text-gradient">I help teams build software that actually works for the people using it.</span>
             </h1>
 
-            <div className="space-y-5">
+            <div className="space-y-4">
               <p className="text-base text-muted-foreground leading-relaxed">
                 I started as a hands-on product designer and grew into management because I kept seeing the same thing: great design work dying in organizations that didn't know how to support it. So I learned how to build the conditions where good work becomes the default.
               </p>
@@ -58,26 +58,26 @@ const AboutSection = () => {
               ].map((stat) => (
                 <div key={stat.label} className="text-center lg:text-left">
                   <div className="text-2xl font-bold text-foreground">{stat.value}</div>
-                  <div className="text-xs text-muted-foreground mt-0.5">{stat.label}</div>
+                  <div className="text-xs text-muted-foreground mt-1">{stat.label}</div>
                 </div>
               ))}
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-3">
-              <Button size="default" asChild className="rounded-full">
+              <Button size="default" asChild className="rounded-[24px]">
                 <a href="mailto:jloughlin87@gmail.com">
                   <Mail className="mr-2 h-4 w-4" />
                   Email Me
                 </a>
               </Button>
-              <Button size="default" variant="outline" asChild className="rounded-full">
+              <Button size="default" variant="outline" asChild className="rounded-[24px]">
                 <a href="https://www.linkedin.com/in/jameslloughlin/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="mr-2 h-4 w-4" />
                   LinkedIn
                 </a>
               </Button>
-              <Button size="default" variant="outline" asChild className="rounded-full">
+              <Button size="default" variant="outline" asChild className="rounded-[24px]">
                 <a href="/James_Loughlin_Resume_2026_v6.pdf" download>
                   <Download className="mr-2 h-4 w-4" />
                   Resume

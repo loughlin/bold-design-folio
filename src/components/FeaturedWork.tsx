@@ -1,28 +1,26 @@
-import { Button } from "@/components/ui/button";
 import { ArrowRight, Lock } from "lucide-react";
 import { Link } from "react-router-dom";
 import ProtectedLink from "@/components/ProtectedLink";
 import { projects } from "@/data/projects";
 
 const FeaturedWork = () => {
-  // Bento grid: varied sizes for visual interest
   const getGridClass = (index: number) => {
-    if (index === 0) return "md:col-span-2"; // Hero card — full width
-    if (index === 3) return "md:col-span-2"; // 4th card — full width
+    if (index === 0) return "md:col-span-2";
+    if (index === 3) return "md:col-span-2";
     return "md:col-span-1";
   };
 
   return (
-    <section id="work" className="py-24 md:py-32 px-6 scroll-mt-20">
+    <section id="work" className="section-spacing px-6 scroll-mt-20">
       <div className="container mx-auto">
         {/* Section Header */}
-        <div className="mb-16 animate-fade-in">
-          <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest mb-3">Selected Projects</p>
+        <div className="section-header-spacing animate-fade-in">
+          <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest mb-2">Selected Projects</p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">My Work</h2>
         </div>
 
-        {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* Bento Grid — uniform 24px gutters */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => {
             const CardWrapper = ({ children }: { children: React.ReactNode }) =>
               project.isPublic ? (
@@ -37,7 +35,7 @@ const FeaturedWork = () => {
                   className={`group relative overflow-hidden rounded-[24px] border border-border/60 bg-card transition-all duration-500 hover:border-border hover:shadow-xl hover:-translate-y-1 hover:scale-[1.01] animate-fade-in ${getGridClass(index)}`}
                   style={{ animationDelay: `${index * 0.08}s` }}
                 >
-                  {/* Image with inner stroke */}
+                  {/* Image */}
                   <div className={`relative overflow-hidden ${index === 0 || index === 3 ? "h-64 md:h-80" : "h-48 md:h-56"}`}>
                     <img
                       src={project.image}
@@ -45,11 +43,10 @@ const FeaturedWork = () => {
                       className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-[1.02]"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent" />
-                    {/* Inner stroke */}
                     <div className="absolute inset-0 ring-1 ring-inset ring-[hsl(var(--image-stroke))] pointer-events-none" />
                   </div>
 
-                  {/* Content */}
+                  {/* Content — 8pt padding: 24px on mobile, 32px on desktop */}
                   <div className="p-6 md:p-8">
                     <div className="flex items-center gap-2 mb-2">
                       <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">

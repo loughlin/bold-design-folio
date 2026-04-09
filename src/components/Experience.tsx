@@ -4,17 +4,17 @@ import { experiences } from "@/data/experiences";
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-24 md:py-32 px-6 scroll-mt-20">
+    <section id="experience" className="section-spacing px-6 scroll-mt-20">
       <div className="container mx-auto">
         {/* Section Header */}
-        <div className="mb-16 animate-fade-in">
+        <div className="section-header-spacing animate-fade-in">
           <div className="flex items-end justify-between gap-4 flex-wrap">
             <div>
-              <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest mb-3">Career</p>
+              <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest mb-2">Career</p>
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Experience</h2>
             </div>
             <a href="/James_Loughlin_Resume_2026_v6.pdf" download>
-              <Button variant="outline" className="gap-2 rounded-full">
+              <Button variant="outline" className="gap-2 rounded-[24px]">
                 <Download className="h-4 w-4" />
                 Resume
               </Button>
@@ -22,12 +22,12 @@ const Experience = () => {
           </div>
         </div>
 
-        {/* Experience Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {/* Experience Cards — 24px uniform gutters */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className={`group p-7 rounded-2xl border border-border/60 bg-card transition-all duration-400 hover:border-border hover:shadow-md hover:-translate-y-1 animate-fade-in ${
+              className={`group p-6 rounded-[24px] border border-border/60 bg-card transition-all duration-400 hover:border-border hover:shadow-md hover:-translate-y-1 animate-fade-in ${
                 index === 0 ? "md:col-span-2 lg:col-span-3" : ""
               }`}
               style={{ animationDelay: `${index * 0.08}s` }}
@@ -36,7 +36,7 @@ const Experience = () => {
                 <h3 className="text-base font-semibold group-hover:text-primary transition-colors duration-300">
                   {exp.role}
                 </h3>
-                <span className="text-xs text-muted-foreground whitespace-nowrap ml-4 mt-0.5">
+                <span className="text-xs text-muted-foreground whitespace-nowrap ml-4 mt-1">
                   {exp.period}
                 </span>
               </div>
