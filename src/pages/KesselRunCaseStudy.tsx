@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CaseStudyProgress from "@/components/CaseStudyProgress";
+import CaseStudyFooterNav from "@/components/CaseStudyFooterNav";
 import ImageFrame from "@/components/ImageFrame";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
@@ -232,7 +233,7 @@ const KesselRunCaseStudy = () => {
               <p className="text-sm text-muted-foreground">Faster Design Delivery</p>
             </div>
             <div className="space-y-2">
-              <p className="text-4xl font-bold text-secondary">85%</p>
+              <p className="text-4xl font-bold text-primary">85%</p>
               <p className="text-sm text-muted-foreground">Designer Retention Rate</p>
             </div>
             <div className="space-y-2">
@@ -240,7 +241,7 @@ const KesselRunCaseStudy = () => {
               <p className="text-sm text-muted-foreground">Applications Shipped</p>
             </div>
             <div className="space-y-2">
-              <p className="text-4xl font-bold text-secondary">1,000s</p>
+              <p className="text-4xl font-bold text-primary">1,000s</p>
               <p className="text-sm text-muted-foreground">Daily Active Users</p>
             </div>
           </div>
@@ -250,7 +251,7 @@ const KesselRunCaseStudy = () => {
               <p className="text-sm text-muted-foreground">Designers Managed</p>
             </div>
             <div className="text-center">
-              <p className="text-2xl font-bold text-secondary">6</p>
+              <p className="text-2xl font-bold text-primary">6</p>
               <p className="text-sm text-muted-foreground">Operational Missions Supported</p>
             </div>
             <div className="text-center">
@@ -631,17 +632,7 @@ const KesselRunCaseStudy = () => {
         </div>
       </section>
 
-      {/* Footer CTA */}
-      <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-4xl text-center space-y-6">
-          <h2 className="text-3xl font-bold">Interested in learning more?</h2>
-          <Link to="/#work" className="inline-block mt-4">
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
-              View More Case Studies
-            </Button>
-          </Link>
-        </div>
-      </section>
+      <CaseStudyFooterNav currentSlug="kessel-run" />
 
       <Footer />
     </div>
