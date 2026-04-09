@@ -1,4 +1,4 @@
-import { Linkedin, Mail } from "lucide-react";
+import { Linkedin, Mail, Download } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,6 +15,9 @@ const Footer = () => {
               </a>
               <a href="https://www.linkedin.com/in/jameslloughlin/" target="_blank" rel="noopener noreferrer" className="text-background/60 hover:text-background transition-colors duration-300">
                 <Linkedin className="w-4 h-4" />
+              </a>
+              <a href="/James_Loughlin_Resume_2026_v6.pdf" download className="text-background/60 hover:text-background transition-colors duration-300">
+                <Download className="w-4 h-4" />
               </a>
             </div>
           </div>
