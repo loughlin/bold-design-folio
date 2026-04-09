@@ -9,7 +9,7 @@ interface ImageFrameProps {
 const ImageFrame = ({ src, alt, caption, aspectRatio = "16/9", className = "" }: ImageFrameProps) => {
   return (
     <div className={`space-y-3 ${className}`}>
-      <div className="relative rounded-[24px] overflow-hidden">
+      <div className="relative rounded-[24px] overflow-hidden shadow-elevated">
         <img
           src={src}
           alt={alt}
