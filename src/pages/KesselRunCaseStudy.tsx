@@ -103,13 +103,12 @@ const KesselRunCaseStudy = () => {
       {/* Image with Caption */}
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-5xl">
-          <div className="rounded-xl overflow-hidden shadow-lg aspect-[16/9]">
-            <img
-              src={kesselRunCaoc2021}
-              alt="U.S. Central Command's Combined Air Operations Center at Al Udeid Air Base"
-              className="w-full h-full object-cover"
-            />
-          </div>
+          <ImageFrame
+            src={kesselRunCaoc2021}
+            alt="U.S. Central Command's Combined Air Operations Center at Al Udeid Air Base"
+            caption="Operations Center"
+            aspectRatio="16/9"
+          />
           <p className="text-sm text-muted-foreground text-center mt-4 italic">
             Combined Air Operations Center operations and intelligence workflows
           </p>
@@ -450,25 +449,23 @@ const KesselRunCaseStudy = () => {
         <div className="container mx-auto max-w-5xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <div className="rounded-xl overflow-hidden shadow-lg aspect-[4/3]">
-                <img
-                  src={kesselRunHq}
-                  alt="Col. Richard Lopez briefs at Kessel Run headquarters in Boston"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <ImageFrame
+                src={kesselRunHq}
+                alt="Col. Richard Lopez briefs at Kessel Run headquarters in Boston"
+                caption="HQ Boston"
+                aspectRatio="4/3"
+              />
               <p className="text-sm text-muted-foreground text-center mt-4 italic">
                 Kessel Run headquarters in Boston, Massachusetts
               </p>
             </div>
             <div>
-              <div className="rounded-xl overflow-hidden shadow-lg aspect-[4/3]">
-                <img
-                  src={kesselRunLeadership}
-                  alt="Air Forces Central leadership"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <ImageFrame
+                src={kesselRunLeadership}
+                alt="Air Forces Central leadership"
+                caption="Leadership Collaboration"
+                aspectRatio="4/3"
+              />
               <p className="text-sm text-muted-foreground text-center mt-4 italic">
                 Cross-functional collaboration with Air Force leadership
               </p>
@@ -523,13 +520,12 @@ const KesselRunCaseStudy = () => {
       {/* Full Width Image */}
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-5xl">
-          <div className="rounded-xl overflow-hidden shadow-lg aspect-[16/9]">
-            <img
-              src={kesselRunCaoc2003}
-              alt="Combined Air Operations Center at Prince Sultan Air Base, Saudi Arabia"
-              className="w-full h-full object-cover"
-            />
-          </div>
+          <ImageFrame
+            src={kesselRunCaoc2003}
+            alt="Combined Air Operations Center at Prince Sultan Air Base, Saudi Arabia"
+            caption="Command & Control"
+            aspectRatio="16/9"
+          />
           <p className="text-sm text-muted-foreground text-center mt-4 italic">
             Air Force command and control operations supporting mission-critical software
           </p>
