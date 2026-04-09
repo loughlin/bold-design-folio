@@ -28,30 +28,30 @@ const DesignSystemCaseStudy = () => {
     {
       name: "Discover",
       type: "divergent" as const,
-      description: "Understanding the problem space through research and exploration.",
+      description: "Understanding the problem space through research and talking to the people doing the work.",
     },
     {
       name: "Define",
       type: "convergent" as const,
-      description: "Synthesizing insights to define clear problem statements.",
+      description: "Turning what we learned into clear problem statements worth solving.",
     },
     {
       name: "Develop",
       type: "divergent" as const,
-      description: "Generating and iterating on potential solutions.",
+      description: "Generating solutions and iterating until they hold up under real conditions.",
     },
     {
       name: "Deliver",
       type: "convergent" as const,
-      description: "Refining and delivering the final solution.",
+      description: "Refining, testing, and shipping the final solution.",
     },
   ];
 
   const challenges = [
-    "Products were running a variety of technical stacks alongside an assortment of custom components and different component libraries, making any unified foundation feel out of reach.",
-    "Teams had grown attached to their unique solutions to common problems, which made adoption a change management challenge as much as a design one.",
-    "Any out-of-the-box component library would lack documentation for the custom and organization-specific components that teams genuinely needed.",
-    "Existing wireframe libraries wouldn't carry Kessel Run's theming or custom components, which would leave designers unable to prototype quickly even after the engineering side was solved.",
+    "Products ran different tech stacks with a mix of custom components and third-party libraries — any unified foundation felt out of reach.",
+    "Teams were attached to their own solutions for common problems, making adoption as much a change management challenge as a design one.",
+    "No off-the-shelf component library could cover the custom, organization-specific components teams actually needed — and without documentation for those, adoption would stall.",
+    "Existing wireframe kits didn't carry Kessel Run's theming or custom components, leaving designers unable to prototype quickly even after the engineering side was solved.",
   ];
 
   const keyAchievements = [
