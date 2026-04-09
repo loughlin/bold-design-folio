@@ -17,7 +17,6 @@ const CaseStudySideNav = ({ sections }: CaseStudySideNavProps) => {
       (entries) => {
         const visible = entries.filter((e) => e.isIntersecting);
         if (visible.length > 0) {
-          // Pick the one closest to top
           const sorted = visible.sort(
             (a, b) => a.boundingClientRect.top - b.boundingClientRect.top
           );
@@ -38,12 +37,13 @@ const CaseStudySideNav = ({ sections }: CaseStudySideNavProps) => {
   const handleClick = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
+      /* scroll-padding-top on <html> handles the nav offset */
       el.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
   return (
-    <nav className="hidden xl:block sticky top-32 self-start w-48 shrink-0">
+    <nav className="hidden xl:block sticky top-24 self-start w-48 shrink-0">
       <p className="text-[10px] font-technical font-semibold tracking-[0.15em] uppercase text-muted-foreground mb-4">
         On this page
       </p>
