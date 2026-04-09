@@ -52,7 +52,7 @@ const FeaturedWork = () => {
                         <Lock className="h-3 w-3 text-muted-foreground" />
                       )}
                     </div>
-                    <h3 className={`font-bold mb-2 tracking-tight ${index === 0 || index === 3 ? "text-2xl md:text-3xl" : "text-xl md:text-2xl"}`}>
+                    <h3 className="font-bold mb-2 tracking-tight text-xl md:text-2xl">
                       {project.title}
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed mb-4 line-clamp-2">
