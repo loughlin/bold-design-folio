@@ -38,12 +38,12 @@ const KesselRunCaseStudy = () => {
       <CaseStudyProgress />
       <Navigation />
 
-      {/* Hero Section */}
-      <section className="pt-32 pb-8 px-6">
-        <div className="container mx-auto max-w-4xl">
+      {/* Hero */}
+      <section className="pt-24 pb-8 px-6">
+        <div className="container mx-auto max-w-reading">
           <Link
             to="/#work"
-            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8"
+            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8 rounded-[24px]"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Case Studies
@@ -62,12 +62,12 @@ const KesselRunCaseStudy = () => {
       </section>
 
       {/* Body with sticky side nav */}
-      <div className="container mx-auto max-w-6xl px-6 flex gap-12">
+      <div className="container mx-auto max-w-content px-6 flex gap-12">
         <CaseStudySideNav sections={sections} />
 
-        <div className="flex-1 min-w-0 max-w-4xl">
+        <div className="flex-1 min-w-0 max-w-reading">
           {/* Overview */}
-          <section id="overview" className="py-16">
+          <section id="overview" className="section-spacing scroll-mt-20">
             <KeyTakeaway>
               My job was never just about the screens. It was about building the conditions where good work becomes the default.
             </KeyTakeaway>
@@ -83,7 +83,7 @@ const KesselRunCaseStudy = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
               <ArtifactCard
                 label="Tools & Methods"
                 icon="🛠"
@@ -111,7 +111,7 @@ const KesselRunCaseStudy = () => {
           </section>
 
           {/* Problem Statement */}
-          <section id="problem" className="py-16 border-t border-border/30">
+          <section id="problem" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               How might we unify fragmented design practices to deliver consistent, mission-critical experiences at scale?
             </KeyTakeaway>
@@ -140,7 +140,7 @@ const KesselRunCaseStudy = () => {
           </section>
 
           {/* Opportunity */}
-          <section id="opportunity" className="py-16 border-t border-border/30">
+          <section id="opportunity" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               Kessel Run understood early that design was a strategic investment, not a finishing step.
             </KeyTakeaway>
@@ -155,7 +155,7 @@ const KesselRunCaseStudy = () => {
           </section>
 
           {/* Design Process */}
-          <section id="process" className="py-16 border-t border-border/30">
+          <section id="process" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               The Double Diamond gave designers a common vocabulary and helped stakeholders understand where we were in a project.
             </KeyTakeaway>
@@ -191,20 +191,20 @@ const KesselRunCaseStudy = () => {
             </div>
 
             {/* Phase Details */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 { name: "Discover", desc: "Getting close to users through hands-on research.", items: ["Contextual inquiries", "Stakeholder interviews", "Direct observation"] },
                 { name: "Define", desc: "Turning research into clear problem statements.", items: ["Problem framing", "Journey mapping", "Requirements synthesis"] },
                 { name: "Develop", desc: "Testing solutions with the whole team.", items: ["Concept ideation", "Rapid prototyping", "Design critiques"] },
                 { name: "Deliver", desc: "Shipping validated work through structured testing.", items: ["Usability testing", "Design handoff", "Continuous iteration"] },
               ].map((phase, index) => (
-                <ArtifactCard key={index} label={phase.name} items={phase.items} className="!p-5" />
+                <ArtifactCard key={index} label={phase.name} items={phase.items} className="!p-6" />
               ))}
             </div>
           </section>
 
           {/* Impact Metrics */}
-          <section id="impact" className="py-16 border-t border-border/30">
+          <section id="impact" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               Measurable outcomes across design delivery, retention, and operational reach.
             </KeyTakeaway>
@@ -234,7 +234,6 @@ const KesselRunCaseStudy = () => {
               ))}
             </div>
 
-            {/* Impact descriptions */}
             <div className="space-y-6 mt-12 text-muted-foreground leading-relaxed">
               <div>
                 <h3 className="text-lg font-semibold text-foreground mb-1">40% Faster Design Delivery</h3>
@@ -256,11 +255,11 @@ const KesselRunCaseStudy = () => {
           </section>
 
           {/* Time to Value */}
-          <section id="time-to-value" className="py-16 border-t border-border/30">
+          <section id="time-to-value" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               Design leadership accelerated value delivery across every measurable dimension.
             </KeyTakeaway>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 { value: "40%", label: "Faster Delivery", desc: "Standardizing design-to-dev handoff reduced time between finalized design and developer pickup." },
                 { value: "35%", label: "Less Rework", desc: "Post-handoff design changes dropped once we introduced structured critique and alignment checkpoints." },
@@ -287,11 +286,11 @@ const KesselRunCaseStudy = () => {
           </section>
 
           {/* Heuristics */}
-          <section id="heuristics" className="py-16 border-t border-border/30">
+          <section id="heuristics" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               Nielsen's heuristics gave our recommendations credibility with stakeholders who might otherwise have read them as subjective.
             </KeyTakeaway>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 { name: "User Control & Freedom", desc: "Consistent undo/redo patterns and confirmation dialogs for high-consequence actions.", before: 2, after: 4 },
                 { name: "Visibility of System Status", desc: "Real-time feedback for data sync, processing states, and system health.", before: 2, after: 5 },
@@ -300,9 +299,9 @@ const KesselRunCaseStudy = () => {
                 { name: "Flexibility & Efficiency", desc: "Keyboard shortcuts and customizable dashboards for experienced operators.", before: 2, after: 4 },
                 { name: "Consistency & Standards", desc: "Cross-team design standards unified interaction patterns across the portfolio.", before: 2, after: 5 },
               ].map((h, i) => (
-                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-5 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-6 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                   <div className="flex items-center gap-3">
-                    <div className="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xs">{i + 1}</div>
+                    <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xs">{i + 1}</div>
                     <h3 className="font-semibold text-sm">{h.name}</h3>
                   </div>
                   <p className="text-sm text-muted-foreground">{h.desc}</p>
@@ -317,21 +316,21 @@ const KesselRunCaseStudy = () => {
           </section>
 
           {/* Photos */}
-          <section className="py-16 border-t border-border/30">
+          <section className="section-spacing border-t border-border/30">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <ImageFrame src={kesselRunHq} alt="Kessel Run headquarters" caption="HQ Boston" aspectRatio="4/3" />
-                <p className="text-sm text-muted-foreground text-center mt-3 italic">Kessel Run headquarters in Boston</p>
+                <p className="text-sm text-muted-foreground text-center mt-4 italic">Kessel Run headquarters in Boston</p>
               </div>
               <div>
                 <ImageFrame src={kesselRunLeadership} alt="Air Forces Central leadership" caption="Leadership Collaboration" aspectRatio="4/3" />
-                <p className="text-sm text-muted-foreground text-center mt-3 italic">Cross-functional collaboration with Air Force leadership</p>
+                <p className="text-sm text-muted-foreground text-center mt-4 italic">Cross-functional collaboration with Air Force leadership</p>
               </div>
             </div>
           </section>
 
           {/* My Role */}
-          <section id="role" className="py-16 border-t border-border/30">
+          <section id="role" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               I set the standards that defined what good design looked like — then spent most of my time making sure teams could meet them.
             </KeyTakeaway>
@@ -358,7 +357,7 @@ const KesselRunCaseStudy = () => {
           </section>
 
           {/* Full Width Image */}
-          <section className="py-16 border-t border-border/30">
+          <section className="section-spacing border-t border-border/30">
             <ImageFrame
               src={kesselRunCaoc2003}
               alt="Combined Air Operations Center at Prince Sultan Air Base"
@@ -371,7 +370,7 @@ const KesselRunCaseStudy = () => {
           </section>
 
           {/* Workflow Transformation */}
-          <section id="transformation" className="py-16 border-t border-border/30">
+          <section id="transformation" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               From siloed design work to a portfolio-wide design community with shared standards.
             </KeyTakeaway>
@@ -398,7 +397,7 @@ const KesselRunCaseStudy = () => {
           </section>
 
           {/* Reflection */}
-          <section id="reflection" className="py-16 border-t border-border/30">
+          <section id="reflection" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               The most impactful thing I did was protect the space for good work to happen.
             </KeyTakeaway>
