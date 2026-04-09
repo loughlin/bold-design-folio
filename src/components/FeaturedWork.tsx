@@ -4,7 +4,7 @@ import ProtectedLink from "@/components/ProtectedLink";
 import { projects } from "@/data/projects";
 
 const FeaturedWork = () => {
-  const getGridClass = () => "md:col-span-1";
+  const getGridClass = (_index?: number) => "md:col-span-1";
 
   return (
     <section id="work" className="section-spacing px-6 scroll-mt-20">
