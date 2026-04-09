@@ -1,78 +1,38 @@
-import { Linkedin, Mail, Github } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="contact" className="bg-foreground text-background py-10 px-6">
+    <footer id="contact" className="bg-foreground text-background py-16 px-6">
       <div className="container mx-auto">
-        {/* Main Footer Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex flex-col gap-3">
-              <a
-                href="mailto:jloughlin87@gmail.com"
-                className="text-background/80 hover:text-background transition-colors"
-              >
-                <Mail className="w-5 h-5" />
+            <div className="flex gap-4">
+              <a href="mailto:jloughlin87@gmail.com" className="text-background/60 hover:text-background transition-colors duration-300">
+                <Mail className="w-4 h-4" />
               </a>
-              <a
-                href="https://www.linkedin.com/in/jameslloughlin/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-background/80 hover:text-background transition-colors"
-              >
-                <Linkedin className="w-5 h-5" />
+              <a href="https://www.linkedin.com/in/jameslloughlin/" target="_blank" rel="noopener noreferrer" className="text-background/60 hover:text-background transition-colors duration-300">
+                <Linkedin className="w-4 h-4" />
               </a>
             </div>
           </div>
-          {/* Skills */}
-          <div className="space-y-4">
-            <h4 className="text-sm font-bold uppercase tracking-wider mb-4">Skills</h4>
-            <ul className="space-y-2 text-background/80 text-sm">
-              <li>Human-Centered Design</li>
-              <li>User Research</li>
-              <li>Design Systems</li>
-              <li>Prototyping</li>
-              <li>User Flows</li>
-              <li>Facilitation</li>
-              <li>Design Leadership</li>
-            </ul>
-          </div>
 
-          {/* Tools */}
-          <div className="space-y-4">
-            <h4 className="text-sm font-bold uppercase tracking-wider mb-4">Tools</h4>
-            <ul className="space-y-2 text-background/80 text-sm">
-              <li>Figma</li>
-              <li>Sketch</li>
-              <li>Miro</li>
-              <li>Mural</li>
-              <li>Adobe CC</li>
-              <li>Framer</li>
-              <li>Notion</li>
-            </ul>
-          </div>
-
-          {/* Technologies */}
-          <div className="space-y-4">
-            <h4 className="text-sm font-bold uppercase tracking-wider mb-4">Technologies</h4>
-            <ul className="space-y-2 text-background/80 text-sm">
-              <li>Git</li>
-              <li>Material Design</li>
-              <li>Airtable</li>
-              <li>ChatGPT</li>
-              <li>Claude</li>
-              <li>Lucid</li>
-              <li>Warp</li>
-            </ul>
-          </div>
+          {["Skills", "Tools", "Technologies"].map((section) => (
+            <div key={section} className="space-y-4">
+              <h4 className="text-xs font-semibold uppercase tracking-widest text-background/40 mb-4">{section}</h4>
+              <ul className="space-y-2 text-background/60 text-sm">
+                {section === "Skills" && ["Human-Centered Design", "User Research", "Design Systems", "Prototyping", "User Flows", "Facilitation", "Design Leadership"].map(i => <li key={i}>{i}</li>)}
+                {section === "Tools" && ["Figma", "Sketch", "Miro", "Mural", "Adobe CC", "Framer", "Notion"].map(i => <li key={i}>{i}</li>)}
+                {section === "Technologies" && ["Git", "Material Design", "Airtable", "ChatGPT", "Claude", "Lucid", "Warp"].map(i => <li key={i}>{i}</li>)}
+              </ul>
+            </div>
+          ))}
         </div>
 
-        {/* Bottom Bar */}
-        <div className="pt-8 border-t border-background/20 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-background/60 text-sm">
+        <div className="pt-8 border-t border-background/10">
+          <p className="text-background/40 text-xs">
             © {currentYear} James Loughlin. All rights reserved.
           </p>
         </div>

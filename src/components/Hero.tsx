@@ -8,27 +8,25 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="hero" className="flex flex-col justify-center pt-24 pb-10 px-6">
+    <section id="hero" className="flex flex-col justify-center pt-32 pb-12 px-6">
       <div className="container mx-auto">
-        <div className="flex flex-col gap-12">
-          {/* Top - UX Design Leader Banner */}
+        <div className="flex flex-col gap-6">
           <div
-            className={`transition-all duration-1000 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            className={`transition-all duration-700 ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <span className="text-sm font-semibold tracking-wide uppercase text-muted-foreground">
+            <span className="text-xs font-medium tracking-widest uppercase text-muted-foreground">
               UX Design Leader
             </span>
           </div>
 
-          {/* Text Content */}
           <div
-            className={`transition-all duration-1000 delay-300 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            className={`transition-all duration-700 delay-200 ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight max-w-4xl">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.15] max-w-3xl tracking-tight">
               I make complex software simpler by{" "}
               <span className="text-gradient">putting people at the center of every decision.</span>
             </h1>

@@ -15,7 +15,6 @@ const Navigation = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -26,8 +25,10 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/95 backdrop-blur-sm shadow-md" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        isScrolled
+          ? "bg-background/70 backdrop-blur-xl border-b border-border/50 shadow-sm"
+          : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-6 py-4">
@@ -39,72 +40,59 @@ const Navigation = () => {
                 if (el) el.scrollIntoView({ behavior: "smooth" });
                 else window.scrollTo({ top: 0, behavior: "smooth" });
               }}
-              className="hover:opacity-80 transition-opacity"
+              className="hover:opacity-70 transition-opacity duration-300"
             >
-              <span className="text-2xl font-serif font-bold">James Loughlin</span>
+              <span className="text-xl font-semibold tracking-tight">James Loughlin</span>
             </button>
           ) : (
-            <Link
-              to="/"
-              className="hover:opacity-80 transition-opacity"
-            >
-              <span className="text-2xl font-serif font-bold">James Loughlin</span>
+            <Link to="/" className="hover:opacity-70 transition-opacity duration-300">
+              <span className="text-xl font-semibold tracking-tight">James Loughlin</span>
             </Link>
           )}
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            <button
-              onClick={() => handleNavClick(NAV_SECTIONS.WORK)}
-              className="text-foreground hover:text-primary transition-colors font-medium"
-            >
-              My Work
-            </button>
-            <button
-              onClick={() => handleNavClick(NAV_SECTIONS.APPROACH)}
-              className="text-foreground hover:text-primary transition-colors font-medium"
-            >
-              UX Approach
-            </button>
-            <button
-              onClick={() => handleNavClick(NAV_SECTIONS.EXPERIENCE)}
-              className="text-foreground hover:text-primary transition-colors font-medium"
-            >
-              Experience
-            </button>
+            {[
+              { id: NAV_SECTIONS.WORK, label: "Work" },
+              { id: NAV_SECTIONS.APPROACH, label: "Approach" },
+              { id: NAV_SECTIONS.EXPERIENCE, label: "Experience" },
+            ].map((item) => (
+              <button
+                key={item.id}
+                onClick={() => handleNavClick(item.id)}
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-medium"
+              >
+                {item.label}
+              </button>
+            ))}
             <ThemeToggle />
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden"
+            className="md:hidden text-foreground"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 space-y-4 animate-fade-in">
-            <button
-              onClick={() => handleNavClick(NAV_SECTIONS.WORK)}
-              className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
-            >
-              My Work
-            </button>
-            <button
-              onClick={() => handleNavClick(NAV_SECTIONS.APPROACH)}
-              className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
-            >
-              UX Approach
-            </button>
-            <button
-              onClick={() => handleNavClick(NAV_SECTIONS.EXPERIENCE)}
-              className="block w-full text-left text-foreground hover:text-primary transition-colors font-medium"
-            >
-              Experience
-            </button>
+          <div className="md:hidden mt-6 pb-4 space-y-4 animate-fade-in">
+            {[
+              { id: NAV_SECTIONS.WORK, label: "Work" },
+              { id: NAV_SECTIONS.APPROACH, label: "Approach" },
+              { id: NAV_SECTIONS.EXPERIENCE, label: "Experience" },
+            ].map((item) => (
+              <button
+                key={item.id}
+                onClick={() => handleNavClick(item.id)}
+                className="block w-full text-left text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-medium"
+              >
+                {item.label}
+              </button>
+            ))}
           </div>
         )}
       </div>
