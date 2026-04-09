@@ -34,18 +34,18 @@ const AboutSection = () => {
             </div>
 
             <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
-              Hi, I'm James. <span className="text-gradient">I help teams build software that actually works for the people using it.</span>
+              Hi, I'm James. <span className="text-gradient">I design software and build the teams that ship it.</span>
             </h1>
 
             <div className="space-y-4">
               <p className="text-base text-muted-foreground leading-relaxed">
-                I started as a hands-on product designer and grew into management because I kept seeing the same thing: great design work dying in organizations that didn't know how to support it. So I learned how to build the conditions where good work becomes the default.
+                I started as a product designer. Moved into management when I figured out the design wasn't usually the problem — getting it through the org was. So I learned that part too.
               </p>
               <p className="text-base text-muted-foreground leading-relaxed">
-                These days I spend most of my time helping designers grow, removing the things that slow teams down, and making sure what we ship actually solves real problems. I care less about pixel-perfect screens and more about whether the people using our software can get their job done without fighting the interface.
+                Now I spend most of my time on people and process: helping designers get better, cutting the stuff that slows everything down, and staying close enough to actual users that we don't start shipping features for ourselves.
               </p>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Outside of work, I'm on the soccer field, at the gym, or reading about how AI is changing the way we build software. Mostly though, I'm with my wife and our three kids — my daily reminder that designing for humans means designing for real, messy, wonderful people.
+                Outside of work I'm on the soccer field, at the gym, or deep in something about AI. Mostly though I'm with my wife and three kids. They're a pretty good gut check on whether anything is actually usable.
               </p>
             </div>
 
