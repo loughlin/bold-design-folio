@@ -5,9 +5,10 @@ import ProtectedLink from "@/components/ProtectedLink";
 import { projects } from "@/data/projects";
 
 const FeaturedWork = () => {
-  // Bento grid layout: first card is large (spans 2 cols), rest alternate
+  // Bento grid: varied sizes for visual interest
   const getGridClass = (index: number) => {
-    if (index === 0) return "md:col-span-2 md:row-span-2";
+    if (index === 0) return "md:col-span-2"; // Hero card — full width
+    if (index === 3) return "md:col-span-2"; // 4th card — full width
     return "md:col-span-1";
   };
 
@@ -33,17 +34,19 @@ const FeaturedWork = () => {
             return (
               <CardWrapper key={index}>
                 <div
-                  className={`group relative overflow-hidden rounded-2xl border border-border/60 bg-card transition-all duration-500 hover:border-border hover:shadow-lg hover:-translate-y-1 animate-fade-in ${getGridClass(index)}`}
+                  className={`group relative overflow-hidden rounded-[24px] border border-border/60 bg-card transition-all duration-500 hover:border-border hover:shadow-xl hover:-translate-y-1 hover:scale-[1.01] animate-fade-in ${getGridClass(index)}`}
                   style={{ animationDelay: `${index * 0.08}s` }}
                 >
-                  {/* Image */}
-                  <div className={`relative overflow-hidden ${index === 0 ? "h-64 md:h-80" : "h-48 md:h-56"}`}>
+                  {/* Image with inner stroke */}
+                  <div className={`relative overflow-hidden ${index === 0 || index === 3 ? "h-64 md:h-80" : "h-48 md:h-56"}`}>
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-[1.02]"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent" />
+                    {/* Inner stroke */}
+                    <div className="absolute inset-0 ring-1 ring-inset ring-[hsl(var(--image-stroke))] pointer-events-none" />
                   </div>
 
                   {/* Content */}
@@ -56,7 +59,7 @@ const FeaturedWork = () => {
                         <Lock className="h-3 w-3 text-muted-foreground" />
                       )}
                     </div>
-                    <h3 className={`font-bold mb-2 tracking-tight ${index === 0 ? "text-2xl md:text-3xl" : "text-xl md:text-2xl"}`}>
+                    <h3 className={`font-bold mb-2 tracking-tight ${index === 0 || index === 3 ? "text-2xl md:text-3xl" : "text-xl md:text-2xl"}`}>
                       {project.title}
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed mb-4 line-clamp-2">
