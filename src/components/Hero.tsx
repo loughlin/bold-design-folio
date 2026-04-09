@@ -27,8 +27,8 @@ const Hero = () => {
             }`}
           >
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-[1.15] max-w-3xl tracking-tight">
-              I make complex software simpler by{" "}
-              <span className="text-gradient">putting people at the center of every decision.</span>
+              Hi, I'm James.{" "}
+              <span className="text-gradient">I design software and build the teams that ship it.</span>
             </h1>
           </div>
         </div>
