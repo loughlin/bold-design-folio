@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import CaseStudyProgress from "@/components/CaseStudyProgress";
+import ImageFrame from "@/components/ImageFrame";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -17,6 +19,7 @@ const KesselRunCaseStudy = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <CaseStudyProgress />
       <Navigation />
       
       {/* Hero Section */}
