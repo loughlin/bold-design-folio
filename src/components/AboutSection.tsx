@@ -39,13 +39,13 @@ const AboutSection = () => {
 
             <div className="space-y-4">
               <p className="text-base text-muted-foreground leading-relaxed">
-                I started as a product designer. Moved into management when I figured out the design wasn't usually the problem — getting it through the org was. So I learned that part too.
+                I started as a product designer. Moved into management when I figured out the design wasn't usually the problem, but getting it through the organization was. So I learned that part too.
               </p>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Now I spend most of my time on people and process: helping designers get better, cutting the stuff that slows everything down, and staying close enough to actual users that we don't start shipping features for ourselves.
+                Now I spend most of my time on people and process: helping designers get better, cutting the stuff that slows everything down and staying close enough to actual users that we don't start shipping features for ourselves.
               </p>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Outside of work I'm on the soccer field, at the gym, or deep in something about AI. Mostly though I'm with my wife and three kids. They're a pretty good gut check on whether anything is actually usable.
+                Outside of work I'm on the soccer field, at the gym, or deep in something about Design and AI. Mostly though I'm with my wife and three kids. They're a pretty good gut check on whether anything is actually usable.
               </p>
             </div>
 
