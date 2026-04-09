@@ -44,6 +44,20 @@
 
     /* Elevated shadow */
     --shadow-elevated: 0 20px 40px -10px hsl(0 0% 0% / 0.08);
+
+    /* 8pt fluid spacing scale */
+    --space-1: clamp(0.5rem, 0.5rem, 0.5rem);       /* 8px */
+    --space-2: clamp(1rem, 1rem, 1rem);               /* 16px */
+    --space-3: clamp(1.5rem, 1.5rem, 1.5rem);         /* 24px */
+    --space-4: clamp(1.5rem, 1.25rem + 0.5vw, 2rem);  /* 24→32px */
+    --space-6: clamp(2rem, 1.5rem + 1vw, 3rem);       /* 32→48px */
+    --space-8: clamp(3rem, 2rem + 2vw, 4rem);         /* 48→64px */
+    --space-10: clamp(4rem, 2.5rem + 3vw, 5rem);      /* 64→80px */
+    --space-16: clamp(5rem, 3rem + 4vw, 8rem);        /* 80→128px */
+
+    /* Section spacing: space above heading vs below */
+    --section-gap: clamp(4rem, 2.5rem + 3vw, 5rem);   /* 64→80px */
+    --section-header-mb: clamp(2rem, 1.5rem + 1vw, 3rem); /* 32→48px */
   }
 
   .dark {
@@ -95,6 +109,7 @@
 
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* 80px — clears fixed nav */
   }
 
   /* Minimal scrollbar */
@@ -169,6 +184,16 @@ body::before {
   /* Elevated container */
   .shadow-elevated {
     box-shadow: var(--shadow-elevated);
+  }
+
+  /* Fluid section spacing */
+  .section-spacing {
+    padding-top: var(--section-gap);
+    padding-bottom: var(--section-gap);
+  }
+
+  .section-header-spacing {
+    margin-bottom: var(--section-header-mb);
   }
 }
 
