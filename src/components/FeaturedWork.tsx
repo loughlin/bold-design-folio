@@ -28,7 +28,7 @@ const FeaturedWork = () => {
             return (
               <CardWrapper key={index}>
                 <div
-                  className={`group relative overflow-hidden rounded-[24px] border border-border/60 bg-card transition-all duration-500 hover:border-border hover:shadow-xl hover:-translate-y-1 hover:scale-[1.01] animate-fade-in ${getGridClass(index)}`}
+                  className={`group relative overflow-hidden rounded-[24px] border border-border/60 bg-card transition-all duration-500 hover:border-border hover:shadow-xl hover:-translate-y-1 hover:scale-[1.01] animate-fade-in flex flex-col ${getGridClass(index)}`}
                   style={{ animationDelay: `${index * 0.08}s` }}
                 >
                   {/* Image */}
@@ -42,8 +42,8 @@ const FeaturedWork = () => {
                     <div className="absolute inset-0 ring-1 ring-inset ring-[hsl(var(--image-stroke))] pointer-events-none" />
                   </div>
 
-                  {/* Content — 8pt padding: 24px on mobile, 32px on desktop */}
-                  <div className="p-6 md:p-8">
+                {/* Content — 8pt padding: 24px on mobile, 32px on desktop */}
+                  <div className="p-6 md:p-8 flex flex-col flex-1">
                     <div className="flex items-center gap-2 mb-2">
                       <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
                         {project.subtitle}
@@ -59,16 +59,18 @@ const FeaturedWork = () => {
                       {project.description}
                     </p>
 
-                    <div className="flex items-center gap-4 text-xs text-muted-foreground">
-                      <span>{project.role}</span>
-                      <span className="w-1 h-1 rounded-full bg-border" />
-                      <span>{project.timeline}</span>
-                    </div>
+                    <div className="mt-auto">
+                      <div className="flex items-center gap-4 text-xs text-muted-foreground">
+                        <span>{project.role}</span>
+                        <span className="w-1 h-1 rounded-full bg-border" />
+                        <span>{project.timeline}</span>
+                      </div>
 
-                    {/* Hover arrow */}
-                    <div className="mt-4 flex items-center gap-2 text-sm font-medium text-primary opacity-0 translate-x-[-8px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                      View Case Study
-                      <ArrowRight className="h-4 w-4" />
+                      {/* Hover arrow */}
+                      <div className="mt-4 flex items-center gap-2 text-sm font-medium text-primary opacity-0 translate-x-[-8px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
+                        View Case Study
+                        <ArrowRight className="h-4 w-4" />
+                      </div>
                     </div>
                   </div>
                 </div>

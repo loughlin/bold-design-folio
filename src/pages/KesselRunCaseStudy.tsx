@@ -55,6 +55,7 @@ const KesselRunCaseStudy = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
             Leading Design at Kessel Run
           </h1>
+          <p className="text-lg text-muted-foreground/80 font-medium animate-fade-in mb-2">Modernizing USAF Software Delivery</p>
           <p className="text-xl text-muted-foreground mb-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             Building a design culture from the ground up inside one of the most demanding software environments I've ever worked in.
           </p>

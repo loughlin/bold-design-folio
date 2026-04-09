@@ -7,8 +7,8 @@ import dataDashboardPreview from "@/assets/dashboard-system-overview.png";
 
 export const projects: Project[] = [
   {
-    title: "UX Leadership",
-    subtitle: "UX Manager + Leader",
+    title: "Leading Design at Kessel Run",
+    subtitle: "Modernizing USAF Software Delivery",
     description: "Built a design culture inside one of the Air Force's most demanding software environments — shifting teams from waterfall delivery to a modern, research-driven approach.",
     role: "Portfolio Design Lead",
     timeline: "2021 - Present",
@@ -17,8 +17,8 @@ export const projects: Project[] = [
     isPublic: true,
   },
   {
-    title: "Portfolio Design System",
-    subtitle: "Design Systems + Component Libraries",
+    title: "Forging the Shared Foundation",
+    subtitle: "Scaling Consistency Across Five Operational Missions",
     description: "Created a shared design system across five operational missions, cutting redundant work and giving product teams a common foundation to build from.",
     role: "UX Manager + Product Designer",
     timeline: "2020 - 2023",
@@ -27,8 +27,8 @@ export const projects: Project[] = [
     isPublic: true,
   },
   {
-    title: "USAF Mission Reporting",
-    subtitle: "Product Design + Integration",
+    title: "Replacing Manual Calculations with Trust",
+    subtitle: "Digitizing Mission Reporting for Accuracy",
     description: "Replaced manual calculations and fragmented data entry with a single source of truth for Air Force mission reporting.",
     role: "UX Manager + Product Designer",
     timeline: "2018 - 2023",
@@ -37,8 +37,8 @@ export const projects: Project[] = [
     isPublic: true,
   },
   {
-    title: "UX Research Initiatives",
-    subtitle: "User Research + Synthesis",
+    title: "Establishing Research from Zero",
+    subtitle: "Grounding Decisions in User Truth",
     description: "Built a research practice from scratch across a portfolio of products, giving teams the evidence they needed to make better decisions before shipping.",
     role: "UX Manager",
     timeline: "2021 - 2024",
@@ -47,8 +47,8 @@ export const projects: Project[] = [
     isPublic: true,
   },
   {
-    title: "Operational Data Dashboard",
-    subtitle: "Web Dashboards + Data Visualization",
+    title: "Command Center: Real-Time Data Flows",
+    subtitle: "Reducing Cognitive Load in High-Stakes Environments",
     description: "Redesigned a monitoring dashboard so operators could actually understand system health — not just see that systems were running.",
     role: "UX Manager + Product Designer",
     timeline: "2019 - 2021",

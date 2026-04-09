@@ -61,7 +61,8 @@ const DesignSystemCaseStudy = () => {
           <p className="text-[11px] font-technical font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">
             Design Systems Lead · 2019 – 2023
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">Portfolio Design System</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">Forging the Shared Foundation</h1>
+          <p className="text-lg text-muted-foreground/80 font-medium animate-fade-in mb-2">Scaling Consistency Across Five Operational Missions</p>
           <p className="text-xl text-muted-foreground animate-fade-in" style={{ animationDelay: "0.1s" }}>
             Building a shared design language across a growing suite of mission-critical applications.
           </p>
