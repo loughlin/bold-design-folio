@@ -52,8 +52,8 @@ const DesignSystemCaseStudy = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="pt-32 pb-8 px-6">
-        <div className="container mx-auto max-w-4xl">
+      <section className="pt-24 pb-8 px-6">
+        <div className="container mx-auto max-w-reading">
           <Link to="/#work" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8">
             <ArrowLeft className="w-4 h-4" />
             Back to Case Studies
@@ -70,18 +70,18 @@ const DesignSystemCaseStudy = () => {
 
       {/* Design Tokens Hero */}
       <section className="px-6 pb-8">
-        <div className="container mx-auto max-w-4xl animate-fade-in" style={{ animationDelay: "0.3s" }}>
+        <div className="container mx-auto max-w-reading animate-fade-in" style={{ animationDelay: "0.3s" }}>
           <DeviceFrame src={dsDesignTokens} alt="Design Tokens — Color, Typography & Spacing" caption="Design Tokens" />
         </div>
       </section>
 
       {/* Body with side nav */}
-      <div className="container mx-auto max-w-6xl px-6 flex gap-12">
+      <div className="container mx-auto max-w-content px-6 flex gap-12">
         <CaseStudySideNav sections={sections} />
 
-        <div className="flex-1 min-w-0 max-w-4xl">
+        <div className="flex-1 min-w-0 max-w-reading">
           {/* Overview */}
-          <section id="overview" className="py-16">
+          <section id="overview" className="section-spacing scroll-mt-20">
             <KeyTakeaway>
               Design systems don't fail because the components are bad. They fail because the organization isn't ready.
             </KeyTakeaway>
@@ -93,14 +93,14 @@ const DesignSystemCaseStudy = () => {
                 Built on MUI as an open source foundation and extended with custom components and tokens developed through direct team feedback, the design system became the shared infrastructure that let teams stop reinventing the wheel.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
               <ArtifactCard label="Tools" icon="🛠" items={["MUI (Material UI)", "Figma", "Storybook", "React", "TypeScript"]} />
               <ArtifactCard label="Skills" icon="💡" items={["Mentorship & Leadership", "Component Libraries", "Stakeholder Management", "Documentation", "Dev/Design Pairing"]} />
             </div>
           </section>
 
           {/* Problem */}
-          <section id="problem" className="py-16 border-t border-border/30">
+          <section id="problem" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               The problem was really two problems sitting on top of each other.
             </KeyTakeaway>
@@ -131,11 +131,11 @@ const DesignSystemCaseStudy = () => {
           </section>
 
           {/* Success Metrics */}
-          <section id="metrics" className="py-16 border-t border-border/30">
+          <section id="metrics" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               We measured success across task completion, error rates, and developer velocity.
             </KeyTakeaway>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 { icon: "⏱️", title: "Task Completion", desc: "Time on core functions vs. navigating the interface" },
                 { icon: "⚠️", title: "User Error Rate", desc: "Incidents caused by inconsistent UI patterns" },
@@ -151,11 +151,11 @@ const DesignSystemCaseStudy = () => {
           </section>
 
           {/* Time to Value */}
-          <section id="time-to-value" className="py-16 border-t border-border/30">
+          <section id="time-to-value" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               The design system accelerated value delivery across every metric we tracked.
             </KeyTakeaway>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 { value: "3 days", label: "Faster Story Completion", tag: "22 → 19 days", desc: "Pre-built, tested components meant developers started from a reliable baseline." },
                 { value: "48%", label: "Fewer Design Stories", tag: "3.8 → 1.95/week", desc: "Documented, approved components meant fewer tickets to redesign solved problems." },
@@ -180,12 +180,12 @@ const DesignSystemCaseStudy = () => {
           </section>
 
           {/* Component Library */}
-          <section className="py-16 border-t border-border/30">
+          <section className="section-spacing border-t border-border/30">
             <DeviceFrame src={dsComponentLibrary} alt="Component Library — Custom MUI Theme" caption="Component Library" />
           </section>
 
           {/* Process */}
-          <section id="process" className="py-16 border-t border-border/30">
+          <section id="process" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               We applied the same Double Diamond process to the system itself — and built it through direct team feedback.
             </KeyTakeaway>
@@ -201,7 +201,6 @@ const DesignSystemCaseStudy = () => {
               </div>
             </div>
 
-            {/* 95% React callout */}
             <div className="rounded-[24px] bg-primary/5 p-8 text-center ring-1 ring-inset ring-[hsl(var(--image-stroke))] mt-8">
               <p className="text-6xl md:text-7xl font-bold text-primary">95%</p>
               <p className="text-muted-foreground mt-2">of product teams currently using React</p>
@@ -212,7 +211,7 @@ const DesignSystemCaseStudy = () => {
           </section>
 
           {/* Adoption Impact */}
-          <section id="adoption" className="py-16 border-t border-border/30">
+          <section id="adoption" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               Developers were doing more complex work faster, while PMs requested that work less often.
             </KeyTakeaway>
@@ -227,11 +226,11 @@ const DesignSystemCaseStudy = () => {
           </section>
 
           {/* Heuristics */}
-          <section id="heuristics" className="py-16 border-t border-border/30">
+          <section id="heuristics" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               Usability improvements measured against Nielsen's heuristics as the design system matured.
             </KeyTakeaway>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 { name: "Consistency & Standards", desc: "Eliminated 40+ inconsistent UI patterns across products.", before: 2, after: 5 },
                 { name: "Error Prevention", desc: "Built-in validation reduced user input errors by 45%.", before: 2, after: 4 },
@@ -240,9 +239,9 @@ const DesignSystemCaseStudy = () => {
                 { name: "Aesthetic & Minimal", desc: "Standardized spacing and typography reduced cognitive noise.", before: 3, after: 5 },
                 { name: "Help & Documentation", desc: "Component-level docs reduced support requests by 60%.", before: 1, after: 5 },
               ].map((h, i) => (
-                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-5 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-6 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                   <div className="flex items-center gap-3">
-                    <div className="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xs">{i + 1}</div>
+                    <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xs">{i + 1}</div>
                     <h3 className="font-semibold text-sm">{h.name}</h3>
                   </div>
                   <p className="text-sm text-muted-foreground">{h.desc}</p>
@@ -257,7 +256,7 @@ const DesignSystemCaseStudy = () => {
           </section>
 
           {/* Before & After */}
-          <section id="before-after" className="py-16 border-t border-border/30">
+          <section id="before-after" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               From custom builds averaging 22 days per story to a shared system adopted voluntarily.
             </KeyTakeaway>
@@ -284,7 +283,7 @@ const DesignSystemCaseStudy = () => {
           </section>
 
           {/* Results */}
-          <section id="results" className="py-16 border-t border-border/30">
+          <section id="results" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               The CXO of the Air Force approached the team about expanding the system Air Force-wide.
             </KeyTakeaway>
@@ -302,7 +301,6 @@ const DesignSystemCaseStudy = () => {
               ))}
             </ul>
 
-            {/* Learnings */}
             <div className="mt-12 space-y-4 text-muted-foreground leading-relaxed">
               <h3 className="text-lg font-semibold text-foreground">What We Learned</h3>
               <p>

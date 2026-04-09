@@ -74,8 +74,8 @@ const WarfighterResearchCaseStudy = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="pt-32 pb-8 px-6">
-        <div className="container mx-auto max-w-4xl">
+      <section className="pt-24 pb-8 px-6">
+        <div className="container mx-auto max-w-reading">
           <Link to="/#work" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8">
             <ArrowLeft className="w-4 h-4" />
             Back to Case Studies
@@ -94,28 +94,28 @@ const WarfighterResearchCaseStudy = () => {
 
       {/* Hero Image */}
       <section className="pb-16 px-6">
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-reading">
           <ImageFrame src={userResearchInterview} alt="User research interview" caption="Field Research" aspectRatio="16/7" />
         </div>
       </section>
 
       {/* Body with side nav */}
-      <div className="container mx-auto max-w-6xl px-6 flex gap-12">
+      <div className="container mx-auto max-w-content px-6 flex gap-12">
         <CaseStudySideNav sections={sections} />
 
-        <div className="flex-1 min-w-0 max-w-4xl">
+        <div className="flex-1 min-w-0 max-w-reading">
           {/* Overview */}
-          <section id="overview" className="py-16">
+          <section id="overview" className="section-spacing scroll-mt-20">
             <KeyTakeaway>
               The goal wasn't more research sessions — it was changing how the organization thought about research.
             </KeyTakeaway>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               {[
                 { label: "ROLE", value: "UX Manager & Lead Researcher" },
                 { label: "TIMELINE", value: "2021 – 2024" },
                 { label: "TEAM", value: "2 designers, 8 product teams" },
               ].map((m, i) => (
-                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-5 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-6 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                   <p className="text-[10px] font-technical font-semibold tracking-[0.15em] uppercase text-muted-foreground mb-1">{m.label}</p>
                   <p className="text-lg">{m.value}</p>
                 </div>
@@ -129,14 +129,14 @@ const WarfighterResearchCaseStudy = () => {
                 Over three years, we built that practice from the ground up — from a nice-to-have to a standard part of how products got built.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
               <ArtifactCard label="Methods" icon="🔬" items={["Contextual Inquiry", "Usability Testing", "Participatory Workshops", "Card Sorting", "Diary Studies"]} />
               <ArtifactCard label="Outputs" icon="📊" items={["Research Briefs", "Opportunity Maps", "Impact-Effort Matrices", "Insight Library (50+)", "Quarterly Reports"]} />
             </div>
           </section>
 
           {/* Problem */}
-          <section id="problem" className="py-16 border-t border-border/30">
+          <section id="problem" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               The cost of no research showed up in low adoption, confused interfaces, and rework cycles.
             </KeyTakeaway>
@@ -154,7 +154,7 @@ const WarfighterResearchCaseStudy = () => {
           </section>
 
           {/* Methodology */}
-          <section id="methodology" className="py-16 border-t border-border/30">
+          <section id="methodology" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               Four stages adapted from standard UX practice for classified operational environments.
             </KeyTakeaway>
@@ -183,7 +183,7 @@ const WarfighterResearchCaseStudy = () => {
           </section>
 
           {/* Research Methods */}
-          <section id="research-methods" className="py-16 border-t border-border/30">
+          <section id="research-methods" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               60+ sessions: contextual inquiries, usability testing, and participatory workshops.
             </KeyTakeaway>
@@ -209,7 +209,7 @@ const WarfighterResearchCaseStudy = () => {
           </section>
 
           {/* Design Process */}
-          <section id="design-process" className="py-16 border-t border-border/30">
+          <section id="design-process" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               Research findings are only useful if people act on them.
             </KeyTakeaway>
@@ -234,7 +234,7 @@ const WarfighterResearchCaseStudy = () => {
           </section>
 
           {/* Before & After */}
-          <section id="before-after" className="py-16 border-t border-border/30">
+          <section id="before-after" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               From siloed, assumption-driven design to standardized, evidence-based practice.
             </KeyTakeaway>
@@ -259,15 +259,15 @@ const WarfighterResearchCaseStudy = () => {
           </section>
 
           {/* Heuristics */}
-          <section id="heuristics" className="py-16 border-t border-border/30">
+          <section id="heuristics" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               Tracking usability improvements using Nielsen's heuristics as a consistent framework.
             </KeyTakeaway>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {heuristics.map((h, i) => (
-                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-5 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-6 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                   <div className="flex items-center gap-3">
-                    <div className="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xs">{i + 1}</div>
+                    <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xs">{i + 1}</div>
                     <h3 className="font-semibold text-sm">{h.name}</h3>
                   </div>
                   <p className="text-sm text-muted-foreground">{h.desc}</p>
@@ -282,11 +282,11 @@ const WarfighterResearchCaseStudy = () => {
           </section>
 
           {/* Time to Value */}
-          <section id="time-to-value" className="py-16 border-t border-border/30">
+          <section id="time-to-value" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               Research accelerated value delivery and avoided $500K+ in unnecessary development costs.
             </KeyTakeaway>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {engagementMetrics.map((m, i) => (
                 <div key={i} className="rounded-[24px] border border-border/60 bg-card p-6 space-y-3 shadow-elevated ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                   <div>
@@ -303,11 +303,11 @@ const WarfighterResearchCaseStudy = () => {
           </section>
 
           {/* Outcomes */}
-          <section id="outcomes" className="py-16 border-t border-border/30">
+          <section id="outcomes" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               User satisfaction improved from 6.2 to 8.4 across all tested applications.
             </KeyTakeaway>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               {[
                 "User satisfaction improved from 6.2 to 8.4 across tested applications.",
                 "Research became standard practice across all 6 portfolio missions.",
@@ -317,7 +317,7 @@ const WarfighterResearchCaseStudy = () => {
                 "Centralized repositories with standard templates for all research artifacts.",
               ].map((outcome, i) => (
                 <Card key={i}>
-                  <CardContent className="p-5">
+                  <CardContent className="p-6">
                     <p className="text-sm leading-relaxed">{outcome}</p>
                   </CardContent>
                 </Card>
@@ -329,7 +329,7 @@ const WarfighterResearchCaseStudy = () => {
           </section>
 
           {/* Learnings */}
-          <section id="learnings" className="py-16 border-t border-border/30">
+          <section id="learnings" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               The turning point came from specificity — not summary reports, but moments of direct user contact.
             </KeyTakeaway>

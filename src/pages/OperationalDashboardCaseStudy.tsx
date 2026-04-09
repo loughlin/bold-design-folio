@@ -36,8 +36,8 @@ const OperationalDashboardCaseStudy = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="pt-32 pb-8 px-6">
-        <div className="container mx-auto max-w-4xl">
+      <section className="pt-24 pb-8 px-6">
+        <div className="container mx-auto max-w-reading">
           <Link to="/#work" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8">
             <ArrowLeft className="w-4 h-4" />
             Back to Case Studies
@@ -54,28 +54,28 @@ const OperationalDashboardCaseStudy = () => {
 
       {/* Hero Mockup */}
       <section className="px-6 pb-8">
-        <div className="container mx-auto max-w-4xl animate-fade-in" style={{ animationDelay: "0.2s" }}>
+        <div className="container mx-auto max-w-reading animate-fade-in" style={{ animationDelay: "0.2s" }}>
           <SystemOverviewMockup />
         </div>
       </section>
 
       {/* Body with side nav */}
-      <div className="container mx-auto max-w-6xl px-6 flex gap-12">
+      <div className="container mx-auto max-w-content px-6 flex gap-12">
         <CaseStudySideNav sections={sections} />
 
-        <div className="flex-1 min-w-0 max-w-4xl">
+        <div className="flex-1 min-w-0 max-w-reading">
           {/* Overview */}
-          <section id="overview" className="py-16">
+          <section id="overview" className="section-spacing scroll-mt-20">
             <KeyTakeaway>
               Operators weren't getting what they needed — and the engineering team wasn't sure how to close the gap.
             </KeyTakeaway>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               {[
                 { label: "ROLE", value: "UX Manager & Product Designer" },
                 { label: "TIMELINE", value: "2019 – 2021" },
                 { label: "TEAM", value: "2 Designers, 6 Engineers, 1 PM" },
               ].map((m, i) => (
-                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-5 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-6 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                   <p className="text-[10px] font-technical font-semibold tracking-[0.15em] uppercase text-muted-foreground mb-1">{m.label}</p>
                   <p className="text-lg">{m.value}</p>
                 </div>
@@ -89,14 +89,14 @@ const OperationalDashboardCaseStudy = () => {
                 My job was to figure out what operators needed, translate that into a design the engineering team could build, and navigate the back-and-forth between user needs and technical constraints.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
               <ArtifactCard label="Methods" icon="🔬" items={["User Interviews", "Market Research (Grafana)", "Workflow Mapping", "Usability Testing"]} />
               <ArtifactCard label="Tools" icon="🛠" items={["Figma", "Miro", "React", "D3.js / Recharts"]} />
             </div>
           </section>
 
           {/* Problem */}
-          <section id="problem" className="py-16 border-t border-border/30">
+          <section id="problem" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               Engineers built it to show that systems were running. Operators needed it to tell them how.
             </KeyTakeaway>
@@ -114,7 +114,7 @@ const OperationalDashboardCaseStudy = () => {
           </section>
 
           {/* Design Process */}
-          <section id="process" className="py-16 border-t border-border/30">
+          <section id="process" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               The Double Diamond framework kept us from jumping to solutions before understanding the problem.
             </KeyTakeaway>
@@ -129,20 +129,20 @@ const OperationalDashboardCaseStudy = () => {
                 ))}
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 { title: "Discover", items: ["Market research on Grafana-style dashboards", "User interviews with operators", "Mapping existing fragmented tools"] },
                 { title: "Define", items: ["Key metrics and data hierarchies", "Monitoring workflow mapping", "Design principles for scannability"] },
                 { title: "Develop", items: ["Overview to granular view scaling", "Filtering and navigation iterations", "Concepts evolving with new insights"] },
                 { title: "Deliver", items: ["Testing with operators & admins", "Feasibility workshops with engineers", "Constraint negotiation & refinement"] },
               ].map((phase, i) => (
-                <ArtifactCard key={i} label={phase.title} items={phase.items} className="!p-5" />
+                <ArtifactCard key={i} label={phase.title} items={phase.items} className="!p-6" />
               ))}
             </div>
           </section>
 
           {/* Users */}
-          <section id="users" className="py-16 border-t border-border/30">
+          <section id="users" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               Two distinct user groups with meaningfully different priorities — designing for both was key.
             </KeyTakeaway>
@@ -163,7 +163,7 @@ const OperationalDashboardCaseStudy = () => {
           </section>
 
           {/* Information Architecture */}
-          <section id="ia" className="py-16 border-t border-border/30">
+          <section id="ia" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               System Overview → Data Source → Metrics: a clear path from anomaly detection to root cause.
             </KeyTakeaway>
@@ -176,7 +176,7 @@ const OperationalDashboardCaseStudy = () => {
           </section>
 
           {/* Redesign */}
-          <section id="redesign" className="py-16 border-t border-border/30">
+          <section id="redesign" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               The redesign added several layers that operators needed but the existing tool didn't provide.
             </KeyTakeaway>
@@ -208,7 +208,7 @@ const OperationalDashboardCaseStudy = () => {
           </section>
 
           {/* Testing */}
-          <section id="testing" className="py-16 border-t border-border/30">
+          <section id="testing" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               Operators pushed designs in directions I hadn't anticipated — real workflows involved dozens of data sources.
             </KeyTakeaway>
@@ -230,7 +230,7 @@ const OperationalDashboardCaseStudy = () => {
           </section>
 
           {/* Outcomes */}
-          <section id="outcomes" className="py-16 border-t border-border/30">
+          <section id="outcomes" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               90% task success rate, 3x faster issue detection, 60% less context switching.
             </KeyTakeaway>
@@ -239,7 +239,7 @@ const OperationalDashboardCaseStudy = () => {
               <DashboardOutcomesChart />
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
               {[
                 { value: "90%", label: "Task Success" },
                 { value: "4/5", label: "Confidence Score" },
@@ -264,7 +264,7 @@ const OperationalDashboardCaseStudy = () => {
             </div>
 
             {/* Outcomes */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
               {[
                 "All designs validated against engineering constraints before handoff — not as a checkbox but as an ongoing process.",
                 "Usability testing gave direct evidence about what was working, rather than relying on internal judgment.",
@@ -272,7 +272,7 @@ const OperationalDashboardCaseStudy = () => {
                 "The evidence validated research as much as the design — making the case for embedding research earlier.",
               ].map((outcome, i) => (
                 <Card key={i}>
-                  <CardContent className="p-5">
+                  <CardContent className="p-6">
                     <p className="text-sm leading-relaxed">{outcome}</p>
                   </CardContent>
                 </Card>

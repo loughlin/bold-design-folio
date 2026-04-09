@@ -45,8 +45,8 @@ const MissionReportingCaseStudy = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="pt-32 pb-8 px-6">
-        <div className="container mx-auto max-w-4xl">
+      <section className="pt-24 pb-8 px-6">
+        <div className="container mx-auto max-w-reading">
           <Link to="/#work" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8">
             <ArrowLeft className="w-4 h-4" />
             Back to Case Studies
@@ -65,36 +65,36 @@ const MissionReportingCaseStudy = () => {
 
       {/* Hero Image */}
       <section className="py-8 px-6">
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-reading">
           <ImageFrame src={f35AerialRefueling} alt="F-35 Aerial Refueling" caption="Mission Context" aspectRatio="16/9" />
         </div>
       </section>
 
       {/* Body with side nav */}
-      <div className="container mx-auto max-w-6xl px-6 flex gap-12">
+      <div className="container mx-auto max-w-content px-6 flex gap-12">
         <CaseStudySideNav sections={sections} />
 
-        <div className="flex-1 min-w-0 max-w-4xl">
+        <div className="flex-1 min-w-0 max-w-reading">
           {/* Overview */}
-          <section id="overview" className="py-16">
+          <section id="overview" className="section-spacing scroll-mt-20">
             <KeyTakeaway>
               This project shaped me more than any other — I learned how to ship software people actually depend on under pressure.
             </KeyTakeaway>
             <p className="text-lg text-muted-foreground leading-relaxed">
               I joined as a product designer and eventually oversaw it as a manager. I owned the design process end to end — research, concept generation, testing, and iteration — as we built out the mission reporting tool.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
               <ArtifactCard label="Methods" icon="🔬" items={["Contextual Inquiry", "User Journey Mapping", "Prototype Testing", "Service Blueprinting"]} />
               <ArtifactCard label="Deliverables" icon="📦" items={["Workflow Diagrams", "Problem Statements", "Design Specs", "Integration Docs"]} />
             </div>
           </section>
 
           {/* Product Gallery */}
-          <section id="gallery" className="py-16 border-t border-border/30">
+          <section id="gallery" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               Visuals from the third iteration — key features and interfaces after user adoption.
             </KeyTakeaway>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <DeviceFrame src={marauderTimelineEvents} alt="Mission timeline" caption="Timeline Events" />
               <DeviceFrame src={marauderDataIngestion} alt="Data ingestion" caption="Data Ingestion" />
               <DeviceFrame src={marauderMissionInsert} alt="Mission insert" caption="Mission Insert" />
@@ -106,7 +106,7 @@ const MissionReportingCaseStudy = () => {
           </section>
 
           {/* Background */}
-          <section id="background" className="py-16 border-t border-border/30">
+          <section id="background" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               We started by fixing reporting. Then we realized we were building a single source of truth.
             </KeyTakeaway>
@@ -127,7 +127,7 @@ const MissionReportingCaseStudy = () => {
           </section>
 
           {/* Users */}
-          <section id="users" className="py-16 border-t border-border/30">
+          <section id="users" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               Three distinct roles with different needs — all operating in high-pressure, time-sensitive environments.
             </KeyTakeaway>
@@ -148,7 +148,7 @@ const MissionReportingCaseStudy = () => {
           </section>
 
           {/* Problem */}
-          <section id="problem" className="py-16 border-t border-border/30">
+          <section id="problem" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               Users manually entered multiple data fields and calculated all route times by hand for every report.
             </KeyTakeaway>
@@ -166,7 +166,7 @@ const MissionReportingCaseStudy = () => {
           </section>
 
           {/* Research */}
-          <section id="research" className="py-16 border-t border-border/30">
+          <section id="research" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               Two big pain points: manual calculations for key fields, and heavy manual data entry.
             </KeyTakeaway>
@@ -182,7 +182,7 @@ const MissionReportingCaseStudy = () => {
           </section>
 
           {/* Breakthrough */}
-          <section id="breakthrough" className="py-16 border-t border-border/30">
+          <section id="breakthrough" className="section-spacing border-t border-border/30 scroll-mt-20">
             <div className="rounded-[24px] bg-primary/5 p-8 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
               <p className="text-[11px] font-technical font-semibold tracking-[0.15em] uppercase text-primary mb-4">The Breakthrough</p>
               <KeyTakeaway>
@@ -195,7 +195,7 @@ const MissionReportingCaseStudy = () => {
           </section>
 
           {/* Scope */}
-          <section id="scope" className="py-16 border-t border-border/30">
+          <section id="scope" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               We adjusted scope — delaying the map integration while still delivering core value.
             </KeyTakeaway>
@@ -204,7 +204,7 @@ const MissionReportingCaseStudy = () => {
             </div>
             <p className="text-sm italic text-muted-foreground/70 mt-3">Data blurred for security.</p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
               <div className="rounded-[24px] bg-destructive/5 p-6 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                 <h3 className="font-semibold text-destructive text-sm">Before Adjustment</h3>
                 <ul className="text-sm text-muted-foreground space-y-2">
@@ -225,11 +225,11 @@ const MissionReportingCaseStudy = () => {
           </section>
 
           {/* Results */}
-          <section id="results" className="py-16 border-t border-border/30">
+          <section id="results" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               Met or exceeded all but one success metric. Integration completed in 4 months.
             </KeyTakeaway>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
               {[
                 { value: "3 of 5", label: "Fields Automated" },
                 { value: "100%", label: "Calc Automation" },
@@ -244,14 +244,14 @@ const MissionReportingCaseStudy = () => {
             </div>
 
             {/* Heuristics */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
               {[
                 { name: "Error Prevention", desc: "Automated calculations eliminated manual math errors.", before: 2, after: 5 },
                 { name: "Visibility of Status", desc: "Real-time sync indicators show data freshness.", before: 1, after: 4 },
                 { name: "Flexibility & Efficiency", desc: "Auto-populated fields cut data entry from 5 to 2.", before: 2, after: 4 },
                 { name: "Match Real World", desc: "Terminology aligned with actual mission processes.", before: 3, after: 5 },
               ].map((h, i) => (
-                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-5 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-6 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                   <h3 className="font-semibold text-sm">{h.name}</h3>
                   <p className="text-sm text-muted-foreground">{h.desc}</p>
                   <div className="flex items-center gap-2 text-[11px] font-technical">
@@ -265,7 +265,7 @@ const MissionReportingCaseStudy = () => {
           </section>
 
           {/* Learnings */}
-          <section id="learnings" className="py-16 border-t border-border/30">
+          <section id="learnings" className="section-spacing border-t border-border/30 scroll-mt-20">
             <KeyTakeaway>
               Bring engineers in early. Ship value as soon as possible, then iterate.
             </KeyTakeaway>
