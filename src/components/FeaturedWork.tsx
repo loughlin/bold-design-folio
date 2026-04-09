@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Lock } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -6,82 +5,80 @@ import ProtectedLink from "@/components/ProtectedLink";
 import { projects } from "@/data/projects";
 
 const FeaturedWork = () => {
+  // Bento grid layout: first card is large (spans 2 cols), rest alternate
+  const getGridClass = (index: number) => {
+    if (index === 0) return "md:col-span-2 md:row-span-2";
+    return "md:col-span-1";
+  };
+
   return (
-    <section id="work" className="py-16 px-6 scroll-mt-20">
+    <section id="work" className="py-24 md:py-32 px-6 scroll-mt-20">
       <div className="container mx-auto">
         {/* Section Header */}
-        <div className="mb-12 animate-fade-in">
-          <h2 className="text-5xl md:text-6xl font-bold">My Work</h2>
+        <div className="mb-16 animate-fade-in">
+          <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest mb-3">Selected Projects</p>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">My Work</h2>
         </div>
 
-        {/* Case Study Cards - Vertical Stack */}
-        <div className="space-y-6">
-          {projects.map((project, index) => (
-            <Card 
-              key={index} 
-              className="group overflow-hidden hover-lift animate-fade-in border-0 shadow-lg" 
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-                {/* Image Side */}
-                <div className="relative h-64 lg:h-96 overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-r from-foreground/20 to-transparent lg:bg-gradient-to-l" />
-                </div>
+        {/* Bento Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {projects.map((project, index) => {
+            const CardWrapper = ({ children }: { children: React.ReactNode }) =>
+              project.isPublic ? (
+                <Link to={project.link} className="block">{children}</Link>
+              ) : (
+                <ProtectedLink to={project.link}>{children}</ProtectedLink>
+              );
 
-                {/* Content Side */}
-                <CardContent className="p-8 lg:p-12 flex flex-col justify-center bg-card">
-                  <div className="space-y-4">
-                    <p className="text-sm font-medium text-primary uppercase tracking-wider">
-                      {project.subtitle}
-                    </p>
-                    <h3 className="text-3xl lg:text-4xl font-bold flex items-center gap-3">
-                      {project.title}
+            return (
+              <CardWrapper key={index}>
+                <div
+                  className={`group relative overflow-hidden rounded-2xl border border-border/60 bg-card transition-all duration-500 hover:border-border hover:shadow-lg hover:-translate-y-1 animate-fade-in ${getGridClass(index)}`}
+                  style={{ animationDelay: `${index * 0.08}s` }}
+                >
+                  {/* Image */}
+                  <div className={`relative overflow-hidden ${index === 0 ? "h-64 md:h-80" : "h-48 md:h-56"}`}>
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent" />
+                  </div>
+
+                  {/* Content */}
+                  <div className="p-6 md:p-8">
+                    <div className="flex items-center gap-2 mb-2">
+                      <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
+                        {project.subtitle}
+                      </p>
                       {!project.isPublic && (
-                        <Lock className="h-5 w-5 text-muted-foreground" />
+                        <Lock className="h-3 w-3 text-muted-foreground" />
                       )}
+                    </div>
+                    <h3 className={`font-bold mb-2 tracking-tight ${index === 0 ? "text-2xl md:text-3xl" : "text-xl md:text-2xl"}`}>
+                      {project.title}
                     </h3>
-                    <p className="text-lg text-muted-foreground">
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-4 line-clamp-2">
                       {project.description}
                     </p>
-                    
-                    {/* Project Meta */}
-                    <div className="flex flex-wrap gap-6 pt-4 text-sm text-muted-foreground">
-                      <div>
-                        <span className="font-semibold text-foreground">Role:</span> {project.role}
-                      </div>
-                      <div>
-                        <span className="font-semibold text-foreground">Timeline:</span> {project.timeline}
-                      </div>
+
+                    <div className="flex items-center gap-4 text-xs text-muted-foreground">
+                      <span>{project.role}</span>
+                      <span className="w-1 h-1 rounded-full bg-border" />
+                      <span>{project.timeline}</span>
                     </div>
 
-                    {/* CTA Button */}
-                    <div className="pt-6">
-                      {project.isPublic ? (
-                        <Link to={project.link}>
-                          <Button size="lg" className="group/btn">
-                            View Case Study
-                            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
-                          </Button>
-                        </Link>
-                      ) : (
-                        <ProtectedLink to={project.link}>
-                          <Button size="lg" className="group/btn">
-                            View Case Study
-                            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
-                          </Button>
-                        </ProtectedLink>
-                      )}
+                    {/* Hover arrow */}
+                    <div className="mt-4 flex items-center gap-2 text-sm font-medium text-primary opacity-0 translate-x-[-8px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
+                      View Case Study
+                      <ArrowRight className="h-4 w-4" />
                     </div>
                   </div>
-                </CardContent>
-              </div>
-            </Card>
-          ))}
+                </div>
+              </CardWrapper>
+            );
+          })}
         </div>
       </div>
     </section>
