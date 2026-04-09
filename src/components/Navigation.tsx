@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 import ThemeToggle from "@/components/ThemeToggle";
 import { useScrollToSection } from "@/hooks/useScrollToSection";
 import { NAV_SECTIONS } from "@/constants";
@@ -66,6 +66,14 @@ const Navigation = () => {
               </button>
             ))}
             <ThemeToggle />
+            <a
+              href="/James_Loughlin_Resume_2026_v6.pdf"
+              download
+              className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-300"
+            >
+              <Download className="h-3.5 w-3.5" />
+              Resume
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -93,6 +101,14 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
+            <a
+              href="/James_Loughlin_Resume_2026_v6.pdf"
+              download
+              className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-medium"
+            >
+              <Download className="h-3.5 w-3.5" />
+              Resume
+            </a>
           </div>
         )}
       </div>

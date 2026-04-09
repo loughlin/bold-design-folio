@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CaseStudyProgress from "@/components/CaseStudyProgress";
+import CaseStudyFooterNav from "@/components/CaseStudyFooterNav";
 import missionReportingInterface from "@/assets/mission-reporting-interface.png";
 import uxWorkflowPlanning from "@/assets/ux-workflow-planning.jpg";
 import f35AerialRefueling from "@/assets/f35-aerial-refueling.jpg";
@@ -170,13 +171,27 @@ const MissionReportingCaseStudy = () => {
           <h2 className="text-2xl font-bold mb-6">The Users</h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              Our primary users were intelligence personnel working in Air Operations Centers across the globe. These operators work in high-pressure, time-sensitive environments where accurate mission data can mean the difference between mission success and failure. They needed to create detailed reports quickly while managing multiple concurrent missions and coordinating with various agencies.
+              Our primary users were intelligence personnel working in Air Operations Centers across the globe. These operators work in high-pressure, time-sensitive environments where accurate mission data can mean the difference between mission success and failure.
             </p>
             <p>
-              Within this primary user group, we were actually designing for three distinct functional roles, each touching the workflow at different stages. <span className="font-semibold text-foreground">Mission drafters</span> were responsible for capturing and writing up mission information immediately after operations, often under tight deadlines while details were still fresh. They needed quick access to previous mission data, templates, and the ability to attach supporting documentation like imagery or intelligence products. <span className="font-semibold text-foreground">Reviewers</span> provided quality control, validating that reports met format requirements, contained accurate information, and included proper classification markings. They needed efficient ways to flag issues, provide feedback to drafters, and track corrections without slowing down the workflow. <span className="font-semibold text-foreground">Approvers</span> gave final sign-off before reports went to external agencies, ensuring missions were formally documented and data was ready for distribution. Each role had different success criteria and pain points, but all three needed to work together seamlessly for the system to function.
+              Within this primary user group, we designed for three distinct functional roles:
             </p>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1 font-bold">•</span>
+                <span><strong className="text-foreground">Mission drafters</strong> captured and wrote up mission information immediately after operations, often under tight deadlines while details were still fresh.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1 font-bold">•</span>
+                <span><strong className="text-foreground">Reviewers</strong> validated that reports met format requirements, contained accurate information, and included proper classification markings.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary mt-1 font-bold">•</span>
+                <span><strong className="text-foreground">Approvers</strong> gave final sign-off before reports went to external agencies, ensuring missions were formally documented and data was ready for distribution.</span>
+              </li>
+            </ul>
             <p>
-              Secondary users included intelligence analysts at external agencies who consumed this data to inform strategic decisions. For them, the pain was different: data was often stale, inconsistent, or simply inaccessible when they needed it most. Historical mission data that could provide crucial context was buried in systems that didn't communicate with each other.
+              Secondary users included intelligence analysts at external agencies who consumed this data to inform strategic decisions. For them, data was often stale, inconsistent, or simply inaccessible when they needed it most.
             </p>
           </div>
         </div>
@@ -622,17 +637,7 @@ const MissionReportingCaseStudy = () => {
       </section>
 
 
-      {/* Footer CTA */}
-      <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-4xl text-center space-y-6">
-          <h2 className="text-3xl font-bold">Interested in learning more?</h2>
-          <Link to="/#work">
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
-              View More Case Studies
-            </Button>
-          </Link>
-        </div>
-      </section>
+      <CaseStudyFooterNav currentSlug="mission-reporting" />
 
       <Footer />
     </div>

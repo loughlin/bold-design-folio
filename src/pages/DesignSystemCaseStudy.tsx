@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CaseStudyProgress from "@/components/CaseStudyProgress";
+import CaseStudyFooterNav from "@/components/CaseStudyFooterNav";
 import AdoptionImpactTable from "@/components/AdoptionImpactTable";
 import PortfolioEfficiencyChart from "@/components/PortfolioEfficiencyChart";
 import dsDesignTokens from "@/assets/ds-design-tokens.png";
@@ -641,17 +642,7 @@ const DesignSystemCaseStudy = () => {
         </div>
       </section>
 
-      {/* Footer CTA */}
-      <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-4xl text-center space-y-6 animate-fade-in">
-          <h2 className="text-3xl font-serif font-semibold">Interested in learning more?</h2>
-          <Link to="/#work" className="inline-block mt-4">
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
-              View More Case Studies
-            </Button>
-          </Link>
-        </div>
-      </section>
+      <CaseStudyFooterNav currentSlug="design-system" />
 
       <Footer />
     </div>

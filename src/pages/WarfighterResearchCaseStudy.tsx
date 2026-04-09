@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CaseStudyProgress from "@/components/CaseStudyProgress";
+import CaseStudyFooterNav from "@/components/CaseStudyFooterNav";
 import userResearchInterview from "@/assets/user-research-interview.jpg";
 import stagesUxResearch from "@/assets/stages-ux-research.webp";
 import uxResearchProcess from "@/assets/ux-research-process.webp";
@@ -531,17 +532,7 @@ const WarfighterResearchCaseStudy = () => {
         </div>
       </section>
 
-      {/* Footer CTA */}
-      <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-4xl text-center space-y-6 animate-fade-in">
-          <h2 className="text-3xl font-bold">Interested in learning more?</h2>
-          <Link to="/#work" className="inline-block mt-4">
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
-              View More Case Studies
-            </Button>
-          </Link>
-        </div>
-      </section>
+      <CaseStudyFooterNav currentSlug="warfighter-research" />
 
       <Footer />
     </div>
