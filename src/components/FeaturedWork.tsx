@@ -4,11 +4,7 @@ import ProtectedLink from "@/components/ProtectedLink";
 import { projects } from "@/data/projects";
 
 const FeaturedWork = () => {
-  const getGridClass = (index: number) => {
-    if (index === 0) return "md:col-span-2";
-    if (index === 3) return "md:col-span-2";
-    return "md:col-span-1";
-  };
+  const getGridClass = (_index?: number) => "md:col-span-1";
 
   return (
     <section id="work" className="section-spacing px-6 scroll-mt-20">
@@ -36,7 +32,7 @@ const FeaturedWork = () => {
                   style={{ animationDelay: `${index * 0.08}s` }}
                 >
                   {/* Image */}
-                  <div className={`relative overflow-hidden ${index === 0 || index === 3 ? "h-64 md:h-80" : "h-48 md:h-56"}`}>
+                  <div className="relative overflow-hidden h-48 md:h-56">
                     <img
                       src={project.image}
                       alt={project.title}
@@ -56,7 +52,7 @@ const FeaturedWork = () => {
                         <Lock className="h-3 w-3 text-muted-foreground" />
                       )}
                     </div>
-                    <h3 className={`font-bold mb-2 tracking-tight ${index === 0 || index === 3 ? "text-2xl md:text-3xl" : "text-xl md:text-2xl"}`}>
+                    <h3 className="font-bold mb-2 tracking-tight text-xl md:text-2xl">
                       {project.title}
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed mb-4 line-clamp-2">
