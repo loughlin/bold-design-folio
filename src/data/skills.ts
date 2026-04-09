@@ -12,31 +12,31 @@ export const skillCategories: SkillCategory[] = [
   {
     icon: Lightbulb,
     title: "Facilitation + Human-Centered Design",
-    description: "Leading design studios, workshops, and user research to solve complex problems with empathy.",
+    description: "I run workshops and research sessions that get teams closer to the people they're building for. The goal is always better decisions, not more meetings.",
   },
   {
     icon: Palette,
     title: "Design Systems + DesignOps",
-    description: "Building scalable design systems and operational frameworks for consistency and efficiency.",
+    description: "I build shared foundations — component libraries, tokens, documentation — so teams stop reinventing the wheel and start solving harder problems.",
   },
   {
     icon: Users,
     title: "Team Leadership + Psychological Safety",
-    description: "Supervising designers and fostering collaborative environments where teams thrive.",
+    description: "I manage designers, grow careers, and create environments where people feel safe sharing unfinished work and honest feedback.",
   },
   {
     icon: Workflow,
     title: "Lean UX + Agile Methodologies",
-    description: "Integrating design thinking with agile practices for rapid, iterative delivery.",
+    description: "I pair design thinking with agile delivery so teams can validate ideas fast and ship with confidence instead of guesswork.",
   },
   {
     icon: Code,
     title: "Technical Understanding",
-    description: "Working knowledge of design tools, version control, and development workflows.",
+    description: "I know enough about code, version control, and dev workflows to have real conversations with engineers and spec work they can actually build.",
   },
   {
     icon: MessageSquare,
     title: "Stakeholder Communication",
-    description: "Collaborating with leadership and users to align design with mission needs.",
+    description: "I translate between users, leadership, and product teams — making sure everyone is solving the same problem.",
   },
 ];

@@ -38,24 +38,20 @@ const AboutSection = () => {
             </div>
 
             <h1 className="text-2xl md:text-3xl font-bold">
-              Hi, I'm James. <span className="text-gradient">I design user-friendly software using a human-centered approach.</span>
+              Hi, I'm James. <span className="text-gradient">I help teams build software that actually works for the people using it.</span>
             </h1>
 
             <div className="prose prose-lg">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a Design Leader and UX Manager who believes the human side of software matters most. User empathy isn't just a nice to have, it's the foundation of good design culture. Iteration is key: you keep rebuilding, refining, and reshaping until the experience finally clicks.
+                I started as a hands-on product designer and grew into management because I kept seeing the same thing: great design work dying in organizations that didn't know how to support it. So I learned how to build the conditions where good work becomes the default.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed mt-6">
-                As a leader, I build design culture by showing what deeper problem understanding can do for product development. I'm passionate about instilling design principles in others and helping teams grow.
+                These days I spend most of my time helping designers grow, removing the things that slow teams down, and making sure what we ship actually solves real problems. I care less about pixel-perfect screens and more about whether the people using our software can get their job done without fighting the interface.
               </p>
 
               <p className="text-lg text-muted-foreground leading-relaxed mt-6">
-                Outside of work, I'm on the soccer field, lifting weights at the gym, or reading about new technologies. But mostly, I'm with my wife and our three kids. My reminder that designing for humans means designing for real, complex, wonderful people.
-              </p>
-
-              <p className="text-lg text-muted-foreground leading-relaxed mt-6">
-                I stay hungry to learn, evolve, and create whatever comes next.
+                Outside of work, I'm on the soccer field, at the gym, or reading about how AI is changing the way we build software. Mostly though, I'm with my wife and our three kids — my daily reminder that designing for humans means designing for real, messy, wonderful people.
               </p>
             </div>
 
