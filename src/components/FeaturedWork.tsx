@@ -32,7 +32,7 @@ const FeaturedWork = () => {
                   style={{ animationDelay: `${index * 0.08}s` }}
                 >
                   {/* Image */}
-                  <div className={`relative overflow-hidden ${index === 0 || index === 3 ? "h-64 md:h-80" : "h-48 md:h-56"}`}>
+                  <div className="relative overflow-hidden h-48 md:h-56">
                     <img
                       src={project.image}
                       alt={project.title}
