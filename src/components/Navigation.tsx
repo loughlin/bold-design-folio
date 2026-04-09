@@ -69,9 +69,9 @@ const Navigation = () => {
             <a
               href="/James_Loughlin_Resume_2026_v6.pdf"
               download
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-300"
+              className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-300"
             >
-              <Download className="h-3.5 w-3.5" />
+              <Download className="h-4 w-4" />
               Resume
             </a>
           </div>
@@ -104,9 +104,9 @@ const Navigation = () => {
             <a
               href="/James_Loughlin_Resume_2026_v6.pdf"
               download
-              className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-medium"
+              className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-medium"
             >
-              <Download className="h-3.5 w-3.5" />
+              <Download className="h-4 w-4" />
               Resume
             </a>
           </div>
