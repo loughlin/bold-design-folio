@@ -5,6 +5,7 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import CaseStudyProgress from "@/components/CaseStudyProgress";
 import AdoptionImpactTable from "@/components/AdoptionImpactTable";
 import PortfolioEfficiencyChart from "@/components/PortfolioEfficiencyChart";
 import dsDesignTokens from "@/assets/ds-design-tokens.png";
@@ -63,6 +64,7 @@ const DesignSystemCaseStudy = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <CaseStudyProgress />
       <Navigation />
 
       {/* Hero Section */}

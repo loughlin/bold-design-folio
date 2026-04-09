@@ -5,6 +5,7 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import CaseStudyProgress from "@/components/CaseStudyProgress";
 import DashboardOutcomesChart from "@/components/DashboardOutcomesChart";
 import SystemOverviewMockup from "@/components/SystemOverviewMockup";
 import DataSourceMockup from "@/components/DataSourceMockup";
@@ -17,6 +18,7 @@ const OperationalDashboardCaseStudy = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <CaseStudyProgress />
       <Navigation />
 
       {/* Hero */}
