@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import CaseStudyProgress from "@/components/CaseStudyProgress";
 import CaseStudyFooterNav from "@/components/CaseStudyFooterNav";
 import CaseStudySideNav from "@/components/CaseStudySideNav";
+import CaseStudyMetadata from "@/components/CaseStudyMetadata";
 import ArtifactCard from "@/components/ArtifactCard";
 import KeyTakeaway from "@/components/KeyTakeaway";
 import ImageFrame from "@/components/ImageFrame";
@@ -29,44 +30,44 @@ const sections = [
   { id: "learnings", label: "Learnings" },
 ];
 
+const heuristics = [
+  { name: "Match Real World", desc: "Research-informed terminology replaced engineer assumptions.", before: 2, after: 5 },
+  { name: "User Control & Freedom", desc: "Feedback drove undo/redo patterns and flexible workflows.", before: 2, after: 4 },
+  { name: "Error Prevention", desc: "Testing identified error-prone workflows invisible in design reviews.", before: 2, after: 4 },
+  { name: "Recognition over Recall", desc: "Card sorting optimized information architecture.", before: 2, after: 5 },
+  { name: "Flexibility & Efficiency", desc: "Power user workarounds designed into the product — 25% faster task completion.", before: 2, after: 4 },
+  { name: "Help & Documentation", desc: "Research insights embedded into component guidelines.", before: 1, after: 4 },
+];
+
+const engagementMetrics = [
+  { value: "3 weeks", label: "Faster Development", desc: "Validating concepts before development meant fewer fundamental problems mid-build.", pct: 60 },
+  { value: "$500K+", label: "Costs Avoided", desc: "Features that wouldn't have solved user problems caught before development investment.", pct: 85 },
+  { value: "65%", label: "Less Rework", desc: "Post-launch design changes dropped once research was embedded early.", pct: 65 },
+  { value: "35%", label: "Higher Adoption", desc: "User satisfaction improved from 6.2 to 8.4 out of 10 across tested applications.", pct: 84 },
+];
+
+const beforeItems = [
+  "Siloed research with no standardized processes",
+  "Product decisions driven by stakeholder assumptions",
+  "Research insights lost between projects",
+  "Limited direct user access",
+  "Research conducted after development began",
+  "No way to measure research impact",
+];
+
+const afterItems = [
+  "Unified research ops with standardized templates",
+  "Evidence-based decision making tied to metrics",
+  "Centralized insight repository with 50+ findings",
+  "Direct user engagement through established channels",
+  "Research embedded early, reducing rework by 65%",
+  "Quarterly impact reporting to leadership",
+];
+
 const WarfighterResearchCaseStudy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const heuristics = [
-    { name: "Match Real World", desc: "Research-informed terminology replaced engineer assumptions.", before: 2, after: 5 },
-    { name: "User Control & Freedom", desc: "Feedback drove undo/redo patterns and flexible workflows.", before: 2, after: 4 },
-    { name: "Error Prevention", desc: "Testing identified error-prone workflows invisible in design reviews.", before: 2, after: 4 },
-    { name: "Recognition over Recall", desc: "Card sorting optimized information architecture.", before: 2, after: 5 },
-    { name: "Flexibility & Efficiency", desc: "Power user workarounds designed into the product — 25% faster task completion.", before: 2, after: 4 },
-    { name: "Help & Documentation", desc: "Research insights embedded into component guidelines.", before: 1, after: 4 },
-  ];
-
-  const engagementMetrics = [
-    { value: "3 weeks", label: "Faster Development", desc: "Validating concepts before development meant fewer fundamental problems mid-build.", pct: 60 },
-    { value: "$500K+", label: "Costs Avoided", desc: "Features that wouldn't have solved user problems caught before development investment.", pct: 85 },
-    { value: "65%", label: "Less Rework", desc: "Post-launch design changes dropped once research was embedded early.", pct: 65 },
-    { value: "35%", label: "Higher Adoption", desc: "User satisfaction improved from 6.2 to 8.4 out of 10 across tested applications.", pct: 84 },
-  ];
-
-  const beforeItems = [
-    "Siloed research with no standardized processes",
-    "Product decisions driven by stakeholder assumptions",
-    "Research insights lost between projects",
-    "Limited direct user access",
-    "Research conducted after development began",
-    "No way to measure research impact",
-  ];
-
-  const afterItems = [
-    "Unified research ops with standardized templates",
-    "Evidence-based decision making tied to metrics",
-    "Centralized insight repository with 50+ findings",
-    "Direct user engagement through established channels",
-    "Research embedded early, reducing rework by 65%",
-    "Quarterly impact reporting to leadership",
-  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -76,7 +77,7 @@ const WarfighterResearchCaseStudy = () => {
       {/* Hero */}
       <section className="pt-24 pb-8 px-6">
         <div className="container mx-auto max-w-reading">
-          <Link to="/#work" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8">
+          <Link to="/#work" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8 rounded-[24px]">
             <ArrowLeft className="w-4 h-4" />
             Back to Case Studies
           </Link>
@@ -94,9 +95,9 @@ const WarfighterResearchCaseStudy = () => {
       </section>
 
       {/* Hero Image */}
-      <section className="pb-16 px-6">
-        <div className="container mx-auto max-w-reading">
-          <ImageFrame src={userResearchInterview} alt="User research interview" caption="Field Research" aspectRatio="16/7" />
+      <section className="px-6 pb-8">
+        <div className="container mx-auto max-w-reading animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <ImageFrame src={userResearchInterview} alt="Field user research interview with military operators in operational environment" caption="Field Research" aspectRatio="16/7" />
         </div>
       </section>
 
@@ -107,21 +108,15 @@ const WarfighterResearchCaseStudy = () => {
         <div className="flex-1 min-w-0 max-w-reading">
           {/* Overview */}
           <section id="overview" className="section-spacing scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Overview</h2>
+            <CaseStudyMetadata
+              role="UX Manager & Lead Researcher"
+              timeline="2021 – 2024"
+              team="2 Designers, 8 Product Teams"
+            />
             <KeyTakeaway>
               The goal wasn't more research sessions — it was changing how the organization thought about research.
             </KeyTakeaway>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              {[
-                { label: "ROLE", value: "UX Manager & Lead Researcher" },
-                { label: "TIMELINE", value: "2021 – 2024" },
-                { label: "TEAM", value: "2 designers, 8 product teams" },
-              ].map((m, i) => (
-                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-6 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
-                  <p className="text-[10px] font-technical font-semibold tracking-[0.15em] uppercase text-muted-foreground mb-1">{m.label}</p>
-                  <p className="text-lg">{m.value}</p>
-                </div>
-              ))}
-            </div>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
                 Product teams were making design decisions based almost entirely on stakeholder assumptions. There was no shared methodology, no centralized place for insights to live, and no expectation that user evidence should drive decisions.
@@ -138,6 +133,7 @@ const WarfighterResearchCaseStudy = () => {
 
           {/* Problem */}
           <section id="problem" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">The Problem</h2>
             <KeyTakeaway>
               The cost of no research showed up in low adoption, confused interfaces, and rework cycles.
             </KeyTakeaway>
@@ -156,11 +152,12 @@ const WarfighterResearchCaseStudy = () => {
 
           {/* Methodology */}
           <section id="methodology" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Methodology</h2>
             <KeyTakeaway>
               Four stages adapted from standard UX practice for classified operational environments.
             </KeyTakeaway>
             <div className="flex justify-center py-4 mb-4">
-              <img src={stagesUxResearch} alt="Four stages of UX research" className="max-w-2xl w-full rounded-[24px] grayscale" />
+              <img src={stagesUxResearch} alt="Four stages of UX research methodology — discovery, exploring, testing, and listening" className="max-w-2xl w-full rounded-[24px] grayscale" />
             </div>
             <div className="flex justify-center py-6">
               <div className="flex items-center gap-0 max-w-full w-full">
@@ -185,11 +182,12 @@ const WarfighterResearchCaseStudy = () => {
 
           {/* Research Methods */}
           <section id="research-methods" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Research Methods</h2>
             <KeyTakeaway>
               60+ sessions: contextual inquiries, usability testing, and participatory workshops.
             </KeyTakeaway>
             <div className="flex justify-center py-4 mb-6">
-              <img src={uxResearchProcess} alt="UX research process" className="max-w-3xl w-full rounded-[24px] grayscale" />
+              <img src={uxResearchProcess} alt="UX research process diagram — structured approach to user research in defense environments" className="max-w-3xl w-full rounded-[24px] grayscale" />
             </div>
             <ul className="space-y-4">
               {[
@@ -211,6 +209,7 @@ const WarfighterResearchCaseStudy = () => {
 
           {/* Design Process */}
           <section id="design-process" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Design Process</h2>
             <KeyTakeaway>
               Research findings are only useful if people act on them.
             </KeyTakeaway>
@@ -236,6 +235,7 @@ const WarfighterResearchCaseStudy = () => {
 
           {/* Before & After */}
           <section id="before-after" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Before & After</h2>
             <KeyTakeaway>
               From siloed, assumption-driven design to standardized, evidence-based practice.
             </KeyTakeaway>
@@ -261,6 +261,7 @@ const WarfighterResearchCaseStudy = () => {
 
           {/* Heuristics */}
           <section id="heuristics" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Heuristic Evaluation</h2>
             <KeyTakeaway>
               Tracking usability improvements using Nielsen's heuristics as a consistent framework.
             </KeyTakeaway>
@@ -284,6 +285,7 @@ const WarfighterResearchCaseStudy = () => {
 
           {/* Time to Value */}
           <section id="time-to-value" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Time to Value</h2>
             <KeyTakeaway>
               Research accelerated value delivery and avoided $500K+ in unnecessary development costs.
             </KeyTakeaway>
@@ -305,6 +307,7 @@ const WarfighterResearchCaseStudy = () => {
 
           {/* Outcomes */}
           <section id="outcomes" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Outcomes</h2>
             <KeyTakeaway>
               User satisfaction improved from 6.2 to 8.4 across all tested applications.
             </KeyTakeaway>
@@ -331,6 +334,7 @@ const WarfighterResearchCaseStudy = () => {
 
           {/* Learnings */}
           <section id="learnings" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Learnings</h2>
             <KeyTakeaway>
               The turning point came from specificity — not summary reports, but moments of direct user contact.
             </KeyTakeaway>

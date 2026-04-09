@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import CaseStudyProgress from "@/components/CaseStudyProgress";
 import CaseStudyFooterNav from "@/components/CaseStudyFooterNav";
 import CaseStudySideNav from "@/components/CaseStudySideNav";
+import CaseStudyMetadata from "@/components/CaseStudyMetadata";
 import ArtifactCard from "@/components/ArtifactCard";
 import KeyTakeaway from "@/components/KeyTakeaway";
 import DeviceFrame from "@/components/DeviceFrame";
@@ -47,7 +48,7 @@ const MissionReportingCaseStudy = () => {
       {/* Hero */}
       <section className="pt-24 pb-8 px-6">
         <div className="container mx-auto max-w-reading">
-          <Link to="/#work" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8">
+          <Link to="/#work" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8 rounded-[24px]">
             <ArrowLeft className="w-4 h-4" />
             Back to Case Studies
           </Link>
@@ -65,9 +66,9 @@ const MissionReportingCaseStudy = () => {
       </section>
 
       {/* Hero Image */}
-      <section className="py-8 px-6">
-        <div className="container mx-auto max-w-reading">
-          <ImageFrame src={f35AerialRefueling} alt="F-35 Aerial Refueling" caption="Mission Context" aspectRatio="16/9" />
+      <section className="px-6 pb-8">
+        <div className="container mx-auto max-w-reading animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <ImageFrame src={f35AerialRefueling} alt="F-35 aerial refueling operation — mission context for intelligence reporting workflows" caption="Mission Context" aspectRatio="16/9" />
         </div>
       </section>
 
@@ -78,6 +79,12 @@ const MissionReportingCaseStudy = () => {
         <div className="flex-1 min-w-0 max-w-reading">
           {/* Overview */}
           <section id="overview" className="section-spacing scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Overview</h2>
+            <CaseStudyMetadata
+              role="UX Manager + Product Designer"
+              timeline="2018 – 2023"
+              team="2 Designers, 4 Engineers, 1 PM"
+            />
             <KeyTakeaway>
               This project shaped me more than any other — I learned how to ship software people actually depend on under pressure.
             </KeyTakeaway>
@@ -92,14 +99,15 @@ const MissionReportingCaseStudy = () => {
 
           {/* Product Gallery */}
           <section id="gallery" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Product Gallery</h2>
             <KeyTakeaway>
               Visuals from the third iteration — key features and interfaces after user adoption.
             </KeyTakeaway>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <DeviceFrame src={marauderTimelineEvents} alt="Mission timeline" caption="Timeline Events" />
-              <DeviceFrame src={marauderDataIngestion} alt="Data ingestion" caption="Data Ingestion" />
-              <DeviceFrame src={marauderMissionInsert} alt="Mission insert" caption="Mission Insert" />
-              <DeviceFrame src={marauderMissionNarrative} alt="Mission narrative" caption="Mission Narrative" />
+              <DeviceFrame src={marauderTimelineEvents} alt="Mission timeline events UI — chronological mission data entry interface" caption="Timeline Events" />
+              <DeviceFrame src={marauderDataIngestion} alt="Data ingestion dashboard — automated import from external intelligence sources" caption="Data Ingestion" />
+              <DeviceFrame src={marauderMissionInsert} alt="Mission insert form — structured data capture for intelligence reporting" caption="Mission Insert" />
+              <DeviceFrame src={marauderMissionNarrative} alt="Mission narrative editor — formatted text entry for operational reports" caption="Mission Narrative" />
             </div>
             <p className="text-center text-sm text-muted-foreground italic mt-6">
               Screenshots from Version 3 of the mission reporting application.
@@ -108,6 +116,7 @@ const MissionReportingCaseStudy = () => {
 
           {/* Background */}
           <section id="background" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Background</h2>
             <KeyTakeaway>
               We started by fixing reporting. Then we realized we were building a single source of truth.
             </KeyTakeaway>
@@ -120,7 +129,7 @@ const MissionReportingCaseStudy = () => {
               </p>
             </div>
             <div className="mt-8">
-              <DeviceFrame src={marauderServiceBlueprint} alt="Service Blueprint — Air Domain" caption="Service Blueprint" />
+              <DeviceFrame src={marauderServiceBlueprint} alt="Service blueprint mapping the air domain mission reporting workflow end-to-end" caption="Service Blueprint" />
             </div>
             <p className="text-sm italic text-muted-foreground/70 mt-4">
               Note: All sensitive information has been removed. Application name redacted for security.
@@ -129,6 +138,7 @@ const MissionReportingCaseStudy = () => {
 
           {/* Users */}
           <section id="users" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">The Users</h2>
             <KeyTakeaway>
               Three distinct roles with different needs — all operating in high-pressure, time-sensitive environments.
             </KeyTakeaway>
@@ -150,6 +160,7 @@ const MissionReportingCaseStudy = () => {
 
           {/* Problem */}
           <section id="problem" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">The Problem</h2>
             <KeyTakeaway>
               Users manually entered multiple data fields and calculated all route times by hand for every report.
             </KeyTakeaway>
@@ -162,12 +173,13 @@ const MissionReportingCaseStudy = () => {
               </p>
             </div>
             <div className="mt-8">
-              <DeviceFrame src={missionReportingInterface} alt="Mission Reporting Interface" caption="v3 Report Draft" />
+              <DeviceFrame src={missionReportingInterface} alt="High-fidelity UI dashboard for mission reporting — version 3 report drafting interface" caption="v3 Report Draft" />
             </div>
           </section>
 
           {/* Research */}
           <section id="research" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Research</h2>
             <KeyTakeaway>
               Two big pain points: manual calculations for key fields, and heavy manual data entry.
             </KeyTakeaway>
@@ -179,11 +191,12 @@ const MissionReportingCaseStudy = () => {
                 There was no single source of truth for mission data across the network — solving that became a priority because we believed it would unlock our ability to scale.
               </p>
             </div>
-            <ImageFrame src={uxWorkflowPlanning} alt="User Journey Map and Research" caption="Workshop Artifacts" aspectRatio="16/7" />
+            <ImageFrame src={uxWorkflowPlanning} alt="User journey mapping and research workshop artifacts — sticky notes and workflow diagrams" caption="Workshop Artifacts" aspectRatio="16/7" />
           </section>
 
           {/* Breakthrough */}
           <section id="breakthrough" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Breakthrough</h2>
             <div className="rounded-[24px] bg-primary/5 p-8 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
               <p className="text-[11px] font-technical font-semibold tracking-[0.15em] uppercase text-primary mb-4">The Breakthrough</p>
               <KeyTakeaway>
@@ -197,11 +210,12 @@ const MissionReportingCaseStudy = () => {
 
           {/* Scope */}
           <section id="scope" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Scope Adjustment</h2>
             <KeyTakeaway>
               We adjusted scope — delaying the map integration while still delivering core value.
             </KeyTakeaway>
             <div className="mt-4">
-              <ImageFrame src={marauderDependencies} alt="Dependencies diagram" caption="Dependencies (Blurred)" aspectRatio="16/9" className="[&_img]:blur-[2px]" />
+              <ImageFrame src={marauderDependencies} alt="Product dependencies diagram showing integration points across mission systems" caption="Dependencies (Blurred)" aspectRatio="16/9" className="[&_img]:blur-[2px]" />
             </div>
             <p className="text-sm italic text-muted-foreground/70 mt-3">Data blurred for security.</p>
 
@@ -227,6 +241,7 @@ const MissionReportingCaseStudy = () => {
 
           {/* Results */}
           <section id="results" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Results</h2>
             <KeyTakeaway>
               Met or exceeded all but one success metric. Integration completed in 4 months.
             </KeyTakeaway>
@@ -253,7 +268,10 @@ const MissionReportingCaseStudy = () => {
                 { name: "Match Real World", desc: "Terminology aligned with actual mission processes.", before: 3, after: 5 },
               ].map((h, i) => (
                 <div key={i} className="rounded-[24px] border border-border/60 bg-card p-6 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
-                  <h3 className="font-semibold text-sm">{h.name}</h3>
+                  <div className="flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xs">{i + 1}</div>
+                    <h3 className="font-semibold text-sm">{h.name}</h3>
+                  </div>
                   <p className="text-sm text-muted-foreground">{h.desc}</p>
                   <div className="flex items-center gap-2 text-[11px] font-technical">
                     <span className="text-destructive">Before: {h.before}/5</span>
@@ -267,6 +285,7 @@ const MissionReportingCaseStudy = () => {
 
           {/* Learnings */}
           <section id="learnings" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Learnings</h2>
             <KeyTakeaway>
               Bring engineers in early. Ship value as soon as possible, then iterate.
             </KeyTakeaway>

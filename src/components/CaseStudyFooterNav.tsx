@@ -7,11 +7,11 @@ interface CaseStudyFooterNavProps {
 }
 
 const caseStudies = [
-  { slug: "kessel-run", title: "UX Leadership" },
-  { slug: "design-system", title: "Portfolio Design System" },
-  { slug: "mission-reporting", title: "USAF Mission Reporting" },
-  { slug: "warfighter-research", title: "UX Research Initiatives" },
-  { slug: "operational-dashboard", title: "Operational Data Dashboard" },
+  { slug: "kessel-run", title: "Leading Design at Kessel Run" },
+  { slug: "design-system", title: "Forging the Shared Foundation" },
+  { slug: "mission-reporting", title: "Replacing Manual Calculations" },
+  { slug: "warfighter-research", title: "Establishing Research from Zero" },
+  { slug: "operational-dashboard", title: "Command Center" },
 ];
 
 const CaseStudyFooterNav = ({ currentSlug }: CaseStudyFooterNavProps) => {

@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import CaseStudyProgress from "@/components/CaseStudyProgress";
 import CaseStudyFooterNav from "@/components/CaseStudyFooterNav";
 import CaseStudySideNav from "@/components/CaseStudySideNav";
+import CaseStudyMetadata from "@/components/CaseStudyMetadata";
 import ArtifactCard from "@/components/ArtifactCard";
 import KeyTakeaway from "@/components/KeyTakeaway";
 import DashboardOutcomesChart from "@/components/DashboardOutcomesChart";
@@ -38,7 +39,7 @@ const OperationalDashboardCaseStudy = () => {
       {/* Hero */}
       <section className="pt-24 pb-8 px-6">
         <div className="container mx-auto max-w-reading">
-          <Link to="/#work" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8">
+          <Link to="/#work" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8 rounded-[24px]">
             <ArrowLeft className="w-4 h-4" />
             Back to Case Studies
           </Link>
@@ -67,21 +68,15 @@ const OperationalDashboardCaseStudy = () => {
         <div className="flex-1 min-w-0 max-w-reading">
           {/* Overview */}
           <section id="overview" className="section-spacing scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Overview</h2>
+            <CaseStudyMetadata
+              role="UX Manager & Product Designer"
+              timeline="2019 – 2021"
+              team="2 Designers, 6 Engineers, 1 PM"
+            />
             <KeyTakeaway>
               Operators weren't getting what they needed — and the engineering team wasn't sure how to close the gap.
             </KeyTakeaway>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              {[
-                { label: "ROLE", value: "UX Manager & Product Designer" },
-                { label: "TIMELINE", value: "2019 – 2021" },
-                { label: "TEAM", value: "2 Designers, 6 Engineers, 1 PM" },
-              ].map((m, i) => (
-                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-6 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
-                  <p className="text-[10px] font-technical font-semibold tracking-[0.15em] uppercase text-muted-foreground mb-1">{m.label}</p>
-                  <p className="text-lg">{m.value}</p>
-                </div>
-              ))}
-            </div>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
                 The team had a monitoring dashboard that technically worked. It showed status. It had data. But operators weren't getting what they needed from it.
@@ -98,6 +93,7 @@ const OperationalDashboardCaseStudy = () => {
 
           {/* Problem */}
           <section id="problem" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">The Problem</h2>
             <KeyTakeaway>
               Engineers built it to show that systems were running. Operators needed it to tell them how.
             </KeyTakeaway>
@@ -116,6 +112,7 @@ const OperationalDashboardCaseStudy = () => {
 
           {/* Design Process */}
           <section id="process" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Design Process</h2>
             <KeyTakeaway>
               The Double Diamond framework kept us from jumping to solutions before understanding the problem.
             </KeyTakeaway>
@@ -144,6 +141,7 @@ const OperationalDashboardCaseStudy = () => {
 
           {/* Users */}
           <section id="users" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Users</h2>
             <KeyTakeaway>
               Two distinct user groups with meaningfully different priorities — designing for both was key.
             </KeyTakeaway>
@@ -165,6 +163,7 @@ const OperationalDashboardCaseStudy = () => {
 
           {/* Information Architecture */}
           <section id="ia" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Information Architecture</h2>
             <KeyTakeaway>
               System Overview → Data Source → Metrics: a clear path from anomaly detection to root cause.
             </KeyTakeaway>
@@ -178,6 +177,7 @@ const OperationalDashboardCaseStudy = () => {
 
           {/* Redesign */}
           <section id="redesign" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Redesign</h2>
             <KeyTakeaway>
               The redesign added several layers that operators needed but the existing tool didn't provide.
             </KeyTakeaway>
@@ -210,6 +210,7 @@ const OperationalDashboardCaseStudy = () => {
 
           {/* Testing */}
           <section id="testing" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Testing</h2>
             <KeyTakeaway>
               Operators pushed designs in directions I hadn't anticipated — real workflows involved dozens of data sources.
             </KeyTakeaway>
@@ -232,6 +233,7 @@ const OperationalDashboardCaseStudy = () => {
 
           {/* Outcomes */}
           <section id="outcomes" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Outcomes</h2>
             <KeyTakeaway>
               90% task success rate, 3x faster issue detection, 60% less context switching.
             </KeyTakeaway>
@@ -264,7 +266,7 @@ const OperationalDashboardCaseStudy = () => {
               </p>
             </div>
 
-            {/* Outcomes */}
+            {/* Outcome Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
               {[
                 "All designs validated against engineering constraints before handoff — not as a checkbox but as an ongoing process.",
