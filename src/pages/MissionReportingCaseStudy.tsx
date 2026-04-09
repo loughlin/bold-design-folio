@@ -5,6 +5,7 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import CaseStudyProgress from "@/components/CaseStudyProgress";
 import missionReportingInterface from "@/assets/mission-reporting-interface.png";
 import uxWorkflowPlanning from "@/assets/ux-workflow-planning.jpg";
 import f35AerialRefueling from "@/assets/f35-aerial-refueling.jpg";

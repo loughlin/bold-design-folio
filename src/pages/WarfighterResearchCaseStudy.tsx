@@ -5,6 +5,7 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import CaseStudyProgress from "@/components/CaseStudyProgress";
 import userResearchInterview from "@/assets/user-research-interview.jpg";
 import stagesUxResearch from "@/assets/stages-ux-research.webp";
 import uxResearchProcess from "@/assets/ux-research-process.webp";
