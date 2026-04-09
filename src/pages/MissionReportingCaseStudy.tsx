@@ -29,6 +29,7 @@ const MissionReportingCaseStudy = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <CaseStudyProgress />
       <Navigation />
       
       {/* Hero Section */}
