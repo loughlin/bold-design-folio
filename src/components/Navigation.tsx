@@ -101,6 +101,14 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
+            <a
+              href="/James_Loughlin_Resume_2026_v6.pdf"
+              download
+              className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-medium"
+            >
+              <Download className="h-3.5 w-3.5" />
+              Resume
+            </a>
           </div>
         )}
       </div>
