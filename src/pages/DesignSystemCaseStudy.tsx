@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
@@ -7,6 +6,7 @@ import Footer from "@/components/Footer";
 import CaseStudyProgress from "@/components/CaseStudyProgress";
 import CaseStudyFooterNav from "@/components/CaseStudyFooterNav";
 import CaseStudySideNav from "@/components/CaseStudySideNav";
+import CaseStudyMetadata from "@/components/CaseStudyMetadata";
 import ArtifactCard from "@/components/ArtifactCard";
 import KeyTakeaway from "@/components/KeyTakeaway";
 import DeviceFrame from "@/components/DeviceFrame";
@@ -17,34 +17,34 @@ import dsComponentLibrary from "@/assets/ds-component-library.png";
 
 const sections = [
   { id: "overview", label: "Overview" },
-  { id: "problem", label: "Problem Statement" },
+  { id: "problem", label: "The Problem" },
   { id: "metrics", label: "Success Metrics" },
   { id: "time-to-value", label: "Time to Value" },
-  { id: "process", label: "Process" },
+  { id: "process", label: "Design Process" },
   { id: "adoption", label: "Adoption Impact" },
   { id: "heuristics", label: "Heuristics" },
   { id: "before-after", label: "Before & After" },
   { id: "results", label: "Results" },
 ];
 
+const challenges = [
+  "Products ran different tech stacks with a mix of custom components and third-party libraries.",
+  "Teams were attached to their own solutions, making adoption a change management challenge.",
+  "No off-the-shelf library could cover custom, organization-specific components.",
+  "Existing wireframe kits didn't carry Kessel Run's theming or custom components.",
+];
+
+const keyAchievements = [
+  "A 48% reduction in front end story frequency.",
+  "Over 2,000 developer days saved per year per 10-person team.",
+  "A three-day reduction in average story completion time.",
+  "A pathway for Air Force-wide source code and artifact sharing.",
+];
+
 const DesignSystemCaseStudy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const challenges = [
-    "Products ran different tech stacks with a mix of custom components and third-party libraries.",
-    "Teams were attached to their own solutions, making adoption a change management challenge.",
-    "No off-the-shelf library could cover custom, organization-specific components.",
-    "Existing wireframe kits didn't carry Kessel Run's theming or custom components.",
-  ];
-
-  const keyAchievements = [
-    "A 48% reduction in front end story frequency.",
-    "Over 2,000 developer days saved per year per 10-person team.",
-    "A three-day reduction in average story completion time.",
-    "A pathway for Air Force-wide source code and artifact sharing.",
-  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -54,7 +54,7 @@ const DesignSystemCaseStudy = () => {
       {/* Hero */}
       <section className="pt-24 pb-8 px-6">
         <div className="container mx-auto max-w-reading">
-          <Link to="/#work" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8">
+          <Link to="/#work" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8 rounded-[24px]">
             <ArrowLeft className="w-4 h-4" />
             Back to Case Studies
           </Link>
@@ -69,10 +69,10 @@ const DesignSystemCaseStudy = () => {
         </div>
       </section>
 
-      {/* Design Tokens Hero */}
+      {/* Hero Image */}
       <section className="px-6 pb-8">
         <div className="container mx-auto max-w-reading animate-fade-in" style={{ animationDelay: "0.3s" }}>
-          <DeviceFrame src={dsDesignTokens} alt="Design Tokens — Color, Typography & Spacing" caption="Design Tokens" />
+          <DeviceFrame src={dsDesignTokens} alt="Design tokens system — color, typography, and spacing definitions for scalable design systems" caption="Design Tokens" />
         </div>
       </section>
 
@@ -83,6 +83,12 @@ const DesignSystemCaseStudy = () => {
         <div className="flex-1 min-w-0 max-w-reading">
           {/* Overview */}
           <section id="overview" className="section-spacing scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Overview</h2>
+            <CaseStudyMetadata
+              role="Design Systems Lead"
+              timeline="2019 – 2023"
+              team="40+ Product Teams, 5 Applications"
+            />
             <KeyTakeaway>
               Design systems don't fail because the components are bad. They fail because the organization isn't ready.
             </KeyTakeaway>
@@ -102,6 +108,7 @@ const DesignSystemCaseStudy = () => {
 
           {/* Problem */}
           <section id="problem" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">The Problem</h2>
             <KeyTakeaway>
               The problem was really two problems sitting on top of each other.
             </KeyTakeaway>
@@ -133,6 +140,7 @@ const DesignSystemCaseStudy = () => {
 
           {/* Success Metrics */}
           <section id="metrics" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Success Metrics</h2>
             <KeyTakeaway>
               We measured success across task completion, error rates, and developer velocity.
             </KeyTakeaway>
@@ -153,6 +161,7 @@ const DesignSystemCaseStudy = () => {
 
           {/* Time to Value */}
           <section id="time-to-value" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Time to Value</h2>
             <KeyTakeaway>
               The design system accelerated value delivery across every metric we tracked.
             </KeyTakeaway>
@@ -182,11 +191,12 @@ const DesignSystemCaseStudy = () => {
 
           {/* Component Library */}
           <section className="section-spacing border-t border-border/30">
-            <DeviceFrame src={dsComponentLibrary} alt="Component Library — Custom MUI Theme" caption="Component Library" />
+            <DeviceFrame src={dsComponentLibrary} alt="Component library built on MUI — custom themed React components for scalable design systems" caption="Component Library" />
           </section>
 
           {/* Process */}
           <section id="process" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Design Process</h2>
             <KeyTakeaway>
               We applied the same Double Diamond process to the system itself — and built it through direct team feedback.
             </KeyTakeaway>
@@ -213,6 +223,7 @@ const DesignSystemCaseStudy = () => {
 
           {/* Adoption Impact */}
           <section id="adoption" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Adoption Impact</h2>
             <KeyTakeaway>
               Developers were doing more complex work faster, while PMs requested that work less often.
             </KeyTakeaway>
@@ -228,6 +239,7 @@ const DesignSystemCaseStudy = () => {
 
           {/* Heuristics */}
           <section id="heuristics" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Heuristic Evaluation</h2>
             <KeyTakeaway>
               Usability improvements measured against Nielsen's heuristics as the design system matured.
             </KeyTakeaway>
@@ -258,6 +270,7 @@ const DesignSystemCaseStudy = () => {
 
           {/* Before & After */}
           <section id="before-after" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Before & After</h2>
             <KeyTakeaway>
               From custom builds averaging 22 days per story to a shared system adopted voluntarily.
             </KeyTakeaway>
@@ -285,6 +298,7 @@ const DesignSystemCaseStudy = () => {
 
           {/* Results */}
           <section id="results" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Results</h2>
             <KeyTakeaway>
               The CXO of the Air Force approached the team about expanding the system Air Force-wide.
             </KeyTakeaway>

@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import CaseStudyProgress from "@/components/CaseStudyProgress";
 import CaseStudyFooterNav from "@/components/CaseStudyFooterNav";
 import CaseStudySideNav from "@/components/CaseStudySideNav";
+import CaseStudyMetadata from "@/components/CaseStudyMetadata";
 import ImageFrame from "@/components/ImageFrame";
 import ArtifactCard from "@/components/ArtifactCard";
 import KeyTakeaway from "@/components/KeyTakeaway";
@@ -17,8 +18,8 @@ import kesselRunLeadership from "@/assets/kessel-run-leadership.jpg";
 
 const sections = [
   { id: "overview", label: "Overview" },
-  { id: "problem", label: "Problem" },
-  { id: "opportunity", label: "Opportunity" },
+  { id: "problem", label: "The Problem" },
+  { id: "opportunity", label: "The Opportunity" },
   { id: "process", label: "Design Process" },
   { id: "impact", label: "Measurable Impact" },
   { id: "time-to-value", label: "Time to Value" },
@@ -62,6 +63,18 @@ const KesselRunCaseStudy = () => {
         </div>
       </section>
 
+      {/* Hero Image */}
+      <section className="px-6 pb-8">
+        <div className="container mx-auto max-w-reading animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <ImageFrame
+            src={kesselRunCaoc2021}
+            alt="Combined Air Operations Center — real-time intelligence and targeting workflows"
+            caption="Operations Center"
+            aspectRatio="16/9"
+          />
+        </div>
+      </section>
+
       {/* Body with sticky side nav */}
       <div className="container mx-auto max-w-content px-6 flex gap-12">
         <CaseStudySideNav sections={sections} />
@@ -69,6 +82,12 @@ const KesselRunCaseStudy = () => {
         <div className="flex-1 min-w-0 max-w-reading">
           {/* Overview */}
           <section id="overview" className="section-spacing scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Overview</h2>
+            <CaseStudyMetadata
+              role="Portfolio Design Lead"
+              timeline="2021 – Present"
+              team="15+ Designers, 5 Applications, 6 Missions"
+            />
             <KeyTakeaway>
               My job was never just about the screens. It was about building the conditions where good work becomes the default.
             </KeyTakeaway>
@@ -98,21 +117,9 @@ const KesselRunCaseStudy = () => {
             </div>
           </section>
 
-          {/* Hero Image */}
-          <section className="pb-16">
-            <ImageFrame
-              src={kesselRunCaoc2021}
-              alt="U.S. Central Command's Combined Air Operations Center"
-              caption="Operations Center"
-              aspectRatio="16/9"
-            />
-            <p className="text-sm text-muted-foreground text-center mt-4 italic">
-              Combined Air Operations Center operations and intelligence workflows
-            </p>
-          </section>
-
           {/* Problem Statement */}
           <section id="problem" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">The Problem</h2>
             <KeyTakeaway>
               How might we unify fragmented design practices to deliver consistent, mission-critical experiences at scale?
             </KeyTakeaway>
@@ -142,6 +149,7 @@ const KesselRunCaseStudy = () => {
 
           {/* Opportunity */}
           <section id="opportunity" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">The Opportunity</h2>
             <KeyTakeaway>
               Kessel Run understood early that design was a strategic investment, not a finishing step.
             </KeyTakeaway>
@@ -157,6 +165,7 @@ const KesselRunCaseStudy = () => {
 
           {/* Design Process */}
           <section id="process" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Design Process</h2>
             <KeyTakeaway>
               The Double Diamond gave designers a common vocabulary and helped stakeholders understand where we were in a project.
             </KeyTakeaway>
@@ -164,7 +173,6 @@ const KesselRunCaseStudy = () => {
               We used the Double Diamond as our shared process language. It framed design as a discipline with distinct modes of thinking rather than a linear march toward a predetermined solution.
             </p>
 
-            {/* Double Diamond Visual */}
             <div className="flex justify-center py-8 mb-8">
               <div className="flex items-center gap-0 max-w-full w-full">
                 {[
@@ -191,7 +199,6 @@ const KesselRunCaseStudy = () => {
               </div>
             </div>
 
-            {/* Phase Details */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 { name: "Discover", desc: "Getting close to users through hands-on research.", items: ["Contextual inquiries", "Stakeholder interviews", "Direct observation"] },
@@ -206,6 +213,7 @@ const KesselRunCaseStudy = () => {
 
           {/* Impact Metrics */}
           <section id="impact" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Measurable Impact</h2>
             <KeyTakeaway>
               Measurable outcomes across design delivery, retention, and operational reach.
             </KeyTakeaway>
@@ -216,9 +224,9 @@ const KesselRunCaseStudy = () => {
                 { value: "5", label: "Applications Shipped" },
                 { value: "1,000s", label: "Daily Active Users" },
               ].map((stat, i) => (
-                <div key={i} className="space-y-2">
+                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-4 shadow-elevated ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                   <p className="text-4xl font-bold text-primary">{stat.value}</p>
-                  <p className="text-sm text-muted-foreground">{stat.label}</p>
+                  <p className="text-sm text-muted-foreground mt-1">{stat.label}</p>
                 </div>
               ))}
             </div>
@@ -257,6 +265,7 @@ const KesselRunCaseStudy = () => {
 
           {/* Time to Value */}
           <section id="time-to-value" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Time to Value</h2>
             <KeyTakeaway>
               Design leadership accelerated value delivery across every measurable dimension.
             </KeyTakeaway>
@@ -288,6 +297,7 @@ const KesselRunCaseStudy = () => {
 
           {/* Heuristics */}
           <section id="heuristics" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Heuristic Evaluation</h2>
             <KeyTakeaway>
               Nielsen's heuristics gave our recommendations credibility with stakeholders who might otherwise have read them as subjective.
             </KeyTakeaway>
@@ -320,11 +330,11 @@ const KesselRunCaseStudy = () => {
           <section className="section-spacing border-t border-border/30">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <ImageFrame src={kesselRunHq} alt="Kessel Run headquarters" caption="HQ Boston" aspectRatio="4/3" />
+                <ImageFrame src={kesselRunHq} alt="Kessel Run headquarters building in Boston — agile software factory for USAF" caption="HQ Boston" aspectRatio="4/3" />
                 <p className="text-sm text-muted-foreground text-center mt-4 italic">Kessel Run headquarters in Boston</p>
               </div>
               <div>
-                <ImageFrame src={kesselRunLeadership} alt="Air Forces Central leadership" caption="Leadership Collaboration" aspectRatio="4/3" />
+                <ImageFrame src={kesselRunLeadership} alt="Cross-functional design leadership collaboration with Air Forces Central command" caption="Leadership Collaboration" aspectRatio="4/3" />
                 <p className="text-sm text-muted-foreground text-center mt-4 italic">Cross-functional collaboration with Air Force leadership</p>
               </div>
             </div>
@@ -332,6 +342,7 @@ const KesselRunCaseStudy = () => {
 
           {/* My Role */}
           <section id="role" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">My Role</h2>
             <KeyTakeaway>
               I set the standards that defined what good design looked like — then spent most of my time making sure teams could meet them.
             </KeyTakeaway>
@@ -361,7 +372,7 @@ const KesselRunCaseStudy = () => {
           <section className="section-spacing border-t border-border/30">
             <ImageFrame
               src={kesselRunCaoc2003}
-              alt="Combined Air Operations Center at Prince Sultan Air Base"
+              alt="Combined Air Operations Center at Prince Sultan Air Base — command and control environment"
               caption="Command & Control"
               aspectRatio="16/9"
             />
@@ -372,6 +383,7 @@ const KesselRunCaseStudy = () => {
 
           {/* Workflow Transformation */}
           <section id="transformation" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Transformation</h2>
             <KeyTakeaway>
               From siloed design work to a portfolio-wide design community with shared standards.
             </KeyTakeaway>
@@ -399,6 +411,7 @@ const KesselRunCaseStudy = () => {
 
           {/* Reflection */}
           <section id="reflection" className="section-spacing border-t border-border/30 scroll-mt-20">
+            <h2 className="text-2xl font-bold text-foreground mb-6">Reflection</h2>
             <KeyTakeaway>
               The most impactful thing I did was protect the space for good work to happen.
             </KeyTakeaway>
