@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -7,10 +6,24 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CaseStudyProgress from "@/components/CaseStudyProgress";
 import CaseStudyFooterNav from "@/components/CaseStudyFooterNav";
+import CaseStudySideNav from "@/components/CaseStudySideNav";
+import ArtifactCard from "@/components/ArtifactCard";
+import KeyTakeaway from "@/components/KeyTakeaway";
 import DashboardOutcomesChart from "@/components/DashboardOutcomesChart";
 import SystemOverviewMockup from "@/components/SystemOverviewMockup";
 import DataSourceMockup from "@/components/DataSourceMockup";
 import MetricsViewMockup from "@/components/MetricsViewMockup";
+
+const sections = [
+  { id: "overview", label: "Overview" },
+  { id: "problem", label: "The Problem" },
+  { id: "process", label: "Design Process" },
+  { id: "users", label: "Users" },
+  { id: "ia", label: "Information Architecture" },
+  { id: "redesign", label: "Redesign" },
+  { id: "testing", label: "Testing" },
+  { id: "outcomes", label: "Outcomes" },
+];
 
 const OperationalDashboardCaseStudy = () => {
   useEffect(() => {
@@ -25,391 +38,251 @@ const OperationalDashboardCaseStudy = () => {
       {/* Hero */}
       <section className="pt-32 pb-8 px-6">
         <div className="container mx-auto max-w-4xl">
-          <Link 
-            to="/#work" 
-            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8"
-          >
+          <Link to="/#work" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8">
             <ArrowLeft className="w-4 h-4" />
             Back to Case Studies
           </Link>
-          <div className="space-y-4 mb-12 animate-fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold">Operational Data Dashboard</h1>
-            <p className="text-xl text-muted-foreground">Redesigning a monitoring tool that engineers had built for engineers — and making it work for the operators who actually depended on it.</p>
-          </div>
-          <div className="overflow-hidden animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            <SystemOverviewMockup />
-          </div>
-        </div>
-      </section>
-
-      {/* Project Overview */}
-      <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-4xl">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="animate-fade-in">
-              <CardContent className="p-6">
-                <h3 className="text-sm font-semibold text-muted-foreground mb-2">ROLE</h3>
-                <p className="text-lg">UX Manager & Product Designer</p>
-              </CardContent>
-            </Card>
-            <Card className="animate-fade-in" style={{ animationDelay: "0.1s" }}>
-              <CardContent className="p-6">
-                <h3 className="text-sm font-semibold text-muted-foreground mb-2">TIMELINE</h3>
-                <p className="text-lg">2019 – 2021</p>
-              </CardContent>
-            </Card>
-            <Card className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              <CardContent className="p-6">
-                <h3 className="text-sm font-semibold text-muted-foreground mb-2">TEAM</h3>
-                <p className="text-lg">2 Product Designers, 6 Engineers, 1 PM</p>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="mt-12 space-y-6 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            <h2 className="text-3xl font-bold">Overview</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              This was one of my earlier projects at Kessel Run, and in some ways one of the most formative. The team had a monitoring dashboard that technically worked. It showed status. It had data. But operators weren't getting what they needed from it, and the engineering team — talented as they were — wasn't sure how to close that gap on their own.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              My job was to figure out what operators actually needed, translate that into a design the engineering team could build, and navigate the back-and-forth between user needs and technical constraints that comes with any dashboard project done well.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Working with two product designers, six engineers, and a product manager, we redesigned the dashboard from the ground up across three interconnected views: a system-level overview, a data source view, and a granular metrics view.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Problem & Problem Statement */}
-      <section className="py-16 px-6">
-        <div className="container mx-auto max-w-4xl space-y-12">
-          <div className="space-y-6 animate-fade-in">
-            <h2 className="text-3xl font-bold">The Problem</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              The existing dashboard was sparse. Basic status indicators, minimal context, no trend data, no way to understand whether what you were seeing was normal or cause for concern. Engineers had built it to show that systems were running. Operators needed it to tell them <em>how</em> systems were running — and to give them enough context to communicate problems clearly to the engineering teams they depended on for fixes.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              The gap between those two things was bigger than anyone had fully acknowledged before research started.
-            </p>
-          </div>
-
-          <Card className="bg-primary/5 border-primary/20 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            <CardContent className="p-8">
-              <h3 className="text-sm font-semibold text-primary mb-4">PROBLEM STATEMENT</h3>
-              <p className="text-xl font-medium leading-relaxed">
-                How might we design a dashboard that delivers the right value and KPIs to operators, helping them monitor data flows and communicate effectively with engineering teams?
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
-      {/* Design Process */}
-      <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-4xl space-y-8 animate-fade-in">
-          <div className="space-y-4">
-            <h2 className="text-3xl font-bold">Design Process</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              We used the Double Diamond framework to structure the work, moving through four phases that kept us from jumping to solutions before we understood the problem.
-            </p>
-          </div>
-
-          {/* Double Diamond Visual */}
-          <div className="flex justify-center py-8">
-            <div className="flex items-center gap-0 max-w-4xl w-full">
-              {[
-                { name: "Discover", type: "divergent" },
-                { name: "Define", type: "convergent" },
-                { name: "Develop", type: "divergent" },
-                { name: "Deliver", type: "convergent" },
-              ].map((phase, index) => (
-                <div key={index} className="flex-1 text-center">
-                  <div
-                    className={`h-24 flex items-center justify-center relative ${
-                      phase.type === "divergent"
-                        ? "bg-gradient-to-r from-primary/20 to-primary/40"
-                        : "bg-gradient-to-r from-primary/40 to-primary/20"
-                    } ${index === 0 ? "rounded-l-xl" : ""} ${index === 3 ? "rounded-r-xl" : ""}`}
-                  >
-                    <span className="font-semibold text-foreground">{phase.name}</span>
-                  </div>
-                  <span className={`text-xs mt-2 block ${phase.type === "divergent" ? "text-primary" : "text-secondary"}`}>
-                    {phase.type === "divergent" ? "Divergent" : "Convergent"}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Phase Details */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                name: "Discover",
-                type: "divergent",
-                description: "Market research on Grafana-style monitoring tools, user interviews with operators, and mapping existing fragmented tooling.",
-                activities: ["Market research on data visualization dashboards", "User interviews to understand operator priorities", "Mapping existing fragmented tools and workflows"],
-              },
-              {
-                name: "Define",
-                type: "convergent",
-                description: "Defining key metrics, mapping monitoring workflows, and establishing design principles around scannability.",
-                activities: ["Key metrics and data hierarchies", "User journey mapping for monitoring workflows", "Design principles for scannability"],
-              },
-              {
-                name: "Develop",
-                type: "divergent",
-                description: "Figuring out how the dashboard scales from overview to granular data without losing users in transition.",
-                activities: ["Early concepts evolving with new insights", "Scaling from overview to granular views", "Filtering and navigation pattern iterations"],
-              },
-              {
-                name: "Deliver",
-                type: "convergent",
-                description: "Testing with operators, workshopping with engineers, and negotiating what was technically possible.",
-                activities: ["Testing with operators and administrators", "Feasibility workshops with engineers", "Constraint negotiation and design refinement"],
-              },
-            ].map((phase, index) => (
-              <Card key={index} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                <CardContent className="p-6 space-y-4">
-                  <div className="flex items-center gap-2">
-                    <span className={`w-3 h-3 ${phase.type === "divergent" ? "bg-primary" : "bg-secondary"}`} />
-                    <h3 className="font-semibold text-lg">{phase.name}</h3>
-                  </div>
-                  <p className="text-sm text-muted-foreground">{phase.description}</p>
-                  <ul className="space-y-2">
-                    {phase.activities.map((activity, i) => (
-                      <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
-                        <span className="text-primary mt-1">•</span>
-                        {activity}
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Understanding Our Users */}
-      <section className="py-16 px-6">
-        <div className="container mx-auto max-w-4xl space-y-12">
-          <div className="space-y-6 animate-fade-in">
-            <h2 className="text-3xl font-bold">Understanding Our Users</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              User interviews surfaced consistent patterns across the team. System health visibility was non-negotiable — every single person we talked to identified it as critical. Historical trend data mattered to the majority, because operators weren't just monitoring current state; they were trying to recognize patterns over time and make judgments about what was normal. Configurable alert thresholds came up repeatedly as something the existing tool didn't support but people genuinely needed.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Two distinct user groups emerged with meaningfully different priorities. System administrators were focused on overall health and reliability standards across the full portfolio of data sources. Mission operators were narrower in focus but higher in stakes — they needed to know whether the data feeding mission planning was accurate and available right now.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Designing for both without making the interface feel like it was trying to serve everyone at once was one of the more interesting tensions in the project.
-            </p>
-          </div>
-
-          <ul className="space-y-4 animate-fade-in">
-            {[
-              "100% of users cited system health visibility as critical — 6/6 users said this",
-              "83% needed historical trend data for pattern recognition — 5/6 users said this",
-              "83% wanted configurable alert thresholds to customize notifications — 5/6 users said this",
-              "System administrators monitor overall health and ensure systems meet reliability standards",
-              "Mission operators track data availability to ensure planning has accurate information",
-            ].map((item, index) => (
-              <li key={index} className="flex items-start">
-                <span className="inline-block w-2 h-2 bg-primary mt-2 mr-4 flex-shrink-0" />
-                <p className="text-lg text-muted-foreground leading-relaxed">{item}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* Restructuring IA + Dashboard Mockup */}
-      <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-4xl space-y-12">
-          <div className="space-y-6 animate-fade-in">
-            <h2 className="text-3xl font-bold">Restructuring the Information Architecture</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Early in the project I sat down with engineers to understand how the dashboard worked technically. That conversation was more useful than I expected. The underlying data had a natural hierarchy: three main views organized around System Overview, Data Source, and individual Metrics. Each organization could also have an optional sign-in page for team access.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Rather than fighting that structure, I leaned into it. Data starts broad at the system level and becomes progressively more detailed as users drill into specific sources and then into specific metrics. That hierarchy became the backbone of the redesign — a clear path from anomaly detection at the top level to root cause investigation at the bottom.
-            </p>
-          </div>
-
-          {/* Dashboard Mockup Visual */}
-          <div className="animate-fade-in">
-            <SystemOverviewMockup />
-          </div>
-        </div>
-      </section>
-
-      {/* Redesigning the Dashboard */}
-      <section className="py-16 px-6">
-        <div className="container mx-auto max-w-4xl space-y-12">
-          <div className="space-y-6 animate-fade-in">
-            <h2 className="text-3xl font-bold">Redesigning the Dashboard</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              The original dashboard gave you a status and a title. That was about it. The redesign added several layers that operators said they needed but the existing tool didn't provide.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Data cards and summary tables gave operators a fast-scan surface for system health without requiring them to open individual views. Trend charts surfaced performance patterns over time rather than just point-in-time status. Filters let users navigate large datasets — and this turned out to matter more than I initially assumed, because testing revealed that operators routinely monitor dozens of data sources simultaneously, not the handful I had designed for in early concepts.
-            </p>
-          </div>
-
-          <div className="space-y-6 animate-fade-in">
-            <h3 className="text-2xl font-semibold">View 1: System Overview</h3>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              A high-level view of performance across all data sources for an organization. The line chart shows throughput over time with a scrollable legend for filtering across large source sets. Summary cards surface health status and endpoint counts per source, giving operators a single place to spot anomalies and compare environments before drilling deeper.
-            </p>
-          </div>
-
-          <div className="space-y-6 animate-fade-in">
-            <h3 className="text-2xl font-semibold">View 2: Data Source View</h3>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              A focused view on a single data source — its performance trends, request frequency, timestamps, latency metrics, error rates, and connected feeds. This is where operators go when something in the overview view catches their attention and they need more context before escalating.
-            </p>
-            <DataSourceMockup />
-          </div>
-
-          <div className="space-y-6 animate-fade-in">
-            <h3 className="text-2xl font-semibold">View 3: Metrics View</h3>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              The most granular level — detailed statistics on specific endpoint performance including average, max, min, and standard deviation of response times, plus error rates and error types broken down by percentile. This view was designed specifically to give operators the language they needed to communicate clearly with engineering teams rather than describing problems in vague terms.
-            </p>
-            <MetricsViewMockup />
-          </div>
-        </div>
-      </section>
-
-      {/* What Testing Revealed */}
-      <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-4xl space-y-12">
-          <div className="space-y-6 animate-fade-in">
-            <h2 className="text-3xl font-bold">What Testing Revealed</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Operators pushed the designs in directions I hadn't anticipated. The need for more contextual data — timestamps, historical comparisons, frequency information — came up consistently. Without that context, users could see that something was wrong but couldn't communicate it precisely to engineers or determine whether it was a new problem or a recurring one.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              The scale of what operators were monitoring also surprised me. I had initially designed with a handful of data sources in mind. Testing made it clear that real workflows involved dozens. That insight directly drove the redesign of the filtering experience — the scrollable legend wasn't a nice-to-have, it was the only way to make the interface usable at actual operational scale.
-            </p>
-          </div>
-
-          <div className="space-y-6 animate-fade-in">
-            <h3 className="text-2xl font-semibold">Navigating Constraints</h3>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Implementing feedback from operators didn't happen in a straight line. I was still developing my technical vocabulary at this point in my career, and the gap between what users asked for and what I could confidently spec for engineers was real. The solution was to stop trying to bridge that gap alone and start workshopping directly with the engineering team.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Bringing user feedback into those conversations rather than translated design requirements changed the dynamic. Engineers understood user problems better when they heard them directly, and they were more inventive about solutions when they understood the underlying need rather than a design spec that may or may not have captured it accurately. That collaboration pattern — researcher and engineer solving the same problem together rather than passing artifacts back and forth — was something I carried forward into every project after this one.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Time to Value + Outcomes Chart */}
-      <section className="py-16 px-6">
-        <div className="container mx-auto max-w-4xl space-y-8">
-          <h2 className="text-3xl font-bold animate-fade-in">Time to Value</h2>
-
-          {/* Outcomes Chart Visual */}
-          <div className="animate-fade-in">
-            <DashboardOutcomesChart />
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
-            {[
-              {
-                value: "90%",
-                label: "Task Success Rate",
-                description: "In moderated usability sessions, operators completed the task of identifying underperforming systems without assistance at a 90% success rate.",
-                percentage: 90,
-              },
-              {
-                value: "4/5",
-                label: "Confidence Score",
-                description: "After completing tasks, operators rated their confidence in evaluating system performance at 4 out of 5 on average.",
-                percentage: 80,
-              },
-              {
-                value: "60%",
-                label: "Context Switching Reduction",
-                description: "Consolidating fragmented monitoring tools into a unified interface cut the time operators spent switching between tools by 60%.",
-                percentage: 60,
-              },
-              {
-                value: "3x",
-                label: "Faster Issue Detection",
-                description: "Time to identify system anomalies improved threefold compared to the original tooling — the number that resonated most with skeptical stakeholders.",
-                percentage: 75,
-              },
-            ].map((metric, index) => (
-              <Card key={index} className="overflow-hidden animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                <CardContent className="p-6 space-y-4">
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <p className="text-3xl font-bold text-primary">{metric.value}</p>
-                      <p className="text-sm font-medium">{metric.label}</p>
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="h-3 bg-muted overflow-hidden">
-                      <div
-                        className="h-full bg-gradient-to-r from-primary/40 to-primary transition-all duration-1000"
-                        style={{ width: `${metric.percentage}%` }}
-                      />
-                    </div>
-                    <p className="text-xs text-muted-foreground">{metric.description}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Final Design Mockups */}
-      <section className="py-16 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-4xl space-y-8">
-          <div className="space-y-4 animate-fade-in">
-            <SystemOverviewMockup />
-          </div>
-          <div className="space-y-4 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            <DataSourceMockup />
-          </div>
-          <div className="space-y-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <MetricsViewMockup />
-          </div>
-          <p className="text-center text-sm text-muted-foreground italic pt-4 border-t border-border">
-            Note: The data and text represented in these mockups have been modified and anonymized due to the secure nature of this work.
+          <p className="text-[11px] font-technical font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">
+            UX Manager & Product Designer · 2019 – 2021
+          </p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">Operational Data Dashboard</h1>
+          <p className="text-xl text-muted-foreground animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            Redesigning a monitoring tool that engineers had built for engineers — and making it work for the operators who depended on it.
           </p>
         </div>
       </section>
 
-      {/* Outcomes */}
-      <section className="py-16 px-6 bg-primary/5">
-        <div className="container mx-auto max-w-4xl space-y-8">
-          <h2 className="text-3xl font-bold animate-fade-in">Outcomes & Impact</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
-              "All designs were validated against engineering constraints before handoff — not as a final checkbox but as an ongoing part of the process throughout the project.",
-              "Usability testing with operators and system administrators gave the team direct evidence about what was working and what needed to change, rather than relying on internal judgment.",
-              "The redesign consolidated fragmented tooling into a single interface that operators could actually rely on, and surfaced insights about real monitoring workflows the team wouldn't have found without direct user access.",
-              "That evidence validated the research approach as much as the design itself — and made the case for embedding user research earlier in future projects.",
-            ].map((outcome, index) => (
-              <Card key={index} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                <CardContent className="p-6">
-                  <p className="text-lg leading-relaxed">{outcome}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+      {/* Hero Mockup */}
+      <section className="px-6 pb-8">
+        <div className="container mx-auto max-w-4xl animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <SystemOverviewMockup />
         </div>
       </section>
 
-      <CaseStudyFooterNav currentSlug="operational-dashboard" />
+      {/* Body with side nav */}
+      <div className="container mx-auto max-w-6xl px-6 flex gap-12">
+        <CaseStudySideNav sections={sections} />
 
+        <div className="flex-1 min-w-0 max-w-4xl">
+          {/* Overview */}
+          <section id="overview" className="py-16">
+            <KeyTakeaway>
+              Operators weren't getting what they needed — and the engineering team wasn't sure how to close the gap.
+            </KeyTakeaway>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+              {[
+                { label: "ROLE", value: "UX Manager & Product Designer" },
+                { label: "TIMELINE", value: "2019 – 2021" },
+                { label: "TEAM", value: "2 Designers, 6 Engineers, 1 PM" },
+              ].map((m, i) => (
+                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-5 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+                  <p className="text-[10px] font-technical font-semibold tracking-[0.15em] uppercase text-muted-foreground mb-1">{m.label}</p>
+                  <p className="text-lg">{m.value}</p>
+                </div>
+              ))}
+            </div>
+            <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
+              <p>
+                The team had a monitoring dashboard that technically worked. It showed status. It had data. But operators weren't getting what they needed from it.
+              </p>
+              <p>
+                My job was to figure out what operators needed, translate that into a design the engineering team could build, and navigate the back-and-forth between user needs and technical constraints.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+              <ArtifactCard label="Methods" icon="🔬" items={["User Interviews", "Market Research (Grafana)", "Workflow Mapping", "Usability Testing"]} />
+              <ArtifactCard label="Tools" icon="🛠" items={["Figma", "Miro", "React", "D3.js / Recharts"]} />
+            </div>
+          </section>
+
+          {/* Problem */}
+          <section id="problem" className="py-16 border-t border-border/30">
+            <KeyTakeaway>
+              Engineers built it to show that systems were running. Operators needed it to tell them how.
+            </KeyTakeaway>
+            <div className="space-y-4 text-lg text-muted-foreground leading-relaxed mb-8">
+              <p>
+                The existing dashboard was sparse. Basic status indicators, minimal context, no trend data, no way to understand whether what you were seeing was normal or cause for concern.
+              </p>
+            </div>
+            <div className="rounded-[24px] bg-primary/5 p-8 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+              <p className="text-[11px] font-technical font-semibold tracking-[0.15em] uppercase text-primary mb-4">Problem Statement</p>
+              <p className="text-lg font-medium leading-relaxed">
+                How might we design a dashboard that delivers the right KPIs to operators, helping them monitor data flows and communicate effectively with engineering teams?
+              </p>
+            </div>
+          </section>
+
+          {/* Design Process */}
+          <section id="process" className="py-16 border-t border-border/30">
+            <KeyTakeaway>
+              The Double Diamond framework kept us from jumping to solutions before understanding the problem.
+            </KeyTakeaway>
+            <div className="flex justify-center py-6 mb-6">
+              <div className="flex items-center gap-0 max-w-full w-full">
+                {["Discover", "Define", "Develop", "Deliver"].map((name, index) => (
+                  <div key={index} className="flex-1 text-center">
+                    <div className={`h-20 flex items-center justify-center ${index % 2 === 0 ? "bg-gradient-to-r from-primary/20 to-primary/40" : "bg-gradient-to-r from-primary/40 to-primary/20"} ${index === 0 ? "rounded-l-xl" : ""} ${index === 3 ? "rounded-r-xl" : ""}`}>
+                      <span className="font-semibold text-foreground text-sm">{name}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {[
+                { title: "Discover", items: ["Market research on Grafana-style dashboards", "User interviews with operators", "Mapping existing fragmented tools"] },
+                { title: "Define", items: ["Key metrics and data hierarchies", "Monitoring workflow mapping", "Design principles for scannability"] },
+                { title: "Develop", items: ["Overview to granular view scaling", "Filtering and navigation iterations", "Concepts evolving with new insights"] },
+                { title: "Deliver", items: ["Testing with operators & admins", "Feasibility workshops with engineers", "Constraint negotiation & refinement"] },
+              ].map((phase, i) => (
+                <ArtifactCard key={i} label={phase.title} items={phase.items} className="!p-5" />
+              ))}
+            </div>
+          </section>
+
+          {/* Users */}
+          <section id="users" className="py-16 border-t border-border/30">
+            <KeyTakeaway>
+              Two distinct user groups with meaningfully different priorities — designing for both was key.
+            </KeyTakeaway>
+            <ul className="space-y-3">
+              {[
+                "100% cited system health visibility as critical (6/6 users)",
+                "83% needed historical trend data for pattern recognition (5/6)",
+                "83% wanted configurable alert thresholds (5/6)",
+                "System administrators monitor overall health and reliability standards",
+                "Mission operators track data availability for accurate planning",
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
+                  <p className="text-muted-foreground leading-relaxed">{item}</p>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          {/* Information Architecture */}
+          <section id="ia" className="py-16 border-t border-border/30">
+            <KeyTakeaway>
+              System Overview → Data Source → Metrics: a clear path from anomaly detection to root cause.
+            </KeyTakeaway>
+            <div className="space-y-4 text-lg text-muted-foreground leading-relaxed mb-8">
+              <p>
+                The underlying data had a natural hierarchy. Rather than fighting that structure, I leaned into it — data starts broad at the system level and becomes detailed as users drill in.
+              </p>
+            </div>
+            <SystemOverviewMockup />
+          </section>
+
+          {/* Redesign */}
+          <section id="redesign" className="py-16 border-t border-border/30">
+            <KeyTakeaway>
+              The redesign added several layers that operators needed but the existing tool didn't provide.
+            </KeyTakeaway>
+
+            <div className="space-y-12">
+              <div>
+                <h3 className="text-lg font-semibold text-foreground mb-3">View 1: System Overview</h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  High-level performance across all data sources. Line chart with throughput, scrollable legend for filtering, summary cards with health status.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold text-foreground mb-3">View 2: Data Source View</h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  Focused view on a single source — performance trends, request frequency, latency, error rates, and connected feeds.
+                </p>
+                <DataSourceMockup />
+              </div>
+
+              <div>
+                <h3 className="text-lg font-semibold text-foreground mb-3">View 3: Metrics View</h3>
+                <p className="text-muted-foreground leading-relaxed mb-4">
+                  The most granular level — detailed statistics designed to give operators the language to communicate clearly with engineering.
+                </p>
+                <MetricsViewMockup />
+              </div>
+            </div>
+          </section>
+
+          {/* Testing */}
+          <section id="testing" className="py-16 border-t border-border/30">
+            <KeyTakeaway>
+              Operators pushed designs in directions I hadn't anticipated — real workflows involved dozens of data sources.
+            </KeyTakeaway>
+            <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
+              <p>
+                The need for contextual data — timestamps, historical comparisons, frequency — came up consistently. Without it, users could see something was wrong but couldn't communicate it precisely.
+              </p>
+              <p>
+                The scale surprised me. I'd designed for a handful of sources. Testing revealed operators routinely monitor dozens simultaneously — driving the scrollable legend from nice-to-have to necessity.
+              </p>
+            </div>
+
+            <div className="mt-8 space-y-4">
+              <h3 className="text-lg font-semibold text-foreground">Navigating Constraints</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                Bringing user feedback directly to engineering conversations — rather than translating into design specs — changed the dynamic. That collaboration pattern became something I carried into every project after.
+              </p>
+            </div>
+          </section>
+
+          {/* Outcomes */}
+          <section id="outcomes" className="py-16 border-t border-border/30">
+            <KeyTakeaway>
+              90% task success rate, 3x faster issue detection, 60% less context switching.
+            </KeyTakeaway>
+
+            <div className="mb-8">
+              <DashboardOutcomesChart />
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+              {[
+                { value: "90%", label: "Task Success" },
+                { value: "4/5", label: "Confidence Score" },
+                { value: "60%", label: "Less Context Switching" },
+                { value: "3x", label: "Faster Detection" },
+              ].map((m, i) => (
+                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-4 text-center shadow-elevated ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+                  <p className="text-2xl font-bold text-primary">{m.value}</p>
+                  <p className="text-xs text-muted-foreground mt-1">{m.label}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Final Mockups */}
+            <div className="space-y-6 mt-12">
+              <SystemOverviewMockup />
+              <DataSourceMockup />
+              <MetricsViewMockup />
+              <p className="text-center text-sm text-muted-foreground italic pt-4 border-t border-border">
+                Mockups anonymized. Actual interface built for classified operational networks.
+              </p>
+            </div>
+
+            {/* Outcomes */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
+              {[
+                "All designs validated against engineering constraints before handoff — not as a checkbox but as an ongoing process.",
+                "Usability testing gave direct evidence about what was working, rather than relying on internal judgment.",
+                "The redesign consolidated fragmented tooling into a single interface operators could rely on.",
+                "The evidence validated research as much as the design — making the case for embedding research earlier.",
+              ].map((outcome, i) => (
+                <Card key={i}>
+                  <CardContent className="p-5">
+                    <p className="text-sm leading-relaxed">{outcome}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <CaseStudyFooterNav currentSlug="operational-dashboard" />
       <Footer />
     </div>
   );
