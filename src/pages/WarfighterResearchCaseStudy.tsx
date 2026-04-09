@@ -20,34 +20,34 @@ const WarfighterResearchCaseStudy = () => {
     {
       name: "Discovery",
       type: "divergent" as const,
-      description: "Understanding the problem space before any solutions are on the table. Field studies, diary studies, user interviews, and stakeholder interviews to gather foundational context on user needs, workflows, and constraints.",
+      description: "Understanding the problem before any solutions are on the table. Field studies, diary studies, interviews, and stakeholder conversations to build foundational context on user needs, workflows, and constraints.",
       activities: ["Field studies", "Diary studies", "User interviews", "Stakeholder interviews", "Requirements gathering"]
     },
     {
       name: "Exploring",
       type: "convergent" as const,
-      description: "Synthesizing what we learned into design direction. Competitive analysis, persona building, task analysis, journey mapping, and card sorting to move from raw observations to actionable insights.",
+      description: "Turning raw observations into design direction. Competitive analysis, persona building, task analysis, journey mapping, and card sorting to move from what we saw to what we should do about it.",
       activities: ["Competitive analysis", "Persona building", "Task analysis", "Journey mapping", "Card sorting"]
     },
     {
       name: "Testing",
       type: "divergent" as const,
-      description: "Pressure-testing design solutions against real user expectations. Moderated usability sessions, benchmark testing, accessibility evaluation, and A/B testing to validate before development investment locked in.",
+      description: "Testing design solutions against real user expectations. Moderated usability sessions, benchmark testing, accessibility checks, and A/B testing to validate before development locks in.",
       activities: ["Usability testing", "Benchmark testing", "Accessibility evaluation", "A/B testing"]
     },
     {
       name: "Listening",
       type: "convergent" as const,
-      description: "Ongoing feedback after launch. Surveys, product analytics, search-log analysis, and usability-bug reviews to catch what pre-launch testing missed and feed continuous improvement.",
+      description: "Ongoing feedback after launch. Surveys, analytics, search-log analysis, and bug reviews to catch what pre-launch testing missed and keep improving.",
       activities: ["Surveys", "Analytics reviews", "Search-log analysis", "FAQ reviews"]
     },
   ];
 
   const researchMethodology = [
-    "Conducted more than 30 contextual inquiries and shadowing sessions with operational users in their natural work environments — watching people do their actual jobs rather than asking them to describe those jobs from memory.",
-    "Ran more than 30 moderated usability testing sessions with active duty personnel using task-based protocols and think-aloud methods, giving us a direct window into how users processed information and where interfaces broke their expectations.",
-    "Ran participatory design workshops where operational users co-created solutions alongside designers. Card sorting and prototype feedback in those sessions did something beyond just gathering data — it built trust.",
-    "Established participant recruitment channels, stakeholder alignment processes, and common points of contact for research standards across all product teams. That infrastructure sounds unglamorous, but it was what made the research program scalable rather than dependent on individual heroics."
+    "Ran 30+ contextual inquiries and shadowing sessions with operators in their actual work environments — watching people do their jobs rather than asking them to describe those jobs from memory.",
+    "Conducted 30+ moderated usability sessions with active duty personnel using task-based protocols and think-aloud methods, giving us a direct window into how users processed information and where interfaces broke down.",
+    "Ran participatory design workshops where operators co-created solutions alongside designers. Card sorting and prototype feedback in those sessions went beyond gathering data — they built trust.",
+    "Set up participant recruitment channels, stakeholder alignment processes, and shared research standards across all product teams. That infrastructure is unglamorous, but it's what made the research program scalable instead of dependent on individual effort."
   ];
 
   const processSteps = [

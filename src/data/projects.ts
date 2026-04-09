@@ -9,7 +9,7 @@ export const projects: Project[] = [
   {
     title: "UX Leadership",
     subtitle: "UX Manager + Leader",
-    description: "Embedding design into mission-critical USAF software development, shifting from waterfall delivery to a modern, user-centered approach.",
+    description: "Built a design culture inside one of the Air Force's most demanding software environments — shifting teams from waterfall delivery to a modern, research-driven approach.",
     role: "Portfolio Design Lead",
     timeline: "2021 - Present",
     image: kesselRunLeadershipVisit,
@@ -19,7 +19,7 @@ export const projects: Project[] = [
   {
     title: "Portfolio Design System",
     subtitle: "Design Systems + Component Libraries",
-    description: "Scaled a design system across five operational missions, reducing inconsistency and giving product teams a shared foundation to build from.",
+    description: "Created a shared design system across five operational missions, cutting redundant work and giving product teams a common foundation to build from.",
     role: "UX Manager + Product Designer",
     timeline: "2020 - 2023",
     image: designSystemPreview,
@@ -29,7 +29,7 @@ export const projects: Project[] = [
   {
     title: "USAF Mission Reporting",
     subtitle: "Product Design + Integration",
-    description: "Replacing manual calculations and fragmented data entry with a single, accessible source of truth for USAF mission reporting.",
+    description: "Replaced manual calculations and fragmented data entry with a single source of truth for Air Force mission reporting.",
     role: "UX Manager + Product Designer",
     timeline: "2018 - 2023",
     image: missionReportingPreview,
@@ -39,7 +39,7 @@ export const projects: Project[] = [
   {
     title: "UX Research Initiatives",
     subtitle: "User Research + Synthesis",
-    description: "Establishing research practices from the ground up across a suite of products, giving teams the tools to validate decisions before they ship.",
+    description: "Built a research practice from scratch across a portfolio of products, giving teams the evidence they needed to make better decisions before shipping.",
     role: "UX Manager",
     timeline: "2021 - 2024",
     image: uxResearchPreview,
@@ -49,7 +49,7 @@ export const projects: Project[] = [
   {
     title: "Operational Data Dashboard",
     subtitle: "Web Dashboards + Data Visualization",
-    description: "Giving operators a single place to monitor critical data flows and system health. Reducing cognitive load in high-stakes environments.",
+    description: "Redesigned a monitoring dashboard so operators could actually understand system health — not just see that systems were running.",
     role: "UX Manager + Product Designer",
     timeline: "2019 - 2021",
     image: dataDashboardPreview,

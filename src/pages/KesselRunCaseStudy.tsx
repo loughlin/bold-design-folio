@@ -173,7 +173,7 @@ const KesselRunCaseStudy = () => {
                 <span className="w-3 h-3 rounded-full bg-primary" />
                 <h3 className="font-semibold">Discover</h3>
               </div>
-              <p className="text-sm text-muted-foreground">Understanding user contexts and mission requirements through immersive research.</p>
+              <p className="text-sm text-muted-foreground">Getting close to users and missions through hands-on research.</p>
               <ul className="text-sm text-muted-foreground space-y-1">
                 <li className="flex items-start gap-2"><span className="text-primary">•</span>Contextual inquiries</li>
                 <li className="flex items-start gap-2"><span className="text-primary">•</span>Stakeholder interviews</li>
@@ -185,7 +185,7 @@ const KesselRunCaseStudy = () => {
                 <span className="w-3 h-3 rounded-full bg-secondary" />
                 <h3 className="font-semibold">Define</h3>
               </div>
-              <p className="text-sm text-muted-foreground">Synthesizing research into clear problem definitions and actionable requirements.</p>
+              <p className="text-sm text-muted-foreground">Turning research into clear problem statements and requirements teams could act on.</p>
               <ul className="text-sm text-muted-foreground space-y-1">
                 <li className="flex items-start gap-2"><span className="text-primary">•</span>Problem framing</li>
                 <li className="flex items-start gap-2"><span className="text-primary">•</span>Journey mapping</li>
@@ -197,7 +197,7 @@ const KesselRunCaseStudy = () => {
                 <span className="w-3 h-3 rounded-full bg-primary" />
                 <h3 className="font-semibold">Develop</h3>
               </div>
-              <p className="text-sm text-muted-foreground">Generating and pressure-testing solutions through the whole team, not just the designers in the room.</p>
+              <p className="text-sm text-muted-foreground">Testing solutions with the whole team, not just the designers in the room.</p>
               <ul className="text-sm text-muted-foreground space-y-1">
                 <li className="flex items-start gap-2"><span className="text-primary">•</span>Concept ideation</li>
                 <li className="flex items-start gap-2"><span className="text-primary">•</span>Rapid prototyping</li>
@@ -209,7 +209,7 @@ const KesselRunCaseStudy = () => {
                 <span className="w-3 h-3 rounded-full bg-secondary" />
                 <h3 className="font-semibold">Deliver</h3>
               </div>
-              <p className="text-sm text-muted-foreground">Shipping validated solutions through structured testing, thoughtful handoff, and continuous iteration based on what we learned from real users after launch.</p>
+              <p className="text-sm text-muted-foreground">Shipping validated work through structured testing, clean handoff, and continuous iteration based on what real users told us after launch.</p>
               <ul className="text-sm text-muted-foreground space-y-1">
                 <li className="flex items-start gap-2"><span className="text-primary">•</span>Usability testing</li>
                 <li className="flex items-start gap-2"><span className="text-primary">•</span>Design handoff</li>

@@ -73,7 +73,7 @@ const MissionReportingCaseStudy = () => {
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl font-bold mb-6">Overview</h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            First as a product designer on the software team and later overseeing it from a managing position, I was responsible for the design process, from research to solution generation and evaluation as we built out and expanded upon the capability for the mission reporting tool. Through my time on this project I experienced significant growth not only as a designer but as a professional and product owner. I was exposed to new challenges and difficult stakeholders which allowed me to learn valuable lessons in deploying software quickly and productively. From knowing the importance of involving engineers early in the process to accounting for unforeseen complexity and juggling stakeholders.
+            I joined this project as a product designer and eventually oversaw it as a manager. I owned the design process end to end — research, concept generation, testing, and iteration — as we built out and expanded the mission reporting tool. This project shaped me more than any other. I learned how to bring engineers into the design process early, how to navigate difficult stakeholders, how to scope work when complexity keeps growing, and how to ship software that people actually depend on in high-pressure environments.
           </p>
         </div>
       </section>
@@ -139,13 +139,13 @@ const MissionReportingCaseStudy = () => {
           <h2 className="text-2xl font-bold mb-6">Background</h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              The mission reporting tool utilized by the majority of the USAF was functional but not custom to their mission type. Mission information was often filed but lost and unavailable to sources months or years later when valuable context could have been provided from data on formerly flown missions in a given area or region. This mission reporting application aimed to change the way the Air Force develops software and the way USAF intelligence personnel accessed that data. The application started with the goal of solving the specific problem of mission reporting and was successful in adoption before expanding to various domains and capabilities.
+              The reporting tool most of the Air Force used technically worked, but it wasn't built for their specific mission types. Reports were filed and then lost — unavailable months or years later when context from past missions in a given region could have made a real difference. Our application set out to change that: fix how the Air Force builds software and how intelligence personnel access mission data. We started by solving the core reporting problem, got real adoption, and then expanded into new domains.
             </p>
             <p>
-              After growing the solution, the tool quickly turned its sights on deprecating the old legacy system being used in Air Operation Centers and other regions. This was complicated by a strict set of requirements from ACC and the intelligence community, plus a fielded product that needed to be replaced for the initial reporting workflow up front. The mission reporting tool, which wasn't originally built to integrate with external systems, needed to fit into a larger suite of applications, adapt to new user processes, provide functionality for multiple roles consuming the reporting information differently, and make its data available to external intelligence agencies and tools via API.
+              As the tool grew, we turned toward replacing the legacy system used across Air Operations Centers. That brought a strict set of requirements from ACC and the intelligence community, plus a fielded product we had to replace without breaking existing workflows. The reporting tool — originally a standalone product — now needed to integrate with external systems, support multiple user roles consuming data differently, and expose its data to outside agencies via API.
             </p>
             <p>
-              Feature work had to be carefully prioritized for the roles most impacted in production, primarily drafters and reviewers whose daily workflows would break if we got it wrong. Only after stabilizing their core functionality could we expand capabilities to secondary roles like approvers and analysts, and build out API access for external applications seeking report data. This meant balancing the pressure to deliver new features against the reality that breaking existing workflows in a mission-critical environment wasn't an option.
+              We had to prioritize carefully. Drafters and reviewers came first — their daily workflows would break if we got it wrong. Only after stabilizing their core experience could we expand to approvers, analysts, and external API consumers. Balancing the pressure to ship new features against the reality that breaking mission-critical workflows wasn't an option defined the entire project.
             </p>
             <div className="rounded-xl overflow-hidden border border-border mt-8">
               <img 
@@ -186,13 +186,13 @@ const MissionReportingCaseStudy = () => {
           <h2 className="text-2xl font-bold mb-6">The Problem</h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              As a team, we decided to start by targeting the mission data domain. In the current interface, users were required to enter multiple data fields for each mission report created and manually calculate all route times. Not only would some information required not be pertinent to a given mission type it might be completely unknown.
+              We started with the mission data domain. In the existing interface, users had to manually enter multiple data fields for every report and calculate all route times by hand. Some of the required fields weren't even relevant to certain mission types — and some information was simply unknown.
             </p>
             <p>
-              We determined that we could automate multiple data fields by importing from sources. First via a manual method of document ingestion and later through third party API integrations with an integration to external data management systems. In addition to the needed integration, the mission reporting tool would also need to consume additional data that would enable an automatic calculation of the route times on certain mission events, fuel levels, aircraft load outs and additional information.
+              We saw an opportunity to automate several fields by pulling data from external sources — first through manual document ingestion, then through API integrations with external data management systems. Beyond the integration, the tool also needed to consume additional data that would enable automatic calculation of route times, fuel levels, aircraft loadouts, and other mission-critical information.
             </p>
             <p>
-              We began migrating our data sources from our internal back end to consuming directly from multiple external data management tools. We took this opportunity to address significant user pain surrounding the process of managing and interacting with mission data, by giving different methods to capture that data and define it for a given mission type and location as well as identifying the authoring group and persons.
+              We migrated our data sources from an internal backend to consuming directly from multiple external tools. We used that transition as an opportunity to fix real pain points: giving users different ways to capture mission data, define it by mission type and location, and identify authoring groups and personnel.
             </p>
           </div>
         </div>
@@ -220,10 +220,10 @@ const MissionReportingCaseStudy = () => {
           <h2 className="text-2xl font-bold mb-6">Exploratory Research</h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed mb-8">
             <p>
-              Before ideation, our team conducted user interviews with 5 mission operations centers to gauge their interest and use. One single group was then marked as our primary use case to vet and test ideas and concepts for deployment. Through this process myself and the software team worked to create a user journey map, workflow and problem statement to illustrate the process the users follow to create mission reports and how that information then feeds back to plan missions using the data.
+              Before jumping into solutions, we interviewed users at five mission operations centers to understand how they actually worked. We picked one group as our primary test case for vetting concepts. From those conversations, the team built a user journey map, workflow diagram, and problem statement showing how reports get created and how that data feeds back into mission planning.
             </p>
             <p>
-              From this we identified two major pains to solve: the mission reporting tool relied on manual calculations for certain information fields within the report form and heavy data entry from the user to properly calculate mission data. Additionally there was no given source of truth for mission data to provide across the network, so we worked to solve that task as we had several assumptions it would aid our ability to provide reporting at scale going forward.
+              Two big pain points stood out: the tool relied on manual calculations for key fields in every report form, and users had to enter a heavy amount of data by hand to get accurate mission data. There was also no single source of truth for mission data across the network — solving that became a priority because we believed it would unlock our ability to scale reporting going forward.
             </p>
           </div>
           <div className="rounded-xl overflow-hidden">
@@ -241,7 +241,7 @@ const MissionReportingCaseStudy = () => {
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl font-bold mb-6">Prototype Testing</h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Understanding the users problem space is really only the beginning, and something that is going to evolve as we build out software. As a team we began designing and testing potential concepts, iterating based on feedback from the field. After a few rounds of iteration we felt we had a good solution that addressed the users' pain, providing more automation, adding a more visual map interface and achieved the business goal of integrating with at least one external data management application. We were excited that users seemed to find the product useful in a space where before there was frustration, but were also conscious of future growth within the problem space.
+            Understanding the problem is only the beginning — and the problem keeps evolving as you build. We designed and tested multiple concepts, iterating based on feedback from operators in the field. After several rounds, we landed on a solution that addressed the core pain: more automation, a cleaner visual interface, and integration with at least one external data system. Users found the product genuinely useful in a space where frustration had been the norm. But we also knew the problem space had room to grow well beyond what we'd shipped.
           </p>
         </div>
       </section>
@@ -269,7 +269,7 @@ const MissionReportingCaseStudy = () => {
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-2xl font-bold mb-6">Adjusting the Scope</h2>
           <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            Although the solution had great support from the users, we quickly ran into feasibility issues with integrating a map into a classified environment. Working with my engineers and product manager, we adjusted the scope of the feature to delay the map integrations but still allow users to benefit from a more modern UI, reduced data entry and automated calculations. Additionally, we had to account for downstream dependencies and external information provided via the API for data consumers, ensuring that scope changes wouldn't break integrations that other systems relied on for mission data.
+            Users loved the solution, but we hit a wall: integrating a map into a classified environment turned out to be far more complex than expected. Working with my engineers and PM, we adjusted scope — delaying the map integration while still delivering a modern UI, reduced data entry, and automated calculations. We also had to account for downstream dependencies and external consumers relying on our API, making sure scope changes didn't break integrations other systems depended on.
           </p>
           
           <div className="rounded-xl overflow-hidden border border-border mb-4">
@@ -600,10 +600,10 @@ const MissionReportingCaseStudy = () => {
           <h2 className="text-2xl font-bold mb-6">What Did We Learn?</h2>
           <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
             <p>
-              My biggest takeaway from this experience was to seek out engineering feedback early and often. If I had brought my engineers into my design process earlier, they would have been able to give me the feedback that would have saved time, allowed for better user expectation management, and kept me focused on the problems at hand.
+              The biggest lesson: bring engineers in early. If I'd involved them in the design process sooner, they could have flagged feasibility issues that would have saved time, set better user expectations, and kept us focused on the solvable problems.
             </p>
             <p>
-              It is good to have a long term vision for what the ideal state would be, but feasibility is an important factor to consider so that we can provide user value as soon as possible. This is something that I have continued to reflect back on during my career and has allowed me to create more effective and feasible designs.
+              Having a long-term vision matters, but feasibility has to shape the path to get there. Ship value as soon as possible, then iterate. That lesson has stuck with me through every project since and made my designs more effective and more buildable.
             </p>
           </div>
         </div>
