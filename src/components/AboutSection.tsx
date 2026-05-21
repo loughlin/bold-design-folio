@@ -12,7 +12,7 @@ const AboutSection = () => {
             <img
               src={jamesProfileBw}
               alt="James Loughlin"
-              className="w-full h-full object-cover max-w-md mx-auto lg:mx-0 lg:max-w-none rounded-[24px] grayscale"
+              className="w-full h-full object-cover max-w-md mx-auto lg:mx-0 lg:max-w-none rounded-[24px] grayscale hover:grayscale-0 transition-all duration-700"
             />
           </div>
 
@@ -52,9 +52,9 @@ const AboutSection = () => {
             {/* Quick stats */}
             <div className="grid grid-cols-3 gap-6 py-6 border-y border-border">
               {[
-                { value: "8+", label: "Years Experience" },
-                { value: "12+", label: "Products Shipped" },
-                { value: "20+", label: "Designers Mentored" },
+                { value: "8", label: "Years in UX Design" },
+                { value: "12", label: "Products Shipped" },
+                { value: "20", label: "Designers Mentored" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center lg:text-left">
                   <div className="text-2xl font-bold text-foreground">{stat.value}</div>

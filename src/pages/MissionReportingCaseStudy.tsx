@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
@@ -38,12 +37,16 @@ const sections = [
 const MissionReportingCaseStudy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    const prev = document.title;
+    document.title = "Replacing Manual Calculations with Trust — James Loughlin";
+    return () => { document.title = prev; };
   }, []);
 
   return (
     <div className="min-h-screen bg-background">
       <CaseStudyProgress />
       <Navigation />
+      <main id="main">
 
       {/* Hero */}
       <section className="pt-24 pb-8 px-6">
@@ -302,6 +305,7 @@ const MissionReportingCaseStudy = () => {
       </div>
 
       <CaseStudyFooterNav currentSlug="mission-reporting" />
+      </main>
       <Footer />
     </div>
   );

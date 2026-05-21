@@ -32,12 +32,16 @@ const sections = [
 const KesselRunCaseStudy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    const prev = document.title;
+    document.title = "Leading Design at Kessel Run — James Loughlin";
+    return () => { document.title = prev; };
   }, []);
 
   return (
     <div className="min-h-screen bg-background">
       <CaseStudyProgress />
       <Navigation />
+      <main id="main">
 
       {/* Hero */}
       <section className="pt-24 pb-8 px-6">
@@ -428,6 +432,7 @@ const KesselRunCaseStudy = () => {
       </div>
 
       <CaseStudyFooterNav currentSlug="kessel-run" />
+      </main>
       <Footer />
     </div>
   );

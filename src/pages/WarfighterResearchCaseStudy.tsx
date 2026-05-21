@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
@@ -67,12 +66,16 @@ const afterItems = [
 const WarfighterResearchCaseStudy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    const prev = document.title;
+    document.title = "Establishing Research from Zero — James Loughlin";
+    return () => { document.title = prev; };
   }, []);
 
   return (
     <div className="min-h-screen bg-background">
       <CaseStudyProgress />
       <Navigation />
+      <main id="main">
 
       {/* Hero */}
       <section className="pt-24 pb-8 px-6">
@@ -142,8 +145,8 @@ const WarfighterResearchCaseStudy = () => {
                 A merger brought teams with different habits and no common research standards. Nobody had a direct line to end users. Findings that existed were scattered and rarely connected to product decisions.
               </p>
             </div>
-            <div className="rounded-[24px] bg-primary/5 p-8 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
-              <p className="text-[11px] font-technical font-semibold tracking-[0.15em] uppercase text-primary mb-4">Problem Statement</p>
+            <div className="rounded-[24px] bg-amber-500/5 p-8 ring-1 ring-inset ring-amber-500/20">
+              <p className="text-[11px] font-technical font-semibold tracking-[0.15em] uppercase text-amber-600 mb-4">Problem Statement</p>
               <p className="text-lg font-medium leading-relaxed">
                 How might we establish research practices that give product teams direct access to users' needs, validate design decisions early, and build empathy for operators in high-stakes environments?
               </p>
@@ -320,11 +323,9 @@ const WarfighterResearchCaseStudy = () => {
                 "Quarterly research impact reporting connected activity to product performance.",
                 "Centralized repositories with standard templates for all research artifacts.",
               ].map((outcome, i) => (
-                <Card key={i}>
-                  <CardContent className="p-6">
-                    <p className="text-sm leading-relaxed">{outcome}</p>
-                  </CardContent>
-                </Card>
+                <div key={i} className="p-6 rounded-[24px] border border-border/60 bg-card">
+                  <p className="text-sm leading-relaxed">{outcome}</p>
+                </div>
               ))}
             </div>
             <div className="p-6 rounded-[24px] bg-muted/50 border border-border ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
@@ -354,6 +355,7 @@ const WarfighterResearchCaseStudy = () => {
       </div>
 
       <CaseStudyFooterNav currentSlug="warfighter-research" />
+      </main>
       <Footer />
     </div>
   );

@@ -22,13 +22,24 @@ const Footer = () => {
             </div>
           </div>
 
-          {["Skills", "Tools", "Technologies"].map((section) => (
-            <div key={section} className="space-y-4">
-              <h4 className="text-xs font-semibold uppercase tracking-widest text-background/40 mb-4">{section}</h4>
+          {[
+            {
+              heading: "What I Do",
+              items: ["Design Org Leadership", "Research Operations", "Design Systems", "Portfolio Design", "Workshop Facilitation", "Stakeholder Alignment"],
+            },
+            {
+              heading: "Tools",
+              items: ["Figma", "Miro", "Notion", "Framer", "Adobe CC", "Airtable"],
+            },
+            {
+              heading: "Focus Areas",
+              items: ["Military Software", "Enterprise UX", "Complex Systems", "Warfighter-Centered Design", "Career Development"],
+            },
+          ].map((section) => (
+            <div key={section.heading} className="space-y-4">
+              <h4 className="text-xs font-semibold uppercase tracking-widest text-background/40 mb-4">{section.heading}</h4>
               <ul className="space-y-2 text-background/60 text-sm">
-                {section === "Skills" && ["Human-Centered Design", "User Research", "Design Systems", "Prototyping", "User Flows", "Facilitation", "Design Leadership"].map(i => <li key={i}>{i}</li>)}
-                {section === "Tools" && ["Figma", "Sketch", "Miro", "Mural", "Adobe CC", "Framer", "Notion"].map(i => <li key={i}>{i}</li>)}
-                {section === "Technologies" && ["Git", "Material Design", "Airtable", "ChatGPT", "Claude", "Lucid", "Warp"].map(i => <li key={i}>{i}</li>)}
+                {section.items.map(i => <li key={i}>{i}</li>)}
               </ul>
             </div>
           ))}

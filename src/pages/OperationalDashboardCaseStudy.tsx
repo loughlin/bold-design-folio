@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
@@ -29,12 +28,16 @@ const sections = [
 const OperationalDashboardCaseStudy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    const prev = document.title;
+    document.title = "Command Center: Real-Time Data Flows — James Loughlin";
+    return () => { document.title = prev; };
   }, []);
 
   return (
     <div className="min-h-screen bg-background">
       <CaseStudyProgress />
       <Navigation />
+      <main id="main">
 
       {/* Hero */}
       <section className="pt-24 pb-8 px-6">
@@ -47,7 +50,7 @@ const OperationalDashboardCaseStudy = () => {
             UX Manager & Product Designer · 2019 – 2021
           </p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">Command Center: Real-Time Data Flows</h1>
-          <p className="text-lg text-muted-foreground/80 font-medium animate-fade-in mb-2">Reducing Cognitive Load in High-Stakes Environments</p>
+          <p className="text-lg text-muted-foreground/80 font-medium animate-fade-in mb-2">Helping Operators See What Matters, Fast</p>
           <p className="text-xl text-muted-foreground animate-fade-in" style={{ animationDelay: "0.1s" }}>
             Redesigning a monitoring tool that engineers had built for engineers — and making it work for the operators who depended on it.
           </p>
@@ -102,8 +105,8 @@ const OperationalDashboardCaseStudy = () => {
                 The existing dashboard was sparse. Basic status indicators, minimal context, no trend data, no way to understand whether what you were seeing was normal or cause for concern.
               </p>
             </div>
-            <div className="rounded-[24px] bg-primary/5 p-8 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
-              <p className="text-[11px] font-technical font-semibold tracking-[0.15em] uppercase text-primary mb-4">Problem Statement</p>
+            <div className="rounded-[24px] bg-amber-500/5 p-8 ring-1 ring-inset ring-amber-500/20">
+              <p className="text-[11px] font-technical font-semibold tracking-[0.15em] uppercase text-amber-600 mb-4">Problem Statement</p>
               <p className="text-lg font-medium leading-relaxed">
                 How might we design a dashboard that delivers the right KPIs to operators, helping them monitor data flows and communicate effectively with engineering teams?
               </p>
@@ -274,11 +277,9 @@ const OperationalDashboardCaseStudy = () => {
                 "The redesign consolidated fragmented tooling into a single interface operators could rely on.",
                 "The evidence validated research as much as the design — making the case for embedding research earlier.",
               ].map((outcome, i) => (
-                <Card key={i}>
-                  <CardContent className="p-6">
-                    <p className="text-sm leading-relaxed">{outcome}</p>
-                  </CardContent>
-                </Card>
+                <div key={i} className="p-6 rounded-[24px] border border-border/60 bg-card">
+                  <p className="text-sm leading-relaxed">{outcome}</p>
+                </div>
               ))}
             </div>
           </section>
@@ -286,6 +287,7 @@ const OperationalDashboardCaseStudy = () => {
       </div>
 
       <CaseStudyFooterNav currentSlug="operational-dashboard" />
+      </main>
       <Footer />
     </div>
   );

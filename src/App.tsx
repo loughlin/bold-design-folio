@@ -27,6 +27,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <a href="#main" className="skip-to-content">Skip to main content</a>
           <PasswordDialog />
           <Routes>
             <Route path="/" element={<Index />} />

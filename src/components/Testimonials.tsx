@@ -11,8 +11,8 @@ const Testimonials = () => {
       <div className="container mx-auto">
         {/* Section Header */}
         <div className="section-header-spacing animate-fade-in">
-          <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest mb-2">Testimonials</p>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">What Others Say</h2>
+          <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest mb-2">Colleagues</p>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">From people I've worked with.</h2>
         </div>
 
         {/* Testimonials Grid — 24px uniform gutters */}
