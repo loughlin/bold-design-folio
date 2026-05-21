@@ -5,14 +5,14 @@ export const experiences: Experience[] = [
     company: "Kessel Run | United States Air Force",
     role: "UX Design Manager",
     period: "2022 - Present",
-    description: "Led design strategy across a portfolio of five applications and one hardware solution supporting six Air Force missions. Managed six designers directly, mentored ten more, and built the design standards, career ladders, and team rituals that turned a collection of individual contributors into a connected design organization. Shipped software used daily by thousands of operators in high-stakes environments.",
+    description: "Led design across five applications and a hardware product, all supporting Air Force operations. Managed six designers, mentored ten more. Built the standards, career ladders, and team habits that turned a scattered group into an actual design org. The software ships to thousands of Air Force operators every day.",
     icon: "🇺🇸",
   },
   {
     company: "Kessel Run | United States Air Force",
     role: "Product Designer",
     period: "2019 - 2022",
-    description: "Designed across a suite of USAF applications, running user research with operators in the field and turning findings into prototypes that teams could test and ship. Set up consistency processes across products and helped establish the design practices that later scaled across the portfolio.",
+    description: "Designed across multiple USAF applications. Ran user research in the field with operators and brought findings back as prototypes the team could test and ship. Set up the consistency patterns across products that later became the portfolio-wide standard.",
     icon: "🇺🇸",
   },
   {

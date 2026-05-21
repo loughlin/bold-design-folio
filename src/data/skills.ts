@@ -27,7 +27,7 @@ export const skillCategories: SkillCategory[] = [
   {
     icon: Workflow,
     title: "Lean UX + Agile Methodologies",
-    description: "I pair design thinking with agile delivery so teams can validate ideas fast and ship with confidence instead of guesswork.",
+    description: "I pair design thinking with agile delivery so teams can test ideas before committing to them.",
   },
   {
     icon: Code,
@@ -37,6 +37,6 @@ export const skillCategories: SkillCategory[] = [
   {
     icon: MessageSquare,
     title: "Stakeholder Communication",
-    description: "I translate between users, leadership, and product teams — making sure everyone is solving the same problem.",
+    description: "I translate between users, leadership, and product teams. Everyone needs to be solving the same problem — that doesn't happen by accident.",
   },
 ];

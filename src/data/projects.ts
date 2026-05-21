@@ -17,8 +17,8 @@ export const projects: Project[] = [
     isPublic: true,
   },
   {
-    title: "Forging the Shared Foundation",
-    subtitle: "Scaling Consistency Across Five Operational Missions",
+    title: "One Design System for Five Missions",
+    subtitle: "Building the shared foundation across five operational products",
     description: "Created a shared design system across five operational missions, cutting redundant work and giving product teams a common foundation to build from.",
     role: "UX Manager + Product Designer",
     timeline: "2020 - 2023",
@@ -48,7 +48,7 @@ export const projects: Project[] = [
   },
   {
     title: "Command Center: Real-Time Data Flows",
-    subtitle: "Reducing Cognitive Load in High-Stakes Environments",
+    subtitle: "Helping Operators See What Matters, Fast",
     description: "Redesigned a monitoring dashboard so operators could actually understand system health — not just see that systems were running.",
     role: "UX Manager + Product Designer",
     timeline: "2019 - 2021",
