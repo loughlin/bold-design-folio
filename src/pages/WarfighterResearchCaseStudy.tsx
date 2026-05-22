@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
@@ -34,7 +34,7 @@ const heuristics = [
   { name: "User Control & Freedom", desc: "Feedback drove undo/redo patterns and flexible workflows.", before: 2, after: 4 },
   { name: "Error Prevention", desc: "Testing identified error-prone workflows invisible in design reviews.", before: 2, after: 4 },
   { name: "Recognition over Recall", desc: "Card sorting optimized information architecture.", before: 2, after: 5 },
-  { name: "Flexibility & Efficiency", desc: "Power user workarounds designed into the product — 25% faster task completion.", before: 2, after: 4 },
+  { name: "Flexibility & Efficiency", desc: "Power user workarounds designed into the product â€” 25% faster task completion.", before: 2, after: 4 },
   { name: "Help & Documentation", desc: "Research insights embedded into component guidelines.", before: 1, after: 4 },
 ];
 
@@ -67,7 +67,7 @@ const WarfighterResearchCaseStudy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     const prev = document.title;
-    document.title = "Establishing Research from Zero — James Loughlin";
+    document.title = "Establishing Research from Zero â€” James Loughlin";
     return () => { document.title = prev; };
   }, []);
 
@@ -80,19 +80,19 @@ const WarfighterResearchCaseStudy = () => {
       {/* Hero */}
       <section className="pt-24 pb-8 px-6">
         <div className="container mx-auto max-w-reading">
-          <Link to="/#work" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8 rounded-[24px]">
+          <Link to="/#work" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8 rounded-[14px]">
             <ArrowLeft className="w-4 h-4" />
             Back to Case Studies
           </Link>
           <p className="text-[11px] font-technical font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">
-            UX Manager & Lead Researcher · 2021 – 2024
+            UX Manager & Lead Researcher Â· 2021 â€“ 2024
           </p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
             Establishing Research from Zero
           </h1>
           <p className="text-lg text-muted-foreground/80 font-medium animate-fade-in mb-2">Grounding Decisions in User Truth</p>
           <p className="text-xl text-muted-foreground animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            De-risking product decisions through qualitative user research — and convincing an engineering-first organization to trust what users said.
+            De-risking product decisions through qualitative user research â€” and convincing an engineering-first organization to trust what users said.
           </p>
         </div>
       </section>
@@ -114,23 +114,23 @@ const WarfighterResearchCaseStudy = () => {
             <h2 className="text-2xl font-bold text-foreground mb-6">Overview</h2>
             <CaseStudyMetadata
               role="UX Manager & Lead Researcher"
-              timeline="2021 – 2024"
+              timeline="2021 â€“ 2024"
               team="2 Designers, 8 Product Teams"
             />
             <KeyTakeaway>
-              The goal wasn't more research sessions — it was changing how the organization thought about research.
+              The goal wasn't more research sessions â€” it was changing how the organization thought about research.
             </KeyTakeaway>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
                 Product teams were making design decisions based almost entirely on stakeholder assumptions. There was no shared methodology, no centralized place for insights to live, and no expectation that user evidence should drive decisions.
               </p>
               <p>
-                Over three years, we built that practice from the ground up — from a nice-to-have to a standard part of how products got built.
+                Over three years, we built that practice from the ground up â€” from a nice-to-have to a standard part of how products got built.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-              <ArtifactCard label="Methods" icon="🔬" items={["Contextual Inquiry", "Usability Testing", "Participatory Workshops", "Card Sorting", "Diary Studies"]} />
-              <ArtifactCard label="Outputs" icon="📊" items={["Research Briefs", "Opportunity Maps", "Impact-Effort Matrices", "Insight Library (50+)", "Quarterly Reports"]} />
+              <ArtifactCard label="Methods" icon="ðŸ”¬" items={["Contextual Inquiry", "Usability Testing", "Participatory Workshops", "Card Sorting", "Diary Studies"]} />
+              <ArtifactCard label="Outputs" icon="ðŸ“Š" items={["Research Briefs", "Opportunity Maps", "Impact-Effort Matrices", "Insight Library (50+)", "Quarterly Reports"]} />
             </div>
           </section>
 
@@ -145,7 +145,7 @@ const WarfighterResearchCaseStudy = () => {
                 A merger brought teams with different habits and no common research standards. Nobody had a direct line to end users. Findings that existed were scattered and rarely connected to product decisions.
               </p>
             </div>
-            <div className="rounded-[24px] bg-amber-500/5 p-8 ring-1 ring-inset ring-amber-500/20">
+            <div className="rounded-[14px] bg-amber-500/5 p-8 ring-1 ring-inset ring-amber-500/20">
               <p className="text-[11px] font-technical font-semibold tracking-[0.15em] uppercase text-amber-600 mb-4">Problem Statement</p>
               <p className="text-lg font-medium leading-relaxed">
                 How might we establish research practices that give product teams direct access to users' needs, validate design decisions early, and build empathy for operators in high-stakes environments?
@@ -160,7 +160,7 @@ const WarfighterResearchCaseStudy = () => {
               Four stages adapted from standard UX practice for classified operational environments.
             </KeyTakeaway>
             <div className="flex justify-center py-4 mb-4">
-              <img src={stagesUxResearch} alt="Four stages of UX research methodology — discovery, exploring, testing, and listening" className="max-w-2xl w-full rounded-[24px] grayscale" />
+              <img src={stagesUxResearch} alt="Four stages of UX research methodology â€” discovery, exploring, testing, and listening" className="max-w-2xl w-full rounded-[14px] grayscale" />
             </div>
             <div className="flex justify-center py-6">
               <div className="flex items-center gap-0 max-w-full w-full">
@@ -190,7 +190,7 @@ const WarfighterResearchCaseStudy = () => {
               60+ sessions: contextual inquiries, usability testing, and participatory workshops.
             </KeyTakeaway>
             <div className="flex justify-center py-4 mb-6">
-              <img src={uxResearchProcess} alt="UX research process diagram — structured approach to user research in defense environments" className="max-w-3xl w-full rounded-[24px] grayscale" />
+              <img src={uxResearchProcess} alt="UX research process diagram â€” structured approach to user research in defense environments" className="max-w-3xl w-full rounded-[14px] grayscale" />
             </div>
             <ul className="space-y-4">
               {[
@@ -205,7 +205,7 @@ const WarfighterResearchCaseStudy = () => {
                 </li>
               ))}
             </ul>
-            <div className="mt-8 p-6 rounded-[24px] bg-muted/50 border border-border ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+            <div className="mt-8 p-6 rounded-[14px] bg-muted/50 border border-border ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
               <ResearchSessionsChart />
             </div>
           </section>
@@ -243,19 +243,19 @@ const WarfighterResearchCaseStudy = () => {
               From siloed, assumption-driven design to standardized, evidence-based practice.
             </KeyTakeaway>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="rounded-[24px] bg-destructive/5 p-6 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+              <div className="rounded-[14px] bg-destructive/5 p-6 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                 <h3 className="font-semibold text-destructive text-sm">Before</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   {beforeItems.map((item, i) => (
-                    <li key={i} className="flex items-start gap-2"><span className="text-destructive">✗</span>{item}</li>
+                    <li key={i} className="flex items-start gap-2"><span className="text-destructive">âœ—</span>{item}</li>
                   ))}
                 </ul>
               </div>
-              <div className="rounded-[24px] bg-primary/5 p-6 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+              <div className="rounded-[14px] bg-primary/5 p-6 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                 <h3 className="font-semibold text-primary text-sm">After</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   {afterItems.map((item, i) => (
-                    <li key={i} className="flex items-start gap-2"><span className="text-primary">✓</span>{item}</li>
+                    <li key={i} className="flex items-start gap-2"><span className="text-primary">âœ“</span>{item}</li>
                   ))}
                 </ul>
               </div>
@@ -270,7 +270,7 @@ const WarfighterResearchCaseStudy = () => {
             </KeyTakeaway>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {heuristics.map((h, i) => (
-                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-6 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+                <div key={i} className="rounded-[14px] border border-border/60 bg-card p-6 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xs">{i + 1}</div>
                     <h3 className="font-semibold text-sm">{h.name}</h3>
@@ -278,7 +278,7 @@ const WarfighterResearchCaseStudy = () => {
                   <p className="text-sm text-muted-foreground">{h.desc}</p>
                   <div className="flex items-center gap-2 text-[11px] font-technical">
                     <span className="text-destructive">Before: {h.before}/5</span>
-                    <span className="text-muted-foreground">→</span>
+                    <span className="text-muted-foreground">â†’</span>
                     <span className="text-primary font-medium">After: {h.after}/5</span>
                   </div>
                 </div>
@@ -294,7 +294,7 @@ const WarfighterResearchCaseStudy = () => {
             </KeyTakeaway>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {engagementMetrics.map((m, i) => (
-                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-6 space-y-3 shadow-elevated ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+                <div key={i} className="rounded-[14px] border border-border/60 bg-card p-6 space-y-3 shadow-elevated ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                   <div>
                     <p className="text-3xl font-bold text-primary">{m.value}</p>
                     <p className="text-sm font-medium">{m.label}</p>
@@ -323,12 +323,12 @@ const WarfighterResearchCaseStudy = () => {
                 "Quarterly research impact reporting connected activity to product performance.",
                 "Centralized repositories with standard templates for all research artifacts.",
               ].map((outcome, i) => (
-                <div key={i} className="p-6 rounded-[24px] border border-border/60 bg-card">
+                <div key={i} className="p-6 rounded-[14px] border border-border/60 bg-card">
                   <p className="text-sm leading-relaxed">{outcome}</p>
                 </div>
               ))}
             </div>
-            <div className="p-6 rounded-[24px] bg-muted/50 border border-border ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+            <div className="p-6 rounded-[14px] bg-muted/50 border border-border ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
               <ResearchOutcomesChart />
             </div>
           </section>
@@ -337,7 +337,7 @@ const WarfighterResearchCaseStudy = () => {
           <section id="learnings" className="section-spacing border-t border-border/30 scroll-mt-20">
             <h2 className="text-2xl font-bold text-foreground mb-6">Learnings</h2>
             <KeyTakeaway>
-              The turning point came from specificity — not summary reports, but moments of direct user contact.
+              The turning point came from specificity â€” not summary reports, but moments of direct user contact.
             </KeyTakeaway>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>

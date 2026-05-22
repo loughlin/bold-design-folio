@@ -1,4 +1,4 @@
-const ResearchSessionsChart = () => {
+﻿const ResearchSessionsChart = () => {
   const sessions = [
     { label: "Contextual\nInquiries", value: "30+", height: "75%" },
     { label: "Usability\nTesting", value: "30+", height: "75%" },
@@ -9,7 +9,7 @@ const ResearchSessionsChart = () => {
   return (
     <div className="space-y-4 animate-fade-in">
       <p className="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground">
-        Research Methodology — Session Breakdown
+        Research Methodology â€” Session Breakdown
       </p>
       <h3 className="text-2xl md:text-3xl font-serif font-bold text-foreground">
         60+ Research Sessions with Active Duty Personnel

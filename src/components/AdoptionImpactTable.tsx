@@ -1,4 +1,4 @@
-const AdoptionImpactTable = () => {
+﻿const AdoptionImpactTable = () => {
   const rows = [
     {
       label: "Design stories / week",
@@ -7,7 +7,7 @@ const AdoptionImpactTable = () => {
       beforeSub: "requests / week",
       after: "1.95",
       afterSub: "requests / week",
-      badge: "↓ 48%",
+      badge: "â†“ 48%",
       badgeSub: "FEWER",
     },
     {
@@ -17,7 +17,7 @@ const AdoptionImpactTable = () => {
       beforeSub: "days per story",
       after: "19",
       afterSub: "days per story",
-      badge: "↓ 3 days",
+      badge: "â†“ 3 days",
       badgeSub: "14% FASTER",
     },
     {
@@ -25,7 +25,7 @@ const AdoptionImpactTable = () => {
       sublabel: "inserted / deleted",
       before: "Baseline",
       beforeSub: "custom front end",
-      after: "−20% / −35%",
+      after: "âˆ’20% / âˆ’35%",
       afterSub: "lines inserted / deleted",
       badge: "Leaner",
       badgeSub: "COMMITS",
@@ -36,8 +36,8 @@ const AdoptionImpactTable = () => {
       before: "Baseline",
       beforeSub: "pre-adoption",
       after: "+36%",
-      afterSub: "more complex — still faster",
-      badge: "↑ Better",
+      afterSub: "more complex â€” still faster",
+      badge: "â†‘ Better",
       badgeSub: "QUALITY",
     },
   ];
@@ -45,13 +45,13 @@ const AdoptionImpactTable = () => {
   return (
     <div className="space-y-4 animate-fade-in">
       <p className="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground">
-        Visual 01 — Adoption Impact
+        Visual 01 â€” Adoption Impact
       </p>
       <h3 className="text-2xl md:text-3xl font-serif font-bold text-foreground">
         Before & After Design System Adoption
       </h3>
       <p className="text-sm text-muted-foreground mb-6">
-        Measured against one established team with a fully custom front end — tracked across 10 months pre and post adoption.
+        Measured against one established team with a fully custom front end â€” tracked across 10 months pre and post adoption.
       </p>
 
       {/* Column headers */}

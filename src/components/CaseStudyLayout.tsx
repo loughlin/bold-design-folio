@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
@@ -192,7 +192,7 @@ const CaseStudyLayout = ({
                     <ul className="space-y-2">
                       {phase.activities.map((activity, i) => (
                         <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
-                          <span className="text-primary mt-1">•</span>
+                          <span className="text-primary mt-1">â€¢</span>
                           {activity}
                         </li>
                       ))}
@@ -300,7 +300,7 @@ const CaseStudyLayout = ({
                     <p className="text-sm text-muted-foreground">{heuristic.description}</p>
                     <div className="flex items-center gap-2 text-xs">
                       <span className="text-destructive">Before: {heuristic.before}/5</span>
-                      <span className="text-muted-foreground">→</span>
+                      <span className="text-muted-foreground">â†’</span>
                       <span className="text-primary font-medium">After: {heuristic.after}/5</span>
                     </div>
                   </CardContent>

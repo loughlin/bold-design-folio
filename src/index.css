@@ -7,37 +7,37 @@
 
 @layer base {
   :root {
-    /* Light mode — monochromatic with warm neutral accent */
-    --background: 0 0% 98%;
-    --foreground: 0 0% 9%;
+    /* Light mode — warm minimal editorial */
+    --background: 36 20% 98%;
+    --foreground: 30 10% 10%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 9%;
+    --card: 36 15% 100%;
+    --card-foreground: 30 10% 10%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 9%;
+    --popover: 36 15% 100%;
+    --popover-foreground: 30 10% 10%;
 
-    /* Single accent — refined slate-blue */
+    /* Single accent — deep slate, used sparingly */
     --primary: 222 47% 31%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 0 0% 9%;
+    --secondary: 36 12% 95%;
+    --secondary-foreground: 30 10% 10%;
 
-    --muted: 220 14% 96%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 36 12% 95%;
+    --muted-foreground: 30 6% 44%;
 
-    --accent: 220 14% 96%;
-    --accent-foreground: 0 0% 9%;
+    --accent: 36 12% 95%;
+    --accent-foreground: 30 10% 10%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
+    --border: 36 14% 90%;
+    --input: 36 14% 90%;
     --ring: 222 47% 31%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
     /* Image inner stroke */
     --image-stroke: 0 0% 0% / 0.03;
@@ -161,18 +161,13 @@ body::before {
     animation: scale-in 0.5s ease-out forwards;
   }
 
+  /* Replaced gradient text — use primary color directly, no gradient */
   .text-gradient {
-    background: linear-gradient(135deg, hsl(var(--primary)), hsl(222 47% 45%));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: hsl(var(--primary));
   }
 
   .dark .text-gradient {
-    background: linear-gradient(135deg, hsl(var(--primary)), hsl(217 72% 72%));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: hsl(217 72% 65%);
   }
 
   /* Spring button animation */

@@ -1,4 +1,4 @@
-interface KeyTakeawayProps {
+﻿interface KeyTakeawayProps {
   children: React.ReactNode;
   className?: string;
 }

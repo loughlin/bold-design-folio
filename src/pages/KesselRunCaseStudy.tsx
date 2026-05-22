@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CaseStudyProgress from "@/components/CaseStudyProgress";
@@ -33,7 +33,7 @@ const KesselRunCaseStudy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     const prev = document.title;
-    document.title = "Leading Design at Kessel Run — James Loughlin";
+    document.title = "Leading Design at Kessel Run â€” James Loughlin";
     return () => { document.title = prev; };
   }, []);
 
@@ -48,14 +48,14 @@ const KesselRunCaseStudy = () => {
         <div className="container mx-auto max-w-reading">
           <Link
             to="/#work"
-            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8 rounded-[24px]"
+            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8 rounded-[14px]"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Case Studies
           </Link>
 
           <p className="text-[11px] font-technical font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">
-            UX Leadership · 2021 – Present
+            UX Leadership Â· 2021 â€“ Present
           </p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
             Leading Design at Kessel Run
@@ -72,7 +72,7 @@ const KesselRunCaseStudy = () => {
         <div className="container mx-auto max-w-reading animate-fade-in" style={{ animationDelay: "0.2s" }}>
           <ImageFrame
             src={kesselRunCaoc2021}
-            alt="Combined Air Operations Center — real-time intelligence and targeting workflows"
+            alt="Combined Air Operations Center â€” real-time intelligence and targeting workflows"
             caption="Operations Center"
             aspectRatio="16/9"
           />
@@ -89,7 +89,7 @@ const KesselRunCaseStudy = () => {
             <h2 className="text-2xl font-bold text-foreground mb-6">Overview</h2>
             <CaseStudyMetadata
               role="Portfolio Design Lead"
-              timeline="2021 – Present"
+              timeline="2021 â€“ Present"
               team="15+ Designers, 5 Applications, 6 Missions"
             />
             <KeyTakeaway>
@@ -110,12 +110,12 @@ const KesselRunCaseStudy = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
               <ArtifactCard
                 label="Tools & Methods"
-                icon="🛠"
+                icon="ðŸ› "
                 items={["Figma", "Miro", "Jira", "Confluence", "Design Critiques", "Double Diamond"]}
               />
               <ArtifactCard
                 label="Team Structure"
-                icon="👥"
+                icon="ðŸ‘¥"
                 items={["15+ Designers Managed", "5 Applications", "6 Operational Missions", "Cross-functional Pods"]}
               />
             </div>
@@ -128,24 +128,24 @@ const KesselRunCaseStudy = () => {
               How might we unify fragmented design practices to deliver consistent, mission-critical experiences at scale?
             </KeyTakeaway>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-              <div className="rounded-[24px] bg-destructive/5 p-6 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+              <div className="rounded-[14px] bg-destructive/5 p-6 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                 <h3 className="font-semibold text-destructive text-sm">Before</h3>
                 <ul className="text-sm text-muted-foreground space-y-2">
-                  <li className="flex items-start gap-2"><span className="text-destructive">✗</span>Design decisions made in silos</li>
-                  <li className="flex items-start gap-2"><span className="text-destructive">✗</span>No shared design language</li>
-                  <li className="flex items-start gap-2"><span className="text-destructive">✗</span>Inconsistent experiences eroded trust</li>
-                  <li className="flex items-start gap-2"><span className="text-destructive">✗</span>Limited visibility into career growth</li>
-                  <li className="flex items-start gap-2"><span className="text-destructive">✗</span>Duplicated effort creating design debt</li>
+                  <li className="flex items-start gap-2"><span className="text-destructive">âœ—</span>Design decisions made in silos</li>
+                  <li className="flex items-start gap-2"><span className="text-destructive">âœ—</span>No shared design language</li>
+                  <li className="flex items-start gap-2"><span className="text-destructive">âœ—</span>Inconsistent experiences eroded trust</li>
+                  <li className="flex items-start gap-2"><span className="text-destructive">âœ—</span>Limited visibility into career growth</li>
+                  <li className="flex items-start gap-2"><span className="text-destructive">âœ—</span>Duplicated effort creating design debt</li>
                 </ul>
               </div>
-              <div className="rounded-[24px] bg-primary/5 p-6 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+              <div className="rounded-[14px] bg-primary/5 p-6 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                 <h3 className="font-semibold text-primary text-sm">After</h3>
                 <ul className="text-sm text-muted-foreground space-y-2">
-                  <li className="flex items-start gap-2"><span className="text-primary">✓</span>Unified design system + shared library</li>
-                  <li className="flex items-start gap-2"><span className="text-primary">✓</span>Cross-team rituals for alignment</li>
-                  <li className="flex items-start gap-2"><span className="text-primary">✓</span>Consistent interaction patterns</li>
-                  <li className="flex items-start gap-2"><span className="text-primary">✓</span>Clear career ladders</li>
-                  <li className="flex items-start gap-2"><span className="text-primary">✓</span>Shared tooling cut redundant effort</li>
+                  <li className="flex items-start gap-2"><span className="text-primary">âœ“</span>Unified design system + shared library</li>
+                  <li className="flex items-start gap-2"><span className="text-primary">âœ“</span>Cross-team rituals for alignment</li>
+                  <li className="flex items-start gap-2"><span className="text-primary">âœ“</span>Consistent interaction patterns</li>
+                  <li className="flex items-start gap-2"><span className="text-primary">âœ“</span>Clear career ladders</li>
+                  <li className="flex items-start gap-2"><span className="text-primary">âœ“</span>Shared tooling cut redundant effort</li>
                 </ul>
               </div>
             </div>
@@ -228,7 +228,7 @@ const KesselRunCaseStudy = () => {
                 { value: "5", label: "Applications Shipped" },
                 { value: "1,000s", label: "Daily Active Users" },
               ].map((stat, i) => (
-                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-4 shadow-elevated ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+                <div key={i} className="rounded-[14px] border border-border/60 bg-card p-4 shadow-elevated ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                   <p className="text-4xl font-bold text-primary">{stat.value}</p>
                   <p className="text-sm text-muted-foreground mt-1">{stat.label}</p>
                 </div>
@@ -277,10 +277,10 @@ const KesselRunCaseStudy = () => {
               {[
                 { value: "40%", label: "Faster Delivery", desc: "Standardizing design-to-dev handoff reduced time between finalized design and developer pickup." },
                 { value: "35%", label: "Less Rework", desc: "Post-handoff design changes dropped once we introduced structured critique and alignment checkpoints." },
-                { value: "67%", label: "Faster Onboarding", desc: "Getting a new designer productive went from six weeks to two through centralized documentation and team rituals.", tag: "6 → 2 weeks" },
-                { value: "60%", label: "Research Coverage", desc: "Validating features before build became standard — a cultural shift, not just a metric." },
+                { value: "67%", label: "Faster Onboarding", desc: "Getting a new designer productive went from six weeks to two through centralized documentation and team rituals.", tag: "6 â†’ 2 weeks" },
+                { value: "60%", label: "Research Coverage", desc: "Validating features before build became standard â€” a cultural shift, not just a metric." },
               ].map((card, i) => (
-                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-6 space-y-3 shadow-elevated ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+                <div key={i} className="rounded-[14px] border border-border/60 bg-card p-6 space-y-3 shadow-elevated ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                   <div className="flex justify-between items-start">
                     <div>
                       <p className="text-3xl font-bold text-primary">{card.value}</p>
@@ -314,7 +314,7 @@ const KesselRunCaseStudy = () => {
                 { name: "Flexibility & Efficiency", desc: "Keyboard shortcuts and customizable dashboards for experienced operators.", before: 2, after: 4 },
                 { name: "Consistency & Standards", desc: "Cross-team design standards unified interaction patterns across the portfolio.", before: 2, after: 5 },
               ].map((h, i) => (
-                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-6 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+                <div key={i} className="rounded-[14px] border border-border/60 bg-card p-6 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xs">{i + 1}</div>
                     <h3 className="font-semibold text-sm">{h.name}</h3>
@@ -322,7 +322,7 @@ const KesselRunCaseStudy = () => {
                   <p className="text-sm text-muted-foreground">{h.desc}</p>
                   <div className="flex items-center gap-2 text-[11px] font-technical">
                     <span className="text-destructive">Before: {h.before}/5</span>
-                    <span className="text-muted-foreground">→</span>
+                    <span className="text-muted-foreground">â†’</span>
                     <span className="text-primary font-medium">After: {h.after}/5</span>
                   </div>
                 </div>
@@ -334,7 +334,7 @@ const KesselRunCaseStudy = () => {
           <section className="section-spacing border-t border-border/30">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <ImageFrame src={kesselRunHq} alt="Kessel Run headquarters building in Boston — agile software factory for USAF" caption="HQ Boston" aspectRatio="4/3" />
+                <ImageFrame src={kesselRunHq} alt="Kessel Run headquarters building in Boston â€” agile software factory for USAF" caption="HQ Boston" aspectRatio="4/3" />
                 <p className="text-sm text-muted-foreground text-center mt-4 italic">Kessel Run headquarters in Boston</p>
               </div>
               <div>
@@ -348,7 +348,7 @@ const KesselRunCaseStudy = () => {
           <section id="role" className="section-spacing border-t border-border/30 scroll-mt-20">
             <h2 className="text-2xl font-bold text-foreground mb-6">My Role</h2>
             <KeyTakeaway>
-              I set the standards that defined what good design looked like — then spent most of my time making sure teams could meet them.
+              I set the standards that defined what good design looked like â€” then spent most of my time making sure teams could meet them.
             </KeyTakeaway>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
@@ -361,7 +361,7 @@ const KesselRunCaseStudy = () => {
 
             <ArtifactCard
               label="Key Responsibilities"
-              icon="📋"
+              icon="ðŸ“‹"
               className="mt-8"
               items={[
                 "Partnered with users and Air Force leadership to prioritize capability needs",
@@ -376,7 +376,7 @@ const KesselRunCaseStudy = () => {
           <section className="section-spacing border-t border-border/30">
             <ImageFrame
               src={kesselRunCaoc2003}
-              alt="Combined Air Operations Center at Prince Sultan Air Base — command and control environment"
+              alt="Combined Air Operations Center at Prince Sultan Air Base â€” command and control environment"
               caption="Command & Control"
               aspectRatio="16/9"
             />
@@ -392,22 +392,22 @@ const KesselRunCaseStudy = () => {
               From siloed design work to a portfolio-wide design community with shared standards.
             </KeyTakeaway>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="rounded-[24px] bg-destructive/5 p-6 space-y-4 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+              <div className="rounded-[14px] bg-destructive/5 p-6 space-y-4 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                 <h3 className="font-semibold text-destructive text-sm">Before</h3>
                 <ul className="space-y-3 text-muted-foreground text-sm">
-                  <li className="flex items-start gap-2"><span className="text-destructive">✗</span>Designers worked in silos</li>
-                  <li className="flex items-start gap-2"><span className="text-destructive">✗</span>Career progression contained within teams</li>
-                  <li className="flex items-start gap-2"><span className="text-destructive">✗</span>Handoff procedures varied by team</li>
-                  <li className="flex items-start gap-2"><span className="text-destructive">✗</span>User research rarely documented or shared</li>
+                  <li className="flex items-start gap-2"><span className="text-destructive">âœ—</span>Designers worked in silos</li>
+                  <li className="flex items-start gap-2"><span className="text-destructive">âœ—</span>Career progression contained within teams</li>
+                  <li className="flex items-start gap-2"><span className="text-destructive">âœ—</span>Handoff procedures varied by team</li>
+                  <li className="flex items-start gap-2"><span className="text-destructive">âœ—</span>User research rarely documented or shared</li>
                 </ul>
               </div>
-              <div className="rounded-[24px] bg-primary/5 p-6 space-y-4 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+              <div className="rounded-[14px] bg-primary/5 p-6 space-y-4 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                 <h3 className="font-semibold text-primary text-sm">After</h3>
                 <ul className="space-y-3 text-muted-foreground text-sm">
-                  <li className="flex items-start gap-2"><span className="text-primary">✓</span>Cross-team design community with shared rituals</li>
-                  <li className="flex items-start gap-2"><span className="text-primary">✓</span>Formal mentorship structures</li>
-                  <li className="flex items-start gap-2"><span className="text-primary">✓</span>Standardized handoff reduced time by 33%</li>
-                  <li className="flex items-start gap-2"><span className="text-primary">✓</span>Centralized research library</li>
+                  <li className="flex items-start gap-2"><span className="text-primary">âœ“</span>Cross-team design community with shared rituals</li>
+                  <li className="flex items-start gap-2"><span className="text-primary">âœ“</span>Formal mentorship structures</li>
+                  <li className="flex items-start gap-2"><span className="text-primary">âœ“</span>Standardized handoff reduced time by 33%</li>
+                  <li className="flex items-start gap-2"><span className="text-primary">âœ“</span>Centralized research library</li>
                 </ul>
               </div>
             </div>
@@ -424,7 +424,7 @@ const KesselRunCaseStudy = () => {
                 Design leadership, at its core, is a support function. The best work happened when people felt safe to take risks, confident in the tools and processes around them, and connected to why their work mattered.
               </p>
               <p>
-                If I had to do it over, I'd invest even earlier in cross-team connection. The rituals we built — critique sessions, portfolio reviews, informal design community meetups — created compounding value over time.
+                If I had to do it over, I'd invest even earlier in cross-team connection. The rituals we built â€” critique sessions, portfolio reviews, informal design community meetups â€” created compounding value over time.
               </p>
             </div>
           </section>

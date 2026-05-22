@@ -1,4 +1,4 @@
-const SystemOverviewMockup = () => {
+﻿const SystemOverviewMockup = () => {
   // Multi-line chart data for 4 sources
   const timeLabels = ["00:00", "02:30", "05:00", "07:30", "10:00", "12:30", "15:00", "17:30", "20:00", "22:30", "NOW"];
   const alpha = [50, 80, 90, 250, 350, 400, 550, 750, 1050, 800, 750];
@@ -76,7 +76,7 @@ const SystemOverviewMockup = () => {
             <div className="col-span-3 rounded border border-border p-3 bg-muted/20">
               <div className="flex items-center justify-between mb-2">
                 <p className="text-[9px] tracking-[0.1em] uppercase text-muted-foreground">
-                  Data Throughput — All Sources
+                  Data Throughput â€” All Sources
                 </p>
               </div>
               {/* Legend */}
@@ -172,7 +172,7 @@ const SystemOverviewMockup = () => {
         {/* Footer */}
         <div className="px-4 py-2 border-t border-border bg-muted/30">
           <p className="text-[9px] text-muted-foreground/60 italic">
-            View 1: System Overview — All data sources across the organization. Dummy data shown; actual interface operates on classified networks. Kessel Run, 2019–2021.
+            View 1: System Overview â€” All data sources across the organization. Dummy data shown; actual interface operates on classified networks. Kessel Run, 2019â€“2021.
           </p>
         </div>
       </div>

@@ -1,4 +1,4 @@
-interface ArtifactCardProps {
+﻿interface ArtifactCardProps {
   label: string;
   items: string[];
   icon?: string;
@@ -8,7 +8,7 @@ interface ArtifactCardProps {
 const ArtifactCard = ({ label, items, icon, className = "" }: ArtifactCardProps) => {
   return (
     <div
-      className={`rounded-[24px] border border-border/60 bg-card p-6 shadow-elevated ${className}`}
+      className={`rounded-[14px] border border-border/60 bg-card p-6 shadow-elevated ${className}`}
     >
       <div className="flex items-center gap-2 mb-4">
         {icon && <span className="text-lg">{icon}</span>}

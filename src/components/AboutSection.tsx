@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+﻿import { Button } from "@/components/ui/button";
 import { Download, Linkedin, Mail } from "lucide-react";
 import jamesProfileBw from "@/assets/james-profile-bw.jpg";
 
@@ -12,7 +12,7 @@ const AboutSection = () => {
             <img
               src={jamesProfileBw}
               alt="James Loughlin"
-              className="w-full h-full object-cover max-w-md mx-auto lg:mx-0 lg:max-w-none rounded-[24px] grayscale hover:grayscale-0 transition-all duration-700"
+              className="w-full h-full object-cover max-w-md mx-auto lg:mx-0 lg:max-w-none rounded-[14px] grayscale hover:grayscale-0 transition-all duration-700"
             />
           </div>
 
@@ -21,11 +21,11 @@ const AboutSection = () => {
             {/* Role tagline */}
             <div className="flex flex-wrap gap-2 items-center">
               {["Design Leadership", "UX Strategy", "Team Building"].map((tag) => (
-                <span key={tag} className="px-3 py-1.5 bg-muted text-muted-foreground text-xs font-medium rounded-full">
+                <span key={tag} className="font-technical px-3 py-1 bg-muted text-muted-foreground text-[11px] font-semibold tracking-wide uppercase rounded-md">
                   {tag}
                 </span>
               ))}
-              <Button size="sm" variant="outline" asChild className="ml-auto rounded-[24px]">
+              <Button size="sm" variant="outline" asChild className="ml-auto rounded-[14px]">
                 <a href="/James_Loughlin_Resume_2026_v6.pdf" download>
                   <Download className="mr-2 h-4 w-4" />
                   Resume
@@ -34,18 +34,18 @@ const AboutSection = () => {
             </div>
 
             <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
-              Hi, I'm James. <span className="text-gradient">I design software and build the teams that ship it.</span>
+              Eight years designing software. Three of them managing the team.
             </h1>
 
             <div className="space-y-4">
               <p className="text-base text-muted-foreground leading-relaxed">
-                I started as a product designer. Moved into management when I figured out the design wasn't usually the problem, but getting it through the organization was. So I learned that part too.
+                I came up as a product designer, spent several years shipping software, then moved into management. The shift happened gradually. Design problems were solvable. The organizational ones were messier and nobody was really owning them.
               </p>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Now I spend most of my time on people and process. Helping designers get better, cutting the stuff that slows everything down, staying close enough to actual users that we don't accidentally start shipping things for ourselves.
+                Most of my time now goes into managing people and unblocking process — growing junior designers, keeping the team connected to actual users, cutting whatever's making things slow. Less glamorous than shipping product, but it matters more at scale.
               </p>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Outside of work I'm on the soccer field, at the gym, or deep in something about Design and AI. Mostly though I'm with my wife and three kids. They're a pretty good gut check on whether anything is actually usable.
+                Outside work: soccer, the gym, and whatever I'm reading about design and AI this month. My wife and three kids fill in the rest. They're a reliable gut check — kids don't let anything confusing slide.
               </p>
             </div>
 
@@ -65,19 +65,19 @@ const AboutSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-3">
-              <Button size="default" asChild className="rounded-[24px]">
+              <Button size="default" asChild className="rounded-[14px]">
                 <a href="mailto:jloughlin87@gmail.com">
                   <Mail className="mr-2 h-4 w-4" />
                   Email Me
                 </a>
               </Button>
-              <Button size="default" variant="outline" asChild className="rounded-[24px]">
+              <Button size="default" variant="outline" asChild className="rounded-[14px]">
                 <a href="https://www.linkedin.com/in/jameslloughlin/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="mr-2 h-4 w-4" />
                   LinkedIn
                 </a>
               </Button>
-              <Button size="default" variant="outline" asChild className="rounded-[24px]">
+              <Button size="default" variant="outline" asChild className="rounded-[14px]">
                 <a href="/James_Loughlin_Resume_2026_v6.pdf" download>
                   <Download className="mr-2 h-4 w-4" />
                   Resume

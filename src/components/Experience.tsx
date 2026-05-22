@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+﻿import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 import { experiences } from "@/data/experiences";
 
@@ -14,7 +14,7 @@ const Experience = () => {
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Experience</h2>
             </div>
             <a href="/James_Loughlin_Resume_2026_v6.pdf" download>
-              <Button variant="outline" className="gap-2 rounded-[24px]">
+              <Button variant="outline" className="gap-2 rounded-[14px]">
                 <Download className="h-4 w-4" />
                 Resume
               </Button>
@@ -22,12 +22,12 @@ const Experience = () => {
           </div>
         </div>
 
-        {/* Experience Cards — 24px uniform gutters */}
+        {/* Experience Cards â€” 24px uniform gutters */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className={`group p-6 rounded-[24px] border border-border/60 bg-card transition-all duration-400 hover:border-border hover:shadow-md hover:-translate-y-1 animate-fade-in ${
+              className={`group p-6 rounded-[14px] border border-border/60 bg-card transition-all duration-400 hover:border-border hover:shadow-md hover:-translate-y-1 animate-fade-in ${
                 index === 0 ? "md:col-span-2 lg:col-span-3" : ""
               }`}
               style={{ animationDelay: `${index * 0.08}s` }}

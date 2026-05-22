@@ -1,4 +1,4 @@
-const DashboardMockup = () => {
+﻿const DashboardMockup = () => {
   const dataSources = [
     { name: "ALPHA-01", status: "NOMINAL", color: "text-primary" },
     { name: "BRAVO-04", status: "NOMINAL", color: "text-primary" },
@@ -9,7 +9,7 @@ const DashboardMockup = () => {
   const statCards = [
     { label: "SYSTEM HEALTH", value: "98.2%", sub: "uptime last 24h" },
     { label: "ACTIVE SOURCES", value: "24/26", sub: "2 degraded" },
-    { label: "AVG LATENCY", value: "142ms", sub: "↓ 11ms from yesterday" },
+    { label: "AVG LATENCY", value: "142ms", sub: "â†“ 11ms from yesterday" },
     { label: "ERROR RATE", value: "0.4%", sub: "within threshold" },
     { label: "ALERTS", value: "2", sub: "active warnings", accent: true },
   ];
@@ -20,10 +20,10 @@ const DashboardMockup = () => {
   return (
     <div className="space-y-5 animate-fade-in">
       <p className="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground">
-        Information Architecture — Three-Tier View Hierarchy
+        Information Architecture â€” Three-Tier View Hierarchy
       </p>
       <h3 className="text-2xl md:text-3xl font-serif font-bold text-foreground">
-        System Overview → Data Source → Metrics
+        System Overview â†’ Data Source â†’ Metrics
       </h3>
       <p className="text-sm text-muted-foreground">
         Data starts broad at the system level and becomes more detailed as users drill into specific sources and metrics.
@@ -90,7 +90,7 @@ const DashboardMockup = () => {
             {/* Chart */}
             <div className="col-span-2 rounded border border-border p-3 bg-muted/20">
               <p className="text-[9px] tracking-[0.1em] uppercase text-muted-foreground mb-3">
-                Throughput — Last 24 Hours
+                Throughput â€” Last 24 Hours
               </p>
               <div className="relative h-28">
                 <svg

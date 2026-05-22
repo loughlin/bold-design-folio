@@ -1,4 +1,4 @@
-import { Linkedin, Mail, Download } from "lucide-react";
+﻿import { Linkedin, Mail, Download } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -47,7 +47,7 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-background/10">
           <p className="text-background/40 text-xs">
-            © {currentYear} James Loughlin. All rights reserved.
+            Â© {currentYear} James Loughlin. All rights reserved.
           </p>
         </div>
       </div>

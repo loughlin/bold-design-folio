@@ -1,4 +1,4 @@
-interface DeviceFrameProps {
+﻿interface DeviceFrameProps {
   src: string;
   alt: string;
   caption?: string;
@@ -8,7 +8,7 @@ interface DeviceFrameProps {
 const DeviceFrame = ({ src, alt, caption, className = "" }: DeviceFrameProps) => {
   return (
     <div className={`space-y-3 ${className}`}>
-      <div className="rounded-[24px] overflow-hidden border border-border/60 bg-card shadow-elevated ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+      <div className="rounded-[14px] overflow-hidden border border-border/60 bg-card shadow-elevated ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
         {/* Browser chrome */}
         <div className="flex items-center gap-2 px-4 py-3 bg-muted/50 border-b border-border/40">
           <div className="flex gap-1.5">

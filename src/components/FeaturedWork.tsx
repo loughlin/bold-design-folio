@@ -1,21 +1,21 @@
-import { ArrowRight, Lock } from "lucide-react";
+﻿import { ArrowRight, Lock } from "lucide-react";
 import { Link } from "react-router-dom";
 import ProtectedLink from "@/components/ProtectedLink";
 import { projects } from "@/data/projects";
 
 const FeaturedWork = () => {
-  const getGridClass = (_index?: number) => "md:col-span-1";
-
   return (
     <section id="work" className="section-spacing px-6 scroll-mt-20">
       <div className="container mx-auto">
         {/* Section Header */}
         <div className="section-header-spacing animate-fade-in">
-          <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest mb-2">Selected Projects</p>
+          <p className="font-technical text-[11px] font-semibold text-muted-foreground uppercase tracking-[0.18em] mb-2">
+            Selected Projects
+          </p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">My Work</h2>
         </div>
 
-        {/* Bento Grid — uniform 24px gutters */}
+        {/* Project grid â€” editorial 2-col */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => {
             const CardWrapper = ({ children }: { children: React.ReactNode }) =>
@@ -28,48 +28,58 @@ const FeaturedWork = () => {
             return (
               <CardWrapper key={index}>
                 <div
-                  className={`group relative overflow-hidden rounded-[24px] border border-border/60 bg-card transition-all duration-500 hover:border-border hover:shadow-xl hover:-translate-y-1 hover:scale-[1.01] animate-fade-in flex flex-col ${getGridClass(index)}`}
+                  className="group relative overflow-hidden rounded-[14px] border border-border bg-card transition-all duration-500 hover:border-border/80 hover:shadow-lg hover:-translate-y-0.5 animate-fade-in flex flex-col"
                   style={{ animationDelay: `${index * 0.08}s` }}
                 >
                   {/* Image */}
-                  <div className="relative overflow-hidden h-48 md:h-56">
+                  <div className="relative overflow-hidden h-52 md:h-60">
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-[1.02]"
+                      className="w-full h-full object-cover transition-all duration-700 group-hover:scale-[1.03]"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-card/60 via-transparent to-transparent" />
                     <div className="absolute inset-0 ring-1 ring-inset ring-[hsl(var(--image-stroke))] pointer-events-none" />
                   </div>
 
-                {/* Content — 8pt padding: 24px on mobile, 32px on desktop */}
-                  <div className="p-6 md:p-8 flex flex-col flex-1">
+                  {/* Content */}
+                  <div className="p-6 md:p-7 flex flex-col flex-1">
                     <div className="flex items-center gap-2 mb-2">
-                      <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
+                      <p className="font-technical text-[10px] font-semibold text-muted-foreground uppercase tracking-[0.18em]">
                         {project.subtitle}
                       </p>
                       {!project.isPublic && (
                         <Lock className="h-3 w-3 text-muted-foreground" />
                       )}
                     </div>
-                    <h3 className="font-bold mb-2 tracking-tight text-xl md:text-2xl">
+
+                    <h3 className="font-bold mb-2 tracking-tight text-xl md:text-2xl leading-snug">
                       {project.title}
                     </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-4 line-clamp-2">
+
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-5 line-clamp-2">
                       {project.description}
                     </p>
 
-                    <div className="mt-auto">
-                      <div className="flex items-center gap-4 text-xs text-muted-foreground">
-                        <span>{project.role}</span>
-                        <span className="w-1 h-1 rounded-full bg-border" />
-                        <span>{project.timeline}</span>
-                      </div>
+                    <div className="mt-auto space-y-3">
+                      {/* Outcome metric â€” the key addition */}
+                      {project.outcome && (
+                        <p className="font-technical text-[11px] text-primary font-medium tracking-wide">
+                          {project.outcome}
+                        </p>
+                      )}
 
-                      {/* Hover arrow */}
-                      <div className="mt-4 flex items-center gap-2 text-sm font-medium text-primary opacity-0 translate-x-[-8px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                        View Case Study
-                        <ArrowRight className="h-4 w-4" />
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center gap-3 text-xs text-muted-foreground">
+                          <span>{project.role}</span>
+                          <span className="w-1 h-1 rounded-full bg-border" />
+                          <span>{project.timeline}</span>
+                        </div>
+
+                        <div className="flex items-center gap-1.5 text-sm font-medium text-primary opacity-0 translate-x-[-6px] transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
+                          View
+                          <ArrowRight className="h-3.5 w-3.5" />
+                        </div>
                       </div>
                     </div>
                   </div>

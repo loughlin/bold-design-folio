@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useState } from "react";
+﻿import { ReactNode, useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { usePassword } from "@/contexts/PasswordContext";
 import { supabase } from "@/integrations/supabase/client";

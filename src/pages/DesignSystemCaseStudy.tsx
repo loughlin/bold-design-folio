@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+﻿import { useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
@@ -45,7 +45,7 @@ const DesignSystemCaseStudy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     const prev = document.title;
-    document.title = "One Design System for Five Missions — James Loughlin";
+    document.title = "One Design System for Five Missions â€” James Loughlin";
     return () => { document.title = prev; };
   }, []);
 
@@ -58,12 +58,12 @@ const DesignSystemCaseStudy = () => {
       {/* Hero */}
       <section className="pt-24 pb-8 px-6">
         <div className="container mx-auto max-w-reading">
-          <Link to="/#work" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8 rounded-[24px]">
+          <Link to="/#work" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8 rounded-[14px]">
             <ArrowLeft className="w-4 h-4" />
             Back to Case Studies
           </Link>
           <p className="text-[11px] font-technical font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">
-            Design Systems Lead · 2019 – 2023
+            Design Systems Lead Â· 2019 â€“ 2023
           </p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">One Design System for Five Missions</h1>
           <p className="text-lg text-muted-foreground/80 font-medium animate-fade-in mb-2">Building the shared foundation across five operational products</p>
@@ -76,7 +76,7 @@ const DesignSystemCaseStudy = () => {
       {/* Hero Image */}
       <section className="px-6 pb-8">
         <div className="container mx-auto max-w-reading animate-fade-in" style={{ animationDelay: "0.3s" }}>
-          <DeviceFrame src={dsDesignTokens} alt="Design tokens system — color, typography, and spacing definitions for scalable design systems" caption="Design Tokens" />
+          <DeviceFrame src={dsDesignTokens} alt="Design tokens system â€” color, typography, and spacing definitions for scalable design systems" caption="Design Tokens" />
         </div>
       </section>
 
@@ -90,7 +90,7 @@ const DesignSystemCaseStudy = () => {
             <h2 className="text-2xl font-bold text-foreground mb-6">Overview</h2>
             <CaseStudyMetadata
               role="Design Systems Lead"
-              timeline="2019 – 2023"
+              timeline="2019 â€“ 2023"
               team="40+ Product Teams, 5 Applications"
             />
             <KeyTakeaway>
@@ -105,8 +105,8 @@ const DesignSystemCaseStudy = () => {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-              <ArtifactCard label="Tools" icon="🛠" items={["MUI (Material UI)", "Figma", "Storybook", "React", "TypeScript"]} />
-              <ArtifactCard label="Skills" icon="💡" items={["Mentorship & Leadership", "Component Libraries", "Stakeholder Management", "Documentation", "Dev/Design Pairing"]} />
+              <ArtifactCard label="Tools" icon="ðŸ› " items={["MUI (Material UI)", "Figma", "Storybook", "React", "TypeScript"]} />
+              <ArtifactCard label="Skills" icon="ðŸ’¡" items={["Mentorship & Leadership", "Component Libraries", "Stakeholder Management", "Documentation", "Dev/Design Pairing"]} />
             </div>
           </section>
 
@@ -121,7 +121,7 @@ const DesignSystemCaseStudy = () => {
                 Inconsistent UIs steepened the learning curve for an increasingly overlapping user base. Custom front ends meant more time spent on work already done elsewhere.
               </p>
             </div>
-            <div className="space-y-4 rounded-[24px] bg-amber-500/5 p-6 ring-1 ring-inset ring-amber-500/20">
+            <div className="space-y-4 rounded-[14px] bg-amber-500/5 p-6 ring-1 ring-inset ring-amber-500/20">
               <p className="text-lg font-medium italic text-foreground">
                 How might we decrease error rates and onboarding time so users spend more time on mission-critical tasks?
               </p>
@@ -150,11 +150,11 @@ const DesignSystemCaseStudy = () => {
             </KeyTakeaway>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { icon: "⏱️", title: "Task Completion", desc: "Time on core functions vs. navigating the interface" },
-                { icon: "⚠️", title: "User Error Rate", desc: "Incidents caused by inconsistent UI patterns" },
-                { icon: "🚀", title: "Developer Velocity", desc: "Front end story throughput and cycle time" },
+                { icon: "â±ï¸", title: "Task Completion", desc: "Time on core functions vs. navigating the interface" },
+                { icon: "âš ï¸", title: "User Error Rate", desc: "Incidents caused by inconsistent UI patterns" },
+                { icon: "ðŸš€", title: "Developer Velocity", desc: "Front end story throughput and cycle time" },
               ].map((m, i) => (
-                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-6 text-center shadow-elevated ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+                <div key={i} className="rounded-[14px] border border-border/60 bg-card p-6 text-center shadow-elevated ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                   <span className="text-2xl">{m.icon}</span>
                   <h3 className="text-sm font-semibold text-foreground mt-3">{m.title}</h3>
                   <p className="text-xs text-muted-foreground mt-2">{m.desc}</p>
@@ -171,12 +171,12 @@ const DesignSystemCaseStudy = () => {
             </KeyTakeaway>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                { value: "3 days", label: "Faster Story Completion", tag: "22 → 19 days", desc: "Pre-built, tested components meant developers started from a reliable baseline." },
-                { value: "48%", label: "Fewer Design Stories", tag: "3.8 → 1.95/week", desc: "Documented, approved components meant fewer tickets to redesign solved problems." },
-                { value: "2 weeks", label: "Designer Onboarding", tag: "6+ → 2 weeks", desc: "Shared Figma kit and documentation gave new designers a foundation from day one." },
+                { value: "3 days", label: "Faster Story Completion", tag: "22 â†’ 19 days", desc: "Pre-built, tested components meant developers started from a reliable baseline." },
+                { value: "48%", label: "Fewer Design Stories", tag: "3.8 â†’ 1.95/week", desc: "Documented, approved components meant fewer tickets to redesign solved problems." },
+                { value: "2 weeks", label: "Designer Onboarding", tag: "6+ â†’ 2 weeks", desc: "Shared Figma kit and documentation gave new designers a foundation from day one." },
                 { value: "2,000+", label: "Dev Days Saved/Year", tag: "per 10-dev team", desc: "That number compounds across an organization the size of Kessel Run." },
               ].map((card, i) => (
-                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-6 space-y-3 shadow-elevated ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+                <div key={i} className="rounded-[14px] border border-border/60 bg-card p-6 space-y-3 shadow-elevated ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                   <div className="flex justify-between items-start">
                     <div>
                       <p className="text-3xl font-bold text-primary">{card.value}</p>
@@ -195,14 +195,14 @@ const DesignSystemCaseStudy = () => {
 
           {/* Component Library */}
           <section className="section-spacing border-t border-border/30">
-            <DeviceFrame src={dsComponentLibrary} alt="Component library built on MUI — custom themed React components for scalable design systems" caption="Component Library" />
+            <DeviceFrame src={dsComponentLibrary} alt="Component library built on MUI â€” custom themed React components for scalable design systems" caption="Component Library" />
           </section>
 
           {/* Process */}
           <section id="process" className="section-spacing border-t border-border/30 scroll-mt-20">
             <h2 className="text-2xl font-bold text-foreground mb-6">Design Process</h2>
             <KeyTakeaway>
-              We applied the same Double Diamond process to the system itself — and built it through direct team feedback.
+              We applied the same Double Diamond process to the system itself â€” and built it through direct team feedback.
             </KeyTakeaway>
             <div className="flex justify-center py-8">
               <div className="flex items-center gap-0 max-w-3xl w-full">
@@ -216,11 +216,11 @@ const DesignSystemCaseStudy = () => {
               </div>
             </div>
 
-            <div className="rounded-[24px] bg-primary/5 p-8 text-center ring-1 ring-inset ring-[hsl(var(--image-stroke))] mt-8">
+            <div className="rounded-[14px] bg-primary/5 p-8 text-center ring-1 ring-inset ring-[hsl(var(--image-stroke))] mt-8">
               <p className="text-6xl md:text-7xl font-bold text-primary">95%</p>
               <p className="text-muted-foreground mt-2">of product teams currently using React</p>
               <p className="text-sm text-muted-foreground mt-4 max-w-xl mx-auto">
-                That single data point made the decision to build on MUI straightforward — starting from a foundation teams already knew.
+                That single data point made the decision to build on MUI straightforward â€” starting from a foundation teams already knew.
               </p>
             </div>
           </section>
@@ -256,7 +256,7 @@ const DesignSystemCaseStudy = () => {
                 { name: "Aesthetic & Minimal", desc: "Standardized spacing and typography reduced cognitive noise.", before: 3, after: 5 },
                 { name: "Help & Documentation", desc: "Component-level docs reduced support requests by 60%.", before: 1, after: 5 },
               ].map((h, i) => (
-                <div key={i} className="rounded-[24px] border border-border/60 bg-card p-6 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+                <div key={i} className="rounded-[14px] border border-border/60 bg-card p-6 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-xs">{i + 1}</div>
                     <h3 className="font-semibold text-sm">{h.name}</h3>
@@ -264,7 +264,7 @@ const DesignSystemCaseStudy = () => {
                   <p className="text-sm text-muted-foreground">{h.desc}</p>
                   <div className="flex items-center gap-2 text-[11px] font-technical">
                     <span className="text-destructive">Before: {h.before}/5</span>
-                    <span className="text-muted-foreground">→</span>
+                    <span className="text-muted-foreground">â†’</span>
                     <span className="text-primary font-medium">After: {h.after}/5</span>
                   </div>
                 </div>
@@ -279,22 +279,22 @@ const DesignSystemCaseStudy = () => {
               From custom builds averaging 22 days per story to a shared system adopted voluntarily.
             </KeyTakeaway>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="rounded-[24px] bg-destructive/5 p-6 space-y-4 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+              <div className="rounded-[14px] bg-destructive/5 p-6 space-y-4 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                 <h3 className="font-semibold text-destructive text-sm">Before Design System</h3>
                 <ul className="space-y-3 text-muted-foreground text-sm">
-                  <li className="flex items-start gap-2"><span className="text-destructive">✗</span>Custom components from scratch, 22 days/story</li>
-                  <li className="flex items-start gap-2"><span className="text-destructive">✗</span>Inconsistent patterns increased errors</li>
-                  <li className="flex items-start gap-2"><span className="text-destructive">✗</span>No shared language across 40+ teams</li>
-                  <li className="flex items-start gap-2"><span className="text-destructive">✗</span>Accessibility compliance varied by team</li>
+                  <li className="flex items-start gap-2"><span className="text-destructive">âœ—</span>Custom components from scratch, 22 days/story</li>
+                  <li className="flex items-start gap-2"><span className="text-destructive">âœ—</span>Inconsistent patterns increased errors</li>
+                  <li className="flex items-start gap-2"><span className="text-destructive">âœ—</span>No shared language across 40+ teams</li>
+                  <li className="flex items-start gap-2"><span className="text-destructive">âœ—</span>Accessibility compliance varied by team</li>
                 </ul>
               </div>
-              <div className="rounded-[24px] bg-primary/5 p-6 space-y-4 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
+              <div className="rounded-[14px] bg-primary/5 p-6 space-y-4 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                 <h3 className="font-semibold text-primary text-sm">After Design System</h3>
                 <ul className="space-y-3 text-muted-foreground text-sm">
-                  <li className="flex items-start gap-2"><span className="text-primary">✓</span>Story completion dropped to 19 days</li>
-                  <li className="flex items-start gap-2"><span className="text-primary">✓</span>Consistent patterns reduced errors</li>
-                  <li className="flex items-start gap-2"><span className="text-primary">✓</span>Unified library adopted by all teams</li>
-                  <li className="flex items-start gap-2"><span className="text-primary">✓</span>WCAG 2.1 AA built into every component</li>
+                  <li className="flex items-start gap-2"><span className="text-primary">âœ“</span>Story completion dropped to 19 days</li>
+                  <li className="flex items-start gap-2"><span className="text-primary">âœ“</span>Consistent patterns reduced errors</li>
+                  <li className="flex items-start gap-2"><span className="text-primary">âœ“</span>Unified library adopted by all teams</li>
+                  <li className="flex items-start gap-2"><span className="text-primary">âœ“</span>WCAG 2.1 AA built into every component</li>
                 </ul>
               </div>
             </div>
@@ -308,7 +308,7 @@ const DesignSystemCaseStudy = () => {
             </KeyTakeaway>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
-                At its peak, the design system was adopted by every eligible product team. Most teams chose to adopt once the system offered enough clear value — which is exactly how it should work.
+                At its peak, the design system was adopted by every eligible product team. Most teams chose to adopt once the system offered enough clear value â€” which is exactly how it should work.
               </p>
             </div>
             <ul className="space-y-3 mt-6">
@@ -323,7 +323,7 @@ const DesignSystemCaseStudy = () => {
             <div className="mt-12 space-y-4 text-muted-foreground leading-relaxed">
               <h3 className="text-lg font-semibold text-foreground">What We Learned</h3>
               <p>
-                The technical work of building a design system is hard. The organizational work of getting people to use it is harder. Building on MUI rather than from scratch was one of the best calls we made — it gave teams a familiar foundation and let us focus on extending it.
+                The technical work of building a design system is hard. The organizational work of getting people to use it is harder. Building on MUI rather than from scratch was one of the best calls we made â€” it gave teams a familiar foundation and let us focus on extending it.
               </p>
             </div>
           </section>

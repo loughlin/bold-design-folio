@@ -1,4 +1,4 @@
-import { Mail, Linkedin } from "lucide-react";
+﻿import { Mail, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => {
@@ -15,7 +15,7 @@ const ContactSection = () => {
             </h2>
             <div className="space-y-4 text-background/70 text-base leading-relaxed">
               <p>
-                I'm best on problems with real complexity — a team that needs
+                I'm best on problems with real complexity â€” a team that needs
                 structure, a product that needs grounding in actual user research,
                 or a system that has to hold together under pressure.
               </p>
@@ -28,7 +28,7 @@ const ContactSection = () => {
               <Button
                 asChild
                 size="default"
-                className="rounded-[24px] bg-background text-foreground hover:bg-background/90"
+                className="rounded-[14px] bg-background text-foreground hover:bg-background/90"
               >
                 <a href="mailto:jloughlin87@gmail.com">
                   <Mail className="mr-2 h-4 w-4" />
@@ -39,7 +39,7 @@ const ContactSection = () => {
                 asChild
                 size="default"
                 variant="outline"
-                className="rounded-[24px] border-background/30 text-background hover:bg-background/10 hover:text-background"
+                className="rounded-[14px] border-background/30 text-background hover:bg-background/10 hover:text-background"
               >
                 <a
                   href="https://www.linkedin.com/in/jameslloughlin/"
@@ -57,7 +57,7 @@ const ContactSection = () => {
             <div className="grid grid-cols-1 gap-px border border-background/10 bg-background/10">
               {[
                 ["Location", "Cherokee, Iowa"],
-                ["Available for", "Full-time · Contract · Advisory"],
+                ["Available for", "Full-time Â· Contract Â· Advisory"],
                 ["Response time", "Usually within a day"],
                 ["Time zone", "Central (CT)"],
               ].map(([label, value]) => (

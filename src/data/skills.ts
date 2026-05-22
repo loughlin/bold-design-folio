@@ -12,31 +12,31 @@ export const skillCategories: SkillCategory[] = [
   {
     icon: Lightbulb,
     title: "Facilitation + Human-Centered Design",
-    description: "I run workshops and research sessions that get teams closer to the people they're building for. The goal is always better decisions, not more meetings.",
+    description: "I run workshops and research sessions to help teams get more specific about who they're building for. Better questions earlier mean fewer rounds of revision later.",
   },
   {
     icon: Palette,
     title: "Design Systems + DesignOps",
-    description: "I build shared foundations — component libraries, tokens, documentation — so teams stop reinventing the wheel and start solving harder problems.",
+    description: "I've built component libraries and shared design languages across multi-product orgs. The goal is getting teams to a point where they're solving new problems, not repeating old ones.",
   },
   {
     icon: Users,
     title: "Team Leadership + Psychological Safety",
-    description: "I manage designers, grow careers, and create environments where people feel safe sharing unfinished work and honest feedback.",
+    description: "I manage designers and care a lot about the conditions that let people do good work. That mostly means building enough trust that half-finished ideas get shared before they're polished.",
   },
   {
     icon: Workflow,
     title: "Lean UX + Agile Methodologies",
-    description: "I pair design thinking with agile delivery so teams can test ideas before committing to them.",
+    description: "I know how to fit design into a sprint cycle without it becoming an afterthought. Testing before committing, not after — that's the whole point.",
   },
   {
     icon: Code,
     title: "Technical Understanding",
-    description: "I know enough about code, version control, and dev workflows to have real conversations with engineers and spec work they can actually build.",
+    description: "I know enough about how software gets built to have real conversations with engineers. I can read a pull request, understand APIs at a basic level, and spec things developers don't have to interpret.",
   },
   {
     icon: MessageSquare,
     title: "Stakeholder Communication",
-    description: "I translate between users, leadership, and product teams. Everyone needs to be solving the same problem — that doesn't happen by accident.",
+    description: "A lot of my time goes into keeping different people pointed at the same problem. Users, executives, product managers — they each need a different version of the same answer, and getting that wrong is expensive.",
   },
 ];

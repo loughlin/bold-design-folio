@@ -1,11 +1,11 @@
-const ResearchOutcomesChart = () => {
+﻿const ResearchOutcomesChart = () => {
   const metrics = [
     {
       label: "User satisfaction score",
       sublabel: "out of 10, across tested applications",
       bars: [
-        { label: "6.2 — BEFORE", width: "62%" },
-        { label: "8.4 — AFTER", width: "84%" },
+        { label: "6.2 â€” BEFORE", width: "62%" },
+        { label: "8.4 â€” AFTER", width: "84%" },
       ],
       value: "6.2/10",
       value2: "8.4/10",
@@ -40,13 +40,13 @@ const ResearchOutcomesChart = () => {
   return (
     <div className="space-y-4 animate-fade-in">
       <p className="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground">
-        Research Operations — Measurable Outcomes
+        Research Operations â€” Measurable Outcomes
       </p>
       <h3 className="text-2xl md:text-3xl font-serif font-bold text-foreground">
         From Assumption-Driven to Evidence-Driven
       </h3>
       <p className="text-sm text-muted-foreground mb-6">
-        Key outcomes across 6 T&G portfolio missions after embedding research into the full product lifecycle, 2021–2024.
+        Key outcomes across 6 T&G portfolio missions after embedding research into the full product lifecycle, 2021â€“2024.
       </p>
 
       <div className="space-y-6">
@@ -108,7 +108,7 @@ const ResearchOutcomesChart = () => {
       </div>
 
       <p className="text-[11px] text-muted-foreground italic pt-4 border-t border-border/50">
-        Outcomes measured across 6 Targeting & Geo-intelligence portfolio missions, Kessel Run 2021–2024.
+        Outcomes measured across 6 Targeting & Geo-intelligence portfolio missions, Kessel Run 2021â€“2024.
         Cost avoidance estimated based on average feature development spend prevented through early-stage validation.
       </p>
     </div>

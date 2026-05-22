@@ -1,4 +1,4 @@
-const PortfolioEfficiencyChart = () => {
+﻿const PortfolioEfficiencyChart = () => {
   const metrics = [
     {
       label: "Dev days saved / year",
@@ -18,15 +18,15 @@ const PortfolioEfficiencyChart = () => {
     },
     {
       label: "Designer onboarding",
-      sublabel: "before → after",
+      sublabel: "before â†’ after",
       barLabel: null,
       bars: [
-        { label: "6 WEEKS — BEFORE", width: "85%" },
-        { label: "2 WEEKS — AFTER", width: "33%" },
+        { label: "6 WEEKS â€” BEFORE", width: "85%" },
+        { label: "2 WEEKS â€” AFTER", width: "33%" },
       ],
       value: "6 wks",
       value2: "2 wks",
-      valueSub: "↓ 67%",
+      valueSub: "â†“ 67%",
     },
     {
       label: "Spec documentation",
@@ -41,7 +41,7 @@ const PortfolioEfficiencyChart = () => {
   return (
     <div className="space-y-4 animate-fade-in">
       <p className="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground">
-        Visual 02 — Organizational Efficiency
+        Visual 02 â€” Organizational Efficiency
       </p>
       <h3 className="text-2xl md:text-3xl font-serif font-bold text-foreground">
         Time to Value Across the Portfolio
@@ -112,7 +112,7 @@ const PortfolioEfficiencyChart = () => {
       </div>
 
       <p className="text-[11px] text-muted-foreground italic pt-4 border-t border-border/50">
-        All metrics sourced from internal team tracking across Kessel Run product teams, 2019–2023. Developer day savings calculated per 10-person development team.
+        All metrics sourced from internal team tracking across Kessel Run product teams, 2019â€“2023. Developer day savings calculated per 10-person development team.
       </p>
     </div>
   );

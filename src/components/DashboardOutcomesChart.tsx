@@ -1,4 +1,4 @@
-const DashboardOutcomesChart = () => {
+﻿const DashboardOutcomesChart = () => {
   const metrics = [
     {
       value: "90%",
@@ -29,7 +29,7 @@ const DashboardOutcomesChart = () => {
   return (
     <div className="space-y-5 animate-fade-in">
       <p className="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground">
-        Usability Testing — Validated Outcomes
+        Usability Testing â€” Validated Outcomes
       </p>
       <h3 className="text-2xl md:text-3xl font-serif font-bold text-foreground">
         What Testing With Operators Revealed
@@ -64,7 +64,7 @@ const DashboardOutcomesChart = () => {
       </div>
 
       <p className="text-[11px] text-muted-foreground/60 pt-2 leading-relaxed">
-        Usability testing conducted with operators and system administrators across USAF mission teams, Kessel Run 2019–2021. Context switching reduction measured against self-reported time-on-task using prior tooling.
+        Usability testing conducted with operators and system administrators across USAF mission teams, Kessel Run 2019â€“2021. Context switching reduction measured against self-reported time-on-task using prior tooling.
       </p>
     </div>
   );

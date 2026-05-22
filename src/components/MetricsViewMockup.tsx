@@ -1,4 +1,4 @@
-const MetricsViewMockup = () => {
+﻿const MetricsViewMockup = () => {
   const statCards = [
     { label: "AVERAGE", value: "145", unit: "ms" },
     { label: "MAXIMUM", value: "892", unit: "ms" },
@@ -60,9 +60,9 @@ const MetricsViewMockup = () => {
           {/* Breadcrumb */}
           <div className="flex items-center gap-2 text-[10px]">
             <span className="text-muted-foreground">System Overview</span>
-            <span className="text-muted-foreground/40">›</span>
+            <span className="text-muted-foreground/40">â€º</span>
             <span className="text-muted-foreground">Alpha-01</span>
-            <span className="text-muted-foreground/40">›</span>
+            <span className="text-muted-foreground/40">â€º</span>
             <span className="text-primary font-semibold">/api/v2/missions</span>
           </div>
           <p className="text-sm font-semibold text-foreground">Metrics Detail</p>
@@ -84,7 +84,7 @@ const MetricsViewMockup = () => {
           <div className="rounded border border-border p-3 bg-muted/20">
             <div className="flex items-center gap-4 mb-2">
               <p className="text-[9px] tracking-[0.1em] uppercase text-muted-foreground">
-                Response Time — Percentile Breakdown
+                Response Time â€” Percentile Breakdown
               </p>
               <div className="flex gap-3">
                 {[
@@ -182,7 +182,7 @@ const MetricsViewMockup = () => {
         {/* Footer */}
         <div className="px-4 py-2 border-t border-border bg-muted/30">
           <p className="text-[9px] text-muted-foreground/60 italic">
-            View 3: Metrics View — Endpoint-level response time statistics, percentile breakdown, error distribution, and status split. Dummy data shown. Actual interface operates on classified networks. Kessel Run, 2019–2021.
+            View 3: Metrics View â€” Endpoint-level response time statistics, percentile breakdown, error distribution, and status split. Dummy data shown. Actual interface operates on classified networks. Kessel Run, 2019â€“2021.
           </p>
         </div>
       </div>

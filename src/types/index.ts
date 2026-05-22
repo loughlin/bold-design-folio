@@ -8,6 +8,7 @@ export interface Project {
   image: string;
   link: string;
   isPublic: boolean;
+  outcome?: string; // short metric shown on the card — e.g. "40% faster delivery · 85% retention"
 }
 
 // Experience types
