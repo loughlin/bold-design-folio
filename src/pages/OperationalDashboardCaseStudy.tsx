@@ -1,4 +1,5 @@
 ﻿import { useEffect } from "react";
+import Seo from "@/components/Seo";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
@@ -28,16 +29,27 @@ const sections = [
 const OperationalDashboardCaseStudy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    const prev = document.title;
-    document.title = "Command Center: Real-Time Data Flows — James Loughlin";
-    return () => { document.title = prev; };
   }, []);
 
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="Command Center: Real-Time Data Flows — James Loughlin"
+        description="Redesigning an operational monitoring dashboard for real-time data flows — 90% task success, 3× faster issue detection, and 60% less context switching."
+        path="/case-study/operational-dashboard"
+        type="article"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: "Command Center: Real-Time Data Flows",
+          author: { "@type": "Person", name: "James Loughlin" },
+          description: "Redesigning a monitoring dashboard for operators.",
+        }}
+      />
       <CaseStudyProgress />
       <Navigation />
       <main id="main">
+
 
       {/* Hero */}
       <section className="pt-24 pb-8 px-6">
