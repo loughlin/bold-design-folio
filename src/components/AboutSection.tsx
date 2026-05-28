@@ -19,12 +19,13 @@ const AboutSection = () => {
           {/* Right Column - Content */}
           <div className="lg:col-span-7 space-y-8 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             {/* Role tagline */}
-            <div className="flex flex-wrap gap-2 items-center">
-              {["Design Leadership", "UX Strategy", "Team Building"].map((tag) => (
-                <span key={tag} className="font-technical px-3 py-1 bg-muted text-muted-foreground text-[11px] font-semibold tracking-wide uppercase rounded-md">
-                  {tag}
-                </span>
-              ))}
+            <div className="space-y-1">
+              <p className="font-technical text-[11px] font-bold text-foreground uppercase tracking-[0.18em]">
+                James Loughlin
+              </p>
+              <p className="font-technical text-[11px] text-muted-foreground tracking-[0.12em]">
+                UX Design Manager · Kessel Run / U.S. Air Force
+              </p>
             </div>
 
             <h1 className="text-2xl md:text-3xl font-bold tracking-tight">

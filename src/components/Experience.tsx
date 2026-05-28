@@ -1,6 +1,7 @@
 ﻿import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 import { experiences } from "@/data/experiences";
+import { RESUME_PDF_PATH } from "@/constants";
 
 const Experience = () => {
   return (
@@ -13,7 +14,7 @@ const Experience = () => {
               <p className="font-technical text-[11px] font-semibold text-muted-foreground uppercase tracking-[0.18em] mb-2">Career</p>
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Experience</h2>
             </div>
-            <a href="/James_Loughlin_Resume_2026_v6.pdf" download>
+            <a href={RESUME_PDF_PATH} download>
               <Button variant="outline" className="gap-2 rounded-[14px]">
                 <Download className="h-4 w-4" />
                 Resume

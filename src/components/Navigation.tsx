@@ -1,27 +1,42 @@
-﻿import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Download } from "lucide-react";
 import ThemeToggle from "@/components/ThemeToggle";
 import { useScrollToSection } from "@/hooks/useScrollToSection";
-import { NAV_SECTIONS } from "@/constants";
+import { useActiveSection } from "@/hooks/useActiveSection";
+import { NAV_SECTIONS, RESUME_PDF_PATH } from "@/constants";
+
+const NAV_ITEMS = [
+  { id: NAV_SECTIONS.WORK, label: "Work" },
+  { id: NAV_SECTIONS.APPROACH, label: "Approach" },
+  { id: NAV_SECTIONS.EXPERIENCE, label: "Experience" },
+  { id: NAV_SECTIONS.CONTACT, label: "Contact" },
+] as const;
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { scrollToSection } = useScrollToSection();
   const location = useLocation();
+  const activeSection = useActiveSection();
+  const isHome = location.pathname === "/";
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const handleNavClick = (sectionId: string) => {
     scrollToSection(sectionId, () => setIsMobileMenuOpen(false));
   };
+
+  const navLinkClass = (id: string) =>
+    `text-sm font-medium transition-colors duration-300 ${
+      isHome && activeSection === id
+        ? "text-foreground"
+        : "text-muted-foreground hover:text-foreground"
+    }`;
 
   return (
     <nav
@@ -33,7 +48,7 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          {location.pathname === "/" ? (
+          {isHome ? (
             <button
               onClick={() => {
                 const el = document.getElementById("about");
@@ -52,23 +67,18 @@ const Navigation = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            {[
-              { id: NAV_SECTIONS.WORK, label: "Work" },
-              { id: NAV_SECTIONS.APPROACH, label: "Approach" },
-              { id: NAV_SECTIONS.EXPERIENCE, label: "Experience" },
-              { id: NAV_SECTIONS.CONTACT, label: "Contact" },
-            ].map((item) => (
+            {NAV_ITEMS.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-medium"
+                className={navLinkClass(item.id)}
               >
                 {item.label}
               </button>
             ))}
             <ThemeToggle />
             <a
-              href="/James_Loughlin_Resume_2026_v6.pdf"
+              href={RESUME_PDF_PATH}
               download
               className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-300"
             >
@@ -90,22 +100,17 @@ const Navigation = () => {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden mt-6 pb-4 space-y-4 animate-fade-in">
-            {[
-              { id: NAV_SECTIONS.WORK, label: "Work" },
-              { id: NAV_SECTIONS.APPROACH, label: "Approach" },
-              { id: NAV_SECTIONS.EXPERIENCE, label: "Experience" },
-              { id: NAV_SECTIONS.CONTACT, label: "Contact" },
-            ].map((item) => (
+            {NAV_ITEMS.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className="block w-full text-left text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-medium"
+                className={`block w-full text-left ${navLinkClass(item.id)}`}
               >
                 {item.label}
               </button>
             ))}
             <a
-              href="/James_Loughlin_Resume_2026_v6.pdf"
+              href={RESUME_PDF_PATH}
               download
               className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-medium"
             >
