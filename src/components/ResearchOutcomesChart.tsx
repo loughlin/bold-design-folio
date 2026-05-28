@@ -4,8 +4,8 @@
       label: "User satisfaction score",
       sublabel: "out of 10, across tested applications",
       bars: [
-        { label: "6.2 â€” BEFORE", width: "62%" },
-        { label: "8.4 â€” AFTER", width: "84%" },
+        { label: "6.2 — BEFORE", width: "62%" },
+        { label: "8.4 — AFTER", width: "84%" },
       ],
       value: "6.2/10",
       value2: "8.4/10",
@@ -40,7 +40,7 @@
   return (
     <div className="space-y-4 animate-fade-in">
       <p className="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground">
-        Research Operations â€” Measurable Outcomes
+        Research Operations — Measurable Outcomes
       </p>
       <h3 className="text-2xl md:text-3xl font-serif font-bold text-foreground">
         From Assumption-Driven to Evidence-Driven

@@ -36,7 +36,7 @@
       before: "Baseline",
       beforeSub: "pre-adoption",
       after: "+36%",
-      afterSub: "more complex â€” still faster",
+      afterSub: "more complex — still faster",
       badge: "â†‘ Better",
       badgeSub: "QUALITY",
     },
@@ -45,13 +45,13 @@
   return (
     <div className="space-y-4 animate-fade-in">
       <p className="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground">
-        Visual 01 â€” Adoption Impact
+        Visual 01 — Adoption Impact
       </p>
       <h3 className="text-2xl md:text-3xl font-serif font-bold text-foreground">
         Before & After Design System Adoption
       </h3>
       <p className="text-sm text-muted-foreground mb-6">
-        Measured against one established team with a fully custom front end â€” tracked across 10 months pre and post adoption.
+        Measured against one established team with a fully custom front end — tracked across 10 months pre and post adoption.
       </p>
 
       {/* Column headers */}

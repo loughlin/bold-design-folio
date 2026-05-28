@@ -21,8 +21,8 @@
       sublabel: "before â†’ after",
       barLabel: null,
       bars: [
-        { label: "6 WEEKS â€” BEFORE", width: "85%" },
-        { label: "2 WEEKS â€” AFTER", width: "33%" },
+        { label: "6 WEEKS — BEFORE", width: "85%" },
+        { label: "2 WEEKS — AFTER", width: "33%" },
       ],
       value: "6 wks",
       value2: "2 wks",
@@ -41,7 +41,7 @@
   return (
     <div className="space-y-4 animate-fade-in">
       <p className="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground">
-        Visual 02 â€” Organizational Efficiency
+        Visual 02 — Organizational Efficiency
       </p>
       <h3 className="text-2xl md:text-3xl font-serif font-bold text-foreground">
         Time to Value Across the Portfolio

@@ -34,7 +34,7 @@ const heuristics = [
   { name: "User Control & Freedom", desc: "Feedback drove undo/redo patterns and flexible workflows.", before: 2, after: 4 },
   { name: "Error Prevention", desc: "Testing identified error-prone workflows invisible in design reviews.", before: 2, after: 4 },
   { name: "Recognition over Recall", desc: "Card sorting optimized information architecture.", before: 2, after: 5 },
-  { name: "Flexibility & Efficiency", desc: "Power user workarounds designed into the product â€” 25% faster task completion.", before: 2, after: 4 },
+  { name: "Flexibility & Efficiency", desc: "Power user workarounds designed into the product — 25% faster task completion.", before: 2, after: 4 },
   { name: "Help & Documentation", desc: "Research insights embedded into component guidelines.", before: 1, after: 4 },
 ];
 
@@ -67,7 +67,7 @@ const WarfighterResearchCaseStudy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     const prev = document.title;
-    document.title = "Establishing Research from Zero â€” James Loughlin";
+    document.title = "Establishing Research from Zero — James Loughlin";
     return () => { document.title = prev; };
   }, []);
 
@@ -85,14 +85,14 @@ const WarfighterResearchCaseStudy = () => {
             Back to Case Studies
           </Link>
           <p className="text-[11px] font-technical font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">
-            UX Manager & Lead Researcher Â· 2021 â€“ 2024
+            UX Manager & Lead Researcher · 2021 – 2024
           </p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
             Establishing Research from Zero
           </h1>
           <p className="text-lg text-muted-foreground/80 font-medium animate-fade-in mb-2">Grounding Decisions in User Truth</p>
           <p className="text-xl text-muted-foreground animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            De-risking product decisions through qualitative user research â€” and convincing an engineering-first organization to trust what users said.
+            De-risking product decisions through qualitative user research — and convincing an engineering-first organization to trust what users said.
           </p>
         </div>
       </section>
@@ -118,14 +118,14 @@ const WarfighterResearchCaseStudy = () => {
               team="2 Designers, 8 Product Teams"
             />
             <KeyTakeaway>
-              The goal wasn't more research sessions â€” it was changing how the organization thought about research.
+              The goal wasn't more research sessions — it was changing how the organization thought about research.
             </KeyTakeaway>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
                 Product teams were making design decisions based almost entirely on stakeholder assumptions. There was no shared methodology, no centralized place for insights to live, and no expectation that user evidence should drive decisions.
               </p>
               <p>
-                Over three years, we built that practice from the ground up â€” from a nice-to-have to a standard part of how products got built.
+                Over three years, we built that practice from the ground up — from a nice-to-have to a standard part of how products got built.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
@@ -160,7 +160,7 @@ const WarfighterResearchCaseStudy = () => {
               Four stages adapted from standard UX practice for classified operational environments.
             </KeyTakeaway>
             <div className="flex justify-center py-4 mb-4">
-              <img src={stagesUxResearch} alt="Four stages of UX research methodology â€” discovery, exploring, testing, and listening" className="max-w-2xl w-full rounded-[14px] grayscale" />
+              <img src={stagesUxResearch} alt="Four stages of UX research methodology — discovery, exploring, testing, and listening" className="max-w-2xl w-full rounded-[14px] grayscale" />
             </div>
             <div className="flex justify-center py-6">
               <div className="flex items-center gap-0 max-w-full w-full">
@@ -190,7 +190,7 @@ const WarfighterResearchCaseStudy = () => {
               60+ sessions: contextual inquiries, usability testing, and participatory workshops.
             </KeyTakeaway>
             <div className="flex justify-center py-4 mb-6">
-              <img src={uxResearchProcess} alt="UX research process diagram â€” structured approach to user research in defense environments" className="max-w-3xl w-full rounded-[14px] grayscale" />
+              <img src={uxResearchProcess} alt="UX research process diagram — structured approach to user research in defense environments" className="max-w-3xl w-full rounded-[14px] grayscale" />
             </div>
             <ul className="space-y-4">
               {[
@@ -337,7 +337,7 @@ const WarfighterResearchCaseStudy = () => {
           <section id="learnings" className="section-spacing border-t border-border/30 scroll-mt-20">
             <h2 className="text-2xl font-bold text-foreground mb-6">Learnings</h2>
             <KeyTakeaway>
-              The turning point came from specificity â€” not summary reports, but moments of direct user contact.
+              The turning point came from specificity — not summary reports, but moments of direct user contact.
             </KeyTakeaway>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>

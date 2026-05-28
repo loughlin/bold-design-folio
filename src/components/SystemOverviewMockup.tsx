@@ -76,7 +76,7 @@
             <div className="col-span-3 rounded border border-border p-3 bg-muted/20">
               <div className="flex items-center justify-between mb-2">
                 <p className="text-[9px] tracking-[0.1em] uppercase text-muted-foreground">
-                  Data Throughput â€” All Sources
+                  Data Throughput — All Sources
                 </p>
               </div>
               {/* Legend */}
@@ -172,7 +172,7 @@
         {/* Footer */}
         <div className="px-4 py-2 border-t border-border bg-muted/30">
           <p className="text-[9px] text-muted-foreground/60 italic">
-            View 1: System Overview â€” All data sources across the organization. Dummy data shown; actual interface operates on classified networks. Kessel Run, 2019â€“2021.
+            View 1: System Overview — All data sources across the organization. Dummy data shown; actual interface operates on classified networks. Kessel Run, 2019â€“2021.
           </p>
         </div>
       </div>
