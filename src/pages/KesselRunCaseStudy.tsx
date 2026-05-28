@@ -1,4 +1,5 @@
 ﻿import { useEffect } from "react";
+import Seo from "@/components/Seo";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CaseStudyProgress from "@/components/CaseStudyProgress";
@@ -32,16 +33,27 @@ const sections = [
 const KesselRunCaseStudy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    const prev = document.title;
-    document.title = "Leading Design at Kessel Run — James Loughlin";
-    return () => { document.title = prev; };
   }, []);
 
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="Leading Design at Kessel Run — James Loughlin"
+        description="How James Loughlin built and led the design organization at Kessel Run, a USAF software unit, scaling human-centered design across mission-critical products."
+        path="/case-study/kessel-run"
+        type="article"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: "Leading Design at Kessel Run",
+          author: { "@type": "Person", name: "James Loughlin" },
+          description: "Building and leading a design organization inside a USAF software unit.",
+        }}
+      />
       <CaseStudyProgress />
       <Navigation />
       <main id="main">
+
 
       {/* Hero */}
       <section className="pt-24 pb-8 px-6">

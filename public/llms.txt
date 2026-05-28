@@ -1,0 +1,12 @@
+# James Loughlin — Portfolio
+
+> Portfolio of James Loughlin, Portfolio Design Lead at Kessel Run (USAF). Human-centered design, design systems, and design culture in defense technology.
+
+## Pages
+
+- [Home](/): Overview, featured work, experience, skills, and contact.
+- [Leading Design at Kessel Run](/case-study/kessel-run): Building and leading a design organization inside a USAF software unit.
+- [Enterprise Design System](/case-study/design-system): Building an enterprise design system that cut front-end story frequency 48%.
+- [Warfighter Research](/case-study/warfighter-research): Embedding UX research into product teams serving operational users.
+- [Operational Dashboard](/case-study/operational-dashboard): Real-time data monitoring redesign for system operators.
+- [Mission Reporting](/case-study/mission-reporting): F-35 mission reporting product design and service blueprint work.

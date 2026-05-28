@@ -9,6 +9,7 @@ import Testimonials from "@/components/Testimonials";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
+import Seo from "@/components/Seo";
 
 const Index = () => {
   const location = useLocation();
@@ -27,6 +28,20 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <Seo
+        title="James Loughlin — Portfolio Design Lead & Product Designer"
+        description="Portfolio of James Loughlin, Portfolio Design Lead at Kessel Run (USAF). Human-centered design, design systems, and design culture in defense technology."
+        path="/"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "James Loughlin",
+          jobTitle: "Portfolio Design Lead",
+          worksFor: { "@type": "Organization", name: "Kessel Run, USAF" },
+          url: "https://bold-design-folio.lovable.app/",
+          sameAs: ["https://www.linkedin.com/in/jameslloughlin/"],
+        }}
+      />
       <Navigation />
       <main id="main">
         <AboutSection />

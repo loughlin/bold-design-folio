@@ -1,4 +1,5 @@
 ﻿import { useEffect } from "react";
+import Seo from "@/components/Seo";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
@@ -37,16 +38,27 @@ const sections = [
 const MissionReportingCaseStudy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    const prev = document.title;
-    document.title = "Replacing Manual Calculations with Trust — James Loughlin";
-    return () => { document.title = prev; };
   }, []);
 
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="Replacing Manual Calculations with Trust — James Loughlin"
+        description="Designing the F-35 mission reporting product — replacing manual calculations and spreadsheets with automation that pilots and intel analysts can trust."
+        path="/case-study/mission-reporting"
+        type="article"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: "Replacing Manual Calculations with Trust",
+          author: { "@type": "Person", name: "James Loughlin" },
+          description: "Digitizing F-35 mission reporting for accuracy and trust.",
+        }}
+      />
       <CaseStudyProgress />
       <Navigation />
       <main id="main">
+
 
       {/* Hero */}
       <section className="pt-24 pb-8 px-6">
