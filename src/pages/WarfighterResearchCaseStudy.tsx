@@ -1,4 +1,5 @@
 ﻿import { useEffect } from "react";
+import Seo from "@/components/Seo";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
@@ -66,16 +67,27 @@ const afterItems = [
 const WarfighterResearchCaseStudy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    const prev = document.title;
-    document.title = "Establishing Research from Zero — James Loughlin";
-    return () => { document.title = prev; };
   }, []);
 
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="Establishing Research from Zero — James Loughlin"
+        description="Embedding UX research into product teams serving warfighters — $500K+ in costs avoided, 65% less rework, and a 35% lift in user adoption."
+        path="/case-study/warfighter-research"
+        type="article"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: "Establishing Research from Zero",
+          author: { "@type": "Person", name: "James Loughlin" },
+          description: "Standing up a research practice for operational users from the ground up.",
+        }}
+      />
       <CaseStudyProgress />
       <Navigation />
       <main id="main">
+
 
       {/* Hero */}
       <section className="pt-24 pb-8 px-6">

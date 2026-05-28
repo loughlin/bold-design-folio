@@ -1,4 +1,5 @@
 ﻿import { useEffect } from "react";
+import Seo from "@/components/Seo";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
@@ -44,16 +45,27 @@ const keyAchievements = [
 const DesignSystemCaseStudy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    const prev = document.title;
-    document.title = "One Design System for Five Missions — James Loughlin";
-    return () => { document.title = prev; };
   }, []);
 
   return (
     <div className="min-h-screen bg-background">
+      <Seo
+        title="One Design System for Five Missions — James Loughlin"
+        description="Building an enterprise design system across five mission-critical products — 48% reduction in front-end story frequency and 2,000+ developer days saved per year."
+        path="/case-study/design-system"
+        type="article"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: "One Design System for Five Missions",
+          author: { "@type": "Person", name: "James Loughlin" },
+          description: "Enterprise design system serving five operational products.",
+        }}
+      />
       <CaseStudyProgress />
       <Navigation />
       <main id="main">
+
 
       {/* Hero */}
       <section className="pt-24 pb-8 px-6">
