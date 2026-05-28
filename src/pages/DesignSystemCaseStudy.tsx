@@ -63,7 +63,7 @@ const DesignSystemCaseStudy = () => {
             Back to Case Studies
           </Link>
           <p className="text-[11px] font-technical font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">
-            Design Systems Lead Â· 2019 â€“ 2023
+            Design Systems Lead · 2019 – 2023
           </p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">One Design System for Five Missions</h1>
           <p className="text-lg text-muted-foreground/80 font-medium animate-fade-in mb-2">Building the shared foundation across five operational products</p>

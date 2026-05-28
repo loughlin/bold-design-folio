@@ -85,7 +85,7 @@ const WarfighterResearchCaseStudy = () => {
             Back to Case Studies
           </Link>
           <p className="text-[11px] font-technical font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">
-            UX Manager & Lead Researcher Â· 2021 â€“ 2024
+            UX Manager & Lead Researcher · 2021 – 2024
           </p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
             Establishing Research from Zero

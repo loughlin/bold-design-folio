@@ -55,7 +55,7 @@ const KesselRunCaseStudy = () => {
           </Link>
 
           <p className="text-[11px] font-technical font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">
-            UX Leadership Â· 2021 â€“ Present
+            UX Leadership · 2021 – Present
           </p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
             Leading Design at Kessel Run

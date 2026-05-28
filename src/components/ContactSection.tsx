@@ -39,7 +39,7 @@ const ContactSection = () => {
                 asChild
                 size="default"
                 variant="outline"
-                className="rounded-[14px] border-background/30 text-background hover:bg-background/10 hover:text-background"
+                className="rounded-[14px] bg-transparent border-background/30 text-background hover:bg-background/10 hover:text-background"
               >
                 <a
                   href="https://www.linkedin.com/in/jameslloughlin/"
@@ -57,7 +57,7 @@ const ContactSection = () => {
             <div className="grid grid-cols-1 gap-px border border-background/10 bg-background/10">
               {[
                 ["Location", "Cherokee, Iowa"],
-                ["Available for", "Full-time Â· Contract Â· Advisory"],
+                ["Available for", "Full-time · Contract · Advisory"],
                 ["Response time", "Usually within a day"],
                 ["Time zone", "Central (CT)"],
               ].map(([label, value]) => (
