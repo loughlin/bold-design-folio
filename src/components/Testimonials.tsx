@@ -7,7 +7,7 @@ const Testimonials = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <section className="section-spacing px-6 bg-muted/40 overflow-hidden">
+    <section id="testimonials" className="section-spacing px-6 bg-muted/40 overflow-hidden scroll-mt-20">
       <div className="container mx-auto">
         <div className="section-header-spacing animate-fade-in">
           <p className="font-technical text-[11px] font-semibold text-muted-foreground uppercase tracking-[0.18em] mb-2">Colleagues</p>

@@ -56,6 +56,7 @@ const Navigation = () => {
               { id: NAV_SECTIONS.WORK, label: "Work" },
               { id: NAV_SECTIONS.APPROACH, label: "Approach" },
               { id: NAV_SECTIONS.EXPERIENCE, label: "Experience" },
+              { id: NAV_SECTIONS.CONTACT, label: "Contact" },
             ].map((item) => (
               <button
                 key={item.id}
@@ -79,6 +80,7 @@ const Navigation = () => {
           {/* Mobile Menu Button */}
           <button
             className="md:hidden text-foreground"
+            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
@@ -92,6 +94,7 @@ const Navigation = () => {
               { id: NAV_SECTIONS.WORK, label: "Work" },
               { id: NAV_SECTIONS.APPROACH, label: "Approach" },
               { id: NAV_SECTIONS.EXPERIENCE, label: "Experience" },
+              { id: NAV_SECTIONS.CONTACT, label: "Contact" },
             ].map((item) => (
               <button
                 key={item.id}

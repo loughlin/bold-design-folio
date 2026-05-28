@@ -1,5 +1,5 @@
 ﻿import { Button } from "@/components/ui/button";
-import { Download, Linkedin, Mail } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 import jamesProfileBw from "@/assets/james-profile-bw.jpg";
 
 const AboutSection = () => {
@@ -25,12 +25,6 @@ const AboutSection = () => {
                   {tag}
                 </span>
               ))}
-              <Button size="sm" variant="outline" asChild className="ml-auto rounded-[14px]">
-                <a href="/James_Loughlin_Resume_2026_v6.pdf" download>
-                  <Download className="mr-2 h-4 w-4" />
-                  Resume
-                </a>
-              </Button>
             </div>
 
             <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
@@ -52,13 +46,13 @@ const AboutSection = () => {
             {/* Quick stats */}
             <div className="grid grid-cols-3 gap-6 py-6 border-y border-border">
               {[
-                { value: "8", label: "Years in UX Design" },
-                { value: "12", label: "Products Shipped" },
-                { value: "20", label: "Designers Mentored" },
+                { value: "8yr", label: "in UX design" },
+                { value: "12", label: "products shipped" },
+                { value: "20+", label: "designers mentored" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center lg:text-left">
                   <div className="text-2xl font-bold text-foreground">{stat.value}</div>
-                  <div className="text-xs text-muted-foreground mt-1">{stat.label}</div>
+                  <div className="text-sm text-muted-foreground mt-1">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -75,12 +69,6 @@ const AboutSection = () => {
                 <a href="https://www.linkedin.com/in/jameslloughlin/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="mr-2 h-4 w-4" />
                   LinkedIn
-                </a>
-              </Button>
-              <Button size="default" variant="outline" asChild className="rounded-[14px]">
-                <a href="/James_Loughlin_Resume_2026_v6.pdf" download>
-                  <Download className="mr-2 h-4 w-4" />
-                  Resume
                 </a>
               </Button>
             </div>

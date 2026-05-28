@@ -17,12 +17,10 @@ export interface Experience {
   role: string;
   period: string;
   description: string;
-  icon: string;
 }
 
 // Skill category types
 export interface SkillCategory {
-  icon: React.ComponentType<{ className?: string }>;
   title: string;
   description: string;
 }
