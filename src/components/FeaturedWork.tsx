@@ -28,7 +28,7 @@ const FeaturedWork = () => {
             return (
               <CardWrapper key={index}>
                 <div
-                  className="group relative overflow-hidden rounded-[14px] border border-border bg-card transition-all duration-500 hover:border-border/80 hover:shadow-lg hover:-translate-y-0.5 animate-fade-in flex flex-col"
+                  className="group relative overflow-hidden rounded-[14px] border border-border bg-card transition-[transform,border-color,box-shadow] duration-500 hover:border-border/80 hover:shadow-lg hover:-translate-y-0.5 animate-fade-in flex flex-col"
                   style={{ animationDelay: `${index * 0.08}s` }}
                 >
                   {/* Image */}

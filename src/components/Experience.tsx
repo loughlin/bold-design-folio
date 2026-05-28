@@ -10,7 +10,7 @@ const Experience = () => {
         <div className="section-header-spacing animate-fade-in">
           <div className="flex items-end justify-between gap-4 flex-wrap">
             <div>
-              <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest mb-2">Career</p>
+              <p className="font-technical text-[11px] font-semibold text-muted-foreground uppercase tracking-[0.18em] mb-2">Career</p>
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Experience</h2>
             </div>
             <a href="/James_Loughlin_Resume_2026_v6.pdf" download>
@@ -27,7 +27,7 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className={`group p-6 rounded-[14px] border border-border/60 bg-card transition-all duration-400 hover:border-border hover:shadow-md hover:-translate-y-1 animate-fade-in ${
+              className={`group p-6 rounded-[14px] border border-border/60 bg-card transition-[transform,border-color,box-shadow] duration-300 hover:border-border hover:shadow-md hover:-translate-y-1 animate-fade-in ${
                 index === 0 ? "md:col-span-2 lg:col-span-3" : ""
               }`}
               style={{ animationDelay: `${index * 0.08}s` }}

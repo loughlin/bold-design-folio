@@ -1,6 +1,6 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Quote, ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 import { testimonials } from "@/data/testimonials";
 
 const Testimonials = () => {
@@ -9,34 +9,36 @@ const Testimonials = () => {
   return (
     <section className="section-spacing px-6 bg-muted/40 overflow-hidden">
       <div className="container mx-auto">
-        {/* Section Header */}
         <div className="section-header-spacing animate-fade-in">
-          <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest mb-2">Colleagues</p>
+          <p className="font-technical text-[11px] font-semibold text-muted-foreground uppercase tracking-[0.18em] mb-2">Colleagues</p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">From people I've worked with.</h2>
         </div>
 
-        {/* Testimonials Grid â€” 24px uniform gutters */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {(isExpanded ? testimonials : testimonials.slice(0, 3)).map((testimonial, index) => (
             <div
               key={index}
-              className="p-6 rounded-[14px] border border-border/60 bg-card transition-all duration-400 hover:border-border hover:shadow-md hover:-translate-y-1 animate-fade-in"
+              className="p-6 rounded-[14px] border border-border/60 bg-card transition-[transform,border-color,box-shadow] duration-300 hover:border-border hover:shadow-md hover:-translate-y-1 animate-fade-in flex flex-col"
               style={{ animationDelay: `${index * 0.05}s` }}
             >
-              <Quote className="w-8 h-8 text-primary/15 mb-4" />
-              <blockquote className="text-sm text-foreground leading-relaxed mb-6">
+              <blockquote className="text-base text-foreground leading-relaxed flex-1 mb-6">
                 "{testimonial.quote}"
               </blockquote>
-              <div className="space-y-1">
-                <p className="text-sm font-semibold text-foreground">{testimonial.author}</p>
-                <p className="text-xs text-muted-foreground">{testimonial.role}</p>
-                <p className="text-xs text-primary font-medium">{testimonial.organization}</p>
+              <div className="flex items-center gap-3 pt-4 border-t border-border/60">
+                <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                  <span className="font-technical text-[10px] font-bold text-primary">
+                    {testimonial.author.split(" ").map((n) => n[0]).join("").slice(0, 2).toUpperCase()}
+                  </span>
+                </div>
+                <div className="min-w-0">
+                  <p className="text-sm font-semibold text-foreground truncate">{testimonial.author}</p>
+                  <p className="text-xs text-muted-foreground font-technical">{testimonial.organization}</p>
+                </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Show More/Less */}
         <div className="flex justify-center mt-10">
           <Button
             variant="outline"
