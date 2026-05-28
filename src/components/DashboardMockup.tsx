@@ -20,7 +20,7 @@
   return (
     <div className="space-y-5 animate-fade-in">
       <p className="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground">
-        Information Architecture â€” Three-Tier View Hierarchy
+        Information Architecture — Three-Tier View Hierarchy
       </p>
       <h3 className="text-2xl md:text-3xl font-serif font-bold text-foreground">
         System Overview â†’ Data Source â†’ Metrics
@@ -90,7 +90,7 @@
             {/* Chart */}
             <div className="col-span-2 rounded border border-border p-3 bg-muted/20">
               <p className="text-[9px] tracking-[0.1em] uppercase text-muted-foreground mb-3">
-                Throughput â€” Last 24 Hours
+                Throughput — Last 24 Hours
               </p>
               <div className="relative h-28">
                 <svg

@@ -23,7 +23,7 @@ const Experience = () => {
           </div>
         </div>
 
-        {/* Experience Cards â€” 24px uniform gutters */}
+        {/* Experience Cards — 24px uniform gutters */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {experiences.map((exp, index) => (
             <div

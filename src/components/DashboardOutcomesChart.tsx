@@ -29,7 +29,7 @@
   return (
     <div className="space-y-5 animate-fade-in">
       <p className="text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground">
-        Usability Testing â€” Validated Outcomes
+        Usability Testing — Validated Outcomes
       </p>
       <h3 className="text-2xl md:text-3xl font-serif font-bold text-foreground">
         What Testing With Operators Revealed

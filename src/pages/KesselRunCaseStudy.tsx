@@ -33,7 +33,7 @@ const KesselRunCaseStudy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     const prev = document.title;
-    document.title = "Leading Design at Kessel Run â€” James Loughlin";
+    document.title = "Leading Design at Kessel Run — James Loughlin";
     return () => { document.title = prev; };
   }, []);
 
@@ -72,7 +72,7 @@ const KesselRunCaseStudy = () => {
         <div className="container mx-auto max-w-reading animate-fade-in" style={{ animationDelay: "0.2s" }}>
           <ImageFrame
             src={kesselRunCaoc2021}
-            alt="Combined Air Operations Center â€” real-time intelligence and targeting workflows"
+            alt="Combined Air Operations Center — real-time intelligence and targeting workflows"
             caption="Operations Center"
             aspectRatio="16/9"
           />
@@ -278,7 +278,7 @@ const KesselRunCaseStudy = () => {
                 { value: "40%", label: "Faster Delivery", desc: "Standardizing design-to-dev handoff reduced time between finalized design and developer pickup." },
                 { value: "35%", label: "Less Rework", desc: "Post-handoff design changes dropped once we introduced structured critique and alignment checkpoints." },
                 { value: "67%", label: "Faster Onboarding", desc: "Getting a new designer productive went from six weeks to two through centralized documentation and team rituals.", tag: "6 â†’ 2 weeks" },
-                { value: "60%", label: "Research Coverage", desc: "Validating features before build became standard â€” a cultural shift, not just a metric." },
+                { value: "60%", label: "Research Coverage", desc: "Validating features before build became standard — a cultural shift, not just a metric." },
               ].map((card, i) => (
                 <div key={i} className="rounded-[14px] border border-border/60 bg-card p-6 space-y-3 shadow-elevated ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                   <div className="flex justify-between items-start">
@@ -334,7 +334,7 @@ const KesselRunCaseStudy = () => {
           <section className="section-spacing border-t border-border/30">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <ImageFrame src={kesselRunHq} alt="Kessel Run headquarters building in Boston â€” agile software factory for USAF" caption="HQ Boston" aspectRatio="4/3" />
+                <ImageFrame src={kesselRunHq} alt="Kessel Run headquarters building in Boston — agile software factory for USAF" caption="HQ Boston" aspectRatio="4/3" />
                 <p className="text-sm text-muted-foreground text-center mt-4 italic">Kessel Run headquarters in Boston</p>
               </div>
               <div>
@@ -348,7 +348,7 @@ const KesselRunCaseStudy = () => {
           <section id="role" className="section-spacing border-t border-border/30 scroll-mt-20">
             <h2 className="text-2xl font-bold text-foreground mb-6">My Role</h2>
             <KeyTakeaway>
-              I set the standards that defined what good design looked like â€” then spent most of my time making sure teams could meet them.
+              I set the standards that defined what good design looked like — then spent most of my time making sure teams could meet them.
             </KeyTakeaway>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
@@ -376,7 +376,7 @@ const KesselRunCaseStudy = () => {
           <section className="section-spacing border-t border-border/30">
             <ImageFrame
               src={kesselRunCaoc2003}
-              alt="Combined Air Operations Center at Prince Sultan Air Base â€” command and control environment"
+              alt="Combined Air Operations Center at Prince Sultan Air Base — command and control environment"
               caption="Command & Control"
               aspectRatio="16/9"
             />
@@ -424,7 +424,7 @@ const KesselRunCaseStudy = () => {
                 Design leadership, at its core, is a support function. The best work happened when people felt safe to take risks, confident in the tools and processes around them, and connected to why their work mattered.
               </p>
               <p>
-                If I had to do it over, I'd invest even earlier in cross-team connection. The rituals we built â€” critique sessions, portfolio reviews, informal design community meetups â€” created compounding value over time.
+                If I had to do it over, I'd invest even earlier in cross-team connection. The rituals we built — critique sessions, portfolio reviews, informal design community meetups — created compounding value over time.
               </p>
             </div>
           </section>

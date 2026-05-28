@@ -12,7 +12,7 @@ const Skills = () => {
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Approach + Skills</h2>
         </div>
 
-        {/* Editorial list â€” 2 columns, no cards, divider rows */}
+        {/* Editorial list — 2 columns, no cards, divider rows */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 animate-fade-in">
           {skillCategories.map((skill, index) => (
             <div

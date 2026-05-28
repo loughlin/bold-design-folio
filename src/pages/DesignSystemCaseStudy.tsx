@@ -45,7 +45,7 @@ const DesignSystemCaseStudy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     const prev = document.title;
-    document.title = "One Design System for Five Missions â€” James Loughlin";
+    document.title = "One Design System for Five Missions — James Loughlin";
     return () => { document.title = prev; };
   }, []);
 
@@ -76,7 +76,7 @@ const DesignSystemCaseStudy = () => {
       {/* Hero Image */}
       <section className="px-6 pb-8">
         <div className="container mx-auto max-w-reading animate-fade-in" style={{ animationDelay: "0.3s" }}>
-          <DeviceFrame src={dsDesignTokens} alt="Design tokens system â€” color, typography, and spacing definitions for scalable design systems" caption="Design Tokens" />
+          <DeviceFrame src={dsDesignTokens} alt="Design tokens system — color, typography, and spacing definitions for scalable design systems" caption="Design Tokens" />
         </div>
       </section>
 
@@ -195,14 +195,14 @@ const DesignSystemCaseStudy = () => {
 
           {/* Component Library */}
           <section className="section-spacing border-t border-border/30">
-            <DeviceFrame src={dsComponentLibrary} alt="Component library built on MUI â€” custom themed React components for scalable design systems" caption="Component Library" />
+            <DeviceFrame src={dsComponentLibrary} alt="Component library built on MUI — custom themed React components for scalable design systems" caption="Component Library" />
           </section>
 
           {/* Process */}
           <section id="process" className="section-spacing border-t border-border/30 scroll-mt-20">
             <h2 className="text-2xl font-bold text-foreground mb-6">Design Process</h2>
             <KeyTakeaway>
-              We applied the same Double Diamond process to the system itself â€” and built it through direct team feedback.
+              We applied the same Double Diamond process to the system itself — and built it through direct team feedback.
             </KeyTakeaway>
             <div className="flex justify-center py-8">
               <div className="flex items-center gap-0 max-w-3xl w-full">
@@ -220,7 +220,7 @@ const DesignSystemCaseStudy = () => {
               <p className="text-6xl md:text-7xl font-bold text-primary">95%</p>
               <p className="text-muted-foreground mt-2">of product teams currently using React</p>
               <p className="text-sm text-muted-foreground mt-4 max-w-xl mx-auto">
-                That single data point made the decision to build on MUI straightforward â€” starting from a foundation teams already knew.
+                That single data point made the decision to build on MUI straightforward — starting from a foundation teams already knew.
               </p>
             </div>
           </section>
@@ -308,7 +308,7 @@ const DesignSystemCaseStudy = () => {
             </KeyTakeaway>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
-                At its peak, the design system was adopted by every eligible product team. Most teams chose to adopt once the system offered enough clear value â€” which is exactly how it should work.
+                At its peak, the design system was adopted by every eligible product team. Most teams chose to adopt once the system offered enough clear value — which is exactly how it should work.
               </p>
             </div>
             <ul className="space-y-3 mt-6">
@@ -323,7 +323,7 @@ const DesignSystemCaseStudy = () => {
             <div className="mt-12 space-y-4 text-muted-foreground leading-relaxed">
               <h3 className="text-lg font-semibold text-foreground">What We Learned</h3>
               <p>
-                The technical work of building a design system is hard. The organizational work of getting people to use it is harder. Building on MUI rather than from scratch was one of the best calls we made â€” it gave teams a familiar foundation and let us focus on extending it.
+                The technical work of building a design system is hard. The organizational work of getting people to use it is harder. Building on MUI rather than from scratch was one of the best calls we made — it gave teams a familiar foundation and let us focus on extending it.
               </p>
             </div>
           </section>

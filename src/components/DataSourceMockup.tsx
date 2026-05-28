@@ -147,7 +147,7 @@
         {/* Footer */}
         <div className="px-4 py-2 border-t border-border bg-muted/30">
           <p className="text-[9px] text-muted-foreground/60 italic">
-            View 2: Data Source View â€” Individual source performance, endpoint table, and trend analysis. Dummy data shown; actual interface operates on classified networks. Kessel Run, 2019â€“2021.
+            View 2: Data Source View — Individual source performance, endpoint table, and trend analysis. Dummy data shown; actual interface operates on classified networks. Kessel Run, 2019â€“2021.
           </p>
         </div>
       </div>

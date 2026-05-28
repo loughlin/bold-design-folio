@@ -38,7 +38,7 @@ const MissionReportingCaseStudy = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     const prev = document.title;
-    document.title = "Replacing Manual Calculations with Trust â€” James Loughlin";
+    document.title = "Replacing Manual Calculations with Trust — James Loughlin";
     return () => { document.title = prev; };
   }, []);
 
@@ -56,7 +56,7 @@ const MissionReportingCaseStudy = () => {
             Back to Case Studies
           </Link>
           <p className="text-[11px] font-technical font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">
-            UX Manager + Product Designer Â· 2018 â€“ 2023
+            UX Manager + Product Designer · 2018 â€“ 2023
           </p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
             Replacing Manual Calculations with Trust
@@ -71,7 +71,7 @@ const MissionReportingCaseStudy = () => {
       {/* Hero Image */}
       <section className="px-6 pb-8">
         <div className="container mx-auto max-w-reading animate-fade-in" style={{ animationDelay: "0.2s" }}>
-          <ImageFrame src={f35AerialRefueling} alt="F-35 aerial refueling operation â€” mission context for intelligence reporting workflows" caption="Mission Context" aspectRatio="16/9" />
+          <ImageFrame src={f35AerialRefueling} alt="F-35 aerial refueling operation — mission context for intelligence reporting workflows" caption="Mission Context" aspectRatio="16/9" />
         </div>
       </section>
 
@@ -89,10 +89,10 @@ const MissionReportingCaseStudy = () => {
               team="2 Designers, 4 Engineers, 1 PM"
             />
             <KeyTakeaway>
-              This project shaped me more than any other â€” I learned how to ship software people actually depend on under pressure.
+              This project shaped me more than any other — I learned how to ship software people actually depend on under pressure.
             </KeyTakeaway>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I joined as a product designer and eventually oversaw it as a manager. I owned the design process end to end â€” research, concept generation, testing, and iteration â€” as we built out the mission reporting tool.
+              I joined as a product designer and eventually oversaw it as a manager. I owned the design process end to end — research, concept generation, testing, and iteration — as we built out the mission reporting tool.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
               <ArtifactCard label="Methods" icon="ðŸ”¬" items={["Contextual Inquiry", "User Journey Mapping", "Prototype Testing", "Service Blueprinting"]} />
@@ -104,13 +104,13 @@ const MissionReportingCaseStudy = () => {
           <section id="gallery" className="section-spacing border-t border-border/30 scroll-mt-20">
             <h2 className="text-2xl font-bold text-foreground mb-6">Product Gallery</h2>
             <KeyTakeaway>
-              Visuals from the third iteration â€” key features and interfaces after user adoption.
+              Visuals from the third iteration — key features and interfaces after user adoption.
             </KeyTakeaway>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <DeviceFrame src={marauderTimelineEvents} alt="Mission timeline events UI â€” chronological mission data entry interface" caption="Timeline Events" />
-              <DeviceFrame src={marauderDataIngestion} alt="Data ingestion dashboard â€” automated import from external intelligence sources" caption="Data Ingestion" />
-              <DeviceFrame src={marauderMissionInsert} alt="Mission insert form â€” structured data capture for intelligence reporting" caption="Mission Insert" />
-              <DeviceFrame src={marauderMissionNarrative} alt="Mission narrative editor â€” formatted text entry for operational reports" caption="Mission Narrative" />
+              <DeviceFrame src={marauderTimelineEvents} alt="Mission timeline events UI — chronological mission data entry interface" caption="Timeline Events" />
+              <DeviceFrame src={marauderDataIngestion} alt="Data ingestion dashboard — automated import from external intelligence sources" caption="Data Ingestion" />
+              <DeviceFrame src={marauderMissionInsert} alt="Mission insert form — structured data capture for intelligence reporting" caption="Mission Insert" />
+              <DeviceFrame src={marauderMissionNarrative} alt="Mission narrative editor — formatted text entry for operational reports" caption="Mission Narrative" />
             </div>
             <p className="text-center text-sm text-muted-foreground italic mt-6">
               Screenshots from Version 3 of the mission reporting application.
@@ -125,7 +125,7 @@ const MissionReportingCaseStudy = () => {
             </KeyTakeaway>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
-                The reporting tool most of the Air Force used technically worked, but it wasn't built for their specific mission types. Reports were filed and then lost â€” unavailable when context from past missions could have made a real difference.
+                The reporting tool most of the Air Force used technically worked, but it wasn't built for their specific mission types. Reports were filed and then lost — unavailable when context from past missions could have made a real difference.
               </p>
               <p>
                 As the tool grew, we turned toward replacing the legacy system. That brought strict requirements from ACC and the intelligence community, plus a fielded product we had to replace without breaking existing workflows.
@@ -143,20 +143,20 @@ const MissionReportingCaseStudy = () => {
           <section id="users" className="section-spacing border-t border-border/30 scroll-mt-20">
             <h2 className="text-2xl font-bold text-foreground mb-6">The Users</h2>
             <KeyTakeaway>
-              Three distinct roles with different needs â€” all operating in high-pressure, time-sensitive environments.
+              Three distinct roles with different needs — all operating in high-pressure, time-sensitive environments.
             </KeyTakeaway>
             <ul className="space-y-4 text-muted-foreground">
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-1 font-bold">â€¢</span>
-                <span><strong className="text-foreground">Mission drafters</strong> â€” captured mission information immediately after operations, under tight deadlines.</span>
+                <span><strong className="text-foreground">Mission drafters</strong> — captured mission information immediately after operations, under tight deadlines.</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-1 font-bold">â€¢</span>
-                <span><strong className="text-foreground">Reviewers</strong> â€” validated format requirements, accuracy, and proper classification markings.</span>
+                <span><strong className="text-foreground">Reviewers</strong> — validated format requirements, accuracy, and proper classification markings.</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-1 font-bold">â€¢</span>
-                <span><strong className="text-foreground">Approvers</strong> â€” gave final sign-off before reports went to external agencies.</span>
+                <span><strong className="text-foreground">Approvers</strong> — gave final sign-off before reports went to external agencies.</span>
               </li>
             </ul>
           </section>
@@ -169,14 +169,14 @@ const MissionReportingCaseStudy = () => {
             </KeyTakeaway>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
-                We saw an opportunity to automate several fields by pulling data from external sources â€” first through manual document ingestion, then through API integrations.
+                We saw an opportunity to automate several fields by pulling data from external sources — first through manual document ingestion, then through API integrations.
               </p>
               <p>
                 We migrated data sources from an internal backend to consuming directly from multiple external tools, using that transition to fix real pain points.
               </p>
             </div>
             <div className="mt-8">
-              <DeviceFrame src={missionReportingInterface} alt="High-fidelity UI dashboard for mission reporting â€” version 3 report drafting interface" caption="v3 Report Draft" />
+              <DeviceFrame src={missionReportingInterface} alt="High-fidelity UI dashboard for mission reporting — version 3 report drafting interface" caption="v3 Report Draft" />
             </div>
           </section>
 
@@ -191,10 +191,10 @@ const MissionReportingCaseStudy = () => {
                 Before jumping into solutions, we interviewed users at five mission operations centers. From those conversations, we built a user journey map, workflow diagram, and problem statement.
               </p>
               <p>
-                There was no single source of truth for mission data across the network â€” solving that became a priority because we believed it would unlock our ability to scale.
+                There was no single source of truth for mission data across the network — solving that became a priority because we believed it would unlock our ability to scale.
               </p>
             </div>
-            <ImageFrame src={uxWorkflowPlanning} alt="User journey mapping and research workshop artifacts â€” sticky notes and workflow diagrams" caption="Workshop Artifacts" aspectRatio="16/7" />
+            <ImageFrame src={uxWorkflowPlanning} alt="User journey mapping and research workshop artifacts — sticky notes and workflow diagrams" caption="Workshop Artifacts" aspectRatio="16/7" />
           </section>
 
           {/* Breakthrough */}
@@ -206,7 +206,7 @@ const MissionReportingCaseStudy = () => {
                 We weren't just building a better form. We were creating a single source of truth.
               </KeyTakeaway>
               <p className="text-muted-foreground leading-relaxed">
-                During user interviews, one operations center lead mentioned spending hours each week reconciling data between systems. This insight shifted our entire approach â€” we focused on making our tool the authoritative source other systems could consume.
+                During user interviews, one operations center lead mentioned spending hours each week reconciling data between systems. This insight shifted our entire approach — we focused on making our tool the authoritative source other systems could consume.
               </p>
             </div>
           </section>
@@ -215,7 +215,7 @@ const MissionReportingCaseStudy = () => {
           <section id="scope" className="section-spacing border-t border-border/30 scroll-mt-20">
             <h2 className="text-2xl font-bold text-foreground mb-6">Scope Adjustment</h2>
             <KeyTakeaway>
-              We adjusted scope â€” delaying the map integration while still delivering core value.
+              We adjusted scope — delaying the map integration while still delivering core value.
             </KeyTakeaway>
             <div className="mt-4">
               <ImageFrame src={marauderDependencies} alt="Product dependencies diagram showing integration points across mission systems" caption="Dependencies (Blurred)" aspectRatio="16/9" className="[&_img]:blur-[2px]" />
