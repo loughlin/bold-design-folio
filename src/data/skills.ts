@@ -27,12 +27,12 @@ export const skillCategories: SkillCategory[] = [
   {
     icon: Workflow,
     title: "Lean UX + Agile Methodologies",
-    description: "I know how to fit design into a sprint cycle without it becoming an afterthought. Testing before committing, not after — that's the whole point.",
+    description: "I know how to fit design into a sprint cycle without it becoming an afterthought. Test before you commit, not after.",
   },
   {
     icon: Code,
     title: "Technical Understanding",
-    description: "I know enough about how software gets built to have real conversations with engineers. I can read a pull request, understand APIs at a basic level, and spec things developers don't have to interpret.",
+    description: "I know enough about how software gets built to have real conversations with engineers. I can read a pull request, understand APIs at a basic level, and write specs that don't need a follow-up conversation.",
   },
   {
     icon: MessageSquare,

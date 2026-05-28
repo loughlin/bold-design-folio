@@ -43,7 +43,7 @@ export const projects: Project[] = [
   {
     title: "Establishing Research from Zero",
     subtitle: "User research practice",
-    description: "Stood up a user research practice across a portfolio of Air Force products. Before this, teams were guessing — and finding out they were wrong after they'd already shipped.",
+    description: "Stood up a user research practice across a portfolio of Air Force products. Before this, teams were guessing, and finding out they were wrong after they'd already shipped.",
     role: "UX Manager",
     timeline: "2021 - 2024",
     image: uxResearchPreview,
