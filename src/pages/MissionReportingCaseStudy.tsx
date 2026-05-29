@@ -73,7 +73,7 @@ const MissionReportingCaseStudy = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
             Replacing Manual Calculations with Trust
           </h1>
-          <p className="text-lg text-muted-foreground/80 font-medium animate-fade-in mb-2">Digitizing Mission Reporting for Accuracy</p>
+          <p className="text-lg text-foreground/80 font-medium animate-fade-in mb-2">Digitizing Mission Reporting for Accuracy</p>
           <p className="text-xl text-muted-foreground animate-fade-in" style={{ animationDelay: "0.1s" }}>
             Streamlining data entry through automation to transform how the Air Force disseminates mission data.
           </p>
@@ -146,7 +146,7 @@ const MissionReportingCaseStudy = () => {
             <div className="mt-8">
               <DeviceFrame src={marauderServiceBlueprint} alt="Service blueprint mapping the air domain mission reporting workflow end-to-end" caption="Service Blueprint" />
             </div>
-            <p className="text-sm italic text-muted-foreground/70 mt-4">
+            <p className="text-sm italic text-muted-foreground mt-4">
               Note: All sensitive information has been removed. Application name redacted for security.
             </p>
           </section>
@@ -232,7 +232,7 @@ const MissionReportingCaseStudy = () => {
             <div className="mt-4">
               <ImageFrame src={marauderDependencies} alt="Product dependencies diagram showing integration points across mission systems" caption="Dependencies (Blurred)" aspectRatio="16/9" className="[&_img]:blur-[2px]" />
             </div>
-            <p className="text-sm italic text-muted-foreground/70 mt-3">Data blurred for security.</p>
+            <p className="text-sm italic text-muted-foreground mt-3">Data blurred for security.</p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
               <div className="rounded-[14px] bg-destructive/5 p-6 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">

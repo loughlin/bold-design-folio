@@ -78,7 +78,7 @@ const DesignSystemCaseStudy = () => {
             Design Systems Lead · 2019 – 2023
           </p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">One Design System for Five Missions</h1>
-          <p className="text-lg text-muted-foreground/80 font-medium animate-fade-in mb-2">Building the shared foundation across five operational products</p>
+          <p className="text-lg text-foreground/80 font-medium animate-fade-in mb-2">Building the shared foundation across five operational products</p>
           <p className="text-xl text-muted-foreground animate-fade-in" style={{ animationDelay: "0.1s" }}>
             Building a shared design language across a growing suite of mission-critical applications.
           </p>
