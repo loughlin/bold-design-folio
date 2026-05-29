@@ -102,7 +102,7 @@ const WarfighterResearchCaseStudy = () => {
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
             Establishing Research from Zero
           </h1>
-          <p className="text-lg text-muted-foreground/80 font-medium animate-fade-in mb-2">Grounding Decisions in User Truth</p>
+          <p className="text-lg text-foreground/80 font-medium animate-fade-in mb-2">Grounding Decisions in User Truth</p>
           <p className="text-xl text-muted-foreground animate-fade-in" style={{ animationDelay: "0.1s" }}>
             De-risking product decisions through qualitative user research — and convincing an engineering-first organization to trust what users said.
           </p>

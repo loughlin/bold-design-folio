@@ -12,6 +12,10 @@ const AboutSection = () => {
             <img
               src={jamesProfileBw}
               alt="James Loughlin"
+              width={800}
+              height={1000}
+              fetchPriority="high"
+              decoding="async"
               className="w-full h-full object-cover max-w-md mx-auto lg:mx-0 lg:max-w-none rounded-[14px] grayscale hover:grayscale-0 transition-all duration-700"
             />
           </div>
