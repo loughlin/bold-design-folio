@@ -117,7 +117,7 @@ const DesignSystemCaseStudy = () => {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-              <ArtifactCard label="Tools" icon="ðŸ› " items={["MUI (Material UI)", "Figma", "Storybook", "React", "TypeScript"]} />
+              <ArtifactCard label="Tools" icon="🛠" items={["MUI (Material UI)", "Figma", "Storybook", "React", "TypeScript"]} />
               <ArtifactCard label="Skills" icon="💡" items={["Mentorship & Leadership", "Component Libraries", "Stakeholder Management", "Documentation", "Dev/Design Pairing"]} />
             </div>
           </section>

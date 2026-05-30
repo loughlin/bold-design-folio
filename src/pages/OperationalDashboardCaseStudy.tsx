@@ -102,7 +102,7 @@ const OperationalDashboardCaseStudy = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
               <ArtifactCard label="Methods" icon="🔬" items={["User Interviews", "Market Research (Grafana)", "Workflow Mapping", "Usability Testing"]} />
-              <ArtifactCard label="Tools" icon="ðŸ› " items={["Figma", "Miro", "React", "D3.js / Recharts"]} />
+              <ArtifactCard label="Tools" icon="🛠" items={["Figma", "Miro", "React", "D3.js / Recharts"]} />
             </div>
           </section>
 
