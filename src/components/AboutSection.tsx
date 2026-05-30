@@ -33,18 +33,18 @@ const AboutSection = () => {
             </div>
 
             <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
-              Eight years designing software. Three of them managing the team.
+              Fifteen years working in technology. Eight years designing software.
             </h1>
 
             <div className="space-y-4">
               <p className="text-base text-muted-foreground leading-relaxed">
-                I came up as a product designer, spent several years shipping software, then moved into management. The shift happened gradually. Design problems were solvable. The organizational ones were messier and nobody was really owning them.
+                I came up as a software consultant before transitioning to product design. I spent several years shipping software before I moved into UX management. The shift happened gradually, but as I came to realize design problems were solvable, organizational ones were more complicated and needed someone to own them and advocate for design growth internally.
               </p>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Most of my time now goes into managing people and unblocking process — growing junior designers, keeping the team connected to actual users, cutting whatever's making things slow. Less glamorous than shipping product, but it matters more at scale.
+                Most of my time after my transition into management went into mentoring people and unblocking and laying down organizational process. Growing junior designers, keeping the team connected to users in the field and helping to cut blockers slowing us down. A shift and maybe a bit less glamorous than shipping product, but it really helped me feel an impact at scale.
               </p>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Outside work: soccer, the gym, and whatever I'm reading about design and AI this month. My wife and three kids fill in the rest. They're a reliable gut check — kids don't let anything confusing slide.
+                Outside of work I enjoy sports with my kids (mainly soccer at the moment), staying healthy at the gym and reading whatever I can get my hands on (mainly AI or UX Design books as of late). My wife and three kids fill in the rest!
               </p>
             </div>
 
