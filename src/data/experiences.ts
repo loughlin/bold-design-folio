@@ -4,7 +4,7 @@ export const experiences: Experience[] = [
   {
     company: "Kessel Run | United States Air Force",
     role: "UX Design Manager",
-    period: "2022 - Present",
+    period: "2022 - 2025",
     description: "Led design across five Air Force applications and a hardware product. Six direct reports, plus mentorship across the wider team. A lot of the work was org-building — standards, career ladders, norms that didn't exist yet. The software goes to thousands of operators.",
   },
   {
