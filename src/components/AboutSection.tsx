@@ -28,7 +28,7 @@ const AboutSection = () => {
                 James Loughlin
               </p>
               <p className="font-technical text-[11px] text-muted-foreground tracking-[0.12em]">
-                UX Design Manager · Kessel Run / U.S. Air Force
+                UX Design - Software Manager - AI Consulting
               </p>
             </div>
 
