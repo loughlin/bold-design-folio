@@ -41,7 +41,7 @@ const AboutSection = () => {
                 I came up as a software consultant before transitioning to product design. I spent several years shipping software before I moved into UX management. The shift happened gradually, but as I came to realize design problems were solvable, organizational ones were more complicated and needed someone to own them and advocate for design growth internally.
               </p>
               <p className="text-base text-muted-foreground leading-relaxed">
-                Most of my time after my transition into management went into mentoring people and unblocking and laying down organizational process. Growing junior designers, keeping the team connected to users in the field and helping to cut blockers slowing us down. A shift and maybe a bit less glamorous than shipping product, but it really helped me feel an impact at scale.
+                Most of my time and effort after my transition into management went into mentoring people, unblocking and laying down organizational process that let the teams under me work uninhibited. I'm also a strong advocate for growing junior designers, keeping teams connected to users in the field and helping to cut blockers slowing us down. A shift and maybe a bit less glamorous than shipping product, but it really helped me feel an impact at scale.
               </p>
               <p className="text-base text-muted-foreground leading-relaxed">
                 Outside of work I enjoy sports with my kids (mainly soccer at the moment), staying healthy at the gym and reading whatever I can get my hands on (mainly AI or UX Design books as of late). My wife and three kids fill in the rest!
