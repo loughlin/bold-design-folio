@@ -112,7 +112,7 @@
       </div>
 
       <p className="text-[11px] text-muted-foreground italic pt-4 border-t border-border/50">
-        All metrics sourced from internal team tracking across Kessel Run product teams, 2019â€“2023. Developer day savings calculated per 10-person development team.
+        All metrics sourced from internal team tracking across Kessel Run product teams, 2019–2023. Developer day savings calculated per 10-person development team.
       </p>
     </div>
   );

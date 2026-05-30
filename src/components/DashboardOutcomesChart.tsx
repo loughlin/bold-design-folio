@@ -64,7 +64,7 @@
       </div>
 
       <p className="text-[11px] text-muted-foreground/60 pt-2 leading-relaxed">
-        Usability testing conducted with operators and system administrators across USAF mission teams, Kessel Run 2019â€“2021. Context switching reduction measured against self-reported time-on-task using prior tooling.
+        Usability testing conducted with operators and system administrators across USAF mission teams, Kessel Run 2019–2021. Context switching reduction measured against self-reported time-on-task using prior tooling.
       </p>
     </div>
   );

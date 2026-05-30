@@ -102,7 +102,7 @@ const DesignSystemCaseStudy = () => {
             <h2 className="text-2xl font-bold text-foreground mb-6">Overview</h2>
             <CaseStudyMetadata
               role="Design Systems Lead"
-              timeline="2019 â€“ 2023"
+              timeline="2019 – 2023"
               team="40+ Product Teams, 5 Applications"
             />
             <KeyTakeaway>
@@ -118,7 +118,7 @@ const DesignSystemCaseStudy = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
               <ArtifactCard label="Tools" icon="ðŸ› " items={["MUI (Material UI)", "Figma", "Storybook", "React", "TypeScript"]} />
-              <ArtifactCard label="Skills" icon="ðŸ’¡" items={["Mentorship & Leadership", "Component Libraries", "Stakeholder Management", "Documentation", "Dev/Design Pairing"]} />
+              <ArtifactCard label="Skills" icon="💡" items={["Mentorship & Leadership", "Component Libraries", "Stakeholder Management", "Documentation", "Dev/Design Pairing"]} />
             </div>
           </section>
 
@@ -164,7 +164,7 @@ const DesignSystemCaseStudy = () => {
               {[
                 { icon: "â±ï¸", title: "Task Completion", desc: "Time on core functions vs. navigating the interface" },
                 { icon: "âš ï¸", title: "User Error Rate", desc: "Incidents caused by inconsistent UI patterns" },
-                { icon: "ðŸš€", title: "Developer Velocity", desc: "Front end story throughput and cycle time" },
+                { icon: "🚀", title: "Developer Velocity", desc: "Front end story throughput and cycle time" },
               ].map((m, i) => (
                 <div key={i} className="rounded-[14px] border border-border/60 bg-card p-6 text-center shadow-elevated ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                   <span className="text-2xl">{m.icon}</span>

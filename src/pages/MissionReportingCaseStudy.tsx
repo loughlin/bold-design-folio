@@ -68,7 +68,7 @@ const MissionReportingCaseStudy = () => {
             Back to Case Studies
           </Link>
           <p className="text-[11px] font-technical font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">
-            UX Manager + Product Designer · 2018 â€“ 2023
+            UX Manager + Product Designer · 2018 – 2023
           </p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
             Replacing Manual Calculations with Trust
@@ -97,7 +97,7 @@ const MissionReportingCaseStudy = () => {
             <h2 className="text-2xl font-bold text-foreground mb-6">Overview</h2>
             <CaseStudyMetadata
               role="UX Manager + Product Designer"
-              timeline="2018 â€“ 2023"
+              timeline="2018 – 2023"
               team="2 Designers, 4 Engineers, 1 PM"
             />
             <KeyTakeaway>
@@ -107,8 +107,8 @@ const MissionReportingCaseStudy = () => {
               I joined as a product designer and eventually oversaw it as a manager. I owned the design process end to end — research, concept generation, testing, and iteration — as we built out the mission reporting tool.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-              <ArtifactCard label="Methods" icon="ðŸ”¬" items={["Contextual Inquiry", "User Journey Mapping", "Prototype Testing", "Service Blueprinting"]} />
-              <ArtifactCard label="Deliverables" icon="ðŸ“¦" items={["Workflow Diagrams", "Problem Statements", "Design Specs", "Integration Docs"]} />
+              <ArtifactCard label="Methods" icon="🔬" items={["Contextual Inquiry", "User Journey Mapping", "Prototype Testing", "Service Blueprinting"]} />
+              <ArtifactCard label="Deliverables" icon="📦" items={["Workflow Diagrams", "Problem Statements", "Design Specs", "Integration Docs"]} />
             </div>
           </section>
 
@@ -159,15 +159,15 @@ const MissionReportingCaseStudy = () => {
             </KeyTakeaway>
             <ul className="space-y-4 text-muted-foreground">
               <li className="flex items-start gap-3">
-                <span className="text-primary mt-1 font-bold">â€¢</span>
+                <span className="text-primary mt-1 font-bold">•</span>
                 <span><strong className="text-foreground">Mission drafters</strong> — captured mission information immediately after operations, under tight deadlines.</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-primary mt-1 font-bold">â€¢</span>
+                <span className="text-primary mt-1 font-bold">•</span>
                 <span><strong className="text-foreground">Reviewers</strong> — validated format requirements, accuracy, and proper classification markings.</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-primary mt-1 font-bold">â€¢</span>
+                <span className="text-primary mt-1 font-bold">•</span>
                 <span><strong className="text-foreground">Approvers</strong> — gave final sign-off before reports went to external agencies.</span>
               </li>
             </ul>
@@ -238,17 +238,17 @@ const MissionReportingCaseStudy = () => {
               <div className="rounded-[14px] bg-destructive/5 p-6 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                 <h3 className="font-semibold text-destructive text-sm">Before Adjustment</h3>
                 <ul className="text-sm text-muted-foreground space-y-2">
-                  <li>â€¢ Full map integration</li>
-                  <li>â€¢ Visual interface for data</li>
-                  <li>â€¢ Complete automation</li>
+                  <li>• Full map integration</li>
+                  <li>• Visual interface for data</li>
+                  <li>• Complete automation</li>
                 </ul>
               </div>
               <div className="rounded-[14px] bg-primary/5 p-6 space-y-3 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                 <h3 className="font-semibold text-primary text-sm">After Adjustment</h3>
                 <ul className="text-sm text-muted-foreground space-y-2">
-                  <li>â€¢ Modern UI without map</li>
-                  <li>â€¢ Reduced data entry</li>
-                  <li>â€¢ Automated calculations</li>
+                  <li>• Modern UI without map</li>
+                  <li>• Reduced data entry</li>
+                  <li>• Automated calculations</li>
                 </ul>
               </div>
             </div>
