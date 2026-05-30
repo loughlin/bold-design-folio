@@ -126,7 +126,7 @@ const WarfighterResearchCaseStudy = () => {
             <h2 className="text-2xl font-bold text-foreground mb-6">Overview</h2>
             <CaseStudyMetadata
               role="UX Manager & Lead Researcher"
-              timeline="2021 â€“ 2024"
+              timeline="2021 – 2024"
               team="2 Designers, 8 Product Teams"
             />
             <KeyTakeaway>
@@ -141,8 +141,8 @@ const WarfighterResearchCaseStudy = () => {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-              <ArtifactCard label="Methods" icon="ðŸ”¬" items={["Contextual Inquiry", "Usability Testing", "Participatory Workshops", "Card Sorting", "Diary Studies"]} />
-              <ArtifactCard label="Outputs" icon="ðŸ“Š" items={["Research Briefs", "Opportunity Maps", "Impact-Effort Matrices", "Insight Library (50+)", "Quarterly Reports"]} />
+              <ArtifactCard label="Methods" icon="🔬" items={["Contextual Inquiry", "Usability Testing", "Participatory Workshops", "Card Sorting", "Diary Studies"]} />
+              <ArtifactCard label="Outputs" icon="📊" items={["Research Briefs", "Opportunity Maps", "Impact-Effort Matrices", "Insight Library (50+)", "Quarterly Reports"]} />
             </div>
           </section>
 

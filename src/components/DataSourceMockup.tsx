@@ -45,7 +45,7 @@
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 text-[10px]">
               <span className="text-muted-foreground">System Overview</span>
-              <span className="text-muted-foreground/40">â€º</span>
+              <span className="text-muted-foreground/40">›</span>
               <span className="text-foreground font-semibold">Alpha-01</span>
             </div>
             <div className="flex items-center gap-3">
@@ -147,7 +147,7 @@
         {/* Footer */}
         <div className="px-4 py-2 border-t border-border bg-muted/30">
           <p className="text-[9px] text-muted-foreground/60 italic">
-            View 2: Data Source View — Individual source performance, endpoint table, and trend analysis. Dummy data shown; actual interface operates on classified networks. Kessel Run, 2019â€“2021.
+            View 2: Data Source View — Individual source performance, endpoint table, and trend analysis. Dummy data shown; actual interface operates on classified networks. Kessel Run, 2019–2021.
           </p>
         </div>
       </div>

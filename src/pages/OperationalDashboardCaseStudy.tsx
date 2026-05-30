@@ -86,7 +86,7 @@ const OperationalDashboardCaseStudy = () => {
             <h2 className="text-2xl font-bold text-foreground mb-6">Overview</h2>
             <CaseStudyMetadata
               role="UX Manager & Product Designer"
-              timeline="2019 â€“ 2021"
+              timeline="2019 – 2021"
               team="2 Designers, 6 Engineers, 1 PM"
             />
             <KeyTakeaway>
@@ -101,8 +101,8 @@ const OperationalDashboardCaseStudy = () => {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-              <ArtifactCard label="Methods" icon="ðŸ”¬" items={["User Interviews", "Market Research (Grafana)", "Workflow Mapping", "Usability Testing"]} />
-              <ArtifactCard label="Tools" icon="ðŸ› " items={["Figma", "Miro", "React", "D3.js / Recharts"]} />
+              <ArtifactCard label="Methods" icon="🔬" items={["User Interviews", "Market Research (Grafana)", "Workflow Mapping", "Usability Testing"]} />
+              <ArtifactCard label="Tools" icon="🛠" items={["Figma", "Miro", "React", "D3.js / Recharts"]} />
             </div>
           </section>
 

@@ -1,75 +1,75 @@
+## What I found
 
+The codebase has a recurring encoding issue: UTF-8 characters were saved as if they were Latin-1, leaving mojibake sequences like `â€"`, `â€¢`, `â€º`, and broken emoji like `ðŸ› ` in the rendered UI. None of these display correctly in the browser — they appear as garbled glyphs. No copy needs to be rewritten; only the broken characters need to be restored to what they were meant to be.
 
-# Copy Audit and Rewrite Plan
+## Findings and replacements
 
-## Goal
-Shift the portfolio voice from "corporate UX manager" to "confident design leader who solves real problems." Kill jargon, favor active voice, focus on outcomes, and add a brief AI interest mention to the About section. Stats remain unchanged.
+### En dashes (`â€"` → `–`)
 
----
+These appear inside date ranges. They render as three random Latin characters on the page.
 
-## Scope: 9 files across Home, About, and all 5 Case Studies
+- `src/pages/KesselRunCaseStudy.tsx:104` — `timeline="2021 â€" Present"` → `"2021 – Present"`
+- `src/pages/WarfighterResearchCaseStudy.tsx:129` — `timeline="2021 â€" 2024"` → `"2021 – 2024"`
+- `src/pages/DesignSystemCaseStudy.tsx:105` — `timeline="2019 â€" 2023"` → `"2019 – 2023"`
+- `src/pages/OperationalDashboardCaseStudy.tsx:89` (Overview) — `timeline="2019 â€" 2021"` → `"2019 – 2021"`
+- `src/pages/OperationalDashboardCaseStudy.tsx:69` (hero eyebrow) — `UX Manager & Product Designer · 2019 â€" 2021` → `… 2019 – 2021`
+- `src/pages/MissionReportingCaseStudy.tsx:71` — `UX Manager + Product Designer · 2018 â€" 2023` → `… 2018 – 2023`
+- `src/pages/MissionReportingCaseStudy.tsx:100` — `timeline="2018 â€" 2023"` → `"2018 – 2023"`
+- `src/components/SystemOverviewMockup.tsx:175` — caption `Kessel Run, 2019â€"2021.` → `2019–2021.`
+- `src/components/DataSourceMockup.tsx:150` — caption `Kessel Run, 2019â€"2021.` → `2019–2021.`
+- `src/components/MetricsViewMockup.tsx:185` — caption `Kessel Run, 2019â€"2021.` → `2019–2021.`
+- `src/components/DashboardOutcomesChart.tsx:67` — `Kessel Run 2019â€"2021.` → `2019–2021.`
+- `src/components/PortfolioEfficiencyChart.tsx:115` — `Kessel Run product teams, 2019â€"2023.` → `2019–2023.`
+- `src/components/ResearchOutcomesChart.tsx:49` — `… lifecycle, 2021â€"2024.` → `2021–2024.`
+- `src/components/ResearchOutcomesChart.tsx:111` — `Kessel Run 2021â€"2024.` → `2021–2024.`
 
-### 1. Hero (`src/components/Hero.tsx`)
-- Rewrite the headline to be punchier and less generic. Replace "enjoys approaching design problems with human-centered solutions" with something more direct and specific to James's identity (e.g., framing around making complex software simple, or designing for people under pressure).
-- Keep the "UX Design Leader" label as-is.
+### Bullet characters (`â€¢` → `•`)
 
-### 2. About Section (`src/components/AboutSection.tsx`)
-- Rewrite the headline ("Hi, I'm James...") to feel more conversational and less like a mission statement.
-- Rewrite the four bio paragraphs to:
-  - Open with a conversational hook about the career arc (designer to manager).
-  - Replace "instilling design principles" and "design culture" language with plainer descriptions of what James actually does day-to-day.
-  - Add a brief mention of AI interest (one sentence woven naturally into the existing flow, per user preference).
-  - Keep the personal paragraph (soccer, kids, gym) but tighten it.
-  - Cut the closing "I stay hungry to learn..." line or fold it into the AI mention for a stronger close.
+Renders as a stray Latin garble where a bullet was intended.
 
-### 3. Skills Data (`src/data/skills.ts`)
-- Rewrite the 6 skill descriptions to be more direct and outcome-focused. Replace phrases like "Building scalable design systems and operational frameworks for consistency and efficiency" with plainer language about what the skill actually enables.
+- `src/pages/MissionReportingCaseStudy.tsx:162, 166, 170` — three `<span>â€¢</span>` decorative bullets → `•`
+- `src/pages/MissionReportingCaseStudy.tsx:241, 242, 243` — list items `â€¢ Full map integration`, `â€¢ Visual interface for data`, `â€¢ Complete automation` → bullet `•`
+- `src/pages/MissionReportingCaseStudy.tsx:249, 250, 251` — `â€¢ Modern UI without map`, `â€¢ Reduced data entry`, `â€¢ Automated calculations` → bullet `•`
+- `src/components/CaseStudyLayout.tsx:195` — `<span>â€¢</span>` → `•`
 
-### 4. Experience Data (`src/data/experiences.ts`)
-- Rewrite all 4 descriptions in active voice. The Kessel Run manager entry is particularly dense with jargon ("facilitating cross-functional collaboration," "championing design thinking and advocating psychological safety"). Simplify to focus on what James did and what happened as a result.
+### Right-pointing chevrons (`â€º` → `›`)
 
-### 5. Project Cards (`src/data/projects.ts`)
-- Light pass on the 5 project descriptions. Replace any remaining stiff phrases with punchier summaries. Most are already decent; tighten where possible.
+Used as breadcrumb separators inside the mockup graphics.
 
-### 6. Kessel Run Case Study (`src/pages/KesselRunCaseStudy.tsx`)
-- Already the strongest. Light tone pass:
-  - Tighten a few longer sentences in the Overview and Opportunity sections.
-  - Check for any remaining passive voice.
-  - No structural or content changes.
+- `src/components/DataSourceMockup.tsx:48` — `â€º` → `›`
+- `src/components/MetricsViewMockup.tsx:63, 65` — two `â€º` → `›`
 
-### 7. Design System Case Study (`src/pages/DesignSystemCaseStudy.tsx`)
-- Moderate pass. The Overview and Process sections read well but some areas lean formal:
-  - Simplify "Synthesizing research into clear problem definitions and actionable requirements" type descriptions.
-  - Tighten the challenge descriptions.
-  - No structural changes.
+### Broken emoji on Artifact cards
 
-### 8. Mission Reporting Case Study (`src/pages/MissionReportingCaseStudy.tsx`)
-- **Heaviest rewrite.** The Overview, Background, Problem, and Exploratory Research sections are noticeably more passive and resume-like than the other case studies:
-  - "I was responsible for the design process, from research to solution generation and evaluation" -> active, outcome-focused rewrite.
-  - "We determined that we could automate multiple data fields by importing from sources" -> cleaner, more conversational.
-  - "As a team we began designing and testing potential concepts" -> tighter.
-  - Rewrite the Prototype Testing section to match the voice of the other case studies.
-  - Keep all structural elements, images, captions, and metrics unchanged.
+These `ArtifactCard` icons currently render as gibberish (e.g. `ðŸ› ` instead of `🛠`). Replacements restore the original emoji:
 
-### 9. Warfighter Research Case Study (`src/pages/WarfighterResearchCaseStudy.tsx`)
-- Light-to-moderate pass. Already reads well but has some long, dense sentences:
-  - Break up multi-clause sentences in the methodology and process sections.
-  - Simplify descriptors in the heuristics data.
+- `src/pages/KesselRunCaseStudy.tsx:125` `icon="ðŸ› "` → `"🛠"` (Tools)
+- `src/pages/KesselRunCaseStudy.tsx:130` `icon="ðŸ‘¥"` → `"👥"` (Team)
+- `src/pages/KesselRunCaseStudy.tsx:376` `icon="ðŸ"‹"` → `"📋"` (Outputs/Methods)
+- `src/pages/WarfighterResearchCaseStudy.tsx:144` `icon="ðŸ"¬"` → `"🔬"` (Methods)
+- `src/pages/WarfighterResearchCaseStudy.tsx:145` `icon="ðŸ"Š"` → `"📊"` (Outputs)
+- `src/pages/DesignSystemCaseStudy.tsx:120` `icon="ðŸ› "` → `"🛠"` (Tools)
+- `src/pages/DesignSystemCaseStudy.tsx:121` `icon="ðŸ'¡"` → `"💡"` (Skills)
+- `src/pages/DesignSystemCaseStudy.tsx:167` `icon="ðŸš€"` → `"🚀"` (Developer Velocity)
+- `src/pages/OperationalDashboardCaseStudy.tsx:104` `icon="ðŸ"¬"` → `"🔬"` (Methods)
+- `src/pages/OperationalDashboardCaseStudy.tsx:105` `icon="ðŸ› "` → `"🛠"` (Tools)
+- `src/pages/MissionReportingCaseStudy.tsx:110` `icon="ðŸ"¬"` → `"🔬"` (Methods)
+- `src/pages/MissionReportingCaseStudy.tsx:111` `icon="ðŸ"¦"` → `"📦"` (Deliverables)
 
-### 10. Operational Dashboard Case Study (`src/pages/OperationalDashboardCaseStudy.tsx`)
-- Light pass. Already conversational. Check for any remaining passive constructions and tighten.
+Alternative: if you'd rather drop the emoji entirely for a cleaner editorial look, I can set `icon=""` (or remove the prop) on every ArtifactCard instead of restoring them. Let me know which you prefer.
 
----
+### Graphics text review (mockups)
 
-## What will NOT change
-- Images, captions, and alt text
-- Stats, metrics, and numerical data (including "8+ Years Experience")
-- Layout, structure, component hierarchy, and styling
-- Links, buttons, navigation behavior
-- Footer content
+I checked each mockup graphic (`SystemOverviewMockup`, `DataSourceMockup`, `MetricsViewMockup`, `DashboardMockup`, `AdoptionImpactTable`, the four charts). Apart from the chevron/dash characters listed above, all chart labels, axis titles, legends, table headers, and dummy data labels are clean, English, and make sense in context. No additional copy changes needed there.
 
-## Technical Details
-- Edits are text-only across 9 files (3 data files, 1 component, 5 page components)
-- No new dependencies, no structural changes
-- All edits will use `code--line_replace` to surgically update copy strings
+## Out of scope (will not touch)
 
+- Actual wording, sentences, headings, captions — left exactly as written.
+- Valid punctuation already in the source: middle dots (`·`), em dashes (`—`), real `–` en dashes, and curly quotes are kept.
+- No structural, layout, styling, or component changes.
+
+## Technical notes
+
+- 27 files of source edits across 5 case study pages and 8 components.
+- All replacements are pure text substitutions; no logic, props API, or markup changes.
+- After saving, the dev preview should auto-reload and the garbled glyphs will be gone.

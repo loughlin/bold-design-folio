@@ -101,7 +101,7 @@ const KesselRunCaseStudy = () => {
             <h2 className="text-2xl font-bold text-foreground mb-6">Overview</h2>
             <CaseStudyMetadata
               role="Portfolio Design Lead"
-              timeline="2021 â€“ Present"
+              timeline="2021 – Present"
               team="15+ Designers, 5 Applications, 6 Missions"
             />
             <KeyTakeaway>
@@ -122,12 +122,12 @@ const KesselRunCaseStudy = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
               <ArtifactCard
                 label="Tools & Methods"
-                icon="ðŸ› "
+                icon="🛠"
                 items={["Figma", "Miro", "Jira", "Confluence", "Design Critiques", "Double Diamond"]}
               />
               <ArtifactCard
                 label="Team Structure"
-                icon="ðŸ‘¥"
+                icon="👥"
                 items={["15+ Designers Managed", "5 Applications", "6 Operational Missions", "Cross-functional Pods"]}
               />
             </div>
@@ -373,7 +373,7 @@ const KesselRunCaseStudy = () => {
 
             <ArtifactCard
               label="Key Responsibilities"
-              icon="ðŸ“‹"
+              icon="📋"
               className="mt-8"
               items={[
                 "Partnered with users and Air Force leadership to prioritize capability needs",
