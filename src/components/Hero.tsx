@@ -20,8 +20,8 @@ const Hero = () => {
             </p>
 
             <h1 className="text-4xl sm:text-5xl lg:text-[clamp(3rem,5vw,4.25rem)] font-bold tracking-tight leading-[1.05] text-balance">
-              Fifteen years working in technology.
-              <br className="hidden sm:block" /> Eight years designing software.
+              15 years in technology.
+              <br className="hidden sm:block" /> 8 designing software.
             </h1>
 
             <p className="mt-6 max-w-reading text-lg text-muted-foreground leading-relaxed">
