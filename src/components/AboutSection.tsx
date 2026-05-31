@@ -6,7 +6,7 @@ const AboutSection = () => {
       <Reveal className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
           <div className="lg:col-span-4">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
               A bit about me.
             </h2>
           </div>

@@ -7,7 +7,7 @@ const Skills = () => {
       <Reveal className="container mx-auto">
         {/* Section Header */}
         <div className="section-header-spacing animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">How I work</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">How I work</h2>
         </div>
 
         {/* Editorial list — 2 columns, no cards, divider rows */}
