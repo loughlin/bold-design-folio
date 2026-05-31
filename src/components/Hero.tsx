@@ -30,6 +30,14 @@ const Hero = () => {
               show impact and I care most about the problems that don't have a
               clean answer yet.
             </p>
+            <p className="mt-4 max-w-reading text-base text-muted-foreground leading-[1.7]">
+              I came up as a software consultant before transitioning to product
+              design. I spent several years shipping software before I moved into
+              UX management. The shift happened gradually, but as I came to realize
+              design problems were solvable, organizational ones were more
+              complicated and needed someone to own them and advocate for design
+              growth internally.
+            </p>
 
             {/* Stats */}
             <dl className="mt-6 grid grid-cols-3 gap-6 max-w-md border-y border-border py-5">
