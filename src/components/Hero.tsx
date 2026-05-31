@@ -10,21 +10,21 @@ const STATS = [
 
 const Hero = () => {
   return (
-    <section id="hero" className="pt-28 md:pt-32 pb-8 px-6 scroll-mt-20">
+    <section id="hero" className="pt-20 md:pt-24 pb-6 px-6 scroll-mt-20">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
           {/* Left — positioning */}
           <div className="lg:col-span-7 animate-fade-in">
-            <p className="font-technical text-[11px] font-semibold text-muted-foreground uppercase tracking-[0.18em] mb-6">
+            <p className="font-technical text-[11px] font-semibold text-muted-foreground uppercase tracking-[0.18em] mb-4">
               Design Leadership · Design Systems · Research
             </p>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-[clamp(2.5rem,4vw,3.25rem)] font-bold tracking-tight leading-[1.1] text-balance">
+            <h1 className="text-2xl sm:text-3xl lg:text-[clamp(1.875rem,3vw,2.5rem)] font-semibold tracking-tight leading-[1.15] text-balance">
               15 years in technology.
               <br className="hidden sm:block" /> 8 designing software.
             </h1>
 
-            <p className="mt-6 max-w-reading text-lg text-muted-foreground leading-relaxed">
+            <p className="mt-5 max-w-reading text-base text-muted-foreground leading-[1.7]">
               I'm James Loughlin, Portfolio Design Lead at Kessel Run (USAF). I
               build design culture inside teams shipping software to active Air
               Force missions, and I care most about the problems that don't have
@@ -32,7 +32,7 @@ const Hero = () => {
             </p>
 
             {/* Stats */}
-            <dl className="mt-8 grid grid-cols-3 gap-6 max-w-md border-y border-border py-6">
+            <dl className="mt-6 grid grid-cols-3 gap-6 max-w-md border-y border-border py-5">
               {STATS.map((stat) => (
                 <div key={stat.label}>
                   <dt className="text-xl md:text-2xl font-bold text-foreground tabular-nums">
