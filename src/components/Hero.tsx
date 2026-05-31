@@ -25,10 +25,10 @@ const Hero = () => {
             </h1>
 
             <p className="mt-5 max-w-reading text-base text-muted-foreground leading-[1.7]">
-              I'm James Loughlin, Portfolio Design Lead at Kessel Run (USAF). I
-              build design culture inside teams shipping software to active Air
-              Force missions, and I care most about the problems that don't have
-              a clean answer yet.
+              I'm James Loughlin a UX Designer and Software manager. I like to
+              help build design culture inside teams shipping software to quickly
+              show impact and I care most about the problems that don't have a
+              clean answer yet.
             </p>
 
             {/* Stats */}
