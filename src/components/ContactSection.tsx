@@ -13,7 +13,7 @@ const ContactSection = () => {
             </h2>
             <div className="space-y-4 text-background/70 text-base leading-relaxed">
               <p>
-                I'm best on problems with real complexity — a team that needs
+                I'm best on problems with real complexity: a team that needs
                 structure, a product that needs grounding in actual user research,
                 or a system that has to hold together under pressure.
               </p>

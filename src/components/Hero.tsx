@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           {/* Left — positioning */}
           <div className="lg:col-span-7 animate-fade-in">
-            <p className="font-technical text-[11px] font-semibold text-muted-foreground uppercase tracking-[0.18em] mb-5">
+            <p className="font-technical text-[11px] font-semibold text-muted-foreground uppercase tracking-[0.18em] mb-6">
               Design Leadership · Design Systems · Research
             </p>
 
@@ -24,16 +24,15 @@ const Hero = () => {
               <br className="hidden sm:block" /> 8 designing software.
             </h1>
 
-            <p className="mt-5 max-w-reading text-base text-muted-foreground leading-[1.7]">
-              I came up as a software consultant before transitioning to product design. I spent several years shipping software before I moved into UX management. The shift happened gradually, but as I came to realize design problems were solvable, organizational ones were more complicated and needed someone to own them and advocate for design growth internally.
-              <br /><br />
-              Most of my time after my transition into management went into mentoring people and unblocking and laying down organizational process. Growing junior designers, keeping the team connected to users in the field and helping to cut blockers slowing us down. A shift and maybe a bit less glamorous than shipping product, but it really helped me feel an impact at scale.
-              <br /><br />
-              Outside of work I enjoy sports with my kids (mainly soccer at the moment), staying healthy at the gym and reading whatever I can get my hands on (mainly AI or UX Design books as of late). My wife and three kids fill in the rest!
+            <p className="mt-6 max-w-reading text-lg text-muted-foreground leading-relaxed">
+              I'm James Loughlin, Portfolio Design Lead at Kessel Run (USAF). I
+              build design culture inside teams shipping software to active Air
+              Force missions, and I care most about the problems that don't have
+              a clean answer yet.
             </p>
 
             {/* Stats */}
-            <dl className="mt-8 grid grid-cols-3 gap-6 max-w-md border-y border-border py-5">
+            <dl className="mt-8 grid grid-cols-3 gap-6 max-w-md border-y border-border py-6">
               {STATS.map((stat) => (
                 <div key={stat.label}>
                   <dt className="text-xl md:text-2xl font-bold text-foreground tabular-nums">
