@@ -9,9 +9,9 @@ interface CaseStudyFooterNavProps {
 const caseStudies = [
   { slug: "kessel-run", title: "Leading Design at Kessel Run" },
   { slug: "design-system", title: "One Design System for Five Missions" },
-  { slug: "mission-reporting", title: "Replacing Manual Calculations" },
-  { slug: "warfighter-research", title: "Establishing Research from Zero" },
-  { slug: "operational-dashboard", title: "Command Center" },
+  { slug: "mission-reporting", title: "Automating Mission Reporting" },
+  { slug: "warfighter-research", title: "Building a Research Practice from Zero" },
+  { slug: "operational-dashboard", title: "Redesigning the Operations Dashboard" },
 ];
 
 const CaseStudyFooterNav = ({ currentSlug }: CaseStudyFooterNavProps) => {

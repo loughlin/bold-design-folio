@@ -34,14 +34,14 @@ const OperationalDashboardCaseStudy = () => {
   return (
     <div className="min-h-screen bg-background">
       <Seo
-        title="Command Center: Real-Time Data Flows — James Loughlin"
-        description="Redesigning an operational monitoring dashboard for real-time data flows — 90% task success, 3× faster issue detection, and 60% less context switching."
+        title="Redesigning the Operations Dashboard — James Loughlin"
+        description="Redesigning an operational monitoring dashboard for real-time data flows: 90% task success, 3× faster issue detection, and 60% less context switching."
         path="/case-study/operational-dashboard"
         type="article"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "Article",
-          headline: "Command Center: Real-Time Data Flows",
+          headline: "Redesigning the Operations Dashboard",
           author: { "@type": "Person", name: "James Loughlin" },
           description: "Redesigning a monitoring dashboard for operators.",
         }}
@@ -61,10 +61,10 @@ const OperationalDashboardCaseStudy = () => {
           <p className="text-[11px] font-technical font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">
             UX Manager & Product Designer · 2019 – 2021
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">Command Center: Real-Time Data Flows</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">Redesigning the Operations Dashboard</h1>
           <p className="text-lg text-foreground/80 font-medium animate-fade-in mb-2">Helping Operators See What Matters, Fast</p>
           <p className="text-xl text-muted-foreground animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            Redesigning a monitoring tool that engineers had built for engineers — and making it work for the operators who depended on it.
+            Rebuilding a monitoring tool that engineers had built for engineers, so the operators who depend on it can actually use it.
           </p>
         </div>
       </section>

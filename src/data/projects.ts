@@ -10,7 +10,7 @@ export const projects: Project[] = [
   {
     title: "Leading Design at Kessel Run",
     subtitle: "USAF software delivery",
-    description: "Spent several years building design culture inside Kessel Run. Teams were shipping software to active Air Force missions without much design infrastructure. We changed that.",
+    description: "Spent several years building a design practice inside Kessel Run, where teams were shipping software to active Air Force missions with almost no design infrastructure.",
     role: "Portfolio Design Lead",
     timeline: "2021 - Present",
     image: kesselRunLeadershipVisit,
@@ -21,7 +21,7 @@ export const projects: Project[] = [
   {
     title: "One Design System for Five Missions",
     subtitle: "Design system, five products",
-    description: "Built a shared design system used across five Air Force products. Before that, each team was maintaining their own components and drifting apart — slow and expensive.",
+    description: "Built a shared design system used across five Air Force products. Before it, every team maintained its own components and drifted apart, which was slow and expensive.",
     role: "UX Manager + Product Designer",
     timeline: "2020 - 2023",
     image: designSystemPreview,
@@ -30,9 +30,9 @@ export const projects: Project[] = [
     outcome: "48% fewer design stories · adopted by all 5 product teams",
   },
   {
-    title: "Getting the Mission Data Right",
+    title: "Automating Mission Reporting",
     subtitle: "Mission reporting digitization",
-    description: "Replaced a patchwork of spreadsheets and manual entry that operators were using for mission reporting. The data needed to be accurate and fast — neither was true before.",
+    description: "Replaced the patchwork of spreadsheets and manual entry operators used for mission reporting. The data had to be accurate and fast. Before this, it was neither.",
     role: "UX Manager + Product Designer",
     timeline: "2018 - 2023",
     image: missionReportingPreview,
@@ -41,9 +41,9 @@ export const projects: Project[] = [
     outcome: "100% of manual calculations automated · 4-month integration",
   },
   {
-    title: "Establishing Research from Zero",
+    title: "Building a Research Practice from Zero",
     subtitle: "User research practice",
-    description: "Stood up a user research practice across a portfolio of Air Force products. Before this, teams were guessing, and finding out they were wrong after they'd already shipped.",
+    description: "Stood up a user research practice across a portfolio of Air Force products. Before this, teams were guessing, and only finding out they were wrong after they'd shipped.",
     role: "UX Manager",
     timeline: "2021 - 2024",
     image: uxResearchPreview,
@@ -52,9 +52,9 @@ export const projects: Project[] = [
     outcome: "65% less rework · research embedded in 4 product teams",
   },
   {
-    title: "Command Center: Real-Time Data Flows",
+    title: "Redesigning the Operations Dashboard",
     subtitle: "Monitoring dashboard",
-    description: "Redesigned a dashboard used by operators tracking mission-critical systems. The original showed that things were running. This one tells you when something's about to fail.",
+    description: "Redesigned a dashboard operators use to track mission-critical systems. The original showed that systems were running; this one shows when one is about to fail.",
     role: "UX Manager + Product Designer",
     timeline: "2019 - 2021",
     image: dataDashboardPreview,

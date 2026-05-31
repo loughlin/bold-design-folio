@@ -43,14 +43,14 @@ const MissionReportingCaseStudy = () => {
   return (
     <div className="min-h-screen bg-background">
       <Seo
-        title="Replacing Manual Calculations with Trust — James Loughlin"
-        description="Designing the F-35 mission reporting product — replacing manual calculations and spreadsheets with automation that pilots and intel analysts can trust."
+        title="Automating Mission Reporting — James Loughlin"
+        description="Designing the F-35 mission reporting product, replacing manual calculations and spreadsheets with automation that pilots and intel analysts can trust."
         path="/case-study/mission-reporting"
         type="article"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "Article",
-          headline: "Replacing Manual Calculations with Trust",
+          headline: "Automating Mission Reporting",
           author: { "@type": "Person", name: "James Loughlin" },
           description: "Digitizing F-35 mission reporting for accuracy and trust.",
         }}
@@ -71,11 +71,11 @@ const MissionReportingCaseStudy = () => {
             UX Manager + Product Designer · 2018 – 2023
           </p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
-            Replacing Manual Calculations with Trust
+            Automating Mission Reporting
           </h1>
-          <p className="text-lg text-foreground/80 font-medium animate-fade-in mb-2">Digitizing Mission Reporting for Accuracy</p>
+          <p className="text-lg text-foreground/80 font-medium animate-fade-in mb-2">Digitizing a spreadsheet-driven reporting process</p>
           <p className="text-xl text-muted-foreground animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            Streamlining data entry through automation to transform how the Air Force disseminates mission data.
+            Automating manual data entry so mission reporting is accurate and fast instead of slow and error-prone.
           </p>
         </div>
       </section>
