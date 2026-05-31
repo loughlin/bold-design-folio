@@ -50,11 +50,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {isHome ? (
             <button
-              onClick={() => {
-                const el = document.getElementById("about");
-                if (el) el.scrollIntoView({ behavior: "smooth" });
-                else window.scrollTo({ top: 0, behavior: "smooth" });
-              }}
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="hover:opacity-70 transition-opacity duration-300"
             >
               <span className="text-xl font-semibold tracking-tight">James Loughlin</span>

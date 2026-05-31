@@ -7,37 +7,37 @@
 
 @layer base {
   :root {
-    /* Light mode — warm minimal editorial */
-    --background: 36 20% 98%;
-    --foreground: 30 10% 10%;
+    /* Light mode — warm minimal editorial. Tokens are OKLCH (L C H). */
+    --background: 0.9857 0.0018 78.31;
+    --foreground: 0.2176 0.0063 67.49;
 
-    --card: 36 15% 100%;
-    --card-foreground: 30 10% 10%;
+    --card: 1 0 0;
+    --card-foreground: 0.2176 0.0063 67.49;
 
-    --popover: 36 15% 100%;
-    --popover-foreground: 30 10% 10%;
+    --popover: 1 0 0;
+    --popover-foreground: 0.2176 0.0063 67.49;
 
     /* Single accent — deep slate, used sparingly */
-    --primary: 222 47% 31%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 0.3821 0.0932 264.87;
+    --primary-foreground: 1 0 0;
 
-    --secondary: 36 12% 95%;
-    --secondary-foreground: 30 10% 10%;
+    --secondary: 0.9632 0.0028 78.3;
+    --secondary-foreground: 0.2176 0.0063 67.49;
 
-    --muted: 36 12% 95%;
-    --muted-foreground: 30 6% 44%;
+    --muted: 0.9632 0.0028 78.3;
+    --muted-foreground: 0.5499 0.0133 67.55;
 
-    --accent: 36 12% 95%;
-    --accent-foreground: 30 10% 10%;
+    --accent: 0.9632 0.0028 78.3;
+    --accent-foreground: 0.2176 0.0063 67.49;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0.6356 0.2082 25.38;
+    --destructive-foreground: 1 0 0;
 
-    --border: 36 14% 90%;
-    --input: 36 14% 90%;
-    --ring: 222 47% 31%;
+    --border: 0.9266 0.0065 78.29;
+    --input: 0.9266 0.0065 78.29;
+    --ring: 0.3821 0.0932 264.87;
 
-    --radius: 0.5rem;
+    --radius: 0.875rem; /* 14px — matches card radius across the system */
 
     /* Image inner stroke */
     --image-stroke: 0 0% 0% / 0.03;
@@ -61,33 +61,33 @@
   }
 
   .dark {
-    --background: 224 20% 7%;
-    --foreground: 210 20% 95%;
+    --background: 0.1743 0.0113 269.47;
+    --foreground: 0.9607 0.0044 247.87;
 
-    --card: 224 18% 10%;
-    --card-foreground: 210 20% 95%;
+    --card: 0.2067 0.0139 269.44;
+    --card-foreground: 0.9607 0.0044 247.87;
 
-    --popover: 224 18% 10%;
-    --popover-foreground: 210 20% 95%;
+    --popover: 0.2067 0.0139 269.44;
+    --popover-foreground: 0.9607 0.0044 247.87;
 
-    --primary: 217 72% 60%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 0.6309 0.1493 259.49;
+    --primary-foreground: 1 0 0;
 
-    --secondary: 224 14% 16%;
-    --secondary-foreground: 210 20% 95%;
+    --secondary: 0.2697 0.0162 269.53;
+    --secondary-foreground: 0.9607 0.0044 247.87;
 
-    --muted: 224 14% 16%;
-    --muted-foreground: 215 15% 60%;
+    --muted: 0.2697 0.0162 269.53;
+    --muted-foreground: 0.6704 0.0303 256.78;
 
-    --accent: 224 14% 16%;
-    --accent-foreground: 210 20% 95%;
+    --accent: 0.2697 0.0162 269.53;
+    --accent-foreground: 0.9607 0.0044 247.87;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0.6356 0.2082 25.38;
+    --destructive-foreground: 1 0 0;
 
-    --border: 224 14% 18%;
-    --input: 224 14% 18%;
-    --ring: 217 72% 60%;
+    --border: 0.2893 0.0179 269.51;
+    --input: 0.2893 0.0179 269.51;
+    --ring: 0.6309 0.1493 259.49;
 
     --image-stroke: 0 0% 100% / 0.03;
     --shadow-elevated: 0 20px 40px -10px hsl(0 0% 0% / 0.3);
@@ -124,11 +124,11 @@
     background: transparent;
   }
   ::-webkit-scrollbar-thumb {
-    background: hsl(var(--border));
+    background: oklch(var(--border));
     border-radius: 3px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: hsl(var(--muted-foreground));
+    background: oklch(var(--muted-foreground));
   }
 }
 
@@ -163,11 +163,11 @@ body::before {
 
   /* Replaced gradient text — use primary color directly, no gradient */
   .text-gradient {
-    color: hsl(var(--primary));
+    color: oklch(var(--primary));
   }
 
   .dark .text-gradient {
-    color: hsl(217 72% 65%);
+    color: oklch(0.6753 0.1296 259.54);
   }
 
   /* Spring button animation */
@@ -244,12 +244,12 @@ body::before {
   left: 1rem;
   z-index: 9999;
   padding: 0.5rem 1rem;
-  background: hsl(var(--background));
-  border: 2px solid hsl(var(--primary));
+  background: oklch(var(--background));
+  border: 2px solid oklch(var(--primary));
   border-radius: 0.5rem;
   font-size: 0.875rem;
   font-weight: 600;
-  color: hsl(var(--foreground));
+  color: oklch(var(--foreground));
   text-decoration: none;
   transition: top 0.2s;
 }

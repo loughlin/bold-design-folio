@@ -1,15 +1,13 @@
 ﻿import { skillCategories } from "@/data/skills";
+import Reveal from "@/components/Reveal";
 
 const Skills = () => {
   return (
     <section id="approach" className="section-spacing px-6 scroll-mt-20">
-      <div className="container mx-auto">
+      <Reveal className="container mx-auto">
         {/* Section Header */}
         <div className="section-header-spacing animate-fade-in">
-          <p className="font-technical text-[11px] font-semibold text-muted-foreground uppercase tracking-[0.18em] mb-2">
-            How I Work
-          </p>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Approach + Skills</h2>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">How I work</h2>
         </div>
 
         {/* Editorial list — 2 columns, no cards, divider rows */}
@@ -20,7 +18,7 @@ const Skills = () => {
               className="py-6 border-t border-border flex gap-5 group"
               style={{ animationDelay: `${index * 0.06}s` }}
             >
-              <span className="font-technical text-[11px] font-semibold text-muted-foreground/50 pt-0.5 w-5 shrink-0 tabular-nums">
+              <span className="font-technical text-[11px] font-semibold text-muted-foreground pt-0.5 w-5 shrink-0 tabular-nums">
                 0{index + 1}
               </span>
               <div>
@@ -34,7 +32,7 @@ const Skills = () => {
             </div>
           ))}
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 };

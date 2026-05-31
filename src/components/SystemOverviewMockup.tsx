@@ -21,7 +21,7 @@
   ];
 
   const donutSegments = [
-    { label: "Alpha-01", pct: 38, color: "hsl(var(--primary))" },
+    { label: "Alpha-01", pct: 38, color: "oklch(var(--primary))" },
     { label: "Charlie-02", pct: 20, colorClass: "text-yellow-500 dark:text-yellow-400", color: "#f59e0b" },
     { label: "Bravo-04", pct: 28, color: "hsl(210, 90%, 60%)" },
     { label: "Delta-07", pct: 14, color: "hsl(280, 70%, 60%)" },

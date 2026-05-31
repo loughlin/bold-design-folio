@@ -1,15 +1,13 @@
 ﻿import { Mail, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Reveal from "@/components/Reveal";
 
 const ContactSection = () => {
   return (
     <section id="contact" className="section-spacing px-6 bg-foreground text-background scroll-mt-20">
-      <div className="container mx-auto">
+      <Reveal className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           <div className="lg:col-span-7 space-y-6">
-            <p className="font-technical text-[11px] font-semibold uppercase tracking-[0.18em] text-background/50">
-              Get in touch
-            </p>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-background">
               Let's work together.
             </h2>
@@ -57,7 +55,7 @@ const ContactSection = () => {
             <div className="grid grid-cols-1 gap-px border border-background/10 bg-background/10">
               {[
                 ["Location", "Cherokee, Iowa"],
-                ["Available for", "Full-time · Contract · Advisory"],
+                ["Available for", "Full-time · Contract · AI consulting"],
                 ["Response time", "Usually within a day"],
                 ["Time zone", "Central (CT)"],
               ].map(([label, value]) => (
@@ -74,7 +72,7 @@ const ContactSection = () => {
             </div>
           </div>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 };

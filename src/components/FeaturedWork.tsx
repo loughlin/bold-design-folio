@@ -1,6 +1,7 @@
 import { ArrowRight, Lock } from "lucide-react";
 import { Link } from "react-router-dom";
 import ProtectedLink from "@/components/ProtectedLink";
+import Reveal from "@/components/Reveal";
 import { projects } from "@/data/projects";
 import type { Project } from "@/types";
 
@@ -28,13 +29,10 @@ const FeaturedWork = () => {
 
   return (
     <section id="work" className="section-spacing px-6 scroll-mt-20">
-      <div className="container mx-auto">
+      <Reveal className="container mx-auto">
         {/* Section Header */}
         <div className="section-header-spacing animate-fade-in">
-          <p className="font-technical text-[11px] font-semibold text-muted-foreground uppercase tracking-[0.18em] mb-2">
-            Selected Projects
-          </p>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">My Work</h2>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Selected work</h2>
         </div>
 
         <div className="flex flex-col gap-6">
@@ -83,7 +81,7 @@ const FeaturedWork = () => {
                           <span className="w-1 h-1 rounded-full bg-border" />
                           <span>{featured.timeline}</span>
                         </div>
-                        <div className="flex items-center gap-1.5 text-sm font-medium text-primary opacity-40 transition-[opacity,transform] duration-300 group-hover:opacity-100 group-focus-within:opacity-100">
+                        <div className="flex items-center gap-1.5 text-sm font-medium text-primary opacity-70 transition-[opacity,transform] duration-300 group-hover:opacity-100 group-focus-within:opacity-100">
                           View
                           <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
                         </div>
@@ -141,7 +139,7 @@ const FeaturedWork = () => {
                           <span className="w-1 h-1 rounded-full bg-border" />
                           <span>{project.timeline}</span>
                         </div>
-                        <div className="flex items-center gap-1.5 text-sm font-medium text-primary opacity-40 transition-[opacity,transform] duration-300 group-hover:opacity-100 group-focus-within:opacity-100">
+                        <div className="flex items-center gap-1.5 text-sm font-medium text-primary opacity-70 transition-[opacity,transform] duration-300 group-hover:opacity-100 group-focus-within:opacity-100">
                           View
                           <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
                         </div>
@@ -153,7 +151,7 @@ const FeaturedWork = () => {
             ))}
           </div>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 };

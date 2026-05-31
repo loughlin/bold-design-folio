@@ -1,19 +1,17 @@
-﻿import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 import { experiences } from "@/data/experiences";
 import { RESUME_PDF_PATH } from "@/constants";
+import Reveal from "@/components/Reveal";
 
 const Experience = () => {
   return (
     <section id="experience" className="section-spacing px-6 scroll-mt-20">
-      <div className="container mx-auto">
+      <Reveal className="container mx-auto">
         {/* Section Header */}
         <div className="section-header-spacing animate-fade-in">
           <div className="flex items-end justify-between gap-4 flex-wrap">
-            <div>
-              <p className="font-technical text-[11px] font-semibold text-muted-foreground uppercase tracking-[0.18em] mb-2">Career</p>
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Experience</h2>
-            </div>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Experience</h2>
             <a href={RESUME_PDF_PATH} download>
               <Button variant="outline" className="gap-2 rounded-[14px]">
                 <Download className="h-4 w-4" />
@@ -23,34 +21,35 @@ const Experience = () => {
           </div>
         </div>
 
-        {/* Experience Cards — 24px uniform gutters */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Editorial list — divider rows, period as leading metadata */}
+        <div className="animate-fade-in">
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className={`group p-6 rounded-[14px] border border-border/60 bg-card transition-[transform,border-color,box-shadow] duration-300 hover:border-border hover:shadow-md hover:-translate-y-1 animate-fade-in ${
-                index === 0 ? "md:col-span-2 lg:col-span-3" : ""
-              }`}
-              style={{ animationDelay: `${index * 0.08}s` }}
+              className="grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-8 py-6 border-t border-border group"
             >
-              <div className="flex items-start justify-between mb-2">
-                <h3 className="text-base font-semibold group-hover:text-primary transition-colors duration-300">
-                  {exp.role}
-                </h3>
-                <span className="text-xs text-muted-foreground whitespace-nowrap ml-4 mt-1">
+              <div className="md:col-span-3">
+                <span className="font-technical text-[13px] text-muted-foreground tabular-nums">
                   {exp.period}
                 </span>
               </div>
-              <p className="text-sm font-medium text-primary mb-3">
-                {exp.company}
-              </p>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {exp.description}
-              </p>
+              <div className="md:col-span-9">
+                <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-2">
+                  <h3 className="text-lg font-semibold tracking-tight group-hover:text-primary transition-colors duration-200">
+                    {exp.role}
+                  </h3>
+                  <span className="text-sm font-medium text-primary">
+                    {exp.company}
+                  </span>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed max-w-reading">
+                  {exp.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 };

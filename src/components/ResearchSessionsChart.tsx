@@ -26,7 +26,7 @@
               className="w-20 md:w-24 rounded-t-sm"
               style={{
                 height: s.height,
-                background: `linear-gradient(to bottom, hsl(var(--primary)), hsl(var(--primary) / 0.5))`,
+                background: `linear-gradient(to bottom, oklch(var(--primary)), oklch(var(--primary) / 0.5))`,
                 opacity: 1 - i * 0.15,
               }}
             />

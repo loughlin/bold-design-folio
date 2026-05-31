@@ -2,15 +2,15 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { testimonials } from "@/data/testimonials";
+import Reveal from "@/components/Reveal";
 
 const Testimonials = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
     <section id="testimonials" className="section-spacing px-6 bg-muted/40 overflow-hidden scroll-mt-20">
-      <div className="container mx-auto">
+      <Reveal className="container mx-auto">
         <div className="section-header-spacing animate-fade-in">
-          <p className="font-technical text-[11px] font-semibold text-muted-foreground uppercase tracking-[0.18em] mb-2">Colleagues</p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">From people I've worked with.</h2>
         </div>
 
@@ -18,7 +18,7 @@ const Testimonials = () => {
           {(isExpanded ? testimonials : testimonials.slice(0, 3)).map((testimonial, index) => (
             <div
               key={index}
-              className="p-6 rounded-[14px] border border-border/60 bg-card transition-[transform,border-color,box-shadow] duration-300 hover:border-border hover:shadow-md hover:-translate-y-1 animate-fade-in flex flex-col"
+              className="p-6 rounded-[14px] border border-border/60 bg-card transition-colors duration-300 hover:border-border animate-fade-in flex flex-col"
               style={{ animationDelay: `${index * 0.05}s` }}
             >
               <blockquote className="text-base text-foreground leading-relaxed flex-1 mb-6">
@@ -52,7 +52,7 @@ const Testimonials = () => {
             )}
           </Button>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 };
