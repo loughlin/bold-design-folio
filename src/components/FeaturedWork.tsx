@@ -32,7 +32,7 @@ const FeaturedWork = () => {
       <Reveal className="container mx-auto">
         {/* Section Header */}
         <div className="section-header-spacing animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Selected work</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Selected work</h2>
         </div>
 
         <div className="flex flex-col gap-6">
@@ -61,7 +61,7 @@ const FeaturedWork = () => {
                         </p>
                         {!featured.isPublic && <Lock className="h-3 w-3 text-muted-foreground" />}
                       </div>
-                      <h3 className="font-bold tracking-tight text-2xl md:text-3xl leading-snug mb-3">
+                      <h3 className="font-bold tracking-tight text-xl md:text-2xl leading-snug mb-3">
                         {featured.title}
                       </h3>
                       <p className="text-sm text-muted-foreground leading-relaxed">
@@ -120,7 +120,7 @@ const FeaturedWork = () => {
                       </p>
                       {!project.isPublic && <Lock className="h-3 w-3 text-muted-foreground" />}
                     </div>
-                    <h3 className="font-bold mb-2 tracking-tight text-xl md:text-2xl leading-snug">
+                    <h3 className="font-bold mb-2 tracking-tight text-lg md:text-xl leading-snug">
                       {project.title}
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed mb-5 line-clamp-2">

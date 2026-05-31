@@ -15,16 +15,16 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           {/* Left — positioning */}
           <div className="lg:col-span-7 animate-fade-in">
-            <p className="font-technical text-[11px] font-semibold text-muted-foreground uppercase tracking-[0.18em] mb-6">
+            <p className="font-technical text-[11px] font-semibold text-muted-foreground uppercase tracking-[0.18em] mb-5">
               Design Leadership · Design Systems · Research
             </p>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-[clamp(3rem,5vw,4.25rem)] font-bold tracking-tight leading-[1.05] text-balance">
+            <h1 className="text-3xl sm:text-4xl lg:text-[clamp(2.5rem,4vw,3.25rem)] font-bold tracking-tight leading-[1.1] text-balance">
               15 years in technology.
               <br className="hidden sm:block" /> 8 designing software.
             </h1>
 
-            <p className="mt-6 max-w-reading text-lg text-muted-foreground leading-relaxed">
+            <p className="mt-5 max-w-reading text-base text-muted-foreground leading-[1.7]">
               I came up as a software consultant before transitioning to product design. I spent several years shipping software before I moved into UX management. The shift happened gradually, but as I came to realize design problems were solvable, organizational ones were more complicated and needed someone to own them and advocate for design growth internally.
               <br /><br />
               Most of my time after my transition into management went into mentoring people and unblocking and laying down organizational process. Growing junior designers, keeping the team connected to users in the field and helping to cut blockers slowing us down. A shift and maybe a bit less glamorous than shipping product, but it really helped me feel an impact at scale.
@@ -33,10 +33,10 @@ const Hero = () => {
             </p>
 
             {/* Stats */}
-            <dl className="mt-10 grid grid-cols-3 gap-6 max-w-md border-y border-border py-6">
+            <dl className="mt-8 grid grid-cols-3 gap-6 max-w-md border-y border-border py-5">
               {STATS.map((stat) => (
                 <div key={stat.label}>
-                  <dt className="text-2xl md:text-3xl font-bold text-foreground tabular-nums">
+                  <dt className="text-xl md:text-2xl font-bold text-foreground tabular-nums">
                     {stat.value}
                   </dt>
                   <dd className="text-sm text-muted-foreground mt-1">
@@ -47,7 +47,7 @@ const Hero = () => {
             </dl>
 
             {/* CTAs */}
-            <div className="mt-8 flex flex-wrap items-center gap-3">
+            <div className="mt-6 flex flex-wrap items-center gap-3">
               <Button asChild className="rounded-[14px]">
                 <a href="#work">
                   View work

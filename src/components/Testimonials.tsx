@@ -11,7 +11,7 @@ const Testimonials = () => {
     <section id="testimonials" className="section-spacing px-6 bg-muted/40 overflow-hidden scroll-mt-20">
       <Reveal className="container mx-auto">
         <div className="section-header-spacing animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">From people I've worked with.</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">From people I've worked with.</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
