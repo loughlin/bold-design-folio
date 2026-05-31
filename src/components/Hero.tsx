@@ -85,7 +85,7 @@ const Hero = () => {
               height={1000}
               fetchPriority="high"
               decoding="async"
-              className="w-full max-w-sm mx-auto lg:max-w-none aspect-[4/5] object-cover rounded-[14px] grayscale hover:grayscale-0 transition-[filter] duration-700"
+              className="w-full max-w-sm mx-auto lg:max-w-none aspect-[3/4] object-cover rounded-[14px] grayscale hover:grayscale-0 transition-[filter] duration-700"
             />
           </div>
         </div>
