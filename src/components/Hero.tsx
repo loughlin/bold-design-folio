@@ -25,18 +25,19 @@ const Hero = () => {
             </h1>
 
             <p className="mt-5 max-w-reading text-base text-muted-foreground leading-[1.7]">
-              I'm James Loughlin a UX Designer and Software manager. I like to
-              help build design culture inside teams shipping software to quickly
-              show impact and I care most about the problems that don't have a
-              clean answer yet.
+              I'm James Loughlin, a UX designer and software manager. I help teams
+              that ship software build a real design culture, mostly because that's
+              where you see impact quickly. The work I care about most is the kind
+              without a clean answer yet.
             </p>
             <p className="mt-4 max-w-reading text-base text-muted-foreground leading-[1.7]">
-              I came up as a software consultant before transitioning to product
-              design. I spent several years shipping software before I moved into
-              UX management. The shift happened gradually, but as I came to realize
-              design problems were solvable, organizational ones were more
-              complicated and needed someone to own them and advocate for design
-              growth internally.
+              I came up as a software consultant and spent years shipping code
+              before I moved into product design, and later into UX management. It
+              wasn't a clean jump. Realizing the design problems were solvable ones
+              but the organizational problems important to unblocking that work.
+              Somebody had to own that vision and make a case for design from inside
+              the company and the role it plays in unlocking engineering assets in
+              their work.
             </p>
 
             {/* Stats */}
