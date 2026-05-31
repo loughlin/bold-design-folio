@@ -19,7 +19,7 @@ const Hero = () => {
               Design Leadership · Design Systems · Research
             </p>
 
-            <h1 className="text-2xl sm:text-3xl lg:text-[clamp(1.875rem,3vw,2.5rem)] font-semibold tracking-tight leading-[1.15] text-balance">
+            <h1 className="text-xl sm:text-2xl lg:text-[clamp(1.25rem,2.2vw,1.75rem)] font-medium tracking-tight leading-[1.35] text-balance">
               15 years in technology.
               <br className="hidden sm:block" /> 8 designing software.
             </h1>
