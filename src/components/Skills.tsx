@@ -15,7 +15,7 @@ const Skills = () => {
           {skillCategories.map((skill, index) => (
             <div
               key={index}
-              className="py-6 border-t border-border flex gap-5 group"
+              className="py-6 border-t border-border flex gap-6 group"
               style={{ animationDelay: `${index * 0.06}s` }}
             >
               <span className="font-technical text-[11px] font-semibold text-muted-foreground pt-0.5 w-5 shrink-0 tabular-nums">

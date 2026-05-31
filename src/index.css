@@ -56,7 +56,7 @@
     --space-16: clamp(5rem, 3rem + 4vw, 8rem);        /* 80→128px */
 
     /* Section spacing: space above heading vs below */
-    --section-gap: clamp(4rem, 2.5rem + 3vw, 5rem);   /* 64→80px */
+    --section-gap: clamp(3rem, 2rem + 2vw, 4rem);     /* 48→64px */
     --section-header-mb: clamp(2rem, 1.5rem + 1vw, 3rem); /* 32→48px */
   }
 

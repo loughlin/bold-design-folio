@@ -53,7 +53,7 @@ const FeaturedWork = () => {
                   </div>
 
                   {/* Content */}
-                  <div className="p-7 md:p-10 flex flex-col flex-1 justify-between">
+                  <div className="p-8 md:p-10 flex flex-col flex-1 justify-between">
                     <div>
                       <div className="flex items-center gap-2 mb-3">
                         <p className="font-technical text-[10px] font-semibold text-muted-foreground uppercase tracking-[0.18em]">
@@ -113,7 +113,7 @@ const FeaturedWork = () => {
                   </div>
 
                   {/* Content */}
-                  <div className="p-6 md:p-7 flex flex-col flex-1">
+                  <div className="p-6 md:p-8 flex flex-col flex-1">
                     <div className="flex items-center gap-2 mb-2">
                       <p className="font-technical text-[10px] font-semibold text-muted-foreground uppercase tracking-[0.18em]">
                         {project.subtitle}
@@ -123,7 +123,7 @@ const FeaturedWork = () => {
                     <h3 className="font-bold mb-2 tracking-tight text-lg md:text-xl leading-snug">
                       {project.title}
                     </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-5 line-clamp-2">
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-6 line-clamp-2">
                       {project.description}
                     </p>
 

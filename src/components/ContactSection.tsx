@@ -61,7 +61,7 @@ const ContactSection = () => {
               ].map(([label, value]) => (
                 <div
                   key={label}
-                  className="flex items-baseline justify-between bg-foreground p-5"
+                  className="flex items-baseline justify-between bg-foreground p-6"
                 >
                   <dt className="text-[11px] font-technical font-semibold tracking-[0.18em] uppercase text-background/40">
                     {label}

@@ -11,7 +11,7 @@ const AboutSection = () => {
             </h2>
           </div>
 
-          <div className="lg:col-span-7 lg:col-start-6 space-y-5 max-w-reading">
+          <div className="lg:col-span-7 lg:col-start-6 space-y-4 max-w-reading">
             <p className="text-base text-muted-foreground leading-relaxed">
               I came up as a software consultant before moving into product
               design, and I shipped software for several years before stepping
