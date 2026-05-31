@@ -19,16 +19,16 @@ const Hero = () => {
               Design Leadership · Design Systems · Research
             </p>
 
-            <h1 className="text-2xl sm:text-3xl lg:text-[clamp(1.875rem,3vw,2.5rem)] font-semibold tracking-tight leading-[1.15] text-balance">
+            <h1 className="text-xl sm:text-2xl lg:text-[clamp(1.25rem,2.2vw,1.75rem)] font-medium tracking-tight leading-[1.35] text-balance">
               15 years in technology.
               <br className="hidden sm:block" /> 8 designing software.
             </h1>
 
             <p className="mt-5 max-w-reading text-base text-muted-foreground leading-[1.7]">
-              I'm James Loughlin, Portfolio Design Lead at Kessel Run (USAF). I
-              build design culture inside teams shipping software to active Air
-              Force missions, and I care most about the problems that don't have
-              a clean answer yet.
+              I'm James Loughlin a UX Designer and Software manager. I like to
+              help build design culture inside teams shipping software to quickly
+              show impact and I care most about the problems that don't have a
+              clean answer yet.
             </p>
 
             {/* Stats */}
