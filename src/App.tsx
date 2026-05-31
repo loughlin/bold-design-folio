@@ -17,7 +17,7 @@ const OperationalDashboardCaseStudy = lazy(() => import("./pages/OperationalDash
 
 import { PasswordProvider } from "./contexts/PasswordContext";
 import PasswordDialog from "./components/PasswordDialog";
-import ProtectedRoute from "./components/ProtectedRoute";
+import CaseStudyGate from "./components/CaseStudyGate";
 
 const queryClient = new QueryClient();
 
@@ -33,37 +33,42 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
 
-            {/* Public case study routes */}
+            {/* Case study routes — gated server-side via CaseStudyGate when the
+                matching project has isPublic: false. */}
             <Route path="/case-study/kessel-run" element={
-              <Suspense fallback={<LoadingScreen />}>
-                <KesselRunCaseStudy />
-              </Suspense>
+              <CaseStudyGate>
+                <Suspense fallback={<LoadingScreen />}>
+                  <KesselRunCaseStudy />
+                </Suspense>
+              </CaseStudyGate>
             } />
             <Route path="/case-study/design-system" element={
-              <Suspense fallback={<LoadingScreen />}>
-                <DesignSystemCaseStudy />
-              </Suspense>
+              <CaseStudyGate>
+                <Suspense fallback={<LoadingScreen />}>
+                  <DesignSystemCaseStudy />
+                </Suspense>
+              </CaseStudyGate>
             } />
-
-            {/* Public case study - warfighter research */}
             <Route path="/case-study/warfighter-research" element={
-              <Suspense fallback={<LoadingScreen />}>
-                <WarfighterResearchCaseStudy />
-              </Suspense>
+              <CaseStudyGate>
+                <Suspense fallback={<LoadingScreen />}>
+                  <WarfighterResearchCaseStudy />
+                </Suspense>
+              </CaseStudyGate>
             } />
-
-            {/* Public case study - operational dashboard */}
             <Route path="/case-study/operational-dashboard" element={
-              <Suspense fallback={<LoadingScreen />}>
-                <OperationalDashboardCaseStudy />
-              </Suspense>
+              <CaseStudyGate>
+                <Suspense fallback={<LoadingScreen />}>
+                  <OperationalDashboardCaseStudy />
+                </Suspense>
+              </CaseStudyGate>
             } />
-
-            {/* Mission reporting case study */}
             <Route path="/case-study/mission-reporting" element={
-              <Suspense fallback={<LoadingScreen />}>
-                <MissionReportingCaseStudy />
-              </Suspense>
+              <CaseStudyGate>
+                <Suspense fallback={<LoadingScreen />}>
+                  <MissionReportingCaseStudy />
+                </Suspense>
+              </CaseStudyGate>
             } />
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
