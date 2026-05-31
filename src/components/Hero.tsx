@@ -20,16 +20,16 @@ const Hero = () => {
             </p>
 
             <h1 className="text-4xl sm:text-5xl lg:text-[clamp(3rem,5vw,4.25rem)] font-bold tracking-tight leading-[1.05] text-balance">
-              Fifteen years in technology.
-              <br className="hidden sm:block" /> Eight designing the software
-              people actually use.
+              Fifteen years working in technology.
+              <br className="hidden sm:block" /> Eight years designing software.
             </h1>
 
             <p className="mt-6 max-w-reading text-lg text-muted-foreground leading-relaxed">
-              I'm James Loughlin, Portfolio Design Lead at Kessel Run (USAF). I
-              build design culture inside teams shipping software to active Air
-              Force missions, and I care most about the problems that don't have
-              a clean answer yet.
+              I came up as a software consultant before transitioning to product design. I spent several years shipping software before I moved into UX management. The shift happened gradually, but as I came to realize design problems were solvable, organizational ones were more complicated and needed someone to own them and advocate for design growth internally.
+              <br /><br />
+              Most of my time after my transition into management went into mentoring people and unblocking and laying down organizational process. Growing junior designers, keeping the team connected to users in the field and helping to cut blockers slowing us down. A shift and maybe a bit less glamorous than shipping product, but it really helped me feel an impact at scale.
+              <br /><br />
+              Outside of work I enjoy sports with my kids (mainly soccer at the moment), staying healthy at the gym and reading whatever I can get my hands on (mainly AI or UX Design books as of late). My wife and three kids fill in the rest!
             </p>
 
             {/* Stats */}
