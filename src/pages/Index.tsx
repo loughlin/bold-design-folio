@@ -39,7 +39,7 @@ const Index = () => {
           name: "James Loughlin",
           jobTitle: "Portfolio Design Lead",
           worksFor: { "@type": "Organization", name: "Kessel Run, USAF" },
-          url: "https://bold-design-folio.lovable.app/",
+          url: "https://jamesloughlin.design/",
           sameAs: ["https://www.linkedin.com/in/jameslloughlin/"],
         }}
       />

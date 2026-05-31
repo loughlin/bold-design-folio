@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://bold-design-folio.lovable.app/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://bold-design-folio.lovable.app/case-study/kessel-run</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bold-design-folio.lovable.app/case-study/design-system</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bold-design-folio.lovable.app/case-study/warfighter-research</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bold-design-folio.lovable.app/case-study/operational-dashboard</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bold-design-folio.lovable.app/case-study/mission-reporting</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jamesloughlin.design/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://jamesloughlin.design/case-study/kessel-run</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jamesloughlin.design/case-study/design-system</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jamesloughlin.design/case-study/warfighter-research</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jamesloughlin.design/case-study/operational-dashboard</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://jamesloughlin.design/case-study/mission-reporting</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>

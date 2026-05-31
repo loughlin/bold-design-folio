@@ -3,9 +3,8 @@ import { createClient } from "https://esm.sh/@supabase/supabase-js@2.49.1"
 
 // Allowed origins for CORS - restrict to specific domains
 const allowedOriginPatterns = [
-  /^https:\/\/mission-design-hub\.lovable\.app$/,
-  /^https:\/\/.*\.lovable\.app$/,
-  /^https:\/\/.*\.lovableproject\.com$/,
+  /^https:\/\/jamesloughlin\.design$/,
+  /^https:\/\/www\.jamesloughlin\.design$/,
   /^http:\/\/localhost:\d+$/,
 ];
 
@@ -15,7 +14,7 @@ const isOriginAllowed = (origin: string): boolean => {
 
 const getCorsHeaders = (req: Request) => {
   const origin = req.headers.get('origin') || '';
-  const allowedOrigin = isOriginAllowed(origin) ? origin : 'https://mission-design-hub.lovable.app';
+  const allowedOrigin = isOriginAllowed(origin) ? origin : 'https://jamesloughlin.design';
   return {
     'Access-Control-Allow-Origin': allowedOrigin,
     'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
