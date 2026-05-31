@@ -16,7 +16,7 @@ const Hero = () => {
           {/* Left — positioning */}
           <div className="lg:col-span-7 animate-fade-in">
             <p className="font-technical text-[11px] font-semibold text-muted-foreground uppercase tracking-[0.18em] mb-4">
-              Design Leadership · Design Systems · Research
+              Design Leadership · Design Systems · Research · AI Tooling · Software Delivery
             </p>
 
             <h1 className="text-xl sm:text-2xl lg:text-[clamp(1.25rem,2.2vw,1.75rem)] font-medium tracking-tight leading-[1.35] text-balance">
