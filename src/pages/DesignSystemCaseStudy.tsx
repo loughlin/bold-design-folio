@@ -162,8 +162,8 @@ const DesignSystemCaseStudy = () => {
             </KeyTakeaway>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { icon: "â±ï¸", title: "Task Completion", desc: "Time on core functions vs. navigating the interface" },
-                { icon: "âš ï¸", title: "User Error Rate", desc: "Incidents caused by inconsistent UI patterns" },
+                { icon: "⏱️", title: "Task Completion", desc: "Time on core functions vs. navigating the interface" },
+                { icon: "⚠️", title: "User Error Rate", desc: "Incidents caused by inconsistent UI patterns" },
                 { icon: "🚀", title: "Developer Velocity", desc: "Front end story throughput and cycle time" },
               ].map((m, i) => (
                 <div key={i} className="rounded-[14px] border border-border/60 bg-card p-6 text-center shadow-elevated ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
