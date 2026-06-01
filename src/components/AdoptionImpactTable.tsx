@@ -7,7 +7,7 @@
       beforeSub: "requests / week",
       after: "1.95",
       afterSub: "requests / week",
-      badge: "â†“ 48%",
+      badge: "↓ 48%",
       badgeSub: "FEWER",
     },
     {
@@ -17,7 +17,7 @@
       beforeSub: "days per story",
       after: "19",
       afterSub: "days per story",
-      badge: "â†“ 3 days",
+      badge: "↓ 3 days",
       badgeSub: "14% FASTER",
     },
     {
@@ -25,7 +25,7 @@
       sublabel: "inserted / deleted",
       before: "Baseline",
       beforeSub: "custom front end",
-      after: "âˆ’20% / âˆ’35%",
+      after: "−20% / −35%",
       afterSub: "lines inserted / deleted",
       badge: "Leaner",
       badgeSub: "COMMITS",
@@ -37,7 +37,7 @@
       beforeSub: "pre-adoption",
       after: "+36%",
       afterSub: "more complex — still faster",
-      badge: "â†‘ Better",
+      badge: "↑ Better",
       badgeSub: "QUALITY",
     },
   ];

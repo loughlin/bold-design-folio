@@ -9,7 +9,7 @@
   const statCards = [
     { label: "SYSTEM HEALTH", value: "98.2%", sub: "uptime last 24h" },
     { label: "ACTIVE SOURCES", value: "24/26", sub: "2 degraded" },
-    { label: "AVG LATENCY", value: "142ms", sub: "â†“ 11ms from yesterday" },
+    { label: "AVG LATENCY", value: "142ms", sub: "↓ 11ms from yesterday" },
     { label: "ERROR RATE", value: "0.4%", sub: "within threshold" },
     { label: "ALERTS", value: "2", sub: "active warnings", accent: true },
   ];
@@ -23,7 +23,7 @@
         Information Architecture — Three-Tier View Hierarchy
       </p>
       <h3 className="text-2xl md:text-3xl font-serif font-bold text-foreground">
-        System Overview â†’ Data Source â†’ Metrics
+        System Overview → Data Source → Metrics
       </h3>
       <p className="text-sm text-muted-foreground">
         Data starts broad at the system level and becomes more detailed as users drill into specific sources and metrics.

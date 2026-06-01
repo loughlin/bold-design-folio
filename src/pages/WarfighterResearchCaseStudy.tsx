@@ -259,7 +259,7 @@ const WarfighterResearchCaseStudy = () => {
                 <h3 className="font-semibold text-destructive text-sm">Before</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   {beforeItems.map((item, i) => (
-                    <li key={i} className="flex items-start gap-2"><span className="text-destructive">âœ—</span>{item}</li>
+                    <li key={i} className="flex items-start gap-2"><span className="text-destructive">✗</span>{item}</li>
                   ))}
                 </ul>
               </div>
@@ -267,7 +267,7 @@ const WarfighterResearchCaseStudy = () => {
                 <h3 className="font-semibold text-primary text-sm">After</h3>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   {afterItems.map((item, i) => (
-                    <li key={i} className="flex items-start gap-2"><span className="text-primary">âœ“</span>{item}</li>
+                    <li key={i} className="flex items-start gap-2"><span className="text-primary">✓</span>{item}</li>
                   ))}
                 </ul>
               </div>
@@ -290,7 +290,7 @@ const WarfighterResearchCaseStudy = () => {
                   <p className="text-sm text-muted-foreground">{h.desc}</p>
                   <div className="flex items-center gap-2 text-[11px] font-technical">
                     <span className="text-destructive">Before: {h.before}/5</span>
-                    <span className="text-muted-foreground">â†’</span>
+                    <span className="text-muted-foreground">→</span>
                     <span className="text-primary font-medium">After: {h.after}/5</span>
                   </div>
                 </div>

@@ -183,9 +183,9 @@ const DesignSystemCaseStudy = () => {
             </KeyTakeaway>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
-                { value: "3 days", label: "Faster Story Completion", tag: "22 â†’ 19 days", desc: "Pre-built, tested components meant developers started from a reliable baseline." },
-                { value: "48%", label: "Fewer Design Stories", tag: "3.8 â†’ 1.95/week", desc: "Documented, approved components meant fewer tickets to redesign solved problems." },
-                { value: "2 weeks", label: "Designer Onboarding", tag: "6+ â†’ 2 weeks", desc: "Shared Figma kit and documentation gave new designers a foundation from day one." },
+                { value: "3 days", label: "Faster Story Completion", tag: "22 → 19 days", desc: "Pre-built, tested components meant developers started from a reliable baseline." },
+                { value: "48%", label: "Fewer Design Stories", tag: "3.8 → 1.95/week", desc: "Documented, approved components meant fewer tickets to redesign solved problems." },
+                { value: "2 weeks", label: "Designer Onboarding", tag: "6+ → 2 weeks", desc: "Shared Figma kit and documentation gave new designers a foundation from day one." },
                 { value: "2,000+", label: "Dev Days Saved/Year", tag: "per 10-dev team", desc: "That number compounds across an organization the size of Kessel Run." },
               ].map((card, i) => (
                 <div key={i} className="rounded-[14px] border border-border/60 bg-card p-6 space-y-3 shadow-elevated ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
@@ -276,7 +276,7 @@ const DesignSystemCaseStudy = () => {
                   <p className="text-sm text-muted-foreground">{h.desc}</p>
                   <div className="flex items-center gap-2 text-[11px] font-technical">
                     <span className="text-destructive">Before: {h.before}/5</span>
-                    <span className="text-muted-foreground">â†’</span>
+                    <span className="text-muted-foreground">→</span>
                     <span className="text-primary font-medium">After: {h.after}/5</span>
                   </div>
                 </div>
@@ -294,19 +294,19 @@ const DesignSystemCaseStudy = () => {
               <div className="rounded-[14px] bg-destructive/5 p-6 space-y-4 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                 <h3 className="font-semibold text-destructive text-sm">Before Design System</h3>
                 <ul className="space-y-3 text-muted-foreground text-sm">
-                  <li className="flex items-start gap-2"><span className="text-destructive">âœ—</span>Custom components from scratch, 22 days/story</li>
-                  <li className="flex items-start gap-2"><span className="text-destructive">âœ—</span>Inconsistent patterns increased errors</li>
-                  <li className="flex items-start gap-2"><span className="text-destructive">âœ—</span>No shared language across 40+ teams</li>
-                  <li className="flex items-start gap-2"><span className="text-destructive">âœ—</span>Accessibility compliance varied by team</li>
+                  <li className="flex items-start gap-2"><span className="text-destructive">✗</span>Custom components from scratch, 22 days/story</li>
+                  <li className="flex items-start gap-2"><span className="text-destructive">✗</span>Inconsistent patterns increased errors</li>
+                  <li className="flex items-start gap-2"><span className="text-destructive">✗</span>No shared language across 40+ teams</li>
+                  <li className="flex items-start gap-2"><span className="text-destructive">✗</span>Accessibility compliance varied by team</li>
                 </ul>
               </div>
               <div className="rounded-[14px] bg-primary/5 p-6 space-y-4 ring-1 ring-inset ring-[hsl(var(--image-stroke))]">
                 <h3 className="font-semibold text-primary text-sm">After Design System</h3>
                 <ul className="space-y-3 text-muted-foreground text-sm">
-                  <li className="flex items-start gap-2"><span className="text-primary">âœ“</span>Story completion dropped to 19 days</li>
-                  <li className="flex items-start gap-2"><span className="text-primary">âœ“</span>Consistent patterns reduced errors</li>
-                  <li className="flex items-start gap-2"><span className="text-primary">âœ“</span>Unified library adopted by all teams</li>
-                  <li className="flex items-start gap-2"><span className="text-primary">âœ“</span>WCAG 2.1 AA built into every component</li>
+                  <li className="flex items-start gap-2"><span className="text-primary">✓</span>Story completion dropped to 19 days</li>
+                  <li className="flex items-start gap-2"><span className="text-primary">✓</span>Consistent patterns reduced errors</li>
+                  <li className="flex items-start gap-2"><span className="text-primary">✓</span>Unified library adopted by all teams</li>
+                  <li className="flex items-start gap-2"><span className="text-primary">✓</span>WCAG 2.1 AA built into every component</li>
                 </ul>
               </div>
             </div>
