@@ -300,7 +300,7 @@ const CaseStudyLayout = ({
                     <p className="text-sm text-muted-foreground">{heuristic.description}</p>
                     <div className="flex items-center gap-2 text-xs">
                       <span className="text-destructive">Before: {heuristic.before}/5</span>
-                      <span className="text-muted-foreground">â†’</span>
+                      <span className="text-muted-foreground">→</span>
                       <span className="text-primary font-medium">After: {heuristic.after}/5</span>
                     </div>
                   </CardContent>

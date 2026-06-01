@@ -290,7 +290,7 @@ const MissionReportingCaseStudy = () => {
                   <p className="text-sm text-muted-foreground">{h.desc}</p>
                   <div className="flex items-center gap-2 text-[11px] font-technical">
                     <span className="text-destructive">Before: {h.before}/5</span>
-                    <span className="text-muted-foreground">â†’</span>
+                    <span className="text-muted-foreground">→</span>
                     <span className="text-primary font-medium">After: {h.after}/5</span>
                   </div>
                 </div>

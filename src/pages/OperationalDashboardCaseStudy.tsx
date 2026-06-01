@@ -180,7 +180,7 @@ const OperationalDashboardCaseStudy = () => {
           <section id="ia" className="section-spacing border-t border-border/30 scroll-mt-20">
             <h2 className="text-2xl font-bold text-foreground mb-6">Information Architecture</h2>
             <KeyTakeaway>
-              System Overview â†’ Data Source â†’ Metrics: a clear path from anomaly detection to root cause.
+              System Overview → Data Source → Metrics: a clear path from anomaly detection to root cause.
             </KeyTakeaway>
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed mb-8">
               <p>

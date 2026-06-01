@@ -18,7 +18,7 @@
     },
     {
       label: "Designer onboarding",
-      sublabel: "before â†’ after",
+      sublabel: "before → after",
       barLabel: null,
       bars: [
         { label: "6 WEEKS — BEFORE", width: "85%" },
@@ -26,7 +26,7 @@
       ],
       value: "6 wks",
       value2: "2 wks",
-      valueSub: "â†“ 67%",
+      valueSub: "↓ 67%",
     },
     {
       label: "Spec documentation",
