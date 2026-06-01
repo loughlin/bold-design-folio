@@ -67,7 +67,7 @@ const KesselRunCaseStudy = () => {
           </Link>
 
           <p className="text-[11px] font-technical font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-4">
-            UX Leadership · 2021 – Present
+            UX Leadership · 2021 – 2025
           </p>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
             Leading Design at Kessel Run
@@ -101,7 +101,7 @@ const KesselRunCaseStudy = () => {
             <h2 className="text-2xl font-bold text-foreground mb-6">Overview</h2>
             <CaseStudyMetadata
               role="Portfolio Design Lead"
-              timeline="2021 – Present"
+              timeline="2021 – 2025"
               team="15+ Designers, 5 Applications, 6 Missions"
             />
             <KeyTakeaway>

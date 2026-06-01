@@ -12,7 +12,7 @@ export const projects: Project[] = [
     subtitle: "USAF software delivery",
     description: "Spent several years building a design practice inside Kessel Run, where teams were shipping software to active Air Force missions with almost no design infrastructure.",
     role: "Portfolio Design Lead",
-    timeline: "2021 - Present",
+    timeline: "2021 - 2025",
     image: kesselRunLeadershipVisit,
     link: "/case-study/kessel-run",
     isPublic: true,
